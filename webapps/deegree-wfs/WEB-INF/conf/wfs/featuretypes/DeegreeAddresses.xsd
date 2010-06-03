@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0" xmlns:gml="http://www.opengis.net/gml"
+			elementFormDefault="qualified" xmlns:deegreewfs="http://www.deegree.org/wfs"
+			targetNamespace="urn:x-inspire:specification:gmlas:Addresses:3.0" version="3.0">
+	<xsd:import namespace="http://www.opengis.net/gml"
+				schemaLocation="../../../../../../../../schemas/gml/3.1.1/base/feature.xsd"/>
+	<xsd:import namespace="http://www.opengis.net/gml"
+				schemaLocation="../../../../../../../../schemas/gml/3.1.1/base/geometryAggregates.xsd"/>
+	<!--XML Schema document, modified Inspire AD informative  GML 3.1.1 applicationschema -->
+	<xsd:annotation>
+		<xsd:appinfo>
+			<deegreewfs:Prefix xmlns:deegreewfs="http://www.deegree.org/wfs">AD</deegreewfs:Prefix>
+			<deegreewfs:Backend xmlns:deegreewfs="http://www.deegree.org/wfs">POSTGIS</deegreewfs:Backend>
+			<deegreewfs:DefaultSRS xmlns:deegreewfs="http://www.deegree.org/wfs">EPSG:4258</deegreewfs:DefaultSRS>
+			<deegreewfs:DefaultSRS xmlns:deegreewfs="http://www.deegree.org/wfs">EPSG:32633</deegreewfs:DefaultSRS>
+			<deegreewfs:SuppressXLinkOutput xmlns:deegreewfs="http://www.deegree.org/wfs">false
+			</deegreewfs:SuppressXLinkOutput>
+			<JDBCConnection xmlns="http://www.deegree.org/jdbc">
+				<Driver>org.postgresql.Driver</Driver>
+				<Url>jdbc:postgresql://localhost:5432/inspire</Url>
+				<User>inspire</User>
+				<Password>inspire</Password>
+				<SecurityConstraints/>
+				<Encoding>UTF-8</Encoding>
+			</JDBCConnection>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:element name="Address" substitutionGroup="gml:_Feature" type="AD:AddressType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_address</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.BAG.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="AddressType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="inspireId" minOccurs="0" maxOccurs="1" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:Identifier">
+									<deegreewfs:MappingField field="identifier" type="AD:Identifier"/>
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To fk="true">
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="ad_address"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="position" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:GeographicPosition">
+									<!--      <deegreewfs:MappingField field="identifier" type="AD:Identifier"/> -->
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To fk="true">
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="ad_address"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="validFrom" type="xsd:dateTime">
+
+						<xsd:annotation>
+
+							<xsd:appinfo>
+
+								<deegreewfs:Content>
+
+									<deegreewfs:MappingField field="valid_from" type="TIMESTAMP"/>
+
+								</deegreewfs:Content>
+
+							</xsd:appinfo>
+
+						</xsd:annotation>
+
+					</xsd:element>
+
+					<xsd:element name="validTo" minOccurs="0" type="xsd:dateTime">
+
+						<xsd:annotation>
+
+							<xsd:appinfo>
+
+								<deegreewfs:Content>
+
+									<deegreewfs:MappingField field="valid_to" type="TIMESTAMP"/>
+
+								</deegreewfs:Content>
+
+							</xsd:appinfo>
+
+						</xsd:annotation>
+
+					</xsd:element>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="locator" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:AddressLocator">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="ad_address_id" type="VARCHAR" table="ad_locator"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+
+					<xsd:element maxOccurs="unbounded" minOccurs="1" name="component" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:AddressComponent">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="ad_address_id" type="VARCHAR" table="ad_component"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="AddressComponent" substitutionGroup="gml:_Feature" type="AD:AddressComponentType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_component</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.AddressComponent.">
+					<deegreewfs:MappingField field="id" type="INTEGER"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="AddressComponentType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="adminUnitName" type="gml:ReferenceType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:AdminUnitName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="ad_admin_unit_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="ad_admin_unit"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="addressAreaName" type="gml:ReferenceType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:AddressAreaName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="ad_address_area_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="ad_address_area"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="postalDescriptor" type="gml:ReferenceType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:PostalDescriptor">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="ad_postal_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="ad_postal"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="thoroughfareName" type="gml:ReferenceType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:ThoroughfareName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="ad_thoroughfare_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="ad_thoroughfare"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="AdminUnitName" substitutionGroup="gml:_Feature" type="AD:AdminUnitNameType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_admin_unit</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.AU.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="AdminUnitNameType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="name" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:GeographicalName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="gn_name_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="gn_name"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element minOccurs="0" name="level" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="level" type="INTEGER"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="AddressAreaName" substitutionGroup="gml:_Feature" type="AD:AddressAreaNameType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_address_area</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.AA.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="AddressAreaNameType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="name" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:GeographicalName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="gn_name_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="gn_name"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="PostalDescriptor" substitutionGroup="gml:_Feature"
+				 type="AD:PostalDescriptorType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_postal</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.PD.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+					<deegreewfs:IdGenerator type="DB_SEQ">
+						<deegreewfs:param name="sequence">FID_seq</deegreewfs:param>
+					</deegreewfs:IdGenerator>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="PostalDescriptorType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="status" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>current</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="postName"
+								 type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:GeographicalName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="gn_name_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="gn_name"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element minOccurs="0" name="postCode" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="post_code" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ThoroughfareName" substitutionGroup="gml:_Feature"
+				 type="AD:ThoroughfareNameType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_thoroughfare</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.TN.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="ThoroughfareNameType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<!-- <xsd:element name="alternativeIdentifier" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="tmp_gt_unik" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element> -->
+					<xsd:element name="name" minOccurs="0" maxOccurs="unbounded"
+								 type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:GeographicalName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="gn_name_id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="VARCHAR" table="gn_name"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="AddressLocator" substitutionGroup="gml:_Feature" type="AD:AddressLocatorType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_locator</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.LOC.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="AddressLocatorType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" minOccurs="0" name="designator" type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:LocatorDesignator">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="ad_locator_id" type="VARCHAR" table="ad_locator_designator"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element minOccurs="1" name="level" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="level" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="LocatorDesignator" substitutionGroup="gml:_Feature" type="AD:LocatorDesignatorType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_locator_designator</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.LOCD.">
+					<deegreewfs:MappingField field="id" type="INTEGER"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="LocatorDesignatorType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="designator" maxOccurs="unbounded" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="value" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="type" maxOccurs="unbounded" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="type" type="INTEGER"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="GeographicalName" substitutionGroup="gml:_Feature"
+				 type="AD:GeographicalNameType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>gn_name</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.GN.NAME.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="GeographicalNameType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element minOccurs="0" name="language" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>nld</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element minOccurs="0" name="nativeness" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>Endonym</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element minOccurs="0" name="nameStatus" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>Official</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element minOccurs="0" name="sourceOfName" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>Het Kadaster, Nederland</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="spelling" minOccurs="0" maxOccurs="unbounded"
+								 type="gml:FeaturePropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content type="AD:SpellingOfName">
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="VARCHAR"/>
+										</deegreewfs:From>
+										<deegreewfs:To fk="true" >
+											<deegreewfs:MappingField field="gn_name_id" type="VARCHAR" table="gn_spelling"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="SpellingOfName" substitutionGroup="gml:_Feature" type="AD:SpellingOfNameType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>gn_spelling</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.GN.SPELL.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="SpellingOfNameType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="text" maxOccurs="unbounded" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="text" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="script" maxOccurs="unbounded" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>Latn</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="Identifier" substitutionGroup="gml:_Feature" type="AD:IdentifierType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_address</deegreewfs:table>
+				<deegreewfs:gmlId prefix="NL.KAD.BAG.ID.">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="IdentifierType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="localId" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="id" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="namespace" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>NL.KAD.BAG</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="GeographicPosition" substitutionGroup="gml:_Feature"
+				 type="AD:GeographicPositionType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<deegreewfs:table>ad_address</deegreewfs:table>
+				<deegreewfs:gmlId prefix="GeoPosId_">
+					<deegreewfs:MappingField field="id" type="VARCHAR"/>
+				</deegreewfs:gmlId>
+				<deegreewfs:visible>true</deegreewfs:visible>
+				<deegreewfs:transaction update="false" delete="false" insert="false"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="GeographicPositionType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="default" type="xsd:boolean">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>true</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="geometry" type="gml:PointPropertyType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:IdentityPart>false</deegreewfs:IdentityPart>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="position" type="GEOMETRY" srs="4258"/>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="method" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>byOtherParty</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="specification" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:Constant>entrance</deegreewfs:Constant>
+								</deegreewfs:Content>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,4 +1,4 @@
-We would like to acknowledge Mr. Frank Arntsen from the Norwegian Mapping Agency (NMA) who made the first setup for a
+We would like to acknowledge Mr. Frank Arntsen from the Norwegian Mapping Agency (NMA). Frank made the first setup for a
 WFS for the INSPIRE Addresses theme with PostGIS and Deegree and making this setup available to the
 European National Mapping and Cadastral Agencies NMCAÕs. All assets under the "db" and "webapps" directories is mostly
 based on his work.

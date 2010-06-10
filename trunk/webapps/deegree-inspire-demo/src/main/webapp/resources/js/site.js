@@ -116,7 +116,14 @@ GeoViewer.Catalog.layers = {
 		,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
 			),
 
-	inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
+			deegreeinspireAD : new OpenLayers.Layer.WMS("INSPIRE Addresses deegree",
+					"services?",
+			{layers: "addresses", format: "image/png", transparent: true},
+			{isBaseLayer: false, singleTile: true,  visibility: true, alpha:true
+				,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
+					),
+
+					inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
 			GeoViewer.Catalog.urls.GS2_WMS,
 	{layers: "kad:cp_parcel", format: "image/png", transparent: true},
 	{isBaseLayer: false, singleTile: true,  visibility: true, alpha:true
@@ -380,7 +387,8 @@ GeoViewer.Map.layers = [
 	 * ==================================
 	 */
 	GeoViewer.Catalog.layers.inspireCP,
-	GeoViewer.Catalog.layers.inspireAD
+	GeoViewer.Catalog.layers.inspireAD,
+	GeoViewer.Catalog.layers.deegreeinspireAD
 	//	GeoViewer.Catalog.layers.percelen28992,
 	//	GeoViewer.Catalog.layers.percelen4258,
 	//	GeoViewer.Catalog.layers.parcelTestLayer

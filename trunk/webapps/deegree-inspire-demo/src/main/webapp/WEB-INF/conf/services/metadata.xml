@@ -7,8 +7,8 @@
     responses.
   -->
   <ServiceIdentification>
-    <Title>deegree 3 GeoSciML WFS</Title>
-    <Abstract>WFS for testing the deployment of the GeoSciML application schema</Abstract>
+    <Title>deegree 3 INSPIRE Annex I Data Themes Service</Title>
+    <Abstract>WFS/WMS for testing the deployment of INSPIRE Annex I Data Themes</Abstract>
   </ServiceIdentification>
   <ServiceProvider>
     <ProviderName>lat-lon GmbH</ProviderName>

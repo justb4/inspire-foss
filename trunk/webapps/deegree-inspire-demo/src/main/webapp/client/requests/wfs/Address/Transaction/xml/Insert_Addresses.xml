@@ -4,12 +4,11 @@
   xmlns:wfs="http://www.opengis.net/wfs" xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:gml="http://www.opengis.net/gml" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" gml:id="NL.KAD.BAG"
   xsi:schemaLocation="urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd urn:x-inspire:specification:gmlas:CadastralParcels:3.0 http://schemas.kademo.nl/inspire/v3.0/CadastralParcels.xsd http://www.opengis.net/wfs http://schemas.kademo.nl/ogc/wfs/1.1.0-gml3.2.1/wfs.xsd">
-  <wfs:Insert handle="insert" idgen="GenerateNew">
+  <wfs:Insert handle="insert" idgen="UseExisting">
     <wfs:FeatureCollection xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gsml="urn:cgi:xmlns:CGI:GeoSciML:2.0"
       xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:wfs="http://www.opengis.net/wfs" numberOfFeatures="2"
       xsi:schemaLocation="urn:cgi:xmlns:CGI:GeoSciML:2.0 http://www.geosciml.org/geosciml/2.0/xsd/geosciml.xsd http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
-
       <gml:featureMember>
         <AD:Address gml:id="NL.KAD.BAG.0532200000000003">
           <AD:inspireId>
@@ -21,7 +20,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000003_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000003_P">
                   <gml:pos>5.246345245309804 52.68961794947077</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -64,7 +63,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000007_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000007_P">
                   <gml:pos>5.244091931272281 52.69122392342882</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -107,7 +106,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000011_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000011_P">
                   <gml:pos>5.251198597540931 52.69846671697543</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -150,7 +149,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000013_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000013_P">
                   <gml:pos>5.235763213505224 52.700281424150305</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -193,7 +192,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000014_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000014_P">
                   <gml:pos>5.246060860867943 52.690669083345426</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -236,7 +235,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000015_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000015_P">
                   <gml:pos>5.240617983239744 52.69067149636178</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -279,7 +278,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000017_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000017_P">
                   <gml:pos>5.234514684466063 52.70196936845571</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -322,7 +321,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000022_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000022_P">
                   <gml:pos>5.2540758176641 52.69114563058528</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -365,7 +364,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000024_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000024_P">
                   <gml:pos>5.250599265627573 52.6913933284404</gml:pos>
                 </gml:Point>
               </AD:geometry>
@@ -408,7 +407,7 @@
           <AD:position>
             <AD:GeographicPosition>
               <AD:geometry>
-                <gml:Point gml:id="NL.KAD.BAG.0532200000000026_P">
+                <gml:Point srsName="EPSG:4258" gml:id="NL.KAD.BAG.0532200000000026_P">
                   <gml:pos>5.245312475319377 52.711751467641456</gml:pos>
                 </gml:Point>
               </AD:geometry>

@@ -14,4 +14,43 @@
       </ogc:Or>
     </ogc:Filter>
   </wfs:Delete>
+  <wfs:Delete handle="delete2" typeName="AD:AddressAreaName">
+    <ogc:Filter>
+      <ogc:Or>
+        <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
+          <ogc:PropertyName>gml:name</ogc:PropertyName>
+          <ogc:Literal>*</ogc:Literal>
+        </ogc:PropertyIsLike>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>gml:name</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Or>
+    </ogc:Filter>
+  </wfs:Delete>
+  <wfs:Delete handle="delete3" typeName="AD:PostalDescriptor">
+    <ogc:Filter>
+      <ogc:Or>
+        <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
+          <ogc:PropertyName>gml:name</ogc:PropertyName>
+          <ogc:Literal>*</ogc:Literal>
+        </ogc:PropertyIsLike>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>gml:name</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Or>
+    </ogc:Filter>
+  </wfs:Delete>
+  <wfs:Delete handle="delete3" typeName="AD:ThoroughfareName">
+    <ogc:Filter>
+      <ogc:Or>
+        <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
+          <ogc:PropertyName>gml:name</ogc:PropertyName>
+          <ogc:Literal>*</ogc:Literal>
+        </ogc:PropertyIsLike>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>gml:name</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Or>
+    </ogc:Filter>
+  </wfs:Delete>  
 </wfs:Transaction>

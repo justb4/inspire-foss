@@ -11,5 +11,5 @@
   <NamespaceHint prefix="tn" namespaceURI="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" />  
   <NamespaceHint prefix="tn-a" namespaceURI="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0" />
   <GMLSchemaFileURL gmlVersion="GML_32">../../../schemas/inspire/annex1/Addresses.xsd</GMLSchemaFileURL>
-  <GMLFeatureCollectionFileURL gmlVersion="GML_31">../../../data/addresses.xml</GMLFeatureCollectionFileURL>
+  <GMLFeatureCollectionFileURL gmlVersion="GML_32">../../../data/addresses.xml</GMLFeatureCollectionFileURL>
 </MemoryFeatureStore>

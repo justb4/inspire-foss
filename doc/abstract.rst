@@ -14,4 +14,5 @@ Addresses (AD) and Cadastral Parcels (CP). Data from Kadaster data sources for a
 using "Combined Transformation".
 Open Source components are used like `PostGIS (Spatial Database) <http://postgis.refractions.net>`_ and `Deegree (Web Feature Server) <http://deegree.org>`_.
 
-
+All assets (code, documentation) for this project is licensed under the GNU Public License v3 and available at
+http://code.google.com/p/inspire-foss .

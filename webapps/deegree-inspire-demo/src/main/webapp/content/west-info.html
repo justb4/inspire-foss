@@ -1,0 +1,41 @@
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<div class="gv-html-panel-body">
+<p>This viewer renders Dutch INSPIRE data as WMS layers. The current themes supported are
+Cadastral Parcels (CP) and Addresses (AD). Data is present for selected parts
+    of The Netherlands : for CP the area of South Limburg (near Maastricht) and for AD
+    those towns that had address-data from the basic adminstration (BAG) available.
+    Currently there are no areas that have both CP and AD available.
+
+</p>
+    <br/>
+    <p>
+           To view AD, please  <a href="#" onclick="GeoViewer.main.getMainPanel().setMapContext('tilburg')">click here (zooms to Tilburg)</a>.
+    </p>
+    <br/>
+    <p>
+           To view CP, please <a href="#" onclick="GeoViewer.main.getMainPanel().setMapContext('limburg')">click here (zooms to South Limburg)</a>.
+    </p>
+<br/>
+    <p>The projection of this map is ETRS89 (EPSG:4258) as required for INSPIRE. This projection is similar to WGS84 (EPSG:4326)
+        hence The Netherlands looks "broader" than in the usual projections.
+
+    </p>
+
+
+</div>

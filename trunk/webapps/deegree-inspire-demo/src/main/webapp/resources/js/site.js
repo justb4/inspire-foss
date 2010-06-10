@@ -292,12 +292,12 @@ GeoViewer.User.createPanel = function(options) {
 				xtype: 'tbspacer',
 				width: 20
 			},
-			{
+			/*{
 				xtype: 'tbbutton',
 				text: 'Admin',
 				page: 'admin',
 				handler: menuHandler
-				/*				menu: [
+   				menu: [
 				 {
 				 text: 'Overzicht',
 				 page: 'projecten/overzicht',
@@ -314,12 +314,12 @@ GeoViewer.User.createPanel = function(options) {
 				 {
 				 text: 'Klic Online Mobile'
 				 }
-				 ]   */
+				 ]
 			},
 			{
 				xtype: 'tbspacer',
 				width: 20
-			},
+			},*/
 			{
 				xtype: 'tbbutton',
 				text: 'Development',
@@ -386,8 +386,6 @@ GeoViewer.Map.layers = [
 	 *            OVERLAYS
 	 * ==================================
 	 */
-	GeoViewer.Catalog.layers.inspireCP,
-	GeoViewer.Catalog.layers.inspireAD,
 	GeoViewer.Catalog.layers.deegreeinspireAD
 	//	GeoViewer.Catalog.layers.percelen28992,
 	//	GeoViewer.Catalog.layers.percelen4258,

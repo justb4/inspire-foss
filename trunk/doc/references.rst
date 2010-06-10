@@ -7,6 +7,7 @@ Below are global references used throughout this document.
 .. [GeoServer] GeoServer, http://geoserver.org
 .. [HUMBOLDT] HUMBOLDT Project, http://www.esdi-humboldt.eu/home.html
 .. [OSGeo-INSPIRE] OSGeo SIG; Open Source INSPIRE Data; http://wiki.osgeo.org/wiki/INSPIRE_data_experiments
+.. [INSPIRE-FOSS] Project Hosting at Google, for this project http://code.google.com/p/inspire-foss/
 .. [INSPIRE-FOSS-SDI] Free and Open Source Software for Spatial Data Infrastructure <http://inspire.jrc.ec.europa.eu/index.cfm/pageid/42/list/7/id/2163 ; Spatial Data Interest Community (SDIC)
 .. [INSDIR] INSPIRE Directive, http://eur-lex.europa.eu/JOHtml.do?uri=OJ:L:2007:108:SOM:EN:HTML
 .. [INSIRT] INSPIRE Draft Implementing Rule for Transformation Services (version 2.0), http://inspire.jrc.ec.europa.eu/reports/ImplementingRules/network/D3.10DraftIRTransformationServicesv2.0.pdf

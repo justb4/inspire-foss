@@ -42,7 +42,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>deegree 3 services</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../styles.css" />
     </head>
     <body><pre><%= DeegreeAALogoUtils.getAsString() %></pre>
 ...has been successfully installed on this server.
@@ -60,7 +60,7 @@
   for (String name : nameToController.keySet()) {    
     out.print (" - " + name);
     if ("WPS".equals (name) || "WFS".equals (name) ) {
-        out.print (" [<a href=" + name.toLowerCase() + "/index.jsp>details</a>]");
+        out.print (" [<a href=" + name.toLowerCase() + ".jsp>details</a>]");
     }
     out.println ("<br/>");
   }
@@ -71,6 +71,6 @@
 - Active: <%= FrontControllerStats.getActiveRequests()%> <br/>
 - Average: <%= FrontControllerStats.getAverageResponseTime()%> ms<br/>
 - Maximum: <%= FrontControllerStats.getMaximumResponseTime()%> ms<br/>
-<br/>[<a href="client/client.html">Send requests</a>]
+<br/>[<a href="../client/client.html">Send requests</a>]
     </body>
 </html>

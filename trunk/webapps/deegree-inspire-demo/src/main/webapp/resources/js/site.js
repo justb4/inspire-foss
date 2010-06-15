@@ -116,12 +116,12 @@ GeoViewer.Catalog.layers = {
 		,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
 			),
 
-			deegreeinspireAD : new OpenLayers.Layer.WMS("INSPIRE Addresses deegree",
-					"services?",
-			{layers: "addresses", format: "image/png", transparent: true},
-			{isBaseLayer: false, singleTile: true,  visibility: true, alpha:true
-				,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
-					),
+	deegreeinspireAD : new OpenLayers.Layer.WMS("INSPIRE Addresses deegree",
+			"services?",
+	{layers: "addresses", format: "image/png", transparent: true},
+	{isBaseLayer: false, singleTile: true,  visibility: true, alpha:true
+		,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
+			),
 
 					inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
 			GeoViewer.Catalog.urls.GS2_WMS,
@@ -396,14 +396,14 @@ GeoViewer.Map.layers = [
 /* Map Contexts. */
 GeoViewer.contexts = [
 	{
-		id: 'tilburg',
-		name: 'Show Addresses (Tilburg)',
+		id: 'addresses',
+		name: 'Show INSPIRE Addresses (NH)',
 		desc: 'Pan and zoom to show Addresses',
-		layers: ['OpenStreetMap', 'INSPIRE Addresses', 'INSPIRE Parcels'],
-		x: 5.0850,
-		y: 51.5639,
-		zoom: 12
-	},
+		layers: ['OpenStreetMap', 'INSPIRE Addresses deegree'],
+		x: 5.241925,
+		y: 52.69925,
+		zoom: 9
+	}/*,
 	{
 		id: 'limburg',
 		name: 'Show Cadastral Parcels (Limburg)',
@@ -412,7 +412,7 @@ GeoViewer.contexts = [
 		x: 5.891,
 		y: 50.775,
 		zoom: 11
-	}
+	}  */
 ];
 
 /**

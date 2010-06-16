@@ -241,10 +241,11 @@
                 <select name="request" size="1" onchange="loadExampleRequest(this.value);" id="requestSelectNode">
                     <option>------------------------------------------------</option>
                 </select>
+                 <input value="SEND" onclick="postRequest ()" type="button" />
                 <br /><br />
                 <textarea name="xmlarea" cols="120" rows="10"></textarea> <br /><br/>            
-                <input name="host" size="60" type="text" value="<%=targetURL%>" /><input value="SEND" onclick="postRequest ()" type="button" />
-            </form>
+                 <input type="hidden" name="host" value="<%=targetURL%>" />
+               </form>
             <form name="submitform" action="requestHandler.jsp" method="post" target="output" accept-charset="UTF-8">
                 <input type="hidden" name="GCAction" value="">
                 <input type="hidden" name="GCXML" value="" />

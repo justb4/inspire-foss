@@ -18,7 +18,15 @@
 <div class="gv-page-content">
     <div class="gv-page-title">Technical Features</div>
     <div class="gv-page-text">
-        <h2>Features of INSPIRE Download Service through deegree 3 WFS</h2>
+        <p>
+            Deegree version 3  supports complex <a href="http://en.wikipedia.org/wiki/GML_Application_Schemas">ISO GML Application Schemas</a>
+            as used within INSPIRE data themes.
+            Listed below are deegree 3 features relevant for INSPIRE data support.
+        </p>
+        <p>
+            &nbsp;
+        </p>
+        <h2>deegree 3 WFS Features</h2>
         <ul>
             <li>GML 3.2.1 output (GML 2, 3.0, 3.1 is also available)</li>
             <li>WFS 1.1.0 protocol (1.0.0 also available, 2.0.0 support planned)</li>
@@ -26,14 +34,14 @@
             <li>High performance and excellent scalability due to streaming architecture</li>
             <li>Queries may use complex filter expressions that take advantage of the full power of XPath 1.0</li>
             <li>Simple configuration based on unmodified INSPIRE data schemas</li>
-            <li>Configuration based on unmodified INSPIRE data schemas</li>
-            <li>Works on a variety of backends, such as PostGIS (work in progress), Oracle Spatial (work in progress) or
+            <li>Query XLink support: output GML features can be references or expanded</li>
+            <li>Backend storage support: PostGIS (work in progress), Oracle Spatial (work in progress) or
                 GML instance documents.
             </li>
-            <li>The pluggable and modular dataacess layer allows to add support for new backends with ease.</li>
+            <li>The pluggable and modular data access layer allows to add support for new backends with ease.</li>
         </ul>
-        <h2>Features of INSPIRE View Service through deegree 3 WMS</h2>
-        <ul>
+        <h2>deegree 3 WMS Features</h2>
+         <ul>
             <li>Styling and rendering of unmodified (complex) INSPIRE features</li>
             <li>Supports SLD and SE (Symbology Encoding) 1.0 standards for styling</li>
             <li>GetFeatureInfo returns full INSPIRE GML objects</li>

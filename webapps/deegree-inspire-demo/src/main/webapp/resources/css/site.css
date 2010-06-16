@@ -33,8 +33,19 @@
     margin: 0 15px 15px 0;
 }
 
-
 .gv-framed {
     padding: 5px;
     border: 1px solid #aaa;
+}
+
+#gv-page, #gv-framed-page  {
+    background-color: #0066cc;
+}
+
+#gv-page {
+    overflow: hidden;
+}
+
+h1,h2,h3,h4 {
+    color: #007EA9
 }

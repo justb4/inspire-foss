@@ -23,3 +23,18 @@
     float: right
 }
 
+.gv-align-right {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.gv-align-left {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+
+.gv-framed {
+    padding: 5px;
+    border: 1px solid #aaa;
+}

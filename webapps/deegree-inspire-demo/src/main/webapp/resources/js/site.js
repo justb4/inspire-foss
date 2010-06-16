@@ -123,7 +123,7 @@ GeoViewer.Catalog.layers = {
 		,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
 			),
 
-					inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
+	inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
 			GeoViewer.Catalog.urls.GS2_WMS,
 	{layers: "kad:cp_parcel", format: "image/png", transparent: true},
 	{isBaseLayer: false, singleTile: true,  visibility: true, alpha:true
@@ -257,22 +257,45 @@ GeoViewer.User.createPanel = function(options) {
 
 	var menu = new Ext.Toolbar({
 		id: 'gv-main-menu',
-		floating: false,
+		floating: false ,
 		items: [
 			{
 				xtype: 'tbspacer',
 				width: 240
 			},
+
 			{
 				xtype: 'tbbutton',
 				text: 'Home',
 				page: 'home',
 				handler: menuHandler
 			},
+
 			{
 				xtype: 'tbspacer',
 				width: 30
 			},
+
+			{	xtype: 'tbbutton',
+				text: 'Info',
+				menu: [
+					{
+						text: 'Features',
+						page: 'features',
+						handler: menuHandler
+					},
+					{
+						text: 'Integration',
+						page: 'integration',
+						handler: menuHandler
+					}
+				]
+			},
+				
+			{
+				xtype: 'tbspacer',
+				width: 20
+			},  
 			{
 				xtype: 'tbbutton',
 				text: 'Map',
@@ -292,57 +315,11 @@ GeoViewer.User.createPanel = function(options) {
 				xtype: 'tbspacer',
 				width: 20
 			},
-			/*{
-				xtype: 'tbbutton',
-				text: 'Admin',
-				page: 'admin',
-				handler: menuHandler
-   				menu: [
-				 {
-				 text: 'Overzicht',
-				 page: 'projecten/overzicht',
-				 handler: menuHandler
-				 },
-				 {
-				 text: 'INSPIRE',
-				 page: 'projecten/inspire',
-				 handler: menuHandler
-				 },
-				 {
-				 text: 'Shibboleth'
-				 },
-				 {
-				 text: 'Klic Online Mobile'
-				 }
-				 ]
-			},
-			{
-				xtype: 'tbspacer',
-				width: 20
-			},*/
 			{
 				xtype: 'tbbutton',
 				text: 'Development',
 				page: 'development',
 				handler: menuHandler
-				/*				menu: [
-				 {
-				 text: 'Overzicht',
-				 page: 'projecten/overzicht',
-				 handler: menuHandler
-				 },
-				 {
-				 text: 'INSPIRE',
-				 page: 'projecten/inspire',
-				 handler: menuHandler
-				 },
-				 {
-				 text: 'Shibboleth'
-				 },
-				 {
-				 text: 'Klic Online Mobile'
-				 }
-				 ]   */
 			},
 			{
 				xtype: 'tbspacer',
@@ -355,7 +332,7 @@ GeoViewer.User.createPanel = function(options) {
 				handler: menuHandler
 			}
 
-		]
+		] 
 	});
 
 	var panel = new Ext.Panel(options);
@@ -404,15 +381,15 @@ GeoViewer.contexts = [
 		y: 52.69925,
 		zoom: 9
 	}/*,
-	{
-		id: 'limburg',
-		name: 'Show Cadastral Parcels (Limburg)',
-		desc: 'Pan and zoom to Cadastral Parcels',
-		layers: ['OpenStreetMap', 'INSPIRE Addresses', 'INSPIRE Parcels'],
-		x: 5.891,
-		y: 50.775,
-		zoom: 11
-	}  */
+	 {
+	 id: 'limburg',
+	 name: 'Show Cadastral Parcels (Limburg)',
+	 desc: 'Pan and zoom to Cadastral Parcels',
+	 layers: ['OpenStreetMap', 'INSPIRE Addresses', 'INSPIRE Parcels'],
+	 x: 5.891,
+	 y: 50.775,
+	 zoom: 11
+	 }  */
 ];
 
 /**

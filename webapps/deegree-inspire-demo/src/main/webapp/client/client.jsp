@@ -11,6 +11,8 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>Generic OGC Web Service Client</title>
         <link rel="stylesheet" href="../admin/styles.css" />
+
+
         <script type="text/javascript">
         <!--
             // service types (WFS, WMS, CSW, ...)

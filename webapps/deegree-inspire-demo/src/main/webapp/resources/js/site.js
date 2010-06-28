@@ -123,6 +123,14 @@ GeoViewer.Catalog.layers = {
 		,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
 			),
 
+
+	deegreeinspireCP : new OpenLayers.Layer.WMS("INSPIRE CadastralParcels deegree",
+			"services?",
+	{layers: "cadastralparcels", format: "image/png", transparent: true},
+	{isBaseLayer: false, singleTile: true,  visibility: true, alpha:true
+		,featureInfoFormat: "application/vnd.ogc.gml"} //alpha true is for PNG hacks, but causes problems on transparency...
+			),
+
 	inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
 			GeoViewer.Catalog.urls.GS2_WMS,
 	{layers: "kad:cp_parcel", format: "image/png", transparent: true},
@@ -291,11 +299,11 @@ GeoViewer.User.createPanel = function(options) {
 					}
 				]
 			},
-				
+
 			{
 				xtype: 'tbspacer',
 				width: 20
-			},  
+			},
 			{
 				xtype: 'tbbutton',
 				text: 'Map',
@@ -332,7 +340,7 @@ GeoViewer.User.createPanel = function(options) {
 				handler: menuHandler
 			}
 
-		] 
+		]
 	});
 
 	var panel = new Ext.Panel(options);
@@ -363,7 +371,8 @@ GeoViewer.Map.layers = [
 	 *            OVERLAYS
 	 * ==================================
 	 */
-	GeoViewer.Catalog.layers.deegreeinspireAD
+	GeoViewer.Catalog.layers.deegreeinspireAD,
+	GeoViewer.Catalog.layers.deegreeinspireCP
 	//	GeoViewer.Catalog.layers.percelen28992,
 	//	GeoViewer.Catalog.layers.percelen4258,
 	//	GeoViewer.Catalog.layers.parcelTestLayer
@@ -380,16 +389,16 @@ GeoViewer.contexts = [
 		x: 5.241925,
 		y: 52.69925,
 		zoom: 9
-	}/*,
-	 {
-	 id: 'limburg',
-	 name: 'Show Cadastral Parcels (Limburg)',
-	 desc: 'Pan and zoom to Cadastral Parcels',
-	 layers: ['OpenStreetMap', 'INSPIRE Addresses', 'INSPIRE Parcels'],
-	 x: 5.891,
-	 y: 50.775,
-	 zoom: 11
-	 }  */
+	},
+	{
+		id: 'cadastralparcels',
+		name: 'Show Cadastral Parcels (Limburg)',
+		desc: 'Pan and zoom to Cadastral Parcels',
+		layers: ['OpenStreetMap', 'INSPIRE CadastralParcels deegree'],
+		x: 5.891,
+		y: 50.775,
+		zoom: 11
+	}
 ];
 
 /**

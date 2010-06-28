@@ -21,6 +21,16 @@
         </wms:DirectStyle>
       </wms:RequestableLayer>
 
+		<wms:RequestableLayer>
+		   <wms:Name>cadastralparcels</wms:Name>
+		   <wms:Title>INSPIRE Cadastral Parcels</wms:Title>
+		   <wms:FeatureStoreId>inspire</wms:FeatureStoreId>
+		   <wms:DirectStyle>
+			 <wms:File>../styles/cadastralparcels.sld</wms:File>
+			 <wms:Name>cadastralparcels</wms:Name>
+		   </wms:DirectStyle>
+		 </wms:RequestableLayer>
+
       <wms:StatisticsLayer />
 
     </wms:UnrequestableLayer>

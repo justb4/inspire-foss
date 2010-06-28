@@ -395,9 +395,9 @@ GeoViewer.contexts = [
 		name: 'Show Cadastral Parcels (Limburg)',
 		desc: 'Pan and zoom to Cadastral Parcels',
 		layers: ['OpenStreetMap', 'INSPIRE CadastralParcels deegree'],
-		x: 5.891,
-		y: 50.775,
-		zoom: 11
+		x: 5.7130,
+		y: 50.8564,
+		zoom: 13
 	}
 ];
 

@@ -13,13 +13,13 @@ cd -
 # $PSQL $INSERT_BAG_SQL_FILE
 
 echo "IMPORT BAG Data"
-cd bag
+cd addresses
 # ./allbag2ad.sh
 cd -
 
 # PERCELEN
 echo "IMPORT BRK Data"
-cd percelen
+cd parcels
 
 # convert BRK percelen ESRI shape to GML
 # ./percelen-shp2gml.sh

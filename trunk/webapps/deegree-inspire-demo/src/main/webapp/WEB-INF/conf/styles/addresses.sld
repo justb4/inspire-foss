@@ -59,7 +59,7 @@
       <Font>
         <CssParameter name="font-family">Arial</CssParameter>
         <CssParameter name="font-weight">Bold</CssParameter>
-        <CssParameter name="font-size">14</CssParameter>
+        <CssParameter name="font-size">10</CssParameter>
       </Font>
       <LabelPlacement>
         <PointPlacement>

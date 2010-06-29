@@ -392,11 +392,11 @@ GeoViewer.contexts = [
 	},
 	{
 		id: 'cadastralparcels',
-		name: 'Show Cadastral Parcels (Limburg)',
+		name: 'Show Cadastral Parcels (NH)',
 		desc: 'Pan and zoom to Cadastral Parcels',
 		layers: ['OpenStreetMap', 'INSPIRE CadastralParcels deegree'],
-		x: 5.7130,
-		y: 50.8564,
+		x: 5.246137,
+		y: 52.689494,
 		zoom: 13
 	}
 ];

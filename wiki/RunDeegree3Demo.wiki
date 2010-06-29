@@ -1,0 +1,49 @@
+#summary Short description how to setup and run the Deegree3 INSPIRE demo
+
+= Introduction =
+
+This briefly describes how to setup and run the demo hosted at
+http://inspire.kademo.nl/deegree-inspire-demo in your own environment.
+
+= What is needed =
+
+  * [http://java.sun.com Java], recent version 5 or higher
+  * [http://subversion.tigris.org/ Subversion] (SVN) client latest
+  * [http://maven.apache.org Apache Maven], the build/run tool
+
+Eclipse or any other IDE is not required, but may help as these tools are often integrated with both SVN and Maven.
+
+= Installation =
+
+Install Java, SVN and Maven on your platform.
+
+= Code checkout =
+
+Run the following command
+
+`svn checkout http://inspire-foss.googlecode.com/svn/trunk inspire-foss`
+
+This checks out all code (read only) into a newly created directory "inspire-foss".
+
+= Run demo with Maven =
+
+This demo runs a web application contained in the directory
+
+`inspire-foss/webapps/deegree-inspire-demo`. We will call this dir `$WEBAPP` further below.
+
+Do the following commands
+
+  * `cd $WEBAPP`
+  * `mvn tomcat:run`
+  * browse to http://127.0.0.1/deegree-inspire-demo
+
+The first time running Maven quite some software will be downloaded into your local Maven cache. Be patient.
+
+The demo is self-contained, no PostGIS is needed etc (Deegree here uses memory store). You can even add your own data under the dir:
+`$WEBAPP/src/main/webapp/WEB-INF/data`
+and configuring a new source under
+$WEBAPP/src/main/webapp/WEB-INF/conf/datasources/feature/inspire.xml
+
+Plus you can configure a WMS for your data.
+
+Note that the Viewer used in the demo is developed within another Open Source project together with Geodan (who is providing the ESDIN Demo Viewer): http://code.google.com/p/geoext-viewer 

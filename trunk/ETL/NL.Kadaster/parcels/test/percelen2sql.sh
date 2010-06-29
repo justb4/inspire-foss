@@ -5,4 +5,5 @@ INSERT_SQL_FILE=test-insert.sql
 
 echo "-- TEST DATA FOR PARCELS " >> $INSERT_SQL_FILE
 # xsltproc ../percelen2cp.xsl percelen.gml >> $INSERT_SQL_FILE
-xsltproc ../percelen2cp.xsl percelen-nh.gml >> $INSERT_SQL_FILE
+# xsltproc ../percelen2cp.xsl percelen-nh.gml >> $INSERT_SQL_FILE
+xsltproc ../percelen2cp.xsl percelen-bovenkarspel.gml >> $INSERT_SQL_FILE

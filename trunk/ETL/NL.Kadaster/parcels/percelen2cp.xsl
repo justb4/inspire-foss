@@ -30,6 +30,7 @@
 
 	<xsl:template match="/">
 		<xsl:apply-templates select="//ogr:Perceelvlak"/>
+		<xsl:apply-templates select="//ogr:lki_vlakken"/>
 	</xsl:template>
 
 
@@ -49,6 +50,22 @@
 
 	</xsl:template>
 
+
+	<xsl:template match="ogr:lki_vlakken">
+
+		<xsl:call-template name="insert_cp_parcel">
+			<xsl:with-param name="id">
+				<xsl:value-of select="ogr:objectnumm"/>
+			</xsl:with-param>
+
+			<xsl:with-param name="geometry">
+				<!-- In GML spaces and commas are reverse as what PostGIS requires, so we do substitions here -->
+				<xsl:value-of select="translate(translate(translate(normalize-space(ogr:geometryProperty),' ', '*'),',',' '),'*',',')"/>
+			</xsl:with-param>
+
+		</xsl:call-template>
+
+	</xsl:template>
 
 	<!-- SIMPLE INSERTS -->
 

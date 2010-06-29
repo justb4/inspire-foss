@@ -78,7 +78,7 @@
 				</Fill>
 			</Halo>
 			<Fill>
-				<CssParameter name="fill">#990000</CssParameter>
+				<CssParameter name="fill">#0000CC</CssParameter>
 			</Fill>
 		</TextSymbolizer>
 	</Rule>

@@ -17,7 +17,7 @@ Eclipse or any other IDE is not required, but may help as these tools are often 
 
 Install Java, SVN and Maven on your platform.
 
-= Code checkout =
+== Code checkout ==
 
 Run the following command
 

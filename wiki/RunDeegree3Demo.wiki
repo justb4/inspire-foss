@@ -1,11 +1,11 @@
 #summary Short description how to setup and run the Deegree3 INSPIRE demo
 
-= Introduction =
+== Introduction ==
 
 This briefly describes how to setup and run the demo hosted at
 http://inspire.kademo.nl/deegree-inspire-demo in your own environment.
 
-= What is needed =
+== What is needed ==
 
   * [http://java.sun.com Java], recent version 5 or higher
   * [http://subversion.tigris.org/ Subversion] (SVN) client latest
@@ -13,7 +13,7 @@ http://inspire.kademo.nl/deegree-inspire-demo in your own environment.
 
 Eclipse or any other IDE is not required, but may help as these tools are often integrated with both SVN and Maven.
 
-= Installation =
+== Installation ==
 
 Install Java, SVN and Maven on your platform.
 
@@ -25,7 +25,7 @@ Run the following command
 
 This checks out all code (read only) into a newly created directory "inspire-foss".
 
-= Run demo with Maven =
+== Run demo with Maven ==
 
 This demo runs a web application contained in the directory
 
@@ -39,11 +39,20 @@ Do the following commands
 
 The first time running Maven quite some software will be downloaded into your local Maven cache. Be patient.
 
-The demo is self-contained, no PostGIS is needed etc (Deegree here uses memory store). You can even add your own data under the dir:
+The demo is self-contained, no PostGIS is needed etc (Deegree here uses memory store). 
+
+== Advanced: Extending with your own Data ==
+You can even add your own data under the dir:
 `$WEBAPP/src/main/webapp/WEB-INF/data`
 and configuring a new source under
 $WEBAPP/src/main/webapp/WEB-INF/conf/datasources/feature/inspire.xml
 
-Plus you can configure a WMS for your data.
+== Advanced: Adding WMS Layer of your data ==
+
+You can configure a WMS for your data.
+
+   * Define a new style in `$WEBAPP/src/main/webapp/WEB-INF/conf/styles`
+   * Add a WMS layer within `$WEBAPP/src/main/webapp/WEB-INF/conf/services/wms.xml`
+
 
 Note that the Viewer used in the demo is developed within another Open Source project together with Geodan (who is providing the ESDIN Demo Viewer): http://code.google.com/p/geoext-viewer 

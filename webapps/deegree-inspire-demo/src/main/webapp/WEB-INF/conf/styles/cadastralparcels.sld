@@ -60,8 +60,8 @@
 			</Label>
 			<Font>
 				<CssParameter name="font-family">Arial</CssParameter>
-				<CssParameter name="font-weight">Bold</CssParameter>
-				<CssParameter name="font-size">14</CssParameter>
+				<CssParameter name="font-weight">Normal</CssParameter>
+				<CssParameter name="font-size">10</CssParameter>
 			</Font>
 			<LabelPlacement>
 				<PointPlacement>
@@ -78,7 +78,7 @@
 				</Fill>
 			</Halo>
 			<Fill>
-				<CssParameter name="fill">#000000</CssParameter>
+				<CssParameter name="fill">#990000</CssParameter>
 			</Fill>
 		</TextSymbolizer>
 	</Rule>

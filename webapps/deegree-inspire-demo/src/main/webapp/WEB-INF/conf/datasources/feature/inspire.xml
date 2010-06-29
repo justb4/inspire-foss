@@ -43,5 +43,5 @@
   <GMLSchemaFileURL gmlVersion="GML_32">../../../schemas/inspire/annex1/WaterFrameworkDirective.xsd</GMLSchemaFileURL>
   <GMLSchemaFileURL gmlVersion="GML_32">../../../schemas/inspire/annex1/WaterTransportNetwork.xsd</GMLSchemaFileURL>
   <GMLFeatureCollectionFileURL gmlVersion="GML_32">../../../data/addresses.xml</GMLFeatureCollectionFileURL>
-  <GMLFeatureCollectionFileURL gmlVersion="GML_32">../../../data/cadastralparcels.xml</GMLFeatureCollectionFileURL>
+  <GMLFeatureCollectionFileURL gmlVersion="GML_32">../../../data/cadastralparcels-northholland.xml</GMLFeatureCollectionFileURL>
 </MemoryFeatureStore>

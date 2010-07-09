@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wms:deegreeWMS xmlns:wms="http://www.deegree.org/services/wms" xmlns:ds="http://www.deegree.org/datasource" xmlns:cm="http://www.deegree.org/commons" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dgws="http://www.deegree.org/webservices" configVersion="0.5.0" xsi:schemaLocation="http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/0.5.0/wms_configuration.xsd">
+
+  <wms:SupportedFeatures>
+    <wms:MaxFeatures>50000</wms:MaxFeatures>
+  </wms:SupportedFeatures>
+
+  <wms:ServiceConfiguration>
+
+    <wms:UnrequestableLayer>
+      <wms:Title>Root Layer</wms:Title>
+      <wms:CRS>EPSG:4258 EPSG:31468 EPSG:31466 EPSG:31467 EPSG:4326 EPSG:25832 EPSG:25833 EPSG:25834 EPSG:28992</wms:CRS>
+
+      <wms:RequestableLayer>
+        <wms:Name>addresses</wms:Name>
+        <wms:Title>INSPIRE Addresses</wms:Title>
+        <wms:FeatureStoreId>inspire</wms:FeatureStoreId>
+        <wms:DirectStyle>
+          <wms:File>../styles/addresses.sld</wms:File>
+          <wms:Name>addresses</wms:Name>
+        </wms:DirectStyle>
+      </wms:RequestableLayer>
+
+		<wms:RequestableLayer>
+		   <wms:Name>cadastralparcels</wms:Name>
+		   <wms:Title>INSPIRE Cadastral Parcels</wms:Title>
+		   <wms:FeatureStoreId>inspire</wms:FeatureStoreId>
+		   <wms:DirectStyle>
+			 <wms:File>../styles/cadastralparcels.sld</wms:File>
+			 <wms:Name>cadastralparcels</wms:Name>
+		   </wms:DirectStyle>
+		 </wms:RequestableLayer>
+
+      <wms:StatisticsLayer />
+
+    </wms:UnrequestableLayer>
+
+  </wms:ServiceConfiguration>
+</wms:deegreeWMS>

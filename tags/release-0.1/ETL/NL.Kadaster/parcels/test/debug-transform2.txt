@@ -1,0 +1,58 @@
+http://trac.osgeo.org/proj/ticket/11
+
+rd2wgs84.sh  145534 522536
+5.247201	52.690167
+
+rd2etrs89.sh  145534 522536   no datum
+5.24761380	52.69121789
+
+Ditto using datum wgs84 or +ellps=GRS80 +towgs84=0,0,0,0,0,0,0
+5.24720134	52.69016711
+
+Local
+met datum shift for 4258 in spatial_ref_sys
++proj=longlat +ellps=GRS80 +datum=WGS84 +no_defs
+inspire=# SELECT ST_AsText(ST_Transform(ST_GeomFromText('POINT(145534 522536)',28992),4258)) As wgs_geom;
+                wgs_geom
+----------------------------------------
+ POINT(5.2475857193462 52.687738572847)
+(1 row)
+
+Local
+zonder datum shift for 4258 in spatial_ref_sys
++proj=longlat +ellps=GRS80 +no_defs
+inspire=# SELECT ST_AsText(ST_Transform(ST_GeomFromText('POINT(145534 522536)',28992),4258)) As wgs_geom;
+                 wgs_geom
+------------------------------------------
+ POINT(5.24761378260096 52.6912179461103)
+(1 row)
+
+Local
+inspire=# SELECT ST_AsText(ST_Transform(ST_GeomFromText('POINT(145534 522536)',28992),4326)) As wgs_geom;
+                wgs_geom
+-----------------------------------------
+ POINT(5.2475857193462 52.6877385719379)
+(1 row)
+
+inspire=# SELECT ST_AsText(ST_Transform(ST_GeomFromText('POINT(145534 522536)',28992),4326)) As wgs_geom;
+                 wgs_geom
+------------------------------------------
+ POINT(5.24720131994979 52.6901671604376)
+(1 row)
+
+Op kademo.nl
+inspire=# SELECT ST_AsText(ST_Transform(ST_GeomFromText('POINT(145534 522536)',28992),4326)) As wgs_geom;
+                 wgs_geom
+------------------------------------------
+ POINT(5.24720131994979 52.6901671604376)
+(1 row)
+
+Op kademo.nl
+nspire=# SELECT ST_AsText(ST_Transform(ST_GeomFromText('POINT(145534 522536)',28992),4258)) As wgs_geom;
+                 wgs_geom
+------------------------------------------
+ POINT(5.24720131994979 52.6901671613466)
+(1 row)
+
+conclusion: the Proj definition for EPSG:4258 needs a datum setting of +datum=WGS84 otherwise
+the datum shift is not executed!!

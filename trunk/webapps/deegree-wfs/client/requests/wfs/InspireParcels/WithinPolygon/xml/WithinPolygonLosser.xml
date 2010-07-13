@@ -28,7 +28,7 @@
                 <gml:Polygon xmlns:gml="http://www.opengis.net/gml">
                     <gml:outerBoundaryIs>
                        <gml:LinearRing srsName="EPSG:4258">
-                           <gml:coordinates>3.0,45.0 8.0,45.0 8.0,55.0 3.0,55.0 3.0,45.0</gml:coordinates>
+                           <gml:coordinates>7.00,52.24 7.00,52.27 7.05,52.27 7.05,52.24 7.00,52.24</gml:coordinates>
                         </gml:LinearRing>
 						<!-- <gml:LinearRing srsName="EPSG:4258">
 							 5.236138363706939 52.69878069631519

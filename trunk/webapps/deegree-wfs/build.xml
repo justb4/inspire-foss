@@ -21,7 +21,7 @@ Ant Build file for Deegree-wfs webapp.
 
 $Id: build.xml 99 2009-08-20 12:11:38Z just $
 -->
-<project name="deegree-wfs" default="package" basedir=".">
+<project name="inspire-deegree2-wfs" default="package" basedir=".">
 
 	<!-- Initialization of properties (dirs, files) -->
 	<property file="../build.properties"/>

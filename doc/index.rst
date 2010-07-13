@@ -22,6 +22,7 @@ developed with Open Source within the GEORZ-lab & Research department of the Dut
    deployment.rst
    results.rst
    conclusions.rst
+   projects.rst
    contact.rst
    references.rst
 

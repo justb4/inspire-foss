@@ -14,7 +14,7 @@ as follows:
 Future Work
 ===========
 
-* get rid of the in/out filter XSLT hack within Deegree (requires GML 3.2.1 support, expected in Deegree v3)
+* port implementation to deegree v3 (started, see `deegree INSPIRE demo <http://inspire.kademo.nl/deegree-inspire-demo/>`_)
 * implement cross-theme relationships, for example an address can refer to a cadastral parcel
 * implement WFS with GeoServer v2 Community Schemas
 * trigger-based ETL: keep INSPIRE database in sync with Kadaster data source database through a trigger process

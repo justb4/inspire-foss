@@ -44,4 +44,4 @@ http://inspire.kademo.nl/view/viewer.html.
 .. figure:: _static/geoviewer-ad.jpg
    :align: center
 
-*Figure 6 - View of Addresses (AD) with Kadaster GeoViewer*
+*Figure 7 - View of Addresses (AD) with Kadaster GeoViewer*

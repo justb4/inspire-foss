@@ -5,40 +5,43 @@ Author(s): Frans Knibbe (Geodan)
 Date:  2010-06
 */
 
-insert into INSPIRE_GN_v3_0.Identifier(
-	localId
+/* Set the schema search path. Comment out the following line if the public schema is  used. */
+set search_path = inspire_gn_v3_0,public;
+
+insert into identifier(
+	localid
 	,namespace
 ) values (
 	'1'
 	,'NL.Geodan.Test'
 );
 
-insert into INSPIRE_GN_v3_0.NamedPlace(
-	inspireId
+insert into namedplace(
+	inspireid
 	,geometry
 ) values (
-	(select id from INSPIRE_GN_v3_0.Identifier where localId = '1')
-	,ST_PointFromText('POINT(52.36 4.92)', 4258) -- Note the axis order: latitude, longitude
+	(select id from identifier where localid = '1')
+	,st_pointfromtext('POINT(52.36 4.92)', 4258) -- note the axis order: latitude, longitude
 );
 
-insert into INSPIRE_GN_v3_0.PlaceTypes(
-	namedPlace 
-	,namedPlaceType 
+insert into placetypes(
+	namedplace 
+	,namedplacetype 
 ) values (
-	(select id from INSPIRE_GN_v3_0.NamedPlace where inspireId = (select id from INSPIRE_GN_v3_0.Identifier where localId = '1'))
+	(select id from namedplace where inspireid = (select id from identifier where localid = '1'))
 	,'administrativeUnit'
 );
 
-insert into INSPIRE_GN_v3_0.GeographicalName(
-	namedPlace
+insert into geographicalname(
+	namedplace
 	,language
 	,nativeness
-	,nameStatus
-	,sourceOfName
-	,grammaticalGender
-	,grammaticalNumber
+	,namestatus
+	,sourceofname
+	,grammaticalgender
+	,grammaticalnumber
 ) values (
-	(select currval('INSPIRE_GN_v3_0.NamedPlace_id'))
+	(select currval('namedplace_id'))
 	,'dut'
 	,'endonym'
 	,'official'
@@ -47,26 +50,26 @@ insert into INSPIRE_GN_v3_0.GeographicalName(
 	,'singular'
 );
 
-insert into INSPIRE_GN_v3_0.SpellingOfName(
-	geographicalName
+insert into spellingofname(
+	geographicalname
 	,text
 	,script
 ) values (
-	(select currval('INSPIRE_GN_v3_0.GeographicalName_id'))
+	(select currval('geographicalname_id'))
 	,'Amsterdam'
 	,'Latn'
 );
 
-insert into INSPIRE_GN_v3_0.GeographicalName(
-	namedPlace
+insert into geographicalname(
+	namedplace
 	,language
 	,nativeness
-	,nameStatus
-	,sourceOfName
-	,grammaticalGender
-	,grammaticalNumber
+	,namestatus
+	,sourceofname
+	,grammaticalgender
+	,grammaticalnumber
 ) values (
-	(select currval('INSPIRE_GN_v3_0.NamedPlace_id'))
+	(select currval('namedplace_id'))
 	,'dut'
 	,'endonym'
 	,'other'
@@ -75,12 +78,12 @@ insert into INSPIRE_GN_v3_0.GeographicalName(
 	,'singular'
 );
 
-insert into INSPIRE_GN_v3_0.SpellingOfName(
-	geographicalName
+insert into spellingofname(
+	geographicalname
 	,text
 	,script
 ) values (
-	(select currval('INSPIRE_GN_v3_0.GeographicalName_id'))
+	(select currval('geographicalname_id'))
 	,'Mokum'
 	,'Latn'
 );

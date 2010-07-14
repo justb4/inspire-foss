@@ -1,145 +1,148 @@
 /* 
 This script creates a PostgreSQL schema for geographical names (GN) according to the INSPIRE specfication, version 3.0
 Author(s): Frans Knibbe (Geodan)
-Date:  2010-06
 Note:
 - Voidable elements are not distinguished from nillable elements.
 
--- Revision: $Revision: 83 $
--- Date of last change: $LastChangedDate: 2010-07-13 14:17:51 +0200 (di, 13 jul 2010) $
+-- Revision: $Revision: 85 $
+-- Date of last change: $LastChangedDate: 2010-07-14 16:36:13 +0200 (wo, 14 jul 2010) $
 -- Last changed by: $LastChangedBy: frans $
 */
-create schema INSPIRE_GN_v3_0;
 
-/* Start Code Lists */
-create table INSPIRE_GN_v3_0.NamedPlaceTypeValue(
+/* create and set the schema. Comment out the following two lines if the public schema is  used*/
+create schema inspire_gn_v3_0;
+set search_path = inspire_gn_v3_0,public;
+
+/* start code lists */
+create table namedplacetypevalue(
 	code varchar(30) primary key
 );
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('administrativeUnit');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('building');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('hydrography');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('landcover');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('landform');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('populatedPlace');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('protectedSite');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('transportNetwork');
-insert into INSPIRE_GN_v3_0.NamedPlaceTypeValue values ('other');
+insert into namedplacetypevalue values ('administrativeUnit');
+insert into namedplacetypevalue values ('building');
+insert into namedplacetypevalue values ('hydrography');
+insert into namedplacetypevalue values ('landcover');
+insert into namedplacetypevalue values ('landform');
+insert into namedplacetypevalue values ('populatedPlace');
+insert into namedplacetypevalue values ('protectedSite');
+insert into namedplacetypevalue values ('transportNetwork');
+insert into namedplacetypevalue values ('other');
 
-create table INSPIRE_GN_v3_0.NameStatusValue(
+create table namestatusvalue(
 	code varchar(30) primary key
 );
-insert into INSPIRE_GN_v3_0.NameStatusValue values ('official');
-insert into INSPIRE_GN_v3_0.NameStatusValue values ('standardised');
-insert into INSPIRE_GN_v3_0.NameStatusValue values ('historical');
-insert into INSPIRE_GN_v3_0.NameStatusValue values ('other');
+insert into namestatusvalue values ('official');
+insert into namestatusvalue values ('standardised');
+insert into namestatusvalue values ('historical');
+insert into namestatusvalue values ('other');
 
-create table INSPIRE_GN_v3_0.GrammaticalGenderValue(
+create table grammaticalgendervalue(
 	code varchar(30) primary key
 );
-insert into INSPIRE_GN_v3_0.GrammaticalGenderValue values ('masculine');
-insert into INSPIRE_GN_v3_0.GrammaticalGenderValue values ('feminine');
-insert into INSPIRE_GN_v3_0.GrammaticalGenderValue values ('neuter');
-insert into INSPIRE_GN_v3_0.GrammaticalGenderValue values ('common');
+insert into grammaticalgendervalue values ('masculine');
+insert into grammaticalgendervalue values ('feminine');
+insert into grammaticalgendervalue values ('neuter');
+insert into grammaticalgendervalue values ('common');
 
-create table INSPIRE_GN_v3_0.NativenessValue(
+create table nativenessvalue(
 	code varchar(30) primary key
 );
-insert into INSPIRE_GN_v3_0.NativenessValue values ('endonym');
-insert into INSPIRE_GN_v3_0.NativenessValue values ('exonym');
+insert into nativenessvalue values ('endonym');
+insert into nativenessvalue values ('exonym');
 
-create table INSPIRE_GN_v3_0.GrammaticalNumberValue(
+create table grammaticalnumbervalue(
 	code varchar(30) primary key
 );
-insert into INSPIRE_GN_v3_0.GrammaticalNumberValue values ('singular');
-insert into INSPIRE_GN_v3_0.GrammaticalNumberValue values ('plural');
-insert into INSPIRE_GN_v3_0.GrammaticalNumberValue values ('dual');
-/* End Code Lists */
+insert into grammaticalnumbervalue values ('singular');
+insert into grammaticalnumbervalue values ('plural');
+insert into grammaticalnumbervalue values ('dual');
+/* end code lists */
 
----------> Identifier
-create sequence INSPIRE_GN_v3_0.Identifier_id;
-create table INSPIRE_GN_v3_0.Identifier(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.Identifier_id')
-	,localId text not null
+---------> identifier
+create sequence identifier_id;
+create table identifier(
+	id bigint primary key default nextval('identifier_id')
+	,localid text not null
 	,namespace text not null
-	,versionId varchar(25)
+	,versionid varchar(25)
 );
 
----------> LocalType
--- LocalType is of type LcoalisedCharacterString. For the definition, see ISO-19139
-create sequence INSPIRE_GN_v3_0.LocalType_id;
-create table INSPIRE_GN_v3_0.LocalType(
-	id int primary key default nextval('INSPIRE_GN_v3_0.LocalType_id')
-	,language char(3) not null -- ISO 639-2
-	,country char(2)  -- ISO 3166
-	,characterEncoding char(30) not null -- MD_CharacterSetCode is defined in ISO-19115
+---------> localtype
+-- localtype is of type lcoalisedcharacterstring. for the definition, see iso-19139
+create sequence localtype_id;
+create table localtype(
+	id int primary key default nextval('localtype_id')
+	,language char(3) not null -- iso 639-2
+	,country char(2)  -- iso 3166
+	,characterencoding char(30) not null -- md_charactersetcode is defined in iso-19115
 	,text text not null
 );
 
----------> PronunciationOfName
-create sequence INSPIRE_GN_v3_0.PronunciationOfName_id;
-create table INSPIRE_GN_v3_0.PronunciationOfName(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.PronunciationOfName_id')
-	,pronunciationSoundLink text
-	,pronunciationIPA text
+---------> pronunciationofname
+create sequence pronunciationofname_id;
+create table pronunciationofname(
+	id bigint primary key default nextval('pronunciationofname_id')
+	,pronunciationsoundlink text
+	,pronunciationipa text
 );
 
----------> NamedPlace
-create sequence INSPIRE_GN_v3_0.NamedPlace_id;
-create table INSPIRE_GN_v3_0.NamedPlace(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.NamedPlace_id')
-	,inspireId bigint not null references INSPIRE_GN_v3_0.Identifier(id)
-	,leastDetailedViewingScale int
-	,mostDetailedViewingscale int
-	,beginLifespanVersion timestamp with time zone
-	,endLifespanVersion timestamp with time zone
+---------> namedplace
+create sequence namedplace_id;
+create table namedplace(
+	id bigint primary key default nextval('namedplace_id')
+	,inspireid bigint not null references identifier(id)
+	,leastdetailedviewingscale int
+	,mostdetailedviewingscale int
+	,beginlifespanversion timestamp with time zone
+	,endlifespanversion timestamp with time zone
 );
-select AddGeometryColumn('inspire_gn_v3_0','namedplace','geometry',4258,'GEOMETRY',2);
-alter table INSPIRE_GN_v3_0.NamedPlace alter column geometry set not null;
+--select AddGeometryColumn('inspire_gn_v3_0','namedplace','geometry',4258,'GEOMETRY',2);
+select AddGeometryColumn('namedplace','geometry',4258,'GEOMETRY',2);
+alter table namedplace alter column geometry set not null;
 
----------> GeographicalName
-create sequence INSPIRE_GN_v3_0.GeographicalName_id;
-create table INSPIRE_GN_v3_0.GeographicalName(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.GeographicalName_id')
-	,namedPlace bigint not null references INSPIRE_GN_v3_0.NamedPlace(id)
+---------> geographicalname
+create sequence geographicalname_id;
+create table geographicalname(
+	id bigint primary key default nextval('geographicalname_id')
+	,namedplace bigint not null references namedplace(id)
 	,language char(3) 
-	,nativeness varchar(30) references INSPIRE_GN_v3_0.NativenessValue(code)
-	,nameStatus varchar(30) references INSPIRE_GN_v3_0.NameStatusValue(code)
-	,sourceOfName text
-	,pronunciation bigint references INSPIRE_GN_v3_0.PronunciationOfName(id)
-	,grammaticalGender varchar(30) references INSPIRE_GN_v3_0.GrammaticalGenderValue(code)
-	,grammaticalNumber varchar(30) references INSPIRE_GN_v3_0.GrammaticalNumberValue(code)
+	,nativeness varchar(30) references nativenessvalue(code)
+	,namestatus varchar(30) references namestatusvalue(code)
+	,sourceofname text
+	,pronunciation bigint references pronunciationofname(id)
+	,grammaticalgender varchar(30) references grammaticalgendervalue(code)
+	,grammaticalnumber varchar(30) references grammaticalnumbervalue(code)
 );
 
----------> SpellingOfName
-create sequence INSPIRE_GN_v3_0.SpellingOfName_id;
-create table INSPIRE_GN_v3_0.SpellingOfName(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.SpellingOfName_id')
-	,geographicalName bigint not null references INSPIRE_GN_v3_0.GeographicalName(id)
+---------> spellingofname
+create sequence spellingofname_id;
+create table spellingofname(
+	id bigint primary key default nextval('spellingofname_id')
+	,geographicalname bigint not null references geographicalname(id)
 	,text text not null
 	,script text 
-	,transliterationScheme text
+	,transliterationscheme text
 );
 
----------> PlaceTypes: Relate namedPlaces to place types
-create sequence INSPIRE_GN_v3_0.PlaceTypes_id;
-create table INSPIRE_GN_v3_0.PlaceTypes(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.PlaceTypes_id')
-	,namedPlace bigint not null references INSPIRE_GN_v3_0.NamedPlace(id)
-	,namedPlaceType char(30) not null references INSPIRE_GN_v3_0.NamedPlaceTypeValue(code)
+---------> placetypes: relate namedplaces to place types
+create sequence placetypes_id;
+create table placetypes(
+	id bigint primary key default nextval('placetypes_id')
+	,namedplace bigint not null references namedplace(id)
+	,namedplacetype char(30) not null references namedplacetypevalue(code)
 );
 
----------> PlaceLocalTypes: Relate namedPlaces to local place types
-create sequence INSPIRE_GN_v3_0.PlaceLocalTypes_id;
-create table INSPIRE_GN_v3_0.PlaceLocalTypes(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.PlaceLocalTypes_id')
-	,namedPlace bigint not null references INSPIRE_GN_v3_0.NamedPlace(id)
-	,localType int not null references INSPIRE_GN_v3_0.LocalType(id)
+---------> placelocaltypes: relate namedplaces to local place types
+create sequence placelocaltypes_id;
+create table placelocaltypes(
+	id bigint primary key default nextval('placelocaltypes_id')
+	,namedplace bigint not null references namedplace(id)
+	,localtype int not null references localtype(id)
 );
 
----------> PlaceRelatedObjects: Relate NamedPlace to relatedSpatialObject
-create sequence INSPIRE_GN_v3_0.PlaceRelatedObjects_id;
-create table  INSPIRE_GN_v3_0.PlaceRelatedObjects(
-	id bigint primary key default nextval('INSPIRE_GN_v3_0.PlaceRelatedObjects_id')
-	,namedPlace bigint not null references INSPIRE_GN_v3_0.NamedPlace(id)
-	,relatedSpatialObject bigint not null references INSPIRE_GN_v3_0.Identifier(id)
+---------> placerelatedobjects: relate namedplace to relatedspatialobject
+create sequence placerelatedobjects_id;
+create table  placerelatedobjects(
+	id bigint primary key default nextval('placerelatedobjects_id')
+	,namedplace bigint not null references namedplace(id)
+	,relatedspatialobject bigint not null references identifier(id)
 );

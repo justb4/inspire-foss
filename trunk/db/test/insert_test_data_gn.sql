@@ -8,7 +8,7 @@ Date:  2010-06
 /* Set the schema search path. Comment out the following line if the public schema is  used. */
 set search_path = inspire_gn_v3_0,public;
 
-insert into identifier(
+insert into inspireid(
 	localid
 	,namespace
 ) values (
@@ -20,7 +20,7 @@ insert into namedplace(
 	inspireid
 	,geometry
 ) values (
-	(select id from identifier where localid = '1')
+	(select id from inspireid where localid = '1')
 	,st_pointfromtext('POINT(52.36 4.92)', 4258) -- note the axis order: latitude, longitude
 );
 
@@ -28,7 +28,7 @@ insert into placetypes(
 	namedplace 
 	,namedplacetype 
 ) values (
-	(select id from namedplace where inspireid = (select id from identifier where localid = '1'))
+	(select id from namedplace where inspireid = (select id from inspireid where localid = '1'))
 	,'administrativeUnit'
 );
 

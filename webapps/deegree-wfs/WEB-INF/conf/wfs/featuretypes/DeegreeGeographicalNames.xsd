@@ -33,26 +33,30 @@
 		</annotation>
 	</element>
 	<complexType name="MD_Resolution_Type">
-		<choice>
-			<element name="equivalentScale" type="integer">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="equivalentscale" type="INTEGER"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="distance" type="float">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="distance" type="FLOAT"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-		</choice>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="equivalentScale" type="integer">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="equivalentscale" type="INTEGER"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="distance" type="float">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="distance" type="FLOAT"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
 	</complexType>
 	<!-- NamedPlaceTypeValue ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<!--
@@ -96,44 +100,48 @@
 		</annotation>
 	</element>
 	<complexType name="LocalTypeType">
-		<sequence>
-			<element name="language" type="string">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="language" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="country" type="string" minOccurs="0">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="country" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="characterEncoding" type="string">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="characterencoding" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="text" type="string">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="text" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-		</sequence>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="language" type="string">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="language" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="country" type="string" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="country" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="characterEncoding" type="string">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="characterencoding" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="text" type="string">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="text" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
 	</complexType>
 	<!-- Identifier ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<element name="Identifier" substitutionGroup="gml:AbstractObject" type="gn:IdentifierType">
@@ -149,33 +157,36 @@
 		</annotation>
 	</element>
 	<complexType name="IdentifierType">
-		<sequence>
-			<element name="localId" type="string">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="localId" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="namespace" type="string">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="namespace" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element minOccurs="0" name="versionId" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="versionid" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="localId" type="string">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="localId" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="namespace" type="string">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="namespace" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element minOccurs="0" name="versionId" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="versionid" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="string">
@@ -183,14 +194,19 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-		</sequence>
+-->
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
 	</complexType>
+	<!--
 	<complexType name="IdentifierPropertyType">
 		<sequence>
 			<element ref="gn:Identifier"/>
 		</sequence>
 	</complexType>
+-->
 	<!-- PronunciationOfName ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<element name="PronunciationOfName" type="gn:PronunciationOfNameType" substitutionGroup="gml:AbstractObject">
 		<annotation>
@@ -205,15 +221,18 @@
 		</annotation>
 	</element>
 	<complexType name="PronunciationOfNameType">
-		<sequence>
-			<element name="pronunciationSoundLink" nillable="true" minOccurs="0">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="pronunciationsoundlink" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="pronunciationSoundLink" nillable="true" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="pronunciationsoundlink" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!---
 				<complexType>
 					<simpleContent>
 						<extension base="anyURI">
@@ -221,15 +240,17 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="pronunciationIPA" nillable="true" minOccurs="0">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="pronunciationipa" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="pronunciationIPA" nillable="true" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="pronunciationipa" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="string">
@@ -237,14 +258,19 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-		</sequence>
+-->
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
 	</complexType>
+	<!--
 	<complexType name="PronunciationOfNamePropertyType">
 		<sequence>
 			<element ref="gn:PronunciationOfName"/>
 		</sequence>
 	</complexType>
+-->
 	<!--SpellingOfName ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<element name="SpellingOfName" type="gn:SpellingOfNameType" substitutionGroup="gml:AbstractObject">
 		<annotation>
@@ -259,27 +285,30 @@
 		</annotation>
 	</element>
 	<complexType name="SpellingOfNameType">
-		<sequence>
-			<element name="text" type="string">
-				<annotation>
-					<appinfo>
-						<deegreewfs:table>inspire_gn_v3_0.spellingofname</deegreewfs:table>
-						<deegreewfs:gmlId prefix="NL.GEODAN.GN">
-							<deegreewfs:MappingField field="id" type="INTEGER"/>
-						</deegreewfs:gmlId>
-						<deegreewfs:visible>true</deegreewfs:visible>
-						<deegreewfs:transaction update="false" delete="false" insert="false"/>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="script" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="script" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="text" type="string">
+						<annotation>
+							<appinfo>
+								<deegreewfs:table>inspire_gn_v3_0.spellingofname</deegreewfs:table>
+								<deegreewfs:gmlId prefix="NL.GEODAN.GN">
+									<deegreewfs:MappingField field="id" type="INTEGER"/>
+								</deegreewfs:gmlId>
+								<deegreewfs:visible>true</deegreewfs:visible>
+								<deegreewfs:transaction update="false" delete="false" insert="false"/>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="script" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="script" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="string">
@@ -287,15 +316,17 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="transliterationScheme" nillable="true" minOccurs="0">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="transliterationscheme" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="transliterationScheme" nillable="true" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="transliterationscheme" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="string">
@@ -303,14 +334,21 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-		</sequence>
+-->
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
 	</complexType>
+
+<!--
 	<complexType name="SpellingOfNamePropertyType">
 		<sequence>
 			<element ref="gn:SpellingOfName"/>
 		</sequence>
 	</complexType>
+-->
+
 	<!-- GeographicalName ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<element name="GeographicalName" type="gn:GeographicalNameType" substitutionGroup="gml:AbstractObject">
 		<annotation>
@@ -325,32 +363,35 @@
 		</annotation>
 	</element>
 	<complexType name="GeographicalNameType">
-		<sequence>
-			<element name="spelling" type="gn:SpellingOfNamePropertyType" maxOccurs="unbounded">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content type="gn:SpellingOfName">
-							<deegreewfs:MappingField field="spelling" type="INTEGER"/>
-							<deegreewfs:Relation>
-								<deegreewfs:From>
-									<deegreewfs:MappingField field="id" type="INTEGER"/>
-								</deegreewfs:From>
-								<deegreewfs:To fk="true">
-									<deegreewfs:MappingField field="geographicalname" type="INTEGER" table="inspire_gn_v3_0.spellingofname"/>
-								</deegreewfs:To>
-							</deegreewfs:Relation>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
-			</element>
-			<element name="language" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="language" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="spelling" type="gn:SpellingOfNameType" maxOccurs="unbounded">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content type="gn:SpellingOfName">
+									<deegreewfs:MappingField field="spelling" type="INTEGER"/>
+									<deegreewfs:Relation>
+										<deegreewfs:From>
+											<deegreewfs:MappingField field="id" type="INTEGER"/>
+										</deegreewfs:From>
+										<deegreewfs:To fk="true">
+											<deegreewfs:MappingField field="geographicalname" type="INTEGER" table="inspire_gn_v3_0.spellingofname"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="language" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="language" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="string">
@@ -358,15 +399,17 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="nativeness" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="nativeness" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="nativeness" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="nativeness" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="gml:CodeType">
@@ -374,15 +417,17 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="nameStatus" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="namestatus" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="nameStatus" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="namestatus" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="gml:CodeType">
@@ -390,15 +435,17 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="sourceOfName" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="sourceofname" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="sourceOfName" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="sourceofname" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="string">
@@ -406,38 +453,42 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="pronunciation" nillable="true">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content type="gn:PronunciationOfName">
-							<deegreewfs:MappingField field="spelling" type="INTEGER"/>
-							<deegreewfs:Relation>
-								<deegreewfs:From fk="true">
-									<deegreewfs:MappingField field="pronunciation" type="INTEGER"/>
-								</deegreewfs:From>
-								<deegreewfs:To>
-									<deegreewfs:MappingField field="id" type="INTEGER" table="inspire_gn_v3_0.pronunciationofname"/>
-								</deegreewfs:To>
-							</deegreewfs:Relation>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="pronunciation" nillable="true">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content type="gn:PronunciationOfName">
+									<deegreewfs:MappingField field="spelling" type="INTEGER"/>
+									<deegreewfs:Relation>
+										<deegreewfs:From fk="true">
+											<deegreewfs:MappingField field="pronunciation" type="INTEGER"/>
+										</deegreewfs:From>
+										<deegreewfs:To>
+											<deegreewfs:MappingField field="id" type="INTEGER" table="inspire_gn_v3_0.pronunciationofname"/>
+										</deegreewfs:To>
+									</deegreewfs:Relation>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<sequence>
 						<element ref="gn:PronunciationOfName"/>
 					</sequence>
 					<attribute name="nilReason" type="gml:NilReasonType"/>
 				</complexType>
-			</element>
-			<element name="grammaticalGender" nillable="true" minOccurs="0">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="grammaticalgender" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="grammaticalGender" nillable="true" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="grammaticalgender" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="gml:CodeType">
@@ -445,15 +496,17 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-			<element name="grammaticalNumber" nillable="true" minOccurs="0">
-				<annotation>
-					<appinfo>
-						<deegreewfs:Content>
-							<deegreewfs:MappingField field="grammaticalnumber" type="VARCHAR"/>
-						</deegreewfs:Content>
-					</appinfo>
-				</annotation>
+-->
+					</element>
+					<element name="grammaticalNumber" nillable="true" minOccurs="0">
+						<annotation>
+							<appinfo>
+								<deegreewfs:Content>
+									<deegreewfs:MappingField field="grammaticalnumber" type="VARCHAR"/>
+								</deegreewfs:Content>
+							</appinfo>
+						</annotation>
+						<!--
 				<complexType>
 					<simpleContent>
 						<extension base="gml:CodeType">
@@ -461,14 +514,20 @@
 						</extension>
 					</simpleContent>
 				</complexType>
-			</element>
-		</sequence>
+-->
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
 	</complexType>
+<!--
 	<complexType name="GeographicalNamePropertyType">
 		<sequence>
 			<element ref="gn:GeographicalName"/>
 		</sequence>
 	</complexType>
+-->
+
 	<!-- NamedPlace ++++++++++++++++++++++++++++++++++++++++++++++-->
 	<element name="NamedPlace" type="gn:NamedPlaceType" substitutionGroup="gml:AbstractFeature">
 		<annotation>
@@ -495,7 +554,7 @@
 							</appinfo>
 						</annotation>
 					</element>
-					<element name="inspireId" type="gn:IdentifierPropertyType">
+					<element name="inspireId" type="gn:IdentifierType">
 						<annotation>
 							<appinfo>
 								<deegreewfs:Content type="gn:Identifier">
@@ -512,7 +571,7 @@
 							</appinfo>
 						</annotation>
 					</element>
-					<element name="name" type="gn:GeographicalNamePropertyType" maxOccurs="unbounded">
+					<element name="name" type="gn:GeographicalNameType" maxOccurs="unbounded">
 						<annotation>
 							<appinfo>
 								<deegreewfs:Content type="gn:geographicalName">
@@ -537,6 +596,7 @@
 								</deegreewfs:Content>
 							</appinfo>
 						</annotation>
+						<!--
 						<complexType>
 							<simpleContent>
 								<extension base="dateTime">
@@ -544,6 +604,7 @@
 								</extension>
 							</simpleContent>
 						</complexType>
+-->
 					</element>
 					<element name="endLifespanVersion" nillable="true" minOccurs="0">
 						<annotation>
@@ -553,6 +614,7 @@
 								</deegreewfs:Content>
 							</appinfo>
 						</annotation>
+						<!--
 						<complexType>
 							<simpleContent>
 								<extension base="dateTime">
@@ -560,6 +622,7 @@
 								</extension>
 							</simpleContent>
 						</complexType>
+-->
 					</element>
 					<element name="leastDetailedViewingResolution" nillable="true" minOccurs="0">
 						<annotation>
@@ -577,6 +640,7 @@
 								</deegreewfs:Content>
 							</appinfo>
 						</annotation>
+						<!--
 						<complexType>
 							<complexContent>
 								<extension base="gml:AbstractMetadataPropertyType">
@@ -587,6 +651,7 @@
 								</extension>
 							</complexContent>
 						</complexType>
+-->
 					</element>
 					<element name="mostDetailedViewingResolution" nillable="true" minOccurs="0">
 						<annotation>
@@ -604,6 +669,7 @@
 								</deegreewfs:Content>
 							</appinfo>
 						</annotation>
+						<!--
 						<complexType>
 							<complexContent>
 								<extension base="gml:AbstractMetadataPropertyType">
@@ -614,6 +680,7 @@
 								</extension>
 							</complexContent>
 						</complexType>
+						-->
 					</element>
 					<element name="localType" type="gmd:LocalisedCharacterString_PropertyType" nillable="true" maxOccurs="unbounded">
 						<annotation>
@@ -648,16 +715,18 @@
 								</deegreewfs:Content>
 							</appinfo>
 						</annotation>
+						<!--
 						<complexType>
 							<sequence>
 								<element ref="gn:Identifier"/>
 							</sequence>
 							<attribute name="nilReason" type="gml:NilReasonType"/>
 						</complexType>
+-->
 					</element>
 					<element name="type" nillable="true" maxOccurs="unbounded">
 						<annotation>
-						<appinfo>
+							<appinfo>
 								<deegreewfs:Content>
 									<deegreewfs:MappingField field="namedplacetype" type="INTEGER"/>
 									<deegreewfs:Relation>
@@ -671,6 +740,7 @@
 								</deegreewfs:Content>
 							</appinfo>
 						</annotation>
+						<!--
 						<complexType>
 							<simpleContent>
 								<extension base="gml:CodeType">
@@ -678,11 +748,13 @@
 								</extension>
 							</simpleContent>
 						</complexType>
+-->
 					</element>
 				</sequence>
 			</extension>
 		</complexContent>
 	</complexType>
+	<!--
 	<complexType name="NamedPlacePropertyType">
 		<sequence minOccurs="0">
 			<element ref="gn:NamedPlace"/>
@@ -690,4 +762,5 @@
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
 	</complexType>
+-->
 </schema>

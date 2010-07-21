@@ -29,7 +29,7 @@
 		>
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 
-	<xsl:include href="outfilter_geographicalname.xml"/>
+	<xsl:include href="outfilter_ad_geographicalname.xml"/>
 	<xsl:include href="outfilter_address.xml"/>
 	<xsl:include href="outfilter_adminunitname.xml"/>
 	<xsl:include href="outfilter_postaldescriptor.xml"/>

@@ -8,6 +8,22 @@ Date:  2010-06
 /* Set the schema search path. Comment out the following line if the public schema is  used. */
 set search_path = inspire_gn_v3_0,public;
 
+insert into md_resolution(
+	id
+	,equivalentscale
+) values (
+	1
+	,5000
+);
+
+insert into md_resolution(
+	id
+	,equivalentscale
+) values (
+	2
+	,1000000
+);
+
 insert into inspireid(
 	localid
 	,namespace
@@ -16,12 +32,17 @@ insert into inspireid(
 	,'NL.Geodan.Test'
 );
 
+
 insert into namedplace(
 	inspireid
 	,geometry
+	,leastdetailedviewingresolution
+	,mostdetailedviewingresolution
 ) values (
 	(select id from inspireid where localid = '1')
 	,st_pointfromtext('POINT(52.36 4.92)', 4258) -- note the axis order: latitude, longitude
+	,2
+	,1
 );
 
 insert into placetypes(

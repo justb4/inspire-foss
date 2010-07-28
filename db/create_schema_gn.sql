@@ -4,8 +4,8 @@ Author(s): Frans Knibbe (Geodan)
 Note:
 - Voidable elements are not distinguished from nillable elements.
 
--- Revision: $Revision: 86 $
--- Date of last change: $LastChangedDate: 2010-07-16 17:08:52 +0200 (vr, 16 jul 2010) $
+-- Revision: $Revision: 87 $
+-- Date of last change: $LastChangedDate: 2010-07-20 17:18:29 +0200 (di, 20 jul 2010) $
 -- Last changed by: $LastChangedBy: frans $
 */
 
@@ -63,7 +63,7 @@ create table md_resolution(
 	id int primary key default nextval('md_resolution_id')
 	,equivalentscale int  -- EquivalentScale.Denomintator
 	,distance real --see ISO 1903
-	,constraint scale_or_distance_not_null check (equivalentscale is not null or distance is not null)
+	,constraint scale_or_distance_null check ((equivalentscale is not null AND distance is null) or (equivalentscale is null AND distance is not null))
 );
 
 ---------> pronunciationofname

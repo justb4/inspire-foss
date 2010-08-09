@@ -15,20 +15,19 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
 <wfs:WFS_Capabilities xmlns:deegree="http://www.deegree.org/wfs"
 					  xmlns:ows="http://www.opengis.net/ows" xmlns:ogc="http://www.opengis.net/ogc"
 					  xmlns:wfs="http://www.opengis.net/wfs" xmlns:gml="http://www.opengis.net/gml/3.2"
 					  xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
 					  xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+					  xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0" updateSequence="0.0.1">
 	<!-- ================================================================== -->
 	<!-- DEEGREE PARAMETERS                                                                                              -->
 	<!-- ================================================================== -->
 	<deegree:deegreeParams>
 		<!-- mandatory; used as the default URL for omitted DCP-elements (in the OperationMetadata section) -->
-		<deegree:DefaultOnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
-									   xlink:href="http://inspire.kademo.nl/deegree-wfs/services"/>
+		<deegree:DefaultOnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost:8080/deegree-wfs-gn/services"/>
 		<!-- optional; default = 100 (MB); cache size available for storing feature instances in memory,
 			  not implemented yet -->
 		<deegree:CacheSize>100</deegree:CacheSize>
@@ -49,27 +48,20 @@
 		<ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
 		<ows:Fees>None</ows:Fees>
 		<ows:AccessConstraints>None</ows:AccessConstraints>
-		<ows:Title>Addresses</ows:Title>
-		<!-- Pilot service under construction delivering Norwegian Addresses according Inspire
-			  Data spesification on addresses. Developed within the EURADIN project.-->
+		<ows:Title>WFS for the INSPIRE-FOSS project</ows:Title>
 		<ows:Abstract>
-			Dutch INSPIRE WFS with selected Annex I Themes - Developed within the EURADIN/ESDIN projects.
-			Under development. Current themes are AD (Addresses) and Cadastral Parcels (CP).
-
-			Data is based on a subset of Dutch "Buildings Adminstration" (GBA/BAG) for AD and
-			the "Basis Registratie Kadaster" for CP data.
-			Upcoming themes will be GeoNames (now partly available thorugh Addresses theme) and Topography (ExM).
+The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) software components for transformation, storage (ETL) and web-based delivery based on INSPIRE of local national geodata. The target group for this project are developers from EU member states that are tasked with delivering INSPIRE-based data services. 
 		</ows:Abstract>
 	</ows:ServiceIdentification>
 	<!-- ================================================================== -->
 	<!-- SERVICE PROVIDER SECTION                                                                                     -->
 	<!-- ================================================================== -->
 	<ows:ServiceProvider>
-		<ows:ProviderName>Dutch Kadaster</ows:ProviderName>
-		<ows:ProviderSite xlink:href="http://www.kadaster.nl"/>
+		<ows:ProviderName>INSPIRE-FOSS</ows:ProviderName>
+		<ows:ProviderSite xlink:href="http://code.google.com/p/inspire-foss/"/>
 		<ows:ServiceContact>
-			<ows:IndividualName>Ebrahim Hemmatnia</ows:IndividualName>
-			<ows:PositionName>Geo Consultant</ows:PositionName>
+			<ows:IndividualName></ows:IndividualName>
+			<ows:PositionName></ows:PositionName>
 			<ows:ContactInfo>
 				<ows:Phone>
 					<ows:Voice/>
@@ -77,17 +69,17 @@
 				</ows:Phone>
 				<ows:Address>
 					<ows:DeliveryPoint/>
-					<ows:City>Apeldoorn</ows:City>
+					<ows:City></ows:City>
 					<ows:AdministrativeArea/>
-					<ows:PostalCode>7311KZ</ows:PostalCode>
-					<ows:Country>The Netherlands</ows:Country>
+					<ows:PostalCode></ows:PostalCode>
+					<ows:Country></ows:Country>
 					<ows:ElectronicMailAddress/>
 				</ows:Address>
-				<ows:OnlineResource xlink:href="http://inspire.kademo.nl/deegree-wfs/services"/>
+				<ows:OnlineResource xlink:href="http://code.google.com/p/inspire-foss/"/>
 				<ows:HoursOfService/>
 				<ows:ContactInstructions/>
 			</ows:ContactInfo>
-			<ows:Role>PointOfContact</ows:Role>
+			<ows:Role></ows:Role>
 		</ows:ServiceContact>
 	</ows:ServiceProvider>
 	<!-- ================================================================== -->
@@ -134,7 +126,7 @@
 		</ows:Operation>
 		<!-- Sets default CRS   -->
 		<ows:Parameter name="srsName">
-			<ows:Value>urn:ogc:def:crs:epsg:4258</ows:Value>
+			<ows:Value>urn:ogc:def:crs:EPSG::4258</ows:Value>
 		</ows:Parameter>
 		<!-- Maximum number of features, which the WFS will return to the client  -->
 		<ows:Constraint name="DefaultMaxFeatures">
@@ -150,6 +142,7 @@
 		SRSs. There still has to be a featuretype definition in the <deegree:DataDirectory>.
 		You can also define deegreewfs:inFilter and deegreewfs:outFilter attributs to the <wfs:OutputFormats>
 		to change GML format. Refer documentation for this topic.  -->
+
 	<wfs:FeatureTypeList>
 		<wfs:FeatureType xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0">
 			<wfs:Name>CP:CadastralParcel</wfs:Name>
@@ -184,7 +177,7 @@
 				<ows:UpperCorner>6 55</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
-
+		
 		<wfs:FeatureType xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
 			<wfs:Name>AD:Address</wfs:Name>
 			<wfs:Title>Address</wfs:Title>
@@ -218,6 +211,7 @@
 				<ows:UpperCorner>6 55</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
+		
 		<wfs:FeatureType xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
 			<wfs:Name>AD:AdminUnitName</wfs:Name>
 			<wfs:Title>AdminUnitName</wfs:Title>
@@ -252,6 +246,7 @@
 				<ows:UpperCorner>6 55</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
+		
 		<wfs:FeatureType xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
 			<wfs:Name>AD:AddressAreaName</wfs:Name>
 			<wfs:Title>AddressAreaName</wfs:Title>
@@ -286,6 +281,7 @@
 				<ows:UpperCorner>6 55</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
+		
 		<wfs:FeatureType xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
 			<wfs:Name>AD:PostalDescriptor</wfs:Name>
 			<wfs:Title>PostalDescriptor</wfs:Title>
@@ -320,6 +316,7 @@
 				<ows:UpperCorner>6 55</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
+		
 		<wfs:FeatureType xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
 			<wfs:Name>AD:ThoroughfareName</wfs:Name>
 			<wfs:Title>ThoroughfareName</wfs:Title>
@@ -355,7 +352,27 @@
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 
-
+		<wfs:FeatureType xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+		<wfs:Name>gn:NamedPlace</wfs:Name>
+		<wfs:Title>Named Places</wfs:Title>
+		<wfs:Abstract>Named places according to the INSPIRE Geographical Names theme</wfs:Abstract>
+		<ows:Keywords>
+			<ows:Keyword>Geographical Names</ows:Keyword>
+		</ows:Keywords>
+		<wfs:DefaultSRS>urn:ogc:def:crs:EPSG::4258</wfs:DefaultSRS>
+		<wfs:OutputFormats xmlns:deegreewfs="http://www.deegree.org/wfs">
+			<wfs:Format
+				deegreewfs:inFilter="xslt/gml321/infilter_inspire_main.xsl"
+				deegreewfs:outFilter="xslt/gml321/outfilter_inspire_main_2.xsl"
+				deegreewfs:schemaLocation="http://research.geodan.nl/sr/esdin/schemas/v3.0/GeographicalNames.xsd">text/xml; subtype=gml/3.2.1
+			</wfs:Format>
+			<wfs:Format>text/xml; subtype=gml/3.1.1</wfs:Format>
+		</wfs:OutputFormats>
+		<ows:WGS84BoundingBox>
+			<ows:LowerCorner>2 50</ows:LowerCorner>
+			<ows:UpperCorner>6 55</ows:UpperCorner>
+		</ows:WGS84BoundingBox>
+	</wfs:FeatureType>
 	</wfs:FeatureTypeList>
 	<!-- ================================================================== -->
 	<!-- FILTER CAPABILITIES SECTION                                                                                   -->

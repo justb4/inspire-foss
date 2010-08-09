@@ -9,9 +9,9 @@
 	<!-- General settings ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 	<xsd:annotation>
 		<xsd:appinfo>
-			<deegreewfs:Prefix>GN</deegreewfs:Prefix>
+			<deegreewfs:Prefix>gn</deegreewfs:Prefix>
 			<deegreewfs:Backend>POSTGIS</deegreewfs:Backend>
-			<deegreewfs:DefaultSRS>EPSG:4258</deegreewfs:DefaultSRS>
+			<deegreewfs:DefaultSRS>urn:ogc:def:crs:EPSG::4258</deegreewfs:DefaultSRS>
 			<deegreewfs:SuppressXLinkOutput>false</deegreewfs:SuppressXLinkOutput>
 			<JDBCConnection xmlns="http://www.deegree.org/jdbc">
 				<Driver>org.postgresql.Driver</Driver>

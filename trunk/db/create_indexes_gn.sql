@@ -1,6 +1,6 @@
 /*
--- Revision: $Revision: 86 $
--- Date of last change: $LastChangedDate: 2010-07-16 17:08:52 +0200 (vr, 16 jul 2010) $
+-- Revision: $Revision: 87 $
+-- Date of last change: $LastChangedDate: 2010-07-20 17:18:29 +0200 (di, 20 jul 2010) $
 -- Last changed by: $LastChangedBy: frans $
 This script creates indexes  on the PostgreSQL schema for geographical names (GN) according to the INSPIRE specfication, version 3.0
 Index creation is done is this separate script to allow index creation after a bulk insert.
@@ -21,11 +21,12 @@ create index relatedspatialobject_namespace on relatedspatialobject(namespace);
 create index relatedspatialobject_namedplace on relatedspatialobject(namedplace);
 create index relatedspatialobject_versionid on relatedspatialobject(versionid);
 create index relatedspatialobject_identifier on relatedspatialobject(localid,namespace,versionid);
-create index localtype_language on localtype(language);
-create index localtype_country on localtype(country);
-create index localtype_characterencoding on localtype(characterencoding);
-create index localtype_text on localtype(text);
+create index localisedcharacterstring_language on localisedcharacterstring(language);
+create index localisedcharacterstring_country on localisedcharacterstring(country);
+create index localisedcharacterstring_characterencoding on localisedcharacterstring(characterencoding);
+create index localisedcharacterstring_text on localisedcharacterstring(text);
 create index localtype_namedplace on localtype(namedplace);
+create index localtype_localisedcharacterstring on localtype(localisedcharacterstring);
 create index spellingofname_text on spellingofname(text);
 create index spellingofname_script on spellingofname(script);
 create index spellingofname_transliterationscheme on spellingofname(transliterationscheme);

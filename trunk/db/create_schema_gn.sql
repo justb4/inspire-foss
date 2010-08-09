@@ -4,8 +4,8 @@ Author(s): Frans Knibbe (Geodan)
 Note:
 - Voidable elements are not distinguished from nillable elements.
 
--- Revision: $Revision: 87 $
--- Date of last change: $LastChangedDate: 2010-07-20 17:18:29 +0200 (di, 20 jul 2010) $
+-- Revision: $Revision: 89 $
+-- Date of last change: $LastChangedDate: 2010-08-03 10:01:16 +0200 (di, 03 aug 2010) $
 -- Last changed by: $LastChangedBy: frans $
 */
 
@@ -130,16 +130,24 @@ create table spellingofname(
 	,transliterationscheme text
 );
 
+---------> localisedcharacterstring
+-- For the definition, see iso-19139
+create sequence localisedcharacterstring_id;
+create table localisedcharacterstring(
+	id int primary key default nextval('localisedcharacterstring_id')
+	,language char(3) not null -- iso 639-2
+	,country char(2)  -- iso 3166
+	,characterencoding char(30) not null -- md_charactersetcode is defined in iso-19115
+	,text text not null
+);
+
 ---------> localtype
 -- localtype is of type lcoalisedcharacterstring. for the definition, see iso-19139
 create sequence localtype_id;
 create table localtype(
 	id int primary key default nextval('localtype_id')
 	,namedplace bigint not null references namedplace(id)
-	,language char(3) not null -- iso 639-2
-	,country char(2)  -- iso 3166
-	,characterencoding char(30) not null -- md_charactersetcode is defined in iso-19115
-	,text text not null
+	,localisedcharacterstring bigint not null references localisedcharacterstring(id)
 );
 
 ---------> placetypes: relate namedplaces to place types

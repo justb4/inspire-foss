@@ -53,8 +53,8 @@
 				<xsl:for-each select="GN:localType">
 					<GN:localType>
 						<xsl:element name="gmd:LocalisedCharacterString">
-							<xsl:attribute name="locale"><xsl:value-of select="concat(GN:LocalType/GN:language,'-',GN:LocalType/GN:country)"/></xsl:attribute>
-							<xsl:value-of select="GN:LocalType/GN:text"/>
+							<xsl:attribute name="locale"><xsl:value-of select="concat(GN:LocalType/GN:LocalisedCharacterString/GN:LocalisedCharacterString/GN:language,'-',GN:LocalType/GN:LocalisedCharacterString/GN:LocalisedCharacterString/GN:country)"/></xsl:attribute>
+							<xsl:value-of select="GN:LocalType/GN:LocalisedCharacterString/GN:LocalisedCharacterString/GN:text"/>
 						</xsl:element>
 					</GN:localType>
 				</xsl:for-each>

@@ -60,8 +60,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 		<ows:ProviderName>INSPIRE-FOSS</ows:ProviderName>
 		<ows:ProviderSite xlink:href="http://code.google.com/p/inspire-foss/"/>
 		<ows:ServiceContact>
-			<ows:IndividualName></ows:IndividualName>
-			<ows:PositionName></ows:PositionName>
+			<ows:IndividualName>Just van den Broecke</ows:IndividualName>
+			<ows:PositionName>Developer</ows:PositionName>
 			<ows:ContactInfo>
 				<ows:Phone>
 					<ows:Voice/>
@@ -173,8 +173,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 							deegreewfs:schemaLocation="http://schemas.kademo.nl/inspire/v3.0/CadastralParcels.xsd">text/xml; subtype=gml/3.1.1</wfs:Format>
 			</wfs:OutputFormats>
 			<ows:WGS84BoundingBox>
-				<ows:LowerCorner>2 50</ows:LowerCorner>
-				<ows:UpperCorner>6 55</ows:UpperCorner>
+				<ows:LowerCorner>5.6 50.7</ows:LowerCorner>
+				<ows:UpperCorner>7.1 52.4</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 		
@@ -207,8 +207,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 							deegreewfs:schemaLocation="http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd">text/xml; subtype=gml/3.1.1</wfs:Format>
 			</wfs:OutputFormats>
 			<ows:WGS84BoundingBox>
-				<ows:LowerCorner>2 50</ows:LowerCorner>
-				<ows:UpperCorner>6 55</ows:UpperCorner>
+				<ows:LowerCorner>4.2 51.5</ows:LowerCorner>
+				<ows:UpperCorner>5.6 52.8</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 		
@@ -242,8 +242,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 							deegreewfs:schemaLocation="http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd">text/xml; subtype=gml/3.1.1</wfs:Format>
 			</wfs:OutputFormats>
 			<ows:WGS84BoundingBox>
-				<ows:LowerCorner>2 50</ows:LowerCorner>
-				<ows:UpperCorner>6 55</ows:UpperCorner>
+				<ows:LowerCorner>4.2 51.5</ows:LowerCorner>
+				<ows:UpperCorner>5.6 52.8</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 		
@@ -277,8 +277,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 							deegreewfs:schemaLocation="http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd">text/xml; subtype=gml/3.1.1</wfs:Format>
 			</wfs:OutputFormats>
 			<ows:WGS84BoundingBox>
-				<ows:LowerCorner>2 50</ows:LowerCorner>
-				<ows:UpperCorner>6 55</ows:UpperCorner>
+				<ows:LowerCorner>4.2 51.5</ows:LowerCorner>
+				<ows:UpperCorner>5.6 52.8</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 		
@@ -312,8 +312,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 							deegreewfs:schemaLocation="http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd">text/xml; subtype=gml/3.1.1</wfs:Format>
 			</wfs:OutputFormats>
 			<ows:WGS84BoundingBox>
-				<ows:LowerCorner>2 50</ows:LowerCorner>
-				<ows:UpperCorner>6 55</ows:UpperCorner>
+				<ows:LowerCorner>4.2 51.5</ows:LowerCorner>
+				<ows:UpperCorner>5.6 52.8</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 		
@@ -347,8 +347,8 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 							deegreewfs:schemaLocation="http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd">text/xml; subtype=gml/3.1.1</wfs:Format>
 			</wfs:OutputFormats>
 			<ows:WGS84BoundingBox>
-				<ows:LowerCorner>2 50</ows:LowerCorner>
-				<ows:UpperCorner>6 55</ows:UpperCorner>
+				<ows:LowerCorner>4.2 51.5</ows:LowerCorner>
+				<ows:UpperCorner>5.6 52.8</ows:UpperCorner>
 			</ows:WGS84BoundingBox>
 		</wfs:FeatureType>
 

@@ -13,9 +13,9 @@ See http://code.google.com/p/inspire-foss for the sources.
 
 The directories below contain the following:
 
-- db tools and SQL for the PostGIS INSPIRE database
-- ETL Extract Transfer Load, countr/NMA-specific transformation tools from national data to the INSPIRE DB
-- webapps - web applications (mainly WFS) for serving INSPIRE-compliant Theme data
-- doc - all documentation in Sphinx, see also http://inspire.kademo.nl
-- test some test code for INSPIRE Theme data GML validation (incomplete)
+- /db tools and SQL for the PostGIS INSPIRE database
+- /ETL Extract Transfer Load, countr/NMA-specific transformation tools from national data to the INSPIRE DB
+- /webapps - web applications (mainly WFS) for serving INSPIRE-compliant Theme data
+- /doc - all documentation in Sphinx, see also http://inspire.kademo.nl
+- /test some test code for INSPIRE Theme data GML validation (incomplete)
 

@@ -1,0 +1,33 @@
+<deegreeServicesMetadata xmlns="http://www.deegree.org/webservices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="0.6.0" xsi:schemaLocation="http://www.deegree.org/webservices http://schemas.deegree.org/webservices/0.6.0/services.xsd">
+  <!--
+    General service information for all services. Used in the GetCapabilities
+    responses.
+  -->
+  <ServiceIdentification>
+    <Title>INSPIRE Annex I Services</Title>
+    <Abstract>WFS and WMS services for INSPIRE Annex I themes.</Abstract>
+  </ServiceIdentification>
+  <ServiceProvider>
+    <ProviderName>Het Kadaster</ProviderName>
+    <ProviderSite>http://www.kadaster.nl</ProviderSite>
+    <ServiceContact>
+      <IndividualName>Just van den Broecke</IndividualName>
+      <PositionName>Service developer</PositionName>
+      <Phone>+31 654268627</Phone>
+      <!-- <Facsimile>NA</Facsimile> -->
+      <ElectronicMailAddress>just@justobjects.nl
+      </ElectronicMailAddress>
+      <Address>
+        <DeliveryPoint>De Grift</DeliveryPoint>
+        <City>Apeldoorn</City>
+        <AdministrativeArea>Gld</AdministrativeArea>
+        <PostalCode>53177</PostalCode>
+        <Country>Germany</Country>
+      </Address>
+      <OnlineResource>http://www.kadaster.nl</OnlineResource>
+      <HoursOfService>24x7</HoursOfService>
+      <ContactInstructions>Don't hesitate to call</ContactInstructions>
+      <Role>PointOfContact</Role>
+    </ServiceContact>
+  </ServiceProvider>
+</deegreeServicesMetadata>

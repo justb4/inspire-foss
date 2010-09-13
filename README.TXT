@@ -18,4 +18,6 @@ The directories below contain the following:
 - /webapps - web applications (mainly WFS) for serving INSPIRE-compliant Theme data
 - /doc - all documentation in Sphinx, see also http://inspire.kademo.nl
 - /test some test code for INSPIRE Theme data GML validation (incomplete)
+- /demos ready to use demo apps
+
 

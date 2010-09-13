@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<PooledConnection configVersion="0.5.0" xmlns="http://www.deegree.org/jdbc"
+				  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xsi:schemaLocation="http://www.deegree.org/jdbc http://schemas.deegree.org/jdbc/0.5.0/jdbc.xsd">
+	<Url>jdbc:postgresql://localhost:5432/inspire_blob</Url>
+	<User>inspire</User>
+	<Password>inspire</Password>
+	<PoolMinSize>5</PoolMinSize>
+	<PoolMaxSize>20</PoolMaxSize>
+</PooledConnection>
+		

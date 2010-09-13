@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<PostGISFeatureStore configVersion="0.6.0" xmlns="http://www.deegree.org/datasource/feature/postgis"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/0.6.0/postgis.xsd">
+  <NamespaceHint prefix="ad" namespaceURI="urn:x-inspire:specification:gmlas:Addresses:3.0" />
+  <NamespaceHint prefix="au" namespaceURI="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" />
+  <NamespaceHint prefix="base" namespaceURI="urn:x-inspire:specification:gmlas:BaseTypes:3.2" />
+  <NamespaceHint prefix="bui" namespaceURI="urn:x-inspire:specification:gmlas:Buildings:0.0" />
+  <NamespaceHint prefix="cp" namespaceURI="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" />
+  <NamespaceHint prefix="gn" namespaceURI="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" />
+  <NamespaceHint prefix="net" namespaceURI="urn:x-inspire:specification:gmlas:Network:3.2" />
+  <NamespaceHint prefix="tn" namespaceURI="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" />
+  <NamespaceHint prefix="tn-a" namespaceURI="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0" />
+  <StorageCRS>EPSG:4258</StorageCRS>
+  <JDBCConnId>inspire_blob</JDBCConnId>
+  <GMLSchemaFileURL gmlVersion="GML_32">../../../schemas/inspire/annex1/</GMLSchemaFileURL>
+</PostGISFeatureStore>

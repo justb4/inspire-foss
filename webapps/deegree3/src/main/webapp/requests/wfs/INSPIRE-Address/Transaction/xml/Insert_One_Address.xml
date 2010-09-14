@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:Transaction version="1.1.0" service="WFS" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+				 xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+				 xmlns:app="http://www.deegree.org/app" xmlns:xlink="http://www.w3.org/1999/xlink"
+				 xmlns:wfs="http://www.opengis.net/wfs" xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns:gml="http://www.opengis.net/gml"
+				 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" gml:id="NL.KAD.BAG"
+				 xsi:schemaLocation="urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd urn:x-inspire:specification:gmlas:CadastralParcels:3.0 http://schemas.kademo.nl/inspire/v3.0/CadastralParcels.xsd http://www.opengis.net/wfs http://schemas.kademo.nl/ogc/wfs/1.1.0-gml3.2.1/wfs.xsd">
+	<wfs:Insert handle="insert" idgen="UseExisting">
+		<wfs:FeatureCollection xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gsml="urn:cgi:xmlns:CGI:GeoSciML:2.0"
+							   xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml"
+							   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							   xmlns:wfs="http://www.opengis.net/wfs" numberOfFeatures="2"
+							   xsi:schemaLocation="urn:cgi:xmlns:CGI:GeoSciML:2.0 http://www.geosciml.org/geosciml/2.0/xsd/geosciml.xsd http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+			<gml:featureMember>
+				<AD:Address gml:id="NL.KAD.BAG.0532200000000024">
+<!--					<gml:boundedBy>
+						<gml:Envelope srsName="EPSG:4258">
+							<gml:lowerCorner>5.25059927 52.69139333</gml:lowerCorner>
+							<gml:upperCorner>5.25059927 52.69139333</gml:upperCorner>
+						</gml:Envelope>
+					</gml:boundedBy>  -->
+					<AD:inspireId>
+
+						<base:Identifier xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+							<base:localId>0532200000000024</base:localId>
+							<base:namespace>NL.KAD.BAG</base:namespace>
+						</base:Identifier>
+					</AD:inspireId>
+					<AD:position>
+						<AD:GeographicPosition xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
+							<AD:geometry>
+
+								<gml:Point gml:id="NL.KAD.BAG.0532200000000024_P" srsName="EPSG:4258">
+									<gml:pos>5.25059927 52.69139333</gml:pos>
+								</gml:Point>
+							</AD:geometry>
+							<AD:specification>entrance</AD:specification>
+							<AD:method>byOtherParty</AD:method>
+							<AD:default>true</AD:default>
+
+						</AD:GeographicPosition>
+					</AD:position>
+					<AD:locator>
+						<AD:AddressLocator xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0">
+							<AD:designator>
+								<AD:LocatorDesignator>
+									<AD:designator>1</AD:designator>
+									<AD:type>2</AD:type>
+
+								</AD:LocatorDesignator>
+							</AD:designator>
+							<AD:level>unitLevel</AD:level>
+						</AD:AddressLocator>
+					</AD:locator>
+					<AD:validFrom>2009-01-05T23:00:00.000</AD:validFrom>
+					<AD:validTo>2299-12-30T23:00:00.000</AD:validTo>
+
+					<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:beginLifespanVersion>
+					<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:endLifespanVersion>
+					<AD:component>
+						<!--Inlined feature 'NL.KAD.AA.1102'-->
+						<AD:AddressAreaName gml:id="NL.KAD.AA.1102">
+							<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:beginLifespanVersion>
+							<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:endLifespanVersion>
+							<AD:validFrom xsi:nil="true" nilReason="UNKNOWN"></AD:validFrom>
+							<AD:validTo xsi:nil="true" nilReason="UNKNOWN"></AD:validTo>
+
+							<AD:name>
+								<GN:GeographicalName xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+									<GN:language>nld</GN:language>
+									<GN:nativeness>Endonym</GN:nativeness>
+									<GN:nameStatus>Official</GN:nameStatus>
+									<GN:sourceOfName>Het Kadaster, Nederland</GN:sourceOfName>
+									<GN:pronunciation>
+
+										<GN:PronunciationOfName></GN:PronunciationOfName>
+									</GN:pronunciation>
+									<GN:spelling>
+										<GN:SpellingOfName>
+											<GN:text>Bovenkarspel</GN:text>
+											<GN:script>Latn</GN:script>
+										</GN:SpellingOfName>
+									</GN:spelling>
+
+								</GN:GeographicalName>
+							</AD:name>
+							<AD:namedPlace xsi:nil="true"/>
+						</AD:AddressAreaName>
+					</AD:component>
+					<AD:component>
+						<!--Inlined feature 'NL.KAD.PD.1611ED'-->
+						<AD:PostalDescriptor gml:id="NL.KAD.PD.1611ED">
+							<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:beginLifespanVersion>
+
+							<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:endLifespanVersion>
+							<AD:status></AD:status>
+							<AD:validFrom xsi:nil="true" nilReason="UNKNOWN"></AD:validFrom>
+							<AD:validTo xsi:nil="true" nilReason="UNKNOWN"></AD:validTo>
+							<AD:postCode>1611ED</AD:postCode>
+						</AD:PostalDescriptor>
+					</AD:component>
+					<AD:component>
+
+						<!--Inlined feature 'NL.KAD.TN.0532300000000101'-->
+						<AD:ThoroughfareName gml:id="NL.KAD.TN.0532300000000101">
+							<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:beginLifespanVersion>
+							<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></AD:endLifespanVersion>
+							<AD:validFrom xsi:nil="true" nilReason="UNKNOWN"></AD:validFrom>
+							<AD:validTo xsi:nil="true" nilReason="UNKNOWN"></AD:validTo>
+							<AD:name>
+								<GN:GeographicalName xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+									<GN:language>nld</GN:language>
+
+									<GN:nativeness>Endonym</GN:nativeness>
+									<GN:nameStatus>Official</GN:nameStatus>
+									<GN:sourceOfName>Het Kadaster, Nederland</GN:sourceOfName>
+									<GN:pronunciation>
+										<GN:PronunciationOfName></GN:PronunciationOfName>
+									</GN:pronunciation>
+									<GN:spelling>
+
+										<GN:SpellingOfName>
+											<GN:text>Madame Curiestraat</GN:text>
+											<GN:script>Latn</GN:script>
+										</GN:SpellingOfName>
+									</GN:spelling>
+								</GN:GeographicalName>
+							</AD:name>
+						</AD:ThoroughfareName>
+
+					</AD:component>
+				</AD:Address>
+
+			</gml:featureMember>
+
+
+		</wfs:FeatureCollection>
+	</wfs:Insert>
+</wfs:Transaction>

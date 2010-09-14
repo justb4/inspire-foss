@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
@@ -27,7 +26,6 @@
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.5.11" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.5.11" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: jaxen:jaxen:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.02" level="project" />
     <orderEntry type="library" name="Maven: xerces:xercesImpl:2.9.1" level="project" />
@@ -62,8 +60,6 @@
     <orderEntry type="library" name="Maven: com.vividsolutions:jts:1.10" level="project" />
     <orderEntry type="library" name="Maven: org.postgis:postgis-jdbc:1.3.3" level="project" />
     <orderEntry type="library" name="Maven: postgresql:postgresql:8.4-701.jdbc4" level="project" />
-    <orderEntry type="library" name="Maven: jogl:jogl:1.1.2" level="project" />
-    <orderEntry type="library" name="Maven: jogl:gluegen-rt:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.derby:derby:10.4.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.deegree:deegree-ogcschemas:20100506" level="project" />
     <orderEntry type="library" name="Maven: jgridshift:jgridshift:1.0-deegreeversion" level="project" />

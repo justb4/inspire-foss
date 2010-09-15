@@ -29,7 +29,7 @@ This checks out all code (read only) into a newly created directory "inspire-fos
 
 This demo runs a web application contained in the directory
 
-`inspire-foss/webapps/deegree-inspire-demo`. We will call this dir `$WEBAPP` further below.
+`inspire-foss/demos/deegree-inspire-demo`. We will call this dir `$WEBAPP` further below.
 
 Do the following commands
 

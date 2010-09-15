@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<wfs:GetFeature xmlns:wfs="http://www.opengis.net/wfs" xmlns:gml="http://www.opengis.net/gml"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.kademo.nl/ogc/wfs/1.1.0-gml3.2.1/wfs.xsd"
+    outputFormat="text/xml; subtype=gml/3.2.1" maxFeatures="10" version="1.1.0" service="WFS">
+    <wfs:Query typeName="CP:CadastralParcel">
+        <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:Within>
+                <ogc:PropertyName>CP:geometry</ogc:PropertyName>
+                <gml:Polygon xmlns:gml="http://www.opengis.net/gml">
+                    <gml:outerBoundaryIs>
+                       <gml:LinearRing srsName="EPSG:4258">
+                           <gml:coordinates>7.00,52.24 7.00,52.27 7.05,52.27 7.05,52.24 7.00,52.24</gml:coordinates>
+                        </gml:LinearRing>
+						<!-- <gml:LinearRing srsName="EPSG:4258">
+							 5.236138363706939 52.69878069631519
+
+							 <gml:coordinates>5.2,52.5 5.2,52.8 5.3,52.8 5.3,52.5 5.2,52.5</gml:coordinates>
+						 </gml:LinearRing>   -->
+                    </gml:outerBoundaryIs>
+                </gml:Polygon>
+            </ogc:Within>
+        </ogc:Filter>
+    </wfs:Query>
+</wfs:GetFeature>

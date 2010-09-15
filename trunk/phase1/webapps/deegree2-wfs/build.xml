@@ -1,0 +1,90 @@
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<!--
+
+Ant Build file for Deegree-wfs webapp.
+
+$Id: build.xml 99 2009-08-20 12:11:38Z just $
+-->
+<project name="inspire-deegree2-wfs" default="package" basedir=".">
+
+	<!-- Initialization of properties (dirs, files) -->
+	<property file="build.properties"/>
+	<property file="externals.properties"/>
+
+
+	<!-- Directory locations -->
+	<property name="home.dir" value="${basedir}"/>
+
+	<!-- Initialize: setup properties, create dirs and set timestamp.. -->
+	<target name="init">
+
+		<property name="build.dir" value="${home.dir}/../build/war"/>
+		<property name="build.war.dir" value="${build.dir}/deegree-wfs"/>
+		<property name="build.war.file" value="${build.dir}/deegree-wfs.war"/>
+
+		<!-- <exec executable="hostname" outputproperty="host.name"/>
+				<property file="../../${host.name}.properties"/>   -->
+
+		<delete dir="${build.war.dir}"/>
+		<mkdir dir="${build.war.dir}"/>
+		<tstamp/>
+	</target>
+
+	<target name="configure" depends="init">
+		<echo message="Configure war in ${build.war.dir}..."/>
+		<copy todir="${build.war.dir}" overwrite="true">
+			<fileset dir="${deegree-wfs.war.dir}"/>
+		</copy>
+
+		<!-- <copy todir="${build.war.dir}/WEB-INF/lib" overwrite="true" file="${deegree-wfs.jar}" />  -->
+
+		<delete dir="${build.war.dir}/WEB-INF/conf/wfs/featuretypes"/>
+		<delete dir="${build.war.dir}/client/requests/wfs"/>
+
+		<copy todir="${build.war.dir}" overwrite="true">
+			<fileset dir="${home.dir}"/>
+		</copy>
+
+		<!-- Replace host-dependent variables
+			<replace file="${build.war.dir}/WEB-INF/classes/geowebcache.xml"
+					 replacefilterfile="../../${host.name}.properties" summary="true"/>  -->
+
+
+		<!-- Replace host-dependent variables
+			<replace file="${build.war.dir}/WEB-INF/web.xml"
+					 replacefilterfile="../../${host.name}.properties" summary="true"/>  -->
+	</target>
+
+	<target name="package" depends="configure">
+		<echo message="Building war ${build.war.file}..."/>
+
+		<!-- Make war -->
+		<jar jarfile="${build.war.file}">
+			<fileset dir="${build.war.dir}">
+				<include name="**"/>
+			</fileset>
+		</jar>
+	</target>
+
+	<target name="deploy" depends="package">
+		<echo message="Deploy dir is ${deploy.local.dir}/webapps..."/>
+		<copy file="${build.war.file}" todir="${deploy.local.dir}/webapps" overwrite="true"/>
+	</target>
+
+</project>

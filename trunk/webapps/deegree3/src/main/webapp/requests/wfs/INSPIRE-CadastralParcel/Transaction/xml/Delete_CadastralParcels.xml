@@ -5,7 +5,7 @@
   xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
   xmlns:gn="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
   >
-  <wfs:Delete handle="delete1" typeName="CP:CadastralParcels">
+  <wfs:Delete handle="delete1" typeName="CP:CadastralParcel">
     <ogc:Filter>
       <ogc:Or>
         <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">

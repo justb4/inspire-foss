@@ -7,7 +7,7 @@ http://inspire.kademo.nl/deegree-inspire-demo in your own environment.
 
 == What is needed ==
 
-  * [http://java.sun.com Java], recent version 5 or higher
+  * [http://java.sun.com Java], recent version 6 or higher
   * [http://subversion.tigris.org/ Subversion] (SVN) client latest
   * [http://maven.apache.org Apache Maven], the build/run tool
 

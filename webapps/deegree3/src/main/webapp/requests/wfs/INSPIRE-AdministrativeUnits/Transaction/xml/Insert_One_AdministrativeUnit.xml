@@ -127,7 +127,7 @@
 			
 						<base:Identifier>
 							<base:localId>NL270362</base:localId>
-							<base:namespace>urn:x-exm:specification:gmlas:ExM_AdministrativeUnits:1.2</base:namespace>
+							<base:namespace>urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0</base:namespace>
 						</base:Identifier>
 					</AU:inspireId>
 					<AU:nationalLevel/>
@@ -188,7 +188,7 @@
 						<base:Identifier>
 							<base:localId>NL270362</base:localId>
 			
-							<base:namespace>urn:x-exm:specification:gmlas:ExM_AdministrativeUnits:1.2</base:namespace>
+							<base:namespace>urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0</base:namespace>
 						</base:Identifier>
 					</AU:SHNcode>
 					<AU:validFrom xsi:nil="true"/>   -->

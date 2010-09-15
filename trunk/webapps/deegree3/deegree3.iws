@@ -63,43 +63,7 @@
       <file leaf-file-name="PostGISFeatureStoreTransaction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/postgis/PostGISFeatureStoreTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="292" column="0" selection-start="10472" selection-end="10472" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/org/deegree/services/wfs/TransactionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="373" column="157" selection-start="16109" selection-end="16109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Delete_CadastralParcels.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-CadastralParcel/Transaction/xml/Delete_CadastralParcels.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="161" selection-start="895" selection-end="895" vertical-scroll-proportion="0.546697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlobMapping.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/mapping/BlobMapping.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="3045" selection-end="3045" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MappedApplicationSchema.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/mapping/MappedApplicationSchema.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="0" selection-start="7624" selection-end="7624" vertical-scroll-proportion="0.0">
+            <state line="294" column="0" selection-start="10560" selection-end="10560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,43 +72,79 @@
       <file leaf-file-name="PostGISFeatureStore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/postgis/PostGISFeatureStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="487" column="0" selection-start="19167" selection-end="19167" vertical-scroll-proportion="0.0">
+            <state line="1131" column="0" selection-start="45710" selection-end="45710" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Log4jLoggerAdapter.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11.jar!/org/slf4j/impl/Log4jLoggerAdapter.class">
+      <file leaf-file-name="AbstractFeature.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/AbstractFeature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="16" selection-start="2952" selection-end="2952" vertical-scroll-proportion="-8.791667">
+            <state line="138" column="129" selection-start="5231" selection-end="5231" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar!/org/apache/log4j/Category.java">
+      <file leaf-file-name="pgpass.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/pgpass.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="851" column="0" selection-start="25854" selection-end="25854" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hierarchy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar!/org/apache/log4j/Hierarchy.java">
+      <file leaf-file-name="Insert_One_AdministrativeUnit.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-AdministrativeUnits/Transaction/xml/Insert_One_AdministrativeUnit.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="351" column="0" selection-start="9765" selection-end="9765" vertical-scroll-proportion="0.0">
+            <state line="114" column="110" selection-start="7542" selection-end="7542" vertical-scroll-proportion="-1.5754716">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractDefaultGeometry.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/geometry/standard/AbstractDefaultGeometry.java">
+      <file leaf-file-name="create-database.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/create-database.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.0">
+            <state line="3" column="76" selection-start="178" selection-end="190" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardGMLFeatureProps.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/gml/feature/StandardGMLFeatureProps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="160" column="0" selection-start="6882" selection-end="6882" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericProperty.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/property/GenericProperty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="0" selection-start="4401" selection-end="4401" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/org/deegree/services/wfs/TransactionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="347" column="0" selection-start="14886" selection-end="14886" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GMLInputFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/gml/GMLInputFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="61" selection-start="2721" selection-end="2721" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,6 +165,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-Address/Transaction/xml/Insert_One_Address_XLinked.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-CadastralParcel/Transaction/xml/Delete_CadastralParcels.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/pgpass.conf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-AdministrativeUnits/Transaction/xml/Insert_One_AdministrativeUnit.xml" />
       </list>
     </option>
   </component>
@@ -371,308 +373,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schemas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inspire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annex1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schemas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wfs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="INSPIRE-CadastralParcel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Transaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wfs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="INSPIRE-CadastralParcel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wfs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="INSPIRE-Address" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Transaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wfs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="INSPIRE-Address" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deegree3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wfs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -958,7 +658,7 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="402" y="480" width="1920" height="1106" extended-state="0" />
+    <frame x="1146" y="53" width="1920" height="1106" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -969,8 +669,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.48221344" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51086956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.48221344" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51086956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1011,62 +711,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/schemas/inspire/annex1/Addresses.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="509" column="158" selection-start="34454" selection-end="34454" vertical-scroll-proportion="-7.36">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-Address/Transaction/xml/Insert_One_Address_Inlined.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="0" selection-end="6317" vertical-scroll-proportion="-11.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-Address/Transaction/xml/Insert_Addresses.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="524" column="46" selection-start="22384" selection-end="23468" vertical-scroll-proportion="-17.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-Address/Transaction/xml/Insert_One_Address_XLinked.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="26" selection-start="0" selection-end="5862" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="29" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/GenericFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="3479" selection-end="3479" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/geometry/standard/AbstractDefaultGeometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar!/org/apache/log4j/Hierarchy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="0" selection-start="9765" selection-end="9765" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar!/org/apache/log4j/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="851" column="0" selection-start="25854" selection-end="25854" vertical-scroll-proportion="0.0">
@@ -1077,13 +721,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11.jar!/org/slf4j/impl/Log4jLoggerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="16" selection-start="2952" selection-end="2952" vertical-scroll-proportion="-8.791667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/postgis/PostGISFeatureStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="487" column="0" selection-start="19167" selection-end="19167" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1102,23 +739,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/postgis/PostGISFeatureStoreTransaction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-CadastralParcel/Transaction/xml/Delete_CadastralParcels.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="292" column="0" selection-start="10472" selection-end="10472" vertical-scroll-proportion="0.0">
+        <state line="20" column="161" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/gml/GMLVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="12" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/gml/GMLInputFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="61" selection-start="2721" selection-end="2721" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/property/GenericProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="4401" selection-end="4401" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/gml/feature/StandardGMLFeatureProps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="0" selection-start="6882" selection-end="6882" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/postgis/PostGISFeatureStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1131" column="0" selection-start="45710" selection-end="45710" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/org/deegree/services/wfs/TransactionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="373" column="157" selection-start="16109" selection-end="16109" vertical-scroll-proportion="0.0">
+        <state line="347" column="0" selection-start="14886" selection-end="14886" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-CadastralParcel/Transaction/xml/Delete_CadastralParcels.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/persistence/postgis/PostGISFeatureStoreTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="161" selection-start="895" selection-end="895" vertical-scroll-proportion="0.546697">
+        <state line="294" column="0" selection-start="10560" selection-end="10560" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-core/3.0-SNAPSHOT/deegree-core-3.0-SNAPSHOT-sources.jar!/org/deegree/feature/AbstractFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="129" selection-start="5231" selection-end="5231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/create-database.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="76" selection-start="178" selection-end="190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/pgpass.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/requests/wfs/INSPIRE-AdministrativeUnits/Transaction/xml/Insert_One_AdministrativeUnit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="110" selection-start="7542" selection-end="7542" vertical-scroll-proportion="-1.5754716">
           <folding />
         </state>
       </provider>

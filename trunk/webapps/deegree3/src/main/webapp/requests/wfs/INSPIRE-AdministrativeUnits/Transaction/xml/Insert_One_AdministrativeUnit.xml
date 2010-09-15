@@ -15,15 +15,36 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
+<!--		xmlns:gml="http://www.opengis.net/gml/3.2"
+		xmlns:gml31="http://www.opengis.net/gml"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:xgn="urn:x-exm:specification:gmlas:ExM_GeographicalNames:1.2"
+		xmlns:xau="urn:x-exm:specification:gmlas:ExM_AdministrativeUnits:1.2"
+		xmlns:wfs="http://www.opengis.net/wfs"
+		xmlns:stat="urn:x-inspire:specification:gmlas:StatisticalUnits:0.0"
+		xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language"
+		xmlns:smil20="http://www.w3.org/2001/SMIL20/"
+		xmlns:gts="http://www.isotc211.org/2005/gts"
+		xmlns:gss="http://www.isotc211.org/2005/gss"
+		xmlns:gsr="http://www.isotc211.org/2005/gsr"
+		xmlns:gmd="http://www.isotc211.org/2005/gmd"
+		xmlns:gco="http://www.isotc211.org/2005/gco"
+		xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+		xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
+		xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
+		xsi:schemaLocation="urn:x-exm:specification:gmlas:ExM_AdministrativeUnits:1.2 http://esdin.fgi.fi/schemas/ExM/ExMAdministrativeUnits.xsd                                urn:x-exm:specification:gmlas:ExM_GeographicalNames:1.2 http://esdin.fgi.fi/schemas/ExM/ExMGeographicalNames.xsd                                http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd" gml:id="ExM.AU"> -->
+
 <wfs:Transaction version="1.1.0" service="WFS" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-				 xmlns:AU="urn:x-inspire:specification:gmlas:AdminstrativeUnits:3.0"
+				 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
 				 xmlns:app="http://www.deegree.org/app"
 				 xmlns:xlink="http://www.w3.org/1999/xlink"
 				 xmlns:wfs="http://www.opengis.net/wfs"
 				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns:gmd="http://www.isotc211.org/2005/gmd"
 				 xmlns:gml="http://www.opengis.net/gml"
 				 gml:id="NL.KAD.AU"
-				 xsi:schemaLocation="urn:x-inspire:specification:gmlas:AdminstrativeUnits:3.0 http://schemas.kademo.nl/inspire/v3.0/AdminstrativeUnits.xsd">
+				 xsi:schemaLocation="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://schemas.kademo.nl/inspire/v3.0/AdministrativeUnits.xsd">
 
 	<wfs:Insert handle="insert" idgen="UseExisting">
 		<wfs:FeatureCollection xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -31,8 +52,10 @@
 							   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 							   xmlns:gml="http://www.opengis.net/gml"
 							   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							   xmlns:gmd="http://www.isotc211.org/2005/gmd"
 							   xmlns:wfs="http://www.opengis.net/wfs"
-							   xmlns:AU="urn:x-inspire:specification:gmlas:AdminstrativeUnits:3.0"
+							   xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
+							   xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 							   numberOfFeatures="1"
 							   xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
 
@@ -161,14 +184,14 @@
 					<AU:NUTS xlink:href=""/>
 					<AU:condominium xsi:nil="true"/>
 					<AU:boundary xsi:nil="true"/>
-					<AU:SHNcode>
+					<!-- <AU:SHNcode>
 						<base:Identifier>
 							<base:localId>NL270362</base:localId>
 			
 							<base:namespace>urn:x-exm:specification:gmlas:ExM_AdministrativeUnits:1.2</base:namespace>
 						</base:Identifier>
 					</AU:SHNcode>
-					<AU:validFrom xsi:nil="true"/>
+					<AU:validFrom xsi:nil="true"/>   -->
 				</AU:AdministrativeUnit>
 			</gml:featureMember>
 		</wfs:FeatureCollection>

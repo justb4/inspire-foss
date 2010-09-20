@@ -810,17 +810,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.deegree:deegree-services:sources:3.0-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
   </component>
 </project>
 

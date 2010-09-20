@@ -14,9 +14,7 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
-
-<base:SpatialDataSet gml:id="NL.KAD.AU"
+<base:SpatialDataSet
 					 xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
 					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
 					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
@@ -24,29 +22,22 @@
 					 xmlns:xlink="http://www.w3.org/1999/xlink" 
 					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 					 xmlns:gml="http://www.opengis.net/gml/3.2">
-	
-
-	<gml:boundedBy>
-		<gml:Envelope srsName="EPSG:4258">
-			<gml:lowerCorner>5.234514684466063 52.68961794947077</gml:lowerCorner>
-			<gml:upperCorner>5.2540758176641 52.711751467641456</gml:upperCorner>
-		</gml:Envelope>
-	</gml:boundedBy>
+		
 	<base:identifier>
 		<base:Identifier>
 			<base:localId>0</base:localId>
 			<base:namespace>NL.KAD.AU</base:namespace>
 		</base:Identifier>
 	</base:identifier>
+
 	<base:metadata xsi:nil="true"/>
 	
 	<base:member>
 		<AU:AdministrativeUnit gml:id="NL.KAD.AU.GEM.0362">
 			<AU:geometry>
-				<gml:MultiSurface srsName="EPSG:4258">
-					<gml:surfaceMember>
-						<gml:Surface srsName="EPSG:4258">
-
+				<gml:MultiSurface  srsName="EPSG:4258">
+					<gml:surfaceMembers>
+						<gml:Surface  srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch>
 									<gml:exterior>
@@ -107,25 +98,26 @@
 								</gml:PolygonPatch>
 							</gml:patches>
 						</gml:Surface>
-					</gml:surfaceMember>
+					</gml:surfaceMembers>
 				</gml:MultiSurface>
 			</AU:geometry>
-			<AU:nationalCode>NL</AU:nationalCode>
+			<AU:nationalCode>0362</AU:nationalCode>
 			<AU:inspireId>
-
 				<base:Identifier>
 					<base:localId>NL.KAD.AU.GEM.0362</base:localId>
 					<base:namespace>urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0</base:namespace>
 				</base:Identifier>
 			</AU:inspireId>
-			<AU:nationalLevel/>
+			<AU:nationalLevel>
+				3rdOrder
+			</AU:nationalLevel>
 			<AU:nationalLevelName>
-				<gmd:LocalisedCharacterString/>
+				<gmd:LocalisedCharacterString>gemeente</gmd:LocalisedCharacterString>
 			</AU:nationalLevelName>
 			<AU:country>
 				<gmd:Country
-						codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#Country"
-						codeListValue="NL">NL
+						codeList="http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml#_25936_44693"
+						codeListValue="NL">
 				</gmd:Country>
 			</AU:country>
 			<AU:name>
@@ -134,7 +126,7 @@
 					<GN:language/>
 					<GN:nativeness>endonym</GN:nativeness>
 					<GN:nameStatus>official</GN:nameStatus>
-					<GN:sourceOfName>EuroGlobalMap</GN:sourceOfName>
+					<GN:sourceOfName>http://www.bprbzk.nl</GN:sourceOfName>
 					<GN:pronunciation xsi:nil="true"/>
 					<GN:spelling>
 						<GN:SpellingOfName>
@@ -145,43 +137,13 @@
 				</GN:GeographicalName>
 			</AU:name>
 
-			<AU:residenceOfAuthority>
-				<AU:ResidenceOfAuthority>
-					<AU:name>
-						<GN:GeographicalName>
-							<GN:language/>
-							<GN:nativeness>endonym</GN:nativeness>
-							<GN:nameStatus>official</GN:nameStatus>
-							<GN:sourceOfName>EuroGlobalMap</GN:sourceOfName>
-							<GN:pronunciation xsi:nil="true"/>
-							<GN:spelling>
-								<GN:SpellingOfName>
-									<GN:text>Amstelveen</GN:text>
-									<GN:script/>
+			<AU:residenceOfAuthority xsi:nil="true"/>
+			
+			<AU:beginLifespanVersion xsi:nil="true"/>
+			
+			<AU:NUTS xsi:nil="true"/>
 
-								</GN:SpellingOfName>
-							</GN:spelling>
-						</GN:GeographicalName>
-					</AU:name>
-					<AU:geometry xsi:nil="true"/>
-				</AU:ResidenceOfAuthority>
-			</AU:residenceOfAuthority>
-			
-			<AU:beginLifespanVersion>2009-09-01T00:00:00</AU:beginLifespanVersion>
-			
-			<AU:NUTS xlink:href=""/>
-			<AU:NUTS xlink:href=""/>
-			<AU:NUTS xlink:href=""/>
-			<AU:condominium xsi:nil="true"/>
 			<AU:boundary xsi:nil="true"/>
-			<!-- <AU:SHNcode>
-									<base:Identifier>
-										<base:localId>NL270362</base:localId>
-						
-										<base:namespace>urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0</base:namespace>
-									</base:Identifier>
-								</AU:SHNcode>
-								<AU:validFrom xsi:nil="true"/>   -->
 		</AU:AdministrativeUnit>
 	</base:member>
 </base:SpatialDataSet>

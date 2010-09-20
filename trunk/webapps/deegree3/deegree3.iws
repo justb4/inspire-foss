@@ -59,19 +59,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/org/deegree/services/wfs/WFSController.java" line="407" class="org.deegree.services.wfs.WFSController" package="org.deegree.services.wfs">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -147,7 +134,7 @@
       <file leaf-file-name="WFSController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/org/deegree/services/wfs/WFSController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="404" column="35" selection-start="19024" selection-end="19024" vertical-scroll-proportion="0.2659176">
+            <state line="407" column="0" selection-start="19078" selection-end="19078" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
@@ -721,7 +708,7 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="623" y="91" width="1920" height="1106" extended-state="0" />
+    <frame x="1197" y="72" width="1920" height="1106" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -890,7 +877,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/deegree/deegree-services/3.0-SNAPSHOT/deegree-services-3.0-SNAPSHOT-sources.jar!/org/deegree/services/wfs/WFSController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="404" column="35" selection-start="19024" selection-end="19024" vertical-scroll-proportion="0.2659176">
+        <state line="407" column="0" selection-start="19078" selection-end="19078" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>

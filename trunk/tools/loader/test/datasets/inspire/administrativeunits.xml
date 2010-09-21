@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
   ~ Copyright (C) 2010  Het Kadaster - The Netherlands
   ~
   ~ This program is free software: you can redistribute it and/or modify
@@ -14,30 +15,20 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-<base:SpatialDataSet
-					 xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
-					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
-					 xmlns:gmd="http://www.isotc211.org/2005/gmd"
-					 xmlns:xlink="http://www.w3.org/1999/xlink" 
-					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					 xmlns:gml="http://www.opengis.net/gml/3.2">
-		
+<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"   xsi:schemaLocation="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://research.geodan.nl/esdin/schemas/v3.0/AdministrativeUnits.xsd" gml:id="EU.INSPIRE-FOSS">
 	<base:identifier>
 		<base:Identifier>
 			<base:localId>0</base:localId>
 			<base:namespace>NL.KAD.AU</base:namespace>
 		</base:Identifier>
 	</base:identifier>
-
 	<base:metadata xsi:nil="true"/>
-	
 	<base:member>
 		<AU:AdministrativeUnit gml:id="NL.KAD.AU.GEM.0362">
 			<AU:geometry>
-				<gml:MultiSurface  srsName="EPSG:4258">
+				<gml:MultiSurface gml:id="NL.KAD.AU.GEM.1" srsName="EPSG:4258">
 					<gml:surfaceMembers>
-						<gml:Surface  srsName="EPSG:4258">
+						<gml:Surface gml:id="NL.KAD.AU.GEM.2" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch>
 									<gml:exterior>
@@ -115,14 +106,11 @@
 				<gmd:LocalisedCharacterString>gemeente</gmd:LocalisedCharacterString>
 			</AU:nationalLevelName>
 			<AU:country>
-				<gmd:Country
-						codeList="http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml#_25936_44693"
-						codeListValue="NL">
+				<gmd:Country codeList="http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml#_25936_44693" codeListValue="NL">
 				</gmd:Country>
 			</AU:country>
 			<AU:name>
 				<GN:GeographicalName>
-
 					<GN:language/>
 					<GN:nativeness>endonym</GN:nativeness>
 					<GN:nameStatus>official</GN:nameStatus>
@@ -136,15 +124,10 @@
 					</GN:spelling>
 				</GN:GeographicalName>
 			</AU:name>
-
 			<AU:residenceOfAuthority xsi:nil="true"/>
-			
 			<AU:beginLifespanVersion xsi:nil="true"/>
-			
 			<AU:NUTS xsi:nil="true"/>
-
 			<AU:boundary xsi:nil="true"/>
 		</AU:AdministrativeUnit>
 	</base:member>
 </base:SpatialDataSet>
-

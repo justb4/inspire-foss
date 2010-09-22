@@ -15,7 +15,12 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"   xsi:schemaLocation="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://research.geodan.nl/esdin/schemas/v3.0/AdministrativeUnits.xsd" gml:id="EU.INSPIRE-FOSS">
+<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
+					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
+					 xmlns:gmd="http://www.isotc211.org/2005/gmd"
+					 xmlns:xlink="http://www.w3.org/1999/xlink"
+					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"   xsi:schemaLocation="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://research.geodan.nl/esdin/schemas/v3.0/AdministrativeUnits.xsd" gml:id="NL.KAD.AU">
 	<base:identifier>
 		<base:Identifier>
 			<base:localId>0</base:localId>
@@ -26,9 +31,9 @@
 	<base:member>
 		<AU:AdministrativeUnit gml:id="NL.KAD.AU.GEM.0362">
 			<AU:geometry>
-				<gml:MultiSurface gml:id="NL.KAD.AU.GEM.1" srsName="EPSG:4258">
+				<gml:MultiSurface gml:id="NL.KAD.AU.GEM.0362.1" srsName="EPSG:4258">
 					<gml:surfaceMembers>
-						<gml:Surface gml:id="NL.KAD.AU.GEM.2" srsName="EPSG:4258">
+						<gml:Surface gml:id="NL.KAD.AU.GEM.0362.2" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch>
 									<gml:exterior>

@@ -9,13 +9,13 @@ RESULT_FILE=${2}
 
 # Transformation
 function transform() {
-    echo "xsltproc percelen2cp.xsl $1 $2"
+    echo "xsltproc local-to-inspire-au.xsl $1 $2"
 
     # do the work
     # xsltproc -v --timing local-to-inspire-au.xsl $1
     # may use "nice"
     xsltproc local-to-inspire-au.xsl $1  > $2
-   echo "xsltproc percelen2cp.xsl $1 $2 DONE"
+   echo "xsltproc local-to-inspire-au.xsl $1 $2 DONE"
 }
 
 # Extract/Transfer/Load entire dir from PERCELEN XML to PostGIS

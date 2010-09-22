@@ -10,7 +10,7 @@ function transform() {
     echo "transforming $1 to $2"
 
     # Convert MapInfo to flat GML, also transforms coordinates to INSPIRE ETRS89
-    ogr2ogr -overwrite  -t_srs "EPSG:4258" -s_srs "EPSG:28992"  -f "GML" $2 $1
+    ogr2ogr -overwrite  -t_srs "EPSG:4258" -s_srs "EPSG:28992"  -lco DIM=2 -nlt MULTIPOLYGON -f "GML" $2 $1
 
     # Dutch source is encoded in Windows LATIN1 :-( (CP1252)
     # need to make UTF-8 encoded GML
@@ -20,6 +20,7 @@ function transform() {
     echo "transforming $1 to $2 DONE"
 }
 
+transform ${1}.TAB $2
 
 # transform Ned_Burgem.TAB gemeente.gml
 # transform Ned_Provincie.TAB provincie.gml

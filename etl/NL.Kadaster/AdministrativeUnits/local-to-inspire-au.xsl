@@ -75,7 +75,7 @@ but it would need some extra XSLT transformation)
 			<xsl:with-param name="nationalLevel">3rdOrder</xsl:with-param>
 			<xsl:with-param name="nationalLevelName">gemeente</xsl:with-param>
 			<xsl:with-param name="coordinates">
-				<xsl:value-of select="ogr:geometryProperty//gml:coordinates" xmlns:gml="http://www.opengis.net/gml"/>
+				<xsl:value-of select="translate(translate(normalize-space(ogr:geometryProperty/gml:MultiPolygon/gml:polygonMember/gml:Polygon/gml:outerBoundaryIs/gml:LinearRing/gml:coordinates),',0 ',' '),',',' ')"  xmlns:gml="http://www.opengis.net/gml"/>
 			</xsl:with-param>
 
 			<!--  <xsl:with-param name="geometry">
@@ -115,12 +115,13 @@ but it would need some extra XSLT transformation)
 								</xsl:attribute>
 								<xsl:attribute name="srsName">EPSG:4258</xsl:attribute>
 								<gml:patches>
+									<!-- see http://xml.fmi.fi/namespace/meteorology/conceptual-model/meteorological-objects/2009/03/26/docindex146.html#id541 -->
 									<gml:PolygonPatch interpolation="planar">
 										<gml:exterior>
 											<gml:LinearRing>
-												<gml:coordinates>
+												<gml:posList dimension="2">
 													<xsl:value-of select="$coordinates" />
-												</gml:coordinates>
+												</gml:posList>
 											</gml:LinearRing>
 										</gml:exterior>
 									</gml:PolygonPatch>

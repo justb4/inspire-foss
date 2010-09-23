@@ -80,11 +80,7 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 			</xsl:with-param>
 			<xsl:with-param name="nationalLevel">3rdOrder</xsl:with-param>
 			<xsl:with-param name="nationalLevelName">gemeente</xsl:with-param>
-			<xsl:with-param name="coordinates">
-				<xsl:value-of
-						select="translate(translate(normalize-space(ogr:geometryProperty/gml:MultiPolygon/gml:polygonMember/gml:Polygon/gml:outerBoundaryIs/gml:LinearRing/gml:coordinates),',0 ',' '),',',' ')"
-						xmlns:gml="http://www.opengis.net/gml"/>
-			</xsl:with-param>
+
 		</xsl:call-template>
 
 	</xsl:template>
@@ -97,19 +93,16 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 		<xsl:param name="name"/>
 		<xsl:param name="nationalLevel"/>
 		<xsl:param name="nationalLevelName"/>
-		<xsl:param name="coordinates"/>
 
 		<base:member>
 			<AU:AdministrativeUnit gml:id="{concat($idPrefix,'.',$localId)}">
 				<AU:geometry>
-					<xsl:call-template name="GML.MultiSurface.Polygon">
+					<xsl:apply-templates select="ogr:geometryProperty">
 						<xsl:with-param name="id">
 							<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
 						</xsl:with-param>
-						<xsl:with-param name="exteriorPosList">
-							<xsl:value-of select="$coordinates"/>
-						</xsl:with-param>
-					</xsl:call-template>
+					</xsl:apply-templates>
+
 				</AU:geometry>
 
 				<AU:nationalCode>
@@ -199,7 +192,7 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 
 	</xsl:template>
 
-	<!-- Generate GML MultiSurface Polygon element -->
+	<!-- Generate GML MultiSurface Polygon element
 	<xsl:template name="GML.MultiSurface.Polygon" priority="1">
 		<xsl:param name="id"/>
 		<xsl:param name="exteriorPosList"/>
@@ -208,7 +201,6 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 			<gml:surfaceMember>
 				<gml:Surface gml:id="{concat('Surface_',$id)}" srsName="{$srsName}">
 					<gml:patches>
-						<!-- see http://xml.fmi.fi/namespace/meteorology/conceptual-model/meteorological-objects/2009/03/26/docindex146.html#id541 -->
 						<gml:PolygonPatch interpolation="planar">
 							<gml:exterior>
 								<gml:LinearRing>
@@ -223,6 +215,61 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 			</gml:surfaceMember>
 		</gml:MultiSurface>
 
+	</xsl:template>                  -->
+
+
+	<xsl:template  xmlns:gml2="http://www.opengis.net/gml" match="gml2:MultiPolygon">
+		<xsl:param name="id"/>
+
+		<!-- see http://xml.fmi.fi/namespace/meteorology/conceptual-model/meteorological-objects/2009/03/26/docindex146.html#id541 -->
+		<gml:MultiSurface gml:id="{concat('MultiSurface_',$id)}" srsName="{$srsName}">
+			<xsl:apply-templates>
+				<xsl:with-param name="id" select="$id"/>
+			</xsl:apply-templates>
+
+		</gml:MultiSurface>
+	</xsl:template>
+
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:polygonMember">
+		<xsl:param name="id"/>
+
+		<gml:surfaceMember>
+			<gml:Surface gml:id="{concat('Surface_',$id, '.', position())}" srsName="{$srsName}">
+				<gml:patches>
+					<xsl:apply-templates/>
+				</gml:patches>
+			</gml:Surface>
+		</gml:surfaceMember>
+	</xsl:template>
+
+
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon">
+		<gml:PolygonPatch interpolation="planar">
+			<xsl:apply-templates/>
+		</gml:PolygonPatch>
+	</xsl:template>
+
+
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:innerBoundaryIs">
+		<gml:interior>
+			<gml:LinearRing>
+				<xsl:apply-templates/>
+			</gml:LinearRing>
+		</gml:interior>
+	</xsl:template>
+
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:outerBoundaryIs">
+		<gml:exterior>
+			<gml:LinearRing>
+				<xsl:apply-templates/>
+			</gml:LinearRing>
+		</gml:exterior>
+	</xsl:template>
+
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:coordinates">
+		<gml:posList srsName="{$srsName}" srsDimension="{$srsDimension}">
+			<xsl:value-of select="translate(translate(normalize-space(.),',0 ',' '),',',' ')"/>
+		</gml:posList>
 	</xsl:template>
 
 	<!-- Generate minimal GeographicalName element -->
@@ -235,9 +282,15 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 
 		<GN:GeographicalName>
 			<GN:language xsi:nil="true"/>
-			<GN:nativeness><xsl:value-of select="$nativeness"/></GN:nativeness>
-			<GN:nameStatus><xsl:value-of select="$nameStatus"/></GN:nameStatus>
-			<GN:sourceOfName><xsl:value-of select="$sourceOfName"/></GN:sourceOfName>
+			<GN:nativeness>
+				<xsl:value-of select="$nativeness"/>
+			</GN:nativeness>
+			<GN:nameStatus>
+				<xsl:value-of select="$nameStatus"/>
+			</GN:nameStatus>
+			<GN:sourceOfName>
+				<xsl:value-of select="$sourceOfName"/>
+			</GN:sourceOfName>
 			<GN:pronunciation xsi:nil="true"/>
 
 			<GN:spelling>

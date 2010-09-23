@@ -14,7 +14,7 @@ function transform() {
 
     # Dutch source is encoded in Windows LATIN1 :-( (CP1252)
     # need to make UTF-8 encoded GML
-    cat $2 | iconv -f CP1252 -t UTF-8 > temp.gml
+    cat $2 | iconv -f CP1252 -t UTF-8 | sed s/gml:/gml2:/g | sed s/:gml/:gml2/g > temp.gml
     mv temp.gml $2
 
     echo "transforming $1 to $2 DONE"

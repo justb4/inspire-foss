@@ -17,13 +17,13 @@
   -->
 
 <!--
-Transform a GML3.1.1 document to a INSPIRE AU SpatialDataset
-Author: Frans Knibbe, Geodan
 
-Input: ESRI shapefile, transformed to a GML 3.1.1. file  by the FME
-(ogr3ogr can also produce GML, but it's GML 2 and projection to EPSG:4258
-produces coordinates in the wrong order. Transforming ogr2ogr output should be possible
-but it would need some extra XSLT transformation)
+Transform a local GML document to a INSPIRE AU SpatialDataset.
+
+Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
+
+Input: MapInfo file, transformed to a GML (v2) file by ogr2ogr (see mapinfo-to-gml.sh).
+Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 -->
 <xsl:stylesheet version="1.0"
 				xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"

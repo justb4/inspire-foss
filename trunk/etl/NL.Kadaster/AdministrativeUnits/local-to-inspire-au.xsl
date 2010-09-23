@@ -47,14 +47,15 @@ but it would need some extra XSLT transformation)
 							 xmlns:xlink="http://www.w3.org/1999/xlink"
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 							 xmlns:gml="http://www.opengis.net/gml/3.2"
-							 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://research.geodan.nl/esdin/schemas/v3.0/BaseTypes.xsd"
-							 gml:id="EU.INSPIRE-FOSS">
+							 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://schemas.kademo.nl/inspire/v3.0.1/AdministrativeUnits.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd"
+							 gml:id="NL.KAD.AU">
 			<base:identifier>
 				<base:Identifier>
 					<base:localId>0</base:localId>
-					<base:namespace>BE.IGNB.Top250</base:namespace>
+					<base:namespace>NL.KAD.AU</base:namespace>
 				</base:Identifier>
 			</base:identifier>
+
 			<base:metadata xsi:nil="true"/>
 
 			<xsl:apply-templates select="//ogr:Ned_Burgem"/>
@@ -119,7 +120,7 @@ but it would need some extra XSLT transformation)
 									<gml:PolygonPatch interpolation="planar">
 										<gml:exterior>
 											<gml:LinearRing>
-												<gml:posList dimension="2">
+												<gml:posList srsDimension="2">
 													<xsl:value-of select="$coordinates" />
 												</gml:posList>
 											</gml:LinearRing>
@@ -141,7 +142,9 @@ but it would need some extra XSLT transformation)
 				</xsl:element>
 
 				<xsl:element name="AU:nationalLevel"><xsl:value-of select="$nationalLevel"/></xsl:element>
-				<xsl:element name="AU:nationalLevelName"><xsl:value-of select="$nationalLevelName"/></xsl:element>
+				<xsl:element name="AU:nationalLevelName">
+					<gmd:LocalisedCharacterString locale="nl-NL"><xsl:value-of select="$nationalLevelName"/></gmd:LocalisedCharacterString>
+				</xsl:element>
 
 				<xsl:element name="AU:country">
 					<gmd:Country codeList="http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml" codeListValue="NL">NL</gmd:Country>

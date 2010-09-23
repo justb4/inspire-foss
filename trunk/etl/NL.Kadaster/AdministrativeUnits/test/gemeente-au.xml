@@ -30,7 +30,7 @@
       <AU:inspireId>
         <base:Identifier>
           <base:localId>1842</base:localId>
-          <base:namespace>NL.KAD.AU.GEM.</base:namespace>
+          <base:namespace>NL.KAD.AU.GEM</base:namespace>
         </base:Identifier>
       </AU:inspireId>
       <AU:nationalLevel>3rdOrder</AU:nationalLevel>
@@ -92,7 +92,7 @@
       <AU:inspireId>
         <base:Identifier>
           <base:localId>0744</base:localId>
-          <base:namespace>NL.KAD.AU.GEM.</base:namespace>
+          <base:namespace>NL.KAD.AU.GEM</base:namespace>
         </base:Identifier>
       </AU:inspireId>
       <AU:nationalLevel>3rdOrder</AU:nationalLevel>

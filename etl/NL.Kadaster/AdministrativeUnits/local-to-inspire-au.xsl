@@ -120,7 +120,9 @@ but it would need some extra XSLT transformation)
 									<gml:PolygonPatch interpolation="planar">
 										<gml:exterior>
 											<gml:LinearRing>
-												<gml:posList srsDimension="2">
+												<gml:posList>
+													<xsl:attribute name="srsName">EPSG:4258</xsl:attribute>
+													<xsl:attribute name="srsDimension">2</xsl:attribute>
 													<xsl:value-of select="$coordinates" />
 												</gml:posList>
 											</gml:LinearRing>

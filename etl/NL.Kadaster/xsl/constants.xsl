@@ -18,7 +18,7 @@
 
 <!--
 
-Constants for The netherlands, used in all Transformation XSL scripts
+Constants for The Netherlands Kadaster, used in all Transformation XSL scripts
 
 Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
@@ -34,6 +34,5 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<xsl:variable name="organisation">Het Kadaster</xsl:variable>
 	<xsl:variable name="srsName">EPSG:4258</xsl:variable>
 	<xsl:variable name="srsDimension">2</xsl:variable>
-
 
 </xsl:stylesheet>

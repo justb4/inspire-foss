@@ -6,7 +6,7 @@
 #
 
 cd ..
-./local-to-inspire-au.sh test/gemeente.xml  test/gemeente-au.xml
+./local-to-inspire-au-sd.sh test/gemeente.xml  test/gemeente-au.xml
 
 
 

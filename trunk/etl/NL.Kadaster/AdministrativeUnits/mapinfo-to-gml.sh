@@ -13,7 +13,7 @@ function transform() {
     ogr2ogr -overwrite  -t_srs "EPSG:4258" -s_srs "EPSG:28992"  -lco DIM=2 -nlt MULTIPOLYGON -f "GML" $2 $1
 
     # Dutch source is encoded in Windows LATIN1 :-( (CP1252)
-    # need to make UTF-8 encoded GML
+    # need to make UTF-8 encoded GML and change namespace id for gml2
     cat $2 | iconv -f CP1252 -t UTF-8 | sed s/gml:/gml2:/g | sed s/:gml/:gml2/g > temp.gml
     mv temp.gml $2
 

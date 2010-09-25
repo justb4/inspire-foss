@@ -30,7 +30,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<xsl:variable name="countryCodeList">http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml</xsl:variable>
 	<xsl:variable name="countryCodeValue">NL</xsl:variable>
 	<xsl:variable name="locale">nl-NL</xsl:variable>
-	<xsl:variable name="idNameSpace">NL.KAD.AU</xsl:variable>
+	<xsl:variable name="idNameSpace">NL.KAD</xsl:variable>
 	<xsl:variable name="organisation">Het Kadaster</xsl:variable>
 	<xsl:variable name="srsName">EPSG:4258</xsl:variable>
 	<xsl:variable name="srsDimension">2</xsl:variable>

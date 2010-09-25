@@ -18,7 +18,7 @@
 
 <!--
 
-Transform a local (Dutch Kadaster) GML element to a INSPIRE AdministrativeUnit element.
+Transform a local (Dutch Kadaster) GML element to a INSPIRE CadastralParcel element.
 
 Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
@@ -35,26 +35,21 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<!-- Use specific GML2 to GML3 MultiPolygonto MultiSurface transform within AdministrativeUnits.xsl -->
 	<xsl:include href="../xsl/multipolygon-to-multisurface.xsl"/>
 
-	<xsl:include href="AdministrativeUnits.xsl"/>
+	<xsl:include href="CadastralParcels.xsl"/>
 
-	<xsl:variable name="idNameSpaceTheme"><xsl:value-of select="concat($idNameSpace,'.AU')"/></xsl:variable>
+	<xsl:variable name="idNameSpaceTheme"><xsl:value-of select="concat($idNameSpace,'.CP')"/></xsl:variable>
 
 	<!-- Generate AdministrativeUnit element for single Dutch municipality (ogr:Ned_Burgem) element -->
-	<xsl:template match="ogr:Ned_Burgem">
+	<xsl:template match="ogr:DKK_perceelsvlak">
 
 		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
-		<xsl:call-template name="AU.AdministrativeUnit">
+		<xsl:call-template name="CP.CadastralParcel">
 			<xsl:with-param name="idPrefix">
-				<xsl:value-of select="concat($idNameSpaceTheme, '.','GEM')"/>
+				<xsl:value-of select="$idNameSpaceTheme"/>
 			</xsl:with-param>
 			<xsl:with-param name="localId">
-				<xsl:value-of select="ogr:Gem_code"/>
+				<xsl:value-of select="ogr:Kad_ID"/>
 			</xsl:with-param>
-			<xsl:with-param name="name">
-				<xsl:value-of select="ogr:Gem_naam"/>
-			</xsl:with-param>
-			<xsl:with-param name="nationalLevel">3rdOrder</xsl:with-param>
-			<xsl:with-param name="nationalLevelName">gemeente</xsl:with-param>
 		</xsl:call-template>
 
 	</xsl:template>

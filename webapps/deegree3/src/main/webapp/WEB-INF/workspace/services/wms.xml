@@ -18,7 +18,16 @@
 				</DirectStyle>
 			</RequestableLayer>
 
-		<!--	<StatisticsLayer/>      -->
+			<RequestableLayer>
+				<Name>cadastralparcels</Name>
+				<Title>INSPIRE Cadastral Parcels</Title>
+				<FeatureStoreId>inspire-postgis</FeatureStoreId>
+				<DirectStyle>
+					<File>../styles/CadastralParcels.xml</File>
+					<Name>cadastralparcels</Name>
+				</DirectStyle>
+			</RequestableLayer>
+			<!--	<StatisticsLayer/>      -->
 
 		</UnrequestableLayer>
 

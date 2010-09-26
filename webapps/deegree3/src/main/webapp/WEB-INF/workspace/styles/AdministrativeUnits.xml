@@ -44,7 +44,7 @@
 				<SvgParameter name="stroke">#0000CC</SvgParameter>
 			</Stroke>
 			<PerpendicularOffset>-6</PerpendicularOffset>
-		</PolygonSymbolizer>
+		</PolygonSymbolizer>   
 
 		<LineSymbolizer uom="meter">
 			<Geometry>

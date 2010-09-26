@@ -125,13 +125,10 @@ Requires constants.xsl to be included for global settings.
 	<!-- Transform coordinate list to poslist -->
 	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:coordinates">
 		<gml:posList srsName="{$srsName}" srsDimension="{$srsDimension}">
-			<!-- Removes 3rd (2.5) dimension and replaces "," with spaces.
-			<xsl:value-of select="translate(normalize-space(.),',',' ')"/>     -->
-
-			<xsl:call-template name="globalReplace">
+			<!-- VERY VERY TRICKY : replaces "," with spaces and removes 3rd dimension (height) by calling "remove3D" -->
+			<xsl:call-template name="remove3D">
 				<xsl:with-param name="outputString" select="translate(normalize-space(.),',',' ')"/>
-				<xsl:with-param name="target" select="' 0'"/>
-				<xsl:with-param name="replacement" select="' '"/>
+				<xsl:with-param name="sep" select="' '"/>
 			</xsl:call-template>
 
 		</gml:posList>

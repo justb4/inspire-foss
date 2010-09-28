@@ -59,4 +59,40 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
 	</xsl:template>
 
+	<!-- Generate AdministrativeUnit element for single Dutch province (ogr:Ned_Provincie) element -->
+	<xsl:template match="ogr:Ned_Provincie">
+
+		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
+		<xsl:call-template name="AU.AdministrativeUnit">
+			<xsl:with-param name="idPrefix">
+				<xsl:value-of select="concat($idNameSpaceTheme, '.','PROV')"/>
+			</xsl:with-param>
+			<xsl:with-param name="localId">
+				<xsl:value-of select="ogr:Provincienaam"/>
+			</xsl:with-param>
+			<xsl:with-param name="name">
+				<xsl:value-of select="ogr:Provincienaam"/>
+			</xsl:with-param>
+			<xsl:with-param name="nationalLevel">2ndOrder</xsl:with-param>
+			<xsl:with-param name="nationalLevelName">provincie</xsl:with-param>
+		</xsl:call-template>
+
+	</xsl:template>
+
+	<!-- Generate AdministrativeUnit element for single Dutch province (ogr:Ned_Provincie) element -->
+	<xsl:template match="ogr:Nederland">
+
+		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
+		<xsl:call-template name="AU.AdministrativeUnit">
+			<xsl:with-param name="idPrefix">
+				<xsl:value-of select="concat($idNameSpaceTheme, '.','LAND')"/>
+			</xsl:with-param>
+			<xsl:with-param name="localId">NL</xsl:with-param>
+			<xsl:with-param name="name">Nederland</xsl:with-param>
+			<xsl:with-param name="nationalLevel">1stOrder</xsl:with-param>
+			<xsl:with-param name="nationalLevelName">land</xsl:with-param>
+		</xsl:call-template>
+
+	</xsl:template>
+
 </xsl:stylesheet>

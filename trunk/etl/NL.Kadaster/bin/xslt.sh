@@ -13,7 +13,7 @@ function transform() {
     # xsltproc -v --timing local-to-inspire-au-sd.xsl $1
     # may use "nice"
     
-    xsltproc --maxdepth 50000 $1 $2  > $3
+    nice xsltproc --maxdepth 50000 $1 $2  > $3
     echo "xsltproc $1 $2 $3 DONE"
 }
 

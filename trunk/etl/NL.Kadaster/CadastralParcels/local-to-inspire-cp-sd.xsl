@@ -53,6 +53,7 @@ Output: SpatialDataset with CadastralParcels from INSPIRE Annex I CP
 							 xmlns:xlink="http://www.w3.org/1999/xlink"
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 							 xmlns:gml="http://www.opengis.net/gml/3.2"
+							 xmlns:gml2="http://www.opengis.net/gml"
 							 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:CadastralParcels:3.0 http://schemas.kademo.nl/inspire/v3.0.1/CadastralParcels.xsd"
 							 gml:id="{$idNameSpaceTheme}">
 
@@ -70,9 +71,7 @@ Output: SpatialDataset with CadastralParcels from INSPIRE Annex I CP
 			<base:metadata xsi:nil="true"/>
 
 			<!-- Loop through all parcels. -->
-			<xsl:apply-templates select="//ogr:DKK_perceelsvlak"/>
-
-			<!-- TODO Provinces and Country Levels   -->
+			<xsl:apply-templates select="//gml2:featureMember/*"/>
 
 		</base:SpatialDataSet>
 	</xsl:template>

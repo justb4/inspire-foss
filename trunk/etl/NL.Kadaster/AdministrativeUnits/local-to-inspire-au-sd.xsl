@@ -71,13 +71,13 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 			<base:metadata xsi:nil="true"/>
 
 			<!-- Loop through all Dutch municipalities. -->
-			<xsl:apply-templates select="//ogr:Ned_Burgem"/>
+			<xsl:apply-templates select="//ogr:gemeente"/>
 
 			<!-- Loop through all Dutch Provinces. -->
-			<xsl:apply-templates select="//ogr:Ned_Provincie"/>
+			<xsl:apply-templates select="//ogr:provincie"/>
 
 			<!-- Dutch country (one feature). -->
-			<xsl:apply-templates select="//ogr:Nederland"/>
+			<xsl:apply-templates select="//ogr:land"/>
 
 		</base:SpatialDataSet>
 	</xsl:template>

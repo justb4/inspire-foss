@@ -40,7 +40,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<xsl:variable name="idNameSpaceTheme"><xsl:value-of select="concat($idNameSpace,'.CP')"/></xsl:variable>
 
 	<!-- Generate AdministrativeUnit element for single Dutch municipality (ogr:Ned_Burgem) element -->
-	<xsl:template match="ogr:DKK_perceelsvlak">
+	<xsl:template match="ogr:cp_parcels">
 
 		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
 		<xsl:call-template name="CP.CadastralParcel">

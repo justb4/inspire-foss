@@ -53,6 +53,7 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 							 xmlns:gmd="http://www.isotc211.org/2005/gmd"
 							 xmlns:xlink="http://www.w3.org/1999/xlink"
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							 xmlns:gml2="http://www.opengis.net/gml"
 							 xmlns:gml="http://www.opengis.net/gml/3.2"
 							 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://schemas.kademo.nl/inspire/v3.0.1/AdministrativeUnits.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd"
 							 gml:id="{$idNameSpaceTheme}">
@@ -70,14 +71,8 @@ Output: SpatialDataset with AdministrativeUnit from INSPIRE Annex I AU
 
 			<base:metadata xsi:nil="true"/>
 
-			<!-- Loop through all Dutch municipalities. -->
-			<xsl:apply-templates select="//ogr:gemeente"/>
-
-			<!-- Loop through all Dutch Provinces. -->
-			<xsl:apply-templates select="//ogr:provincie"/>
-
-			<!-- Dutch country (one feature). -->
-			<xsl:apply-templates select="//ogr:land"/>
+			<!-- Loop through all features. -->
+			<xsl:apply-templates select="//gml2:featureMember/*"/>
 
 		</base:SpatialDataSet>
 	</xsl:template>

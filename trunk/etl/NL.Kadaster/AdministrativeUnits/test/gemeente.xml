@@ -33,7 +33,7 @@
 		</gml2:Box>
 	</gml2:boundedBy>
 	<gml2:featureMember>
-		<ogr:gemeente fid="F428">
+		<ogr:au_gemeenten fid="F428">
 			<ogr:geometryProperty>
 				<gml2:MultiPolygon>
 					<gml2:polygonMember>
@@ -1122,10 +1122,10 @@
 			</ogr:geometryProperty>
 			<ogr:Gem_naam>Midden-Delfland</ogr:Gem_naam>
 			<ogr:Gem_code>1842</ogr:Gem_code>
-		</ogr:gemeente>
+		</ogr:au_gemeenten>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gemeente fid="F429">
+		<ogr:au_gemeenten fid="F429">
 			<ogr:geometryProperty>
 				<gml2:MultiPolygon>
 					<gml2:polygonMember>
@@ -3574,6 +3574,6 @@
 			</ogr:geometryProperty>
 			<ogr:Gem_naam>Baarle-Nassau</ogr:Gem_naam>
 			<ogr:Gem_code>0744</ogr:Gem_code>
-		</ogr:gemeente>
+		</ogr:au_gemeenten>
 	</gml2:featureMember>
 </ogr:FeatureCollection>

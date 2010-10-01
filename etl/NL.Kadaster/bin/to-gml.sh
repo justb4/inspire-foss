@@ -10,6 +10,9 @@
 # Transformation
 function transform() {
     echo "transforming $1 to $2 ..."
+    
+    export OGR_FORCE_ASCII=NO
+
     ogr2ogr -nlt MULTIPOLYGON -f "GML" $2 $1
 
     # Dutch source is encoded in Windows LATIN1 :-( (CP1252)

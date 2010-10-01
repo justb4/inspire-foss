@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Transforms Dutch local Admin Units to INSPIRE AU
+# Transforms Dutch local Cadastral Parcels to INSPIRE CP
 #
 # Author: Just van den Broecke
 #

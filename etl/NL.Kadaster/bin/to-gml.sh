@@ -11,6 +11,8 @@
 function transform() {
     echo "transforming $1 to $2 ..."
     
+    # http://trac.osgeo.org/gdal/wiki/ConfigOptions
+    # Otherwise we'll loose the CP1252 encoded chars
     export OGR_FORCE_ASCII=NO
 
     ogr2ogr -nlt MULTIPOLYGON -f "GML" $2 $1

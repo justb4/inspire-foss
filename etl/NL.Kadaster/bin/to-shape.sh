@@ -14,6 +14,8 @@ proj4258="+proj=longlat +ellps=GRS80 +datum=WGS84 +no_defs  <>"
 function transform() {
     echo "transforming $1 to $2"
 
+    # http://trac.osgeo.org/gdal/wiki/ConfigOptions
+    # Otherwise we'll loose the CP1252 encoded chars
     export OGR_FORCE_ASCII=NO
 
     # Convert local source to Shape also transforms coordinates to INSPIRE ETRS89

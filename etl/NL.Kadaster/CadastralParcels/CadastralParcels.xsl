@@ -77,8 +77,11 @@ Requires:
 		<xsl:param name="idPrefix"/>
 		<xsl:param name="localId"/>
 
+		<!-- Replace the space in the national Id, e.g.  LNK00D 2377 becomes LNK00D.2377 -->
+		<xsl:variable name="localIdDotted"><xsl:value-of select="translate(normalize-space($localId),' ','.')"/></xsl:variable>
+
 		<!-- Create gml Id by concatenating idPrefix and local id -->
-		<xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
+		<xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localIdDotted)"/></xsl:variable>
 
 		<base:member>
 			<CP:CadastralParcel gml:id="{$gmlId}">
@@ -100,7 +103,7 @@ Requires:
 				<CP:inspireId>
 					<xsl:call-template name="Base.InspireId">
 						<xsl:with-param name="localId">
-							<xsl:value-of select="$localId"/>
+							<xsl:value-of select="$localIdDotted"/>
 						</xsl:with-param>
 						<xsl:with-param name="idPrefix">
 							<xsl:value-of select="$idPrefix"/>

@@ -1,0 +1,97 @@
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<FeatureTypeStyle
+    xmlns="http://www.opengis.net/se"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:au="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0"
+    xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+
+  <FeatureTypeName>au:AdministrativeUnit</FeatureTypeName>
+
+  <Rule>
+    <Description>
+      <Title>INSPIRE AdministrativeUnits (AU)</Title>
+    </Description>
+
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>au:nationalLevel</ogc:PropertyName>
+        <ogc:Literal>3rdOrder</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+
+    <PolygonSymbolizer>
+      <Geometry>
+        <ogc:PropertyName>au:geometry</ogc:PropertyName>
+      </Geometry>
+
+      <Fill>
+        <SvgParameter name="fill">
+          <ogc:Literal>#3399FF</ogc:Literal>
+        </SvgParameter>
+        <SvgParameter name="fill-opacity">
+          <ogc:Literal>0.4</ogc:Literal>
+        </SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000066</SvgParameter>
+        <SvgParameter name="stroke-width">1</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+
+  <Rule>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>au:nationalLevel</ogc:PropertyName>
+        <ogc:Literal>3rdOrder</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <TextSymbolizer>
+      <Label>
+        <ogc:PropertyName>au:nationalCode</ogc:PropertyName>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-weight">Normal</SvgParameter>
+        <SvgParameter name="font-size">10</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <Displacement>
+            <DisplacementX>0</DisplacementX>
+            <DisplacementY>-15</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>2</Radius>
+        <Fill>
+          <SvgParameter name="fill">#FFFFFF</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#0000CC</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+
+</FeatureTypeStyle>

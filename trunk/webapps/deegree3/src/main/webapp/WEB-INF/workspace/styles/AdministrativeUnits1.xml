@@ -13,59 +13,47 @@
 		<Description>
 			<Title>INSPIRE AdministrativeUnits (AU)</Title>
 		</Description>
-		<!-- <MaxScaleDenominator>32000</MaxScaleDenominator> -->
 
-		<PolygonSymbolizer uom="meter">
+		<ogc:Filter>
+			<ogc:PropertyIsEqualTo>
+				<ogc:PropertyName>au:nationalLevel</ogc:PropertyName>
+				<ogc:Literal>1stOrder</ogc:Literal>
+			</ogc:PropertyIsEqualTo>
+		</ogc:Filter>
+
+		<PolygonSymbolizer>
 			<Geometry>
 				<ogc:PropertyName>au:geometry</ogc:PropertyName>
 			</Geometry>
 
 			<Fill>
 				<SvgParameter name="fill">
-					<ogc:Literal>#0000CC</ogc:Literal>
+					<ogc:Literal>#FF9933</ogc:Literal>
 				</SvgParameter>
 				<SvgParameter name="fill-opacity">
 					<ogc:Literal>0.4</ogc:Literal>
 				</SvgParameter>
 			</Fill>
 			<Stroke>
-				<GraphicStroke>
-					<Graphic>
-						<Mark>
-							<WellKnownName>circle</WellKnownName>
-							<Fill>
-								<SvgParameter name="fill-opacity">0</SvgParameter>
-							</Fill>
-						</Mark>
-						<Size>1.5</Size>
-					</Graphic>
-					<Gap>8</Gap>
-				</GraphicStroke>
-				<SvgParameter name="stroke">#0000CC</SvgParameter>
-			</Stroke>
-			<PerpendicularOffset>-6</PerpendicularOffset>
-		</PolygonSymbolizer>   
-
-		<LineSymbolizer uom="meter">
-			<Geometry>
-				<ogc:PropertyName>au:geometry</ogc:PropertyName>
-			</Geometry>
-			<Stroke>
-				<SvgParameter name="stroke">#000000</SvgParameter>
+				<SvgParameter name="stroke">#CC6600</SvgParameter>
 				<SvgParameter name="stroke-width">1</SvgParameter>
 			</Stroke>
-		</LineSymbolizer>
-
+		</PolygonSymbolizer>
 	</Rule>
 
 	<Rule>
-		<!-- <MaxScaleDenominator>32000</MaxScaleDenominator> -->
-		<TextSymbolizer uom="meter">
-
-			<!--
-					<Geometry> <ogc:PropertyName>cp:position/AD:GeographicPosition/AD:geometry</ogc:PropertyName> </Geometry>
-				  -->
-
+		<ogc:Filter>
+			<ogc:PropertyIsEqualTo>
+				<ogc:PropertyName>au:nationalLevel</ogc:PropertyName>
+				<ogc:Literal>1stOrder</ogc:Literal>
+			</ogc:PropertyIsEqualTo>
+		</ogc:Filter>
+		<TextSymbolizer>
+			<Geometry>
+				<ogc:Function name="Centroid">
+					<ogc:PropertyName>au:geometry</ogc:PropertyName>
+				</ogc:Function>
+			</Geometry>
 			<Label>
 				<ogc:PropertyName>au:nationalCode</ogc:PropertyName>
 			</Label>

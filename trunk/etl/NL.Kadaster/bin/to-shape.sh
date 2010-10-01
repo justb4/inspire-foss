@@ -15,7 +15,7 @@ function transform() {
     echo "transforming $1 to $2"
 
     # Convert to flat GML2, also transforms coordinates to INSPIRE ETRS89
-    ogr2ogr -overwrite  -t_srs "$proj4258" -s_srs "$proj28992" -nlt MULTIPOLYGON -f "ESRI Shapefile" $2 $1
+    ogr2ogr -t_srs "$proj4258" -s_srs "$proj28992" -nlt MULTIPOLYGON -f "ESRI Shapefile" $2 $1
 
     echo "transforming $1 to $2 DONE"
 }

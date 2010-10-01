@@ -10,7 +10,7 @@
 # Transformation
 function transform() {
     echo "transforming $1 to $2 ..."
-    ogr2ogr -overwrite -nlt MULTIPOLYGON -f "GML" $2 $1
+    ogr2ogr -nlt MULTIPOLYGON -f "GML" $2 $1
 
     # Dutch source is encoded in Windows LATIN1 :-( (CP1252)
     # need to make UTF-8 encoded GML and change namespace id for gml2

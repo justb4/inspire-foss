@@ -7,7 +7,7 @@
       <Version>1.1.0</Version>
     </SupportedVersions>
     <EnableTransactions>true</EnableTransactions>
-    <EnableStreaming>false</EnableStreaming>
+    <EnableStreaming>true</EnableStreaming>
     <QuerySRS>EPSG:4258</QuerySRS>
     <Format handler="GENERIC_GML">
       <MimeType>text/xml; subtype=gml/3.2.1</MimeType>
@@ -15,6 +15,7 @@
       <Param key="GET_FEATURE_RESPONSE_PREFIX">gml</Param>
       <Param key="GET_FEATURE_RESPONSE_NAMESPACE">http://www.opengis.net/gml/3.2</Param>
       <Param key="GET_FEATURE_RESPONSE_XSI_SCHEMA_LOCATION">http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd</Param>
+      <Param key="DISABLE_STREAMING">false</Param>
     </Format>
   </PublishedInformation>
 </deegreeWFS>

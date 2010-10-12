@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Transform a GML3.1.1 document to a INSPIRE AU SpatialDataset
+Transform a GML3.1.1 document to a INSPIRE AU SpatialDataset.
 Author: Frans Knibbe, Geodan
 
 Input: ESRI shapefile, transformed to a GML 3.1.1. file  by the FME
@@ -11,7 +11,7 @@ but it would need some extra XSLT transformation)
 <xsl:stylesheet version="1.0" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:fme="http://www.safe.com/gml/fme" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="gml:FeatureCollection" xmlns:gml="http://www.opengis.net/gml">
-		<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://research.geodan.nl/esdin/schemas/v3.0/BaseTypes.xsd" gml:id="EU.INSPIRE-FOSS">
+		<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xsi:schemaLocation="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://research.geodan.nl/esdin/schemas/v3.0/AdministrativeUnits.xsd" gml:id="EU.INSPIRE-FOSS">
 			<base:identifier>
 				<base:Identifier>
 					<base:localId>0</base:localId>
@@ -22,13 +22,16 @@ but it would need some extra XSLT transformation)
 			<xsl:for-each select="gml:featureMember" xmlns:gml="http://www.opengis.net/gml">
 				<base:member>
 					<AU:AdministrativeUnit xmlns:gml="http://www.opengis.net/gml/3.2">
-						<xsl:attribute name="gml:id"><xsl:value-of select="concat('AU_',generate-id())"/></xsl:attribute>
+						<!--<xsl:attribute name="gml:id"><xsl:value-of select="concat('AU_',generate-id())"/></xsl:attribute>-->
+						<xsl:attribute name="gml:id">AU_<xsl:number/></xsl:attribute>
 						<xsl:element name="AU:geometry">
 							<gml:MultiSurface>
 								<xsl:attribute name="gml:id"><xsl:value-of select="concat('MultiSurface_',generate-id())"/></xsl:attribute>
+								<xsl:attribute name="srsName">urn:ogc:def:crs:EPSG::4258</xsl:attribute>
 								<gml:surfaceMember>
 									<gml:Surface>
 										<xsl:attribute name="gml:id"><xsl:value-of select="concat('Surface_',generate-id())"/></xsl:attribute>
+										<xsl:attribute name="srsName">urn:ogc:def:crs:EPSG::4258</xsl:attribute>
 										<gml:patches>
 											<gml:PolygonPatch interpolation="planar">
 												<gml:exterior>
@@ -56,7 +59,7 @@ but it would need some extra XSLT transformation)
 							</base:Identifier>
 						</xsl:element>
 						<xsl:element name="AU:nationalLevel">5thOrder</xsl:element>
-						<xsl:element name="AU:nationalLevelName">gemeente</xsl:element>
+						<xsl:element name="AU:nationalLevelName"><gmd:LocalisedCharacterString locale="nl-BE">gemeente</gmd:LocalisedCharacterString></xsl:element>
 						<xsl:element name="AU:country">
 							<gmd:Country codeList="http://research.geodan.nl/sr/esdin/code_lists/CountryCode.xml" codeListValue="BE">BE</gmd:Country>
 						</xsl:element>

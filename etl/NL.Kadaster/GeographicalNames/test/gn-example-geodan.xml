@@ -1,0 +1,3034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+					   xmlns:gmd="http://www.isotc211.org/2005/gmd"
+					   xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+					   xmlns:app="http://www.deegree.org/app" xmlns:xlink="http://www.w3.org/1999/xlink"
+					   xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
+					   xmlns:wfs="http://www.opengis.net/wfs" xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
+					   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"
+					   xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" gml:id="EU.INSPIRE-FOSS"
+					   xsi:schemaLocation="urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://research.geodan.nl/esdin/schemas/v3.0/GeographicalNames.xsd">
+	<gml:boundedBy>
+		<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4258">
+			<gml:lowerCorner>6.096097175281687 47.662756597060095</gml:lowerCorner>
+			<gml:upperCorner>14.988035316654937 54.836857631652734</gml:upperCorner>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2045530">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2045530">
+					<gml:pos>6.096097175281687 50.774565912232916</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2045530</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Aix-la-Chapelle</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>dut</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Aken</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Aquisgrana</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Cáchy</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+					<GN:nativeness/>
+
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Aken</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2046258">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2046258">
+					<gml:pos>12.43552959138023 50.985207882339566</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2046258</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Altenbourg</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2047190">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2047190">
+					<gml:pos>10.892577559629434 48.36969613096375</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2047190</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Augusta</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Augsbourg</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2047483">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2047483">
+					<gml:pos>14.154659497166719 50.91739741292841</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2047483</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Žandov</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2047686">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2047686">
+					<gml:pos>10.89710362044232 49.897600137458504</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2047686</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Bamberk</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2047983">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2047983">
+					<gml:pos>14.427688083070432 51.180868058714196</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2047983</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Budyšín</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slo</GN:language>
+
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Budyšín</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slv</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Budišin</GN:text>
+							<GN:script/>
+
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2047996">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2047996">
+					<gml:pos>11.578233812874714 49.948504892168856</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2047996</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Barout</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2048570">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2048570">
+					<gml:pos>13.401713602376475 52.5015615208852</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2048570</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>spa</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Berlín</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>dsb</GN:language>
+
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Barliń</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>dut</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Berlijn</GN:text>
+							<GN:script/>
+
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber>singular</GN:grammaticalNumber>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Berlín</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2049207">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2049207">
+					<gml:pos>14.1796443485894 51.12769068665165</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2049207</base:localId>
+
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+
+							<GN:text>Biskupice</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2050139">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2050139">
+					<gml:pos>12.56336414869931 52.40865110081067</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2050139</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Braniboř</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Brandeburgo</GN:text>
+							<GN:script/>
+
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2050198">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2050198">
+					<gml:pos>10.514864549962265 52.266988722962154</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2050198</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Brunšvik</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Brunswick</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+
+							<GN:text>Brunswick</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2050274">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2050274">
+					<gml:pos>7.583227393156822 48.03114151794247</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2050274</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Vieux-Brisach</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2050386">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2050386">
+
+					<gml:pos>8.806554780071766 53.07399748176241</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2050386</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>hun</GN:language>
+
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Bréma</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Brême</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+
+						<GN:SpellingOfName>
+							<GN:text>Brema</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Brémy</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2051395">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2051395">
+					<gml:pos>11.984565142271709 53.847738017976376</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+
+				<base:Identifier>
+					<base:localId>2051395</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Bycov</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2051506">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2051506">
+					<gml:pos>12.667061268837532 49.21912400209849</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2051506</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kouba</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2051516">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2051516">
+					<gml:pos>12.924221251399413 50.83247158493095</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2051516</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ger</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Karl-Marx-Stadt</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender>neuter</GN:grammaticalGender>
+					<GN:grammaticalNumber>singular</GN:grammaticalNumber>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>hsb</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kamjenica</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slo</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kamenica</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Saská Kemenice</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2051576">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2051576">
+					<gml:pos>10.9601939745257 50.259389586969945</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2051576</base:localId>
+
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+
+						<GN:SpellingOfName>
+							<GN:text>Cobourg</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Coburgo</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2051635">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2051635">
+					<gml:pos>14.335117308175981 51.75934460809835</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2051635</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Chotěbuz</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>hsb</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Choćebuz</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2051666">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2051666">
+					<gml:pos>12.386924498858718 50.812449859437706</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2051666</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Křemeničov</GN:text>
+							<GN:script/>
+
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2052280">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2052280">
+					<gml:pos>12.242499868059987 51.830922194823</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2052280</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Desava</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2053182">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2053182">
+					<gml:pos>13.7368833630872 51.05169670162149</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2053182</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slo</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Drážďany</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender>masculine</GN:grammaticalGender>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Dresde</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>hun</GN:language>
+					<GN:nativeness/>
+
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Drezda</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Drážďany</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>hsb</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Drježdźany</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Dresda</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2053305">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2053305">
+					<gml:pos>6.774971291930506 51.437739971857</gml:pos>
+				</gml:Point>
+
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2053305</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Duisbourg</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2054479">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2054479">
+					<gml:pos>6.246332932877983 51.834545684824384</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2054479</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>dut</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Emmerik</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2054576">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2054576">
+
+					<gml:pos>8.768252187219495 47.85533571484474</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2054576</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Jenky</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2054804">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2054804">
+					<gml:pos>11.01141200608704 49.58706107046707</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2054804</base:localId>
+
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+
+							<GN:text>Erlanky</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2055690">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2055690">
+					<gml:pos>9.43750999611417 54.782520277845606</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2055690</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Flensbourg</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Flansborj</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender>neuter</GN:grammaticalGender>
+					<GN:grammaticalNumber>singular</GN:grammaticalNumber>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2055721">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2055721">
+					<gml:pos>13.072993733365394 50.85851054874548</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2055721</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Vlha</GN:text>
+							<GN:script/>
+
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2055901">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2055901">
+					<gml:pos>14.551064630362129 52.34172676154768</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2055901</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slv</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Frankfurt na Odri</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>slo</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Frankfurt nad Odrou</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2055902">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2055902">
+					<gml:pos>8.6830182462851 50.11203227953932</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2055902</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Francfort-sur-le-Main</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>slv</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Frankfurt na Majni</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Francoforte sul Meno</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slo</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Frankfurt nad Mohanom</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2055996">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2055996">
+					<gml:pos>7.8487154032431805 47.99858968344814</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2055996</base:localId>
+
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+
+							<GN:text>Friburgo in Brisgovia</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Fribourg-en-Brisgau</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>glg</GN:language>
+
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Friburgo</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2056224">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2056224">
+					<gml:pos>9.087943151915777 54.3734601332837</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2056224</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Fredaistää</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2056425">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2056425">
+					<gml:pos>12.842881812904906 49.308017791101285</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2056425</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Brod nad Lesy</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2057403">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2057403">
+
+					<gml:pos>9.550997074666004 54.836857631652734</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2057403</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Luksborj</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender>neuter</GN:grammaticalGender>
+					<GN:grammaticalNumber>singular</GN:grammaticalNumber>
+
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2057680">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2057680">
+					<gml:pos>14.988035316654937 51.155287240420705</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+
+				<base:Identifier>
+					<base:localId>2057680</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Zhořelec</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>hsb</GN:language>
+					<GN:nativeness/>
+
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Zhorjelc</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2057832">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2057832">
+					<gml:pos>9.926742641650412 51.533081648383366</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2057832</base:localId>
+
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+
+							<GN:text>Gotinky</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Gottinga</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>hun</GN:language>
+					<GN:nativeness/>
+
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Göttinga</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2059710">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2059710">
+					<gml:pos>11.975660702249774 51.47891534878945</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+
+				<base:Identifier>
+					<base:localId>2059710</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Dobrosůl</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2059771">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2059771">
+					<gml:pos>9.587571517696986 53.675688257684214</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2059771</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>glg</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hamburgo</GN:text>
+							<GN:script/>
+
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hambourg</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Amburgo</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>fin</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hampuri</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber>singular</GN:grammaticalNumber>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>spa</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+
+						<GN:SpellingOfName>
+							<GN:text>Hamburgo</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hamburk</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2059839">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2059839">
+					<gml:pos>8.915188712578498 50.135573006123586</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2059839</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hanava</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2059871">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2059871">
+					<gml:pos>9.73374659802193 52.38504315003539</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2059871</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hanovre</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>eng</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hanover</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>glg</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hannóver</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2061219">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2061219">
+					<gml:pos>14.743969775483889 51.01549152026102</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+
+				<base:Identifier>
+					<base:localId>2061219</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Ochranov</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2062926">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2062926">
+					<gml:pos>14.252080203342837 51.43947401276802</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2062926</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hojeřice</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2063129">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2063129">
+					<gml:pos>9.0501487859656 54.4764723961503</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2063129</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hüsem</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2063702">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2063702">
+					<gml:pos>11.591841724716339 50.930059717196265</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2063702</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Iéna</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2063835">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2063835">
+
+					<gml:pos>6.3633232130436586 50.922062336836944</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2063835</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Juliers</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2064252">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2064252">
+					<gml:pos>9.492810526991285 51.3162109855153</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+
+					<base:localId>2064252</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Cassel</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2064601">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2064601">
+					<gml:pos>10.137270219465659 54.32177526524977</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2064601</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kil</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2065435">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2065435">
+
+					<gml:pos>6.130989863525388 51.7824362134693</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2065435</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kleef</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>dut</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kleef</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+
+						<GN:SpellingOfName>
+							<GN:text>Clèves</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2065616">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2065616">
+					<gml:pos>7.592522967090914 50.360045582589365</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2065616</base:localId>
+					<base:namespace>egn</base:namespace>
+
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Koblenec</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Coblenza</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Coblence</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2065742">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2065742">
+					<gml:pos>6.957420651631148 50.950296346446564</gml:pos>
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+
+				<base:Identifier>
+					<base:localId>2065742</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Colonia</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>glg</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Colonia</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Cologne</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>eng</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Cologne</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>slo</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kolín nad Rýnom</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>fry</GN:language>
+					<GN:nativeness/>
+
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Keulen</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kolín nad Rýnem</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>dut</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+
+							<GN:text>Keulen</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<GN:NamedPlace gml:id="NL.GEODAN.GN.Place2065851">
+			<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<GN:geometry>
+				<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="ID_2065851">
+					<gml:pos>9.175957331218152 47.662756597060095</gml:pos>
+
+				</gml:Point>
+			</GN:geometry>
+			<GN:inspireId>
+				<base:Identifier>
+					<base:localId>2065851</base:localId>
+					<base:namespace>egn</base:namespace>
+				</base:Identifier>
+			</GN:inspireId>
+			<GN:localType xsi:nil="true"/>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>cze</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Kostnice</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+
+				<GN:GeographicalName>
+					<GN:language>fre</GN:language>
+					<GN:nativeness>exonym</GN:nativeness>
+					<GN:nameStatus>standardised</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Constance</GN:text>
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:name>
+				<GN:GeographicalName>
+					<GN:language>ita</GN:language>
+					<GN:nativeness/>
+					<GN:nameStatus>other</GN:nameStatus>
+					<GN:sourceOfName>Bundesamt für Kartographie und Geodäsie (BKG)</GN:sourceOfName>
+					<GN:pronunciation xsi:nil="true"/>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Constanza</GN:text>
+
+							<GN:script/>
+						</GN:SpellingOfName>
+					</GN:spelling>
+					<GN:grammaticalGender/>
+					<GN:grammaticalNumber/>
+				</GN:GeographicalName>
+			</GN:name>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+			<GN:type>populatedPlace</GN:type>
+		</GN:NamedPlace>
+	</gml:featureMember>
+</gml:FeatureCollection>

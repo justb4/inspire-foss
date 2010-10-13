@@ -112,6 +112,7 @@ Requires local constants like "organisation", for example:
 		<xsl:param name="localId"/>
 		<xsl:param name="point"/>
 		<xsl:param name="name"/>
+		<xsl:param name="localType"/>
 		<xsl:param name="type"/>
 
 		<!-- Create gml Id by concatenating idPrefix and local id -->
@@ -142,6 +143,7 @@ Requires local constants like "organisation", for example:
 					</xsl:call-template>
 				</GN:inspireId>
 
+				<GN:localType><xsl:value-of select="$localType"/></GN:localType>
 
 				<GN:name>
 					<!-- Generate minimal GeographicalName -->

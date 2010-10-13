@@ -22,6 +22,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>sportterrein, sportcomplex</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -40,7 +41,9 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>sportterrein, sportcomplex</GN:type>
+      <GN:type>
+					other
+				</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -58,6 +61,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>camping, kampeerterrein</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -76,7 +80,9 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>camping, kampeerterrein</GN:type>
+      <GN:type>
+					other
+				</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -94,6 +100,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>onbekend</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -112,7 +119,9 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>onbekend</GN:type>
+      <GN:type>
+					other
+				</GN:type>
     </GN:NamedPlace>
   </base:member>
 </base:SpatialDataSet>

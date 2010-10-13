@@ -39,6 +39,18 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 		<xsl:value-of select="concat($idNameSpace,'.GN')"/>
 	</xsl:variable>
 
+	<!--
+	Values for "type" from INSPIRE codelist NamedPlaceTypeValue.xml
+	<name>administrativeUnit</name>
+			<name>building</name>
+			<name>hydrography</name>
+			<name>landcover</name>
+			<name>landform</name>
+			<name>populatedPlace</name>
+			<name>protectedSite</name>
+			<name>transportNetwork</name>
+			<name>other</name>
+-->
 	<!-- Generate NamedPlace element for single Dutch "functioneel_gebied" element -->
 	<xsl:template match="ogr:gn_functioneel_gebied">
 
@@ -58,18 +70,67 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 				<xsl:with-param name="name">
 					<xsl:value-of select="ogr:NAAMNL"/>
 				</xsl:with-param>
-				<xsl:with-param name="type">
+				<xsl:with-param name="localType">
 					<xsl:value-of select="ogr:TYPEFUNCTI"/>
+				</xsl:with-param>
+				<xsl:with-param name="type">
+					other
 				</xsl:with-param>
 			</xsl:call-template>
 		</xsl:if>
 	</xsl:template>
 
-	<!-- Generate NamedPlace element for single Dutch "geografisch_gebied" element -->
+	<!-- Generate NamedPlace element for single Dutch Top10NL TypeGeografischGebiedelement -->
 	<xsl:template match="ogr:gn_geografisch_gebied">
 
 		<!-- Only generate a NamedPlace if a "name" is available in the source element -->
 		<xsl:if test="ogr:NAAMNL != ''">
+
+			<!--
+Values for localType from Top10NL defs
+<complexType name="TypeGeografischGebiedType">
+    <simpleContent>
+      <restriction base="gml:CodeType">
+        <enumeration value="bank, ondiepte, plaat"/>
+        <enumeration value="bosgebied"/>
+        <enumeration value="buurtschap"/>
+        <enumeration value="duingebied"/>
+        <enumeration value="eiland"/>
+        <enumeration value="geul, vaargeul"/>
+        <enumeration value="heidegebied"/>
+        <enumeration value="heuvel, berg"/>
+        <enumeration value="huizengroep"/>
+        <enumeration value="kaap, hoek"/>
+        <enumeration value="meer, plas, ven, vijver"/>
+        <enumeration value="onbekend"/>
+        <enumeration value="overig"/>
+        <enumeration value="plaats, bewoond oord"/>
+        <enumeration value="polder"/>
+        <enumeration value="streek, veld"/>
+        <enumeration value="terp"/>
+        <enumeration value="vliedberg"/>
+        <enumeration value="wad"/>
+        <enumeration value="woonwijk"/>
+        <enumeration value="zee"/>
+        <enumeration value="zeegat, zeearm"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+-->
+
+			<!-- Get and strip spaces from local type -->
+			<xsl:variable name="localType">
+				<xsl:value-of select="normalize-space(ogr:TYPEGEOGRA)"/>
+			</xsl:variable>
+
+			<xsl:variable name="landcoverTypes">
+				bank, ondiepte, plaat|bosgebied|duingebied|eiland|geul, vaargeul|heidegebied|heuvel, berg|polder|streek, veld|terp|vliedberg|wad|zee|zeegat, zeearm
+			</xsl:variable>
+
+			<xsl:variable name="populatedPlaceTypes">
+				buurtschap|huizengroep|plaats, bewoond oord|woonwijk
+			</xsl:variable>
+
 			<!-- Let the callable template "GN.NamedPlace" do the work. -->
 			<xsl:call-template name="GN.NamedPlace">
 				<xsl:with-param name="idPrefix">
@@ -84,8 +145,16 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 				<xsl:with-param name="name">
 					<xsl:value-of select="ogr:NAAMNL"/>
 				</xsl:with-param>
+				<xsl:with-param name="localType">
+					<xsl:value-of select="$localType"/>
+				</xsl:with-param>
 				<xsl:with-param name="type">
-					<xsl:value-of select="ogr:TYPEGEOGRA"/>
+					<xsl:choose>
+						<!-- Map local type to INSPIRE NamedPlaceType -->
+						<xsl:when test="contains($landcoverTypes, $localType)">landcover</xsl:when>
+						<xsl:when test="contains($populatedPlaceTypes, $localType)">populatedPlace</xsl:when>
+						<xsl:otherwise>other</xsl:otherwise>
+					</xsl:choose>
 				</xsl:with-param>
 			</xsl:call-template>
 		</xsl:if>

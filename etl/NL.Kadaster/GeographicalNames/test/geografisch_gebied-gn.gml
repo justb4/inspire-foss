@@ -22,6 +22,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -40,7 +41,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -58,6 +59,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>polder</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -76,7 +78,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>polder</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -94,6 +96,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>polder</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -112,7 +115,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>polder</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -130,6 +133,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>polder</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -148,7 +152,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>polder</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -166,6 +170,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -184,7 +189,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -202,6 +207,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -220,7 +226,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -238,6 +244,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -256,7 +263,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -274,6 +281,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -292,7 +300,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -310,6 +318,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>polder</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -328,7 +337,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>polder</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -346,6 +355,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -364,7 +374,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -382,6 +392,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -400,7 +411,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -418,6 +429,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -436,7 +448,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -454,6 +466,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -472,7 +485,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -490,6 +503,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -508,7 +522,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -526,6 +540,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -544,7 +559,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -562,6 +577,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -580,7 +596,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -598,6 +614,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -616,7 +633,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -634,6 +651,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>polder</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -652,7 +670,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>polder</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -670,6 +688,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -688,7 +707,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -706,6 +725,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -724,7 +744,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -742,6 +762,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -760,7 +781,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -778,6 +799,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -796,7 +818,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -814,6 +836,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -832,7 +855,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -850,6 +873,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -868,7 +892,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -886,6 +910,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -904,7 +929,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -922,6 +947,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>woonwijk</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -940,7 +966,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>woonwijk</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -958,6 +984,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -976,7 +1003,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -994,6 +1021,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>plaats, bewoond oord</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1012,7 +1040,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>plaats, bewoond oord</GN:type>
+      <GN:type>populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -1030,6 +1058,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>streek, veld</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1048,7 +1077,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>streek, veld</GN:type>
+      <GN:type>landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -1066,6 +1095,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>overig</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1084,7 +1114,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>overig</GN:type>
+      <GN:type>other</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -1102,6 +1132,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>overig</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1120,7 +1151,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>overig</GN:type>
+      <GN:type>other</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
@@ -1138,6 +1169,7 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
+      <GN:localType>overig</GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1156,7 +1188,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>overig</GN:type>
+      <GN:type>other</GN:type>
     </GN:NamedPlace>
   </base:member>
 </base:SpatialDataSet>

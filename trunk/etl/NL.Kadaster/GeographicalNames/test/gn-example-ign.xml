@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection gml:id='FC_5' xmlns:gml="http://www.opengis.net/gml/3.2"
+					   xmlns:gmd="http://www.isotc211.org/2005/gmd"
+					   xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+					   xmlns:gco="http://www.isotc211.org/2005/gco"
+					   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					   xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
+					   xmlns:xlink="http://www.w3.org/1999/xlink"
+					   xsi:schemaLocation="urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://94.23.233.73/xsd/GeographicalNames.xsd http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+	<gml:boundedBy>
+		<gml:Envelope srsName='EPSG:4258'>
+			<gml:lowerCorner>1.812624 50.146006</gml:lowerCorner>
+			<gml:upperCorner>2.714549 50.657289</gml:upperCorner>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<gml:featureMember>
+		<gn:NamedPlace gml:id="GN_NamedPlace_47559419">
+			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
+			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
+			<gn:geometry>
+				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559419_GEOM_0'>
+					<gml:pointMembers>
+						<gml:Point gml:id='GN_NamedPlace_47559419_GEOM_0_0'>
+							<gml:pos>2.714549 50.146006</gml:pos>
+						</gml:Point>
+					</gml:pointMembers>
+				</gml:MultiPoint>
+			</gn:geometry>
+			<gn:inspireId>
+				<base:Identifier>
+					<base:localId>FR_ldh_PAIHABIT0000000045825460</base:localId>
+					<base:namespace>FR_IGNF_BDNYME</base:namespace>
+					<base:versionId>1</base:versionId>
+				</base:Identifier>
+			</gn:inspireId>
+			<gn:leastDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>10000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:leastDetailedViewingResolution>
+			<gn:localType>
+				<gmd:LocalisedCharacterString locale="fre">Quartier</gmd:LocalisedCharacterString>
+			</gn:localType>
+			<gn:mostDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:mostDetailedViewingResolution>
+			<gn:name>
+				<gn:GeographicalName>
+					<gn:language>french</gn:language>
+					<gn:nativeness>Endonym</gn:nativeness>
+					<gn:nameStatus>official</gn:nameStatus>
+					<gn:sourceOfName>BDNYME</gn:sourceOfName>
+					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
+					<gn:spelling>
+						<gn:SpellingOfName>
+							<gn:text>bamako</gn:text>
+							<gn:script>Latn</gn:script>
+						</gn:SpellingOfName>
+
+					</gn:spelling>
+					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
+					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
+				</gn:GeographicalName>
+			</gn:name>
+			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
+			<gn:type>populatedPlace</gn:type>
+		</gn:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<gn:NamedPlace gml:id="GN_NamedPlace_47559420">
+			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
+			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
+			<gn:geometry>
+				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559420_GEOM_0'>
+					<gml:pointMembers>
+						<gml:Point gml:id='GN_NamedPlace_47559420_GEOM_0_0'>
+							<gml:pos>2.056954 50.494917</gml:pos>
+						</gml:Point>
+					</gml:pointMembers>
+				</gml:MultiPoint>
+			</gn:geometry>
+			<gn:inspireId>
+				<base:Identifier>
+					<base:localId>FR_ldh_PAIHABIT0000000045823666</base:localId>
+					<base:namespace>FR_IGNF_BDNYME</base:namespace>
+					<base:versionId>1</base:versionId>
+				</base:Identifier>
+			</gn:inspireId>
+			<gn:leastDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>5000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:leastDetailedViewingResolution>
+			<gn:localType>
+				<gmd:LocalisedCharacterString locale="fre">Lieu-dit habité</gmd:LocalisedCharacterString>
+			</gn:localType>
+			<gn:mostDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:mostDetailedViewingResolution>
+			<gn:name>
+				<gn:GeographicalName>
+					<gn:language>french</gn:language>
+					<gn:nativeness>Endonym</gn:nativeness>
+					<gn:nameStatus>official</gn:nameStatus>
+					<gn:sourceOfName>BDNYME</gn:sourceOfName>
+					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
+					<gn:spelling>
+						<gn:SpellingOfName>
+							<gn:text>le parquet</gn:text>
+							<gn:script>Latn</gn:script>
+						</gn:SpellingOfName>
+
+					</gn:spelling>
+					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
+					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
+				</gn:GeographicalName>
+			</gn:name>
+			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
+			<gn:type>populatedPlace</gn:type>
+		</gn:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<gn:NamedPlace gml:id="GN_NamedPlace_47559421">
+			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
+			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
+			<gn:geometry>
+				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559421_GEOM_0'>
+					<gml:pointMembers>
+						<gml:Point gml:id='GN_NamedPlace_47559421_GEOM_0_0'>
+							<gml:pos>2.479925 50.148886</gml:pos>
+						</gml:Point>
+					</gml:pointMembers>
+				</gml:MultiPoint>
+			</gn:geometry>
+			<gn:inspireId>
+				<base:Identifier>
+					<base:localId>FR_ldh_PAIHABIT0000000045825471</base:localId>
+					<base:namespace>FR_IGNF_BDNYME</base:namespace>
+					<base:versionId>1</base:versionId>
+				</base:Identifier>
+			</gn:inspireId>
+			<gn:leastDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>5000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:leastDetailedViewingResolution>
+			<gn:localType>
+				<gmd:LocalisedCharacterString locale="fre">Lieu-dit habité</gmd:LocalisedCharacterString>
+			</gn:localType>
+			<gn:mostDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:mostDetailedViewingResolution>
+			<gn:name>
+				<gn:GeographicalName>
+					<gn:language>french</gn:language>
+					<gn:nativeness>Endonym</gn:nativeness>
+					<gn:nameStatus>official</gn:nameStatus>
+					<gn:sourceOfName>BDNYME</gn:sourceOfName>
+					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
+					<gn:spelling>
+						<gn:SpellingOfName>
+							<gn:text>la folie</gn:text>
+							<gn:script>Latn</gn:script>
+						</gn:SpellingOfName>
+
+					</gn:spelling>
+					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
+					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
+				</gn:GeographicalName>
+			</gn:name>
+			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
+			<gn:type>populatedPlace</gn:type>
+		</gn:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<gn:NamedPlace gml:id="GN_NamedPlace_47559422">
+			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
+			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
+			<gn:geometry>
+				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559422_GEOM_0'>
+					<gml:pointMembers>
+						<gml:Point gml:id='GN_NamedPlace_47559422_GEOM_0_0'>
+							<gml:pos>1.885628 50.424767</gml:pos>
+						</gml:Point>
+					</gml:pointMembers>
+				</gml:MultiPoint>
+			</gn:geometry>
+			<gn:inspireId>
+				<base:Identifier>
+					<base:localId>FR_ldh_PAIHABIT0000000045824385</base:localId>
+					<base:namespace>FR_IGNF_BDNYME</base:namespace>
+					<base:versionId>1</base:versionId>
+				</base:Identifier>
+			</gn:inspireId>
+			<gn:leastDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>10000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:leastDetailedViewingResolution>
+			<gn:localType>
+				<gmd:LocalisedCharacterString locale="fre">Lieu-dit habité</gmd:LocalisedCharacterString>
+			</gn:localType>
+			<gn:mostDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:mostDetailedViewingResolution>
+			<gn:name>
+				<gn:GeographicalName>
+					<gn:language>french</gn:language>
+					<gn:nativeness>Endonym</gn:nativeness>
+					<gn:nameStatus>official</gn:nameStatus>
+					<gn:sourceOfName>BDNYME</gn:sourceOfName>
+					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
+					<gn:spelling>
+						<gn:SpellingOfName>
+							<gn:text>sous jumel</gn:text>
+							<gn:script>Latn</gn:script>
+						</gn:SpellingOfName>
+
+					</gn:spelling>
+					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
+					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
+				</gn:GeographicalName>
+			</gn:name>
+			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
+			<gn:type>populatedPlace</gn:type>
+		</gn:NamedPlace>
+	</gml:featureMember>
+	<gml:featureMember>
+		<gn:NamedPlace gml:id="GN_NamedPlace_47559423">
+			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
+			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
+			<gn:geometry>
+				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559423_GEOM_0'>
+					<gml:pointMembers>
+						<gml:Point gml:id='GN_NamedPlace_47559423_GEOM_0_0'>
+							<gml:pos>1.812624 50.657289</gml:pos>
+						</gml:Point>
+					</gml:pointMembers>
+				</gml:MultiPoint>
+			</gn:geometry>
+			<gn:inspireId>
+				<base:Identifier>
+					<base:localId>FR_ldh_PAIHABIT0000000045822421</base:localId>
+					<base:namespace>FR_IGNF_BDNYME</base:namespace>
+					<base:versionId>1</base:versionId>
+				</base:Identifier>
+			</gn:inspireId>
+			<gn:leastDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>5000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:leastDetailedViewingResolution>
+			<gn:localType>
+				<gmd:LocalisedCharacterString locale="fre">Lieu-dit habité</gmd:LocalisedCharacterString>
+			</gn:localType>
+			<gn:mostDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:mostDetailedViewingResolution>
+			<gn:name>
+				<gn:GeographicalName>
+					<gn:language>french</gn:language>
+					<gn:nativeness>Endonym</gn:nativeness>
+					<gn:nameStatus>official</gn:nameStatus>
+					<gn:sourceOfName>BDNYME</gn:sourceOfName>
+					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
+					<gn:spelling>
+						<gn:SpellingOfName>
+							<gn:text>ferme du crocq</gn:text>
+							<gn:script>Latn</gn:script>
+						</gn:SpellingOfName>
+
+					</gn:spelling>
+					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
+					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
+				</gn:GeographicalName>
+			</gn:name>
+			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
+			<gn:type>populatedPlace</gn:type>
+		</gn:NamedPlace>
+	</gml:featureMember>
+</gml:FeatureCollection>

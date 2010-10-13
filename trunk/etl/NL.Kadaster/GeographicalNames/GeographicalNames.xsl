@@ -39,6 +39,126 @@ Requires local constants like "organisation", for example:
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 				xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
 
+<!--
+		<gn:NamedPlace gml:id="GN_NamedPlace_47559421">
+			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
+			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
+			<gn:geometry>
+				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559421_GEOM_0'>
+					<gml:pointMembers>
+						<gml:Point gml:id='GN_NamedPlace_47559421_GEOM_0_0'>
+							<gml:pos>2.479925 50.148886</gml:pos>
+						</gml:Point>
+					</gml:pointMembers>
+				</gml:MultiPoint>
+			</gn:geometry>
+			<gn:inspireId>
+				<base:Identifier>
+					<base:localId>FR_ldh_PAIHABIT0000000045825471</base:localId>
+					<base:namespace>FR_IGNF_BDNYME</base:namespace>
+					<base:versionId>1</base:versionId>
+				</base:Identifier>
+			</gn:inspireId>
+			<gn:leastDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>5000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:leastDetailedViewingResolution>
+			<gn:localType>
+				<gmd:LocalisedCharacterString locale="fre">Lieu-dit habité</gmd:LocalisedCharacterString>
+			</gn:localType>
+			<gn:mostDetailedViewingResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gn:mostDetailedViewingResolution>
+			<gn:name>
+				<gn:GeographicalName>
+					<gn:language>french</gn:language>
+					<gn:nativeness>Endonym</gn:nativeness>
+					<gn:nameStatus>official</gn:nameStatus>
+					<gn:sourceOfName>BDNYME</gn:sourceOfName>
+					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
+					<gn:spelling>
+						<gn:SpellingOfName>
+							<gn:text>la folie</gn:text>
+							<gn:script>Latn</gn:script>
+						</gn:SpellingOfName>
+
+					</gn:spelling>
+					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
+					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
+				</gn:GeographicalName>
+			</gn:name>
+			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
+			<gn:type>populatedPlace</gn:type>
+		</gn:NamedPlace>
+-->
+	<!-- Generate NamedPlace element -->
+	<xsl:template name="GN.NamedPlace" priority="1">
+		<xsl:param name="idPrefix"/>
+		<xsl:param name="localId"/>
+		<xsl:param name="point"/>
+		<xsl:param name="name"/>
+		<xsl:param name="type"/>
+
+		<!-- Create gml Id by concatenating idPrefix and local id -->
+		<xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
+		<xsl:variable name="pointId"><xsl:value-of select="concat($gmlId,'.PT')"/></xsl:variable>
+
+		<base:member>
+			<GN:NamedPlace gml:id="{$gmlId}" >
+				<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:beginLifespanVersion>
+				<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:endLifespanVersion>
+   
+				<!-- fetch POINT geometry, filtering out any spaces and "," separtors-->
+				<GN:geometry>
+					<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="{$pointId}">
+						<gml:pos><xsl:value-of select="translate(normalize-space($point),',',' ')"/></gml:pos>
+					</gml:Point>
+				</GN:geometry>
+
+				<!-- Generate INSPIRE id -->
+				<GN:inspireId>
+					<xsl:call-template name="Base.InspireId">
+						<xsl:with-param name="localId">
+							<xsl:value-of select="$localId"/>
+						</xsl:with-param>
+						<xsl:with-param name="idPrefix">
+							<xsl:value-of select="$idPrefix"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</GN:inspireId>
+
+
+				<GN:name>
+					<!-- Generate minimal GeographicalName -->
+					<xsl:call-template name="GN.GeographicalName.Minimal">
+						<xsl:with-param name="name">
+							<xsl:value-of select="$name"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</GN:name>
+
+				<GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></GN:relatedSpatialObject>
+				<GN:type><xsl:value-of select="$type"/></GN:type>
+
+			</GN:NamedPlace>
+		</base:member>
+	</xsl:template>
+
 	<!-- Generate minimal GeographicalName element -->
 	<xsl:template name="GN.GeographicalName.Minimal" priority="1">
 		<xsl:param name="name"/>

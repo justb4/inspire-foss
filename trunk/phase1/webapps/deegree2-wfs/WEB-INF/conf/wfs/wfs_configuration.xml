@@ -130,7 +130,7 @@ The INSPIRE-FOSS project aims to provide a reusable Free and Open Source (FOSS) 
 		</ows:Parameter>
 		<!-- Maximum number of features, which the WFS will return to the client  -->
 		<ows:Constraint name="DefaultMaxFeatures">
-			<ows:Value>50</ows:Value>
+			<ows:Value>1000</ows:Value>
 		</ows:Constraint>
 	</ows:OperationsMetadata>
 	<!-- ================================================================== -->

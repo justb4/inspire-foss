@@ -29,6 +29,7 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I GN
 				xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
 				xmlns:gmd="http://www.isotc211.org/2005/gmd"
 				xmlns:gml="http://www.opengis.net/gml/3.2"
+				xmlns:gml2="http://www.opengis.net/gml"
 				xmlns:ogr="http://ogr.maptools.org/"
 				xmlns:wfs="http://www.opengis.net/wfs"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -45,6 +46,8 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I GN
 	<!-- Specific local transform from Dutch local GML2 to GN -->
 	<xsl:include href="local-to-inspire-gn.xsl"/>
 
+	<xsl:key name="top10-id" match="//gml2:featureMember/*" use="ogr:IDENT" />
+	
 	<xsl:template match="/">
 		<!-- Generate SpatialDataset -->
 		<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
@@ -70,9 +73,19 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I GN
 
 			<base:metadata xsi:nil="true"/>
 
-			<!-- Loop through all features. -->
-			<xsl:apply-templates select="//gml2:featureMember/*"/>
+			<!-- Loop through all features.
+			<xsl:apply-templates select="//gml2:featureMember/*"/> -->
 
+			<xsl:apply-templates select="//gml2:featureMember/*[generate-id(.) = generate-id(key('top10-id', ogr:IDENT)[1])]"/>
+
+
+			<!-- Loop through all features. distinct-values(//*/name())
+			<xsl:apply-templates select="distinct-values(//gml2:featureMember/*, //gml2:featureMember/*/ogr:IDENT)"/> -->
+
+
+			<!-- <xsl:for-each select="//gml2:featureMember/*[not(ogr:IDENT=../preceding-sibling::*/*/ogr:IDENT)]">
+				<xsl:apply-templates select="."/>
+			</xsl:for-each>     -->
 		</base:SpatialDataSet>
 	</xsl:template>
 

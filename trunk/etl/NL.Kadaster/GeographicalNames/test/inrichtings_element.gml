@@ -140,5 +140,29 @@
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
 		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
 	</gml2:featureMember>
-
+		<gml2:featureMember>
+		<ogr:ETRS89_INRICHTINGSELEMENT_PUNT fid="F8952">
+			<ogr:geometryProperty>
+				<gml2:Point>
+					<gml2:coordinates>6.120233283188431,52.290698954633534</gml2:coordinates>
+				</gml2:Point>
+			</ogr:geometryProperty>
+			<ogr:IDENT>NL.TOP10NL.117872819</ogr:IDENT>
+			<ogr:TYPEINRICH>kapel</ogr:TYPEINRICH>
+			<ogr:NAAMNL>Roobrug</ogr:NAAMNL>
+			<ogr:STATUS>in gebruik</ogr:STATUS>
+			<ogr:HOOGTENIVE>0</ogr:HOOGTENIVE>
+			<ogr:OBJ_BEGIN>2008/11/24</ogr:OBJ_BEGIN>
+			<ogr:OBJ_EIND>0000/00/00</ogr:OBJ_EIND>
+			<ogr:VER_BEGIN>2008/11/24</ogr:VER_BEGIN>
+			<ogr:VER_EIND>0000/00/00</ogr:VER_EIND>
+			<ogr:BRONTYPE>luchtfoto</ogr:BRONTYPE>
+			<ogr:BRONDATUM>2007/01/01</ogr:BRONDATUM>
+			<ogr:BRONNAUWK>0.4</ogr:BRONNAUWK>
+			<ogr:BRONBESCHR>orthogerectificeerde luchtfoto's van het terrein opgenomen in een per geografische eenheid
+				afgebakende mozaÃ¯ek.
+			</ogr:BRONBESCHR>
+			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
+		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
+	</gml2:featureMember>
 </ogr:FeatureCollection>

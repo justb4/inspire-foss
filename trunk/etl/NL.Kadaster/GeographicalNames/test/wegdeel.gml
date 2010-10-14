@@ -17,7 +17,7 @@
 		</gml2:Box>
 	</gml2:boundedBy>
 	<gml2:featureMember>
-		<ogr:gn_WEGDEEL_PUNT fid="F0">
+		<ogr:ETRS89_WEGDEEL_PUNT fid="F0">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.259099337452444,52.477876858739286</gml2:coordinates>
@@ -42,10 +42,10 @@
 			<ogr:BRONNAUWK>2</ogr:BRONNAUWK>
 			<ogr:BRONBESCHR>TOP10vector 2006</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_WEGDEEL_PUNT>
+		</ogr:ETRS89_WEGDEEL_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_WEGDEEL_PUNT fid="F273">
+		<ogr:ETRS89_WEGDEEL_PUNT fid="F273">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.050498678228092,52.2900524789126</gml2:coordinates>
@@ -71,10 +71,10 @@
 			<ogr:BRONNAUWK>2</ogr:BRONNAUWK>
 			<ogr:BRONBESCHR>TOP10vector 2006</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_WEGDEEL_PUNT>
+		</ogr:ETRS89_WEGDEEL_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_WEGDEEL_PUNT fid="F732">
+		<ogr:ETRS89_WEGDEEL_PUNT fid="F732">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.085130818589941,52.336048005814213</gml2:coordinates>
@@ -100,10 +100,10 @@
 			<ogr:BRONNAUWK>2</ogr:BRONNAUWK>
 			<ogr:BRONBESCHR>TOP10vector 2006</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_WEGDEEL_PUNT>
+		</ogr:ETRS89_WEGDEEL_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_WEGDEEL_PUNT fid="F744">
+		<ogr:ETRS89_WEGDEEL_PUNT fid="F744">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.13554044328533,52.314596103566281</gml2:coordinates>
@@ -129,10 +129,10 @@
 			<ogr:BRONNAUWK>2</ogr:BRONNAUWK>
 			<ogr:BRONBESCHR>TOP10vector 2006</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_WEGDEEL_PUNT>
+		</ogr:ETRS89_WEGDEEL_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_WEGDEEL_PUNT fid="F746">
+		<ogr:ETRS89_WEGDEEL_PUNT fid="F746">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.075184643136704,52.356442388309901</gml2:coordinates>
@@ -157,7 +157,7 @@
 			<ogr:BRONNAUWK>2</ogr:BRONNAUWK>
 			<ogr:BRONBESCHR>TOP10vector 2006</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_WEGDEEL_PUNT>
+		</ogr:ETRS89_WEGDEEL_PUNT>
 	</gml2:featureMember>
 
 </ogr:FeatureCollection>

@@ -40,71 +40,45 @@ Requires local constants like "organisation", for example:
 				xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
 
 <!--
-		<gn:NamedPlace gml:id="GN_NamedPlace_47559421">
-			<gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-			<gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-			<gn:geometry>
-				<gml:MultiPoint srsName="EPSG:4258" gml:id='GN_NamedPlace_47559421_GEOM_0'>
-					<gml:pointMembers>
-						<gml:Point gml:id='GN_NamedPlace_47559421_GEOM_0_0'>
-							<gml:pos>2.479925 50.148886</gml:pos>
-						</gml:Point>
-					</gml:pointMembers>
-				</gml:MultiPoint>
-			</gn:geometry>
-			<gn:inspireId>
-				<base:Identifier>
-					<base:localId>FR_ldh_PAIHABIT0000000045825471</base:localId>
-					<base:namespace>FR_IGNF_BDNYME</base:namespace>
-					<base:versionId>1</base:versionId>
-				</base:Identifier>
-			</gn:inspireId>
-			<gn:leastDetailedViewingResolution>
-				<gmd:MD_Resolution>
-					<gmd:equivalentScale>
-						<gmd:MD_RepresentativeFraction>
-							<gmd:denominator>
-								<gco:Integer>5000</gco:Integer>
-							</gmd:denominator>
-						</gmd:MD_RepresentativeFraction>
-					</gmd:equivalentScale>
-				</gmd:MD_Resolution>
-			</gn:leastDetailedViewingResolution>
-			<gn:localType>
-				<gmd:LocalisedCharacterString locale="fre">Lieu-dit habité</gmd:LocalisedCharacterString>
-			</gn:localType>
-			<gn:mostDetailedViewingResolution>
-				<gmd:MD_Resolution>
-					<gmd:equivalentScale>
-						<gmd:MD_RepresentativeFraction>
-							<gmd:denominator>
-								<gco:Integer>1</gco:Integer>
-							</gmd:denominator>
-						</gmd:MD_RepresentativeFraction>
-					</gmd:equivalentScale>
-				</gmd:MD_Resolution>
-			</gn:mostDetailedViewingResolution>
-			<gn:name>
-				<gn:GeographicalName>
-					<gn:language>french</gn:language>
-					<gn:nativeness>Endonym</gn:nativeness>
-					<gn:nameStatus>official</gn:nameStatus>
-					<gn:sourceOfName>BDNYME</gn:sourceOfName>
-					<gn:pronunciation xsi:nil="true" nilReason="UNKNOWN"></gn:pronunciation>
-					<gn:spelling>
-						<gn:SpellingOfName>
-							<gn:text>la folie</gn:text>
-							<gn:script>Latn</gn:script>
-						</gn:SpellingOfName>
+Minimal version of a NamedPlace  (Dutch Kadaster)
 
-					</gn:spelling>
-					<gn:grammaticalGender xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalGender>
-					<gn:grammaticalNumber xsi:nil="true" nilReason="UNKNOWN"></gn:grammaticalNumber>
-				</gn:GeographicalName>
-			</gn:name>
-			<gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-			<gn:type>populatedPlace</gn:type>
-		</gn:NamedPlace>
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075153">
+      <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:geometry>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075153.PT">
+          <gml:pos>6.155809601724485 52.024706052471238</gml:pos>
+        </gml:Point>
+      </GN:geometry>
+      <GN:inspireId>
+        <base:Identifier>
+          <base:localId>NL.TOP10NL.103075153</base:localId>
+          <base:namespace>NL.KAD.GN</base:namespace>
+        </base:Identifier>
+      </GN:inspireId>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
+      <GN:name>
+        <GN:GeographicalName>
+          <GN:language xsi:nil="true"/>
+          <GN:nativeness>endonym</GN:nativeness>
+          <GN:nameStatus>official</GN:nameStatus>
+          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+          <GN:pronunciation xsi:nil="true"/>
+          <GN:spelling>
+            <GN:SpellingOfName>
+              <GN:text>De Grind</GN:text>
+              <GN:script>Latn</GN:script>
+            </GN:SpellingOfName>
+          </GN:spelling>
+          <GN:grammaticalGender xsi:nil="true"/>
+          <GN:grammaticalNumber xsi:nil="true"/>
+        </GN:GeographicalName>
+      </GN:name>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:type>landcover</GN:type>
+    </GN:NamedPlace>
 -->
 	<!-- Generate NamedPlace element -->
 	<xsl:template name="GN.NamedPlace" priority="1">

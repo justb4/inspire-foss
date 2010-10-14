@@ -53,7 +53,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 -->
 
 	<!-- Generate NamedPlace element for single Dutch "FUNCTIONEEL_GEBIED_PUNT" element -->
-	<xsl:template match="ogr:gn_FUNCTIONEEL_GEBIED_PUNT">
+	<xsl:template match="ogr:ETRS89_FUNCTIONEEL_GEBIED_PUNT">
 
 		<!-- Only generate a NamedPlace if a "name" is available in the source element -->
 		<xsl:if test="ogr:NAAMNL != ''">
@@ -80,7 +80,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	</xsl:template>
 
 	<!-- Generate NamedPlace element for single Dutch Top10NL TypeGeografischGebiedelement -->
-	<xsl:template match="ogr:gn_GEOGRAFISCH_GEBIED_PUNT">
+	<xsl:template match="ogr:ETRS89_GEOGRAFISCH_GEBIED_PUNT">
 
 		<!-- Only generate a NamedPlace if a "name" is available in the source element -->
 		<xsl:if test="ogr:NAAMNL != ''">
@@ -160,7 +160,7 @@ Values for localType from Top10NL defs
 	</xsl:template>
 
 	<!-- Generate NamedPlace element for single Dutch "INRICHTINGSELEMENT_PUNT" element -->
-	<xsl:template match="ogr:gn_INRICHTINGSELEMENT_PUNT">
+	<xsl:template match="ogr:ETRS89_INRICHTINGSELEMENT_PUNT">
 
 		<!-- Only generate a NamedPlace if a "name" is available in the source element -->
 		<xsl:if test="ogr:NAAMNL != ''">
@@ -291,7 +291,7 @@ Values for localType from Top10NL defs
 	</xsl:template>
 
 	<!-- Generate NamedPlace element for single Dutch "WEGDEEL_PUNT" element -->
-	<xsl:template match="ogr:gn_WEGDEEL_PUNT">
+	<xsl:template match="ogr:ETRS89_WEGDEEL_PUNT">
 
 		<!-- Only generate a NamedPlace if a "name" is available in the source element -->
 		<xsl:if test="ogr:STRNAAMNL != ''">

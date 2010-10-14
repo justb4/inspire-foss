@@ -17,7 +17,7 @@
 		</gml2:Box>
 	</gml2:boundedBy>
 	<gml2:featureMember>
-		<ogr:gn_INRICHTINGSELEMENT_PUNT fid="F0">
+		<ogr:ETRS89_INRICHTINGSELEMENT_PUNT fid="F0">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.258006584376924,52.484281499182551</gml2:coordinates>
@@ -38,10 +38,10 @@
 				afgebakende mozaÃ¯ek.
 			</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_INRICHTINGSELEMENT_PUNT>
+		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_INRICHTINGSELEMENT_PUNT fid="F859">
+		<ogr:ETRS89_INRICHTINGSELEMENT_PUNT fid="F859">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.278590485612159,52.390997747904045</gml2:coordinates>
@@ -63,11 +63,11 @@
 				afgebakende mozaÃ¯ek.
 			</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_INRICHTINGSELEMENT_PUNT>
+		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
 	</gml2:featureMember>
 
 	<gml2:featureMember>
-		<ogr:gn_INRICHTINGSELEMENT_PUNT fid="F1">
+		<ogr:ETRS89_INRICHTINGSELEMENT_PUNT fid="F1">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.259095303859652,52.482859310459261</gml2:coordinates>
@@ -88,10 +88,10 @@
 				afgebakende mozaÃ¯ek.
 			</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_INRICHTINGSELEMENT_PUNT>
+		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_INRICHTINGSELEMENT_PUNT fid="F3410">
+		<ogr:ETRS89_INRICHTINGSELEMENT_PUNT fid="F3410">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.159635581127355,52.397053030862452</gml2:coordinates>
@@ -113,10 +113,10 @@
 				afgebakende mozaÃ¯ek.
 			</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_INRICHTINGSELEMENT_PUNT>
+		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
 	</gml2:featureMember>
 	<gml2:featureMember>
-		<ogr:gn_INRICHTINGSELEMENT_PUNT fid="F8952">
+		<ogr:ETRS89_INRICHTINGSELEMENT_PUNT fid="F8952">
 			<ogr:geometryProperty>
 				<gml2:Point>
 					<gml2:coordinates>6.120233283188431,52.290698954633534</gml2:coordinates>
@@ -138,7 +138,7 @@
 				afgebakende mozaÃ¯ek.
 			</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
-		</ogr:gn_INRICHTINGSELEMENT_PUNT>
+		</ogr:ETRS89_INRICHTINGSELEMENT_PUNT>
 	</gml2:featureMember>
 
 </ogr:FeatureCollection>

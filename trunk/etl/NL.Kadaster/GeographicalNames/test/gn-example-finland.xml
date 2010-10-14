@@ -1,0 +1,113 @@
+<gml:featureMember>
+
+	<gn:NamedPlace gml:id="P_10156095">
+		<gn:beginLifespanVersion>2008-12-06T00:00:00.000</gn:beginLifespanVersion>
+		<gn:geometry>
+			<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="P10156095">
+				<gml:pos>61.43146081 26.93044776</gml:pos>
+			</gml:Point>
+		</gn:geometry>
+		<gn:inspireId>
+			<base:Identifier>
+				<base:localId>10156095</base:localId>
+				<base:namespace>FI.NLS.GNR</base:namespace>
+			</base:Identifier>
+		</gn:inspireId>
+		<gn:localType>
+			<gmd:LocalisedCharacterString locale="en-GB">House</gmd:LocalisedCharacterString>
+		</gn:localType>
+		<gn:name>
+			<gn:GeographicalName>
+				<gn:language>fin</gn:language>
+				<gn:nativeness>endonym</gn:nativeness>
+				<gn:nameStatus>standardised</gn:nameStatus>
+				<gn:sourceOfName>National Land Survey of Finland</gn:sourceOfName>
+				<gn:pronunciation>
+					<gn:PronunciationOfName/>
+				</gn:pronunciation>
+				<gn:spelling>
+					<gn:SpellingOfName>
+						<gn:text>Koivula</gn:text>
+						<gn:script>Latn</gn:script>
+					</gn:SpellingOfName>
+				</gn:spelling>
+			</gn:GeographicalName>
+		</gn:name>
+		<gn:type>populatedPlace</gn:type>
+	</gn:NamedPlace>
+
+	<gn:NamedPlace gml:id="P_10156096">
+		<gn:beginLifespanVersion>2008-12-06T00:00:00.000</gn:beginLifespanVersion>
+		<gn:geometry>
+			<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="P10156096">
+				<gml:pos>61.44067039 26.93567484</gml:pos>
+			</gml:Point>
+		</gn:geometry>
+		<gn:inspireId>
+			<base:Identifier>
+				<base:localId>10156096</base:localId>
+				<base:namespace>FI.NLS.GNR</base:namespace>
+			</base:Identifier>
+		</gn:inspireId>
+		<gn:localType>
+			<gmd:LocalisedCharacterString locale="en-GB">House</gmd:LocalisedCharacterString>
+		</gn:localType>
+		<gn:name>
+			<gn:GeographicalName>
+				<gn:language>fin</gn:language>
+				<gn:nativeness>endonym</gn:nativeness>
+				<gn:nameStatus>standardised</gn:nameStatus>
+				<gn:sourceOfName>National Land Survey of Finland</gn:sourceOfName>
+				<gn:pronunciation>
+					<gn:PronunciationOfName/>
+				</gn:pronunciation>
+				<gn:spelling>
+					<gn:SpellingOfName>
+						<gn:text>Joentalo</gn:text>
+						<gn:script>Latn</gn:script>
+					</gn:SpellingOfName>
+				</gn:spelling>
+			</gn:GeographicalName>
+		</gn:name>
+		<gn:type>populatedPlace</gn:type>
+	</gn:NamedPlace>
+</gml:featureMember><gml:featureMember>
+<gn:NamedPlace gml:id="P_10156097">
+	<gn:beginLifespanVersion>2008-12-06T00:00:00.000</gn:beginLifespanVersion>
+	<gn:geometry>
+		<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="P10156097">
+			<gml:pos>61.42747716 26.93174932</gml:pos>
+		</gml:Point>
+	</gn:geometry>
+	<gn:inspireId>
+		<base:Identifier>
+			<base:localId>10156097</base:localId>
+			<base:namespace>FI.NLS.GNR</base:namespace>
+		</base:Identifier>
+	</gn:inspireId>
+	<gn:localType>
+		<gmd:LocalisedCharacterString locale="en-GB">House</gmd:LocalisedCharacterString>
+	</gn:localType>
+	<gn:name>
+		<gn:GeographicalName>
+			<gn:language>fin</gn:language>
+			<gn:nativeness>endonym
+			</gn:nativeness>
+			<gn:nameStatus>standardised</gn:nameStatus>
+			<gn:sourceOfName>National Land Survey of Finland</gn:sourceOfName>
+			<gn:pronunciation>
+				<gn:PronunciationOfName/>
+			</gn:pronunciation>
+			<gn:spelling>
+				<gn:SpellingOfName>
+					<gn:text>Mets..l..</gn:text>
+					<gn:script>Latn</gn:script>
+				</gn:SpellingOfName>
+			</gn:spelling>
+		</gn:GeographicalName>
+	</gn:name>
+	<gn:type>populatedPlace</gn:type>
+</gn:NamedPlace>
+
+</gml:featureMember>
+

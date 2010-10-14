@@ -22,7 +22,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -59,7 +61,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>polder</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -96,7 +100,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>polder</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -133,7 +139,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>polder</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -170,7 +178,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -207,7 +217,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -244,7 +256,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -281,7 +295,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -318,7 +334,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>polder</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -355,7 +373,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -392,7 +412,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -429,7 +451,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -466,7 +490,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -503,7 +529,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -540,7 +568,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -577,7 +607,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -614,7 +646,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -651,7 +685,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>polder</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -688,7 +724,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -725,7 +763,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -762,7 +802,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -799,7 +841,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -836,7 +880,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -873,7 +919,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -910,7 +958,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -947,7 +997,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>woonwijk</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">woonwijk</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -984,7 +1036,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1021,7 +1075,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>plaats, bewoond oord</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1058,7 +1114,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>streek, veld</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1095,7 +1153,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>overig</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1132,7 +1192,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>overig</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
@@ -1169,7 +1231,9 @@
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
-      <GN:localType>overig</GN:localType>
+      <GN:localType>
+        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+      </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>

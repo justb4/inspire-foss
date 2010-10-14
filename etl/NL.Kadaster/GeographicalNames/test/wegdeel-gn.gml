@@ -8,22 +8,22 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100004643">
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.114540192">
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
-        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100004643.PT">
-          <gml:pos>6.14498016321976 52.01004156951042</gml:pos>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.114540192.PT">
+          <gml:pos>6.050498678228092 52.2900524789126</gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.100004643</base:localId>
+          <base:localId>NL.TOP10NL.114540192</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">sportterrein, sportcomplex</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -34,7 +34,7 @@
           <GN:pronunciation xsi:nil="true"/>
           <GN:spelling>
             <GN:SpellingOfName>
-              <GN:text>Sportterrein</GN:text>
+              <GN:text>Geerse Pad</GN:text>
               <GN:script>Latn</GN:script>
             </GN:SpellingOfName>
           </GN:spelling>
@@ -43,26 +43,26 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>other</GN:type>
+      <GN:type>transportNetwork</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
-    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100004644">
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.116630305">
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
-        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100004644.PT">
-          <gml:pos>6.162655673150053 52.03305039256518</gml:pos>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.116630305.PT">
+          <gml:pos>6.085130818589941 52.336048005814213</gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.100004644</base:localId>
+          <base:localId>NL.TOP10NL.116630305</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">camping, kampeerterrein</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -73,7 +73,7 @@
           <GN:pronunciation xsi:nil="true"/>
           <GN:spelling>
             <GN:SpellingOfName>
-              <GN:text>Camping</GN:text>
+              <GN:text>Erveweg</GN:text>
               <GN:script>Latn</GN:script>
             </GN:SpellingOfName>
           </GN:spelling>
@@ -82,26 +82,26 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>other</GN:type>
+      <GN:type>transportNetwork</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member>
-    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100010436">
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.116630343">
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
-        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100010436.PT">
-          <gml:pos>6.128231116131404 52.010146826992539</gml:pos>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.116630343.PT">
+          <gml:pos>6.13554044328533 52.314596103566281</gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.100010436</base:localId>
+          <base:localId>NL.TOP10NL.116630343</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">onbekend</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -112,7 +112,7 @@
           <GN:pronunciation xsi:nil="true"/>
           <GN:spelling>
             <GN:SpellingOfName>
-              <GN:text>Fabriek</GN:text>
+              <GN:text>Holtermansdijk</GN:text>
               <GN:script>Latn</GN:script>
             </GN:SpellingOfName>
           </GN:spelling>
@@ -121,7 +121,7 @@
         </GN:GeographicalName>
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>other</GN:type>
+      <GN:type>transportNetwork</GN:type>
     </GN:NamedPlace>
   </base:member>
 </base:SpatialDataSet>

@@ -143,7 +143,14 @@ Requires local constants like "organisation", for example:
 					</xsl:call-template>
 				</GN:inspireId>
 
-				<GN:localType><xsl:value-of select="$localType"/></GN:localType>
+
+				<GN:localType>
+					<xsl:call-template name="GMD.LocalisedCharacterString">
+						<xsl:with-param name="value">
+							<xsl:value-of select="$localType"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</GN:localType>
 
 				<GN:name>
 					<!-- Generate minimal GeographicalName -->

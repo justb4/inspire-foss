@@ -22,10 +22,10 @@ Output: DamOrWeir features according to the INSPIRE Hydrography application sche
 			<xsl:element name="base:metadata">
 				<xsl:attribute name="xsi:nil">true</xsl:attribute>
 			</xsl:element>
-			<xsl:for-each select="gml:featureMember[fme:DamC/fme:F_CODE='BI020']" xmlns:gml="http://www.opengis.net/gml">
+			<xsl:for-each select="gml:featureMember[fme:DamC/fme:F_CODE='BI030']" xmlns:gml="http://www.opengis.net/gml">
 				<base:member>
 					<hy-p:DamOrWeir xmlns:gml="http://www.opengis.net/gml/3.2">
-						<xsl:attribute name="gml:id">SC_<xsl:number/></xsl:attribute>
+						<xsl:attribute name="gml:id">DoW_<xsl:number/></xsl:attribute>
 						<hy-p:geographicalName nilReason="UNPOPULATED" xsi:nil="true"/>
 						<hy-p:hydroId nilReason="UNPOPULATED" xsi:nil="true"/>
 						<hy-p:beginLifespanVersion nilReason="UNPOPULATED" xsi:nil="true"/>

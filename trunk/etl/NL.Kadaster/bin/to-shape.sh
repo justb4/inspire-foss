@@ -30,7 +30,7 @@ function transform() {
 while getopts at: OPTION
 do	case "$OPTION" in
 	t) geotype="$OPTARG";;
-	[?]) echo "Usage: $0 [-t (MULTIPOLYGON|POINT) ] sourcefile destfile"
+	[?]) echo "Usage: $0 [-t (MULTIPOLYGON|MULTILINESTRING|POINT) ] sourcefile destfile"
 		exit 1;;
 	esac
 done

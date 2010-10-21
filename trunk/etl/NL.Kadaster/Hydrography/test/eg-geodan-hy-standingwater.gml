@@ -14,17 +14,17 @@
 
 <gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.opengis.net/ogc"
 					   xmlns:xlink="http://www.w3.org/1999/xlink"
-					   xmlns:HY-HPW="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0"
+					   xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0"
 					   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					   xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://tm-sr:8080/deegree3_IGNB/console/../services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=HY-HPW:StandingWater&amp;NAMESPACE=xmlns(HY-HPW=urn%3Ax-inspire%3Aspecification%3Agmlas%3AHydroPhysicalWaters%3A3.0)"
+					   xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://tm-sr:8080/deegree3_IGNB/console/../services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=HY-P:StandingWater&amp;NAMESPACE=xmlns(HY-P=urn%3Ax-inspire%3Aspecification%3Agmlas%3AHydroPhysicalWaters%3A3.0)"
 					   gml:id="WFS_RESPONSE">
 	<gml:featureMember>
-		<HY-HPW:StandingWater gml:id="FEATURE_e2bed61c-b000-44bb-90cf-cab766a0c695">
-			<HY-HPW:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:geographicalName>
-			<HY-HPW:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:hydroId>
-			<HY-HPW:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:beginLifespanVersion>
-			<HY-HPW:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:endLifespanVersion>
-			<HY-HPW:geometry>
+		<HY-P:StandingWater gml:id="FEATURE_e2bed61c-b000-44bb-90cf-cab766a0c695">
+			<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+			<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
+			<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+			<HY-P:geometry>
 				<!--Inlined geometry 'GEOMETRY_69fe457a-fcae-468b-abe2-93aafb44250c'-->
 
 				<gml:Surface gml:id="GEOMETRY_69fe457a-fcae-468b-abe2-93aafb44250c" srsName="EPSG:4258">
@@ -44,15 +44,15 @@
 						</gml:PolygonPatch>
 					</gml:patches>
 				</gml:Surface>
-			</HY-HPW:geometry>
-			<HY-HPW:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+			</HY-P:geometry>
+			<HY-P:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
 				<base:Identifier>
 					<base:localId>idfeatureMemberx2x11</base:localId>
 					<base:namespace>BE.IGNB.Top250</base:namespace>
 
 				</base:Identifier>
-			</HY-HPW:inspireId>
-			<HY-HPW:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
+			</HY-P:inspireId>
+			<HY-P:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
 				<app4:MD_Resolution>
 					<app4:equivalentScale>
 						<app4:MD_RepresentativeFraction>
@@ -63,28 +63,28 @@
 						</app4:MD_RepresentativeFraction>
 					</app4:equivalentScale>
 				</app4:MD_Resolution>
-			</HY-HPW:levelOfDetail>
-			<HY-HPW:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
+			</HY-P:levelOfDetail>
+			<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
 				<app4:LocalisedCharacterString>Lac</app4:LocalisedCharacterString>
-			</HY-HPW:localType>
+			</HY-P:localType>
 
-			<HY-HPW:origin>manMade</HY-HPW:origin>
-			<HY-HPW:persistence>Perennial</HY-HPW:persistence>
-			<HY-HPW:tidal xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:tidal>
-			<HY-HPW:drainsBasin xsi:nil="true"/>
-			<HY-HPW:elevation xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-HPW:elevation>
-			<HY-HPW:meanDepth xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-HPW:meanDepth>
-			<HY-HPW:surfaceArea uom="sqrm">96897.6577988</HY-HPW:surfaceArea>
+			<HY-P:origin>manMade</HY-P:origin>
+			<HY-P:persistence>Perennial</HY-P:persistence>
+			<HY-P:tidal xsi:nil="true" nilReason="UNPOPULATED"></HY-P:tidal>
+			<HY-P:drainsBasin xsi:nil="true"/>
+			<HY-P:elevation xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:elevation>
+			<HY-P:meanDepth xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:meanDepth>
+			<HY-P:surfaceArea uom="sqrm">96897.6577988</HY-P:surfaceArea>
 
-		</HY-HPW:StandingWater>
+		</HY-P:StandingWater>
 	</gml:featureMember>
 	<gml:featureMember>
-		<HY-HPW:StandingWater gml:id="FEATURE_de912c4b-e38f-46db-9c66-fed2ffaabdfb">
-			<HY-HPW:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:geographicalName>
-			<HY-HPW:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:hydroId>
-			<HY-HPW:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:beginLifespanVersion>
-			<HY-HPW:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:endLifespanVersion>
-			<HY-HPW:geometry>
+		<HY-P:StandingWater gml:id="FEATURE_de912c4b-e38f-46db-9c66-fed2ffaabdfb">
+			<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+			<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
+			<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+			<HY-P:geometry>
 
 				<!--Inlined geometry 'GEOMETRY_608fd0ce-950f-4f51-96c9-34f3bd571109'-->
 				<gml:Surface gml:id="GEOMETRY_608fd0ce-950f-4f51-96c9-34f3bd571109" srsName="EPSG:4258">
@@ -109,15 +109,15 @@
 						</gml:PolygonPatch>
 					</gml:patches>
 				</gml:Surface>
-			</HY-HPW:geometry>
-			<HY-HPW:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+			</HY-P:geometry>
+			<HY-P:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
 				<base:Identifier>
 					<base:localId>idfeatureMemberx2x46</base:localId>
 
 					<base:namespace>BE.IGNB.Top250</base:namespace>
 				</base:Identifier>
-			</HY-HPW:inspireId>
-			<HY-HPW:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
+			</HY-P:inspireId>
+			<HY-P:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
 				<app4:MD_Resolution>
 					<app4:equivalentScale>
 						<app4:MD_RepresentativeFraction>
@@ -128,19 +128,19 @@
 						</app4:MD_RepresentativeFraction>
 					</app4:equivalentScale>
 				</app4:MD_Resolution>
-			</HY-HPW:levelOfDetail>
-			<HY-HPW:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
+			</HY-P:levelOfDetail>
+			<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
 				<app4:LocalisedCharacterString>Lac</app4:LocalisedCharacterString>
 
-			</HY-HPW:localType>
-			<HY-HPW:origin>manMade</HY-HPW:origin>
-			<HY-HPW:persistence>Perennial</HY-HPW:persistence>
-			<HY-HPW:tidal xsi:nil="true" nilReason="UNPOPULATED"></HY-HPW:tidal>
-			<HY-HPW:drainsBasin xsi:nil="true"/>
-			<HY-HPW:elevation xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-HPW:elevation>
-			<HY-HPW:meanDepth xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-HPW:meanDepth>
-			<HY-HPW:surfaceArea uom="sqrm">119255.418327</HY-HPW:surfaceArea>
+			</HY-P:localType>
+			<HY-P:origin>manMade</HY-P:origin>
+			<HY-P:persistence>Perennial</HY-P:persistence>
+			<HY-P:tidal xsi:nil="true" nilReason="UNPOPULATED"></HY-P:tidal>
+			<HY-P:drainsBasin xsi:nil="true"/>
+			<HY-P:elevation xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:elevation>
+			<HY-P:meanDepth xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:meanDepth>
+			<HY-P:surfaceArea uom="sqrm">119255.418327</HY-P:surfaceArea>
 
-		</HY-HPW:StandingWater>
+		</HY-P:StandingWater>
 	</gml:featureMember>
 </gml:FeatureCollection>

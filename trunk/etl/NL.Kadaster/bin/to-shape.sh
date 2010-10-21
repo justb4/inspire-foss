@@ -20,7 +20,7 @@ function transform() {
     export OGR_FORCE_ASCII=NO
 
     # Convert local source to Shape also transforms coordinates to INSPIRE ETRS89
-     ogr2ogr -nlt $geotype -t_srs "$proj4258" -s_srs "$proj28992" -f "ESRI Shapefile" $2 $1
+    ogr2ogr -nlt $geotype -t_srs "$proj4258" -s_srs "$proj28992" -f "ESRI Shapefile" $2 $1
  
     echo "transforming $1 to $2 DONE"
 }

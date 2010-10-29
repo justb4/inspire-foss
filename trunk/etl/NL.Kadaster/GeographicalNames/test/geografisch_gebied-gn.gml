@@ -31,7 +31,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Stadsweide</GN:text>
@@ -70,7 +70,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Ellecomsche Polder</GN:text>
@@ -109,7 +109,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Beimerwaard</GN:text>
@@ -148,7 +148,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Fraterwaard</GN:text>
@@ -187,7 +187,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Dorenslag</GN:text>
@@ -226,7 +226,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>De Grind</GN:text>
@@ -265,7 +265,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Het Griet</GN:text>
@@ -304,7 +304,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Veld</GN:text>
@@ -343,7 +343,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Havikerwaard</GN:text>
@@ -382,7 +382,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Het Klooster</GN:text>
@@ -421,7 +421,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>De Drie Huizen</GN:text>
@@ -460,7 +460,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Bingerden</GN:text>
@@ -499,7 +499,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Achterdrempt</GN:text>
@@ -538,7 +538,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Strengsche Veld</GN:text>
@@ -577,7 +577,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Doesburg</GN:text>
@@ -616,7 +616,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Het Ziedeveld</GN:text>
@@ -655,7 +655,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Hoefkensche Weiden</GN:text>
@@ -694,7 +694,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Schuttewaard</GN:text>
@@ -733,7 +733,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Angerlo</GN:text>
@@ -772,7 +772,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Bevermeer</GN:text>
@@ -811,7 +811,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Eldriksche Weiden</GN:text>
@@ -850,7 +850,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Stadsweide</GN:text>
@@ -889,7 +889,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>IJsselweiden</GN:text>
@@ -928,7 +928,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Ellecom</GN:text>
@@ -967,7 +967,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Drempt</GN:text>
@@ -1006,7 +1006,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Wemmersweerd</GN:text>
@@ -1045,7 +1045,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Horsten</GN:text>
@@ -1084,7 +1084,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Beinum</GN:text>
@@ -1123,7 +1123,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Loenersche Middelwaard</GN:text>
@@ -1162,7 +1162,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>(Gemeentehuis te De Steeg)</GN:text>
@@ -1201,7 +1201,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Lange Brug</GN:text>
@@ -1240,7 +1240,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>(Gemeentehuis te Hoog- Keppel)</GN:text>

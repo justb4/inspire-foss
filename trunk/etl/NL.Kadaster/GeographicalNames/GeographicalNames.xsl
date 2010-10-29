@@ -161,7 +161,7 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
 			<GN:sourceOfName>
 				<xsl:value-of select="$sourceOfName"/>
 			</GN:sourceOfName>
-			<GN:pronunciation xsi:nil="true"/>
+			<GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
 
 			<GN:spelling>
 				<GN:SpellingOfName>

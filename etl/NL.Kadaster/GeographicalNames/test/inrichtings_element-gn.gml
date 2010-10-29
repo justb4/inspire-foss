@@ -31,7 +31,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Raalte</GN:text>
@@ -70,7 +70,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Pontons Oost</GN:text>
@@ -109,7 +109,7 @@
           <GN:nativeness>endonym</GN:nativeness>
           <GN:nameStatus>official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true"/>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Roobrug</GN:text>

@@ -28,8 +28,10 @@ public class Validate {
 
 		try {
 			parser = org.xml.sax.helpers.XMLReaderFactory.createXMLReader();
+
 			// Turn on validation
 			parser.setFeature("http://xml.org/sax/features/validation", true);
+
 			// Ensure namespace processing is on (the default)
 			parser.setFeature("http://xml.org/sax/features/namespaces", true);
 			parser.setFeature
@@ -38,28 +40,42 @@ public class Validate {
 					("http://apache.org/xml/features/validation/schema-full-checking",
 							true);
 		} catch (SAXNotRecognizedException e) {
-			System.err.println("Unknown feature specified: " + e.getMessage());
+			error("Unknown feature specified: " + e.getMessage());
 		} catch (SAXNotSupportedException e) {
-			System.err.println("Unsupported feature specified: " + e.getMessage());
+			error("Unsupported feature specified: " + e.getMessage());
 		} catch (SAXException e) {
-			System.err.println("Error in setting feature: " + e.getMessage());
+			error("Error in setting feature: " + e.getMessage());
 		}
 
-
 		if (parser == null) {
-			System.exit(-1);
+			error("Cannot create XML parser");
 		}
 
 		try {
-			System.out.println("Validating: " + args[0]);
-			parser.parse(args[0]);
-			System.out.println("Validating: DONE");
-
+			for (String file : args) {
+				info("Validating: " + file);
+				parser.parse(file);
+				info("Validating: DONE result = OK");
+			}
 		}
 
 		catch (Throwable e) {
-			System.err.println("parse error: " + e.getMessage());
-			e.printStackTrace();
+			error("Validation error: ", e);
 		}
+	}
+
+	public static void info(String s) {
+		System.out.println("[INFO] " + s);
+	}
+
+	public static void error(String s) {
+		System.out.println("[ERROR] " + s);
+		System.exit(-1);
+	}
+
+	public static void error(String s, Throwable t) {
+		System.out.println("[ERROR] " + s + " reason=" + t + " msg=" + t.getMessage());
+		t.printStackTrace();
+		System.exit(-1);
 	}
 }

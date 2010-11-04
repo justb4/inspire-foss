@@ -43,7 +43,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	</xsl:variable>
 
 	<!-- Generate HY types for Dutch Top10NL WATERDEEL_VLAK -->
-	<xsl:template match="ogr:ETRS89_WATERDEEL_VLAK">
+	<xsl:template match="ogr:ETRS89_WATERDEEL_VLAK|ogr:ETRS89_WATERDEEL_LIJN">
 
 		<!--
   Values for localType from Top10NL defs
@@ -76,6 +76,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 		</xsl:variable>
 
 		<xsl:choose>
+
 			<!-- Map local type to INSPIRE SurfaceTypes -->
 			<xsl:when test="contains($standingWaterTypes, $localType)">
 				<!-- Let the callable template "HY-P.StandingWater" do the work. -->
@@ -105,8 +106,28 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
 				</xsl:call-template>
 			</xsl:when>
+
+			<!-- Watercourse -->
 			<xsl:when test="contains($watercourseTypes, $localType)">
-				<!-- <WATERCOURSE/> -->
+				<!-- Let the callable template "HY-P.Watercourse" do the work. -->
+				<xsl:call-template name="HY-P.Watercourse">
+
+					<!-- TODO: also optional name in Frysian (ogr:NAAMFR) -->
+					<xsl:with-param name="name">
+						<xsl:value-of select="ogr:NAAMNL"/>
+					</xsl:with-param>
+					<xsl:with-param name="idPrefix">
+						<xsl:value-of select="$idNameSpaceTheme"/>
+					</xsl:with-param>
+					<xsl:with-param name="localId">
+						<xsl:value-of select="ogr:IDENT"/>
+					</xsl:with-param>
+					<xsl:with-param name="localType">
+						<xsl:value-of select="$localType"/>
+					</xsl:with-param>
+
+					<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
+				</xsl:call-template>
 			</xsl:when>
 			<!-- <xsl:otherwise>other</xsl:otherwise>  -->
 

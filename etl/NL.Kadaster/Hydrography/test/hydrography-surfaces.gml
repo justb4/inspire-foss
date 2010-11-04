@@ -7,9 +7,6 @@
     </base:Identifier>
   </base:identifier>
   <base:metadata xsi:nil="true"/>
-  <WATERCOURSE/>
-  <WATERCOURSE/>
-  <WATERCOURSE/>
   <base:member>
     <HY-P:StandingWater gml:id="NL.KAD.HY-P.NL.TOP10NL.111006201">
       <HY-P:geographicalName>

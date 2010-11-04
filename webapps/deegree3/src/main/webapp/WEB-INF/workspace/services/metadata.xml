@@ -13,16 +13,15 @@
     <ServiceContact>
       <IndividualName>Just van den Broecke</IndividualName>
       <PositionName>Service developer</PositionName>
-      <Phone>+31 654268627</Phone>
+      <Phone>+31654268627</Phone>
       <!-- <Facsimile>NA</Facsimile> -->
-      <ElectronicMailAddress>just@justobjects.nl
-      </ElectronicMailAddress>
+      <ElectronicMailAddress>just@justobjects.nl</ElectronicMailAddress>
       <Address>
         <DeliveryPoint>De Grift</DeliveryPoint>
         <City>Apeldoorn</City>
         <AdministrativeArea>Gld</AdministrativeArea>
-        <PostalCode>53177</PostalCode>
-        <Country>Germany</Country>
+        <PostalCode>7311KZ</PostalCode>
+        <Country>The Netherlands</Country>
       </Address>
       <OnlineResource>http://www.kadaster.nl</OnlineResource>
       <HoursOfService>24x7</HoursOfService>

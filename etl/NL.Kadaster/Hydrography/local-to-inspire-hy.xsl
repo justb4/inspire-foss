@@ -106,7 +106,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:when test="contains($watercourseTypes, $localType)">
-				<WATERCOURSE/>
+				<!-- <WATERCOURSE/> -->
 			</xsl:when>
 			<!-- <xsl:otherwise>other</xsl:otherwise>  -->
 

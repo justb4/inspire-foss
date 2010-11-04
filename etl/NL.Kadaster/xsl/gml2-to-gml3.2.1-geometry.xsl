@@ -72,6 +72,33 @@ Requires constants.xsl to be included for global settings.
 		</xsl:apply-templates>
 	</xsl:template>
 
+	<!-- START: Transform MultiPolygon to MultiSurface element -->
+	<xsl:template name="createSurface" priority="1">
+		<xsl:param name="id"/>
+		<xsl:apply-templates select="ogr:geometryProperty" mode="Surface">
+			<xsl:with-param name="id">
+				<xsl:value-of select="$id"/>
+			</xsl:with-param>
+		</xsl:apply-templates>
+	</xsl:template>
+
+	<!-- Transform Polygon to nested Surface -->
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon" mode="Surface">
+		<xsl:param name="id"/>
+
+		<!-- see http://xml.fmi.fi/namespace/meteorology/conceptual-model/meteorological-objects/2009/03/26/docindex146.html#id541 -->
+		<gml:Surface gml:id="{concat('Surface_',$id)}" srsName="{$srsName}">
+			<gml:patches>
+				<gml:PolygonPatch>
+					<xsl:apply-templates>
+						<xsl:with-param name="id" select="$id"/>
+					</xsl:apply-templates>
+				</gml:PolygonPatch>
+			</gml:patches>
+
+		</gml:Surface>
+	</xsl:template>
+
 	<!-- Transform MultiPolygon to nested MultiSurface -->
 	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:MultiPolygon">
 		<xsl:param name="id"/>
@@ -91,14 +118,14 @@ Requires constants.xsl to be included for global settings.
 		<gml:surfaceMember>
 			<gml:Surface gml:id="{concat('Surface_',$id, '.', position())}" srsName="{$srsName}">
 				<gml:patches>
-					<xsl:apply-templates/>
+					<xsl:apply-templates mode="MultiSurface"/>
 				</gml:patches>
 			</gml:Surface>
 		</gml:surfaceMember>
 	</xsl:template>
 
-	<!-- Transform Polygon to PolygonPatch -->
-	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon">
+	<!-- Transform Polygon to PolygonPatch (within MultiSurface) -->
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon" mode="MultiSurface">
 		<gml:PolygonPatch interpolation="planar">
 			<xsl:apply-templates/>
 		</gml:PolygonPatch>

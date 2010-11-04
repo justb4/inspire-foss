@@ -33,6 +33,9 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+	<!-- Use specific GML2 to GML3 geometry transform within Hydrography.xsl this way this can be overloaded -->
+	<xsl:include href="../xsl/gml2-to-gml3.2.1-geometry.xsl"/>
+
 	<xsl:include href="Hydrography.xsl"/>
 
 	<xsl:variable name="idNameSpaceTheme">
@@ -68,35 +71,43 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 			meer, plas, ven, vijver
 		</xsl:variable>
 
-		<xsl:variable name="populatedPlaceTypes">
-			buurtschap|huizengroep|plaats, bewoond oord|woonwijk
+		<xsl:variable name="watercourseTypes">
+			waterloop
 		</xsl:variable>
 
 		<xsl:choose>
-			<!-- Map local type to INSPIRE NamedPlaceType -->
+			<!-- Map local type to INSPIRE SurfaceTypes -->
 			<xsl:when test="contains($standingWaterTypes, $localType)">
-				<!-- Let the callable template "GN.NamedPlace" do the work. -->
+				<!-- Let the callable template "HY-P.StandingWater" do the work. -->
 				<xsl:call-template name="HY-P.StandingWater">
+
+					<!-- TODO: also optional name in Frysian (ogr:NAAMFR) -->
+					<xsl:with-param name="name">
+						<xsl:value-of select="ogr:NAAMNL"/>
+					</xsl:with-param>
 					<xsl:with-param name="idPrefix">
 						<xsl:value-of select="$idNameSpaceTheme"/>
 					</xsl:with-param>
 					<xsl:with-param name="localId">
 						<xsl:value-of select="ogr:IDENT"/>
 					</xsl:with-param>
-					<!-- <xsl:with-param name="point">
-						<xsl:value-of select="ogr:geometryProperty/gml2:Point/gml2:coordinates"/>
-					</xsl:with-param>
-					<xsl:with-param name="name">
-						<xsl:value-of select="ogr:NAAMNL"/>
-					</xsl:with-param>
 					<xsl:with-param name="localType">
 						<xsl:value-of select="$localType"/>
 					</xsl:with-param>
-					<xsl:with-param name="type">
+					<xsl:with-param name="elevation">
+						<xsl:value-of select="ogr:HOOGTENIVE"/>
+					</xsl:with-param>
+					<!-- <xsl:with-param name="point">
+						<xsl:value-of select="ogr:geometryProperty/gml2:Point/gml2:coordinates"/>
 					</xsl:with-param> -->
+
+					<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
+
 				</xsl:call-template>
 			</xsl:when>
-			<xsl:when test="contains($populatedPlaceTypes, $localType)">populatedPlace</xsl:when>
+			<xsl:when test="contains($watercourseTypes, $localType)">
+				<WATERCOURSE/>
+			</xsl:when>
 			<!-- <xsl:otherwise>other</xsl:otherwise>  -->
 
 		</xsl:choose>

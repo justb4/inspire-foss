@@ -39,8 +39,11 @@ Requires:
 
 	<!-- Generate AdministrativeUnit element -->
 	<xsl:template name="HY-P.StandingWater" priority="1">
+		<xsl:param name="name"/>
 		<xsl:param name="idPrefix"/>
 		<xsl:param name="localId"/>
+		<xsl:param name="localType"/>
+		<xsl:param name="elevation"/>
 
 		<!-- Create gml Id by concatenating idPrefix and local id -->
 		<xsl:variable name="gmlId">
@@ -49,12 +52,35 @@ Requires:
 
 		<base:member>
 			<HY-P:StandingWater gml:id="{$gmlId}">
-				<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+				<!--  -->
+
+				<xsl:choose>
+					<!-- Name is optional: only generate a GeographicalName when present otherwise make nil -->
+					<xsl:when test="$name != ''">
+						<HY-P:geographicalName>
+							<!-- Generate minimal GeographicalName -->
+							<xsl:call-template name="GN.GeographicalName.Minimal">
+								<xsl:with-param name="name">
+									<xsl:value-of select="$name"/>
+								</xsl:with-param>
+							</xsl:call-template>
+						</HY-P:geographicalName>
+					</xsl:when>
+					<xsl:otherwise>
+						<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+					</xsl:otherwise>
+				</xsl:choose>
+
 				<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+
+				<!-- TODO: optional populate -->
 				<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
 				<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+
 				<HY-P:geometry>
 					<!--Inlined geometry 'GEOMETRY_69fe457a-fcae-468b-abe2-93aafb44250c'-->
+
+					<!--
 
 					<gml:Surface gml:id="{$gmlId}.Surface" srsName="EPSG:4258">
 						<gml:patches>
@@ -78,6 +104,37 @@ Requires:
 							</gml:PolygonPatch>
 						</gml:patches>
 					</gml:Surface>
+
+				<gml:Surface gml:id="Surface_NL.KAD.HY-P.NL.TOP10NL.111006201" srsName="EPSG:4258">
+					<gml:patches>
+						<gml:PolygonPatch>
+							<gml:exterior>
+								<gml:LinearRing>
+
+									<gml:posList srsName="EPSG:4258" srsDimension="2">6.773247350244287
+										52.450026064929467 6.773297416735965 52.449966990606015 6.773251848458108
+										52.449962103569071 6.773135725257582 52.449934761427222 6.7701836893417
+										52.449976316485035 6.773175175624469 52.449994649229701 6.773247350244287
+										52.450026064929467
+									</gml:posList>
+
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:PolygonPatch>
+					</gml:patches>
+				</gml:Surface>
+
+			</HY-P:geometry>
+
+					-->
+
+					<!-- This is locally specific -->
+					<xsl:call-template name="createSurface">
+						<xsl:with-param name="id">
+							<xsl:value-of select="$gmlId"/>
+						</xsl:with-param>
+					</xsl:call-template>
+
 				</HY-P:geometry>
 
 				<!-- Generate INSPIRE id -->
@@ -92,6 +149,8 @@ Requires:
 					</xsl:call-template>
 				</HY-P:inspireId>
 
+				<!--
+				not required - leave out for now
 				<HY-P:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
 					<app4:MD_Resolution>
 						<app4:equivalentScale>
@@ -103,18 +162,38 @@ Requires:
 							</app4:MD_RepresentativeFraction>
 						</app4:equivalentScale>
 					</app4:MD_Resolution>
-				</HY-P:levelOfDetail>
+				</HY-P:levelOfDetail>   -->
+
 				<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
-					<app4:LocalisedCharacterString>Lac</app4:LocalisedCharacterString>
+					<app4:LocalisedCharacterString>
+						<xsl:value-of select="$localType"/>
+					</app4:LocalisedCharacterString>
 				</HY-P:localType>
 
-				<HY-P:origin>manMade</HY-P:origin>
-				<HY-P:persistence>Perennial</HY-P:persistence>
+				<!-- not available: nill <HY-P:origin>manMade</HY-P:origin>  -->
+				<HY-P:origin xsi:nil="true" nilReason="UNPOPULATED"></HY-P:origin>
+
+				<!-- not available: nill  <HY-P:persistence>Perennial</HY-P:persistence> -->
+				<HY-P:persistence xsi:nil="true" nilReason="UNPOPULATED"></HY-P:persistence>
+
+				<!-- not available: leave out -->
 				<HY-P:tidal xsi:nil="true" nilReason="UNPOPULATED"></HY-P:tidal>
-				<HY-P:drainsBasin xsi:nil="true"/>
-				<HY-P:elevation xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:elevation>
+
+				<!-- bank: not available: leave out -->
+
+				<!-- drainsBasin: nill -->
+				<HY-P:drainsBasin xsi:nil="true" nilReason="UNPOPULATED"/>
+
+				<!-- TODO: make optional -->
+				<HY-P:elevation uom="m">
+					<xsl:value-of select="$elevation"/>
+				</HY-P:elevation>
+
+				<!-- meanDepth: nill -->
 				<HY-P:meanDepth xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:meanDepth>
-				<HY-P:surfaceArea uom="sqrm">96897.6577988</HY-P:surfaceArea>
+
+				<!-- not available: nill   <HY-P:surfaceArea uom="sqrm">96897.6577988</HY-P:surfaceArea>  -->
+				<HY-P:surfaceArea xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:surfaceArea>
 
 			</HY-P:StandingWater>
 		</base:member>

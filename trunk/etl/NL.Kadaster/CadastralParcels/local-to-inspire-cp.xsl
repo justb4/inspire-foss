@@ -32,8 +32,8 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-	<!-- Use specific GML2 to GML3 MultiPolygonto MultiSurface transform within AdministrativeUnits.xsl -->
-	<xsl:include href="../xsl/multipolygon-to-multisurface.xsl"/>
+	<!-- Use specific GML2 to GML3 MultiPolygon to MultiSurface transform within CadastralParcels.xsl -->
+	<xsl:include href="../xsl/gml2-to-gml3.2.1-geometry.xsl"/>
 
 	<xsl:include href="CadastralParcels.xsl"/>
 

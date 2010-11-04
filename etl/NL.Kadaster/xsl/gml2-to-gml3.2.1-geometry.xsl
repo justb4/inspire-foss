@@ -60,7 +60,50 @@ Requires constants.xsl to be included for global settings.
 			</gml:surfaceMember>
 		</gml:MultiSurface>
 
-	</xsl:template>                  -->
+	</xsl:template>
+
+Single Surface GML 3.2.1
+	<gml:Surface gml:id="Surface_NL.KAD.HY-P.NL.TOP10NL.111006201" srsName="EPSG:4258">
+		<gml:patches>
+			<gml:PolygonPatch>
+				<gml:exterior>
+					<gml:LinearRing>
+
+						<gml:posList srsName="EPSG:4258" srsDimension="2">6.773247350244287
+							52.450026064929467 6.773297416735965 52.449966990606015 6.773251848458108
+							52.449962103569071 6.773135725257582 52.449934761427222 6.7701836893417
+							52.449976316485035 6.773175175624469 52.449994649229701 6.773247350244287
+							52.450026064929467
+						</gml:posList>
+
+					</gml:LinearRing>
+				</gml:exterior>
+			</gml:PolygonPatch>
+		</gml:patches>
+	</gml:Surface>
+
+GML 2 LineString
+	<gml2:LineString>
+		<gml2:coordinates>6.924661311497654,52.387729345846942 6.924660273800471,52.387807410394736
+		6.924611677881166,52.388230099836932 6.92455540909
+		5337,52.388614173463125 6.924486954906327,52.389056968286738
+		</gml2:coordinates>
+	</gml2:LineString>
+
+	GML 3.2.1 Curve
+	<gml:Curve gml:id="GEOMETRY_4c788c52-6ebf-44a4-8f0a-8a2f515057f5" srsName="EPSG:4258">
+		<gml:segments>
+			<gml:LineStringSegment interpolation="linear">
+				<gml:posList>51.50352130 4.78032021 51.50352072 4.78032025 51.50267008 4.78038088 51.5
+					0249903 4.78078252 51.50249902 4.78078254 51.50242294 4.78148748 51.50200110 4.78180044
+					51.50199910 4.78180043 51.50165846 4.78179732 51.50127334 4.78142030 51.50118847
+					4.78127643
+				</gml:posList>
+			</gml:LineStringSegment>
+		</gml:segments>
+	</gml:Curve>
+
+-->
 
 	<!-- START: Transform MultiPolygon to MultiSurface element -->
 	<xsl:template name="createMultiSurface" priority="1">
@@ -73,9 +116,9 @@ Requires constants.xsl to be included for global settings.
 	</xsl:template>
 
 	<!-- START: Transform MultiPolygon to MultiSurface element -->
-	<xsl:template name="createSurface" priority="1">
+	<xsl:template name="createGeom" priority="1" mode="Single">
 		<xsl:param name="id"/>
-		<xsl:apply-templates select="ogr:geometryProperty" mode="Surface">
+		<xsl:apply-templates select="ogr:geometryProperty" mode="Single">
 			<xsl:with-param name="id">
 				<xsl:value-of select="$id"/>
 			</xsl:with-param>
@@ -83,13 +126,13 @@ Requires constants.xsl to be included for global settings.
 	</xsl:template>
 
 	<!-- Transform Polygon to nested Surface -->
-	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon" mode="Surface">
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon" mode="Single">
 		<xsl:param name="id"/>
 
 		<!-- see http://xml.fmi.fi/namespace/meteorology/conceptual-model/meteorological-objects/2009/03/26/docindex146.html#id541 -->
 		<gml:Surface gml:id="{concat('Surface_',$id)}" srsName="{$srsName}">
 			<gml:patches>
-				<gml:PolygonPatch>
+				<gml:PolygonPatch interpolation="planar">
 					<xsl:apply-templates>
 						<xsl:with-param name="id" select="$id"/>
 					</xsl:apply-templates>
@@ -147,6 +190,19 @@ Requires constants.xsl to be included for global settings.
 				<xsl:apply-templates/>
 			</gml:LinearRing>
 		</gml:exterior>
+	</xsl:template>
+
+	<!-- Transform Polygon to PolygonPatch (within MultiSurface) -->
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:LineString" mode="Single">
+		<xsl:param name="id"/>
+
+		<gml:Curve gml:id="{concat('Curve',$id)}" srsName="{$srsName}">
+			<gml:segments>
+				<gml:LineStringSegment interpolation="linear">
+					<xsl:apply-templates/>
+				</gml:LineStringSegment>
+			</gml:segments>
+		</gml:Curve>
 	</xsl:template>
 
 	<!-- Transform coordinate list to poslist -->

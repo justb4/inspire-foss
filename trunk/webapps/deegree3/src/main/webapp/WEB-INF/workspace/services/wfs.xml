@@ -10,6 +10,7 @@
     <EnableTransactions>true</EnableTransactions>
     <EnableStreaming>true</EnableStreaming>
     <QuerySRS>EPSG:4258</QuerySRS>
+	<QueryMaxFeatures>500</QueryMaxFeatures>
     <Format handler="GENERIC_GML">
       <MimeType>text/xml; subtype=gml/3.2.1</MimeType>
       <Param key="GET_FEATURE_RESPONSE_LOCAL_NAME">FeatureCollection</Param>

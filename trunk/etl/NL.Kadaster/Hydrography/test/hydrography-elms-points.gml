@@ -25,7 +25,6 @@
       </HY-P:inspireId>
     </HY-P:Lock>
   </base:member>
-  <!--UNHANDLED TYPE: TYPEINRICH=boom-->
   <base:member>
     <HY-P:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118419254">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -44,7 +43,4 @@
       </HY-P:inspireId>
     </HY-P:Lock>
   </base:member>
-  <!--UNHANDLED TYPE: TYPEINRICH=hoogspanningsmast-->
-  <!--UNHANDLED TYPE: TYPEINRICH=boom-->
-  <!--UNHANDLED TYPE: TYPEINRICH=stuw-->
 </base:SpatialDataSet>

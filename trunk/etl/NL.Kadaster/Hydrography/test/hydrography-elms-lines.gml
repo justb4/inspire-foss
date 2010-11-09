@@ -8,7 +8,7 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <HY-P:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103418618">
+    <HY-P:DamOrWeir gml:id="NL.KAD.HY-P.NL.TOP10NL.103418618">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -25,10 +25,10 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </HY-P:Lock>
+    </HY-P:DamOrWeir>
   </base:member>
   <base:member>
-    <HY-P:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103445585">
+    <HY-P:DamOrWeir gml:id="NL.KAD.HY-P.NL.TOP10NL.103445585">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -49,10 +49,10 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </HY-P:Lock>
+    </HY-P:DamOrWeir>
   </base:member>
   <base:member>
-    <HY-P:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103445584">
+    <HY-P:DamOrWeir gml:id="NL.KAD.HY-P.NL.TOP10NL.103445584">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -73,7 +73,6 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </HY-P:Lock>
+    </HY-P:DamOrWeir>
   </base:member>
-  <!--UNHANDLED TYPE: TYPEINRICH=bomenrij-->
 </base:SpatialDataSet>

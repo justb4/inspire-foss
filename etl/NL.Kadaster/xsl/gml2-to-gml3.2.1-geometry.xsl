@@ -125,6 +125,16 @@ GML 2 LineString
 		</xsl:apply-templates>
 	</xsl:template>
 
+
+	<!-- Transform Polygon to nested Surface -->
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Point" mode="Single">
+		<xsl:param name="id"/>
+
+		<gml:Point gml:id="{concat('Point_',$id)}" srsName="{$srsName}">
+			<xsl:apply-templates select="gml2:coordinates" mode="Point"/>
+		</gml:Point>
+	</xsl:template>
+
 	<!-- Transform Polygon to nested Surface -->
 	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Polygon" mode="Single">
 		<xsl:param name="id"/>
@@ -216,5 +226,13 @@ GML 2 LineString
 			<xsl:value-of select="translate(normalize-space(.),',',' ')"/>
 		</gml:posList>
 	</xsl:template>
+
+	<!-- Transform coordinate list to poslist -->
+	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:coordinates" mode="Point">
+		<gml:pos>
+			<xsl:value-of select="translate(normalize-space(.),',',' ')"/>
+		</gml:pos>
+	</xsl:template>
+
 </xsl:stylesheet>
 

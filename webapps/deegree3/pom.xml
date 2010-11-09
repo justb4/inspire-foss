@@ -44,17 +44,20 @@
               <includeGroupIds>org.deegree</includeGroupIds>
               <includeArtifactIds>deegree-services-console</includeArtifactIds>
               <outputDirectory>src/main/webapp</outputDirectory>
-              <excludes>**/console.xhtml</excludes>
             </configuration>
           </execution>
-          <!-- <execution> <id>sources</id> <phase>package</phase> <goals> <goal>copy-dependencies</goal> </goals> <configuration> 
-            <classifier>sources</classifier> <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact> <outputDirectory>${project.build.directory}/sources</outputDirectory> 
-            </configuration> </execution> <execution> <id>javadocs</id> <phase>package</phase> <goals> <goal>copy-dependencies</goal> 
-            </goals> <configuration> <classifier>javadoc</classifier> <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact> 
-            <outputDirectory>${project.build.directory}/javadocs</outputDirectory> </configuration> </execution> -->
+          <!--
+            <execution> <id>sources</id> <phase>package</phase> <goals> <goal>copy-dependencies</goal> </goals>
+            <configuration> <classifier>sources</classifier>
+            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+            <outputDirectory>${project.build.directory}/sources</outputDirectory> </configuration> </execution>
+            <execution> <id>javadocs</id> <phase>package</phase> <goals> <goal>copy-dependencies</goal> </goals>
+            <configuration> <classifier>javadoc</classifier>
+            <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+            <outputDirectory>${project.build.directory}/javadocs</outputDirectory> </configuration> </execution>
+          -->
         </executions>
       </plugin>
-
     </plugins>
   </build>
   <repositories>
@@ -76,13 +79,13 @@
     <dependency>
       <groupId>org.deegree</groupId>
       <artifactId>deegree-services-console</artifactId>
-      <version>3.0-pre9</version>
+      <version>3.0-rc2</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.deegree</groupId>
       <artifactId>deegree-services-console</artifactId>
-      <version>3.0-pre9</version>
+      <version>3.0-rc2</version>
       <type>zip</type>
       <classifier>webapp-template</classifier>
       <scope>compile</scope>
@@ -90,8 +93,7 @@
     <dependency>
       <groupId>org.deegree</groupId>
       <artifactId>deegree-services</artifactId>
-      <version>3.0-pre9</version>
-      <!-- <classifier>sources</classifier> (already done above) -->
+      <version>3.0-rc2</version>
       <exclusions>
         <exclusion>
           <groupId>junit</groupId>

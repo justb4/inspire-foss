@@ -15,38 +15,12 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
-<PostGISFeatureStore configVersion="0.6.0" xmlns="http://www.deegree.org/datasource/feature/postgis"
+<PostGISFeatureStore configVersion="0.6.2" xmlns="http://www.deegree.org/datasource/feature/postgis"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/0.6.0/postgis.xsd">
-  <NamespaceHint prefix="ad" namespaceURI="urn:x-inspire:specification:gmlas:Addresses:3.0" />
-  <NamespaceHint prefix="au" namespaceURI="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" />
-  <NamespaceHint prefix="base" namespaceURI="urn:x-inspire:specification:gmlas:BaseTypes:3.2" />
-  <NamespaceHint prefix="bui" namespaceURI="urn:x-inspire:specification:gmlas:Buildings:0.0" />
-  <NamespaceHint prefix="cp" namespaceURI="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" />
-  <NamespaceHint prefix="gn" namespaceURI="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" />
-  <NamespaceHint prefix="net" namespaceURI="urn:x-inspire:specification:gmlas:Network:3.2" />
-  <NamespaceHint prefix="tn" namespaceURI="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" />
-  <NamespaceHint prefix="tn-a" namespaceURI="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0" />
-  <StorageCRS>EPSG:4258</StorageCRS>
+  xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/0.6.2/postgis.xsd">
   <JDBCConnId>inspire_blob</JDBCConnId>
-  <GMLSchemaFileURL gmlVersion="GML_32">../../schemas/inspire/annex1/</GMLSchemaFileURL>
+  <BLOBMapping>
+    <StorageCRS>EPSG:4258</StorageCRS>
+    <GMLSchema version="GML_32">../../schemas/inspire/annex1</GMLSchema>
+  </BLOBMapping>
 </PostGISFeatureStore>
-
-		<!--    Config for 3.0rc1+
-<PostGISFeatureStore configVersion="0.6.1" xmlns="http://www.deegree.org/datasource/feature/postgis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/0.6.1/postgis.xsd">
-  <NamespaceHint prefix="ad" namespaceURI="urn:x-inspire:specification:gmlas:Addresses:3.0" />
-  <NamespaceHint prefix="au" namespaceURI="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" />
-  <NamespaceHint prefix="base" namespaceURI="urn:x-inspire:specification:gmlas:BaseTypes:3.2" />
-  <NamespaceHint prefix="bui" namespaceURI="urn:x-inspire:specification:gmlas:Buildings:0.0" />
-  <NamespaceHint prefix="cp" namespaceURI="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" />
-  <NamespaceHint prefix="gn" namespaceURI="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" />
-  <NamespaceHint prefix="net" namespaceURI="urn:x-inspire:specification:gmlas:Network:3.2" />
-  <NamespaceHint prefix="tn" namespaceURI="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" />
-  <NamespaceHint prefix="tn-a" namespaceURI="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0" />
-  <StorageCRS>EPSG:4258</StorageCRS>
-  <JDBCConnId>inspire_blob</JDBCConnId>
-  <GMLSchema version="GML_32">../../schemas/inspire/annex1</GMLSchema>
-</PostGISFeatureStore>
-				-->

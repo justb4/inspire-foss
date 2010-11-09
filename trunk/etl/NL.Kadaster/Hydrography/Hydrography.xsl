@@ -37,6 +37,105 @@ Requires:
 
 	<xsl:include href="../GeographicalNames/GeographicalNames.xsl"/>
 
+	<!-- Generate Hydrography element HY-P.DamOrWeir -->
+	<xsl:template name="HY-P.DamOrWeir" priority="1">
+		<xsl:param name="idPrefix"/>
+		<xsl:param name="localId"/>
+		<xsl:param name="status"/>
+
+		<!-- Create gml Id by concatenating idPrefix and local id -->
+		<xsl:variable name="gmlId">
+			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
+		</xsl:variable>
+
+		<base:member>
+			<HY-P:Lock gml:id="{$gmlId}">
+				<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+				<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+				<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
+				<HY-P:condition>
+					<xsl:value-of select="$status"/>
+				</HY-P:condition>
+				<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+
+				<HY-P:geometry>
+
+					<!-- This is locally specific -->
+					<xsl:call-template name="createGeom">
+						<xsl:with-param name="id">
+							<xsl:value-of select="$gmlId"/>
+						</xsl:with-param>
+					</xsl:call-template>
+
+				</HY-P:geometry>
+
+
+				<!-- Generate INSPIRE id -->
+				<HY-P:inspireId>
+					<xsl:call-template name="Base.InspireId">
+						<xsl:with-param name="localId">
+							<xsl:value-of select="$localId"/>
+						</xsl:with-param>
+						<xsl:with-param name="idPrefix">
+							<xsl:value-of select="$idPrefix"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</HY-P:inspireId>
+
+			</HY-P:Lock>
+		</base:member>
+	</xsl:template>
+
+	<!-- Generate Hydrography element HY-P.Lock -->
+	<xsl:template name="HY-P.Lock" priority="1">
+		<xsl:param name="idPrefix"/>
+		<xsl:param name="localId"/>
+		<xsl:param name="status"/>
+
+		<!-- Create gml Id by concatenating idPrefix and local id -->
+		<xsl:variable name="gmlId">
+			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
+		</xsl:variable>
+
+		<base:member>
+			<HY-P:Lock gml:id="{$gmlId}">
+				<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+				<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+				<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
+				<HY-P:condition>
+					<xsl:value-of select="$status"/>
+				</HY-P:condition>
+				<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+
+				<HY-P:geometry>
+
+					<!-- This is locally specific -->
+					<xsl:call-template name="createGeom">
+						<xsl:with-param name="id">
+							<xsl:value-of select="$gmlId"/>
+						</xsl:with-param>
+					</xsl:call-template>
+
+				</HY-P:geometry>
+
+
+				<!-- Generate INSPIRE id -->
+				<HY-P:inspireId>
+					<xsl:call-template name="Base.InspireId">
+						<xsl:with-param name="localId">
+							<xsl:value-of select="$localId"/>
+						</xsl:with-param>
+						<xsl:with-param name="idPrefix">
+							<xsl:value-of select="$idPrefix"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</HY-P:inspireId>
+
+			</HY-P:Lock>
+		</base:member>
+	</xsl:template>
+
+
 	<!-- Generate Hydrography element HY-P.StandingWater -->
 	<xsl:template name="HY-P.StandingWater" priority="1">
 		<xsl:param name="name"/>
@@ -52,7 +151,7 @@ Requires:
 
 		<base:member>
 			<HY-P:StandingWater gml:id="{$gmlId}">
-				
+
 				<!--  Generate Base class SurfaceWater Elements -->
 				<xsl:call-template name="HY-P.SurfaceWaterProperties">
 					<xsl:with-param name="name">
@@ -201,19 +300,19 @@ Requires:
 		</HY-P:inspireId>
 
 		<!--
-		not required - leave out for now
-		<HY-P:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
-			<app4:MD_Resolution>
-				<app4:equivalentScale>
-					<app4:MD_RepresentativeFraction>
-						<app4:denominator xmlns:app12="http://www.isotc211.org/2005/gco">
-							<app12:Integer>250</app12:Integer>
+				not required - leave out for now
+				<HY-P:levelOfDetail xmlns:app4="http://www.isotc211.org/2005/gmd">
+					<app4:MD_Resolution>
+						<app4:equivalentScale>
+							<app4:MD_RepresentativeFraction>
+								<app4:denominator xmlns:app12="http://www.isotc211.org/2005/gco">
+									<app12:Integer>250</app12:Integer>
 
-						</app4:denominator>
-					</app4:MD_RepresentativeFraction>
-				</app4:equivalentScale>
-			</app4:MD_Resolution>
-		</HY-P:levelOfDetail>   -->
+								</app4:denominator>
+							</app4:MD_RepresentativeFraction>
+						</app4:equivalentScale>
+					</app4:MD_Resolution>
+				</HY-P:levelOfDetail>   -->
 
 		<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
 			<app4:LocalisedCharacterString>

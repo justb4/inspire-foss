@@ -283,7 +283,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 					<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden (and NAME ?) -->
 				</xsl:call-template>
 			</xsl:when>
-			<xsl:otherwise><xsl:comment>UNHANDLED TYPE: TYPEINRICH=<xsl:value-of select="$localType"/></xsl:comment></xsl:otherwise>
+			<!-- <xsl:otherwise><xsl:comment>UNHANDLED TYPE: TYPEINRICH=<xsl:value-of select="$localType"/></xsl:comment></xsl:otherwise> -->
 
 		</xsl:choose>
 	</xsl:template>

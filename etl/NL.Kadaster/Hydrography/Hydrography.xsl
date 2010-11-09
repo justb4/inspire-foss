@@ -49,40 +49,21 @@ Requires:
 		</xsl:variable>
 
 		<base:member>
-			<HY-P:Lock gml:id="{$gmlId}">
-				<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
-				<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
-				<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
-				<HY-P:condition>
-					<xsl:value-of select="$status"/>
-				</HY-P:condition>
-				<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+			<HY-P:DamOrWeir gml:id="{$gmlId}">
+				<!--  Generate Base class ManMadeObject Elements -->
+				<xsl:call-template name="HY-P.ManMadeObjectProperties">
+					<xsl:with-param name="idPrefix">
+						<xsl:value-of select="$idPrefix"/>
+					</xsl:with-param>
+					<xsl:with-param name="localId">
+						<xsl:value-of select="$localId"/>
+					</xsl:with-param>
+					<xsl:with-param name="status">
+						<xsl:value-of select="$status"/>
+					</xsl:with-param>
+				</xsl:call-template>
 
-				<HY-P:geometry>
-
-					<!-- This is locally specific -->
-					<xsl:call-template name="createGeom">
-						<xsl:with-param name="id">
-							<xsl:value-of select="$gmlId"/>
-						</xsl:with-param>
-					</xsl:call-template>
-
-				</HY-P:geometry>
-
-
-				<!-- Generate INSPIRE id -->
-				<HY-P:inspireId>
-					<xsl:call-template name="Base.InspireId">
-						<xsl:with-param name="localId">
-							<xsl:value-of select="$localId"/>
-						</xsl:with-param>
-						<xsl:with-param name="idPrefix">
-							<xsl:value-of select="$idPrefix"/>
-						</xsl:with-param>
-					</xsl:call-template>
-				</HY-P:inspireId>
-
-			</HY-P:Lock>
+			</HY-P:DamOrWeir>
 		</base:member>
 	</xsl:template>
 
@@ -99,38 +80,18 @@ Requires:
 
 		<base:member>
 			<HY-P:Lock gml:id="{$gmlId}">
-				<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
-				<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
-				<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
-				<HY-P:condition>
-					<xsl:value-of select="$status"/>
-				</HY-P:condition>
-				<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
-
-				<HY-P:geometry>
-
-					<!-- This is locally specific -->
-					<xsl:call-template name="createGeom">
-						<xsl:with-param name="id">
-							<xsl:value-of select="$gmlId"/>
-						</xsl:with-param>
-					</xsl:call-template>
-
-				</HY-P:geometry>
-
-
-				<!-- Generate INSPIRE id -->
-				<HY-P:inspireId>
-					<xsl:call-template name="Base.InspireId">
-						<xsl:with-param name="localId">
-							<xsl:value-of select="$localId"/>
-						</xsl:with-param>
-						<xsl:with-param name="idPrefix">
-							<xsl:value-of select="$idPrefix"/>
-						</xsl:with-param>
-					</xsl:call-template>
-				</HY-P:inspireId>
-
+				<!--  Generate Base class ManMadeObject Elements -->
+				<xsl:call-template name="HY-P.ManMadeObjectProperties">
+					<xsl:with-param name="idPrefix">
+						<xsl:value-of select="$idPrefix"/>
+					</xsl:with-param>
+					<xsl:with-param name="localId">
+						<xsl:value-of select="$localId"/>
+					</xsl:with-param>
+					<xsl:with-param name="status">
+						<xsl:value-of select="$status"/>
+					</xsl:with-param>
+				</xsl:call-template>
 			</HY-P:Lock>
 		</base:member>
 	</xsl:template>
@@ -238,6 +199,50 @@ Requires:
 
 			</HY-P:Watercourse>
 		</base:member>
+	</xsl:template>
+
+	<!-- Generate common Properties for HY-P.Lock HY-P.DamOrWeir -->
+	<xsl:template name="HY-P.ManMadeObjectProperties" priority="1">
+		<xsl:param name="idPrefix"/>
+		<xsl:param name="localId"/>
+		<xsl:param name="status"/>
+
+		<!-- Create gml Id by concatenating idPrefix and local id -->
+		<xsl:variable name="gmlId">
+			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
+		</xsl:variable>
+
+		<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+		<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+		<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
+		<HY-P:condition>
+			<xsl:value-of select="$status"/>
+		</HY-P:condition>
+		<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+
+		<HY-P:geometry>
+
+			<!-- This is locally specific -->
+			<xsl:call-template name="createGeom">
+				<xsl:with-param name="id">
+					<xsl:value-of select="$gmlId"/>
+				</xsl:with-param>
+			</xsl:call-template>
+
+		</HY-P:geometry>
+
+
+		<!-- Generate INSPIRE id -->
+		<HY-P:inspireId>
+			<xsl:call-template name="Base.InspireId">
+				<xsl:with-param name="localId">
+					<xsl:value-of select="$localId"/>
+				</xsl:with-param>
+				<xsl:with-param name="idPrefix">
+					<xsl:value-of select="$idPrefix"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</HY-P:inspireId>
 	</xsl:template>
 
 	<!-- Generate Hydrography base elements for SurfaceWater common to HY-P.StandingWater and HY-P.Watercourse -->

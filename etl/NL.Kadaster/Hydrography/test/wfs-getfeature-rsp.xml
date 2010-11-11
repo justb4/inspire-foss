@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.opengis.net/ogc"
+					   xmlns:xlink="http://www.w3.org/1999/xlink"
+					   xmlns:app2="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0"
+					   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					   xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=app2:Lock&amp;NAMESPACE=xmlns(app2=urn%3Ax-inspire%3Aspecification%3Agmlas%3AHydroPhysicalWaters%3A3.0)"
+					   gml:id="WFS_RESPONSE">
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103448547">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103448547'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103448547" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.85061557 52.37250369 6.85066352 52.37246755 6.85065480 52.37242226
+							</gml:posList>
+						</gml:LineStringSegment>
+					</gml:segments>
+
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103448547</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+			</app2:inspireId>
+
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103448546">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103448546'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103448546" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.85122718 52.37262991 6.85128037 52.37259748 6.85127081 52.37254227
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103448546</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103459942">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103459942'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103459942" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.05407556 52.40165116 7.05429403 52.40169430 7.05436454 52.40156066
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103459942</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103459941">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103459941'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103459941" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.05430317 52.40191870 7.05451761 52.40196884 7.05459956 52.40183766
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103459941</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103656544">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103656544'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103656544" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.03908607 52.35986159 7.03892974 52.35975884 7.03876191 52.35985456
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103656544</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103460246">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103460246'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103460246" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.07940991 52.46357895 7.07918002 52.46357969 7.07918125 52.46372011
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103460246</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103460247">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103460247'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103460247" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.07704143 52.43470919 7.07681181 52.43470455 7.07680423 52.43484490
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103460247</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103460243">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103460243'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103460243" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.04687738 52.45973506 7.04703616 52.45963353 7.04686993 52.45953654
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103460243</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103460244">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103460244'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103460244" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.04728592 52.45974488 7.04745035 52.45964675 7.04728969 52.45954631
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103460244</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103460245">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103460245'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103460245" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>7.04769713 52.45974581 7.04785957 52.45964645 7.04769690 52.45954723
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103460245</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103471803">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103471803'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103471803" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.76035813 52.25038606 6.76018187 52.25029652 6.76003599 52.25040470
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103471803</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103471804">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103471804'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103471804" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.76003686 52.25037848 6.76021123 52.25046940 6.76035936 52.25036237
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103471804</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118418489">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.118418489'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.118418489" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.67690609 52.24640908 6.67700532 52.24630493</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118418489</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118419408">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.118419408'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.118419408" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.67866014 52.24712053 6.67877045 52.24702654</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118419408</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103577269">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103577269'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103577269" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.80565876 52.24606619 6.80581558 52.24596395 6.80564900 52.24586769
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103577269</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103454629">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103454629'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103454629" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.66290693 52.10479036 6.66295154 52.10479492 6.66294484 52.10481973
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103454629</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.103454628">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'CurveNL.KAD.HY-P.NL.TOP10NL.103454628'-->
+				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103454628" srsName="EPSG:4258">
+					<gml:segments>
+						<gml:LineStringSegment interpolation="linear">
+							<gml:posList>6.66316518 52.10473124 6.66317210 52.10470559 6.66312533 52.10470081
+							</gml:posList>
+						</gml:LineStringSegment>
+
+					</gml:segments>
+				</gml:Curve>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.103454628</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118418876">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'Point_NL.KAD.HY-P.NL.TOP10NL.118418876'-->
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118418876" srsName="EPSG:4258">
+					<gml:pos>6.66521340 52.22355589</gml:pos>
+				</gml:Point>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118418876</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118419464">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'Point_NL.KAD.HY-P.NL.TOP10NL.118419464'-->
+
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118419464" srsName="EPSG:4258">
+					<gml:pos>6.66576136 52.22304245</gml:pos>
+				</gml:Point>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118419464</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+
+				</base:Identifier>
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118419254">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+
+			<app2:condition>functional</app2:condition>
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'Point_NL.KAD.HY-P.NL.TOP10NL.118419254'-->
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118419254" srsName="EPSG:4258">
+					<gml:pos>6.66726775 52.20471764</gml:pos>
+				</gml:Point>
+			</app2:geometry>
+
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118419254</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118421962">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+
+				<!--Inlined geometry 'Point_NL.KAD.HY-P.NL.TOP10NL.118421962'-->
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118421962" srsName="EPSG:4258">
+					<gml:pos>6.68751539 52.13748519</gml:pos>
+				</gml:Point>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118421962</base:localId>
+
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+			</app2:inspireId>
+		</app2:Lock>
+	</gml:featureMember>
+	<gml:featureMember>
+		<app2:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118422006">
+			<app2:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></app2:geographicalName>
+
+			<app2:hydroId xsi:nil="true" nilReason="UNPOPULATED"></app2:hydroId>
+			<app2:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:beginLifespanVersion>
+			<app2:condition>functional</app2:condition>
+			<app2:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></app2:endLifespanVersion>
+			<app2:geometry>
+				<!--Inlined geometry 'Point_NL.KAD.HY-P.NL.TOP10NL.118422006'-->
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118422006" srsName="EPSG:4258">
+					<gml:pos>6.72576736 52.13137137</gml:pos>
+
+				</gml:Point>
+			</app2:geometry>
+			<app2:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+				<base:Identifier>
+					<base:localId>NL.TOP10NL.118422006</base:localId>
+					<base:namespace>NL.KAD.HY-P</base:namespace>
+				</base:Identifier>
+			</app2:inspireId>
+
+		</app2:Lock>
+	</gml:featureMember>
+</gml:FeatureCollection>

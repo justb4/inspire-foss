@@ -8,108 +8,108 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <TN-RO:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.114388387">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.114524564">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.114388387</base:localId>
+          <base:localId>NL.TOP10NL.114524564</base:localId>
           <base:namespace>NL.KAD.TN-RO</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:centrelineGeometry>
-				<gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.114388387" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
-					<gml:posList srsName="EPSG:4258" srsDimension="2">6.922125943020861 52.382344726543472 6.922017549288405 52.382329080190154</gml:posList>
-				</gml:LineStringSegment></gml:segments></gml:Curve>
-			</NET:centrelineGeometry>
-      <NET:fictitious>true</NET:fictitious>
+      <NET:geometry>
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.114524564" srsName="EPSG:4258">
+          <gml:pos>6.843176201926373 52.35528286579008</gml:pos>
+        </gml:Point>
+      </NET:geometry>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-    </TN-RO:RoadLink>
+      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+    </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.114388444">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.114524546">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.114388444</base:localId>
+          <base:localId>NL.TOP10NL.114524546</base:localId>
           <base:namespace>NL.KAD.TN-RO</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:centrelineGeometry>
-				<gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.114388444" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
-					<gml:posList srsName="EPSG:4258" srsDimension="2">6.929498465027224 52.383353969264242 6.929489427199431 52.383353026337488 6.929261221772201 52.383359074070889 6.922815505567407 52.382444296369755 6.922125943020861 52.382344726543472</gml:posList>
-				</gml:LineStringSegment></gml:segments></gml:Curve>
-			</NET:centrelineGeometry>
-      <NET:fictitious>true</NET:fictitious>
+      <NET:geometry>
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.114524546" srsName="EPSG:4258">
+          <gml:pos>6.842415680471941 52.356505818226992</gml:pos>
+        </gml:Point>
+      </NET:geometry>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-    </TN-RO:RoadLink>
+      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+    </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.118682792">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.118422060">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.118682792</base:localId>
+          <base:localId>NL.TOP10NL.118422060</base:localId>
           <base:namespace>NL.KAD.TN-RO</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:centrelineGeometry>
-				<gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.118682792" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
-					<gml:posList srsName="EPSG:4258" srsDimension="2">6.707458252413365 52.026327034615257 6.708300970212585 52.030913943863681 6.708369605893133 52.031253070905791</gml:posList>
-				</gml:LineStringSegment></gml:segments></gml:Curve>
-			</NET:centrelineGeometry>
-      <NET:fictitious>true</NET:fictitious>
+      <NET:geometry>
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.118422060" srsName="EPSG:4258">
+          <gml:pos>6.634880712297864 52.133116949321817</gml:pos>
+        </gml:Point>
+      </NET:geometry>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-    </TN-RO:RoadLink>
+      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+    </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.119745461">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.118422236">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.119745461</base:localId>
+          <base:localId>NL.TOP10NL.118422236</base:localId>
           <base:namespace>NL.KAD.TN-RO</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:centrelineGeometry>
-				<gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.119745461" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
-					<gml:posList srsName="EPSG:4258" srsDimension="2">6.788479153421008 52.241104534884819 6.788478648625305 52.241075946983884 6.78846732881245 52.240425783737621 6.788462308985785 52.240310532873288 6.788430439034999 52.240226567592224 6.788419470359829 52.240214427808752 6.788358133612871 52.240146533850321</gml:posList>
-				</gml:LineStringSegment></gml:segments></gml:Curve>
-			</NET:centrelineGeometry>
-      <NET:fictitious>true</NET:fictitious>
+      <NET:geometry>
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.118422236" srsName="EPSG:4258">
+          <gml:pos>6.700946494594095 52.126848368580468</gml:pos>
+        </gml:Point>
+      </NET:geometry>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-    </TN-RO:RoadLink>
+      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+    </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.119745495">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.119745395">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.119745495</base:localId>
+          <base:localId>NL.TOP10NL.119745395</base:localId>
           <base:namespace>NL.KAD.TN-RO</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:centrelineGeometry>
-				<gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.119745495" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
-					<gml:posList srsName="EPSG:4258" srsDimension="2">6.788479153421008 52.241104534884819 6.78855063792507 52.241103569761492 6.788585809182757 52.24110308946512</gml:posList>
-				</gml:LineStringSegment></gml:segments></gml:Curve>
-			</NET:centrelineGeometry>
-      <NET:fictitious>true</NET:fictitious>
+      <NET:geometry>
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.119745395" srsName="EPSG:4258">
+          <gml:pos>6.788479153421008 52.241104534884819</gml:pos>
+        </gml:Point>
+      </NET:geometry>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-    </TN-RO:RoadLink>
+      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+    </TN-RO:RoadNode>
   </base:member>
 </base:SpatialDataSet>

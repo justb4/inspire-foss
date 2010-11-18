@@ -34,12 +34,12 @@ Requires:
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 				xmlns:NET="urn:x-inspire:specification:gmlas:Network:3.2"
-				xmlns:TN="urn:x-inspire:specification:gmlas:CommonTransportElements:3.2"
+				xmlns:TN="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"
 				xmlns:TN-RO="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0">
 
 	<xsl:include href="../GeographicalNames/GeographicalNames.xsl"/>
 
-	<!-- Generate Hydrography element TN-RO.RoadLink -->
+	<!-- Generate TN element TN-RO.RoadLink -->
 	<xsl:template name="TN-RO.RoadLink" priority="1">
 		<xsl:param name="idPrefix"/>
 		<xsl:param name="localId"/>
@@ -68,9 +68,7 @@ Requires:
 				</NET:inspireId>
 				<NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
 				<NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
-				<!-- END: From Network.xsd:NetworkElementType -->
 
-				<!-- START: From CommonTransportElements.xsd:LinkType -->
 				<NET:centrelineGeometry>
 					<!-- This is locally specific -->
 					<xsl:call-template name="createGeom">
@@ -80,7 +78,8 @@ Requires:
 					</xsl:call-template>
 				</NET:centrelineGeometry>
 				<NET:fictitious>true</NET:fictitious>
-				
+				<!-- END: From Network.xsd:NetworkElementType -->
+
 				<!-- <NET:endNode xlink:href="#TNRO_RNode_00000013"></NET:endNode>
 				<NET:startNode xlink:href="#TNRO_RNode_00000013"></NET:startNode> -->
 
@@ -92,6 +91,64 @@ Requires:
 				<!-- END: From CommonTransportElements.xsd:TransportLinkType -->
 
 			</TN-RO:RoadLink>
+		</base:member>
+	</xsl:template>
+
+	<!-- Generate TN element TN-RO.RoadNode -->
+	<xsl:template name="TN-RO.RoadNode" priority="1">
+		<xsl:param name="idPrefix"/>
+		<xsl:param name="localId"/>
+		<xsl:param name="formOfRoadNode"/>
+
+		<!-- Create gml Id by concatenating idPrefix and local id -->
+		<xsl:variable name="gmlId">
+			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
+		</xsl:variable>
+
+		<base:member>
+			<TN-RO:RoadNode gml:id="{$gmlId}">
+
+				<!-- START: From Network.xsd:NetworkElementType -->
+				<NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+				<NET:inspireId>
+					<!-- Generate INSPIRE id -->
+					<xsl:call-template name="Base.InspireId">
+						<xsl:with-param name="localId">
+							<xsl:value-of select="$localId"/>
+						</xsl:with-param>
+						<xsl:with-param name="idPrefix">
+							<xsl:value-of select="$idPrefix"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</NET:inspireId>
+				<NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+				<NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+				<!-- END: From Network.xsd:NetworkElementType -->
+
+				<!-- START: From CommonTransportElements.xsd:LinkType -->
+				<NET:geometry>
+					<!-- This is locally specific -->
+					<xsl:call-template name="createGeom">
+						<xsl:with-param name="id">
+							<xsl:value-of select="$gmlId"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</NET:geometry>
+
+				<!-- 
+				<NET:spokeEnd xsi:nil="true" nilReason="UNKNOWN"/>
+				<NET:spokeStart xsi:nil="true" nilReason="UNKNOWN"/>  -->
+
+				<!-- END: From CommonTransportElements.xsd:LinkType -->
+				<!-- START: From CommonTransportElements.xsd:TransportLinkType -->
+				<TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+				<TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+				<!-- END: From CommonTransportElements.xsd:TransportLinkType -->
+				<TN-RO:formOfRoadNode>
+					<xsl:value-of select="$formOfRoadNode"/>
+				</TN-RO:formOfRoadNode>
+  
+			</TN-RO:RoadNode>
 		</base:member>
 	</xsl:template>
 

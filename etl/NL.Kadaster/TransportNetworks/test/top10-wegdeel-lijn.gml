@@ -186,5 +186,5 @@
 			</ogr:BRONBESCHR>
 			<ogr:DIMENSIE>2D</ogr:DIMENSIE>
 		</ogr:ETRS89_WEGDEEL_LIJN>
-	</gml2:featureMember>
+	</gml2:featureMember> 
 </ogr:FeatureCollection>

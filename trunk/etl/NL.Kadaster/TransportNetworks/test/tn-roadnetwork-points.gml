@@ -8,105 +8,126 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.114524564">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.114524564">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.114524564</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.114524564" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524564" srsName="EPSG:4258">
           <gml:pos>6.843176201926373 52.35528286579008</gml:pos>
         </gml:Point>
       </NET:geometry>
+      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
       <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.114524546">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.114524546">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.114524546</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.114524546" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524546" srsName="EPSG:4258">
           <gml:pos>6.842415680471941 52.356505818226992</gml:pos>
         </gml:Point>
       </NET:geometry>
+      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
       <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.118422060">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.118422060">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.118422060</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.118422060" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422060" srsName="EPSG:4258">
           <gml:pos>6.634880712297864 52.133116949321817</gml:pos>
         </gml:Point>
       </NET:geometry>
+      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
       <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.118422236">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.118422236">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.118422236</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.118422236" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422236" srsName="EPSG:4258">
           <gml:pos>6.700946494594095 52.126848368580468</gml:pos>
         </gml:Point>
       </NET:geometry>
+      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
       <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
-    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.NL.TOP10NL.119745395">
+    <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.119745395">
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.119745395</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.NL.TOP10NL.119745395" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.119745395" srsName="EPSG:4258">
           <gml:pos>6.788479153421008 52.241104534884819</gml:pos>
         </gml:Point>
       </NET:geometry>
+      <TN:geographicalName>
+        <GN:GeographicalName>
+          <GN:language xsi:nil="true"/>
+          <GN:nativeness>endonym</GN:nativeness>
+          <GN:nameStatus>official</GN:nameStatus>
+          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:spelling>
+            <GN:SpellingOfName>
+              <GN:text>Boekelose Weg|Rougoorweg</GN:text>
+              <GN:script>Latn</GN:script>
+            </GN:SpellingOfName>
+          </GN:spelling>
+          <GN:grammaticalGender xsi:nil="true"/>
+          <GN:grammaticalNumber xsi:nil="true"/>
+        </GN:GeographicalName>
+      </TN:geographicalName>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
       <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>

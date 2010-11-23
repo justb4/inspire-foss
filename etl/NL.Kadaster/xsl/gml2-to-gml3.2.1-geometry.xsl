@@ -18,14 +18,15 @@
 
 <!--
 
-Transforms GM2 MultiPolygon to GML3 MultiSurface geometry.
+Transforms GML2 geometries to GML3 geometries.
 
 Author: Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
 GML2 namespace should be defined as xmlns:gml2="http://www.opengis.net/gml" otherwise
-it would conflict with GML3 xmlns:gml="http://www.opengis.net/gml/3.2" namesapce.
-The entry point is the callable template "createMultiSurface". This transformation
-is specific to the use of ogr2ogr from MapInfo files. ogr2ogr cannot generate GML3 so
+it would conflict with GML3 xmlns:gml="http://www.opengis.net/gml/3.2" namespace.
+The entry point are callable templates like "createMultiSurface". These transformations
+are specific to the use of GDAL's ogr2ogr (www.gdal.org) from MapInfo or Shape files.
+GDAL's ogr2ogr cannot (yet) generate GML3 so
 we use GML2 MultiPolygon.
 
 Requires constants.xsl to be included for global settings.
@@ -105,7 +106,7 @@ GML 2 LineString
 
 -->
 
-	<!-- START: Transform MultiPolygon to MultiSurface element -->
+	<!-- Callable Template: Transform MultiPolygon to MultiSurface element -->
 	<xsl:template name="createMultiSurface" priority="1">
 		<xsl:param name="id"/>
 		<xsl:apply-templates select="ogr:geometryProperty">
@@ -115,7 +116,7 @@ GML 2 LineString
 		</xsl:apply-templates>
 	</xsl:template>
 
-	<!-- START: Transform MultiPolygon to MultiSurface element -->
+	<!-- Callable Template: Transform Point or Linestring element to GML3 Points/Curves-->
 	<xsl:template name="createGeom" priority="1" mode="Single">
 		<xsl:param name="id"/>
 		<xsl:apply-templates select="ogr:geometryProperty" mode="Single">
@@ -124,7 +125,6 @@ GML 2 LineString
 			</xsl:with-param>
 		</xsl:apply-templates>
 	</xsl:template>
-
 
 	<!-- Transform Polygon to nested Surface -->
 	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:Point" mode="Single">

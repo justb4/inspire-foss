@@ -43,8 +43,8 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	</xsl:variable>
 
 
-	<!-- Generate TN types for Dutch Top10NL WEGDEEL_VLAK -->
-	<xsl:template match="ogr:ETRS89_WEGDEEL_LIJN|ogr:ETRS89_WEGDEEL_PUNT">
+	<!-- Generate TN types for Dutch Top10NL Points and Lines -->
+	<xsl:template match="ogr:ETRS89_WEGDEEL_PUNT|ogr:ETRS89_WEGDEEL_LIJN">
 
 		<!--
   Values for localType from Top10NL defs
@@ -76,39 +76,83 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
 			<!-- Map local type to INSPIRE TN types -->
 			<xsl:when test="contains($roadLinkType, $localType)">
+				<!-- Use specific id prefix since there may be common Top10NL id's for LIJN/VLAK -->
+				<xsl:variable name="idNameSpaceLink">
+					<xsl:value-of select="concat($idNameSpaceTheme,'.L')"/>
+				</xsl:variable>
+
 				<!-- Let the callable template "TN-RO.StandingWater" do the work. -->
 				<xsl:call-template name="TN-RO.RoadLink">
 
 					<xsl:with-param name="idPrefix">
-						<xsl:value-of select="$idNameSpaceTheme"/>
+						<xsl:value-of select="$idNameSpaceLink"/>
 					</xsl:with-param>
 					<xsl:with-param name="localId">
 						<xsl:value-of select="ogr:IDENT"/>
 					</xsl:with-param>
-				<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
+					<xsl:with-param name="name">
+						<xsl:value-of select="ogr:STRNAAMNL"/>
+					</xsl:with-param>
+					<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
 
 				</xsl:call-template>
 			</xsl:when>
 
 			<xsl:when test="contains($roadNodeType, $localType)">
+				<!-- Use specific id prefix since there may be common Top10NL id's for LIJN/VLAK -->
+				<xsl:variable name="idNameSpaceNode">
+					<xsl:value-of select="concat($idNameSpaceTheme,'.N')"/>
+				</xsl:variable>
+
 				<!-- Let the callable template "TN-RO.RoadNode" do the work. -->
 				<xsl:call-template name="TN-RO.RoadNode">
 
 					<xsl:with-param name="idPrefix">
-						<xsl:value-of select="$idNameSpaceTheme"/>
+						<xsl:value-of select="$idNameSpaceNode"/>
 					</xsl:with-param>
 					<xsl:with-param name="localId">
 						<xsl:value-of select="ogr:IDENT"/>
 					</xsl:with-param>
 					<xsl:with-param name="formOfRoadNode">junction</xsl:with-param>
-				<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
+					<xsl:with-param name="name">
+						<xsl:value-of select="ogr:STRNAAMNL"/>
+					</xsl:with-param>
+					<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
 
 				</xsl:call-template>
 			</xsl:when>
 
-			<xsl:otherwise><xsl:comment>UNHANDLED TYPE: TYPEWEG=<xsl:value-of select="$localType"/></xsl:comment></xsl:otherwise>
+			<xsl:otherwise>
+				<xsl:comment>UNHANDLED TYPE: TYPEWEG=<xsl:value-of select="$localType"/>
+				</xsl:comment>
+			</xsl:otherwise>
 
 		</xsl:choose>
+	</xsl:template>
+
+	<!-- Generate TN types for Dutch Top10NL WEGDEEL_VLAK -->
+	<xsl:template match="ogr:ETRS89_WEGDEEL_VLAK">
+
+		<!-- Use specific id prefix since there may be common Top10NL id's for LIJN/VLAK -->
+		<xsl:variable name="idNameSpaceArea">
+			<xsl:value-of select="concat($idNameSpaceTheme,'.A')"/>
+		</xsl:variable>
+
+		<!-- Let the callable template "TN-RO.StandingWater" do the work. -->
+		<xsl:call-template name="TN-RO.RoadArea">
+
+			<xsl:with-param name="idPrefix">
+				<xsl:value-of select="$idNameSpaceArea"/>
+			</xsl:with-param>
+			<xsl:with-param name="localId">
+				<xsl:value-of select="ogr:IDENT"/>
+			</xsl:with-param>
+			<xsl:with-param name="name">
+				<xsl:value-of select="ogr:STRNAAMNL"/>
+			</xsl:with-param>
+			<!-- TODO: optionally pass OBJ_BEGIN, VER_BEGIN en *EIND tijden-->
+
+		</xsl:call-template>
 	</xsl:template>
 
 </xsl:stylesheet>

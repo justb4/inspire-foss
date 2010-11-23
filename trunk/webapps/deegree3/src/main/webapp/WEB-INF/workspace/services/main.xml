@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deegreeServiceController configVersion="0.6.0" xmlns="http://www.deegree.org/webservices"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/webservices http://schemas.deegree.org/webservices/0.6.0/services.xsd">
+<deegreeServiceController configVersion="3.0.0" xmlns="http://www.deegree.org/services/controller"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/services/controller http://www.deegree.org/services/controller/3.0.0/controller.xsd">
 </deegreeServiceController>

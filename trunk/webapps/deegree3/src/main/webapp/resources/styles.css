@@ -9,18 +9,28 @@ body {
 
 /* BEGIN: layout*/
 #container {
-	height:734px;
-	left:10px;
-	margin:0 auto;
-	position:relative;
-	text-align:justify;
-	text-decoration:none;
-	top:0;
-	width:1000px;
+	background-image:url("#{resource['images:bg.png']}");
+	background-repeat: no-repeat;
+	text-align: justify;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width:930px;
+	height:690px;
 	z-index:1;
+	top: 30px;
+	left: auto;
+	text-decoration: none;
 }
 
 #header {
+	width:860px;
+	padding-top: 100px;
+	margin-left:40px;
 	margin-bottom: 10px;
 }
 
@@ -35,7 +45,9 @@ body {
 }
 
 #main {
-	
+	width:860px;
+	height:550px;
+	margin-left:40px;
 }
 
 #left {
@@ -45,18 +57,11 @@ body {
 }
 
 #center {
-	background-image: url("images/bg.png");
 	margin: 10px 0px;
-	float: left;
+	float: right;
 	width: 600px;
 	font-size: small;
 	text-align: left;
-}
-
-
-#right {
-	float: right;
-	width: 20%;
 }
 
 #footer {
@@ -71,55 +76,185 @@ body {
 .clear {
 	clear: both;
 }
+/** Navigation **/
 
-/** START: menu **/
-a.menuEntry:link {
-	color: black;
+.navi {
+	font-size: small;
 }
 
-a.menuEntry:visited {
-	color: black;
+.navi:hover {
+	color: green;
 }
 
-a.menuEntry:active {
-	color: black;
+.naviactive {
+	color: green;
 }
 
-a.menuEntry:hover {
-	color: black;
-	
+.naviExtern:hover {
+	color: blue;
 }
 
-a.selectedMenuEntry:link {
+.linkWiki:hover {
+	color: orange;
+}
+
+.welcomeText {
+	font:85% Verdana,Arial,Helvetica,sans-serif;
 	color: gray;
-	
+	text-align: justify;
+	margin-right: 50px;
 }
 
-a.selectedMenuEntry:visited {
+.welcomeLink {
+	font:95% Verdana,Arial,Helvetica,sans-serif;
+	color: orange;
+}
+
+
+/** START: button **/
+
+.button {
+	color: red;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border: 1px;
+	}
+
+.buttongray {
 	color: gray;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border: 1px;
+	}
+
+.buttonActivate {
+	color:#409300 ;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border-color: #62AA2A ;
+	border: 1px;
+	font-weight: bold;
 	
 }
 
-a.selectedMenuEntry:active {
-	color: gray;
+.buttonDeactivate {
+	color: grey;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border: 1px;
 	
 }
-
-a.selectedMenuEntry:hover {
-	color: gray;
-	
+.buttonInfo {
+	color: #7279D8;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border-color: blue;
+	border: 1px;
 }
 
-/** END: menu **/ /* END: layout*/
+.buttonDelete {
+	color:#FCB32B;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border-color:#BF3030;
+	border: 1px;
+}
+
+.buttonEdit {
+	color:#A6D400;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border-color:#52A529 ;
+	border: 1px;
+}
+
+.buttonEdit2 {
+	color:#52A529;
+	font:90% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border-color:#52A529 ;
+	border: 1px;
+}
+
+.buttonCreateNew {
+	color:#409300 ;
+	font:90% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border-color: #62AA2A ;
+	border: 1px;
+}
+
+.buttonSave {
+	color:#409300 ;
+	font:90% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border: 1px;
+}
+
+.buttonCancel {
+	color:#FCB32B;
+	font:90% Verdana,Arial,Helvetica,sans-serif;
+	background-color: #fcfcfc;
+	border: 1px;
+}
+
+.buttonLogin {
+	color: grey;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: white;
+}
+
+.buttonLogout {
+	color: grey;
+	font:80% Verdana,Arial,Helvetica,sans-serif;
+	background-color: white;
+}
+
+.schema {
+	color: #7279D8;
+	font:90% Verdana,Arial,Helvetica,sans-serif;
+}
+
+.label {
+	color: grey;
+	font:90% Verdana,Arial,Helvetica,sans-serif;
+	margin-right:10px; 
+	margin-left: 10px;
+}
+
+.liste {
+	color: darkgrey;
+	font:100% Verdana,Arial,Helvetica,sans-serif;
+	border-color: lightgrey;
+}
+
+.titel {
+	color: #409300 ;
+	font: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.StatusActivated {
+	color: green;
+}
+
+.StatusDeactivated {
+	color: grey;
+}
+
+
+/** END: button **/
+
+
 .consoleError {
 	color: red;
 }
 
 a {
-	color: green;
+	color: gray;
 	text-decoration: none;
 	font-size: small;
 }
+
 
 .textarea {
 	width: 850px;
@@ -132,7 +267,13 @@ a {
 }
 
 .attention {
-	color: red;
+	font:70% Verdana,Arial,Helvetica,sans-serif;
+	color: #FA6666;
+}
+
+.noattention {
+	font:70% Verdana,Arial,Helvetica,sans-serif;
+	color: gray;
 }
 
 .collapsiblePanel {
@@ -178,6 +319,9 @@ a {
 	text-align: center;
 	font-size: small;
 	display: none;
+	color:grey;
+	font-family:"Courier New",Courier,monospace;
+	font-weight:normal;
 }
 
 /* begin curved div */

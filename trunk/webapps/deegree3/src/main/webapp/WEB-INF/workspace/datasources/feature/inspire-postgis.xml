@@ -15,9 +15,9 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-<PostGISFeatureStore configVersion="0.6.2" xmlns="http://www.deegree.org/datasource/feature/postgis"
+<PostGISFeatureStore configVersion="3.0.0" xmlns="http://www.deegree.org/datasource/feature/postgis"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/0.6.2/postgis.xsd">
+  xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/3.0.0/postgis.xsd">
   <JDBCConnId>inspire_blob</JDBCConnId>
   <BLOBMapping>
     <StorageCRS>EPSG:4258</StorageCRS>

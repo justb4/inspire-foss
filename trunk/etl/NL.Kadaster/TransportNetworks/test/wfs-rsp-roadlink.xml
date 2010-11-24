@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tn-ro="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0 http://sunda:8080/deegree3/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=tn-ro:RoadLink&amp;NAMESPACE=xmlns(tn-ro=urn%3Ax-inspire%3Aspecification%3Agmlas%3ARoadTransportNetwork%3A3.0)" gml:id="WFS_RESPONSE">
   <gml:featureMember>
-    <tn-ro:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.114388387">
-      <zdef-135035779:beginLifespanVersion xmlns:zdef-135035779="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef-135035779:beginLifespanVersion>
-      <zdef1658805018:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:zdef1658805018="urn:x-inspire:specification:gmlas:Network:3.2">
+    <tn-ro:RoadLink xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" gml:id="NL.KAD.TN-RO.L.NL.TOP10NL.114388387">
+      <net:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:beginLifespanVersion>
+      <net:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
           <base:localId>NL.TOP10NL.114388387</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.L</base:namespace>
 
         </base:Identifier>
-      </zdef1658805018:inspireId>
-      <zdef-1273948919:endLifespanVersion xmlns:zdef-1273948919="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef-1273948919:endLifespanVersion>
-      <net:inNetwork xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true"/>
-      <zdef-902654746:centrelineGeometry xmlns:zdef-902654746="urn:x-inspire:specification:gmlas:Network:3.2">
-        <!--Inlined geometry 'CurveNL.KAD.TN-RO.NL.TOP10NL.114388387'-->
-        <gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.114388387" srsName="EPSG:4326">
+      </net:inspireId>
+      <net:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:endLifespanVersion>
+      <net:inNetwork xsi:nil="true"/>
+      <net:centrelineGeometry>
+        <!--Inlined geometry 'CurveNL.KAD.TN-RO.L.NL.TOP10NL.114388387'-->
+        <gml:Curve gml:id="CurveNL.KAD.TN-RO.L.NL.TOP10NL.114388387" srsName="EPSG:4326">
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
 
@@ -22,28 +22,29 @@
             </gml:LineStringSegment>
           </gml:segments>
         </gml:Curve>
-      </zdef-902654746:centrelineGeometry>
-      <net:fictitious xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2">true</net:fictitious>
-      <zdef-1712439518:validFrom xmlns:zdef-1712439518="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef-1712439518:validFrom>
-      <zdef-1830912142:validTo xmlns:zdef-1830912142="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef-1830912142:validTo>
+      </net:centrelineGeometry>
+      <net:fictitious>true</net:fictitious>
+      <tn:geographicalName xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNPOPULATED"></tn:geographicalName>
+      <tn:validFrom xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validFrom>
 
+      <tn:validTo xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validTo>
     </tn-ro:RoadLink>
   </gml:featureMember>
   <gml:featureMember>
-    <tn-ro:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.114388444">
-      <zdef-2031739367:beginLifespanVersion xmlns:zdef-2031739367="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef-2031739367:beginLifespanVersion>
-      <zdef1698812697:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:zdef1698812697="urn:x-inspire:specification:gmlas:Network:3.2">
+    <tn-ro:RoadLink xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" gml:id="NL.KAD.TN-RO.L.NL.TOP10NL.114388444">
+      <net:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:beginLifespanVersion>
+      <net:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
           <base:localId>NL.TOP10NL.114388444</base:localId>
 
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.L</base:namespace>
         </base:Identifier>
-      </zdef1698812697:inspireId>
-      <zdef-151697997:endLifespanVersion xmlns:zdef-151697997="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef-151697997:endLifespanVersion>
-      <net:inNetwork xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true"/>
-      <zdef-760798718:centrelineGeometry xmlns:zdef-760798718="urn:x-inspire:specification:gmlas:Network:3.2">
-        <!--Inlined geometry 'CurveNL.KAD.TN-RO.NL.TOP10NL.114388444'-->
-        <gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.114388444" srsName="EPSG:4326">
+      </net:inspireId>
+      <net:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:endLifespanVersion>
+      <net:inNetwork xsi:nil="true"/>
+      <net:centrelineGeometry>
+        <!--Inlined geometry 'CurveNL.KAD.TN-RO.L.NL.TOP10NL.114388444'-->
+        <gml:Curve gml:id="CurveNL.KAD.TN-RO.L.NL.TOP10NL.114388444" srsName="EPSG:4326">
 
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
@@ -51,99 +52,121 @@
             </gml:LineStringSegment>
           </gml:segments>
         </gml:Curve>
-      </zdef-760798718:centrelineGeometry>
-      <net:fictitious xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2">true</net:fictitious>
+      </net:centrelineGeometry>
+      <net:fictitious>true</net:fictitious>
 
-      <zdef1380105731:validFrom xmlns:zdef1380105731="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef1380105731:validFrom>
-      <zdef-1024665222:validTo xmlns:zdef-1024665222="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef-1024665222:validTo>
+      <tn:geographicalName xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNPOPULATED"></tn:geographicalName>
+      <tn:validFrom xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validFrom>
+      <tn:validTo xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validTo>
     </tn-ro:RoadLink>
   </gml:featureMember>
   <gml:featureMember>
-    <tn-ro:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.118682792">
-      <zdef-950946334:beginLifespanVersion xmlns:zdef-950946334="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef-950946334:beginLifespanVersion>
-      <zdef-801684081:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:zdef-801684081="urn:x-inspire:specification:gmlas:Network:3.2">
+    <tn-ro:RoadLink xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" gml:id="NL.KAD.TN-RO.L.NL.TOP10NL.118682792">
+      <net:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:beginLifespanVersion>
+      <net:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+
         <base:Identifier>
-
           <base:localId>NL.TOP10NL.118682792</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.L</base:namespace>
         </base:Identifier>
-      </zdef-801684081:inspireId>
-      <zdef-278359782:endLifespanVersion xmlns:zdef-278359782="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef-278359782:endLifespanVersion>
-      <net:inNetwork xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true"/>
-      <zdef892603217:centrelineGeometry xmlns:zdef892603217="urn:x-inspire:specification:gmlas:Network:3.2">
-        <!--Inlined geometry 'CurveNL.KAD.TN-RO.NL.TOP10NL.118682792'-->
+      </net:inspireId>
+      <net:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:endLifespanVersion>
+      <net:inNetwork xsi:nil="true"/>
+      <net:centrelineGeometry>
 
-        <gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.118682792" srsName="EPSG:4326">
+        <!--Inlined geometry 'CurveNL.KAD.TN-RO.L.NL.TOP10NL.118682792'-->
+        <gml:Curve gml:id="CurveNL.KAD.TN-RO.L.NL.TOP10NL.118682792" srsName="EPSG:4326">
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
               <gml:posList>6.70745825 52.02632703 6.70830097 52.03091394 6.70836961 52.03125307</gml:posList>
             </gml:LineStringSegment>
           </gml:segments>
         </gml:Curve>
-      </zdef892603217:centrelineGeometry>
 
-      <net:fictitious xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2">true</net:fictitious>
-      <zdef2102350467:validFrom xmlns:zdef2102350467="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef2102350467:validFrom>
-      <zdef-620107676:validTo xmlns:zdef-620107676="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef-620107676:validTo>
+      </net:centrelineGeometry>
+      <net:fictitious>true</net:fictitious>
+      <tn:geographicalName xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNPOPULATED"></tn:geographicalName>
+      <tn:validFrom xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validFrom>
+      <tn:validTo xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validTo>
     </tn-ro:RoadLink>
   </gml:featureMember>
   <gml:featureMember>
-    <tn-ro:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.119745461">
-      <zdef1398427554:beginLifespanVersion xmlns:zdef1398427554="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef1398427554:beginLifespanVersion>
 
-      <zdef302385872:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:zdef302385872="urn:x-inspire:specification:gmlas:Network:3.2">
+    <tn-ro:RoadLink xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" gml:id="NL.KAD.TN-RO.L.NL.TOP10NL.119745461">
+      <net:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:beginLifespanVersion>
+      <net:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
           <base:localId>NL.TOP10NL.119745461</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
+          <base:namespace>NL.KAD.TN-RO.L</base:namespace>
         </base:Identifier>
-      </zdef302385872:inspireId>
-      <zdef1702750851:endLifespanVersion xmlns:zdef1702750851="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef1702750851:endLifespanVersion>
-      <net:inNetwork xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true"/>
+      </net:inspireId>
 
-      <zdef-480308691:centrelineGeometry xmlns:zdef-480308691="urn:x-inspire:specification:gmlas:Network:3.2">
-        <!--Inlined geometry 'CurveNL.KAD.TN-RO.NL.TOP10NL.119745461'-->
-        <gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.119745461" srsName="EPSG:4326">
+      <net:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:endLifespanVersion>
+      <net:inNetwork xsi:nil="true"/>
+      <net:centrelineGeometry>
+        <!--Inlined geometry 'CurveNL.KAD.TN-RO.L.NL.TOP10NL.119745461'-->
+        <gml:Curve gml:id="CurveNL.KAD.TN-RO.L.NL.TOP10NL.119745461" srsName="EPSG:4326">
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
               <gml:posList>6.78847915 52.24110453 6.78847865 52.24107595 6.78846733 52.24042578 6.78846231 52.24031053 6.78843044 52.24022657 6.78841947 52.24021443 6.78835813 52.24014653</gml:posList>
+
             </gml:LineStringSegment>
           </gml:segments>
-
         </gml:Curve>
-      </zdef-480308691:centrelineGeometry>
-      <net:fictitious xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2">true</net:fictitious>
-      <zdef-2093707285:validFrom xmlns:zdef-2093707285="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef-2093707285:validFrom>
-      <zdef-1109896293:validTo xmlns:zdef-1109896293="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef-1109896293:validTo>
+      </net:centrelineGeometry>
+      <net:fictitious>true</net:fictitious>
+      <tn:geographicalName xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+        <gn:GeographicalName>
+          <gn:language xsi:nil="true"></gn:language>
+
+          <gn:nativeness>endonym</gn:nativeness>
+          <gn:nameStatus>official</gn:nameStatus>
+          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
+          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
+          <gn:spelling>
+            <gn:SpellingOfName>
+              <gn:text>Boekelose Weg</gn:text>
+
+              <gn:script>Latn</gn:script>
+            </gn:SpellingOfName>
+          </gn:spelling>
+          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
+          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
+        </gn:GeographicalName>
+      </tn:geographicalName>
+      <tn:validFrom xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validFrom>
+
+      <tn:validTo xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validTo>
     </tn-ro:RoadLink>
   </gml:featureMember>
   <gml:featureMember>
-
-    <tn-ro:RoadLink gml:id="NL.KAD.TN-RO.NL.TOP10NL.119745495">
-      <zdef774748952:beginLifespanVersion xmlns:zdef774748952="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef774748952:beginLifespanVersion>
-      <zdef-1973658587:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:zdef-1973658587="urn:x-inspire:specification:gmlas:Network:3.2">
+    <tn-ro:RoadLink xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" gml:id="NL.KAD.TN-RO.L.NL.TOP10NL.119745495">
+      <net:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:beginLifespanVersion>
+      <net:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
           <base:localId>NL.TOP10NL.119745495</base:localId>
-          <base:namespace>NL.KAD.TN-RO</base:namespace>
-        </base:Identifier>
-      </zdef-1973658587:inspireId>
 
-      <zdef1703417249:endLifespanVersion xmlns:zdef1703417249="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true" nilReason="UNKNOWN"></zdef1703417249:endLifespanVersion>
-      <net:inNetwork xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2" xsi:nil="true"/>
-      <zdef-338658935:centrelineGeometry xmlns:zdef-338658935="urn:x-inspire:specification:gmlas:Network:3.2">
-        <!--Inlined geometry 'CurveNL.KAD.TN-RO.NL.TOP10NL.119745495'-->
-        <gml:Curve gml:id="CurveNL.KAD.TN-RO.NL.TOP10NL.119745495" srsName="EPSG:4326">
+          <base:namespace>NL.KAD.TN-RO.L</base:namespace>
+        </base:Identifier>
+      </net:inspireId>
+      <net:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></net:endLifespanVersion>
+      <net:inNetwork xsi:nil="true"/>
+      <net:centrelineGeometry>
+        <!--Inlined geometry 'CurveNL.KAD.TN-RO.L.NL.TOP10NL.119745495'-->
+        <gml:Curve gml:id="CurveNL.KAD.TN-RO.L.NL.TOP10NL.119745495" srsName="EPSG:4326">
+
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
               <gml:posList>6.78847915 52.24110453 6.78855064 52.24110357 6.78858581 52.24110309</gml:posList>
-
             </gml:LineStringSegment>
           </gml:segments>
         </gml:Curve>
-      </zdef-338658935:centrelineGeometry>
-      <net:fictitious xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2">true</net:fictitious>
-      <zdef471023930:validFrom xmlns:zdef471023930="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef471023930:validFrom>
-      <zdef1760253811:validTo xmlns:zdef1760253811="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></zdef1760253811:validTo>
-    </tn-ro:RoadLink>
+      </net:centrelineGeometry>
+      <net:fictitious>true</net:fictitious>
 
+      <tn:geographicalName xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNPOPULATED"></tn:geographicalName>
+      <tn:validFrom xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validFrom>
+      <tn:validTo xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0" xsi:nil="true" nilReason="UNKNOWN"></tn:validTo>
+    </tn-ro:RoadLink>
   </gml:featureMember>
 </gml:FeatureCollection>

@@ -35,6 +35,7 @@ Requires:
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 				xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0">
 
+	<!-- Reuse GN XSLT -->
 	<xsl:include href="../GeographicalNames/GeographicalNames.xsl"/>
 
 	<!-- Generate AdministrativeUnit element -->

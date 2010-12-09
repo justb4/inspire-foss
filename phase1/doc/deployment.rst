@@ -36,19 +36,20 @@ client WFS requests for testing.
 
 Below is our Ant ``build.xml`` file.
 
-.. literalinclude:: ../www/webapps/deegree-wfs/build.xml
+.. literalinclude:: ../webapps/deegree2-wfs/build.xml
     :language: xml
     :linenos:
 
 The `build.properties` file is as follows.
 
-.. literalinclude:: ../www/build.properties
+.. literalinclude:: ../webapps/build.properties
 
 External tools and products that are not available from standard Linux/Ubuntu packages (like Deegree) are installed
 under the directory ``/opt``. Specific versions of Deegree (and other external tools) are selected as using
 a property file `externals.properties`.
 
-.. literalinclude:: ../www/externals.properties
+.. literalinclude:: ../webapps/externals.properties
 
-This is a lightweight and flexible way for including and upgrading external tools.
+This is a lightweight and flexible way for including and upgrading external tools. Note that
+in the next phase, using deegree v3, we will use Maven.
 

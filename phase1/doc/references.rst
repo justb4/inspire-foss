@@ -1,5 +1,9 @@
 .. _references:
 
+**********
+References
+**********
+
 Below are global references used throughout this document.
 
 .. [1Spatial] 1Spatial, http://www.1spatial.com/

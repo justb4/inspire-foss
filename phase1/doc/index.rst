@@ -7,6 +7,9 @@
 This document describes the realization of an INSPIRE-conformant Web feature Service (WFS) 
 developed with Open Source within the GEORZ-lab & Research department of the Dutch Kadaster.
 
+*Note: This document describes the first phase/release of INSPIRE prototyping
+with an emphasis on Combined Transformation. For the latest/current phase/release see* http://inspire.kademo.nl/doc
+
 
 .. toctree::
    :maxdepth: 1

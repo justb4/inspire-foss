@@ -1,9 +1,13 @@
 .. _abstract:
 
+.. index:: INSPIRE, Transformation, Combined Transformation, EURADIN, ESDIN
 
 ********
 Abstract
 ********
+
+*Note: This document describes the first phase/release of INSPIRE prototyping
+with an emphasis on Combined Transformation. For the latest/current phase/release see* http://inspire.kademo.nl/doc
 
 This document describes the realization of web services for INSPIRE Annex I themes using
 Open Source components. The focus is on the overal approach and software architecture. This work

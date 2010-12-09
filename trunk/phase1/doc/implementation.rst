@@ -7,7 +7,7 @@ Implementation
 
 This chapter shows detailed aspects of the implementation for the INSPIRE Annex I data themes that were implemented,
 i.e. Cadastral Parcels (CP) and Addresses (AD). We will show the steps for CP using small sets of test data. All code
-samples below are directly included from `the Google Code project SVN <http://code.google.com/p/inspire-foss/source/browse/#svn/trunk/>`_
+samples below are directly included from `the Google Code project SVN (phase1) <http://code.google.com/p/inspire-foss/source/browse/#svn/trunk/phase1>`_
 thus refer to the actual implementation.
 
 PostGIS INSPIRE Database
@@ -70,7 +70,7 @@ This outlines how the Deegree WFS server is configured. Each feature type in a D
 WFS is specified using an annotated XML (Application) Schema Definition file. Below
 is the file used for Cadastral Parcels, ``DeegreeCadastralParcels.xsd``.
 
-.. literalinclude:: ../webapps/deegree-wfs/WEB-INF/conf/wfs/featuretypes/DeegreeCadastralParcels.xsd
+.. literalinclude:: ../webapps/deegree2-wfs/WEB-INF/conf/wfs/featuretypes/DeegreeCadastralParcels.xsd
     :language: xml
     :linenos:
 

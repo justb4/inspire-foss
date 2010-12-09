@@ -29,7 +29,9 @@ In order to view data a WMS using the ETRS89 (EPSG:4258) projection was setup us
 Dutch raster topomaps
 and `OpenStreetMap <http://www.openstreetmap.org>`_  tiles are used as baselayers.
 The Dutch Kadaster GEORZ Lab is developing a
-generic (WMS) view-client. This viewer, called GeoViewer is based on `GeoExt <http://www.geoext.org>`_.
+generic (WMS) view-client as a FOSS project
+see http://code.google.com/p/geoext-viewer. This viewer, called GeoViewer is based on `GeoExt <http://www.geoext.org>`_.
+
 
 Below in Figure 6 and 7 screenshots of GeoViewer adapted for INSPIRE data viewing are shown for both INSPIRE
 Addresses and Cadastral Parcels. This viewer can be directly accessed through

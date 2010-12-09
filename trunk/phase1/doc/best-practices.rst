@@ -1,5 +1,6 @@
 .. _bestpractices:
 
+.. index:: INSPIRE, Transformation, Combined Transformation, EURADIN, ESDIN, Download Service
 
 **************
 Best Practices

@@ -55,4 +55,4 @@ Under etl/NL.Kadaster/bin are all scripts to invoke ETL. At the highest level, s
 
 As said there is still some work needed to make these XSLT generic over Countries/Data Providers
 but there is a direction now. Documentation will appear under trunk/doc/NL.Kadaster and published
-to http://inspire.kademo.nl 
+ to http://inspire.kademo.nl 

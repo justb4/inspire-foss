@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://sunda:8080/deegree3/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=gn:NamedPlace&amp;NAMESPACE=xmlns(gn=urn%3Ax-inspire%3Aspecification%3Agmlas%3AGeographicalNames%3A3.0)" gml:id="WFS_RESPONSE">
+<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=gn:NamedPlace&amp;NAMESPACE=xmlns(gn=urn%3Ax-inspire%3Aspecification%3Agmlas%3AGeographicalNames%3A3.0)" gml:id="WFS_RESPONSE">
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075142">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103074598">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075142.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075142.PT" srsName="EPSG:4258">
-          <gml:pos>6.12383115 52.01823089</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103074598.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103074598.PT" srsName="EPSG:4326">
+          <gml:pos>7.02450195 52.46035625</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075142</base:localId>
+          <base:localId>NL.TOP10NL.103074598</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
@@ -31,7 +31,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Stadsweide</gn:text>
+              <gn:text>Forst Bentheim</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -46,25 +46,25 @@
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075143">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726663">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075143.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075143.PT" srsName="EPSG:4258">
-          <gml:pos>6.09181855 52.02804220</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726663.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726663.PT" srsName="EPSG:4326">
+          <gml:pos>6.90335549 52.34972482</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075143</base:localId>
+          <base:localId>NL.TOP10NL.115726663</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -76,7 +76,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Ellecomsche Polder</gn:text>
+              <gn:text>Bentertsteeg</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -86,30 +86,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075144">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726589">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075144.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075144.PT" srsName="EPSG:4258">
-          <gml:pos>6.10018010 52.01916489</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726589.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726589.PT" srsName="EPSG:4326">
+          <gml:pos>6.79988064 52.32762089</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075144</base:localId>
+          <base:localId>NL.TOP10NL.115726589</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|regionale weg</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -121,7 +121,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Beimerwaard</gn:text>
+              <gn:text>Gravenallee</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -131,30 +131,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075149">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726588">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075149.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075149.PT" srsName="EPSG:4258">
-          <gml:pos>6.13729272 52.02968285</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726588.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726588.PT" srsName="EPSG:4326">
+          <gml:pos>6.83127751 52.31556448</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075149</base:localId>
+          <base:localId>NL.TOP10NL.115726588</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|overig</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -166,7 +166,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Fraterwaard</gn:text>
+              <gn:text>Saterslostraat</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -176,30 +176,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075150">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726583">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075150.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075150.PT" srsName="EPSG:4258">
-          <gml:pos>6.16858911 52.02703343</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726583.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726583.PT" srsName="EPSG:4326">
+          <gml:pos>6.83382308 52.27167359</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075150</base:localId>
+          <base:localId>NL.TOP10NL.115726583</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -211,7 +211,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Dorenslag</gn:text>
+              <gn:text>Nieuwe Grensweg</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -221,30 +221,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075153">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726570">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075153.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075153.PT" srsName="EPSG:4258">
-          <gml:pos>6.15580960 52.02470605</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726570.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726570.PT" srsName="EPSG:4326">
+          <gml:pos>6.79775265 52.36042932</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075153</base:localId>
+          <base:localId>NL.TOP10NL.115726570</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -256,7 +256,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>De Grind</gn:text>
+              <gn:text>Bellinckhofweg</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -266,30 +266,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075154">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726554">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075154.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075154.PT" srsName="EPSG:4258">
-          <gml:pos>6.15777015 52.02058264</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726554.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726554.PT" srsName="EPSG:4326">
+          <gml:pos>6.83606689 52.27036203</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075154</base:localId>
+          <base:localId>NL.TOP10NL.115726554</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -301,7 +301,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Het Griet</gn:text>
+              <gn:text>Nieuwe Grensweg</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -311,30 +311,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075155">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115721916">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075155.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075155.PT" srsName="EPSG:4258">
-          <gml:pos>6.17844502 52.01462212</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115721916.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115721916.PT" srsName="EPSG:4326">
+          <gml:pos>6.89466550 52.34656134</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075155</base:localId>
+          <base:localId>NL.TOP10NL.115721916</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|overig</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -346,7 +346,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Hooge Veld</gn:text>
+              <gn:text>Kemperdijk</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -356,30 +356,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075156">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115721914">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075156.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075156.PT" srsName="EPSG:4258">
-          <gml:pos>6.08636567 52.00303114</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115721914.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115721914.PT" srsName="EPSG:4326">
+          <gml:pos>6.80028924 52.33168722</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075156</base:localId>
+          <base:localId>NL.TOP10NL.115721914</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|overig</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -391,7 +391,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Havikerwaard</gn:text>
+              <gn:text>Koninksweg</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -401,30 +401,30 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>
   <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075157">
+    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.115726537">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
       <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
       <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075157.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075157.PT" srsName="EPSG:4258">
-          <gml:pos>6.11576036 51.99493306</gml:pos>
+        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.115726537.PT'-->
+        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.115726537.PT" srsName="EPSG:4326">
+          <gml:pos>6.91902294 52.33836677</gml:pos>
 
         </gml:Point>
       </gn:geometry>
       <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
         <base:Identifier>
-          <base:localId>NL.TOP10NL.103075157</base:localId>
+          <base:localId>NL.TOP10NL.115726537</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </gn:inspireId>
 
       <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|overig</gmd:LocalisedCharacterString>
       </gn:localType>
       <gn:name>
         <gn:GeographicalName>
@@ -436,7 +436,7 @@
           <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
           <gn:spelling>
             <gn:SpellingOfName>
-              <gn:text>Het Klooster</gn:text>
+              <gn:text>Tiethofweg</gn:text>
               <gn:script>Latn</gn:script>
             </gn:SpellingOfName>
 
@@ -446,997 +446,7 @@
         </gn:GeographicalName>
       </gn:name>
       <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075158">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075158.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075158.PT" srsName="EPSG:4258">
-          <gml:pos>6.17257030 51.98629347</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075158</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>De Drie Huizen</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075175">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075175.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075175.PT" srsName="EPSG:4258">
-          <gml:pos>6.10220285 51.99210804</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075175</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Bingerden</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075176">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075176.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075176.PT" srsName="EPSG:4258">
-          <gml:pos>6.18153884 52.02280875</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075176</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Achterdrempt</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075177">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075177.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075177.PT" srsName="EPSG:4258">
-          <gml:pos>6.18277377 52.02103341</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075177</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Hooge Strengsche Veld</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075181">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075181.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075181.PT" srsName="EPSG:4258">
-          <gml:pos>6.13937484 52.01387125</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075181</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Doesburg</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075182">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075182.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075182.PT" srsName="EPSG:4258">
-          <gml:pos>6.15602867 52.01612720</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075182</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Het Ziedeveld</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075183">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075183.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075183.PT" srsName="EPSG:4258">
-          <gml:pos>6.16762734 52.03491157</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075183</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Hooge Hoefkensche Weiden</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075186">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075186.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075186.PT" srsName="EPSG:4258">
-          <gml:pos>6.09820516 52.02543811</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075186</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Schuttewaard</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075195">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075195.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075195.PT" srsName="EPSG:4258">
-          <gml:pos>6.13368258 51.99593056</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075195</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Angerlo</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075196">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075196.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075196.PT" srsName="EPSG:4258">
-          <gml:pos>6.15673846 51.99348005</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075196</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Bevermeer</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075197">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075197.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075197.PT" srsName="EPSG:4258">
-          <gml:pos>6.17502857 51.99263963</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075197</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Eldriksche Weiden</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075199">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075199.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075199.PT" srsName="EPSG:4258">
-          <gml:pos>6.13382487 52.02253872</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075199</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Stadsweide</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075200">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075200.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075200.PT" srsName="EPSG:4258">
-          <gml:pos>6.17271437 51.99668693</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075200</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>IJsselweiden</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075203">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075203.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075203.PT" srsName="EPSG:4258">
-          <gml:pos>6.08852341 52.03242933</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075203</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Ellecom</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075216">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075216.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075216.PT" srsName="EPSG:4258">
-          <gml:pos>6.17289111 52.00647239</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075216</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Drempt</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075217">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075217.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075217.PT" srsName="EPSG:4258">
-          <gml:pos>6.12688003 52.00524974</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075217</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">woonwijk</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Wemmersweerd</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075218">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075218.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075218.PT" srsName="EPSG:4258">
-          <gml:pos>6.08845663 51.98562126</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075218</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Hooge Horsten</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075220">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075220.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075220.PT" srsName="EPSG:4258">
-          <gml:pos>6.12324734 52.00140886</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075220</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Beinum</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>populatedPlace</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075222">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103075222.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103075222.PT" srsName="EPSG:4258">
-          <gml:pos>6.11160572 52.00475049</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103075222</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Loenersche Middelwaard</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>landcover</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103085184">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103085184.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103085184.PT" srsName="EPSG:4258">
-          <gml:pos>6.09208493 52.00949596</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103085184</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>(Gemeentehuis te De Steeg)</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>other</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103085220">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103085220.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103085220.PT" srsName="EPSG:4258">
-          <gml:pos>6.11760599 52.02445608</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103085220</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>Lange Brug</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>other</gn:type>
-    </gn:NamedPlace>
-
-  </gml:featureMember>
-  <gml:featureMember>
-    <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103085287">
-      <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>
-      <gn:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:endLifespanVersion>
-      <gn:geometry>
-        <!--Inlined geometry 'NL.KAD.GN.NL.TOP10NL.103085287.PT'-->
-        <gml:Point gml:id="NL.KAD.GN.NL.TOP10NL.103085287.PT" srsName="EPSG:4258">
-          <gml:pos>6.16949460 51.99396177</gml:pos>
-
-        </gml:Point>
-      </gn:geometry>
-      <gn:inspireId xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
-        <base:Identifier>
-          <base:localId>NL.TOP10NL.103085287</base:localId>
-          <base:namespace>NL.KAD.GN</base:namespace>
-        </base:Identifier>
-      </gn:inspireId>
-
-      <gn:localType xmlns:gmd="http://www.isotc211.org/2005/gmd">
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
-      </gn:localType>
-      <gn:name>
-        <gn:GeographicalName>
-          <gn:language xsi:nil="true"></gn:language>
-          <gn:nativeness>endonym</gn:nativeness>
-          <gn:nameStatus>official</gn:nameStatus>
-
-          <gn:sourceOfName>Het Kadaster</gn:sourceOfName>
-          <gn:pronunciation nilReason="UNPOPULATED" xsi:nil="true"></gn:pronunciation>
-          <gn:spelling>
-            <gn:SpellingOfName>
-              <gn:text>(Gemeentehuis te Hoog- Keppel)</gn:text>
-              <gn:script>Latn</gn:script>
-            </gn:SpellingOfName>
-
-          </gn:spelling>
-          <gn:grammaticalGender xsi:nil="true"></gn:grammaticalGender>
-          <gn:grammaticalNumber xsi:nil="true"></gn:grammaticalNumber>
-        </gn:GeographicalName>
-      </gn:name>
-      <gn:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></gn:relatedSpatialObject>
-      <gn:type>other</gn:type>
+      <gn:type>transportNetwork</gn:type>
     </gn:NamedPlace>
 
   </gml:featureMember>

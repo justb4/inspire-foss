@@ -21,7 +21,7 @@
 #! SHOW_INFO_NODES="true"
 #! BEGIN_PYTHON=""
 #! BEGIN_TCL=""
-#! VIEW_POSITION="0 -22"
+#! VIEW_POSITION="0 0"
 #! ZOOM_SCALE="100"
 #! PASSWORD=""
 #! VIEW_PAGE_BREAKS="false"
@@ -98,7 +98,7 @@
 #! GENERATE_FME_BUILD_NUM="6198"
 #! NAME="SIC_GML311"
 #! FANOUT_SUFFIX=""
-#! COORDSYS="EPSG:4326"
+#! COORDSYS="EPSG:4258"
 #! FANOUT="No"
 #! FANOUT_DIRECTORY=""
 #! FANOUT_PREFIX=""
@@ -524,7 +524,7 @@
 #! IDENTIFIER="8"
 #! FEAT_GEOMTYPE="oracle_nil oracle_point oracle_line oracle_area oracle_multipoint oracle_multiline oracle_multipoly oracle_arc oracle_circle oracle_rectangle oracle_collection oracle_surface oracle_solid oracle_multisurface oracle_multisolid"
 #! POSITION="43 -59"
-#! ORDER="16"
+#! ORDER="15"
 #! COLLAPSED="true"
 #! KEYWORD="ORACLE8I_1"
 #! ENABLED="true"
@@ -1030,7 +1030,7 @@ GUI FILENAME DestDataset_GML_1 GML_Files(*.gml;*.gz;*.xml)|*.gml;*.gz;*.xml|GML_
 # When set to YES then the GML application schema document will declare and
 # define all GML feature type definitions even if it had no corresponding
 # feature instances during translation.
-DEFAULT_MACRO _WRITE_ALL_FEATURE_TYPE_DEFNS_GML_1 no
+DEFAULT_MACRO _WRITE_ALL_FEATURE_TYPE_DEFNS_GML_1 yes
 GUI OPTIONAL CHOICE _WRITE_ALL_FEATURE_TYPE_DEFNS_GML_1 no%yes Write All Feature Types:
 GML_1_WRITE_ALL_FEATURE_TYPE_DEFNS $(_WRITE_ALL_FEATURE_TYPE_DEFNS_GML_1)
 # ============================================================================
@@ -1070,7 +1070,7 @@ GML_1_TARGET_XSI_SCHEMALOCATION_URL $(_TARGET_XSI_SCHEMALOCATION_URL_GML_1)
 # Overwrites the GML srsName with the specified value. When left unspecified
 # the FME coordinate system name for the input features will be used as the
 # value for the srsName in the GML document.
-DEFAULT_MACRO _SRS_NAME_GML_1 
+DEFAULT_MACRO _SRS_NAME_GML_1 EPSG:4258
 GUI OPTIONAL TEXT _SRS_NAME_GML_1 GML srsName:
 GML_1_SRS_NAME $(_SRS_NAME_GML_1)
 # ============================================================================
@@ -1078,7 +1078,7 @@ GML_1_SRS_NAME $(_SRS_NAME_GML_1)
 # SRS_NAME in the GML document. This keyword only applies when used conjunction
 # with the SRS_NAME keyword. The valid values for this keyword are 1,2, 2,1,
 # 1,2,3 and 2,1,3.
-DEFAULT_MACRO _SRS_AXIS_ORDER_GML_1 
+DEFAULT_MACRO _SRS_AXIS_ORDER_GML_1 1,2
 GUI OPTIONAL CHOICE _SRS_AXIS_ORDER_GML_1 1,2%2,1%1,2,3%2,1,3 GML SRS Axis Order:
 GML_1_SRS_AXIS_ORDER $(_SRS_AXIS_ORDER_GML_1)
 # ============================================================================
@@ -1120,13 +1120,13 @@ GUI OPTIONAL CHOICE _FEATURE_COLLECTION_GML_1 gml%wfs%target-namespace Feature C
 GML_1_FEATURE_COLLECTION $(_FEATURE_COLLECTION_GML_1)
 # ============================================================================
 # Specifies the XSLT stylesheet to be applied to the output document.
-DEFAULT_MACRO _APPLY_STYLESHEET_GML_1 
+DEFAULT_MACRO _APPLY_STYLESHEET_GML_1 $(FME_MF_DIR)SIC_3_GML311_2_GML321.xsl
 GUI OPTIONAL FILENAME_MUSTEXIST _APPLY_STYLESHEET_GML_1 XSLT_Stylesheet_Files(*.xslt;*.xsl)|*.xslt;*.xsl|All_Files(*.*)|*.* XSLT Style Sheet to Apply:
 GML_1_APPLY_STYLESHEET "$(_APPLY_STYLESHEET_GML_1)"
 # ============================================================================
 # The location and name of the resulting document after XSLT stylesheet
 # transformation. This is an optional keyword.
-DEFAULT_MACRO _STYLESHEET_RESULT_GML_1 
+DEFAULT_MACRO _STYLESHEET_RESULT_GML_1 $(FME_MF_DIR)SIC_GML321.gml
 GUI OPTIONAL FILENAME _STYLESHEET_RESULT_GML_1 All_Files(*.*)|*.* Style Sheet Result:
 GML_1_STYLESHEET_RESULT "$(_STYLESHEET_RESULT_GML_1)"
 # ============================================================================
@@ -1157,7 +1157,7 @@ ORACLE8I_1_READER_META_ATTRIBUTES fme_feature_type
 # -------------------------------------------------------------------------
 
 ORACLE8I_1_COORDINATE_SYSTEM MonteMario_1.Italy-1_GRID
-GML_1_COORDINATE_SYSTEM EPSG:4326
+GML_1_COORDINATE_SYSTEM EPSG:4258
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
@@ -1216,7 +1216,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRenamer_OUTPUT -> ProtectedSite Correlator"    INPUT FEATURE_TYPE AttributeRenamer_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Reproject("EPSG:4326","EPSG:4326")       @Transform(FME_GENERIC,GML)       @SupplyAttributes(__wb_out_feat_type__,ProtectedSite)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "AttributeRenamer_OUTPUT -> ProtectedSite Correlator"    INPUT FEATURE_TYPE AttributeRenamer_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Reproject("EPSG:4258","EPSG:4258")       @Transform(FME_GENERIC,GML)       @SupplyAttributes(__wb_out_feat_type__,ProtectedSite)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))

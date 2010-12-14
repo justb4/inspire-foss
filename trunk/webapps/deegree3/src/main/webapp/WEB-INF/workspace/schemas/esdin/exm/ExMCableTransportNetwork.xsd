@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:tn-c="urn:x-inspire:specification:gmlas:CableTransportNetwork:3.0" xmlns:xtn="urn:x-exm:specification:gmlas:ExMTransportNetwork:0.4" elementFormDefault="qualified" targetNamespace="urn:x-exm:specification:gmlas:ExMTransportNetwork:0.4" version="0.4">
+  <import namespace="urn:x-inspire:specification:gmlas:CableTransportNetwork:3.0" schemaLocation="../../inspire/annex1/CableTransportNetwork.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="CablewayLink" substitutionGroup="tn-c:CablewayLink" type="xtn:CablewayLinkType"/>
+  <complexType name="CablewayLinkType">
+    <complexContent>
+      <extension base="tn-c:CablewayLinkType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CablewayLinkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:CablewayLink"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

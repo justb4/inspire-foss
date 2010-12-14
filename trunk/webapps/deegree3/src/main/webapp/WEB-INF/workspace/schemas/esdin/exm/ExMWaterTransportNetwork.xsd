@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:tn-w="urn:x-inspire:specification:gmlas:WaterTransportNetwork:3.0" xmlns:xtn="urn:x-exm:specification:gmlas:ExMTransportNetwork:0.4" elementFormDefault="qualified" targetNamespace="urn:x-exm:specification:gmlas:ExMTransportNetwork:0.4" version="0.4">
+  <import namespace="urn:x-inspire:specification:gmlas:WaterTransportNetwork:3.0" schemaLocation="../../inspire/annex1/WaterTransportNetwork.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="WaterwayLink" substitutionGroup="tn-w:WaterwayLink" type="xtn:WaterwayLinkType"/>
+  <complexType name="WaterwayLinkType">
+    <complexContent>
+      <extension base="tn-w:WaterwayLinkType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="WaterwayLinkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:WaterwayLink"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FerryUse" substitutionGroup="tn-w:FerryUse" type="xtn:FerryUseType"/>
+  <complexType name="FerryUseType">
+    <complexContent>
+      <extension base="tn-w:FerryUseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FerryUsePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:FerryUse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FerryCrossing" substitutionGroup="tn-w:FerryCrossing" type="xtn:FerryCrossingType"/>
+  <complexType name="FerryCrossingType">
+    <complexContent>
+      <extension base="tn-w:FerryCrossingType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FerryCrossingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:FerryCrossing"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PortNode" substitutionGroup="tn-w:PortNode" type="xtn:PortNodeType"/>
+  <complexType name="PortNodeType">
+    <complexContent>
+      <extension base="tn-w:PortNodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PortNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:PortNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Buoy" substitutionGroup="tn-w:Buoy" type="xtn:BuoyType"/>
+  <complexType name="BuoyType">
+    <complexContent>
+      <extension base="tn-w:BuoyType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BuoyPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:Buoy"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PortArea" substitutionGroup="tn-w:PortArea" type="xtn:PortAreaType"/>
+  <complexType name="PortAreaType">
+    <complexContent>
+      <extension base="tn-w:PortAreaType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PortAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:PortArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Beacon" substitutionGroup="tn-w:Beacon" type="xtn:BeaconType"/>
+  <complexType name="BeaconType">
+    <complexContent>
+      <extension base="tn-w:BeaconType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BeaconPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xtn:Beacon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

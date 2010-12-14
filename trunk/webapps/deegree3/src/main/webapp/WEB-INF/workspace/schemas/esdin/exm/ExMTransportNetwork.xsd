@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xtn="urn:x-exm:specification:gmlas:ExMTransportNetwork:0.4" elementFormDefault="qualified" targetNamespace="urn:x-exm:specification:gmlas:ExMTransportNetwork:0.4" version="0.4">
+  <include schemaLocation="ExMWaterTransportNetwork.xsd"/>
+  <include schemaLocation="ExMCableTransportNetwork.xsd"/>
+  <include schemaLocation="ExMCommonTransportElements.xsd"/>
+  <include schemaLocation="ExMRailwayTransportNetwork.xsd"/>
+  <include schemaLocation="ExMAirTransportNetwork.xsd"/>
+  <include schemaLocation="ExMRoadTransportNetwork.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+</schema>

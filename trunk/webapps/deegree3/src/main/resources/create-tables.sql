@@ -158,6 +158,7 @@ INSERT INTO feature_types (id,qname) VALUES (152,'{urn:x-inspire:specification:g
 INSERT INTO feature_types (id,qname) VALUES (153,'{urn:x-inspire:specification:gmlas:WaterTransportNetwork:3.0}WaterTrafficFlowDirection');
 INSERT INTO feature_types (id,qname) VALUES (154,'{urn:x-inspire:specification:gmlas:WaterTransportNetwork:3.0}WaterwayLink');
 INSERT INTO feature_types (id,qname) VALUES (155,'{urn:x-inspire:specification:gmlas:WaterTransportNetwork:3.0}WaterwayNode');
+
 CREATE TABLE gml_objects (id SERIAL PRIMARY KEY, gml_id text UNIQUE NOT NULL, ft_type smallint REFERENCES feature_types, binary_object bytea);
 
 COMMENT ON TABLE gml_objects IS 'All objects (features and geometries)';

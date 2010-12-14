@@ -21,6 +21,7 @@
   <JDBCConnId>inspire_blob</JDBCConnId>
   <BLOBMapping>
     <StorageCRS>EPSG:4258</StorageCRS>
-    <GMLSchema version="GML_32">../../schemas/inspire/annex1</GMLSchema>
+	<GMLSchema version="GML_32">../../schemas/inspire/annex1</GMLSchema>
+	<GMLSchema version="GML_32">../../schemas/esdin/exm</GMLSchema>
   </BLOBMapping>
 </PostGISFeatureStore>

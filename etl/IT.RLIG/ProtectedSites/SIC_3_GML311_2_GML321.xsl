@@ -5,30 +5,81 @@ Author: Stefano Parodi. Datasiel.
 
 Input: Oracle Spatial Layer (CTEMI:PS_SIC), transformed to a GML 3.1.1. using FME
 -->
-<xsl:stylesheet version="1.0" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:fme="http://www.safe.com/gml/fme" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:PS="urn:x-inspire:specification:gmlas:ProtectedSites:3.0">
+<xsl:stylesheet version="1.0" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:fme="http://www.safe.com/gml/fme" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gml31="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ps="urn:x-inspire:specification:gmlas:ProtectedSites:3.0">
         <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-        <xsl:template match="gml:FeatureCollection" xmlns:gml="http://www.opengis.net/gml">
-			<gml:FeatureCollection xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:ps="urn:x-inspire:specification:gmlas:ProtectedSites:3.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="IT.RLIG.SIC" xsi:schemaLocation="urn:x-inspire:specification:gmlas:ProtectedSites:3.0 ">
+        <xsl:template match="gml31:FeatureCollection">
+			<gml:FeatureCollection xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:ps="urn:x-inspire:specification:gmlas:ProtectedSites:3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="IT.RLIG.SIC" xsi:schemaLocation="urn:x-inspire:specification:gmlas:ProtectedSites:3.0 ">
                 <gml:boundedBy>
-                    <gml:Envelope srsName="urn:ogc:def:crs:EPSG::4258">
+                    <gml:Envelope srsName="urn:ogc:def:crs:EPSG:4258">
                        <gml:lowerCorner>
-                           <xsl:value-of select="gml:boundedBy/gml:Envelope/gml:lowerCorner" xmlns:gml="http://www.opengis.net/gml"/>
+                           <xsl:value-of select="gml31:boundedBy/gml31:Envelope/gml31:lowerCorner" />
                        </gml:lowerCorner>
                        <gml:upperCorner>
-                           <xsl:value-of select="gml:boundedBy/gml:Envelope/gml:upperCorner" xmlns:gml="http://www.opengis.net/gml"/>
+                           <xsl:value-of select="gml31:boundedBy/gml31:Envelope/gml31:upperCorner" />
                        </gml:upperCorner>
                     </gml:Envelope>
                 </gml:boundedBy>
+                
 				<xsl:for-each select="gml:featureMember" xmlns:gml="http://www.opengis.net/gml">
 						<gml:featureMember xmlns:gml="http://www.opengis.net/gml/3.2">
 							<ps:ProtectedSite xmlns:gml="http://www.opengis.net/gml/3.2">
 								<xsl:attribute name="gml:id"><xsl:value-of select="concat('PS_',generate-id())"/></xsl:attribute>
 <!-- geometry -->
-								<ps:geometry>
-									<xsl:for-each select="fme:ProtectedSite/gml:multiSurfaceProperty" xmlns:gml="http://www.opengis.net/gml">
+								<xsl:for-each select="fme:ProtectedSite/gml31:multiSurfaceProperty">
+									<ps:geometry>
+										<xsl:for-each select="gml31:MultiSurface">
+											<gml:MultiSurface srsName="EPSG:4258" srsDimension="2">
+												<xsl:for-each select="gml31:surfaceMember">
+													<gml:surfaceMember>
+														<xsl:for-each select="gml31:Surface">
+															<gml:Surface>
+																<xsl:for-each select="gml31:patches">
+																	<gml:patches>
+																		<xsl:for-each select="gml31:PolygonPatch">
+																			<gml:PolygonPatch>
+																				<xsl:for-each select="gml31:exterior">
+																					<gml:exterior>
+																						<xsl:for-each select="gml31:LinearRing">
+																							<gml:LinearRing>
+																								<xsl:for-each select="gml31:posList">
+																									<gml:posList>
+																										<xsl:value-of select="."/>
+																									</gml:posList>
+																								</xsl:for-each>
+																							</gml:LinearRing>
+																						</xsl:for-each>
+																					</gml:exterior>
+																				</xsl:for-each>
+																				<xsl:for-each select="gml31:interior">
+																					<gml:interior>
+																						<xsl:for-each select="gml31:LinearRing">
+																							<gml:LinearRing>
+																								<xsl:for-each select="gml31:posList">
+																									<gml:posList>
+																										<xsl:value-of select="."/>
+																									</gml:posList>
+																								</xsl:for-each>
+																							</gml:LinearRing>
+																						</xsl:for-each>
+																					</gml:interior>
+																				</xsl:for-each>
+																			</gml:PolygonPatch>
+																		</xsl:for-each>
+																	</gml:patches>
+																</xsl:for-each>
+															</gml:Surface>
+														</xsl:for-each>
+													</gml:surfaceMember>
+												</xsl:for-each>
+
+											</gml:MultiSurface>
+										</xsl:for-each>
+
+<!--
 										<xsl:copy-of select="node()|@*"/>
-									</xsl:for-each>
-								</ps:geometry>
+-->
+									</ps:geometry>
+								</xsl:for-each>
 <!-- inspireID -->
 								<ps:inspireID>
 									<base:Identifier>
@@ -36,8 +87,19 @@ Input: Oracle Spatial Layer (CTEMI:PS_SIC), transformed to a GML 3.1.1. using FM
 										<base:localId><xsl:value-of select="fme:ProtectedSite/fme:localId" xmlns:gml="http://www.opengis.net/gml"/></base:localId>
 									</base:Identifier>
 								</ps:inspireID>
-<!-- applicationSchema -->
-								<ps:applicationSchema><xsl:value-of select="fme:ProtectedSite/fme:applicationSchema" xmlns:gml="http://www.opengis.net/gml"/></ps:applicationSchema>
+<!-- legalFoundationDate -->
+								<xsl:choose>
+									<xsl:when test="fme:ProtectedSite/fme:legalFoundationDate != ''">
+										<ps:legalFoundationDate>
+												<xsl:call-template name="FormatDate">
+													  <xsl:with-param name="DateTime" select="fme:ProtectedSite/fme:legalFoundationDate"/>
+												</xsl:call-template>
+										</ps:legalFoundationDate>
+									</xsl:when>
+									<xsl:otherwise>
+										<ps:legalFoundationDate nilReason="other:unpopulated" xsi:nil="true"/>
+									</xsl:otherwise>
+								</xsl:choose>
 <!-- legalFoundationDocument -->
 								<xsl:choose>
 									<xsl:when test="fme:ProtectedSite/fme:legalFoundationDocumentTitle != ''">
@@ -56,9 +118,7 @@ Input: Oracle Spatial Layer (CTEMI:PS_SIC), transformed to a GML 3.1.1. using FM
 															</gco:DateTime>
 														</gmd:date>
 														<gmd:dateType>
-															<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">
-																creation
-															</gmd:CI_DateTypeCode>
+															<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
 														</gmd:dateType>
 													</gmd:CI_Date>
 												</gmd:date>
@@ -66,6 +126,7 @@ Input: Oracle Spatial Layer (CTEMI:PS_SIC), transformed to a GML 3.1.1. using FM
 										</ps:legalFoundationDocument>
 									</xsl:when>
 									<xsl:otherwise>
+										<ps:legalFoundationDocument nilReason="other:unpopulated" xsi:nil="true"/>
 									</xsl:otherwise>
 								</xsl:choose>
 <!-- siteDesignation -->
@@ -103,19 +164,7 @@ Input: Oracle Spatial Layer (CTEMI:PS_SIC), transformed to a GML 3.1.1. using FM
 								<xsl:for-each select="fme:ProtectedSite/fme:siteClassificationList">
 									<ps:siteProtectionClassification><xsl:value-of select="fme:CLASSIFICATION" /></ps:siteProtectionClassification>
 								</xsl:for-each>
-<!-- legalFoundationDate -->
-								<xsl:choose>
-									<xsl:when test="fme:ProtectedSite/fme:legalFoundationDate != ''">
-										<ps:legalFoundationDate>
-												<xsl:call-template name="FormatDate">
-													  <xsl:with-param name="DateTime" select="fme:ProtectedSite/fme:legalFoundationDate"/>
-												</xsl:call-template>
-										</ps:legalFoundationDate>
-									</xsl:when>
-									<xsl:otherwise>
-										<ps:legalFoundationDate nilReason="other:unpopulated" xsi:nil="true"/>
-									</xsl:otherwise>
-								</xsl:choose>
+
 							</ps:ProtectedSite>
 						</gml:featureMember>
 				</xsl:for-each>
@@ -135,7 +184,6 @@ Input: Oracle Spatial Layer (CTEMI:PS_SIC), transformed to a GML 3.1.1. using FM
 			<xsl:variable name="day">
 			  <xsl:value-of select="substring($DateTime,7,2)" />
 			</xsl:variable>
-			<xsl:value-of select="$year"/>-<xsl:value-of select="$month"/>-<xsl:value-of select="$day"/>T00:00:00Z
-		</xsl:template>
+			<xsl:value-of select="$year"/>-<xsl:value-of select="$month"/>-<xsl:value-of select="$day"/>T00:00:00Z</xsl:template>
 
 </xsl:stylesheet>

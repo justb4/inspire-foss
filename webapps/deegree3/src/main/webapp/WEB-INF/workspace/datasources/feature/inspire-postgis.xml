@@ -22,6 +22,11 @@
   <BLOBMapping>
     <StorageCRS>EPSG:4258</StorageCRS>
 	<GMLSchema version="GML_32">../../schemas/inspire/annex1</GMLSchema>
-	<GMLSchema version="GML_32">../../schemas/esdin/exm</GMLSchema>
+
+	  <!--	NOTE due to a bug in deegree 3.0 we cannot have multiple
+	    GMLSchema directories. This should be solved in deegree 3.1
+	    at that point we can separate ESDIN ExM (and Annex II and II schemas in separate dirs
+
+	<GMLSchema version="GML_32">../../schemas/esdin/exm</GMLSchema> -->
   </BLOBMapping>
 </PostGISFeatureStore>

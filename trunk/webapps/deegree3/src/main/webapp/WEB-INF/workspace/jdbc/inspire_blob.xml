@@ -4,4 +4,8 @@
 	<Url>jdbc:postgresql://localhost:5432/inspire_blob</Url>
 	<User>inspire</User>
 	<Password>inspire</Password>
+
+	<!-- default is false, set to true eg. for embedded derby databases or for better performance -->
+  	<ReadOnly>false</ReadOnly>
+
 </JDBCConnection>

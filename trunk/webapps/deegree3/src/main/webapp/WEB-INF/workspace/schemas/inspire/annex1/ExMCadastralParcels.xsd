@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+		xmlns:cp="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+		xmlns:gml="http://www.opengis.net/gml/3.2"
+		xmlns:xcp="urn:x-exm:specification:gmlas:ExMCadastralParcels:0.4"
+		elementFormDefault="qualified"
+		targetNamespace="urn:x-exm:specification:gmlas:ExMCadastralParcels:0.4"
+		version="0.4">
+  <import namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" schemaLocation="../../inspire/annex1/CadastralParcels.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="CadastralZoning" substitutionGroup="cp:CadastralZoning" type="xcp:CadastralZoningType"/>
+  <complexType name="CadastralZoningType">
+    <complexContent>
+      <extension base="cp:CadastralZoningType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CadastralZoningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xcp:CadastralZoning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BasicPropertyUnit" substitutionGroup="cp:BasicPropertyUnit" type="xcp:BasicPropertyUnitType"/>
+  <complexType name="BasicPropertyUnitType">
+    <complexContent>
+      <extension base="cp:BasicPropertyUnitType">
+        <sequence>
+          <element minOccurs="0" name="thisIsATest" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BasicPropertyUnitPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xcp:BasicPropertyUnit"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="CadastralParcel" substitutionGroup="cp:CadastralParcel" type="xcp:CadastralParcelType"/>
+  <complexType name="CadastralParcelType">
+    <complexContent>
+      <extension base="cp:CadastralParcelType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CadastralParcelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xcp:CadastralParcel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="CadastralBoundary" substitutionGroup="cp:CadastralBoundary" type="xcp:CadastralBoundaryType"/>
+  <complexType name="CadastralBoundaryType">
+    <complexContent>
+      <extension base="cp:CadastralBoundaryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CadastralBoundaryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xcp:CadastralBoundary"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

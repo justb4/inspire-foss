@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Transforms Dutch GN data from flat GML v2 to INPSIRE GML3
+# Transforms Dutch GN data from flat GML v2 to INSPIRE GML3
 #
 # Author: Just van den Broecke
 #

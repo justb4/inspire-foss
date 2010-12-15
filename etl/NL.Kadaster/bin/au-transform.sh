@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Transforms Dutch AU data from flat GML v2 to INPSIRE GML3
+# Transforms Dutch AU data from flat GML v2 to INSPIRE GML3
 #
 # Author: Just van den Broecke
 #

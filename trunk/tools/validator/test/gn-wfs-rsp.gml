@@ -4,7 +4,7 @@
 					   xmlns:xlink="http://www.w3.org/1999/xlink"
 					   xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					   xsi:schemaLocation="urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=gn:NamedPlace&amp;NAMESPACE=xmlns(gn=urn%3Ax-inspire%3Aspecification%3Agmlas%3AGeographicalNames%3A3.0)" gml:id="WFS_RESPONSE">
+					   xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=1.1.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=gn:NamedPlace&amp;NAMESPACE=xmlns(gn=urn%3Ax-inspire%3Aspecification%3Agmlas%3AGeographicalNames%3A3.0)" gml:id="WFS_RESPONSE">
   <gml:featureMember>
     <gn:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103074598">
       <gn:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></gn:beginLifespanVersion>

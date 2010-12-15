@@ -5,8 +5,8 @@
 # Author: Just van den Broecke
 #
 
-# ./au-etl.sh
+./au-etl.sh
 ./exm-cp-etl.sh
-# ./gn-etl.sh
+./gn-etl.sh
 # ./hy-etl.sh
 # ./tn-etl.sh

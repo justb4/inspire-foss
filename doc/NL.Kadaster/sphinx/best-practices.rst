@@ -213,12 +213,12 @@ This implies that we have two separate funtions to deal with:
 
 This is also depicted in the next Figure below.
 
-.. figure:: _static/deegree3-inspire-etl.jpg
+.. figure:: _static/deegree3-inspire-etl.png
    :align: center
 
    *Figure 4 - Offline Transform with Generic (deegree) INSPIRE Node*
 
-The "INSPIRE Service Node" setup is described at several places:
+The "INSPIRE Node" setup is described at several places:
 
 * deegree website: http://wiki.deegree.org/deegreeWiki/InspireNode
 * presentation (Bolsena, June 2010): `PDF <http://www.justobjects.nl/jo/assets/presentation/bolsena-2010-inspire/bolsena-2010-inspire-just.pdf>`_

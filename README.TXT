@@ -14,6 +14,7 @@ See http://code.google.com/p/inspire-foss for the sources.
 The directories below contain the following:
 
 /demos - ready to use demo apps
+/doc - all documentation
 /etl - (Extract, Transform, Load) transformation for (NMA) local datasets
 /phase1 all files related to phase1 of this project where deegree v2 was used (not relevant now but kept for reference)
 /tools - serveral tools for e.g. feature store loading and validation

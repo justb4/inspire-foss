@@ -58,6 +58,8 @@ this road taken, and will in addition apply an open FOSS-style development proce
    :width: 600 px
    :align: center
 
+   *Figure 1 - Project Scope*
+
 INSPIRE does not specify particular approaches to realize these transformations and services. Obviously, there is a need
 for sharing ideas and best practices and to conduct interworking testing among LMOs.
 This is where consortia such as `EURADIN <http://www.euradin.eu>`_ and

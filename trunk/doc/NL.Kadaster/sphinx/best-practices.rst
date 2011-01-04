@@ -7,7 +7,7 @@ Best Practices
 **************
 
 This section discusses
-best practices for one of the core issues within any INSPIRE implementation
+best practices for one of the core issues within any INSPIRE implementation:
 Content Transformation for Download (WFS) and View Services (WMS).
 
 An introduction to Content Transformation for INSPIRE
@@ -150,7 +150,7 @@ Pros and Cons of Combined Transformation
 ----------------------------------------
 
 At the time of the Phase 1 project we listed the following advantages and
-disadvantages.
+disadvantages of Combined Transformation.
 
 Pros
 ----

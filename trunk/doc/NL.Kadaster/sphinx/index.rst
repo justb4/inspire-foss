@@ -24,13 +24,11 @@ For the, older, first phase (Phase 1) see* http://inspire.kademo.nl/docold/phase
    requirements.rst
    best-practices.rst
    concept.rst
+   architecture.rst
    contact.rst
    references.rst
    
 ..
-..   best-practices.rst
-..   concept.rst
-..   architecture.rst
 ..   implementation.rst
 ..   deployment.rst
 ..   results.rst

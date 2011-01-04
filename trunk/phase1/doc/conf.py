@@ -38,7 +38,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'INSPIRE Data Services'
-copyright = u'2010, Kadaster - GEORZ Lab'
+copyright = u'2010, Het Kadaster - CC by-NC-SA'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

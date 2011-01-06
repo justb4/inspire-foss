@@ -9,7 +9,7 @@ A WFS is currently active providing
 INSPIRE-compliant data for Cadastral Parcels (CP) and Addresses (AD)
 according to the INSPIRE Annex I V3 schemas (GML 3.2.1/WFS 1.1.0).
 
-The WFS is located at `<http://inspire.kademo.nl/deegree-wfs>`_.
+The WFS is located at `<http://inspire.kademo.nl/deegree3>`_.
 
 Testing
 =======

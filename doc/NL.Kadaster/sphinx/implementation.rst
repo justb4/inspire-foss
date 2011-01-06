@@ -6,7 +6,8 @@ Implementation
 **************
 
 This chapter shows detailed aspects of the implementation for the INSPIRE Annex I data themes that were implemented,
-i.e. Cadastral Parcels (CP) and Addresses (AD). We will show the steps for CP using small sets of test data. All code
+i.e. Cadastral Parcels (CP) and Addresses (AD). We will illustrate the steps for a single these (Cadastral Parcels)
+ using small sets of test data. All code
 samples below are directly included from `the Google Code project SVN (phase1) <http://code.google.com/p/inspire-foss/source/browse/#svn/trunk>`_
 thus refer to the actual implementation.
 

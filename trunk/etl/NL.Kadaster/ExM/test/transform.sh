@@ -8,4 +8,9 @@ cd ..
 ./inspire-hy-to-exm-hy.sh test/kad-hy-water-lines.gml  test/kad-hy-water-lines-exm.gml
 ./inspire-hy-to-exm-hy.sh test/kad-hy-water-surfaces.gml  test/kad-hy-water-surfaces-exm.gml
 
+./inspire-tn-to-exm-tn.sh test/kad-tn-roadnet-points.gml test/kad-tn-roadnet-points-exm.gml
+./inspire-tn-to-exm-tn.sh test/kad-tn-roadnet-curves.gml test/kad-tn-roadnet-curves-exm.gml
+./inspire-tn-to-exm-tn.sh test/kad-tn-roadnet-surfaces.gml test/kad-tn-roadnet-surfaces-exm.gml
+
 cd -
+

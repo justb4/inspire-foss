@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Loads Dutch HY data into PostGIS using deegree3 FSLoader
+# Loads Dutch ExM HY data into PostGIS using deegree3 FSLoader
 #
 # Author: Just van den Broecke
 #
@@ -23,7 +23,7 @@ FEATURE_TYPES="WATERDEEL_LIJN WATERDEEL_VLAK INRICHTINGSELEMENT_LIJN INRICHTINGS
 # Load each GML spatial dataset file
 for FEATURE_TYPE in $FEATURE_TYPES; do
     echo "Loading HY_${FEATURE_TYPE}.gml ..."
-    $LOADER_SCRIPT $LOADER_ARGS $DATA_RESULT_DIR/HY_${FEATURE_TYPE}.gml
+    $LOADER_SCRIPT $LOADER_ARGS $DATA_RESULT_DIR/ExM_HY_${FEATURE_TYPE}.gml
 done
 
 cd $MYPWD

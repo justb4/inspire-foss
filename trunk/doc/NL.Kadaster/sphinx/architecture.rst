@@ -12,9 +12,9 @@ the software architecture. The overall architecture is depicted in the Figure be
    :align: center
    :width: 650 px
 
-   *Figure A1 - Overall Architecture*
+   *Figure 6 - Overall Architecture*
 
-The bottom part of Figure 3 shows the Extract Transform Load (ETL) discussed
+The bottom part of Figure 6 shows the Extract Transform Load (ETL) discussed
 in the Concepts chapter. The top part of this figure shows the realization of the various
 OGC/INSPIRE-compliant web services (CSW, WFS and WMS). Although meta-data is not part of this project
 a possible relationship with a

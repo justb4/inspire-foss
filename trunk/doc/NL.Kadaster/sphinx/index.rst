@@ -26,6 +26,7 @@ For the, older, first phase (Phase 1) see* http://inspire.kademo.nl/docold/phase
    concept.rst
    architecture.rst
    design-etl.rst
+   design-services.rst
    contact.rst
    references.rst
    

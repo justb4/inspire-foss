@@ -48,8 +48,8 @@ pre {
     font-size: 0.95em;
     letter-spacing: 0.015em;
     padding: 0.5em;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
+     /* border: 1px solid #ccc;
+   background-color: #f8f8f8; */
 }
 
 td.linenos pre {
@@ -79,8 +79,14 @@ hr {
 }
 
 tt {
+   /* background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd; */
+    color: #333;
+}
+
+.highlight-python {
     background-color: #f2f2f2;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
     color: #333;
 }
 

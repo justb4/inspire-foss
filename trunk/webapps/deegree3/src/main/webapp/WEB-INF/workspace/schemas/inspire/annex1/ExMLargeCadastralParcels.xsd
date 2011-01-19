@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cp="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlcp="urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cp="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+		xmlns:gml="http://www.opengis.net/gml/3.2"
+		xmlns:xlcp="urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0"
+		elementFormDefault="qualified"
+		targetNamespace="urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0" version="1.0">
   <import namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" schemaLocation="CadastralParcels.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <!--XML Schema document created by ShapeChange-->

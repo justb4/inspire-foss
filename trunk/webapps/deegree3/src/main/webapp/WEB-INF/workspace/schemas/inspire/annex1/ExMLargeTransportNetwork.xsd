@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xltn="urn:x-exml:specification:gmlas:ExMLargeTransportNetwork:1.0" xmlns:xltn-a="urn:x-exml:specification:gmlas:ExMLargeAirTransportNetwork:1.0" xmlns:xltn-c="urn:x-exml:specification:gmlas:ExMLargeCommonTransportElements:1.0" xmlns:xltn-g="urn:x-exml:specification:gmlas:ExMLargeCableTransportNetwork:1.0" xmlns:xltn-r="urn:x-exml:specification:gmlas:ExMLargeRoadTransportNetwork:1.0" xmlns:xltn-t="urn:x-exml:specification:gmlas:ExMRailwayLargeTransportNetwork:1.0" xmlns:xltn-w="urn:x-exml:specification:gmlas:ExMLargeWaterTransportNetwork:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargeTransportNetwork:1.0" version="1.0">
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeAirTransportNetwork:1.0" schemaLocation="ExMLargeAirTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMRailwayLargeTransportNetwork:1.0" schemaLocation="ExMLargeRailwayTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeRoadTransportNetwork:1.0" schemaLocation="ExMLargeRoadTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeWaterTransportNetwork:1.0" schemaLocation="ExMLargeWaterTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeCableTransportNetwork:1.0" schemaLocation="ExMLargeCableTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeCommonTransportElements:1.0" schemaLocation="ExMLargeCommonTransportElements.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+</schema>

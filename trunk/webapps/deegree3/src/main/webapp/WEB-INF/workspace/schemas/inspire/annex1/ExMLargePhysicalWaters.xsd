@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sr="urn:x-inspire:specification:gmlas:SeaRegions:0.0" xmlns:hy-p="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:xlhy-p="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" version="1.0">
+  <import namespace="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" schemaLocation="HydroPhysicalWaters.xsd"/>
+
+	<!-- Just van den Broecke - added SeaRegions.xsd NS import to fix error:
+	UndeclaredPrefix: Cannot resolve 'sr:OceanRegion' as a QName: the prefix 'sr' is not declared.'
+	-->
+  <import namespace="urn:x-inspire:specification:gmlas:SeaRegions:0.0" schemaLocation="SeaRegions.xsd"/>
+
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="Rapids" substitutionGroup="hy-p:Rapids" type="xlhy-p:RapidsType"/>
+  <complexType name="RapidsType">
+    <complexContent>
+      <extension base="hy-p:RapidsType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RapidsPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Rapids"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LandWaterBoundary" substitutionGroup="hy-p:LandWaterBoundary" type="xlhy-p:LandWaterBoundaryType"/>
+  <complexType name="LandWaterBoundaryType">
+    <complexContent>
+      <extension base="hy-p:LandWaterBoundaryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LandWaterBoundaryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:LandWaterBoundary"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="OceanRegion" substitutionGroup="sr:OceanRegion" type="xlhy-p:OceanRegionType"/>
+  <complexType name="OceanRegionType">
+    <complexContent>
+      <extension base="sr:OceanRegionType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OceanRegionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:OceanRegion"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Falls" substitutionGroup="hy-p:Falls" type="xlhy-p:FallsType"/>
+  <complexType name="FallsType">
+    <complexContent>
+      <extension base="hy-p:FallsType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FallsPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Falls"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lock" substitutionGroup="hy-p:Lock" type="xlhy-p:LockType"/>
+  <complexType name="LockType">
+    <complexContent>
+      <extension base="hy-p:LockType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LockPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Lock"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Ford" substitutionGroup="hy-p:Ford" type="xlhy-p:FordType"/>
+  <complexType name="FordType">
+    <complexContent>
+      <extension base="hy-p:FordType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FordPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Ford"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ShorelineConstruction" substitutionGroup="hy-p:ShorelineConstruction" type="xlhy-p:ShorelineConstructionType"/>
+  <complexType name="ShorelineConstructionType">
+    <complexContent>
+      <extension base="hy-p:ShorelineConstructionType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ShorelineConstructionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:ShorelineConstruction"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PumpingStation" substitutionGroup="gml:AbstractGML" type="xlhy-p:PumpingStationType"/>
+  <complexType name="PumpingStationType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PumpingStationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:PumpingStation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Crossing" substitutionGroup="hy-p:Crossing" type="xlhy-p:CrossingType"/>
+  <complexType name="CrossingType">
+    <complexContent>
+      <extension base="hy-p:CrossingType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CrossingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Crossing"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="DamOrWeir" substitutionGroup="hy-p:DamOrWeir" type="xlhy-p:DamOrWeirType"/>
+  <complexType name="DamOrWeirType">
+    <complexContent>
+      <extension base="hy-p:DamOrWeirType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DamOrWeirPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:DamOrWeir"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="StandingWater" substitutionGroup="hy-p:StandingWater" type="xlhy-p:StandingWaterType"/>
+  <complexType name="StandingWaterType">
+    <complexContent>
+      <extension base="hy-p:StandingWaterType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StandingWaterPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:StandingWater"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Watercourse" substitutionGroup="hy-p:Watercourse" type="xlhy-p:WatercourseType"/>
+  <complexType name="WatercourseType">
+    <complexContent>
+      <extension base="hy-p:WatercourseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="WatercoursePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Watercourse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Sluice" substitutionGroup="hy-p:Sluice" type="xlhy-p:SluiceType"/>
+  <complexType name="SluiceType">
+    <complexContent>
+      <extension base="hy-p:SluiceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SluicePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Sluice"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Pipe" substitutionGroup="gml:AbstractGML" type="xlhy-p:PipeType"/>
+  <complexType name="PipeType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PipePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlhy-p:Pipe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

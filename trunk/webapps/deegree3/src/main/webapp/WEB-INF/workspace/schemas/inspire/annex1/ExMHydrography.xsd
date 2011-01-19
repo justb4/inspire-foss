@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xhy="urn:x-exm:specification:gmlas:ExMHydrography:0.4" xmlns:xhy-n="urn:x-exm:specification:gmlas:ExM_HydroNetwork:0.4" xmlns:xhy-p="urn:x-exm:specification:gmlas:ExM_PhysicalWaters:0.4" elementFormDefault="qualified" targetNamespace="urn:x-exm:specification:gmlas:ExMHydrography:0.4" version="0.4">
-  <import namespace="urn:x-exm:specification:gmlas:ExM_HydroNetwork:0.4" schemaLocation="ExMHydroNetwork.xsd"/>
-  <import namespace="urn:x-exm:specification:gmlas:ExM_PhysicalWaters:0.4" schemaLocation="ExMPhysicalWaters.xsd"/>
-  <!--XML Schema document created by ShapeChange-->
-</schema>

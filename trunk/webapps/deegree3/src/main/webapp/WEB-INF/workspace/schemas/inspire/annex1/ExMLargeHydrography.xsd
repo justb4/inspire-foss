@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlhy="urn:x-exml:specification:gmlas:ExMLargeHydrography:1.0" xmlns:xlhy-n="urn:x-exml:specification:gmlas:ExMLargeHydroNetwork:1.0" xmlns:xlhy-p="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargeHydrography:1.0" version="1.0">
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeHydroNetwork:1.0" schemaLocation="ExMLargeHydroNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" schemaLocation="ExMLargePhysicalWaters.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+</schema>

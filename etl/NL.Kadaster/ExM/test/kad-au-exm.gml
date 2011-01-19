@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:XAU="urn:x-exm:specification:gmlas:ExMAdministrativeUnits:0.4"
+					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:XAU="urn:x-exml:specification:gmlas:ExMLargeAdministrativeUnits:1.0"
 					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					 xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink"
 					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml2="http://www.opengis.net/gml"
 					 xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogr="http://ogr.maptools.org/"
 					 xmlns:wfs="http://www.opengis.net/wfs"
-					 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://schemas.kademo.nl/inspire/v3.0.1/AdministrativeUnits.xsd urn:x-exm:specification:gmlas:ExMAdministrativeUnits:0.4 http://schemas.kademo.nl/esdin/exm/v0.4/ExMAdministrativeUnits.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd"
-					 gml:id="NL.KAD.EXM.AU">
+					 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0 http://schemas.kademo.nl/inspire/v3.0.1/AdministrativeUnits.xsd urn:x-exml:specification:gmlas:ExMLargeAdministrativeUnits:1.0 http://schemas.kademo.nl/esdin/exmls/1.0-fixed/ExMLargeAdministrativeUnits.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd"
+					 gml:id="NL.KAD.EXML.AU">
 	<base:identifier>
 		<base:Identifier>
 			<base:localId>0</base:localId>
-			<base:namespace>NL.KAD.EXM.AU</base:namespace>
+			<base:namespace>NL.KAD.EXML.AU</base:namespace>
 		</base:Identifier>
 	</base:identifier>
 	<base:metadata xsi:nil="true"/>
 	<base:member>
-		<XAU:AdministrativeUnit gml:id="NL.KAD.EXM.AU.GEM.1842">
+		<XAU:AdministrativeUnit gml:id="NL.KAD.EXML.AU.GEM.1842">
 			<AU:geometry>
-				<gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXM.AU.GEM.1842" srsName="EPSG:4258">
+				<gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.AU.GEM.1842" srsName="EPSG:4258">
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.1842.2" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.1842.2" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -1346,7 +1346,7 @@
 			<AU:inspireId>
 				<base:Identifier>
 					<base:localId>1842</base:localId>
-					<base:namespace>NL.KAD.EXM.AU.GEM</base:namespace>
+					<base:namespace>NL.KAD.EXML.AU.GEM</base:namespace>
 				</base:Identifier>
 			</AU:inspireId>
 			<AU:nationalLevel>3rdOrder</AU:nationalLevel>
@@ -1388,11 +1388,11 @@
 		</XAU:AdministrativeUnit>
 	</base:member>
 	<base:member>
-		<XAU:AdministrativeUnit gml:id="NL.KAD.EXM.AU.GEM.0744">
+		<XAU:AdministrativeUnit gml:id="NL.KAD.EXML.AU.GEM.0744">
 			<AU:geometry>
-				<gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXM.AU.GEM.0744" srsName="EPSG:4258">
+				<gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.AU.GEM.0744" srsName="EPSG:4258">
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.2" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.2" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4166,7 +4166,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.4" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.4" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4210,7 +4210,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.6" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.6" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4247,7 +4247,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.8" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.8" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4288,7 +4288,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.10" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.10" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4320,7 +4320,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.12" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.12" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4349,7 +4349,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.14" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.14" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4372,7 +4372,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.16" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.16" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4391,7 +4391,7 @@
 						</gml:Surface>
 					</gml:surfaceMember>
 					<gml:surfaceMember>
-						<gml:Surface gml:id="Surface_NL.KAD.EXM.AU.GEM.0744.18" srsName="EPSG:4258">
+						<gml:Surface gml:id="Surface_NL.KAD.EXML.AU.GEM.0744.18" srsName="EPSG:4258">
 							<gml:patches>
 								<gml:PolygonPatch interpolation="planar">
 									<gml:exterior>
@@ -4421,7 +4421,7 @@
 			<AU:inspireId>
 				<base:Identifier>
 					<base:localId>0744</base:localId>
-					<base:namespace>NL.KAD.EXM.AU.GEM</base:namespace>
+					<base:namespace>NL.KAD.EXML.AU.GEM</base:namespace>
 				</base:Identifier>
 			</AU:inspireId>
 			<AU:nationalLevel>3rdOrder</AU:nationalLevel>

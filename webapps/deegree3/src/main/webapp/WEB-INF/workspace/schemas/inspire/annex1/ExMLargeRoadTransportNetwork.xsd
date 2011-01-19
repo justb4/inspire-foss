@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:tn-ro="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0" xmlns:xltn-r="urn:x-exml:specification:gmlas:ExMLargeRoadTransportNetwork:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargeRoadTransportNetwork:1.0" version="1.0">
+  <import namespace="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0" schemaLocation="RoadTransportNetwork.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="ERoad" substitutionGroup="tn-ro:ERoad" type="xltn-r:ERoadType"/>
+  <complexType name="ERoadType">
+    <complexContent>
+      <extension base="tn-ro:ERoadType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ERoadPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:ERoad"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Road" substitutionGroup="tn-ro:Road" type="xltn-r:RoadType"/>
+  <complexType name="RoadType">
+    <complexContent>
+      <extension base="tn-ro:RoadType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:Road"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadSurfaceCategory" substitutionGroup="tn-ro:RoadSurfaceCategory" type="xltn-r:RoadSurfaceCategoryType"/>
+  <complexType name="RoadSurfaceCategoryType">
+    <complexContent>
+      <extension base="tn-ro:RoadSurfaceCategoryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadSurfaceCategoryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadSurfaceCategory"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadServiceArea" substitutionGroup="tn-ro:RoadServiceArea" type="xltn-r:RoadServiceAreaType"/>
+  <complexType name="RoadServiceAreaType">
+    <complexContent>
+      <extension base="tn-ro:RoadServiceAreaType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadServiceAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadServiceArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FormOfWay" substitutionGroup="tn-ro:FormOfWay" type="xltn-r:FormOfWayType"/>
+  <complexType name="FormOfWayType">
+    <complexContent>
+      <extension base="tn-ro:FormOfWayType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FormOfWayPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:FormOfWay"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FunctionalRoadClass" substitutionGroup="tn-ro:FunctionalRoadClass" type="xltn-r:FunctionalRoadClassType"/>
+  <complexType name="FunctionalRoadClassType">
+    <complexContent>
+      <extension base="tn-ro:FunctionalRoadClassType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FunctionalRoadClassPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:FunctionalRoadClass"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SpeedLimit" substitutionGroup="tn-ro:SpeedLimit" type="xltn-r:SpeedLimitType"/>
+  <complexType name="SpeedLimitType">
+    <complexContent>
+      <extension base="tn-ro:SpeedLimitType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpeedLimitPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:SpeedLimit"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadServiceType" substitutionGroup="tn-ro:RoadServiceType" type="xltn-r:RoadServiceTypeType"/>
+  <complexType name="RoadServiceTypeType">
+    <complexContent>
+      <extension base="tn-ro:RoadServiceTypeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadServiceTypePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadServiceType"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadWidth" substitutionGroup="tn-ro:RoadWidth" type="xltn-r:RoadWidthType"/>
+  <complexType name="RoadWidthType">
+    <complexContent>
+      <extension base="tn-ro:RoadWidthType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadWidthPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadWidth"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadNode" substitutionGroup="tn-ro:RoadNode" type="xltn-r:RoadNodeType"/>
+  <complexType name="RoadNodeType">
+    <complexContent>
+      <extension base="tn-ro:RoadNodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VeichleTrafficArea" substitutionGroup="tn-ro:VehicleTrafficArea" type="xltn-r:VeichleTrafficAreaType"/>
+  <complexType name="VeichleTrafficAreaType">
+    <complexContent>
+      <extension base="tn-ro:VehicleTrafficAreaType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VeichleTrafficAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:VeichleTrafficArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadLink" substitutionGroup="tn-ro:RoadLink" type="xltn-r:RoadLinkType"/>
+  <complexType name="RoadLinkType">
+    <complexContent>
+      <extension base="tn-ro:RoadLinkType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadLinkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadLink"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadArea" substitutionGroup="tn-ro:RoadArea" type="xltn-r:RoadAreaType"/>
+  <complexType name="RoadAreaType">
+    <complexContent>
+      <extension base="tn-ro:RoadAreaType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadName" substitutionGroup="tn-ro:RoadName" type="xltn-r:RoadNameType"/>
+  <complexType name="RoadNameType">
+    <complexContent>
+      <extension base="tn-ro:RoadNameType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadNamePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadName"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="NumberOfLanes" substitutionGroup="tn-ro:NumberOfLanes" type="xltn-r:NumberOfLanesType"/>
+  <complexType name="NumberOfLanesType">
+    <complexContent>
+      <extension base="tn-ro:NumberOfLanesType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NumberOfLanesPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:NumberOfLanes"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadLinkSequence" substitutionGroup="tn-ro:RoadLinkSequence" type="xltn-r:RoadLinkSequenceType"/>
+  <complexType name="RoadLinkSequenceType">
+    <complexContent>
+      <extension base="tn-ro:RoadLinkSequenceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadLinkSequencePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-r:RoadLinkSequence"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

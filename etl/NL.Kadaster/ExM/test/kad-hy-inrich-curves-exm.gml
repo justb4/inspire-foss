@@ -18,24 +18,24 @@
   -->
 
 <base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-					 xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XHY-P="urn:x-exm:specification:gmlas:ExM_PhysicalWaters:0.4"
+					 xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0"
 					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					 xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink"
 					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml2="http://www.opengis.net/gml"
 					 xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogr="http://ogr.maptools.org/"
 					 xmlns:wfs="http://www.opengis.net/wfs"
-					 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://schemas.kademo.nl/inspire/v3.0.1/HydroPhysicalWaters.xsd urn:x-exm:specification:gmlas:ExM_PhysicalWaters:0.4 http://schemas.kademo.nl/esdin/exm/v0.4-fixed/ExMPhysicalWaters.xsd"
-					 gml:id="NL.KAD.EXM.HY-P">
+					 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://schemas.kademo.nl/inspire/v3.0.1/HydroPhysicalWaters.xsd urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0 http://schemas.kademo.nl/esdin/exmls/1.0-fixed/ExMLargePhysicalWaters.xsd"
+					 gml:id="NL.KAD.EXML.HY-P">
 	<base:identifier>
 		<base:Identifier>
 			<base:localId>0</base:localId>
-			<base:namespace>NL.KAD.EXM.HY-P</base:namespace>
+			<base:namespace>NL.KAD.EXML.HY-P</base:namespace>
 		</base:Identifier>
 	</base:identifier>
 	<base:metadata xsi:nil="true"/>
 	<!--UNHANDLED TYPE: TYPEWATER=greppel, droge sloot-->
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXM.HY-P.NL.TOP10NL.109135330">
+		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109135330">
 			<HY-P:geographicalName>
 				<GN:GeographicalName>
 					<GN:language xsi:nil="true"/>
@@ -57,7 +57,7 @@
 			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:geometry>
-				<gml:Curve gml:id="CurveNL.KAD.EXM.HY-P.NL.TOP10NL.109135330" srsName="EPSG:4258">
+				<gml:Curve gml:id="CurveNL.KAD.EXML.HY-P.NL.TOP10NL.109135330" srsName="EPSG:4258">
 					<gml:segments>
 						<gml:LineStringSegment interpolation="linear">
 							<gml:posList srsName="EPSG:4258" srsDimension="2">6.924661311497654 52.387729345846942
@@ -70,7 +70,7 @@
 			<HY-P:inspireId>
 				<base:Identifier>
 					<base:localId>NL.TOP10NL.109135330</base:localId>
-					<base:namespace>NL.KAD.EXM.HY-P</base:namespace>
+					<base:namespace>NL.KAD.EXML.HY-P</base:namespace>
 				</base:Identifier>
 			</HY-P:inspireId>
 			<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
@@ -88,7 +88,7 @@
 	</base:member>
 	<!--UNHANDLED TYPE: TYPEWATER=greppel, droge sloot-->
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXM.HY-P.NL.TOP10NL.109136384">
+		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109136384">
 			<HY-P:geographicalName>
 				<GN:GeographicalName>
 					<GN:language xsi:nil="true"/>
@@ -110,7 +110,7 @@
 			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:geometry>
-				<gml:Curve gml:id="CurveNL.KAD.EXM.HY-P.NL.TOP10NL.109136384" srsName="EPSG:4258">
+				<gml:Curve gml:id="CurveNL.KAD.EXML.HY-P.NL.TOP10NL.109136384" srsName="EPSG:4258">
 					<gml:segments>
 						<gml:LineStringSegment interpolation="linear">
 							<gml:posList srsName="EPSG:4258" srsDimension="2">6.924681522234544 52.386388255112685
@@ -125,7 +125,7 @@
 			<HY-P:inspireId>
 				<base:Identifier>
 					<base:localId>NL.TOP10NL.109136384</base:localId>
-					<base:namespace>NL.KAD.EXM.HY-P</base:namespace>
+					<base:namespace>NL.KAD.EXML.HY-P</base:namespace>
 				</base:Identifier>
 			</HY-P:inspireId>
 			<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
@@ -142,7 +142,7 @@
 		</XHY-P:Watercourse>
 	</base:member>
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXM.HY-P.NL.TOP10NL.109136386">
+		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109136386">
 			<HY-P:geographicalName>
 				<GN:GeographicalName>
 					<GN:language xsi:nil="true"/>
@@ -164,7 +164,7 @@
 			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:geometry>
-				<gml:Curve gml:id="CurveNL.KAD.EXM.HY-P.NL.TOP10NL.109136386" srsName="EPSG:4258">
+				<gml:Curve gml:id="CurveNL.KAD.EXML.HY-P.NL.TOP10NL.109136386" srsName="EPSG:4258">
 					<gml:segments>
 						<gml:LineStringSegment interpolation="linear">
 							<gml:posList srsName="EPSG:4258" srsDimension="2">6.924582235104456 52.3870186187185
@@ -179,7 +179,7 @@
 			<HY-P:inspireId>
 				<base:Identifier>
 					<base:localId>NL.TOP10NL.109136386</base:localId>
-					<base:namespace>NL.KAD.EXM.HY-P</base:namespace>
+					<base:namespace>NL.KAD.EXML.HY-P</base:namespace>
 				</base:Identifier>
 			</HY-P:inspireId>
 			<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
@@ -196,26 +196,26 @@
 		</XHY-P:Watercourse>
 	</base:member>
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXM.HY-P.NL.TOP10NL.109130466">
+		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109130466">
 			<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:geometry>
-				<gml:LineString gml:id="CurveNL.KAD.EXM.HY-P.NL.TOP10NL.109130466" srsName="EPSG:4258">
+				<gml:LineString gml:id="CurveNL.KAD.EXML.HY-P.NL.TOP10NL.109130466" srsName="EPSG:4258">
 					<gml:posList srsName="EPSG:4258" srsDimension="2">
 						6.924661311497654 52.387729345846942 6.925458735539538 52.387598110795778</gml:posList>
 				</gml:LineString>
 
 
-				<!--			<gml:Curve gml:id="CurveNL.KAD.EXM.HY-P.NL.TOP10NL.109130466" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
+				<!--			<gml:Curve gml:id="CurveNL.KAD.EXML.HY-P.NL.TOP10NL.109130466" srsName="EPSG:4258"><gml:segments><gml:LineStringSegment interpolation="linear">
 									<gml:posList srsName="EPSG:4258" srsDimension="2">6.924661311497654 52.387729345846942 6.925458735539538 52.387598110795778</gml:posList>
 								</gml:LineStringSegment></gml:segments></gml:Curve>  -->
 			</HY-P:geometry>
 			<HY-P:inspireId>
 				<base:Identifier>
 					<base:localId>NL.TOP10NL.109130466</base:localId>
-					<base:namespace>NL.KAD.EXM.HY-P</base:namespace>
+					<base:namespace>NL.KAD.EXML.HY-P</base:namespace>
 				</base:Identifier>
 			</HY-P:inspireId>
 			<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">

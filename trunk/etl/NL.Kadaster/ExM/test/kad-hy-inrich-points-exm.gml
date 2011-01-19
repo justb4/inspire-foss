@@ -18,7 +18,7 @@
   -->
 
 <base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-					 xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0"
+					 xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XLHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0"
 					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					 xmlns:gmd="http://www.isotc211.org/2005/gmd"
 					 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -33,7 +33,7 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <XHY-P:Lock gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.118418876">
+    <XLHY-P:Lock gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.118418876">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -48,10 +48,10 @@
           <base:namespace>NL.KAD.EXML.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </XHY-P:Lock>
+    </XLHY-P:Lock>
   </base:member>
   <base:member>
-    <XHY-P:Lock gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.118419254">
+    <XLHY-P:Lock gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.118419254">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -66,6 +66,6 @@
           <base:namespace>NL.KAD.EXML.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </XHY-P:Lock>
+    </XLHY-P:Lock>
   </base:member>
 </base:SpatialDataSet>

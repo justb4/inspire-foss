@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sr="urn:x-inspire:specification:gmlas:SeaRegions:0.0" xmlns:hy-p="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:xlhy-p="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" version="1.0">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+		xmlns:sr="urn:x-inspire:specification:gmlas:SeaRegions:0.0"
+		xmlns:hy-p="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0"
+		xmlns:xlhy-p="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" version="1.0">
   <import namespace="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" schemaLocation="HydroPhysicalWaters.xsd"/>
 
 	<!-- Just van den Broecke - added SeaRegions.xsd NS import to fix error:

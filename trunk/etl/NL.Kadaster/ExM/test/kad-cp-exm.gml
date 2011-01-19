@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" xmlns:XCP="urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gml2="http://www.opengis.net/gml" xmlns:ogr="http://ogr.maptools.org/" xmlns:wfs="http://www.opengis.net/wfs" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:CadastralParcels:3.0 http://schemas.kademo.nl/inspire/v3.0.1/CadastralParcels.xsd urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0 http://schemas.kademo.nl/esdin/exmls/1.0-fixed/ExMLargeCadastralParcels.xsd" gml:id="NL.KAD.EXML.CP">
+<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" xmlns:XLCP="urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gml2="http://www.opengis.net/gml" xmlns:ogr="http://ogr.maptools.org/" xmlns:wfs="http://www.opengis.net/wfs" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:CadastralParcels:3.0 http://schemas.kademo.nl/inspire/v3.0.1/CadastralParcels.xsd urn:x-exml:specification:gmlas:ExMLargeCadastralParcels:1.0 http://schemas.kademo.nl/esdin/exmls/1.0-fixed/ExMLargeCadastralParcels.xsd" gml:id="NL.KAD.EXML.CP">
   <base:identifier>
     <base:Identifier>
       <base:localId>0</base:localId>
@@ -8,7 +8,7 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <XCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2377">
+    <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2377">
       <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:geometry>
@@ -41,10 +41,10 @@
       </CP:inspireId>
       <CP:label>LNK00D  2377</CP:label>
       <CP:nationalCadastralReference>LNK00D  2377</CP:nationalCadastralReference>
-    </XCP:CadastralParcel>
+    </XLCP:CadastralParcel>
   </base:member>
   <base:member>
-    <XCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2378">
+    <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2378">
       <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:geometry>
@@ -72,10 +72,10 @@
       </CP:inspireId>
       <CP:label>LNK00D  2378</CP:label>
       <CP:nationalCadastralReference>LNK00D  2378</CP:nationalCadastralReference>
-    </XCP:CadastralParcel>
+    </XLCP:CadastralParcel>
   </base:member>
   <base:member>
-    <XCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2451">
+    <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2451">
       <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:geometry>
@@ -108,10 +108,10 @@
       </CP:inspireId>
       <CP:label>LNK00D  2451</CP:label>
       <CP:nationalCadastralReference>LNK00D  2451</CP:nationalCadastralReference>
-    </XCP:CadastralParcel>
+    </XLCP:CadastralParcel>
   </base:member>
   <base:member>
-    <XCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2376">
+    <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2376">
       <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <CP:geometry>
@@ -139,6 +139,6 @@
       </CP:inspireId>
       <CP:label>LNK00D  2376</CP:label>
       <CP:nationalCadastralReference>LNK00D  2376</CP:nationalCadastralReference>
-    </XCP:CadastralParcel>
+    </XLCP:CadastralParcel>
   </base:member>
 </base:SpatialDataSet>

@@ -7,8 +7,8 @@
     </base:Identifier>
   </base:identifier>
   <base:metadata xsi:nil="true"/>
-  <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:XGN="urn:x-exml:specification:gmlas:ExMLargeGeographicalNames:1.0">
-    <XGN:NamedPlace gml:id="NL.KAD.EXML.GN.NL.TOP10NL.114540192">
+  <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:XLGN="urn:x-exml:specification:gmlas:ExMLargeGeographicalNames:1.0">
+    <XLGN:NamedPlace gml:id="NL.KAD.EXML.GN.NL.TOP10NL.114540192">
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -44,10 +44,10 @@
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:type>transportNetwork</GN:type>
-    </XGN:NamedPlace>
+    </XLGN:NamedPlace>
   </base:member>
-  <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:XGN="urn:x-exml:specification:gmlas:ExMLargeGeographicalNames:1.0">
-    <XGN:NamedPlace gml:id="NL.KAD.EXML.GN.NL.TOP10NL.116630305">
+  <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:XLGN="urn:x-exml:specification:gmlas:ExMLargeGeographicalNames:1.0">
+    <XLGN:NamedPlace gml:id="NL.KAD.EXML.GN.NL.TOP10NL.116630305">
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -83,10 +83,10 @@
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:type>transportNetwork</GN:type>
-    </XGN:NamedPlace>
+    </XLGN:NamedPlace>
   </base:member>
-  <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:XGN="urn:x-exml:specification:gmlas:ExMLargeGeographicalNames:1.0">
-    <XGN:NamedPlace gml:id="NL.KAD.EXML.GN.NL.TOP10NL.116630343">
+  <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:XLGN="urn:x-exml:specification:gmlas:ExMLargeGeographicalNames:1.0">
+    <XLGN:NamedPlace gml:id="NL.KAD.EXML.GN.NL.TOP10NL.116630343">
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -122,6 +122,6 @@
       </GN:name>
       <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:type>transportNetwork</GN:type>
-    </XGN:NamedPlace>
+    </XLGN:NamedPlace>
   </base:member>
 </base:SpatialDataSet>

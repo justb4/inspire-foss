@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:XAU="urn:x-exml:specification:gmlas:ExMLargeAdministrativeUnits:1.0"
+					 xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:XLAU="urn:x-exml:specification:gmlas:ExMLargeAdministrativeUnits:1.0"
 					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					 xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink"
 					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml2="http://www.opengis.net/gml"
@@ -16,7 +16,7 @@
 	</base:identifier>
 	<base:metadata xsi:nil="true"/>
 	<base:member>
-		<XAU:AdministrativeUnit gml:id="NL.KAD.EXML.AU.GEM.1842">
+		<XLAU:AdministrativeUnit gml:id="NL.KAD.EXML.AU.GEM.1842">
 			<AU:geometry>
 				<gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.AU.GEM.1842" srsName="EPSG:4258">
 					<gml:surfaceMember>
@@ -1385,10 +1385,10 @@
 			<AU:administeredBy xsi:nil="true"/>
 			<AU:coAdminister xsi:nil="true"/>
 			<AU:boundary xsi:nil="true"/>
-		</XAU:AdministrativeUnit>
+		</XLAU:AdministrativeUnit>
 	</base:member>
 	<base:member>
-		<XAU:AdministrativeUnit gml:id="NL.KAD.EXML.AU.GEM.0744">
+		<XLAU:AdministrativeUnit gml:id="NL.KAD.EXML.AU.GEM.0744">
 			<AU:geometry>
 				<gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.AU.GEM.0744" srsName="EPSG:4258">
 					<gml:surfaceMember>
@@ -4460,6 +4460,6 @@
 			<AU:administeredBy xsi:nil="true"/>
 			<AU:coAdminister xsi:nil="true"/>
 			<AU:boundary xsi:nil="true"/>
-		</XAU:AdministrativeUnit>
+		</XLAU:AdministrativeUnit>
 	</base:member>
 </base:SpatialDataSet>

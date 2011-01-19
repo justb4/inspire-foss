@@ -17,7 +17,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml2="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogr="http://ogr.maptools.org/" xmlns:wfs="http://www.opengis.net/wfs" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://schemas.kademo.nl/inspire/v3.0.1/HydroPhysicalWaters.xsd urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0 http://schemas.kademo.nl/esdin/exmls/1.0-fixed/ExMLargePhysicalWaters.xsd" gml:id="NL.KAD.EXML.HY-P">
+<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XLHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml2="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogr="http://ogr.maptools.org/" xmlns:wfs="http://www.opengis.net/wfs" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0 http://schemas.kademo.nl/inspire/v3.0.1/HydroPhysicalWaters.xsd urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0 http://schemas.kademo.nl/esdin/exmls/1.0-fixed/ExMLargePhysicalWaters.xsd" gml:id="NL.KAD.EXML.HY-P">
   <base:identifier>
     <base:Identifier>
       <base:localId>0</base:localId>
@@ -26,7 +26,7 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member>
-    <XHY-P:DamOrWeir gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.103418618">
+    <XLHY-P:DamOrWeir gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.103418618">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -43,10 +43,10 @@
           <base:namespace>NL.KAD.EXML.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </XHY-P:DamOrWeir>
+    </XLHY-P:DamOrWeir>
   </base:member>
   <base:member>
-    <XHY-P:DamOrWeir gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.103445585">
+    <XLHY-P:DamOrWeir gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.103445585">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -67,10 +67,10 @@
           <base:namespace>NL.KAD.EXML.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </XHY-P:DamOrWeir>
+    </XLHY-P:DamOrWeir>
   </base:member>
   <base:member>
-    <XHY-P:DamOrWeir gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.103445584">
+    <XLHY-P:DamOrWeir gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.103445584">
       <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
       <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -91,6 +91,6 @@
           <base:namespace>NL.KAD.EXML.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-    </XHY-P:DamOrWeir>
+    </XLHY-P:DamOrWeir>
   </base:member>
 </base:SpatialDataSet>

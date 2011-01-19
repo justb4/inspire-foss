@@ -18,7 +18,7 @@
   -->
 
 <base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
-					 xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0"
+					 xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0" xmlns:XLHY-P="urn:x-exml:specification:gmlas:ExMLargePhysicalWaters:1.0"
 					 xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
 					 xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink"
 					 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml2="http://www.opengis.net/gml"
@@ -35,7 +35,7 @@
 	<base:metadata xsi:nil="true"/>
 	<!--UNHANDLED TYPE: TYPEWATER=greppel, droge sloot-->
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109135330">
+		<XLHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109135330">
 			<HY-P:geographicalName>
 				<GN:GeographicalName>
 					<GN:language xsi:nil="true"/>
@@ -84,11 +84,11 @@
 			<HY-P:length xsi:nil="true" nilReason="UNPOPULATED" uom="m"/>
 			<HY-P:level xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:width xsi:nil="true" nilReason="UNPOPULATED"/>
-		</XHY-P:Watercourse>
+		</XLHY-P:Watercourse>
 	</base:member>
 	<!--UNHANDLED TYPE: TYPEWATER=greppel, droge sloot-->
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109136384">
+		<XLHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109136384">
 			<HY-P:geographicalName>
 				<GN:GeographicalName>
 					<GN:language xsi:nil="true"/>
@@ -139,10 +139,10 @@
 			<HY-P:length xsi:nil="true" nilReason="UNPOPULATED" uom="m"/>
 			<HY-P:level xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:width xsi:nil="true" nilReason="UNPOPULATED"/>
-		</XHY-P:Watercourse>
+		</XLHY-P:Watercourse>
 	</base:member>
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109136386">
+		<XLHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109136386">
 			<HY-P:geographicalName>
 				<GN:GeographicalName>
 					<GN:language xsi:nil="true"/>
@@ -193,10 +193,10 @@
 			<HY-P:length xsi:nil="true" nilReason="UNPOPULATED" uom="m"/>
 			<HY-P:level xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:width xsi:nil="true" nilReason="UNPOPULATED"/>
-		</XHY-P:Watercourse>
+		</XLHY-P:Watercourse>
 	</base:member>
 	<base:member>
-		<XHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109130466">
+		<XLHY-P:Watercourse gml:id="NL.KAD.EXML.HY-P.NL.TOP10NL.109130466">
 			<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
@@ -229,7 +229,7 @@
 			<HY-P:length xsi:nil="true" nilReason="UNPOPULATED" uom="m"/>
 			<HY-P:level xsi:nil="true" nilReason="UNPOPULATED"/>
 			<HY-P:width xsi:nil="true" nilReason="UNPOPULATED"/>
-		</XHY-P:Watercourse>
+		</XLHY-P:Watercourse>
 	</base:member>
 	<!--UNHANDLED TYPE: TYPEWATER=greppel, droge sloot-->
 	<!--UNHANDLED TYPE: TYPEWATER=greppel, droge sloot-->

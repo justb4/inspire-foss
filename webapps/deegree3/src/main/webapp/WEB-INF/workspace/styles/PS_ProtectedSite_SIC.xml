@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se:FeatureTypeStyle version="1.1.0" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:ps="urn:x-inspire:specification:gmlas:ProtectedSites:3.0" xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <se:Description>
+    <se:Title>Protected Site Thematic Style for Regional Protected Sites</se:Title>
+    <se:Abstract>
+      Stile per la tematizzazione dei PS secondo le esigneze di R.L.
+      SIC
+      ZPS
+      AP
+    </se:Abstract>
+  </se:Description>
+  <se:FeatureTypeName>ps:ProtectedSite</se:FeatureTypeName>
+  <se:Rule>
+    <!--POLIGON -->
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>ps:inspireID/base:Identifier/base:namespace</ogc:PropertyName>
+        <ogc:Literal>IT.RLIG.SIC</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <se:PolygonSymbolizer>
+      <se:Geometry>
+        <ogc:PropertyName>ps:geometry</ogc:PropertyName>
+      </se:Geometry>
+      <se:Fill>
+        <se:SvgParameter name="fill">#e9967a</se:SvgParameter>
+        <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+        <se:SvgParameter name="stroke">#e9967a</se:SvgParameter>
+        <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+      </se:Stroke>
+    </se:PolygonSymbolizer>
+  </se:Rule>
+</se:FeatureTypeStyle>

@@ -25,8 +25,10 @@ For the, older, first phase (Phase 1) see* http://inspire.kademo.nl/docold/phase
    best-practices.rst
    concept.rst
    architecture.rst
+   mappings-etl.rst
    design-etl.rst
    design-services.rst
+   results.rst
    contact.rst
    references.rst
    

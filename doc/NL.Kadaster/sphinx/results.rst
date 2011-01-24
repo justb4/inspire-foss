@@ -5,25 +5,40 @@
 Results
 *******
 
-A WFS is currently active providing
-INSPIRE-compliant data for Cadastral Parcels (CP) and Addresses (AD)
-according to the INSPIRE Annex I V3 schemas (GML 3.2.1/WFS 1.1.0).
+This chapter summarizes the main results, organized by the different
+components of the project. Most of these results can be accessed directly through the
+project site http://inspire.kademo.nl.
+
+
+ETL
+===
+
+The ETL process for each of the data themes and ExM together has resulteed in around 500000 features
+stored into the PostGIS datastore maintained by a deegree WFS (see next).
+
+
+Download Services - WFS
+=======================
+
+A deegree v3 WFS is currently active providing
+INSPIRE-compliant data for Administrative Units (AU), Cadastral Parcels (CP), GeographicalNames (GN), Hyrdography (HY) and Transport Networks (TN).
+
+Data from this WFS has been validated successfully
+against the INSPIRE Annex I V3 schemas and ESDIN ExM Large Scale (GML 3.2.1/WFS 1.1.0).
 
 The WFS is located at `<http://inspire.kademo.nl/deegree3>`_.
 
-Testing
-=======
-
-This `generic WFS client <http://inspire.kademo.nl/deegree-wfs/client/client.jsp>`_ allows you to POST custom WFS requests.
-
 Below are some sample WFS (GET) requests that can be directly executed on the live WFS.
 
-* `WFS GetCapabilities <http://inspire.kademo.nl/deegree-wfs/services?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetCapabilities>`_
-* `WFS Addresses (BAG data) - GetFeature <http://inspire.kademo.nl/deegree-wfs/services?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&outputFormat=text/xml;%20subtype=gml/3.2.1&TYPENAME=AD:Address&maxfeatures=50&NAMESPACE=xmlns%28AD=urn:x-inspire:specification:gmlas:Addresses:3.0%29>`_
-* `WFS Cadastral Parcels (BRK perceel data) - GetFeature <http://inspire.kademo.nl/deegree-wfs/services?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=CP:CadastralParcel&maxfeatures=50&NAMESPACE=xmlns%28CP=urn:x-inspire:specification:gmlas:CadastralParcels:3.0%29>`_
+.. * `WFS GetCapabilities <http://inspire.kademo.nl/deegree3/services?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetCapabilities>`_
+* `WFS Administrative Units - GetFeature <http://inspire.kademo.nl/deegree3/services?request=GetFeature&version=1.1.0&service=WFS&typeName=au:AdministrativeUnit&namespace=xmlns%28au=urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0%29&maxFeatures=5&outputFormat=text/xml;%20subtype=gml/3.2.1>`_
+* `WFS Cadastral Parcels - GetFeature <http://inspire.kademo.nl/deegree3/services?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=CP:CadastralParcel&maxfeatures=50&NAMESPACE=xmlns%28CP=urn:x-inspire:specification:gmlas:CadastralParcels:3.0%29&maxFeatures=10&outputFormat=text/xml;%20subtype=gml/3.2.1>`_
+* `WFS GeographicalNames - GetFeature <http://inspire.kademo.nl/deegree3/services?request=GetFeature&version=1.1.0&service=WFS&typeName=GN:NamedPlace&namespace=xmlns%28GN=urn:x-inspire:specification:gmlas:GeographicalNames:3.0%29&maxFeatures=10&outputFormat=text/xml;%20subtype=gml/3.2.1>`_
+* `WFS Hydrography - GetFeature <http://inspire.kademo.nl/deegree3/services?request=GetFeature&version=1.1.0&service=WFS&typeName=hy-p:Watercourse&namespace=xmlns%28hy-p=urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0%29&maxFeatures=10&outputFormat=text/xml;%20subtype=gml/3.2.1>`_
+* `WFS Transport Networks - GetFeature <http://inspire.kademo.nl/deegree3/services?request=GetFeature&version=1.1.0&service=WFS&typeName=tn-ro:RoadNode&namespace=xmlns%28tn-ro=urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0%29&maxFeatures=10&outputFormat=text/xml;%20subtype=gml/3.2.1>`_
 
-Viewing
-=======
+View Services - WMS
+===================
 
 In order to view data a WMS using the ETRS89 (EPSG:4258) projection was setup using GeoServer.
 Dutch raster topomaps
@@ -32,18 +47,27 @@ The Dutch Kadaster GEORZ Lab is developing a
 generic (WMS) view-client as a FOSS project
 see http://code.google.com/p/geoext-viewer. This viewer, called GeoViewer is based on `GeoExt <http://www.geoext.org>`_.
 
+In the figures below some screenshots of GeoViewer adapted for INSPIRE data viewing are shown.
+This viewer can be directly accessed through
+http://inspire.kademo.nl.
 
-Below in Figure 6 and 7 screenshots of GeoViewer adapted for INSPIRE data viewing are shown for both INSPIRE
-Addresses and Cadastral Parcels. This viewer can be directly accessed through
-http://inspire.kademo.nl/view/viewer.html.
+.. figure:: _static/viewer-cp.jpg
+    :align: center
+    :width: 650 px
+
+    *Figure 12 - WMS Showing CadastralParcels near Dutch/German border*
 
 
-.. figure:: _static/geoviewer-cp.jpg
-   :align: center
 
-*Figure 6 - View of Cadastral Parcels (CP) with Kadaster GeoViewer*
+.. figure:: _static/viewer-gn-hy-tn.jpg
+    :align: center
+    :width: 650 px
 
-.. figure:: _static/geoviewer-ad.jpg
-   :align: center
+    *Figure 13 - WMS Showing Features from GN, HY and TN*
 
-*Figure 7 - View of Addresses (AD) with Kadaster GeoViewer*
+
+.. figure:: _static/viewer-au.jpg
+    :align: center
+    :width: 650 px
+
+    *Figure 14 - WMS Showing 3rd-Level Admin Units (Dutch: "Gemeenten")*

@@ -28,6 +28,7 @@ For the, older, first phase (Phase 1) see* http://inspire.kademo.nl/docold/phase
    mappings-etl.rst
    design-etl.rst
    design-services.rst
+   implementation.rst
    results.rst
    contact.rst
    references.rst

@@ -21,6 +21,8 @@
 	<!-- [0...n] Announced CRS, default: EPSG:4326 -->
 	<QueryCRS>EPSG:4326</QueryCRS>
 	<QueryCRS>EPSG:4258</QueryCRS>
+	<QueryCRS>EPSG:4258</QueryCRS>
+	<QueryCRS>EPSG:3034</QueryCRS>
 
 	<QueryCRS>EPSG:900913</QueryCRS>
 

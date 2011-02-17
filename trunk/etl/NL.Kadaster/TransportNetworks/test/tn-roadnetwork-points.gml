@@ -9,6 +9,7 @@
   <base:metadata xsi:nil="true"/>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.114524564">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.114524564</gml:identifier>
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
@@ -19,18 +20,19 @@
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524564" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524564" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>6.843176201926373 52.35528286579008</gml:pos>
         </gml:Point>
       </NET:geometry>
-      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
+      <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+      <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.114524546">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.114524546</gml:identifier>
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
@@ -41,18 +43,19 @@
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524546" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524546" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>6.842415680471941 52.356505818226992</gml:pos>
         </gml:Point>
       </NET:geometry>
-      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
+      <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+      <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.118422060">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.118422060</gml:identifier>
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
@@ -63,18 +66,19 @@
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422060" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422060" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>6.634880712297864 52.133116949321817</gml:pos>
         </gml:Point>
       </NET:geometry>
-      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
+      <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+      <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.118422236">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.118422236</gml:identifier>
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
@@ -85,18 +89,19 @@
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422236" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422236" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>6.700946494594095 52.126848368580468</gml:pos>
         </gml:Point>
       </NET:geometry>
-      <TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
+      <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+      <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.119745395">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.119745395</gml:identifier>
       <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inspireId>
         <base:Identifier>
@@ -107,17 +112,17 @@
       <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
-        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.119745395" srsName="EPSG:4258">
+        <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.119745395" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>6.788479153421008 52.241104534884819</gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Boekelose Weg|Rougoorweg</GN:text>
@@ -130,7 +135,7 @@
       </TN:geographicalName>
       <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
       <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN-RO:formOfRoadNode>junction</TN-RO:formOfRoadNode>
+      <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
 </base:SpatialDataSet>

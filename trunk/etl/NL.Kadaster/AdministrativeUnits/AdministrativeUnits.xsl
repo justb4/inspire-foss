@@ -52,6 +52,13 @@ Requires:
 		<base:member>
 			<AU:AdministrativeUnit gml:id="{$gmlId}">
 
+				<xsl:call-template name="GML.Identifier">
+					<xsl:with-param name="id">
+						<xsl:value-of select="$gmlId"/>
+					</xsl:with-param>
+				</xsl:call-template>
+
+
 				<!-- Generate (complex) MultiSurface geometry -->
 				<AU:geometry>
 					<!-- This is locally specific -->
@@ -80,7 +87,7 @@ Requires:
 				</AU:inspireId>
 
 				<!-- nationalLevel is one of {1thOrder, 2ndOrder, ...} -->
-				<AU:nationalLevel>
+				<AU:nationalLevel codeSpace="{$adminHierarchyCodeSpace}">
 					<xsl:value-of select="$nationalLevel"/>
 				</AU:nationalLevel>
 

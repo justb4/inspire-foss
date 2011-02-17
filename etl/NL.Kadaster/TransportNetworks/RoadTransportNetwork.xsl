@@ -188,7 +188,7 @@ Requires:
 				</xsl:call-template>
 				<!-- END: From CommonTransportElements.xsd:TransportNodeType -->
 				
-				<TN-RO:formOfRoadNode>
+				<TN-RO:formOfRoadNode codeSpace="{$formOfRoadNodeValueCodeSpace}">
 					<xsl:value-of select="$formOfRoadNode"/>
 				</TN-RO:formOfRoadNode>
   
@@ -202,6 +202,17 @@ Requires:
 	<xsl:template name="TN-RO.NetworkElementTypeProperties" priority="1">
 		<xsl:param name="idPrefix"/>
 		<xsl:param name="localId"/>
+
+		<!-- Create gml Id by concatenating idPrefix and local id -->
+		<xsl:variable name="gmlId">
+			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
+		</xsl:variable>
+
+		<xsl:call-template name="GML.Identifier">
+			<xsl:with-param name="id">
+				<xsl:value-of select="$gmlId"/>
+			</xsl:with-param>
+		</xsl:call-template>
 
 		<!-- START: From Network.xsd:NetworkElementType -->
 		<NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
@@ -239,7 +250,7 @@ Requires:
 				</TN:geographicalName>
 			</xsl:when>
 			<xsl:otherwise>
-				<TN:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></TN:geographicalName>
+				<TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"></TN:geographicalName>
 			</xsl:otherwise>
 		</xsl:choose>
 

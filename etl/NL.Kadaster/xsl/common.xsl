@@ -95,6 +95,14 @@ Requires local constants like "$countryCodeValue", for example:
 		</base:Identifier>
 	</xsl:template>
 
+	<!-- Generate gml:identifier element -->
+	<xsl:template name="GML.Identifier" priority="1">
+		<xsl:param name="id"/>
+
+		<gml:identifier codeSpace="{$gmlIdentifierCS}"><xsl:value-of select="concat($gmlIdentifierPrefix ,$id)"/></gml:identifier>
+
+	</xsl:template>
+
 	<!-- Generate gmd:Country element -->
 	<xsl:template name="GMD.Country" priority="1">
 		<gmd:Country codeList="{$countryCodeList}" codeListValue="{$countryCodeValue}">

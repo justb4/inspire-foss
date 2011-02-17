@@ -9,13 +9,14 @@
   <base:metadata xsi:nil="true"/>
   <base:member>
     <HY-P:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118418876">
-      <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
-      <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
-      <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
-      <HY-P:condition>functional</HY-P:condition>
-      <HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.HY-P.NL.TOP10NL.118418876</gml:identifier>
+      <HY-P:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
+      <HY-P:hydroId xsi:nil="true" nilReason="other:unpopulated"/>
+      <HY-P:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <HY-P:condition codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/ConditionOfFacilityValue.xml">functional</HY-P:condition>
+      <HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:geometry>
-				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118418876" srsName="EPSG:4258"><gml:pos>6.665213396038251 52.223555885801701</gml:pos></gml:Point>
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118418876" srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>6.665213396038251 52.223555885801701</gml:pos></gml:Point>
 			</HY-P:geometry>
       <HY-P:inspireId>
         <base:Identifier>
@@ -27,13 +28,14 @@
   </base:member>
   <base:member>
     <HY-P:Lock gml:id="NL.KAD.HY-P.NL.TOP10NL.118419254">
-      <HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"/>
-      <HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"/>
-      <HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
-      <HY-P:condition>functional</HY-P:condition>
-      <HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"/>
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.HY-P.NL.TOP10NL.118419254</gml:identifier>
+      <HY-P:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
+      <HY-P:hydroId xsi:nil="true" nilReason="other:unpopulated"/>
+      <HY-P:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <HY-P:condition codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/ConditionOfFacilityValue.xml">functional</HY-P:condition>
+      <HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:geometry>
-				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118419254" srsName="EPSG:4258"><gml:pos>6.667267754831234 52.204717636815744</gml:pos></gml:Point>
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118419254" srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>6.667267754831234 52.204717636815744</gml:pos></gml:Point>
 			</HY-P:geometry>
       <HY-P:inspireId>
         <base:Identifier>

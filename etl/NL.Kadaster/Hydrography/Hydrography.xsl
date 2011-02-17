@@ -138,10 +138,10 @@ Requires:
 				</HY-P:elevation>
 
 				<!-- meanDepth: nill -->
-				<HY-P:meanDepth xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:meanDepth>
+				<HY-P:meanDepth xsi:nil="true" nilReason="other:unpopulated" uom="m"></HY-P:meanDepth>
 
 				<!-- not available: nill   <HY-P:surfaceArea uom="sqrm">96897.6577988</HY-P:surfaceArea>  -->
-				<HY-P:surfaceArea xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:surfaceArea>
+				<HY-P:surfaceArea xsi:nil="true" nilReason="other:unpopulated" uom="m"></HY-P:surfaceArea>
 
 			</HY-P:StandingWater>
 		</base:member>
@@ -184,18 +184,18 @@ Requires:
 				<!-- Leave out <condition> for now -->
 
 				<!-- delineationKnown: not available: leave out -->
-				<HY-P:delineationKnown xsi:nil="true" nilReason="UNPOPULATED"></HY-P:delineationKnown>
+				<HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"></HY-P:delineationKnown>
 
 				<!-- length: nill -->
-				<HY-P:length xsi:nil="true" nilReason="UNPOPULATED" uom="m"></HY-P:length>
+				<HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"></HY-P:length>
 
 				<!-- level: nill -->
-				<HY-P:level xsi:nil="true" nilReason="UNPOPULATED"></HY-P:level>
+				<HY-P:level xsi:nil="true" nilReason="other:unpopulated"></HY-P:level>
 
 				<!-- Leave out <streamOrder> for now -->
 
 				<!-- TODO width: nill -->
-				<HY-P:width xsi:nil="true" nilReason="UNPOPULATED"></HY-P:width>
+				<HY-P:width xsi:nil="true" nilReason="other:unpopulated"></HY-P:width>
 
 			</HY-P:Watercourse>
 		</base:member>
@@ -212,13 +212,19 @@ Requires:
 			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
 		</xsl:variable>
 
-		<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
-		<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
-		<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
-		<HY-P:condition>
+		<xsl:call-template name="GML.Identifier">
+			<xsl:with-param name="id">
+				<xsl:value-of select="$gmlId"/>
+			</xsl:with-param>
+		</xsl:call-template>
+
+		<HY-P:geographicalName xsi:nil="true" nilReason="other:unpopulated"></HY-P:geographicalName>
+		<HY-P:hydroId xsi:nil="true" nilReason="other:unpopulated"></HY-P:hydroId>
+		<HY-P:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></HY-P:beginLifespanVersion>
+		<HY-P:condition codeSpace="{$conditionOfFacilityValueCodeSpace}">
 			<xsl:value-of select="$status"/>
 		</HY-P:condition>
-		<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+		<HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></HY-P:endLifespanVersion>
 
 		<HY-P:geometry>
 
@@ -258,6 +264,12 @@ Requires:
 			<xsl:value-of select="concat($idPrefix,'.',$localId)"/>
 		</xsl:variable>
 
+		<xsl:call-template name="GML.Identifier">
+			<xsl:with-param name="id">
+				<xsl:value-of select="$gmlId"/>
+			</xsl:with-param>
+		</xsl:call-template>
+
 		<xsl:choose>
 			<!-- Name is optional: only generate a GeographicalName when present otherwise make nil -->
 			<xsl:when test="$name != ''">
@@ -271,15 +283,15 @@ Requires:
 				</HY-P:geographicalName>
 			</xsl:when>
 			<xsl:otherwise>
-				<HY-P:geographicalName xsi:nil="true" nilReason="UNPOPULATED"></HY-P:geographicalName>
+				<HY-P:geographicalName xsi:nil="true" nilReason="other:unpopulated"></HY-P:geographicalName>
 			</xsl:otherwise>
 		</xsl:choose>
 
-		<HY-P:hydroId xsi:nil="true" nilReason="UNPOPULATED"></HY-P:hydroId>
+		<HY-P:hydroId xsi:nil="true" nilReason="other:unpopulated"></HY-P:hydroId>
 
 		<!-- TODO: optional populate -->
-		<HY-P:beginLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:beginLifespanVersion>
-		<HY-P:endLifespanVersion xsi:nil="true" nilReason="UNPOPULATED"></HY-P:endLifespanVersion>
+		<HY-P:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></HY-P:beginLifespanVersion>
+		<HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></HY-P:endLifespanVersion>
 
 		<HY-P:geometry>
 
@@ -326,16 +338,16 @@ Requires:
 		</HY-P:localType>
 
 		<!-- not available: nill <HY-P:origin>manMade</HY-P:origin>  -->
-		<HY-P:origin xsi:nil="true" nilReason="UNPOPULATED"></HY-P:origin>
+		<HY-P:origin xsi:nil="true" nilReason="other:unpopulated"></HY-P:origin>
 
 		<!-- not available: nill  <HY-P:persistence>Perennial</HY-P:persistence> -->
-		<HY-P:persistence xsi:nil="true" nilReason="UNPOPULATED"></HY-P:persistence>
+		<HY-P:persistence xsi:nil="true" nilReason="other:unpopulated"></HY-P:persistence>
 
 		<!-- not available: leave out -->
-		<HY-P:tidal xsi:nil="true" nilReason="UNPOPULATED"></HY-P:tidal>
+		<HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"></HY-P:tidal>
 
 		<!-- drainsBasin: nill -->
-		<HY-P:drainsBasin xsi:nil="true" nilReason="UNPOPULATED"/>
+		<HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
 
 	</xsl:template>
 

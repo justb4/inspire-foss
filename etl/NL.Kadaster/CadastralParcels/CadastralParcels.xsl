@@ -86,6 +86,12 @@ Requires:
 		<base:member>
 			<CP:CadastralParcel gml:id="{$gmlId}">
 
+				<xsl:call-template name="GML.Identifier">
+						<xsl:with-param name="id">
+							<xsl:value-of select="$gmlId"/>
+						</xsl:with-param>
+					</xsl:call-template>
+
 				<CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
 				<CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
 

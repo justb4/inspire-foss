@@ -9,6 +9,7 @@
   <base:metadata xsi:nil="true"/>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075142">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075142</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -23,15 +24,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Stadsweide</GN:text>
@@ -42,12 +43,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075143">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075143</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -62,15 +64,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Ellecomsche Polder</GN:text>
@@ -81,12 +83,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075144">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075144</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -101,15 +104,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Beimerwaard</GN:text>
@@ -120,12 +123,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075149">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075149</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -140,15 +144,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Fraterwaard</GN:text>
@@ -159,12 +163,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075150">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075150</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -179,15 +184,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Dorenslag</GN:text>
@@ -198,12 +203,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075153">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075153</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -218,15 +224,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>De Grind</GN:text>
@@ -237,12 +243,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075154">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075154</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -257,15 +264,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Het Griet</GN:text>
@@ -276,12 +283,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075155">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075155</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -296,15 +304,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Veld</GN:text>
@@ -315,12 +323,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075156">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075156</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -335,15 +344,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Havikerwaard</GN:text>
@@ -354,12 +363,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075157">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075157</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -374,15 +384,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Het Klooster</GN:text>
@@ -393,12 +403,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075158">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075158</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -413,15 +424,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>De Drie Huizen</GN:text>
@@ -432,12 +443,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075175">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075175</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -452,15 +464,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Bingerden</GN:text>
@@ -471,12 +483,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075176">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075176</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -491,15 +504,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Achterdrempt</GN:text>
@@ -510,12 +523,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075177">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075177</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -530,15 +544,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Strengsche Veld</GN:text>
@@ -549,12 +563,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075181">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075181</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -569,15 +584,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Doesburg</GN:text>
@@ -588,12 +603,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075182">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075182</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -608,15 +624,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Het Ziedeveld</GN:text>
@@ -627,12 +643,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075183">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075183</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -647,15 +664,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Hoefkensche Weiden</GN:text>
@@ -666,12 +683,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075186">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075186</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -686,15 +704,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Schuttewaard</GN:text>
@@ -705,12 +723,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075195">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075195</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -725,15 +744,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Angerlo</GN:text>
@@ -744,12 +763,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075196">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075196</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -764,15 +784,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Bevermeer</GN:text>
@@ -783,12 +803,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075197">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075197</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -803,15 +824,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Eldriksche Weiden</GN:text>
@@ -822,12 +843,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075199">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075199</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -842,15 +864,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Stadsweide</GN:text>
@@ -861,12 +883,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075200">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075200</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -881,15 +904,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>IJsselweiden</GN:text>
@@ -900,12 +923,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075203">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075203</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -920,15 +944,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Ellecom</GN:text>
@@ -939,12 +963,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075216">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075216</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -959,15 +984,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Drempt</GN:text>
@@ -978,12 +1003,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075217">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075217</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -998,15 +1024,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">woonwijk</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">woonwijk</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Wemmersweerd</GN:text>
@@ -1017,12 +1043,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075218">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075218</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -1037,15 +1064,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Hooge Horsten</GN:text>
@@ -1056,12 +1083,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075220">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075220</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -1076,15 +1104,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Beinum</GN:text>
@@ -1095,12 +1123,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>populatedPlace</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">populatedPlace</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075222">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103075222</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -1115,15 +1144,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Loenersche Middelwaard</GN:text>
@@ -1134,12 +1163,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>landcover</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">landcover</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103085184">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103085184</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -1154,15 +1184,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>(Gemeentehuis te De Steeg)</GN:text>
@@ -1173,12 +1203,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>other</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">other</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103085220">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103085220</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -1193,15 +1224,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>Lange Brug</GN:text>
@@ -1212,12 +1243,13 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>other</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">other</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103085287">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.103085287</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
@@ -1232,15 +1264,15 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
               <GN:text>(Gemeentehuis te Hoog- Keppel)</GN:text>
@@ -1251,8 +1283,8 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>other</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">other</GN:type>
     </GN:NamedPlace>
   </base:member>
 </base:SpatialDataSet>

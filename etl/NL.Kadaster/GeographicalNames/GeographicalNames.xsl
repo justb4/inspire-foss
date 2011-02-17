@@ -94,7 +94,14 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
 		<xsl:variable name="pointId"><xsl:value-of select="concat($gmlId,'.PT')"/></xsl:variable>
 
 		<base:member>
-			<GN:NamedPlace gml:id="{$gmlId}" >
+			<GN:NamedPlace gml:id="{$gmlId}">
+
+				<xsl:call-template name="GML.Identifier">
+					<xsl:with-param name="id">
+						<xsl:value-of select="$gmlId"/>
+					</xsl:with-param>
+				</xsl:call-template>
+
 				<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:beginLifespanVersion>
 				<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:endLifespanVersion>
    
@@ -135,8 +142,8 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
 					</xsl:call-template>
 				</GN:name>
 
-				<GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"></GN:relatedSpatialObject>
-				<GN:type><xsl:value-of select="$type"/></GN:type>
+				<GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"></GN:relatedSpatialObject>
+				<GN:type codeSpace="{$namedPlaceTypeValueCodeSpace}"><xsl:value-of select="$type"/></GN:type>
 
 			</GN:NamedPlace>
 		</base:member>
@@ -152,16 +159,16 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
 
 		<GN:GeographicalName>
 			<GN:language xsi:nil="true"/>
-			<GN:nativeness>
+			<GN:nativeness codeSpace="{$nativenessValueCodeSpace}">
 				<xsl:value-of select="$nativeness"/>
 			</GN:nativeness>
-			<GN:nameStatus>
+			<GN:nameStatus codeSpace="{$nameStatusValueCodeSpace}">
 				<xsl:value-of select="$nameStatus"/>
 			</GN:nameStatus>
 			<GN:sourceOfName>
 				<xsl:value-of select="$sourceOfName"/>
 			</GN:sourceOfName>
-			<GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+			<GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
 
 			<GN:spelling>
 				<GN:SpellingOfName>

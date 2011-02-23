@@ -16,6 +16,17 @@ function transform() {
     # Otherwise we'll loose the CP1252 encoded chars
     export OGR_FORCE_ASCII=NO
 
+    # Testing out options to force axis order swapping
+	# we should reverse the axis order from x,y to y,x !
+	# But we need GDAL >= 1.8.0
+	# see http://www.gdal.org/ogr/drv_gml.html
+	# export GML_CONSIDER_EPSG_AS_URN=YES
+    # export FORMAT=GML3
+    # export GML3_LONGSRS=YES
+    # export GML_INVERT_AXIS_ORDER_IF_LAT_LONG=NO
+    # ogr2ogr -a_srs EPSG:4258 -nlt $geotype -f "GML" temp.gml $1 -dsco FORMAT=GML3
+    # ogr2ogr -a_srs EPSG:4258 -nlt $geotype -f "GML" $2 temp.gml
+
     ogr2ogr -nlt $geotype -f "GML" $2 $1
 
     # Dutch source is encoded in Windows LATIN1 :-( (CP1252)

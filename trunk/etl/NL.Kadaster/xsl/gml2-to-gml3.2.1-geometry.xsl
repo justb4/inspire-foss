@@ -116,6 +116,21 @@ GML 2 LineString
 		</xsl:apply-templates>
 	</xsl:template>
 
+	<!-- Callable Template: create Point element -->
+	<xsl:template name="createPoint" priority="1">
+		<xsl:param name="pointId"/>
+		<xsl:param name="point"/>
+		<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="{$pointId}">
+			<gml:pos>
+				<!-- Swap x,y to y,x from space-separated (posList) coordinates -->
+				<xsl:call-template name="swapCoords">
+					<xsl:with-param name="coordString" select="translate(normalize-space($point),',',' ')"/>
+					<xsl:with-param name="sep" select="' '"/>
+				</xsl:call-template>
+			</gml:pos>
+		</gml:Point>
+	</xsl:template>
+
 	<!-- Callable Template: Transform Point or Linestring element to GML3 Points/Curves-->
 	<xsl:template name="createGeom" priority="1" mode="Single">
 		<xsl:param name="id"/>
@@ -215,22 +230,59 @@ GML 2 LineString
 		</gml:Curve>
 	</xsl:template>
 
+	<!-- Swap x,y to y,x from space-separated (posList) coordinates. -->
+	<xsl:template name="swapCoords">
+		<xsl:param name="coordString"/>
+		<xsl:param name="sep"/>
+		<xsl:choose>
+			<xsl:when test="contains($coordString,$sep)">
+
+				<xsl:choose>
+
+					<!-- Cater for last pair -->
+					<xsl:when test="substring-before(substring-after($coordString,$sep), $sep) = ''">
+						<xsl:value-of select="substring-after($coordString,$sep)"/>
+					</xsl:when>
+
+					<xsl:otherwise><xsl:value-of select="substring-before(substring-after($coordString,$sep), $sep)"/></xsl:otherwise>
+				</xsl:choose>
+
+				<!-- Output y,x -->
+				<xsl:value-of select="' '"/>
+				<xsl:value-of select="substring-before($coordString,$sep)"/>
+				<xsl:value-of select="' '"/>
+
+				<!-- RECURSE: Skip current x,y,z-coordinate and proceed with remaining string (that starts with next x,y) -->
+				<xsl:call-template name="swapCoords">
+					<xsl:with-param name="coordString"
+									select="substring-after( substring-after( $coordString, $sep), $sep)"/>
+					<xsl:with-param name="sep" select="$sep"/>
+				</xsl:call-template>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+
 	<!-- Transform coordinate list to poslist -->
 	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:coordinates">
 		<gml:posList srsName="{$srsName}" srsDimension="{$srsDimension}">
-			<!-- VERY VERY TRICKY : replaces "," with spaces and removes 3rd dimension (height) by calling "remove3D"
-			<xsl:call-template name="remove3D">
-				<xsl:with-param name="outputString" select="translate(normalize-space(.),',',' ')"/>
+			<!-- Swap x,y to y,x from space-separated (posList) coordinates -->
+			<xsl:call-template name="swapCoords">
+				<xsl:with-param name="coordString" select="translate(normalize-space(.),',',' ')"/>
 				<xsl:with-param name="sep" select="' '"/>
-			</xsl:call-template>     -->
-			<xsl:value-of select="translate(normalize-space(.),',',' ')"/>
+			</xsl:call-template>
+			<!-- <xsl:value-of select="translate(normalize-space(.),',',' ')"/>  -->
 		</gml:posList>
 	</xsl:template>
 
 	<!-- Transform coordinate list to poslist -->
 	<xsl:template xmlns:gml2="http://www.opengis.net/gml" match="gml2:coordinates" mode="Point">
 		<gml:pos>
-			<xsl:value-of select="translate(normalize-space(.),',',' ')"/>
+			<!-- Swap x,y to y,x from space-separated (posList) coordinates -->
+			<xsl:call-template name="swapCoords">
+				<xsl:with-param name="coordString" select="translate(normalize-space(.),',',' ')"/>
+				<xsl:with-param name="sep" select="' '"/>
+			</xsl:call-template>
+			<!-- <xsl:value-of select="translate(normalize-space(.),',',' ')"/>    -->
 		</gml:pos>
 	</xsl:template>
 

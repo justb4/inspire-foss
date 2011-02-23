@@ -16,7 +16,7 @@
       <HY-P:condition codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/ConditionOfFacilityValue.xml">functional</HY-P:condition>
       <HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:geometry>
-				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118418876" srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>6.665213396038251 52.223555885801701</gml:pos></gml:Point>
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118418876" srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>52.223555885801701 6.665213396038251 </gml:pos></gml:Point>
 			</HY-P:geometry>
       <HY-P:inspireId>
         <base:Identifier>
@@ -35,7 +35,7 @@
       <HY-P:condition codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/ConditionOfFacilityValue.xml">functional</HY-P:condition>
       <HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:geometry>
-				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118419254" srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>6.667267754831234 52.204717636815744</gml:pos></gml:Point>
+				<gml:Point gml:id="Point_NL.KAD.HY-P.NL.TOP10NL.118419254" srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>52.204717636815744 6.667267754831234 </gml:pos></gml:Point>
 			</HY-P:geometry>
       <HY-P:inspireId>
         <base:Identifier>

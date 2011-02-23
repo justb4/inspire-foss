@@ -105,11 +105,17 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
 				<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:beginLifespanVersion>
 				<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:endLifespanVersion>
    
-				<!-- fetch POINT geometry, filtering out any spaces and "," separtors-->
+				<!-- Generate Point geometry -->
 				<GN:geometry>
-					<gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="{$pointId}">
-						<gml:pos><xsl:value-of select="translate(normalize-space($point),',',' ')"/></gml:pos>
-					</gml:Point>
+					<!-- Generate gML3 Point with coordinates swapped -->
+					<xsl:call-template name="createPoint">
+						<xsl:with-param name="pointId">
+							<xsl:value-of select="$pointId"/>
+						</xsl:with-param>
+						<xsl:with-param name="point">
+							<xsl:value-of select="$point"/>
+						</xsl:with-param>
+					</xsl:call-template>
 				</GN:geometry>
 
 				<!-- Generate INSPIRE id -->

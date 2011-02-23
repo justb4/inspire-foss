@@ -1,11 +1,15 @@
-<JDBCConnection configVersion="3.0.0" xmlns="http://www.deegree.org/jdbc"
-				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-				xsi:schemaLocation="http://www.deegree.org/jdbc http://schemas.deegree.org/jdbc/3.0.0/jdbc.xsd">
-	<Url>jdbc:postgresql://localhost:5432/inspire_blob</Url>
-	<User>inspire</User>
-	<Password>inspire</Password>
+<JDBCConnection xmlns="http://www.deegree.org/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.0.0" xsi:schemaLocation="http://www.deegree.org/jdbc http://schemas.deegree.org/jdbc/3.0.0/jdbc.xsd">
 
-	<!-- default is false, set to true eg. for embedded derby databases or for better performance -->
-  	<ReadOnly>false</ReadOnly>
+  <!-- [1] JDBC URL (without username / password) -->
+  <Url>jdbc:postgresql://localhost:5432/inspire_blob</Url>
+
+  <!-- [1] DB username -->
+  <User>inspire</User>
+
+  <!-- [1] DB password -->
+  <Password>inspire</Password>
+
+  <!-- default is false, set to true eg. for embedded derby databases or for better performance -->
+  <ReadOnly>false</ReadOnly>
 
 </JDBCConnection>

@@ -20,8 +20,10 @@
   xsi:schemaLocation="http://www.deegree.org/datasource/feature/postgis http://schemas.deegree.org/datasource/feature/postgis/3.0.0/postgis.xsd">
   <JDBCConnId>inspire_blob</JDBCConnId>
   <BLOBMapping>
-    <StorageCRS>EPSG:4258</StorageCRS>
-	<GMLSchema version="GML_32">../../schemas/inspire/annex1</GMLSchema>
+    <StorageCRS>urn:ogc:def:crs:EPSG::4258</StorageCRS>
+
+	  <!-- Note: we bundle all schemas in actual use (for which there is data) in a single dir -->
+	<GMLSchema version="GML_32">../../schemas/active</GMLSchema>
 
 	  <!--	NOTE due to a bug in deegree 3.0 we cannot have multiple
 	    GMLSchema directories. This should be solved in deegree 3.1

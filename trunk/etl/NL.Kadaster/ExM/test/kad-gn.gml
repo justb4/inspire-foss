@@ -8,33 +8,34 @@
   </base:identifier>
   <base:metadata xsi:nil="true"/>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
-    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.114540192">
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100004643">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.100004643</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
-        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.114540192.PT">
-          <gml:pos>6.050498678228092 52.2900524789126</gml:pos>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100004643.PT">
+          <gml:pos>6.14498016321976 52.01004156951042</gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.114540192</base:localId>
+          <base:localId>NL.TOP10NL.100004643</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">sportterrein, sportcomplex</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
-              <GN:text>Geerse Pad</GN:text>
+              <GN:text>Sportterrein</GN:text>
               <GN:script>Latn</GN:script>
             </GN:SpellingOfName>
           </GN:spelling>
@@ -42,38 +43,39 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>transportNetwork</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">other</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
-    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.116630305">
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100004644">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.100004644</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
-        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.116630305.PT">
-          <gml:pos>6.085130818589941 52.336048005814213</gml:pos>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100004644.PT">
+          <gml:pos>6.162655673150053 52.03305039256518</gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.116630305</base:localId>
+          <base:localId>NL.TOP10NL.100004644</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">lokale weg|overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">camping, kampeerterrein</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
-              <GN:text>Erveweg</GN:text>
+              <GN:text>Camping</GN:text>
               <GN:script>Latn</GN:script>
             </GN:SpellingOfName>
           </GN:spelling>
@@ -81,38 +83,39 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>transportNetwork</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">other</GN:type>
     </GN:NamedPlace>
   </base:member>
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
-    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.116630343">
+    <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100010436">
+      <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.100010436</gml:identifier>
       <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
-        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.116630343.PT">
-          <gml:pos>6.13554044328533 52.314596103566281</gml:pos>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100010436.PT">
+          <gml:pos>6.128231116131404 52.010146826992539</gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
         <base:Identifier>
-          <base:localId>NL.TOP10NL.116630343</base:localId>
+          <base:localId>NL.TOP10NL.100010436</base:localId>
           <base:namespace>NL.KAD.GN</base:namespace>
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="nl-NL">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">onbekend</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
           <GN:language xsi:nil="true"/>
-          <GN:nativeness>endonym</GN:nativeness>
-          <GN:nameStatus>official</GN:nameStatus>
+          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
           <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="UNPOPULATED"/>
+          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
           <GN:spelling>
             <GN:SpellingOfName>
-              <GN:text>Holtermansdijk</GN:text>
+              <GN:text>Fabriek</GN:text>
               <GN:script>Latn</GN:script>
             </GN:SpellingOfName>
           </GN:spelling>
@@ -120,8 +123,8 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:type>transportNetwork</GN:type>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:type codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NamedPlaceTypeValue.xml">other</GN:type>
     </GN:NamedPlace>
   </base:member>
 </base:SpatialDataSet>

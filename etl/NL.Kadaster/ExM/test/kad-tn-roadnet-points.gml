@@ -21,7 +21,7 @@
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524564" srsName="urn:ogc:def:crs:EPSG::4258">
-          <gml:pos>6.843176201926373 52.35528286579008</gml:pos>
+          <gml:pos>52.35528286579008 6.843176201926373 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
@@ -44,7 +44,7 @@
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524546" srsName="urn:ogc:def:crs:EPSG::4258">
-          <gml:pos>6.842415680471941 52.356505818226992</gml:pos>
+          <gml:pos>52.356505818226992 6.842415680471941 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
@@ -67,7 +67,7 @@
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422060" srsName="urn:ogc:def:crs:EPSG::4258">
-          <gml:pos>6.634880712297864 52.133116949321817</gml:pos>
+          <gml:pos>52.133116949321817 6.634880712297864 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
@@ -90,7 +90,7 @@
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422236" srsName="urn:ogc:def:crs:EPSG::4258">
-          <gml:pos>6.700946494594095 52.126848368580468</gml:pos>
+          <gml:pos>52.126848368580468 6.700946494594095 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
@@ -113,7 +113,7 @@
       <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.119745395" srsName="urn:ogc:def:crs:EPSG::4258">
-          <gml:pos>6.788479153421008 52.241104534884819</gml:pos>
+          <gml:pos>52.241104534884819 6.788479153421008 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName>

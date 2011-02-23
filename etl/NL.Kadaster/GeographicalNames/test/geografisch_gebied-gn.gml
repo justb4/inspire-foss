@@ -14,7 +14,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075142.PT">
-          <gml:pos>6.123831150494035 52.018230885207046</gml:pos>
+          <gml:pos>52.018230885207046 6.123831150494035 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -54,7 +54,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075143.PT">
-          <gml:pos>6.091818552258184 52.028042196677667</gml:pos>
+          <gml:pos>52.028042196677667 6.091818552258184 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -94,7 +94,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075144.PT">
-          <gml:pos>6.100180097179203 52.019164889827856</gml:pos>
+          <gml:pos>52.019164889827856 6.100180097179203 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -134,7 +134,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075149.PT">
-          <gml:pos>6.137292719136942 52.029682847162853</gml:pos>
+          <gml:pos>52.029682847162853 6.137292719136942 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -174,7 +174,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075150.PT">
-          <gml:pos>6.168589106256894 52.027033433444011</gml:pos>
+          <gml:pos>52.027033433444011 6.168589106256894 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -214,7 +214,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075153.PT">
-          <gml:pos>6.155809601724485 52.024706052471238</gml:pos>
+          <gml:pos>52.024706052471238 6.155809601724485 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -254,7 +254,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075154.PT">
-          <gml:pos>6.157770146296661 52.020582642943204</gml:pos>
+          <gml:pos>52.020582642943204 6.157770146296661 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -294,7 +294,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075155.PT">
-          <gml:pos>6.178445021909769 52.014622116781098</gml:pos>
+          <gml:pos>52.014622116781098 6.178445021909769 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -334,7 +334,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075156.PT">
-          <gml:pos>6.086365674674663 52.003031143311084</gml:pos>
+          <gml:pos>52.003031143311084 6.086365674674663 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -374,7 +374,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075157.PT">
-          <gml:pos>6.115760355295757 51.99493306379</gml:pos>
+          <gml:pos>51.99493306379 6.115760355295757 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -414,7 +414,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075158.PT">
-          <gml:pos>6.172570303363726 51.986293465478759</gml:pos>
+          <gml:pos>51.986293465478759 6.172570303363726 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -454,7 +454,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075175.PT">
-          <gml:pos>6.102202845756137 51.992108035081465</gml:pos>
+          <gml:pos>51.992108035081465 6.102202845756137 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -494,7 +494,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075176.PT">
-          <gml:pos>6.181538840469965 52.022808750329681</gml:pos>
+          <gml:pos>52.022808750329681 6.181538840469965 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -534,7 +534,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075177.PT">
-          <gml:pos>6.182773773865431 52.02103340532215</gml:pos>
+          <gml:pos>52.02103340532215 6.182773773865431 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -574,7 +574,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075181.PT">
-          <gml:pos>6.139374839355582 52.013871253825485</gml:pos>
+          <gml:pos>52.013871253825485 6.139374839355582 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -614,7 +614,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075182.PT">
-          <gml:pos>6.156028672160271 52.016127201935745</gml:pos>
+          <gml:pos>52.016127201935745 6.156028672160271 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -654,7 +654,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075183.PT">
-          <gml:pos>6.167627339552601 52.034911573469621</gml:pos>
+          <gml:pos>52.034911573469621 6.167627339552601 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -694,7 +694,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075186.PT">
-          <gml:pos>6.098205164638022 52.025438108059141</gml:pos>
+          <gml:pos>52.025438108059141 6.098205164638022 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -734,7 +734,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075195.PT">
-          <gml:pos>6.13368257521013 51.99593055924916</gml:pos>
+          <gml:pos>51.99593055924916 6.13368257521013 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -774,7 +774,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075196.PT">
-          <gml:pos>6.156738462968137 51.993480054704371</gml:pos>
+          <gml:pos>51.993480054704371 6.156738462968137 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -814,7 +814,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075197.PT">
-          <gml:pos>6.175028566490652 51.992639627909952</gml:pos>
+          <gml:pos>51.992639627909952 6.175028566490652 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -854,7 +854,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075199.PT">
-          <gml:pos>6.133824866699388 52.022538716290008</gml:pos>
+          <gml:pos>52.022538716290008 6.133824866699388 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -894,7 +894,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075200.PT">
-          <gml:pos>6.172714368713622 51.996686932498285</gml:pos>
+          <gml:pos>51.996686932498285 6.172714368713622 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -934,7 +934,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075203.PT">
-          <gml:pos>6.088523413771285 52.032429332444352</gml:pos>
+          <gml:pos>52.032429332444352 6.088523413771285 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -974,7 +974,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075216.PT">
-          <gml:pos>6.172891111001522 52.006472390009236</gml:pos>
+          <gml:pos>52.006472390009236 6.172891111001522 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1014,7 +1014,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075217.PT">
-          <gml:pos>6.126880034272979 52.00524974027698</gml:pos>
+          <gml:pos>52.00524974027698 6.126880034272979 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1054,7 +1054,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075218.PT">
-          <gml:pos>6.088456631682622 51.985621262696</gml:pos>
+          <gml:pos>51.985621262696 6.088456631682622 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1094,7 +1094,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075220.PT">
-          <gml:pos>6.12324733502367 52.001408858385034</gml:pos>
+          <gml:pos>52.001408858385034 6.12324733502367 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1134,7 +1134,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075222.PT">
-          <gml:pos>6.111605717384265 52.00475048909481</gml:pos>
+          <gml:pos>52.00475048909481 6.111605717384265 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1174,7 +1174,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103085184.PT">
-          <gml:pos>6.092084927814863 52.00949595893757</gml:pos>
+          <gml:pos>52.00949595893757 6.092084927814863 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1214,7 +1214,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103085220.PT">
-          <gml:pos>6.11760598778036 52.024456078896478</gml:pos>
+          <gml:pos>52.024456078896478 6.11760598778036 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>
@@ -1254,7 +1254,7 @@
       <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103085287.PT">
-          <gml:pos>6.169494602300012 51.993961767083754</gml:pos>
+          <gml:pos>51.993961767083754 6.169494602300012 </gml:pos>
         </gml:Point>
       </GN:geometry>
       <GN:inspireId>

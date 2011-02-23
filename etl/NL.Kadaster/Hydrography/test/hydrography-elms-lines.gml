@@ -17,7 +17,7 @@
       <HY-P:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:geometry>
 				<gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103418618" srsName="urn:ogc:def:crs:EPSG::4258"><gml:segments><gml:LineStringSegment interpolation="linear">
-					<gml:posList srsName="urn:ogc:def:crs:EPSG::4258" srsDimension="2">6.688871316695089 52.478848795073141 6.688861250304463 52.478922861994128</gml:posList>
+					<gml:posList srsName="urn:ogc:def:crs:EPSG::4258" srsDimension="2">52.478848795073141 6.688871316695089 52.478922861994128 6.688861250304463 </gml:posList>
 				</gml:LineStringSegment></gml:segments></gml:Curve>
 			</HY-P:geometry>
       <HY-P:inspireId>
@@ -40,7 +40,7 @@
         <gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103445585" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
-              <gml:posList srsName="urn:ogc:def:crs:EPSG::4258" srsDimension="2">6.765295370596461 52.277149862446599 6.765171028075015 52.277123887573502</gml:posList>
+              <gml:posList srsName="urn:ogc:def:crs:EPSG::4258" srsDimension="2">52.277149862446599 6.765295370596461 52.277123887573502 6.765171028075015 </gml:posList>
             </gml:LineStringSegment>
           </gml:segments>
         </gml:Curve>
@@ -65,7 +65,7 @@
         <gml:Curve gml:id="CurveNL.KAD.HY-P.NL.TOP10NL.103445584" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:segments>
             <gml:LineStringSegment interpolation="linear">
-              <gml:posList srsName="urn:ogc:def:crs:EPSG::4258" srsDimension="2">6.762350838404692 52.278164951590817 6.762390644232616 52.278215275376461</gml:posList>
+              <gml:posList srsName="urn:ogc:def:crs:EPSG::4258" srsDimension="2">52.278164951590817 6.762350838404692 52.278215275376461 6.762390644232616 </gml:posList>
             </gml:LineStringSegment>
           </gml:segments>
         </gml:Curve>

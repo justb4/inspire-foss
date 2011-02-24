@@ -18,17 +18,20 @@
 		clean exception reports, but hinders streaming), default: true -->
 	<DisableResponseBuffering>true</DisableResponseBuffering>
 
-	<!-- [0...n] Announced CRS, default: EPSG:4326  -->
+	<!-- [0...n] Announced CRS, default: EPSG:4326  old form
 	<QueryCRS>EPSG:4258</QueryCRS>
 	<QueryCRS>EPSG:4326</QueryCRS>
 	<QueryCRS>EPSG:3034</QueryCRS>
-	<QueryCRS>EPSG:900913</QueryCRS>
+	<QueryCRS>EPSG:900913</QueryCRS>    -->
 
-	<!--
-	<QueryCRS>urn:ogc:def:crs:EPSG::4326</QueryCRS>
+
+	<!-- Announced CRS, default: urn:ogc:def:crs:EPSG::4258 (ETRS89)
+	For INSPIRE compliance the "urn-format" is used
+	-->
 	<QueryCRS>urn:ogc:def:crs:EPSG::4258</QueryCRS>
+	<QueryCRS>urn:ogc:def:crs:EPSG::4326</QueryCRS>
 	<QueryCRS>urn:ogc:def:crs:EPSG::3034</QueryCRS>
-	<QueryCRS>urn:ogc:def:crs:EPSG::900913</QueryCRS>   -->
+	<!-- <QueryCRS>urn:ogc:def:crs:EPSG::900913</QueryCRS> (unsupported, unless manually added ) -->
 
 	<!-- [0...n] Output / input format configuration, default: GML 2.1, 3.0, 
 		3.1, 3.2 -->

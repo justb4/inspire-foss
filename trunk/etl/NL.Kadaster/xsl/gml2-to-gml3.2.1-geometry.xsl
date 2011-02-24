@@ -252,7 +252,7 @@ GML 2 LineString
 				<xsl:value-of select="substring-before($coordString,$sep)"/>
 				<xsl:value-of select="' '"/>
 
-				<!-- RECURSE: Skip current x,y,z-coordinate and proceed with remaining string (that starts with next x,y) -->
+				<!-- RECURSE: Skip current x,y-coordinate and proceed with remaining string (that starts with next x,y) -->
 				<xsl:call-template name="swapCoords">
 					<xsl:with-param name="coordString"
 									select="substring-after( substring-after( $coordString, $sep), $sep)"/>

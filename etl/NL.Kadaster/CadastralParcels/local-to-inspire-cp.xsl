@@ -50,6 +50,9 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 			<xsl:with-param name="localId">
 				<xsl:value-of select="ogr:Kad_ID"/>
 			</xsl:with-param>
+			<xsl:with-param name="areaValue">
+				<xsl:value-of select="ogr:Berekende_"/>
+			</xsl:with-param>
 		</xsl:call-template>
 
 	</xsl:template>

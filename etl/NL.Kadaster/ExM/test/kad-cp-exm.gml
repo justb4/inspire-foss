@@ -10,8 +10,9 @@
   <base:member>
     <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2377">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.CP.LNK00D.2377</gml:identifier>
-      <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <CP:areaValue uom="urn:ogc:def:uom:OGC::m2">274104</CP:areaValue>
+      <CP:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <CP:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <CP:geometry>
         <gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.CP.LNK00D.2377" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:surfaceMember>
@@ -47,8 +48,9 @@
   <base:member>
     <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2378">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.CP.LNK00D.2378</gml:identifier>
-      <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <CP:areaValue uom="urn:ogc:def:uom:OGC::m2">250702</CP:areaValue>
+      <CP:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <CP:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <CP:geometry>
         <gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.CP.LNK00D.2378" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:surfaceMember>
@@ -79,8 +81,9 @@
   <base:member>
     <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2451">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.CP.LNK00D.2451</gml:identifier>
-      <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <CP:areaValue uom="urn:ogc:def:uom:OGC::m2">237835</CP:areaValue>
+      <CP:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <CP:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <CP:geometry>
         <gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.CP.LNK00D.2451" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:surfaceMember>
@@ -116,8 +119,9 @@
   <base:member>
     <XLCP:CadastralParcel gml:id="NL.KAD.EXML.CP.LNK00D.2376">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.CP.LNK00D.2376</gml:identifier>
-      <CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <CP:areaValue uom="urn:ogc:def:uom:OGC::m2">229264</CP:areaValue>
+      <CP:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <CP:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <CP:geometry>
         <gml:MultiSurface gml:id="MultiSurface_NL.KAD.EXML.CP.LNK00D.2376" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:surfaceMember>

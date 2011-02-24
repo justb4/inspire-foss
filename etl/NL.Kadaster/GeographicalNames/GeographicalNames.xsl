@@ -43,8 +43,8 @@ Requires local constants like "organisation", for example:
 Minimal version of a NamedPlace  (Dutch Kadaster)
 
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.103075153">
-      <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.103075153.PT">
           <gml:pos>6.155809601724485 52.024706052471238</gml:pos>
@@ -76,7 +76,7 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </GN:name>
-      <GN:relatedSpatialObject xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:relatedSpatialObject xsi:nil="true" nilReason="other:unpopulated"/>
       <GN:type>landcover</GN:type>
     </GN:NamedPlace>
 -->
@@ -102,8 +102,8 @@ Minimal version of a NamedPlace  (Dutch Kadaster)
 					</xsl:with-param>
 				</xsl:call-template>
 
-				<GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:beginLifespanVersion>
-				<GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"></GN:endLifespanVersion>
+				<GN:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></GN:beginLifespanVersion>
+				<GN:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></GN:endLifespanVersion>
    
 				<!-- Generate Point geometry -->
 				<GN:geometry>

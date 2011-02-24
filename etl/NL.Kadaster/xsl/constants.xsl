@@ -47,5 +47,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<xsl:variable name="organisation">Het Kadaster</xsl:variable>
 	<xsl:variable name="srsName">urn:ogc:def:crs:EPSG::4258</xsl:variable>
 	<xsl:variable name="srsDimension">2</xsl:variable>
+	<xsl:variable name="areaUOM">urn:ogc:def:uom:OGC::m2</xsl:variable>
+	<xsl:variable name="lengthUOM">urn:ogc:def:uom:OGC::m</xsl:variable>
 
 </xsl:stylesheet>

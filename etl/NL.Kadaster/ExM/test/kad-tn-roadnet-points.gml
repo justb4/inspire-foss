@@ -10,107 +10,107 @@
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.114524564">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.114524564</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.114524564</base:localId>
           <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524564" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>52.35528286579008 6.843176201926373 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.114524546">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.114524546</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.114524546</base:localId>
           <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.114524546" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>52.356505818226992 6.842415680471941 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.118422060">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.118422060</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.118422060</base:localId>
           <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422060" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>52.133116949321817 6.634880712297864 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.118422236">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.118422236</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.118422236</base:localId>
           <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.118422236" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>52.126848368580468 6.700946494594095 </gml:pos>
         </gml:Point>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>
   <base:member>
     <TN-RO:RoadNode gml:id="NL.KAD.TN-RO.N.NL.TOP10NL.119745395">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.TN-RO.N.NL.TOP10NL.119745395</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.119745395</base:localId>
           <base:namespace>NL.KAD.TN-RO.N</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Point gml:id="Point_NL.KAD.TN-RO.N.NL.TOP10NL.119745395" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:pos>52.241104534884819 6.788479153421008 </gml:pos>
@@ -133,8 +133,8 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </TN:geographicalName>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <TN-RO:formOfRoadNode codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/FormOfRoadNodeValue.xml">junction</TN-RO:formOfRoadNode>
     </TN-RO:RoadNode>
   </base:member>

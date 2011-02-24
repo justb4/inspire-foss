@@ -50,7 +50,7 @@
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>
@@ -98,7 +98,7 @@
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>
@@ -145,7 +145,7 @@
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>
@@ -176,7 +176,7 @@
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>

@@ -177,8 +177,8 @@ Requires:
 				</NET:geometry>
 
 				<!-- 
-				<NET:spokeEnd xsi:nil="true" nilReason="UNKNOWN"/>
-				<NET:spokeStart xsi:nil="true" nilReason="UNKNOWN"/>  -->
+				<NET:spokeEnd xsi:nil="true" nilReason="other:unpopulated"/>
+				<NET:spokeStart xsi:nil="true" nilReason="other:unpopulated"/>  -->
 
 				<!-- START: From CommonTransportElements.xsd:TransportNodeType -->
 				<xsl:call-template name="TN.CommonTransportProperties">
@@ -215,7 +215,7 @@ Requires:
 		</xsl:call-template>
 
 		<!-- START: From Network.xsd:NetworkElementType -->
-		<NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+		<NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
 		<NET:inspireId>
 			<!-- Generate INSPIRE id -->
 			<xsl:call-template name="Base.InspireId">
@@ -227,8 +227,8 @@ Requires:
 				</xsl:with-param>
 			</xsl:call-template>
 		</NET:inspireId>
-		<NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-		<NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+		<NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+		<NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
 		<!-- END: From Network.xsd:NetworkElementType -->
 
 	</xsl:template>
@@ -254,8 +254,8 @@ Requires:
 			</xsl:otherwise>
 		</xsl:choose>
 
-		<TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-		<TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+		<TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+		<TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
 
 
 	</xsl:template>

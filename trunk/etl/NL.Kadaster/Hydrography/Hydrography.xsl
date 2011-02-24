@@ -331,10 +331,12 @@ Requires:
 					</app4:MD_Resolution>
 				</HY-P:levelOfDetail>   -->
 
-		<HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
-			<app4:LocalisedCharacterString>
-				<xsl:value-of select="$localType"/>
-			</app4:LocalisedCharacterString>
+		<HY-P:localType>
+			<xsl:call-template name="GMD.LocalisedCharacterString">
+				<xsl:with-param name="value">
+					<xsl:value-of select="$localType"/>
+				</xsl:with-param>
+			</xsl:call-template>
 		</HY-P:localType>
 
 		<!-- not available: nill <HY-P:origin>manMade</HY-P:origin>  -->

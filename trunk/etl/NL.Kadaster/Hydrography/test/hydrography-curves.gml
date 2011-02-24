@@ -42,15 +42,15 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-      <HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
-        <app4:LocalisedCharacterString>waterloop</app4:LocalisedCharacterString>
+      <HY-P:localType>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">waterloop</gmd:LocalisedCharacterString>
       </HY-P:localType>
       <HY-P:origin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:persistence xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>
@@ -90,15 +90,15 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-      <HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
-        <app4:LocalisedCharacterString>waterloop</app4:LocalisedCharacterString>
+      <HY-P:localType>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">waterloop</gmd:LocalisedCharacterString>
       </HY-P:localType>
       <HY-P:origin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:persistence xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>
@@ -137,15 +137,15 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-      <HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
-        <app4:LocalisedCharacterString>waterloop</app4:LocalisedCharacterString>
+      <HY-P:localType>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">waterloop</gmd:LocalisedCharacterString>
       </HY-P:localType>
       <HY-P:origin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:persistence xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>
@@ -168,15 +168,15 @@
           <base:namespace>NL.KAD.HY-P</base:namespace>
         </base:Identifier>
       </HY-P:inspireId>
-      <HY-P:localType xmlns:app4="http://www.isotc211.org/2005/gmd">
-        <app4:LocalisedCharacterString>waterloop</app4:LocalisedCharacterString>
+      <HY-P:localType>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">waterloop</gmd:LocalisedCharacterString>
       </HY-P:localType>
       <HY-P:origin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:persistence xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:tidal xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:drainsBasin xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"/>
-      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="urn:ogc:def:uom:OGC::m"/>
+      <HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"/>
       <HY-P:level xsi:nil="true" nilReason="other:unpopulated"/>
       <HY-P:width xsi:nil="true" nilReason="other:unpopulated"/>
     </HY-P:Watercourse>

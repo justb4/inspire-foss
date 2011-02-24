@@ -24,7 +24,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">sportterrein, sportcomplex</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">sportterrein, sportcomplex</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -64,7 +64,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">camping, kampeerterrein</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">camping, kampeerterrein</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -104,7 +104,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">onbekend</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">onbekend</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>

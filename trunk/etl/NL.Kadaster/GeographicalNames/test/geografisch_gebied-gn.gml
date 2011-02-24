@@ -24,7 +24,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -64,7 +64,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -104,7 +104,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -144,7 +144,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -184,7 +184,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -224,7 +224,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -264,7 +264,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -304,7 +304,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -344,7 +344,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -384,7 +384,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -424,7 +424,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -464,7 +464,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -504,7 +504,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -544,7 +544,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -584,7 +584,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -624,7 +624,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -664,7 +664,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -704,7 +704,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">polder</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">polder</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -744,7 +744,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -784,7 +784,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -824,7 +824,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -864,7 +864,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -904,7 +904,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -944,7 +944,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -984,7 +984,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1024,7 +1024,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">woonwijk</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">woonwijk</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1064,7 +1064,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1104,7 +1104,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">plaats, bewoond oord</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">plaats, bewoond oord</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1144,7 +1144,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">streek, veld</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">streek, veld</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1184,7 +1184,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1224,7 +1224,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -1264,7 +1264,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>

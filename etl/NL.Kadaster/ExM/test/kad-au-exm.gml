@@ -32,7 +32,7 @@
       </AU:inspireId>
       <AU:nationalLevel codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/AdministrativeHierarchyLevel.xml">3rdOrder</AU:nationalLevel>
       <AU:nationalLevelName>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">gemeente</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">gemeente</gmd:LocalisedCharacterString>
       </AU:nationalLevelName>
       <AU:country>
         <gmd:Country codeList="http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml" codeListValue="NL">NL</gmd:Country>
@@ -272,7 +272,7 @@
       </AU:inspireId>
       <AU:nationalLevel codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/AdministrativeHierarchyLevel.xml">3rdOrder</AU:nationalLevel>
       <AU:nationalLevelName>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">gemeente</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">gemeente</gmd:LocalisedCharacterString>
       </AU:nationalLevelName>
       <AU:country>
         <gmd:Country codeList="http://schemas.kademo.nl/inspire/codelist-1004/CountryCode.xml" codeListValue="NL">NL</gmd:Country>

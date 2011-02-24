@@ -24,7 +24,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -64,7 +64,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">lokale weg|overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">lokale weg|overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>
@@ -104,7 +104,7 @@
         </base:Identifier>
       </GN:inspireId>
       <GN:localType>
-        <gmd:LocalisedCharacterString locale="http://does.this.uri.matter.nl">overig</gmd:LocalisedCharacterString>
+        <gmd:LocalisedCharacterString locale="http://schemas.kademo.nl/etc/NL.xml">overig</gmd:LocalisedCharacterString>
       </GN:localType>
       <GN:name>
         <GN:GeographicalName>

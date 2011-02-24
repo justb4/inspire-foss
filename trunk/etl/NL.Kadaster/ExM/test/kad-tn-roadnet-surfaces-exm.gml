@@ -10,15 +10,15 @@
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115692751">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115692751</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115692751</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115692751" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -33,22 +33,22 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691950">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691950</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115691950</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691950" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -63,22 +63,22 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115687891">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115687891</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115687891</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115687891" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -109,22 +109,22 @@
           <GN:grammaticalNumber xsi:nil="true"/>
         </GN:GeographicalName>
       </TN:geographicalName>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115692865">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115692865</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115692865</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115692865" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -139,22 +139,22 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691436">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691436</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115691436</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691436" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -169,22 +169,22 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691033">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691033</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115691033</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115691033" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -199,22 +199,22 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115719229">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115719229</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115719229</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115719229" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -229,22 +229,22 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
   <base:member>
     <XLTN-R:RoadArea gml:id="NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115719827">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115719827</gml:identifier>
-      <NET:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:inspireId>
         <base:Identifier>
           <base:localId>NL.TOP10NL.115719827</base:localId>
           <base:namespace>NL.KAD.EXML.TN-RO.A</base:namespace>
         </base:Identifier>
       </NET:inspireId>
-      <NET:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <NET:inNetwork xsi:nil="true" nilReason="UNKNOWN"/>
+      <NET:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <NET:inNetwork xsi:nil="true" nilReason="other:unpopulated"/>
       <NET:geometry>
         <gml:Surface gml:id="Surface_NL.KAD.EXML.TN-RO.A.NL.TOP10NL.115719827" srsName="urn:ogc:def:crs:EPSG::4258">
           <gml:patches>
@@ -259,8 +259,8 @@
         </gml:Surface>
       </NET:geometry>
       <TN:geographicalName xsi:nil="true" nilReason="other:unpopulated"/>
-      <TN:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
-      <TN:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+      <TN:validFrom xsi:nil="true" nilReason="other:unpopulated"/>
+      <TN:validTo xsi:nil="true" nilReason="other:unpopulated"/>
     </XLTN-R:RoadArea>
   </base:member>
 </base:SpatialDataSet>

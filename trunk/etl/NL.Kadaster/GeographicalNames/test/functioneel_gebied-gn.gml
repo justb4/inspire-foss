@@ -10,8 +10,8 @@
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100004643">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.100004643</gml:identifier>
-      <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100004643.PT">
           <gml:pos>52.01004156951042 6.14498016321976 </gml:pos>
@@ -50,8 +50,8 @@
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100004644">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.100004644</gml:identifier>
-      <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100004644.PT">
           <gml:pos>52.03305039256518 6.162655673150053 </gml:pos>
@@ -90,8 +90,8 @@
   <base:member xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
     <GN:NamedPlace gml:id="NL.KAD.GN.NL.TOP10NL.100010436">
       <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.GN.NL.TOP10NL.100010436</gml:identifier>
-      <GN:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-      <GN:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+      <GN:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <GN:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <GN:geometry>
         <gml:Point srsName="urn:ogc:def:crs:EPSG::4258" gml:id="NL.KAD.GN.NL.TOP10NL.100010436.PT">
           <gml:pos>52.010146826992539 6.128231116131404 </gml:pos>

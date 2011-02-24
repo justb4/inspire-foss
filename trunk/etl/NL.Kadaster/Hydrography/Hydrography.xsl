@@ -133,15 +133,15 @@ Requires:
 				<!-- Properties below are specific to StandingWater -->
 
 				<!-- TODO: make optional -->
-				<HY-P:elevation uom="m">
+				<HY-P:elevation uom="{$lengthUOM}">
 					<xsl:value-of select="$elevation"/>
 				</HY-P:elevation>
 
 				<!-- meanDepth: nill -->
-				<HY-P:meanDepth xsi:nil="true" nilReason="other:unpopulated" uom="m"></HY-P:meanDepth>
+				<HY-P:meanDepth xsi:nil="true" nilReason="other:unpopulated" uom="{$lengthUOM}"></HY-P:meanDepth>
 
 				<!-- not available: nill   <HY-P:surfaceArea uom="sqrm">96897.6577988</HY-P:surfaceArea>  -->
-				<HY-P:surfaceArea xsi:nil="true" nilReason="other:unpopulated" uom="m"></HY-P:surfaceArea>
+				<HY-P:surfaceArea xsi:nil="true" nilReason="other:unpopulated" uom="{$lengthUOM}"></HY-P:surfaceArea>
 
 			</HY-P:StandingWater>
 		</base:member>
@@ -187,7 +187,7 @@ Requires:
 				<HY-P:delineationKnown xsi:nil="true" nilReason="other:unpopulated"></HY-P:delineationKnown>
 
 				<!-- length: nill -->
-				<HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="m"></HY-P:length>
+				<HY-P:length xsi:nil="true" nilReason="other:unpopulated" uom="{$lengthUOM}"></HY-P:length>
 
 				<!-- level: nill -->
 				<HY-P:level xsi:nil="true" nilReason="other:unpopulated"></HY-P:level>

@@ -30,8 +30,8 @@ Requires:
 
 	Example
 		<CP:CadastralParcel gml:id="NL.KAD.CP.12345">
-			<CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-			<CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<CP:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+			<CP:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
 			<CP:geometry>
 				<gml:MultiSurface gml:id="NL.KAD.CP.12345_G">
 					<gml:surfaceMember>
@@ -76,6 +76,7 @@ Requires:
 	<xsl:template name="CP.CadastralParcel" priority="1">
 		<xsl:param name="idPrefix"/>
 		<xsl:param name="localId"/>
+		<xsl:param name="areaValue"/>
 
 		<!-- Replace the space in the national Id, e.g.  LNK00D 2377 becomes LNK00D.2377 -->
 		<xsl:variable name="localIdDotted"><xsl:value-of select="translate(normalize-space($localId),' ','.')"/></xsl:variable>
@@ -92,8 +93,9 @@ Requires:
 						</xsl:with-param>
 					</xsl:call-template>
 
-				<CP:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-				<CP:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+				<CP:areaValue uom="{$areaUOM}"><xsl:value-of select="$areaValue"/></CP:areaValue>
+				<CP:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+				<CP:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
 
 				<!-- Generate (complex) MultiSurface geometry -->
 				<CP:geometry>

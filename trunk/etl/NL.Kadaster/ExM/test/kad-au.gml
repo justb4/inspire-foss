@@ -58,7 +58,6 @@
       <AU:beginLifespanVersion xsi:nil="true"/>
       <AU:endLifespanVersion xsi:nil="true"/>
       <AU:NUTS xsi:nil="true"/>
-      <AU:condominium xsi:nil="true"/>
       <AU:lowerLevelUnit xsi:nil="true"/>
       <AU:upperLevelUnit xsi:nil="true"/>
       <AU:administeredBy xsi:nil="true"/>
@@ -299,7 +298,6 @@
       <AU:beginLifespanVersion xsi:nil="true"/>
       <AU:endLifespanVersion xsi:nil="true"/>
       <AU:NUTS xsi:nil="true"/>
-      <AU:condominium xsi:nil="true"/>
       <AU:lowerLevelUnit xsi:nil="true"/>
       <AU:upperLevelUnit xsi:nil="true"/>
       <AU:administeredBy xsi:nil="true"/>

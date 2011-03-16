@@ -6,6 +6,7 @@
     <UnrequestableLayer>
       <Title>Root Layer</Title>
       <CRS>EPSG:4258 EPSG:3034 EPSG:4326 EPSG:900913 EPSG:28992</CRS>
+		<!-- <CRS>urn:ogc:def:crs:EPSG::4258</CRS>  -->
 
       <!-- Layers from Address (AD) data theme -->
       <RequestableLayer>
@@ -62,6 +63,7 @@
           <Name>AU.AdministrativeUnit.Default</Name>
         </DirectStyle>
       </RequestableLayer>
+
       <RequestableLayer>
         <Name>AU.AdministrativeBoundary</Name>
         <Title>Administrative boundary</Title>

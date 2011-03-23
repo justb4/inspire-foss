@@ -36,7 +36,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<!-- Use specific GML2 to GML3 MultiPolygon to MultiSurface transform within CadastralParcels.xsl -->
 	<xsl:include href="../../shared/xsl/gml2-to-gml3.2.1-geometry.xsl"/>
 
-	<xsl:include href="GeographicalNames.xsl"/>
+	<xsl:include href="../../shared/xsl/annex1/GeographicalNames.xsl"/>
 
 	<xsl:variable name="idNameSpaceTheme">
 		<xsl:value-of select="concat($idNameSpace,'.GN')"/>

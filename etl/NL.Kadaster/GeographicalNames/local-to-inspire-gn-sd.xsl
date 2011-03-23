@@ -37,8 +37,10 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I GN
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
-	<!-- Use specific constants for NL.KAdaster -->
-	<xsl:include href="../xsl/constants.xsl"/>
+
+    <!-- Use specific constants for NL.KAdaster -->
+    <xsl:include href="../../shared/xsl/constants-nl.xsl"/>
+    <xsl:include href="../../shared/xsl/constants-nl-kad.xsl"/>
 
 	<!-- Use generic transform callable templates -->
 	<xsl:include href="../../shared/xsl/common.xsl"/>

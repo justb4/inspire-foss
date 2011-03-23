@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
+
 
 <!--
 
-Transform a local (Dutch Kadaster) GML document to a INSPIRE TN-RO SpatialDataset.
+Transform a local (RWS) GML document to a INSPIRE TN-RO SpatialDataset.
 
 GNthor:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 
-Input: MapInfo file, transformed to a GML (v2) file by ogr2ogr (see mapinfo-to-gml.sh).
-Output: SpatialDataset with GeographicalNames from INSPIRE Annex I TN
+Input: Shape file, transformed to a GML (v2) file by ogr2ogr (see bin/to-gml.sh).
+Output: SpatialDataset with TransportNetworks from INSPIRE Annex I TN
 -->
 <xsl:stylesheet version="1.0"
 				xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
@@ -36,9 +21,9 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I TN
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
-	<!-- Use specific constants for NL.KAdaster -->
+	<!-- Use specific constants for NL.RWS -->
 	<xsl:include href="../../shared/xsl/constants-nl.xsl"/>
-    <xsl:include href="../../shared/xsl/constants-nl-kad.xsl"/>
+    <xsl:include href="../../shared/xsl/constants-nl-rws.xsl"/>
 
 	<!-- Use generic transform callable templates -->
 	<xsl:include href="../../shared/xsl/common.xsl"/>
@@ -46,9 +31,7 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I TN
 	<!-- Specific local transform from Dutch local GML2 to GN -->
 	<xsl:include href="local-to-inspire-tn-ro.xsl"/>
 
-	<xsl:key name="top10-id" match="//gml2:featureMember/*" use="ogr:IDENT" />
-
-	<xsl:template match="/">
+ 	<xsl:template match="/">
 		<!-- Generate SpatialDataset -->
 		<base:SpatialDataSet 
 							 xmlns:TN-RO="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0"
@@ -77,7 +60,7 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I TN
 			<base:metadata xsi:nil="true"/>
 
 			<!-- Loop through all features, selecting each only once (no duplicates)-->
-			<xsl:apply-templates select="//gml2:featureMember/*[generate-id(.) = generate-id(key('top10-id', ogr:IDENT)[1])]"/>
+			<xsl:apply-templates select="//gml2:featureMember/*"/>
 
 		</base:SpatialDataSet>
 	</xsl:template>

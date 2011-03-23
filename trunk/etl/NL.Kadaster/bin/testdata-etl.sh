@@ -6,7 +6,7 @@
 #
 #
 
-./delete-gml-objects.sh
+../../shared/bin/delete-gml-objects.sh
 
 # AU
 cd ../AdministrativeUnits/test

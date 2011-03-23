@@ -36,11 +36,13 @@ Output: SpatialDataset with CadastralParcels from INSPIRE Annex I CP
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
-	<!-- Use specific constants for NL.KAdaster -->
-	<xsl:include href="../xsl/constants.xsl"/>
+
+    <!-- Use specific constants for NL.KAdaster -->
+    <xsl:include href="../../shared/xsl/constants-nl.xsl"/>
+    <xsl:include href="../../shared/xsl/constants-nl-kad.xsl"/>
 
 	<!-- Use generic transform callable templates -->
-	<xsl:include href="../xsl/common.xsl"/>
+	<xsl:include href="../../shared/xsl/common.xsl"/>
 
 	<!-- Specific local transform from Dutch local GML2 to CP -->
 	<xsl:include href="local-to-inspire-cp.xsl"/>

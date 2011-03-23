@@ -116,9 +116,9 @@ and is listed next below.
      :linenos:
 
 The XSLT script ``local-to-inspire-au.xsl`` will extract parameters for each feature and
-will explicitly call the final and generic XSLT script ``AdministrativeUnits.xsl``.
+will explicitly call the final and generic/reusable XSLT script ``AdministrativeUnits.xsl``.
 
-.. literalinclude:: ../../../etl/NL.Kadaster/AdministrativeUnits/AdministrativeUnits.xsl
+.. literalinclude:: ../../../etl/shared/xsl/AdministrativeUnits.xsl
      :language: guess
      :linenos:
 
@@ -128,7 +128,8 @@ such as to generate an InspireId element or even a ``GeographicalName`` by calli
 generic template ``GeographicalNames.xsl`` (included at the top-level).
 
 In the above XSLT processing several common XSLT scripts are included and invoked as well. These deal
-with constants and generic templates.
+with constants and generic templates.  These can be found in SVN under
+`etl/shared <http://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2Fshared>`_.
 
 Load
 ----

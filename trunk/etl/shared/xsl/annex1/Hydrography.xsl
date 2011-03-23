@@ -35,7 +35,7 @@ Requires:
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 				xmlns:HY-P="urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0">
 
-	<xsl:include href="../GeographicalNames/GeographicalNames.xsl"/>
+	<xsl:include href="GeographicalNames.xsl"/>
 
 	<!-- Generate Hydrography element HY-P.DamOrWeir -->
 	<xsl:template name="HY-P.DamOrWeir" priority="1">

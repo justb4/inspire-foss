@@ -6,8 +6,8 @@
 #
 
 
-INSPIRE_FOSS_HOME=?/home/inspire/inspire/code
-GEODATA_HOME=?/home/inspire/inspire/data
+INSPIRE_FOSS_HOME=/home/inspire/inspire/code
+GEODATA_HOME=/home/inspire/inspire/data
 
 TO_GML_SCRIPT=$INSPIRE_FOSS_HOME/etl/NL.RWS/bin/to-gml.sh
 TO_SHAPE_SCRIPT=$INSPIRE_FOSS_HOME/etl/NL.Kadaster/bin/to-shape.sh

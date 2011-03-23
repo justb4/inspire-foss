@@ -36,7 +36,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 	<!-- Use specific GML2 to GML3 geometry transform within Hydrography.xsl this way this can be overloaded -->
 	<xsl:include href="../../shared/xsl/gml2-to-gml3.2.1-geometry.xsl"/>
 
-	<xsl:include href="Hydrography.xsl"/>
+	<xsl:include href="../../shared/xsl/annex1/Hydrography.xsl"/>
 
 	<xsl:variable name="idNameSpaceTheme">
 		<xsl:value-of select="concat($idNameSpace,'.HY-P')"/>

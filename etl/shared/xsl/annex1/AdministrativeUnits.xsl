@@ -36,7 +36,7 @@ Requires:
 				xmlns:AU="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0">
 
 	<!-- Reuse GN XSLT -->
-	<xsl:include href="../GeographicalNames/GeographicalNames.xsl"/>
+	<xsl:include href="../../../NL.Kadaster/GeographicalNames/GeographicalNames.xsl"/>
 
 	<!-- Generate AdministrativeUnit element -->
 	<xsl:template name="AU.AdministrativeUnit" priority="1">

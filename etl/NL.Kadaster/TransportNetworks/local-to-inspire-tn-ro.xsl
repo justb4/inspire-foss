@@ -34,7 +34,7 @@ Author:  Just van den Broecke, Just Objects B.V. for Dutch Kadaster
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<!-- Use specific GML2 to GML3 geometry transform within Hydrography.xsl this way this can be overloaded -->
-	<xsl:include href="../xsl/gml2-to-gml3.2.1-geometry.xsl"/>
+	<xsl:include href="../../shared/xsl/gml2-to-gml3.2.1-geometry.xsl"/>
 
 	<xsl:include href="RoadTransportNetwork.xsl"/>
 

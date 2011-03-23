@@ -26,7 +26,7 @@ Requires:
 	<xsl:include href="../xsl/constants.xsl"/>
 
 	A callable template "createMultiSurface" for example
-	<xsl:include href="../../shared/xsl/gml2-to-gml3.2.1-geometry.xsl"/>
+	<xsl:include href="../xsl/gml2-to-gml3.2.1-geometry.xsl"/>
 -->
 <xsl:stylesheet version="1.0"
 				xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
@@ -37,7 +37,7 @@ Requires:
 				xmlns:TN="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"
 				xmlns:TN-RO="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0">
 
-	<xsl:include href="../GeographicalNames/GeographicalNames.xsl"/>
+	<xsl:include href="GeographicalNames.xsl"/>
 
 	<!-- Generate TN element TN-RO.RoadArea -->
 	<xsl:template name="TN-RO.RoadArea" priority="1">

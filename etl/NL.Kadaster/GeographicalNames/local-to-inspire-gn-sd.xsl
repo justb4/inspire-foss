@@ -41,7 +41,7 @@ Output: SpatialDataset with GeographicalNames from INSPIRE Annex I GN
 	<xsl:include href="../xsl/constants.xsl"/>
 
 	<!-- Use generic transform callable templates -->
-	<xsl:include href="../xsl/common.xsl"/>
+	<xsl:include href="../../shared/xsl/common.xsl"/>
 
 	<!-- Specific local transform from Dutch local GML2 to GN -->
 	<xsl:include href="local-to-inspire-gn.xsl"/>

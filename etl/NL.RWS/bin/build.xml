@@ -36,7 +36,7 @@ $Id: build.xml 99 2011-03-24 12:11:38Z just $
     </target>
 
     <target name="validate-wfs" >
-        <exec executable="${basedir}/validate-wf.sh"/>
+        <exec executable="${basedir}/validate-wfs.sh"/>
     </target>
 
     <target name="etl" >

@@ -81,7 +81,7 @@ GeoViewer.treeConfig = [
 			[
 				{nodeType: "gx_featuretypecontainer", featureType: 'RailwayTransport'},
 				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportPolygons'},
-				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportLines'},
+				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransport_RoadLink'},
 				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransport'}
 			]
 	}
@@ -213,7 +213,7 @@ GeoViewer.Map.layers = [
     GeoViewer.Catalog.layers.inspireHYWaterdeelLijn,
 	GeoViewer.Catalog.layers.inspireHYWaterdeelVlak,
 
-	GeoViewer.Catalog.layers.inspireTNWegdeelLijn,
+	GeoViewer.Catalog.layers.inspireTNRoadLink,
 	GeoViewer.Catalog.layers.inspireTNWegdeelVlak,
 	GeoViewer.Catalog.layers.inspireTNSpoorbaandeelLijn,
 

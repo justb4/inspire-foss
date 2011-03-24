@@ -53,17 +53,18 @@ http://stackoverflow.com/questions/3747789/how-to-install-sun-jdk-on-ubuntu-10-1
   * update-alternatives --config java
 
 Others
-
-  * apt-get install maven2
-  * apt-get install subversion
-  * apt-get install apache2
+{{{
+apt-get install maven2
+apt-get install subversion
+apt-get install apache2
+}}}
 
 == Transformation ==
 
 Installing a recent GDAL version is trickier, as Ubuntu/Debian
 repositories may contain older versions. Also (at least for the Netherlands) some tweaking of Proj is required.
 
-Best is to use "ubuntugis" packages. To enable  
+Best is to use packages from [https://launchpad.net/~ubuntugis ubuntugis] . To enable  
 add lines below to  new file `/etc/apt/sources.d/ubuntugis.list`
 
 {{{

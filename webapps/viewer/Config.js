@@ -71,10 +71,11 @@ GeoViewer.treeConfig = [
 	{
 		nodeType: "gx_themenode",  theme: 'TN', children:
 			[
-				{nodeType: "gx_featuretypecontainer", featureType: 'RailwayTransport'},
-				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportPolygons'},
-				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportLines'},
-				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransport'}
+/*				{nodeType: "gx_featuretypecontainer", featureType: 'RailwayTransport'},
+				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportPolygons'}, */
+				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportLines'}
+                /* ,
+				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransport'}   */
 			]
 	}
 ];

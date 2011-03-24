@@ -47,6 +47,7 @@ GeoViewer.Catalog.options4258 = {
 };
 
 GeoViewer.Catalog.urls = {
+    DEEGREE_LOCAL_WMS :  'http://localhost:8080/deegree3/services?',
 	GS2_INSPIRE_WMS :  'http://kademo.nl/gs2/inspire/wms?',
 	GS2_KADASTER_WMS :  'http://gis.kademo.nl/gs2/wms?',
 	TILECACHE :  'http://gis.kademo.nl/cgi-bin/tilecache.cgi?',
@@ -129,7 +130,7 @@ GeoViewer.Catalog.layers = {
 
 	// START "Official INSPIRE Layers" (with appropriate Layer Naming)
 	inspireAU : new OpenLayers.Layer.WMS("INSPIRE Admin Units (all)",
-			GeoViewer.Catalog.urls.GS2_INSPIRE_WMS,
+			GeoViewer.Catalog.urls.DEEGREE_LOCAL_WMS,
 	{layers: "AU.AdministrativeUnit", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
 		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 

@@ -149,8 +149,7 @@ apt-get install apache2
 }}}
 
 [http://deegree.org deegree] is downloaded automatically via Maven
-when running the deegree server:
- in directory `/webapps/deegree3` execute `runnit.sh` or directly
+when running the deegree server. In the directory `/webapps/deegree3` execute `runnit.sh` or directly via Maven:
 
 {{{
 mvn clean install tomcat:run

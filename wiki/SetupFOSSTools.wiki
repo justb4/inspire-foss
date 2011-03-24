@@ -17,11 +17,14 @@ Below all required and some optional tools are listed that are needed to run ins
   * [http://ant.apache.org Apache Ant], a build/run tool (OPTIONAL)
 
 
-== Transformation ==
+== Transformation and ETL==
 
   * [http://gdal.org GDAL/OGR with PROJ], 1.7.3 or higher
   * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] fast XSLT processor
   * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
+
+Transformed data (GML) is published to a PostGIS DB via 
+the deegree tool `FSLoader`. See below how to install.
 
 == Database ==
 
@@ -63,7 +66,7 @@ apt-get install maven2
 apt-get install subversion
 }}}
 
-== Transformation ==
+== Transformation and ETL ==
 
 Installing a recent GDAL version is trickier, as Ubuntu/Debian
 repositories may contain older versions. Also (at least for the Netherlands) some tweaking of Proj is required.
@@ -97,6 +100,16 @@ Update `/usr/share/proj` for these projections, at least check if they are as be
 }}}
 
 `xsltproc` and `iconv` is usually available in a standard install.
+
+The deegree `FSLoader` can be installed by executing 2 scripts
+in the directory `/tools/loader/deegree-tools`:
+
+{{{
+./get-deegree-tools.sh
+./install-deegree-tools.sh
+}}}
+
+(TODO: use Maven).
 
 == Database ==
 

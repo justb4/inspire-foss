@@ -20,7 +20,7 @@ Below all required and some optional tools are listed that are needed to run ins
 == Transformation ==
 
   * [http://gdal.org GDAL/OGR with PROJ], 1.7.3 or higher
-  * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] latest
+  * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] fast XSLT processor
   * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
 
 == Database ==
@@ -38,3 +38,53 @@ Below all required and some optional tools are listed that are needed to run ins
 
 == Linux (Ubuntu/Debian) ==
  
+Most tools are easily installed using the "apt" program. Below some specifics.
+
+== Core Tools ==
+
+Usually Java from OpenJDK comes preinstalled. 
+To install Java from Sun, ahem Oracle, see
+http://stackoverflow.com/questions/3747789/how-to-install-sun-jdk-on-ubuntu-10-10-maverick-meerkat
+
+  * update /etc/apt/sources.list (uncomment "partners" stuff)
+  * apt-get install sun-java6-bin sun-java6-jdk sun-java6-jre
+  * still openjdk prevails: reconfigure alternatives
+  * update-java-alternatives -l (list)
+  * update-alternatives --config java
+
+Others
+
+  * apt-get install maven2
+  * apt-get install subversion
+  * apt-get install apache2
+
+== Transformation ==
+
+Installing a recent GDAL version is trickier, as Ubuntu/Debian
+repositories may contain older versions. Also (at least for the Netherlands) some tweaking of Proj is required.
+
+Best is to use "ubuntugis" packages. To enable  
+add lines below to  new file `/etc/apt/sources.d/ubuntugis.list`
+
+{{{
+deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu maverick main 
+deb-src http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu maverick main 
+deb http://ppa.launchpad.net/ubuntugis/ubuntugis-testing/ubuntu maverick main 
+deb-src http://ppa.launchpad.net/ubuntugis/ubuntugis-testing/ubuntu maverick main 
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 314DF160
+apt-get update
+}}}
+
+  * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] fast XSLT processor
+  * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
+
+== Database ==
+
+  * [http://postgres.org PostgreSQL], 8.3 or higher
+  * [http://refractions.postgis.net PostGIS], recent version
+  * [http://sourceforge.net/projects/phppgadmin phppgadmin], recent version (OPTIONAL)
+
+== Web Services ==
+
+  * [http://deegree.org deegree], latest, is downloaded automatically via Maven
+  * [http://apache.org Apache HTTP server], latest, downloaded OPTIONAL

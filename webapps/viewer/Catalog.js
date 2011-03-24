@@ -252,7 +252,7 @@ GeoViewer.Catalog.themes = {
 			,
 			*/
             RoadTransport_RoadLink:  {
-				name: 'RoadLink',
+				name: 'RoadTransport_RoadLink',
 				layers: ['inspireTNRoadLink']
 			}
 /*			,RoadTransport:  {

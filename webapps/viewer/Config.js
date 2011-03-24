@@ -29,15 +29,7 @@ GeoViewer.treeConfig = [
 		text:'BaseLayers', nodeType: "gx_baselayercontainer"
 	},
 
-	{
-		nodeType: "gx_themenode",  theme: 'AD', children:
-			[
-				{
-					nodeType: "gx_featuretypecontainer", featureType: 'Address'
-				}
 
-			]
-	},
 	{
 		nodeType: "gx_themenode",  theme: 'AU', children:
 			[

@@ -1,0 +1,29 @@
+#summary How to setup various tools needed to run inspire-foss software
+#labels Phase-Deploy
+
+= Introduction =
+
+The software from the inspire-foss project does not consist of an executable program. Rather there are various scripts and configurations that use from a variety Free and Open Source Software tools and components. This section lists the various tools required, with some guidance how to set things up.
+
+== Core Tools ==
+
+  * [http://java.sun.com Java], recent version 6 or higher
+  * [http://subversion.tigris.org/ Subversion] (SVN) client latest
+  * [http://maven.apache.org Apache Maven2], a build/run tool
+  * [http://ant.apache.org Apache Ant], a build/run tool
+
+
+== Transformation ==
+
+  * [http://gdal.org GDAL/OGR], 1.7.3 or better
+  * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] latest
+  * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
+
+== Database ==
+
+  * [http://postgres.org PostgreSQL], recent version 8.3 or higher
+  * [http://refractions.postgis.net PostGIS], recent version
+
+= Web Services =
+
+  * [http://deegree.org deegree], latest, downloaded automatically

@@ -225,7 +225,7 @@ GeoViewer.Catalog.layers = {
 		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 
 			),
 
-	inspireTNWegdeelLijn: new OpenLayers.Layer.WMS("INSPIRE TransportNetworks (RoadLink)",
+	inspireTNRoadLink: new OpenLayers.Layer.WMS("INSPIRE TransportNetworks (RoadLink)",
 			GeoViewer.Catalog.urls.GS2_INSPIRE_WMS,
 	{layers: "TN.RoadTransportNetwork.RoadLink", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
@@ -427,13 +427,13 @@ GeoViewer.Catalog.themes = {
 				name: 'RoadArea',
 				layers: ['inspireTNWegdeelVlak']
 			}
-			,RoadTransportLines:  {
+			,RoadTransport_RoadLink:  {
 				name: 'RoadLink',
-				layers: ['inspireTNWegdeelLijn']
+				layers: ['inspireTNRoadLink']
 			}
 			,RoadTransport:  {
 				name: 'Roads (All)',
-				layers: ['inspireTNWegdeelVlak','inspireTNWegdeelLijn']
+				layers: ['inspireTNWegdeelVlak','inspireTNRoadLink']
 			}
 		}
 	}

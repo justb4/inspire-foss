@@ -50,7 +50,7 @@ GeoViewer.treeConfig = [
 				{nodeType: "gx_featuretypecontainer", featureType: 'CadastralParcel'}
 			]
 	},
-	{
+/*	{
 		nodeType: "gx_themenode",  theme: 'GN', children:
 			[
 				{nodeType: "gx_featuretypecontainer", featureType: 'NamedPlaceAll'},
@@ -67,13 +67,13 @@ GeoViewer.treeConfig = [
 				{nodeType: "gx_featuretypecontainer", featureType: 'Watercourse'},
 				{nodeType: "gx_featuretypecontainer", featureType: 'All'}
 			]
-	},
+	},  */
 	{
 		nodeType: "gx_themenode",  theme: 'TN', children:
 			[
 /*				{nodeType: "gx_featuretypecontainer", featureType: 'RailwayTransport'},
 				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportPolygons'}, */
-				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransportLines'}
+				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransport_RoadLink'}
                 /* ,
 				{nodeType: "gx_featuretypecontainer", featureType: 'RoadTransport'}   */
 			]
@@ -199,20 +199,20 @@ GeoViewer.Map.layers = [
 
     GeoViewer.Catalog.layers.inspireAU,
 
-    GeoViewer.Catalog.layers.inspireHYWaterdeelLijn,
-	GeoViewer.Catalog.layers.inspireHYWaterdeelVlak,
+ /*   GeoViewer.Catalog.layers.inspireHYWaterdeelLijn,
+	GeoViewer.Catalog.layers.inspireHYWaterdeelVlak, */
 
-	GeoViewer.Catalog.layers.inspireTNWegdeelLijn,
-	GeoViewer.Catalog.layers.inspireTNWegdeelVlak,
-	GeoViewer.Catalog.layers.inspireTNSpoorbaandeelLijn,
+	GeoViewer.Catalog.layers.inspireTNRoadLink,
+/*	GeoViewer.Catalog.layers.inspireTNWegdeelVlak,
+	GeoViewer.Catalog.layers.inspireTNSpoorbaandeelLijn,   */
 
-	GeoViewer.Catalog.layers.inspireCP,
-	GeoViewer.Catalog.layers.inspireAD,
+	GeoViewer.Catalog.layers.inspireCP
+/*	GeoViewer.Catalog.layers.inspireAD,
 	GeoViewer.Catalog.layers.inspireGN,
 	GeoViewer.Catalog.layers.inspireGNFunGeb,
 	GeoViewer.Catalog.layers.inspireGNGeoGeb,
 	GeoViewer.Catalog.layers.inspireGNInrElm,
-	GeoViewer.Catalog.layers.inspireGNWegDeelPunt
+	GeoViewer.Catalog.layers.inspireGNWegDeelPunt         */
 
 
 

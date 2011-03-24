@@ -302,48 +302,13 @@ GeoViewer.Catalog.themes = {
 		name: 'Administrative Units'
 		,abbrev: 'AU'
 		,featureTypes: {
-			AdministrativeUnitEU: {
-				name: 'AdministrativeUnit-XBorder',
-				fields: new Array(''),
-				layers : [
-					'inspireAULand', 'inspireAUProv', 'inspireAUGem', 'inspireAUGermany'
-				]
-			},
-            AdministrativeUnitNL: {
-                name: 'AdministrativeUnit-NL',
+          AdministrativeUnit: {
+                name: 'AdministrativeUnit',
                 fields: new Array(''),
                 layers : [
-                    'inspireAULand', 'inspireAUProv', 'inspireAUGem'
+                    'inspireAU'
                 ]
-            },
-            AdministrativeUnitDE: {
-				name: 'AdministrativeUnit-DE',
-				fields: new Array(''),
-				layers : [
-					'inspireAUGermany'
-				]
-			},
-			AdministrativeUnit1: {
-				name: 'AdministrativeUnit-NL-1st',
-				fields: new Array(''),
-				layers : [
-					'inspireAULand'
-				]
-			},
-			AdministrativeUnit2: {
-				name: 'AdministrativeUnit-NL-2nd',
-				fields: new Array(''),
-				layers : [
-					'inspireAUProv'
-				]
-			},
-			AdministrativeUnit3: {
-				name: 'AdministrativeUnit-NL-3rd',
-				fields: new Array(''),
-				layers : [
-					'inspireAUGem'
-				]
-			}
+            }
 		}
 	}
 	,CP: {

@@ -41,15 +41,7 @@ GeoViewer.treeConfig = [
 	{
 		nodeType: "gx_themenode",  theme: 'AU', children:
 			[
-				{nodeType: "gx_featuretypecontainer", featureType: 'AdministrativeUnit1'}
-				,
-                {nodeType: "gx_featuretypecontainer", featureType: 'AdministrativeUnit2'}
-                ,
-                {nodeType: "gx_featuretypecontainer", featureType: 'AdministrativeUnit3'}
-                ,
-				{nodeType: "gx_featuretypecontainer", featureType: 'AdministrativeUnitDE'}
-                ,
-                {nodeType: "gx_featuretypecontainer", featureType: 'AdministrativeUnitEU'}
+				{nodeType: "gx_featuretypecontainer", featureType: 'AdministrativeUnit'}
 			]
 	},
 	{
@@ -205,10 +197,6 @@ GeoViewer.Map.layers = [
 	 */
 
     GeoViewer.Catalog.layers.inspireAU,
-	GeoViewer.Catalog.layers.inspireAUGem,
-	GeoViewer.Catalog.layers.inspireAUProv,
-	GeoViewer.Catalog.layers.inspireAULand,
-    GeoViewer.Catalog.layers.inspireAUGermany,
 
     GeoViewer.Catalog.layers.inspireHYWaterdeelLijn,
 	GeoViewer.Catalog.layers.inspireHYWaterdeelVlak,

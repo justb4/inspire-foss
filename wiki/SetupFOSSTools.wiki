@@ -81,7 +81,9 @@ apt-get update
 }}}
 
 Install GDAL:
-`apt-get install gdal-bin python-gdal`
+{{{
+apt-get install gdal-bin python-gdal
+}}}
 
 Update `/usr/share/proj` for these projections, at least check if they are as below.
 
@@ -105,7 +107,7 @@ apt-get install postgresql-8.4-postgis`
 Below a setup for using PostGIS and the inspire DB.
 
 {{{
-
+# create PostGIS template DB
 su postgres
 createdb postgis
 createlang plpgsql postgis
@@ -116,12 +118,14 @@ psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis_comments.sql
 
 # setup inspire DB
 createuser inspire (superuser "Y")
+
+# creates database "inspire_blob" with owner "inspire"
 /webapps/deegree3/src/main/resources/create-database.sh
-creates database "inspire_blob" met owner "inspire"
 
 passwd postgres (postgres)
-set password inspire user:
-as user postgre run:
+
+# set password inspire user (for VM)
+# as user postgre run:
 psql
 alter user postgres with password 'postgres';
 alter user inspire with password 'inspire';
@@ -130,16 +134,24 @@ alter user inspire with password 'inspire';
 
 `phppgadmin` is optional to manage a PostgreSQL DB via a web client.
 
-`apt-get install phppgadmin`
+{{{
+apt-get install phppgadmin
+}}}
  
 (May replace `apache2 mpm worker` with `prefork`)
 
 == Web Services ==
 
 Apache webserver (only if you need `phppgadmin` and the WMS viewer)
+
+{{{
 apt-get install apache2
+}}}
 
 [http://deegree.org deegree] is downloaded automatically via Maven
 when running the deegree server:
- in directory `webapps/deegree3` execute `runnit.sh` or directly
-`mvn clean install tomcat:run`.
+ in directory `/webapps/deegree3` execute `runnit.sh` or directly
+
+{{{
+mvn clean install tomcat:run
+}}}

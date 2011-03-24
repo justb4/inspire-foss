@@ -76,16 +76,64 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 314DF160
 apt-get update
 }}}
 
-  * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] fast XSLT processor
-  * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
+Install GDAL:
+`apt-get install gdal-bin python-gdal`
+
+Update `/usr/share/proj` for these projections, at least check if they are as below.
+
+{{{
+
+<28992> +proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +towgs84=565.2369,50.0087,465.658,-0.406857330322398,0.350732676542563,-1.8703473836068,4.0812 +no_defs <>
+
+<4258> +proj=longlat +ellps=GRS80 +datum=WGS84 +no_defs  <>
+
+<900913> +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs
+}}}
+
+`xsltproc` and `iconv` is usually available in a standard install.
 
 == Database ==
 
-  * [http://postgres.org PostgreSQL], 8.3 or higher
-  * [http://refractions.postgis.net PostGIS], recent version
-  * [http://sourceforge.net/projects/phppgadmin phppgadmin], recent version (OPTIONAL)
+`apt-get install postgresql-8.4-postgis`
+
+Below a setup for using PostGIS and the inpsire DB.
+
+{{{
+
+su postgres
+createdb postgis
+createlang plpgsql postgis
+
+psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql
+psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql
+psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis_comments.sql
+
+setup inspire DB
+createuser inspire (superuser "Y")
+/webapps/deegree3/src/main/resources/create-database.sh
+creates database "inspire_blob" met owner "inspire"
+
+passwd postgres (postgres)
+set password inspire user:
+as user postgre run:
+psql
+alter user postgres with password 'postgres';
+alter user inspire with password 'inspire';
+
+}}}
+
+`phppgadmin` is optional to manage a PostgreSQL DB via a web client.
+
+`apt-get install phppgadmin`
+ 
+(May replace `apache2 mpm worker` with `prefork`)
 
 == Web Services ==
 
-  * [http://deegree.org deegree], latest, is downloaded automatically via Maven
-  * [http://apache.org Apache HTTP server], latest, downloaded OPTIONAL
+Apache webserver (only if you need `phppgadmin` and the WMS viewer)
+apt-get install apache2
+
+[http://deegree.org deegree] is downloaded automatically via Maven
+when running the deegree server:
+ in directory `webapps/deegree3` execute `runnit.sh` or directly
+`mvn clean install tomcat:run`.

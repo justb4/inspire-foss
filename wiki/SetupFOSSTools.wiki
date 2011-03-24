@@ -38,7 +38,7 @@ Below all required and some optional tools are listed that are needed to run ins
 
 == Linux (Ubuntu/Debian) ==
  
-Most tools are easily installed using the "apt" program. Below some specifics.
+Most tools are easily installed using the `apt` program. Below some specifics.
 
 == Core Tools ==
 
@@ -46,17 +46,21 @@ Usually Java from OpenJDK comes preinstalled.
 To install Java from Sun, ahem Oracle, see
 http://stackoverflow.com/questions/3747789/how-to-install-sun-jdk-on-ubuntu-10-10-maverick-meerkat
 
-  * update /etc/apt/sources.list (uncomment "partners" stuff)
-  * apt-get install sun-java6-bin sun-java6-jdk sun-java6-jre
-  * still openjdk prevails: reconfigure alternatives
-  * update-java-alternatives -l (list)
-  * update-alternatives --config java
+Update `/etc/apt/sources.list` (uncomment `partners` stuff). Then
+{{{
+apt-get install sun-java6-bin sun-java6-jdk sun-java6-jre
+}}}
+
+If still openjdk prevails (do `java -version`), reconfigure alternatives
+{{{
+update-java-alternatives -l (list)
+update-alternatives --config java
+}}}
 
 Others
 {{{
 apt-get install maven2
 apt-get install subversion
-apt-get install apache2
 }}}
 
 == Transformation ==
@@ -94,9 +98,11 @@ Update `/usr/share/proj` for these projections, at least check if they are as be
 
 == Database ==
 
-`apt-get install postgresql-8.4-postgis`
+{{{
+apt-get install postgresql-8.4-postgis`
+}}}
 
-Below a setup for using PostGIS and the inpsire DB.
+Below a setup for using PostGIS and the inspire DB.
 
 {{{
 
@@ -108,7 +114,7 @@ psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql
 psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql
 psql -d postgis -f /usr/share/postgresql/8.4/contrib/postgis_comments.sql
 
-setup inspire DB
+# setup inspire DB
 createuser inspire (superuser "Y")
 /webapps/deegree3/src/main/resources/create-database.sh
 creates database "inspire_blob" met owner "inspire"

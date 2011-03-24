@@ -10,12 +10,12 @@ The software from the inspire-foss project does not consist of an executable pro
   * [http://java.sun.com Java], recent version 6 or higher
   * [http://subversion.tigris.org/ Subversion] (SVN) client latest
   * [http://maven.apache.org Apache Maven2], a build/run tool
-  * [http://ant.apache.org Apache Ant], a build/run tool
+  * [http://ant.apache.org Apache Ant], a build/run tool (OPTIONAL)
 
 
 == Transformation ==
 
-  * [http://gdal.org GDAL/OGR], 1.7.3 or better
+  * [http://gdal.org GDAL/OGR with PROJ], 1.7.3 or better
   * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] latest
   * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
 

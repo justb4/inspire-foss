@@ -3,7 +3,11 @@
 
 = Introduction =
 
-The software from the inspire-foss project does not consist of an executable program. Rather there are various scripts and configurations that use from a variety Free and Open Source Software tools and components. This section lists the various tools required, with some guidance how to set things up.
+The software from the inspire-foss project does not consist of an executable program. Rather there are various scripts and configurations that use a variety of Free and Open Source Software tools and components. This section lists the various tools required, with some guidance how to set things up. This setup has been tested/performed on Unix-like systems like Mac OSX and Ubuntu Linux. All tools are also available for the Windows OS-family (XP, 7 etc).
+
+= The Tools =
+
+Below all required and some optional tools are listed that are needed to run inspire-foss scripts.
 
 == Core Tools ==
 
@@ -15,15 +19,22 @@ The software from the inspire-foss project does not consist of an executable pro
 
 == Transformation ==
 
-  * [http://gdal.org GDAL/OGR with PROJ], 1.7.3 or better
+  * [http://gdal.org GDAL/OGR with PROJ], 1.7.3 or higher
   * [http://http://xmlsoft.org/XSLT/xsltproc.html XSLTProc] latest
   * [http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html iconv], character conversion (OPTIONAL)
 
 == Database ==
 
-  * [http://postgres.org PostgreSQL], recent version 8.3 or higher
+  * [http://postgres.org PostgreSQL], 8.3 or higher
   * [http://refractions.postgis.net PostGIS], recent version
+  * [http://sourceforge.net/projects/phppgadmin phppgadmin], recent version (OPTIONAL)
 
-= Web Services =
+== Web Services ==
 
-  * [http://deegree.org deegree], latest, downloaded automatically
+  * [http://deegree.org deegree], latest, is downloaded automatically via Maven
+  * [http://apache.org Apache HTTP server], latest, downloaded OPTIONAL
+
+= Installation =
+
+== Linux (Ubuntu/Debian) ==
+ 

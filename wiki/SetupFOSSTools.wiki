@@ -14,6 +14,7 @@ Below are all required and optional tools needed to run inspire-foss scripts.
   * [http://java.sun.com Java], recent version 6 or higher
   * [http://subversion.tigris.org/ Subversion] (SVN) client latest
   * [http://maven.apache.org Apache Maven2], a build/run tool
+  * [http://en.wikipedia.org/wiki/Unix_shell Unix shell], the "glue", ties all functions together
   * [http://ant.apache.org Apache Ant], a build/run tool (OPTIONAL)
 
 
@@ -45,8 +46,7 @@ Most tools are easily installed using the `apt` program. Below some specifics.
 
 == Core Tools ==
 
-Usually Java from OpenJDK comes preinstalled. 
-To install Java from Sun, ahem Oracle, see
+Usually Java from OpenJDK comes pre-installed on recent Ubuntu distributions. To install Java from Sun, ahem Oracle, see
 http://stackoverflow.com/questions/3747789/how-to-install-sun-jdk-on-ubuntu-10-10-maverick-meerkat
 
 Update `/etc/apt/sources.list` (uncomment `partners` stuff). Then

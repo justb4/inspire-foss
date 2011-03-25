@@ -5,6 +5,9 @@
 
 The software from the inspire-foss project does not consist of an executable program. Rather there are various scripts and configurations that use a variety of Free and Open Source Software tools and components. This section lists the various tools required, with some guidance how to set things up. This setup has been tested/performed on Unix-like systems like Mac OSX and Ubuntu Linux. All tools are also available for the Windows OS-family (XP, 7 etc).
 
+Note that there is also a [http://www.virtualbox.org/ VirtualBox] appliance for the entire inspire-foss environment listed below 
+based on Ubuntu 10.10. This will be distributed later.
+
 = The Tools =
 
 Below are all required and optional tools needed to run inspire-foss scripts.

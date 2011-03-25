@@ -145,6 +145,8 @@ alter user inspire with password 'inspire';
 
 }}}
 
+NB also check if the `spatial_ref_sys` contains the proper "proj-settings" for your EPSG codes (see GDAL/proj tweaks above).
+
 `phppgadmin` is optional to manage a PostgreSQL DB via a web client.
 
 {{{

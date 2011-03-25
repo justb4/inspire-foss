@@ -7,7 +7,7 @@ The software from the inspire-foss project does not consist of an executable pro
 
 = The Tools =
 
-Below all required and some optional tools are listed that are needed to run inspire-foss scripts.
+Below are all required and optional tools needed to run inspire-foss scripts.
 
 == Core Tools ==
 

@@ -8,10 +8,6 @@ This page describes how to setup a working environment to explore and possibly e
 Sounds magic ? The "trick" is "virtualization". Using the program [http://www.virtualbox.org VirtualBox] we will run a complete Linux Ubuntu system that has all inspire-foss software installed. You run this within whatever system you are on, Windows XYZ, Mac OSX, even Linux itself. Such a system is often called a [http://en.wikipedia.org/wiki/Virtual_appliance Virtual Appliance], or just Appliance as this is a booming technology also related to running systems within The Cloud. 
 
 Note: [http://www.virtualbox.org VirtualBox] is Open Source itself. You may be a bit surprised that the developer is Oracle. But [http://www.virtualbox.org VirtualBox]  was developed by Sun and the rest is history...
- 
-
-[http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/virtualbox-screen-macosx-s.png]
-
 
 This document contains the steps to install the `InspireFossBox` as we have called our appliance. 
 
@@ -38,3 +34,19 @@ These are some handy add-ons.
   * The file is called e.g. `Oracle_VM_VirtualBox_Extension_Pack-4.0.4-70112.vbox-extpack` is platform-independent
   * Standard installation by double-clicking the file.
   * The file is run by VB itself
+
+== 4. Run the `InspireFossBox` Virtual Appliance ==
+
+Here the file you downloaded or got in Step 1 wil be imported and run in [http://www.virtualbox.org VirtualBox].
+   
+   * start the `VirtualBox` program installed in Step 2
+   * go in menu to `File | Import Appliance...`
+   * follow the steps in the import wizard with default choices
+   * in `VirtualBox` run your machine
+   * watch the Ubuntu system boot (may take a while)
+   * you can suspend/resume this running VM as a "snapshot" such that next time you'll be up and running in seconds
+     
+
+Below is [http://www.virtualbox.org VirtualBox] with the `InspireFossBox` virtual appliance running on Mac OSX.
+
+[http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/virtualbox-screen-macosx-s.png]

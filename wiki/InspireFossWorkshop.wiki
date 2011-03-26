@@ -1,0 +1,26 @@
+#summary describes the exploration and exercises of the workshop
+
+= Introduction =
+
+Text for the workshop here...Each chapter will be a subject.
+
+= Getting Prepared =
+
+Setup: see [InspireFossBoxSetup]
+
+= The Tools =
+
+= The Works =
+This is a `WorkShop` so this is where the real work starts.
+
+== Exploring IntelliJ ==
+
+(About the IntelliJ project environment: sources, tools, output.)
+
+== First ETL ==
+
+(Do the Kadaster test ETL.)
+
+== First WFS ==
+
+(Running deegree and doing test WFS requests)

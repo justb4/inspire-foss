@@ -7,18 +7,18 @@ This page describes how to setup a working environment to explore and possibly e
 
 Sounds magic ? The "trick" is "virtualization". Using the program [http://www.virtualbox.org VirtualBox] we will run a complete Linux Ubuntu system that has all inspire-foss software installed. You run this within whatever system you are on, Windows XYZ, Mac OSX, even Linux itself. Such a system is often called a [http://en.wikipedia.org/wiki/Virtual_appliance Virtual Appliance], or just Appliance as this is a booming technology also related to running systems within The Cloud. 
 
-Note: VirtualBox is Open Source itself. You may be a bit surprised that the developer is Oracle. But VirtualBox was developed by Sun and the rest is history...
+Note: [http://www.virtualbox.org VirtualBox] is Open Source itself. You may be a bit surprised that the developer is Oracle. But [http://www.virtualbox.org VirtualBox]  was developed by Sun and the rest is history...
  
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/virtualbox-screen-macosx-s.png]
 
 
-This document contains the steps to install the "InspireFossBox" as we have called our appliance. 
+This document contains the steps to install the `InspireFossBox` as we have called our appliance. 
 
 = Up and Running in minutes =
 There are just some simple steps to get up and running. Here we go..
 
-== 1. Get the InspireFossBox VM ==
+== 1. Get the `InspireFossBox` VM ==
 At the moment the InspireFossBox is under development and not yet available for public download. Ask the developer Just van den Broecke for a download link and he will give you one. If you are in the InspireFossWorkshop you will get a copy there.
 
 == 2. Install VirtualBox ==

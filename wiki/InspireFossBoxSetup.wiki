@@ -1,0 +1,36 @@
+#summary setting up and exploring inspire-foss using virtualization
+#labels Phase-Deploy
+
+= Introduction =
+
+This page describes how to setup a working environment to explore and possibly extend the inspire-foss software components with a minimum of effort. This is done by installing and running an application on your computer that provides a completely installed and working system. You don't have to install any of the tools listed in 
+
+Sounds magic ? The "trick" is "virtualization". Using the program [http://www.virtualbox.org VirtualBox] we will run a complete Linux Ubuntu system that has all inspire-foss software installed. You run this within whatever system you are on, Windows XYZ, Mac OSX, even Linux itself. Such a system is often called a [http://en.wikipedia.org/wiki/Virtual_appliance Virtual Appliance], or just Appliance as this is a booming technology also related to running systems within The Cloud. 
+
+Note: VirtualBox is Open Source itself. You may be a bit surprised that the developer is Oracle. But VirtualBox was developed by Sun and the rest is history..
+ 
+This document contains the steps to install the "InspireFossBox" as we have called our appliance. 
+
+= Up and Running in minutes =
+There are just some simple steps to get up and running. Here we go..
+
+== 1. Get the InspireFossBox VM ==
+At the moment the InspireFossBox is under development and not yet available for public download. Ask the developer Just van den Broecke for a download link and he will give you one. If you are in the InspireFossWorkshop you will get a copy there.
+
+== 2. Install VirtualBox ==
+
+This is a standard install like any other  application on your system.
+VirtualBox is the player application that will later on run the InspireFossBox.
+
+  * [http://www.virtualbox.org/wiki/Downloads Download VirtualBox] 4.0.4 or higher
+  * Standard installation by double-clicking the executable.
+  * Default installation should be ok
+
+== 3. Install VM VirtualBox Extension Pack ==
+
+These are some handy add-ons. 
+
+  * [http://www.virtualbox.org/wiki/Downloads Download Oracle VM VirtualBox Extension Pack] 4.0.4 or higher
+  * The file is called e.g. `Oracle_VM_VirtualBox_Extension_Pack-4.0.4-70112.vbox-extpack` is platform-independent
+  * Standard installation by double-clicking the file.
+  * The file is run by VB itself

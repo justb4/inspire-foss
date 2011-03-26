@@ -9,6 +9,8 @@ Sounds magic ? The "trick" is "virtualization". Using the program [http://www.vi
 
 Note: VirtualBox is Open Source itself. You may be a bit surprised that the developer is Oracle. But VirtualBox was developed by Sun and the rest is history..
  
+http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/virtualbox-screen-macosx-s.png
+
 This document contains the steps to install the "InspireFossBox" as we have called our appliance. 
 
 = Up and Running in minutes =

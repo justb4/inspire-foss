@@ -138,7 +138,7 @@ GeoViewer.Catalog.layers = {
 
 	inspireTNRoadLink: new OpenLayers.Layer.WMS("INSPIRE TransportNetworks (RoadLink)",
 			GeoViewer.Catalog.urls.DEEGREE_LOCAL_WMS,
-	{layers: "TN.RoadLink", format: "image/png", transparent: true, version: '1.3.0'},
+	{layers: "TN-RO.RoadLink", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
 		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 
 			)

@@ -76,12 +76,12 @@
             </RequestableLayer>
 
             <RequestableLayer>
-                <Name>TN.RoadLink</Name>
+                <Name>TN-RO.RoadLink</Name>
                 <Title>RoadLink</Title>
                 <FeatureStoreId>inspire-postgis</FeatureStoreId>
                 <DirectStyle>
-                    <File>../styles/TN.RoadLink_Default.xml</File>
-                    <Name>TN.RoadLink.Default</Name>
+                    <File>../styles/TN-RO.RoadLink_Default.xml</File>
+                    <Name>TN-RO.RoadLink.Default</Name>
                 </DirectStyle>
             </RequestableLayer>
 

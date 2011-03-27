@@ -1,10 +1,10 @@
 <!--
 
-ANT Build file for RWS test data ETL.
+ANT Build file for Kadaster CP test data ETL.
 
 $Id: build.xml 99 2011-03-24 12:11:38Z just $
 -->
-<project name="RWS.ETL.test"  basedir=".">
+<project name="Kadaster.ETL.TN.test"  basedir=".">
 
 	<target name="transform" >
 		<exec executable="${basedir}/transform.sh"/>

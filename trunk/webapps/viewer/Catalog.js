@@ -40,9 +40,9 @@ GeoViewer.Catalog.options4258 = {
 	RESOLUTIONS: [0.017929030859375, 0.0089645154296875001, 0.0044822577148437501, 0.002241128857421875, 0.0011205644287109375, 0.00056028221435546876, 0.00028014110717773438, 0.00014007055358886719, 7.0035276794433595e-05, 3.5017638397216797e-05, 1.7508819198608399e-05, 8.7544095993041994e-06, 4.3772047996520997e-06, 2.1886023998260498e-06, 1.0943011999130249e-06, 5.4715059995651246e-07, 2.7357529997825623e-07, 1.3678764998912812e-07, 6.8393824994564058e-08, 3.4196912497282029e-08], //[860.160, 430.080, 215.040, 107.520, 53.760, 26.880, 13.440, 6.720, 3.360, 1.680, 0.840, 0.420, 0.210, 0.105, 0.0525],
 	MAX_EXTENT: new OpenLayers.Bounds(2.7984656, 50.6264231, 7.3882975, 53.9511147),
 	// CENTER: new OpenLayers.LonLat(5.387, 52.155),
-	CENTER: MY_LOCATIONS.LOSSER,
+	CENTER: MY_LOCATIONS.AMERSFOORT,
 	XY_PRECISION: 6,
-	ZOOM: 4,
+	ZOOM: 1,
 	MAX_FEATURES: 10
 };
 
@@ -138,7 +138,7 @@ GeoViewer.Catalog.layers = {
 
 	inspireTNRoadLink: new OpenLayers.Layer.WMS("INSPIRE TransportNetworks (RoadLink)",
 			GeoViewer.Catalog.urls.DEEGREE_LOCAL_WMS,
-	{layers: "TN.RoadTransportNetwork.RoadLink", format: "image/png", transparent: true, version: '1.3.0'},
+	{layers: "TN.RoadLink", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
 		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 
 			)

@@ -6,7 +6,7 @@
         <se:Title>TN RoadLink Default Style</se:Title>
         <se:Abstract>TN RoadLink: grey line 1 pixel.</se:Abstract>
     </se:Description>
-    <se:FeatureTypeName>tn:RoadLink</se:FeatureTypeName>
+    <se:FeatureTypeName>TN-RO:RoadLink</se:FeatureTypeName>
     <se:Rule>
         <!--<se:MinScaleDenominator>1</se:MinScaleDenominator>
         <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>   -->

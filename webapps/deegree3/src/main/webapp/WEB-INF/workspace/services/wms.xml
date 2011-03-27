@@ -76,7 +76,7 @@
             </RequestableLayer>
 
             <RequestableLayer>
-                <Name>TN.RoadTransportNetwork.RoadLink</Name>
+                <Name>TN.RoadLink</Name>
                 <Title>RoadLink</Title>
                 <FeatureStoreId>inspire-postgis</FeatureStoreId>
                 <DirectStyle>

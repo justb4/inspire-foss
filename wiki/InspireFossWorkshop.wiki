@@ -2,11 +2,13 @@
 
 = Introduction =
 
-Text for the workshop here...Each chapter will be a subject.
+The main goal of this workshop is to gain hands-on experience with software components of the inspire-foss project. These components include: ETL (Extract, Transform, Load), web services for WFS and WMS, plus visualisation through a web client. You can experience how these components work together in order to support the entire data delivery chain from raw national data to harmonized INSPIRE data and network services.
+
+In order to quickly get up and running a so called [http://en.wikipedia.org/wiki/Virtual_appliance Virtual Appliance] has been developed that contains a complete environment for running inspire-foss components. In addition this Appliance, named `InspireFossBox` runs the [http://www.jetbrains.com/idea/ IntelliJ IDEA] Integrated Development Environment (IDE) using an Open Source license in order to visualize code and data and moreover execute the ETL and to run webservices for WFS and WMS. The only other tool you will need to run within `InspireFossBox` is the preinstalled [http://www.mozilla.com/en-US/firefox/new/ Firefox web browser].
 
 = Getting Prepared =
-
-Setup: see [InspireFossBoxSetup]
+In order to proceed you should have setup and run
+the `InspireFossBox` virtual appliance. This is described in [InspireFossBoxSetup].
 
 = The Tools =
 

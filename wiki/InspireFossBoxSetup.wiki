@@ -20,7 +20,7 @@ At the moment the `InspireFossBox` is under development and not yet available fo
 == 2. Install `VirtualBox` ==
 
 This is a standard install like any other  application on your system.
-VirtualBox is the player application that will later on run the InspireFossBox.
+[http://www.virtualbox.org VirtualBox] is the player application that will later on run the `InspireFossBox`.
 
   * [http://www.virtualbox.org/wiki/Downloads Download VirtualBox] 4.0.4 or higher
   * Standard installation by double-clicking the executable.
@@ -44,6 +44,7 @@ Here the file you downloaded or got in Step 1 wil be imported and run in [http:/
    * follow the steps in the import wizard with default choices
    * in `VirtualBox` run your machine
    * watch the Ubuntu system boot (may take a while)
+   * all is ready and well if you see the Firefox browser showing the welcome page
    * you can suspend/resume this running VM as a "snapshot" such that next time you'll be up and running in seconds
      
 

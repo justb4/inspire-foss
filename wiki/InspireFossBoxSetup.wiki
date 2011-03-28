@@ -46,6 +46,7 @@ Here the file you downloaded or got in Step 1 wil be imported and run in [http:/
    * watch the Ubuntu system boot (may take a while)
    * all is ready and well if you see the Firefox browser showing the welcome page
    * you can suspend/resume this running VM as a "snapshot" such that next time you'll be up and running in seconds
+   * all usernames and passwords within the `InspireFossBox` are named "inspire" and "inspire" respectively
      
 
 Below is [http://www.virtualbox.org VirtualBox] with the `InspireFossBox` virtual appliance running on Mac OSX.

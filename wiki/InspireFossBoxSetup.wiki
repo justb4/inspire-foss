@@ -15,7 +15,7 @@ This document contains the steps to install the `InspireFossBox` as we have call
 There are just some simple steps to get up and running. Here we go..
 
 == 1. Get the `InspireFossBox` VM ==
-At the moment the `InspireFossBox` is under development and not yet available for public download. Ask the developer Just van den Broecke for a download link and he will give you one. If you are in the InspireFossWorkshop you will get a copy there.
+At the moment the `InspireFossBox` is under development and not yet available for public download. Ask the developer [mailto:justb4@gmail.com Just van den Broecke]  for a download link and he will give you one. If you are in the InspireFossWorkshop you will get a copy there.
 
 == 2. Install `VirtualBox` ==
 

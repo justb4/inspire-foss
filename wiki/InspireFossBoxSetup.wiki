@@ -51,3 +51,6 @@ Here the file you downloaded or got in Step 1 wil be imported and run in [http:/
 Below is [http://www.virtualbox.org VirtualBox] with the `InspireFossBox` virtual appliance running on Mac OSX.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/virtualbox-screen-macosx-s.png]
+
+== 5. What's Next ? ==
+Now you are ready to start exploring and possibly extending inspire-foss components for ETL and web services. Go to [InspireFossWorkshop] to proceed.

@@ -125,14 +125,14 @@ GeoViewer.Catalog.layers = {
 			GeoViewer.Catalog.urls.DEEGREE_LOCAL_WMS,
 	{layers: "AU.AdministrativeUnit", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
-		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 
+		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']}
 			),
 
 	inspireCP : new OpenLayers.Layer.WMS("INSPIRE Parcels",
 			GeoViewer.Catalog.urls.DEEGREE_LOCAL_WMS,
 	{layers: "CP.CadastralParcel", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
-		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 
+		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']}
 			),
 
 
@@ -140,7 +140,7 @@ GeoViewer.Catalog.layers = {
 			GeoViewer.Catalog.urls.DEEGREE_LOCAL_WMS,
 	{layers: "TN-RO.RoadLink", format: "image/png", transparent: true, version: '1.3.0'},
 	{isBaseLayer: false, singleTile: true,  visibility: false, alpha:true
-		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']} 
+		,featureInfoFormat: "application/vnd.ogc.gml", yx: ['EPSG:4258']}
 			)
 
 };

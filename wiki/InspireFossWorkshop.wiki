@@ -1,4 +1,4 @@
-#summary describes the exploration and exercises of the workshop
+#summary explore and extend inspire-foss components with the InspireFossBox virtual appliance
 
 = Introduction =
 

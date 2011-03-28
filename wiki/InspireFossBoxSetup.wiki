@@ -1,4 +1,4 @@
-#summary setting up and exploring inspire-foss using virtualization
+#summary setting up and exploring inspire-foss using the InspireFossBox virtual appliance
 #labels Phase-Deploy
 
 = Introduction =

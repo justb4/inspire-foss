@@ -25,7 +25,7 @@ This is a `WorkShop` so this is where the real work starts.
 
 Below is is the IntelliJ main screen with the main areas indicated.
 
-http://code.google.com/p/inspire-foss/source/browse/trunk/doc/workshop/media/inspirefossbox-intellij-overview-800.png
+[http://code.google.com/p/inspire-foss/trunk/doc/workshop/media/inspirefossbox-intellij-overview-800.png]
 
 == First ETL ==
 

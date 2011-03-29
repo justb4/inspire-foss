@@ -6,8 +6,8 @@
 
         <UnrequestableLayer>
             <Title>Root Layer</Title>
-            <CRS>EPSG:4258 EPSG:3034 EPSG:4326 EPSG:900913 EPSG:28992</CRS>
-            <!-- <CRS>urn:ogc:def:crs:EPSG::4258</CRS>  -->
+            <!-- <CRS>EPSG:4258 EPSG:3034 EPSG:4326 EPSG:900913 EPSG:28992</CRS> -->
+            <CRS>urn:ogc:def:crs:EPSG::4258</CRS>
 
             <!-- Layers from Address (AD) data theme -->
             <RequestableLayer>
@@ -44,6 +44,7 @@
                     <Name>CP.CadastralZoning</Name>
                 </DirectStyle>
             </RequestableLayer>
+
             <RequestableLayer>
                 <Name>CP.CadastralBoundary</Name>
                 <Title>Cadastral Boundary Default Style</Title>
@@ -80,7 +81,7 @@
                 <Title>RoadLink</Title>
                 <FeatureStoreId>inspire-postgis</FeatureStoreId>
                 <DirectStyle>
-                    <File>../styles/TN-RO.RoadLink_Default.xml</File>
+                    <File>../styles/TN_RO.RoadLink_Default.xml</File>
                     <Name>TN-RO.RoadLink.Default</Name>
                 </DirectStyle>
             </RequestableLayer>

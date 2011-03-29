@@ -39,10 +39,4 @@ Below is is the IntelliJ main screen with the main areas indicated.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/inspirefossbox-intellij-overview-800.png]
 
-== First ETL ==
-
-(Do the Kadaster test ETL.)
-
-== First WFS ==
-
-(Running deegree and doing test WFS requests)
+TO BE FINALIZED

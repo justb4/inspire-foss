@@ -39,4 +39,6 @@ Below is is the IntelliJ main screen with the main areas indicated.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/inspirefossbox-intellij-overview-800.png]
 
-TO BE FINALIZED
+TO BE FINALIZED - FOR NOW SEE THE SLIDES (Dutch)  BELOW
+
+[http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/workshop-nl-11030-v1.pdf THE PDF SLIDES (2.9 MB)]

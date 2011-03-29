@@ -11,13 +11,21 @@ In order to proceed you should have setup and run
 the `InspireFossBox` virtual appliance. This is described in [InspireFossBoxSetup].
 
 = The Tools =
+You will only need two tools to run all exercises in the workshop:
+
+  # [http://www.jetbrains.com/idea/ IntelliJ IDEA] 
+  # the Firefox webbrowser
+
+[http://www.jetbrains.com/idea/ IntelliJ IDEA] is an Integrated Development Environment (IDE) that has been setup for the inspire-foss project with lots of shortcut commands (via [http://ant.apache.org Apache Ant]) to run ETL, start the [http://deegree.org deegree server] etc. Note: since we use/develop Open Source, IntelliJ bears a free of charge license. Note that you are only allowed to develop Open Source with this license. Since IntelliJ is a fantastic product it is worthwhile to buy a license anyway.
 
 = The Works =
 This is a `WorkShop` so this is where the real work starts.
 
 == Exploring IntelliJ ==
 
-(About the IntelliJ project environment: sources, tools, output.)
+Below is is the IntelliJ main screen with the main areas indicated.
+
+http://code.google.com/p/inspire-foss/source/browse/trunk/doc/workshop/media/inspirefossbox-intellij-overview-800.png
 
 == First ETL ==
 

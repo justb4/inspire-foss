@@ -24,7 +24,6 @@ You will only need two tools to run all exercises in the workshop:
 
 You start the tools as indicated below.
 
-[http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/inspirefossbox-toolbar.png]
 
 Click on the [http://www.jetbrains.com/idea/ IntelliJ IDEA] icon to start (takes a while).
  

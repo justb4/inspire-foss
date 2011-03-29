@@ -28,6 +28,7 @@ You start the tools as indicated below.
 Click on the [http://www.jetbrains.com/idea/ IntelliJ IDEA] icon to start (takes a while).
  
 
+[http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/inspirefossbox-toolbar.png]
 
 = The Works =
 This is a `WorkShop` so this is where the real work starts.

@@ -10,7 +10,7 @@ In order to quickly get up and running, a so-called [http://en.wikipedia.org/wik
 In order to proceed you should have setup and run
 the `InspireFossBox` virtual appliance. This is described in [InspireFossBoxSetup].
 
-If all is well and the `InspireFossBox` appliance is tarted you should see the screen below.
+If all is well and the `InspireFossBox` appliance is started you should see the screen below.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/inspirefossbox-startscreen-800.png]
 

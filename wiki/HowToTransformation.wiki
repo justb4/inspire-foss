@@ -39,13 +39,9 @@ Not all data providers follow this convention yet. Best is to look under
 Further background knowledge that helps in understanding the ETL implementation deals with the technologies
 that are used:
 
-  * [http://gdal.org GDAL/OGR] core format and projection transformation. Although GDAL/OGR is
-    an entire suite of libraries/tools, only a single command-line tool is used: [http://www.gdal.org/ogr2ogr.html ogr2ogr].
-  * [http://en.wikipedia.org/wiki/XSLT XSLT] is used for model/schema transformation. To about XSLT, the best source
-    to start is [http://www.w3schools.com/xsl the XSLT tutorial at W3Schools.com].
-  * The ETL chain and the invokation of the tools like `xsltproc` and `ogr2ogr` is all "glued" together
-    using Unix/Linux shell scripts. To learn the [http://steve-parker.org/sh/sh.shtml Steve's Bourne / Bash shell scripting tutorial] is a good
-    starting point.
+  * [http://gdal.org GDAL/OGR] core format and projection transformation. Although GDAL/OGR is an entire suite of libraries/tools, only a single command-line tool is used: [http://www.gdal.org/ogr2ogr.html ogr2ogr].
+  * [http://en.wikipedia.org/wiki/XSLT XSLT] is used for model/schema transformation. To about XSLT, the best source to start is [http://www.w3schools.com/xsl the XSLT tutorial at W3Schools.com].
+  * The ETL chain and the invokation of the tools like `xsltproc` and `ogr2ogr` is all "glued" together using Unix/Linux shell scripts. To learn the [http://steve-parker.org/sh/sh.shtml Steve's Bourne / Bash shell scripting tutorial] is a good starting point.
 
 == Your Data and INSPIRE ==
 Whatever tools you will use to transform your data to INSPIRE, you have to be familiar
@@ -53,7 +49,7 @@ with the formats and schema's of both your data and the related INSPIRE data.
 
 For INSPIRE data models you need to be familiar with the following:
 
-  * XML Schemas Definition Language (XSD)
+  * XML Schema Definition Language (XSD) - see [http://www.w3schools.com/schema/default.asp tutorial at W3Schools.com]
   * GML (version 3.2.1) Schemas
   * ISO Application Schemas
   * The related INSPIRE Schema's (XSDs) for your target Theme(s)

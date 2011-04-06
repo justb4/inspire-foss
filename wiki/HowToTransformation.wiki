@@ -15,7 +15,7 @@ WMS. These network services are not part of this `HowTo`.
 = The ETL Chain =
 The image below shows the main ETL chain.
 
-[http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/etl-design-chain1.png]
+[http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-chain1.png]
 
 = Background Reading =
 

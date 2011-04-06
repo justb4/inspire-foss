@@ -3,7 +3,8 @@
 = Introduction =
 
 This `HowTo` describes how to transform your local national data 
-to INSPIRE harmonized data. This will be illustrated using
+to INSPIRE harmonized data and how to embed this transformation in a
+complete [http://en.wikipedia.org/wiki/Extract,_transform,_load ETL (Extract, Transform, Load)] chain. This will be illustrated using
 some of the existing transformation resources present within 
 the project.
 

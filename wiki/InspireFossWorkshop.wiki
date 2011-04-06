@@ -42,3 +42,6 @@ Below is is the IntelliJ main screen with the main areas indicated.
 TO BE FINALIZED - FOR NOW SEE THE SLIDES (Dutch)  BELOW
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/workshop-nl-11030-v1.pdf THE PDF SLIDES (2.9 MB)]
+
+In order to setup your own ETL you can follow the 
+guidelines in HowToTransformation.

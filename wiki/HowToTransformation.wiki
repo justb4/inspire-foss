@@ -13,7 +13,7 @@ The ETL is tightly integrated with the provision of download and view network se
 WMS. These network services are not part of this `HowTo`.
 
 = The ETL Chain =
-The image below shows the main ETL chain.Although this image shows some data specific to the
+The image below shows the main ETL chain. Although this image shows some data specific to the
 Dutch Kadaster, the overall process is reusable and will be described below.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-chain1.png]
@@ -79,19 +79,19 @@ you may change the order of the steps.
 == Steps Summary ==
 Without going into details, here is a summary of the main steps for developing an ETL for any source dataset X.
 
-  # define the mapping from your source data objects/attributes to target INSPIRE Annex I-III Theme GML Features/properties in a document/Excel sheet.
-  # convert your source data into any simple/flat feature format: CSV, ESRI Shapefile, `MapInfo` File, flat GML, ....
-  # Extract + Projection Transform: convert and reproject data from 2. into simple (flat) feature GML in the EPSG:4258 (ETRS89) projection
-  # get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory
-  # develop the core schema XSLT transformation by creating the following components (files)
+  # *Mapping specs* - define the mapping from your source data objects/attributes to target INSPIRE Annex I-III Theme GML Features/properties in a document/Excel sheet.
+  # *Flatten* - convert your source DB data into any simple/flat feature format: CSV, ESRI Shapefile, `MapInfo` File, flat GML, ....
+  # *Make GML* - convert and reproject data from 2. into simple (flat) feature GML in the EPSG:4258 (ETRS89) projection
+  # *Test samples* get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory
+  # *XSLT develop* - develop the core schema XSLT transformation by creating the following components (files)
     * XSLT (callable templates) for the target feature(s) generation within [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2Fshared the shared ETL directory]
     * XSLT for the extraction of attributes from the source GML (see step 4.) and calling the XSLT callable templates
     * XSLT for the spatial dataset GML container generation
     * the shell script to invoke the transformation described here in these first 3 bullets
-  # validate the resulting output GML of step 5 using the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Ftools%2Fvalidator project validator tool].
-  # Load: develop a Unix script that loads the test data into PostGIS
-  # Full dataset ETL: develop Unix shell scripts to execute the ETL developed in step 1-5 for the full source dataset
-  # Optional: use the deegree WFS/WMS for testing the full dataset ETL
+  # *Validation* validate the resulting output GML of step 5 using the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Ftools%2Fvalidator project validator tool].
+  # *Load* - develop a Unix script that loads the test data into PostGIS
+  # *Full ETL* - develop Unix shell scripts to execute the ETL developed in step 1-5 for the full source dataset
+  # *WFS/WMS test* - optional: use the deegree WFS/WMS for testing the full dataset ETL
 
 
 

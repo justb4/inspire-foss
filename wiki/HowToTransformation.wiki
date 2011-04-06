@@ -1,16 +1,35 @@
-#summary a guide to setting up Transformation (ETL)
+#summary a guide to setting up Transformation and ETL
 
 = Introduction =
 
 This `HowTo` describes how to transform your local national data 
 to INSPIRE harmonized data and how to embed this transformation in a
-complete [http://en.wikipedia.org/wiki/Extract,_transform,_load ETL (Extract, Transform, Load)] chain. This will be illustrated using
-some of the existing transformation resources present within 
-the project.
+complete [http://en.wikipedia.org/wiki/Extract,_transform,_load ETL (Extract, Transform, Load)] chain.
+This will be illustrated using
+some of the existing transformation resources present within the project.
+In the remainder of this document the term "ETL" will be used.
 
-= Details =
+= Background Reading =
+In order to grasp the steps that follow in upcoming sections we advise to
+first read about the concepts and design underpinning the ETL.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The main document (HTML and PDF) to start with is [http://inspire.kademo.nl/doc]. Although this document has references to data  specific to the
+[http://www.kadaster.nl The Dutch Kadaster] it has general applicability. In particular
+the sections about [http://inspire.kademo.nl/doc/concept.html Concepts] and
+[http://inspire.kademo.nl/doc/design-etl.html ETL Design] should provide the basic
+information on the how and why of the ETL. This document also provides some
+specific information on the [http://inspire.kademo.nl/doc/implementation.html ETL Implementation]
+where actual code is even directly included within the document.
+
+All code related to ETL resides in the Subversion repository. All code can be browsed
+online via https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl .
+
+Further background knowledge that helps in understanding the ETL implementation deals with the technologies
+that are used:
+
+  * [http://gdal.org GDAL/OGR] core format and projection transformation. Although GDAL/OGR is
+    an entire suite of libraries/tools, only a single command-line tool is used: [http://www.gdal.org/ogr2ogr.html ogr2ogr].
+  * [http://en.wikipedia.org/wiki/XSLT XSLT] is used for model/schema transformation. To about XSLT, the best source
+    to start is [http://www.w3schools.com/xsl the XSLT tutorial at W3Schools.com].
+
+

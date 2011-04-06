@@ -1,0 +1,15 @@
+#summary a guide to setting up Transformation (ETL)
+
+= Introduction =
+
+This `HowTo` describes how to transform your local national data 
+to INSPIRE harmonized data. This will be illustrated using
+some of the existing transformation resources present within 
+the project.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

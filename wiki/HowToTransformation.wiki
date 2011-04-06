@@ -7,24 +7,30 @@ to INSPIRE harmonized data and how to embed this transformation in a
 complete [http://en.wikipedia.org/wiki/Extract,_transform,_load ETL (Extract, Transform, Load)] chain.
 This will be illustrated using
 some of the existing transformation resources present within the project.
-In the remainder of this document the term "ETL" will be used.
+In the remainder of this document the term "ETL" will be used for the overall process from local data to harmonized
+INSPIRE data. "Content Transformation" is a similar term as ETL and may be found in some of the documentation.
+The ETL is tightly integrated with the provision of download and view network services via WFS and respectively
+WMS. These network services are not part of this `HowTo`.
+
 
 = Background Reading =
 
 This section contains references to the main background knowledge that helps to
-conduct the ETL.
+understand and conduct the ETL development process.
 
 == ETL Design and Tools ==
 In order to grasp the steps that follow in upcoming sections we advise to
-first read about the concepts, design and technologies underpinning the ETL.
+first read about the concepts, design and technologies underlying the ETL.
 
 The main document (HTML and PDF) to start with is [http://inspire.kademo.nl/doc]. Although this document has references to data  specific to the
-[http://www.kadaster.nl The Dutch Kadaster] it has general applicability. In particular
+[http://www.kadaster.nl Dutch Kadaster] it has general applicability. In particular
 the sections about [http://inspire.kademo.nl/doc/concept.html Concepts] and
 [http://inspire.kademo.nl/doc/design-etl.html ETL Design] should provide the basic
-information on the how and why of the ETL. This document also provides some
+information on the basics of the ETL. This document also provides some
 specific information on the [http://inspire.kademo.nl/doc/implementation.html ETL Implementation]
-where actual code is even directly included within the document.
+where actual code is even directly included within the document. Though the ETL may look different for each dataset
+and target INSPIRE Theme, there are underlying "patterns" which not only divide the ETL components into
+logical units but also make many of these components highly reusable.
 
 All code for existing ETL can be browsed
 online via the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl ETL folder within the Subversion repository].
@@ -40,12 +46,12 @@ Further background knowledge that helps in understanding the ETL implementation 
 that are used:
 
   * [http://gdal.org GDAL/OGR] core format and projection transformation. Although GDAL/OGR is an entire suite of libraries/tools, only a single command-line tool is used: [http://www.gdal.org/ogr2ogr.html ogr2ogr].
-  * [http://en.wikipedia.org/wiki/XSLT XSLT] is used for model/schema transformation. To about XSLT, the best source to start is [http://www.w3schools.com/xsl the XSLT tutorial at W3Schools.com].
-  * The ETL chain and the invokation of the tools like `xsltproc` and `ogr2ogr` is all "glued" together using Unix/Linux shell scripts. To learn the [http://steve-parker.org/sh/sh.shtml Steve's Bourne / Bash shell scripting tutorial] is a good starting point.
+  * [http://en.wikipedia.org/wiki/XSLT XSLT] is used for model/schema transformation. To learn about XSLT, the best source to start is [http://www.w3schools.com/xsl the XSLT tutorial at W3Schools.com].
+  * The ETL chain and the invokation of the tools like `xsltproc` and `ogr2ogr` are "glued" together using Unix/Linux shell scripts. To learn the [http://steve-parker.org/sh/sh.shtml Steve's Bourne / Bash shell scripting tutorial] is a good starting point.
 
 == Your Data and INSPIRE ==
 Whatever tools you will use to transform your data to INSPIRE, you have to be familiar
-with the formats and schema's of both your data and the related INSPIRE data.
+with the formats and schema's of both your data and the targeted harmonized INSPIRE data.
 
 For INSPIRE data models you need to be familiar with the following:
 
@@ -58,6 +64,29 @@ All applicable XSD files have been added to the project and [https://code.google
 but the easiest is to use an XML editor or IDE like IntelliJ to be able to navigate the schema files.
 
 Last but not least you need to have a specification of your own data.
+
+= The Steps =
+So with all the reference documents, tools and data, what are the steps to develop an ETL for a source dataset X
+and a target INSPIRE Theme Y ?Basically it is best to look at the existing ETLs under the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl ETL folder within the Subversion repository] but
+we will try here to list a set of subsequent steps for the development process. Once you are familiar with the process
+you may change the order of the steps.
+
+== Steps Summary ==
+Without going into details, here is a summary of the main steps for developing an ETL for any source dataset X.
+
+  # define the mapping from your source data objects/attributes to target INSPIRE Annex I-III Theme GML Features/properties in a document/Excel sheet.
+  # convert your source data into any simple/flat feature format: CSV, ESRI Shapefile, MapInfo File, flat GML, ....
+  # Extract + Projection Transform: convert and reproject data from 2. into simple (flat) feature GML in the EPSG:4258 (ETRS89) projection
+  # get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory
+  # develop the core schema XSLT transformation by creating the following components (files)
+    * XSLT (callable templates) for the target feature(s) generation within [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2Fshared the shared ETL directory]
+    * XSLT for the extraction of attributes from the source GML (see step 4.) and calling the XSLT callable templates
+    * XSLT for the spatial dataset GML container generation
+    * the shell script to invoke the transformation described here in these first 3 bullets
+  # validate the resulting output GML of step 5 using the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Ftools%2Fvalidator project validator tool].
+  # Load: develop a Unix script that loads the test data into PostGIS
+  # Full dataset ETL: develop Unix shell scripts to execute the ETL developed in step 1-5 for the full source dataset
+  # Optional: use the deegree WFS/WMS for testing the full dataset ETL
 
 
 

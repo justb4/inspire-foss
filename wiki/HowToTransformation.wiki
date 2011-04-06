@@ -12,6 +12,10 @@ INSPIRE data. "Content Transformation" is a similar term as ETL and may be found
 The ETL is tightly integrated with the provision of download and view network services via WFS and respectively
 WMS. These network services are not part of this `HowTo`.
 
+= The ETL Chain =
+The image below shows the main ETL chain.
+
+[http://inspire-foss.googlecode.com/svn/trunk/doc/NL.Kadaster/sphinx/_static/etl-design-chain1.png]
 
 = Background Reading =
 
@@ -67,7 +71,7 @@ Last but not least you need to have a specification of your own data.
 
 = The Steps =
 So with all the reference documents, tools and data, what are the steps to develop an ETL for a source dataset X
-and a target INSPIRE Theme Y ?Basically it is best to look at the existing ETLs under the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl ETL folder within the Subversion repository] but
+and a target INSPIRE Theme Y ? Basically it is best to look at the existing ETLs under the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl ETL folder within the Subversion repository] but
 we will try here to list a set of subsequent steps for the development process. Once you are familiar with the process
 you may change the order of the steps.
 
@@ -75,7 +79,7 @@ you may change the order of the steps.
 Without going into details, here is a summary of the main steps for developing an ETL for any source dataset X.
 
   # define the mapping from your source data objects/attributes to target INSPIRE Annex I-III Theme GML Features/properties in a document/Excel sheet.
-  # convert your source data into any simple/flat feature format: CSV, ESRI Shapefile, MapInfo File, flat GML, ....
+  # convert your source data into any simple/flat feature format: CSV, ESRI Shapefile, `MapInfo` File, flat GML, ....
   # Extract + Projection Transform: convert and reproject data from 2. into simple (flat) feature GML in the EPSG:4258 (ETRS89) projection
   # get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory
   # develop the core schema XSLT transformation by creating the following components (files)

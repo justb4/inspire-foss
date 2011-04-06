@@ -1,4 +1,0 @@
-- single quotes
-- ligplaats/standplaats have polygon
-- naast hoofdadres nevenadres: 0855200000106138
-- POINT in 3D maar Z is soms waarde van Y

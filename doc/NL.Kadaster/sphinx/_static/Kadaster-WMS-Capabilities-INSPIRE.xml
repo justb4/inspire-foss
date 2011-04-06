@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<WMS_Capabilities version="1.3.0" updateSequence="529"
+                  xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0"
+                  xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
+                  xmlns="http://www.opengis.net/wms"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd
+	http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd">
+    <Service>
+        <Name>WMS</Name>
+        <Title>Het Kadaster GEORZ Lab WMS</Title>
+        <Abstract>This is the WMS of the Dutch Kadaster,</Abstract>
+        <KeywordList>
+            <Keyword>WFS</Keyword>
+            <Keyword>WMS</Keyword>
+            <Keyword>GEOSERVER</Keyword>
+        </KeywordList>
+        <OnlineResource xlink:type="simple" xlink:href="http://kademo.nl:80/gs2/inspire/ows"/>
+        <ContactInformation>
+            <ContactPersonPrimary>
+                <ContactPerson>Ebrahim Hemmatnia</ContactPerson>
+                <ContactOrganization>Kadaster</ContactOrganization>
+            </ContactPersonPrimary>
+            <ContactPosition>Consultant Product and Process Innovation</ContactPosition>
+            <ContactAddress>
+                <AddressType>Work</AddressType>
+                <Address>Hofstraat 110</Address>
+                <City>Apeldoorn</City>
+                <StateOrProvince>GLD</StateOrProvince>
+                <PostCode>7311KZ</PostCode>
+                <Country>The Netherlands</Country>
+            </ContactAddress>
+            <ContactVoiceTelephone>+31881832216</ContactVoiceTelephone>
+            <ContactFacsimileTelephone/>
+            <ContactElectronicMailAddress>ebrahim.hemmatnia@kadaster.nl</ContactElectronicMailAddress>
+        </ContactInformation>
+        <Fees>NONE</Fees>
+        <AccessConstraints>NONE</AccessConstraints>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <Format>text/xml</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xlink:type="simple"
+                                            xlink:href="http://kademo.nl:80/gs2/inspire/ows?SERVICE=WMS&amp;"/>
+                        </Get>
+                        <Post>
+                            <OnlineResource xlink:type="simple"
+                                            xlink:href="http://kademo.nl:80/gs2/inspire/ows?SERVICE=WMS&amp;"/>
+                        </Post>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <GetMap>
+                <Format>image/png</Format>
+                <Format>application/atom+xml</Format>
+                <Format>application/pdf</Format>
+                <Format>application/vnd.google-earth.kml+xml</Format>
+                <Format>application/vnd.google-earth.kmz+xml</Format>
+                <Format>image/gif</Format>
+                <Format>image/jpeg</Format>
+                <Format>image/svg+xml</Format>
+                <Format>image/tiff</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xlink:type="simple"
+                                            xlink:href="http://kademo.nl:80/gs2/inspire/ows?SERVICE=WMS&amp;"/>
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetMap>
+            <GetFeatureInfo>
+                <Format>text/plain</Format>
+                <Format>application/vnd.ogc.gml</Format>
+                <Format>text/html</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xlink:type="simple"
+                                            xlink:href="http://kademo.nl:80/gs2/inspire/ows?SERVICE=WMS&amp;"/>
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetFeatureInfo>
+        </Request>
+        <Exception>
+            <Format>XML</Format>
+            <Format>INIMAGE</Format>
+            <Format>BLANK</Format>
+        </Exception>
+        <!-- Specifieke INSPIRE extended capabilities -->
+        <inspire_vs:ExtendedCapabilities>
+            <!-- Voorbeeld van een verwijzing naar het capabilities document van de service-->
+            <!-- Voor scenario 1 uit het Technical Guidance document View services 2.2.1 zou -->
+            <!-- dit het enige element zijn dat je toevoegt aan de capabilities -->
+            <inspire_common:MetadataUrl>
+                <inspire_common:URL>http://www.provinciaalgeoregister.nl/csw-plus/services/CSW.HTTP?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=AW&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full"</inspire_common:URL>
+                <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+            </inspire_common:MetadataUrl>
+            <inspire_common:SupportedLanguages>
+                <inspire_common:DefaultLanguage>
+                    <inspire_common:Language>dut</inspire_common:Language>
+                </inspire_common:DefaultLanguage>
+            </inspire_common:SupportedLanguages>
+            <inspire_common:ResponseLanguage>
+                <inspire_common:Language>dut</inspire_common:Language>
+            </inspire_common:ResponseLanguage>
+        </inspire_vs:ExtendedCapabilities>
+        <Layer>
+            <Title>Het Kadaster GEORZ Lab WMS</Title>
+            <Abstract>This is the WMS of the Dutch Kadaster,</Abstract>
+            <CRS>EPSG:28992</CRS>
+            <CRS>EPSG:3034</CRS>
+            <CRS>EPSG:4258</CRS>
+            <CRS>EPSG:4326</CRS>
+            <CRS>EPSG:900913</CRS>
+            <CRS>CRS:84</CRS>
+            <EX_GeographicBoundingBox>
+                <westBoundLongitude>3.07</westBoundLongitude>
+                <eastBoundLongitude>7.227</eastBoundLongitude>
+                <southBoundLatitude>50.75</southBoundLatitude>
+                <northBoundLatitude>53.752</northBoundLatitude>
+            </EX_GeographicBoundingBox>
+            <Layer queryable="1">
+                <Name>inspire:AD.Address</Name>
+                <Title>AD.Address feature type</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE AD</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>4.33</westBoundLongitude>
+                    <eastBoundLongitude>5.236</eastBoundLongitude>
+                    <southBoundLatitude>51.904</southBoundLatitude>
+                    <northBoundLatitude>52.699</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="51.904" miny="4.33" maxx="52.699" maxy="5.236"/>
+                <Style>
+                    <Name>ad_address</Name>
+                    <Title>INSPIRE Addresses (AD)</Title>
+                    <Abstract>INSPIRE Addresses (AD)</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=AD.Address"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:AU.AdministrativeUnit.Order1</Name>
+                <Title>AU.AdministrativeUnit.Order1 : Country</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>3.07</westBoundLongitude>
+                    <eastBoundLongitude>7.227</eastBoundLongitude>
+                    <southBoundLatitude>50.75</southBoundLatitude>
+                    <northBoundLatitude>53.752</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="50.75" miny="3.07" maxx="53.752" maxy="7.227"/>
+                <Style>
+                    <Name>inspire-au-adminunit-land</Name>
+                    <Title>AU AdminUnit</Title>
+                    <Abstract>Simpele stijl voor AU AdminUnit data.</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=AU.AdministrativeUnit.Order1"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:AU.AdministrativeUnit.Order2</Name>
+                <Title>AU.AdministrativeUnit.Order2 : Provinces</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>3.308</westBoundLongitude>
+                    <eastBoundLongitude>7.227</eastBoundLongitude>
+                    <southBoundLatitude>50.75</southBoundLatitude>
+                    <northBoundLatitude>53.576</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="50.75" miny="3.308" maxx="53.576" maxy="7.227"/>
+                <Style>
+                    <Name>inspire-au-adminunit-provincie</Name>
+                    <Title>AU AdminUnit</Title>
+                    <Abstract>Simpele stijl voor AU AdminUnit data.</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=AU.AdministrativeUnit.Order2"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:AU.AdministrativeUnit.Order3</Name>
+                <Title>AU.AdministrativeUnit.Order1 : Municipalities</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>3.308</westBoundLongitude>
+                    <eastBoundLongitude>7.227</eastBoundLongitude>
+                    <southBoundLatitude>50.75</southBoundLatitude>
+                    <northBoundLatitude>53.576</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="50.75" miny="3.308" maxx="53.576" maxy="7.227"/>
+                <Style>
+                    <Name>inspire-au-adminunit-gemeente</Name>
+                    <Title>AU AdminUnit</Title>
+                    <Abstract>Simpele stijl voor AU AdminUnit data.</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=AU.AdministrativeUnit.Order3"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:CP.CadastralParcel</Name>
+                <Title>CP.CadastralParcel</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.915</westBoundLongitude>
+                    <eastBoundLongitude>7.066</eastBoundLongitude>
+                    <southBoundLatitude>52.204</southBoundLatitude>
+                    <northBoundLatitude>52.303</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.204" miny="6.915" maxx="52.303" maxy="7.066"/>
+                <Style>
+                    <Name>inspire-cp-cadastralparcel</Name>
+                    <Title>CP CadastralParcel</Title>
+                    <Abstract>Simpele stijl voor CP CadastralParcel data.</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=CP.CadastralParcel"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:HY.StandingWater</Name>
+                <Title>HY.StandingWater</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.603</westBoundLongitude>
+                    <eastBoundLongitude>7.079</eastBoundLongitude>
+                    <southBoundLatitude>52.026</southBoundLatitude>
+                    <northBoundLatitude>52.485</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.026" miny="6.603" maxx="52.485" maxy="7.079"/>
+                <Style>
+                    <Name>inspire-hy-waterdeel-vlak</Name>
+                    <Title>Blue lake</Title>
+                    <Abstract>A blue fill, solid black outline style</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HY.StandingWater"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:HY.Watercourse</Name>
+                <Title>HY.Watercourse</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.625</westBoundLongitude>
+                    <eastBoundLongitude>7.08</eastBoundLongitude>
+                    <southBoundLatitude>52.027</southBoundLatitude>
+                    <northBoundLatitude>52.483</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.027" miny="6.625" maxx="52.483" maxy="7.08"/>
+                <Style>
+                    <Name>inspire-hy-waterdeel-lijn</Name>
+                    <Title>Default Styler for streams segments</Title>
+                    <Abstract>Blue lines, 1px wide</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HY.Watercourse"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:TN.RailTransportNetwork.RailwayLink</Name>
+                <Title>TN.RailTransportNetwork.RailwayLink</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.605</westBoundLongitude>
+                    <eastBoundLongitude>7.078</eastBoundLongitude>
+                    <southBoundLatitude>52.126</southBoundLatitude>
+                    <northBoundLatitude>52.49</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.126" miny="6.605" maxx="52.49" maxy="7.078"/>
+                <Style>
+                    <Name>inspire-tn-spoorbaandeel-lijn</Name>
+                    <Title/>
+                    <Abstract/>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=TN.RailTransportNetwork.RailwayLink"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:TN.RoadTransportNetwork.RoadArea</Name>
+                <Title>TN.RoadTransportNetwork.RoadArea</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.618</westBoundLongitude>
+                    <eastBoundLongitude>7.08</eastBoundLongitude>
+                    <southBoundLatitude>52.026</southBoundLatitude>
+                    <northBoundLatitude>52.486</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.026" miny="6.618" maxx="52.486" maxy="7.08"/>
+                <Style>
+                    <Name>inspire-tn-wegdeel-vlak</Name>
+                    <Title/>
+                    <Abstract/>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=TN.RoadTransportNetwork.RoadArea"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:TN.RoadTransportNetwork.RoadLink</Name>
+                <Title>TN.RoadTransportNetwork.RoadLink</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.618</westBoundLongitude>
+                    <eastBoundLongitude>7.08</eastBoundLongitude>
+                    <southBoundLatitude>52.026</southBoundLatitude>
+                    <northBoundLatitude>52.486</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.026" miny="6.618" maxx="52.486" maxy="7.08"/>
+                <Style>
+                    <Name>inspire-tn-wegdeel-lijn</Name>
+                    <Title/>
+                    <Abstract/>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=TN.RoadTransportNetwork.RoadLink"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:cp_parcel</Name>
+                <Title>cp_parcel</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>5.641</westBoundLongitude>
+                    <eastBoundLongitude>6.088</eastBoundLongitude>
+                    <southBoundLatitude>50.75</southBoundLatitude>
+                    <northBoundLatitude>50.892</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="50.75" miny="5.641" maxx="50.892" maxy="6.088"/>
+                <Style>
+                    <Name>cp_parcel</Name>
+                    <Title>CP Parcels</Title>
+                    <Abstract>Simpele stijl voor Parcels data.</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=cp_parcel"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:gn_functioneel_gebied</Name>
+                <Title>gn_functioneel_gebied</Title>
+                <Abstract>GeographicalNames</Abstract>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.633</westBoundLongitude>
+                    <eastBoundLongitude>7.077</eastBoundLongitude>
+                    <southBoundLatitude>52.034</southBoundLatitude>
+                    <northBoundLatitude>52.477</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.034" miny="6.633" maxx="52.477" maxy="7.077"/>
+                <Style>
+                    <Name>inspire-gn-functioneel-gebied</Name>
+                    <Title>Inrichtings elementen Nederland</Title>
+                    <Abstract>Simpele stijl voor Inrichtings elementen Nederland</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gn_functioneel_gebied"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:gn_geografisch_gebied</Name>
+                <Title>gn_geografisch_gebied</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.63</westBoundLongitude>
+                    <eastBoundLongitude>7.076</eastBoundLongitude>
+                    <southBoundLatitude>52.032</southBoundLatitude>
+                    <northBoundLatitude>52.48</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.032" miny="6.63" maxx="52.48" maxy="7.076"/>
+                <Style>
+                    <Name>inspire-gn-geografisch-gebied</Name>
+                    <Title>Geografische gebieden Nederland</Title>
+                    <Abstract>Simpele stijl voor Geografische gebieden Nederland</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gn_geografisch_gebied"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:gn_inrichtings_element</Name>
+                <Title>gn_inrichtings_element</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.627</westBoundLongitude>
+                    <eastBoundLongitude>7.079</eastBoundLongitude>
+                    <southBoundLatitude>52.031</southBoundLatitude>
+                    <northBoundLatitude>52.481</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.031" miny="6.627" maxx="52.481" maxy="7.079"/>
+                <Style>
+                    <Name>inspire-gn-inrichtings-element</Name>
+                    <Title>Inrichtings elementen Nederland</Title>
+                    <Abstract>Simpele stijl voor Inrichtings elementen Nederland</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gn_inrichtings_element"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:gn_wegdeel_punt</Name>
+                <Title>gn_wegdeel_punt</Title>
+                <Abstract/>
+                <KeywordList>
+                    <Keyword>INSPIRE</Keyword>
+                </KeywordList>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.626</westBoundLongitude>
+                    <eastBoundLongitude>7.079</eastBoundLongitude>
+                    <southBoundLatitude>52.029</southBoundLatitude>
+                    <northBoundLatitude>52.481</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.029" miny="6.626" maxx="52.481" maxy="7.079"/>
+                <Style>
+                    <Name>inspire-gn-wegdeel</Name>
+                    <Title>Wegdelen Nederland</Title>
+                    <Abstract>Simpele stijl voor Wegdelen Nederland</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=gn_wegdeel_punt"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:simple_address_nl</Name>
+                <Title>simple_address_nl</Title>
+                <Abstract/>
+                <KeywordList/>
+                <CRS>EPSG:4258</CRS>
+                <CRS>CRS:84</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>4.279</westBoundLongitude>
+                    <eastBoundLongitude>5.596</eastBoundLongitude>
+                    <southBoundLatitude>51.531</southBoundLatitude>
+                    <northBoundLatitude>52.716</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="51.531" miny="4.279" maxx="52.716" maxy="5.596"/>
+                <Style>
+                    <Name>ad_address</Name>
+                    <Title>INSPIRE Addresses (AD)</Title>
+                    <Abstract>INSPIRE Addresses (AD)</Abstract>
+                    <LegendURL width="20" height="20">
+                        <Format>image/png</Format>
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                                        xlink:href="http://kademo.nl:80/gs2/inspire/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=simple_address_nl"/>
+                    </LegendURL>
+                </Style>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:AU.AdministrativeUnit</Name>
+                <Title>inspire:AU.AdministrativeUnit</Title>
+                <Abstract>Layer-Group type layer: inspire:AU.AdministrativeUnit</Abstract>
+                <CRS>EPSG:4258</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>3.0699999999999994</westBoundLongitude>
+                    <eastBoundLongitude>7.227</eastBoundLongitude>
+                    <southBoundLatitude>50.74999999907601</southBoundLatitude>
+                    <northBoundLatitude>53.75199999910091</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="50.75" miny="3.07" maxx="53.752" maxy="7.227"/>
+            </Layer>
+            <Layer queryable="1">
+                <Name>inspire:GN.NamedPlace</Name>
+                <Title>inspire:GN.NamedPlace</Title>
+                <Abstract>Layer-Group type layer: inspire:GN.NamedPlace</Abstract>
+                <CRS>EPSG:4258</CRS>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>6.626</westBoundLongitude>
+                    <eastBoundLongitude>7.078999999999999</eastBoundLongitude>
+                    <southBoundLatitude>52.0289999990854</southBoundLatitude>
+                    <northBoundLatitude>52.48099999908914</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+                <BoundingBox CRS="EPSG:4258" minx="52.029" miny="6.626" maxx="52.481" maxy="7.079"/>
+            </Layer>
+        </Layer>
+    </Capability>
+</WMS_Capabilities>

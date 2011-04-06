@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WMS_Capabilities version="1.3.0"
+	xmlns="http://www.opengis.net/wms" 
+	xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" 
+	xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd">
+	<!-- Voorbeeld van een Capabilities document volgens scenario 2 in het -->
+	<!-- Technical Guidance document View Services versie 3.0 -->
+	<Service>
+		<!-- Vaste waarde WMS voor een View Service -->
+		<Name>WMS</Name>
+		<Title>INSPIRE View service voor Beschermde Gebieden van de gezamenlijke provincies</Title>
+		<Abstract>Deze View service is gebaseerd op de geharmoniseerde provinciale datasets voor Beschermde Gebieden. Onderdeel van deze View service zijn datasets voor Aardkundige Waarden, Ecologische Hoofdstructuur, Provinciale Monumenten, Nationale Landschappen, Stiltegebieden en WAV gebieden</Abstract>
+		<KeywordList>
+			<!-- Verplicht 1 keyword uit Part D.4 uit de INS MD lijst 'Classification of Spatial Data services' -->
+			<!-- Zie element inspire_common:MandatoryKeyword voor een lijst van waarden -->
+			<Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+			<!-- Voorbeeld van Keywords uit een controlled vocabulary -->
+			<Keyword vocabulary="PGR Thesaurus">natuur</Keyword>
+			<Keyword vocabulary="PGR Thesaurus">landschap</Keyword>
+			<!-- Voorbeeld van keywords niet afkomstig uit een controlled vocabulary -->
+			<Keyword>provincie</Keyword>
+			<Keyword>beschermd gebied</Keyword>
+		</KeywordList>
+		<!-- Verwijzing naar het capabilities document van de service -->
+		<!-- Maar het kan ook een verwijzing naar een website, een wsdl 
+			 of een applicatie zijn die de service kan tonen -->
+		<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/services/wms?request=GetCapabilities&amp;service=wms&amp;version=1.3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" />
+		<ContactInformation>
+			<!-- Verantwoordelijke organisatie voor de service -->			
+			<ContactPersonPrimary>
+				<ContactPerson>Functioneel beheerder Provinciaal Georegister</ContactPerson>
+				<ContactOrganization>GBO provincies</ContactOrganization>
+			</ContactPersonPrimary>
+			<!-- Een waarde uit de codelijst CI_RoleCode: -->
+			<!-- resourceProvider, custodian, owner, user, 
+				 distributor, originator, pointOfContact, 
+				 principalInvestigator, processor, publisher, author -->
+			<ContactPosition>pointOfContact</ContactPosition>
+			<ContactElectronicMailAddress>provinciaalgeoregister@gbo-provincies.nl</ContactElectronicMailAddress>
+		</ContactInformation>
+		<!-- Als de service gratis is: no conditions apply -->
+		<!-- Als de niet bekend is of er kosten aan het gebruik verbonden zijn: conditions unknown  -->
+		<Fees>no conditions apply</Fees>
+		<!-- Als er geen gebruiksrestricties zijn: None -->
+		<!-- Anders een waarde uit de codelijst MD_RestrictionCode:  -->
+		<!-- copyright, patent, patentPending, trademark, license, 
+			 intellectualPropertyRights, restricted, otherRestrictions -->
+		<AccessConstraints>None</AccessConstraints>
+		<!-- Maximale afmetingen van het plaatje dat de server bereid is te genereren -->
+		<MaxWidth>2048</MaxWidth>
+		<MaxHeight>2048</MaxHeight>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<Format>text/xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/services/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" />
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/bmp</Format>
+				<Format>image/jpeg</Format>
+				<Format>image/tiff</Format>
+				<Format>image/png</Format>
+				<Format>image/gif</Format>
+				<Format>image/svg+xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/services/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" />
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<Format>text/xml</Format>
+				<Format>text/html</Format>
+				<Format>text/plain</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/services/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" />
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+		</Request>
+		<Exception>
+			<Format>application/vnd.ogc.se_xml</Format>
+			<Format>application/vnd.ogc.se_inimage</Format>
+			<Format>application/vnd.ogc.se_blank</Format>
+			<Format>text/xml</Format>
+			<Format>XML</Format>
+		</Exception>
+		<!-- Specifieke INSPIRE extended capabilities -->
+		<inspire_vs:ExtendedCapabilities>
+			<!-- Voorbeeld van een verwijzing naar een website -->
+			<inspire_common:ResourceLocator>
+				<inspire_common:URL>http://www.provinciaalgeoregister.nl</inspire_common:URL>
+				<inspire_common:MediaType>text/html</inspire_common:MediaType>
+			</inspire_common:ResourceLocator>
+			<!-- Voorbeeld van een verwijzing naar het capabilities document van de service-->
+			<!-- Voor scenario 1 uit het Technical Guidance document View services 3.0 zou -->
+			<!-- dit het enige element zijn dat je toevoegt aan de capabilities -->
+			<inspire_common:ResourceLocator>
+				<inspire_common:URL>http://www.provinciaalgeoregister.nl/services/wms?request=GetCapabilities&amp;service=wms&amp;version=1.3.0</inspire_common:URL>
+				<inspire_common:MediaType>application/vnd.ogc.wms_xml</inspire_common:MediaType>
+			</inspire_common:ResourceLocator>			
+			<!-- Vaste waarde: service -->
+			<inspire_common:ResourceType>service</inspire_common:ResourceType>
+			<inspire_common:TemporalReference>
+				<inspire_common:DateOfCreation>2011-05-01</inspire_common:DateOfCreation>
+				<inspire_common:DateOfLastRevision>2011-05-01</inspire_common:DateOfLastRevision>
+				<inspire_common:DateOfPublication>2011-05-01</inspire_common:DateOfPublication>
+			</inspire_common:TemporalReference>
+			<!-- Voldoet deze service aan de INSPIRE richtlijn -->
+			<inspire_common:Conformity>
+				<inspire_common:Specification xsi:type="inspire_common:citationInspireDirective_dut">
+					<inspire_common:Title>Richtlijn 2007/2/EG van het Europees Parlement en de Raad van 14 maart 2007 tot oprichting van een infrastructuur voor ruimtelijke informatie in de Gemeenschap (Inspire)</inspire_common:Title>
+					<inspire_common:DateOfPublication>2007-04-25</inspire_common:DateOfPublication>
+					<inspire_common:URI>OJ:L:2007:108:SOM:NL:HTML</inspire_common:URI>
+					<inspire_common:ResourceLocator>
+						<inspire_common:URL>http://eur-lex.europa.eu/JOHtml.do?uri=OJ:L:2007:108:SOM:NL:HTML</inspire_common:URL>
+						<inspire_common:MediaType>text/html</inspire_common:MediaType>
+					</inspire_common:ResourceLocator>
+				</inspire_common:Specification>
+				<inspire_common:Degree>notEvaluated</inspire_common:Degree>
+			</inspire_common:Conformity>
+			<!-- Organisatie verantwoordelijk voor de metadata van de service -->
+			<inspire_common:MetadataPointOfContact>
+				<inspire_common:OrganisationName>GBO-provincies</inspire_common:OrganisationName>
+				<inspire_common:EmailAddress>provinciaalgeoregister@gbo-provincies.nl</inspire_common:EmailAddress>
+			</inspire_common:MetadataPointOfContact>
+			<inspire_common:MetadataDate>2011-05-01</inspire_common:MetadataDate>
+			<!-- Vaste waarde: view -->
+			<inspire_common:SpatialDataServiceType>view</inspire_common:SpatialDataServiceType>
+			<!-- Minimaal 1 van de verplichte keywords uit metadata IR Deel 4 -->
+			<inspire_common:MandatoryKeyword>
+				<!-- Klantendienst waarmee een gebruiker één of meer verzamelingen of verslagen kan bekijken. -->
+				<inspire_common:KeywordValue>humanGeographicViewer</inspire_common:KeywordValue>
+			</inspire_common:MandatoryKeyword>
+			<inspire_common:MandatoryKeyword>
+				<!-- Dienst die de klant toegang biedt tot weergaven van geografische gegevens, met name afbeeldingen. -->
+				<inspire_common:KeywordValue>infoMapAccessService</inspire_common:KeywordValue>
+			</inspire_common:MandatoryKeyword>
+			<!-- Verplicht keyword: INSPIRE thema zoals gedefinieerd in de GEMET Thesaurus -->
+			<inspire_common:Keyword xsi:type="inspire_common:inspireTheme_dut">
+				<inspire_common:OriginatingControlledVocabulary>
+					<inspire_common:Title>GEMET - INSPIRE themes</inspire_common:Title>
+					<inspire_common:DateOfPublication>2008-06-01</inspire_common:DateOfPublication>
+				</inspire_common:OriginatingControlledVocabulary>
+				<!-- INSPIRE thema -->
+				<inspire_common:KeywordValue>Beschermde gebieden</inspire_common:KeywordValue>
+			</inspire_common:Keyword>
+			<!-- Tenminste 1 taal moet ondersteund worden -->
+			<inspire_common:SupportedLanguages>
+				<inspire_common:DefaultLanguage>
+					<inspire_common:Language>dut</inspire_common:Language>
+				</inspire_common:DefaultLanguage>
+			</inspire_common:SupportedLanguages>
+			<!-- De default ondersteunde response taal -->
+			<inspire_common:ResponseLanguage>
+				<inspire_common:Language>dut</inspire_common:Language>
+			</inspire_common:ResponseLanguage>
+			<inspire_common:MetadataUrl>
+				<!-- Verwijzing naar het metadata voor service document in een csw catalog service -->
+				<inspire_common:URL>http://www.provinciaalgeoregister.nl/services/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=PSViewService&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</inspire_common:URL>
+				<inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+			</inspire_common:MetadataUrl>
+		</inspire_vs:ExtendedCapabilities>
+		<Layer>
+			<Name>PS.ProtectedSite</Name>
+			<Title>Beschermde gebieden</Title>
+			<Abstract>De laag Beschermde gebieden is gebaseerd op de geharmoniseerde provinciale datasets voor Beschermde Gebieden. Onderdeel van deze View service zijn datasets voor Aardkundige Waarden, Ecologische Hoofdstructuur, Provinciale Monumenten, Nationale Landschappen, Stiltegebieden en WAV gebieden</Abstract>
+			<!-- Verplicht voor WGS 84 buiten Europa -->
+			<CRS>CRS:84</CRS>
+			<!-- Verplicht: WGS 84 Wereld -->
+			<CRS>EPSG:4326</CRS>
+			<!-- Verplicht CRS: ETRS89 Geografisch -->
+			<CRS>EPSG:4258</CRS>
+			<!-- Optioneel: ETRS89-LAEA Lambert Equal Area: ruimtelijke analyse en kaartenschalen tot 1:500.000 -->
+			<CRS>EPSG:3035</CRS>
+			<!-- Optioneel: ETRS89-LCC Lambert Conformal Conic: kaartschalen kleiner dan 1:500.000-->
+			<CRS>EPSG:3034</CRS>
+			<!-- Optioneel: Rijksdriehoekstelsel  -->
+			<CRS>EPSG:28992</CRS>
+			<!-- Optioneel: ETRS89 Transverse Mercator 31N -->
+			<CRS>EPSG:25831</CRS>
+			<!-- Optioneel: ETRS89 Transverse Mercator 32N -->
+			<CRS>EPSG:25832</CRS>
+			<EX_GeographicBoundingBox>
+				<westBoundLongitude>2.99</westBoundLongitude> 
+				<eastBoundLongitude>7.63</eastBoundLongitude> 
+				<southBoundLatitude>50.51</southBoundLatitude> 
+				<northBoundLatitude>53.79</northBoundLatitude> 
+			</EX_GeographicBoundingBox>
+			<BoundingBox CRS="CRS:84" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/>
+			<BoundingBox CRS="EPSG:4326" minx="50.51" miny="2.99" maxx="53.79" maxy="7.63"/>
+			<BoundingBox CRS="EPSG:4258" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/>
+			<BoundingBox CRS="EPSG:3035" minx="3073712" miny="3851511" maxx="3405160" maxy="4138318"/> 
+			<BoundingBox CRS="EPSG:3034" minx="2652344" miny="3532708" maxx="3004189" maxy="3837437"/> 
+			<BoundingBox CRS="EPSG:28992" minx="10000" miny="305000" maxx="280000" maxy="619000"/>
+			<BoundingBox CRS="EPSG:25831" minx="499705" miny="5604132" maxx="805311" maxy="5960224"/> 
+			<BoundingBox CRS="EPSG:25832" minx="86512" miny="5606077" maxx="397932" maxy="5967089" /> 
+			<!-- Codespace om de authority uniek mee te identificeren-->
+			<AuthorityURL name="NL.IPO">
+				<OnlineResource xlink:href="http://www.ipo.nl" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+			</AuthorityURL>
+			<!-- Default INSPIRE style voor beschermde gebieden -->
+			<!-- Grijze vlakken met een 1 pixel zwarte outline -->
+			<Style>
+				<Name>inspire_common:DEFAULT</Name>
+				<Title>Beschermde gebieden</Title>
+				<LegendURL>
+					<Format>image/png</Format>
+					<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/pgr-wms/services?request=GetLegendGraphic&amp;version=1.3.0&amp;width=25&amp;height=25&amp;format=image/png&amp;layer=PS.ProtectedSite&amp;style=inspire_common:DEFAULT" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+				</LegendURL>
+			</Style>
+			<Layer>
+				<!-- Layer op basis van de dataset Aardkundige Waarden -->
+				<Name>PS.ProtectedSite.AW</Name>
+				<Title>Beschermde gebieden: Aardkundige Waarden</Title>
+				<Abstract>De term aardkundige waarden wordt gebruikt als een verzamelnaam voor geomorfologische, geologische, bodemkundige of geohydrologische verschijnselen in het landschap, die een bepaalde waarde vertegenwoordigen. Het gaat daarbij niet alleen om het behoud en de beleefbaarheid van historische verschijnselen. Er wordt ook betekenis gehecht aan actuele processen, die aardkundige waarden opleveren. Dit bestand bevat informatie conform de INSPIRE dataspecificaties voor beschermde gebieden. Raadpleeg voor meer detailinformatie het bronbestand van de desbetreffende provincie. Meer gedetailleerde informatie voor de beschermde gebieden in de afzonderlijke provincies is te vinden in de beschrijving van de provinciale bestanden over dit onderwerp.</Abstract>
+				<KeywordList>
+					<!-- Keyword uit een controlled vocabulary -->
+					<Keyword vocabulary="PGR Thesaurus">Landschap</Keyword>
+				</KeywordList>
+				<CRS>CRS:84</CRS>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:28992</CRS>
+				<CRS>EPSG:25831</CRS>
+				<CRS>EPSG:25832</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>2.99</westBoundLongitude> 
+					<eastBoundLongitude>7.63</eastBoundLongitude> 
+					<southBoundLatitude>50.51</southBoundLatitude> 
+					<northBoundLatitude>53.79</northBoundLatitude> 
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="CRS:84" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/>
+				<BoundingBox CRS="EPSG:4326" minx="50.51" miny="2.99" maxx="53.79" maxy="7.63"/>
+				<BoundingBox CRS="EPSG:4258" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/>
+				<BoundingBox CRS="EPSG:3035" minx="3073712" miny="3851511" maxx="3405160" maxy="4138318"/> 
+				<BoundingBox CRS="EPSG:3034" minx="2652344" miny="3532708" maxx="3004189" maxy="3837437"/> 
+				<BoundingBox CRS="EPSG:28992" minx="10000" miny="305000" maxx="280000" maxy="619000"/>
+				<BoundingBox CRS="EPSG:25831" minx="499705" miny="5604132" maxx="805311" maxy="5960224"/> 
+				<BoundingBox CRS="EPSG:25832" minx="86512" miny="5606077" maxx="397932" maxy="5967089" /> 
+				<!-- Unieke identifier van de dataset waarop deze layer is gebaseerd -->
+				<!-- Combinatie AuthorityURL + Identifier levert unieke identificatie -->
+				<!-- NL.IPO.ca94a0cb-7561-4a10-a7d6-b840e56c33ff -->
+				<Identifier authority="NL.IPO">
+					ca94a0cb-7561-4a10-a7d6-b840e56c33ff
+				</Identifier>
+				<!-- Verwijzing naar metadata voor data in PGR catalog service -->
+				<MetadataURL type="ISO19115:2003 ">
+					<Format>text/xml</Format>
+					<OnlineResource  xlink:href="http://www.provinciaalgeoregister.nl/csw-plus/services/CSW.HTTP?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=f002bfc5-7d87-46b6-819e-8415422b65c9&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"/>
+				</MetadataURL>
+				<!-- Verwijzing naar de onderliggende dataset (FeatureType) in de PGR download service-->
+				<DataURL>
+					<Format>text/xml</Format>
+					<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/pgr-wfs/services?Service=WFS&amp;Request=GetFeature&amp;Version=1.1.0&amp;TypeName=PS.ProtectedSite.AW" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"/>
+				</DataURL>
+				<!-- Specifieke style voor Aardkundige Waarden -->
+    			<Style>
+					<Name>PS.ProtectedSite.AW</Name>
+					<Title>Beschermde gebieden: Aardkundige Waarden</Title>
+					<LegendURL width="100" height="40">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/pgr-wms/services?request=GetLegendGraphic&amp;version=1.3.0&amp;width=25&amp;height=25&amp;format=image/png&amp;layer=PS.ProtectedSite.AardkundigeWaarden&amp;style=PS.ProtectedSite.AardkundigeWaarden" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+			<Layer>
+				<!-- Layer op basis van de dataset EHS -->
+				<Name>PS.ProtectedSite.EHS</Name>
+				<Title>Beschermde gebieden: Ecologische Hoofdstructuur</Title>
+				<Abstract>De EHS is een netwerk van gebieden in Nederland waar de natuur voorrang heeft. Het netwerk helpt voorkomen dat planten en dieren in geïsoleerde gebieden uitsterven en dat natuurgebieden hun waarde verliezen. De EHS kan worden gezien als de ruggengraat van de Nederlandse natuur. Dit bestand bevat informatie conform de INSPIRE dataspecificaties voor beschermde gebieden. Raadpleeg voor meer detailinformatie het bronbestand van de desbetreffende provincie. Meer gedetailleerde informatie voor de beschermde gebieden in de afzonderlijke provincies is te vinden in de beschrijving van de provinciale bestanden over dit onderwerp.</Abstract>
+				<KeywordList>
+					<!-- Keyword niet afkomstig uit een controlled vocabulary -->
+					<Keyword>Natuur</Keyword>
+				</KeywordList>
+				<CRS>CRS:84</CRS>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:28992</CRS>
+				<CRS>EPSG:25831</CRS>
+				<CRS>EPSG:25832</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>2.99</westBoundLongitude> 
+					<eastBoundLongitude>7.63</eastBoundLongitude> 
+					<southBoundLatitude>50.51</southBoundLatitude> 
+					<northBoundLatitude>53.79</northBoundLatitude> 
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="CRS:84" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/>
+				<BoundingBox CRS="EPSG:4326" minx="50.51" miny="2.99" maxx="53.79" maxy="7.63"/>
+				<BoundingBox CRS="EPSG:4258" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/>
+				<BoundingBox CRS="EPSG:3035" minx="3073712" miny="3851511" maxx="3405160" maxy="4138318"/> 
+				<BoundingBox CRS="EPSG:3034" minx="2652344" miny="3532708" maxx="3004189" maxy="3837437"/> 
+				<BoundingBox CRS="EPSG:28992" minx="10000" miny="305000" maxx="280000" maxy="619000"/>
+				<BoundingBox CRS="EPSG:25831" minx="499705" miny="5604132" maxx="805311" maxy="5960224"/> 
+				<BoundingBox CRS="EPSG:25832" minx="86512" miny="5606077" maxx="397932" maxy="5967089" /> 
+				<!-- Unieke identifier van de dataset waarop deze layer is gebaseerd -->
+				<!-- Combinatie AutorityURL + Identifier levert unieke identificatie -->
+				<!-- NL.IPO.b4c63e7c-b73c-451a-8071-dbc9f28f0148 -->
+				<Identifier authority="NL.IPO">
+					b4c63e7c-b73c-451a-8071-dbc9f28f0148
+				</Identifier>
+				<!-- Verwijzing naar de metadata voor data voor EHS in de PGR catalog service -->
+				<MetadataURL type="ISO19115:2003 ">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/csw-plus/services/CSW.HTTP?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=c7d8d77b-8c47-4309-8c58-9b12b086407f&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" />
+				</MetadataURL>
+				<!-- Verwijzing naar de onderliggende dataset (download locatie voor een gezipte GML) -->
+				<DataURL>
+					<Format>application/zip</Format>
+					<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/downloads/NL.IPO.PS.ProtectedSite.EHS.zip" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"/>
+				</DataURL>
+				<!-- Specifieke style voor EHS -->
+				<Style>
+					<Name>PS.ProtectedSite.EHS</Name>
+					<Title>Beschermde gebieden: Ecologische Hoofdstructuur</Title>
+					<LegendURL width="100" height="40">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://www.provinciaalgeoregister.nl/pgr-wms/services?request=GetLegendGraphic&amp;version=1.3.0&amp;width=25&amp;height=25&amp;format=image/png&amp;layer=PS.ProtectedSite.EHS&amp;style=PS.ProtectedSite.EHS" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+			</Layer>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMS_Capabilities>

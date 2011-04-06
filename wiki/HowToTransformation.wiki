@@ -13,7 +13,8 @@ The ETL is tightly integrated with the provision of download and view network se
 WMS. These network services are not part of this `HowTo`.
 
 = The ETL Chain =
-The image below shows the main ETL chain.
+The image below shows the main ETL chain.Although this image shows some data specific to the
+Dutch Kadaster, the overall process is reusable and will be described below.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-chain1.png]
 

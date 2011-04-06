@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" xmlns:deegreewfs="http://www.deegree.org/wfs" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified" targetNamespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0" version="3.0">
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="../../../../schemas/gml/3.1.1/base/feature.xsd"/>
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="../../../../schemas/gml/3.1.1/base/geometryAggregates.xsd"/>
+	<!--XML Schema document, modified Inspire AD informative  GML 3.1.1 applicationschema -->
+
+	<xsd:element name="CadastralParcel" substitutionGroup="gml:_Feature" type="CP:CadastralParcelType">
+
+	</xsd:element>
+	<xsd:complexType name="CadastralParcelType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+
+				<xsd:sequence>
+					<element name="geometry" type="gml:GeometryPropertyType">
+						
+					</element>
+					<element name="inspireId" type="gml:FeaturePropertyType">
+
+					</element>
+					<element name="label" type="string">
+
+					</element>
+					<element name="nationalCadastralReference" type="string">
+
+					</element>
+
+
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:element name="Identifier" substitutionGroup="gml:_Feature" type="CP:IdentifierType">
+
+	</xsd:element>
+
+	<xsd:complexType name="IdentifierType">
+
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element name="localId" type="xsd:string">
+
+					</xsd:element>
+					<xsd:element name="namespace" type="xsd:string">
+
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

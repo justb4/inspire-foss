@@ -1,8 +1,0 @@
-<OGRVRTDataSource>
-    <OGRVRTLayer name="acn-test">
-        <SrcDataSource>acn-test.csv</SrcDataSource>
-        <GeometryType>wkbPoint</GeometryType>
-        <LayerSRS>EPSG:28992</LayerSRS>
-        <GeometryField encoding="PointFromColumns" x="X" y="Y"/>
-    </OGRVRTLayer>
-</OGRVRTDataSource>

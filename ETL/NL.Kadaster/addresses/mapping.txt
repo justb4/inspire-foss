@@ -1,0 +1,10 @@
+verblijfsobject
+  gerelateerdeAdressen/hoofdadres/id --> ad_address(id)
+  verblijfsobjectGeometrie --> ad_address(position)
+
+nummeraanduiding
+  identificatie  --> ad_locator(id,ad_address_id), ad_locator_designator(ad_locator_id)
+  huisnummer --> ad_locator (level='unitLevel') ad_locator_designator (type=2,value)
+  postcode --> ad_postal(id,postcode), ad_component(), gn_name/gn_spelling
+  geldigheid --> ad_address(validFrom, validTo)
+  

@@ -1,9 +1,0 @@
-1. 	ExMLargePhysicalWaters.xsd  missing NS for sr (SeaRegions)
-
-added:
-    xmlns:sr="urn:x-inspire:specification:gmlas:SeaRegions:0.0"
-
-   <!-- Just van den Broecke - added SeaRegions.xsd NS import to fix error:
-	UndeclaredPrefix: Cannot resolve 'sr:OceanRegion' as a QName: the prefix 'sr' is not declared.'
-	-->
-  <import namespace="urn:x-inspire:specification:gmlas:SeaRegions:0.0" schemaLocation="SeaRegions.xsd"/>

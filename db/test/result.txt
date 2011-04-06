@@ -1,0 +1,313 @@
+drop database if exists inspire;
+DROP DATABASE
+drop user if exists inspire;
+DROP ROLE
+WARNING: password file "pgpass.conf" has world or group read access; permission should be u=rw (0600)
+drop database if exists inspire;
+psql:create-database.sql:1: NOTICE:  database "inspire" does not exist, skipping
+DROP DATABASE
+drop user if exists inspire;
+psql:create-database.sql:2: NOTICE:  role "inspire" does not exist, skipping
+DROP ROLE
+create user inspire with password 'inspire' createdb;
+CREATE ROLE
+create database :db_name with owner inspire template postgis;
+CREATE DATABASE
+\connect :db_name
+WARNING: password file "pgpass.conf" has world or group read access; permission should be u=rw (0600)
+You are now connected to database "inspire".
+alter schema public owner to inspire;
+ALTER SCHEMA
+alter table geometry_columns owner to inspire;
+ALTER TABLE
+alter table spatial_ref_sys owner to inspire;
+ALTER TABLE
+WARNING: password file "pgpass.conf" has world or group read access; permission should be u=rw (0600)
+DROP TABLE IF EXISTS gn_spelling;
+psql:create-tables.sql:1: NOTICE:  table "gn_spelling" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS gn_name;
+psql:create-tables.sql:2: NOTICE:  table "gn_name" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_component;
+psql:create-tables.sql:3: NOTICE:  table "ad_component" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_thoroughfare;
+psql:create-tables.sql:4: NOTICE:  table "ad_thoroughfare" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_postal;
+psql:create-tables.sql:5: NOTICE:  table "ad_postal" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_admin_unit;
+psql:create-tables.sql:6: NOTICE:  table "ad_admin_unit" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_locator_designator;
+psql:create-tables.sql:7: NOTICE:  table "ad_locator_designator" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_locator;
+psql:create-tables.sql:8: NOTICE:  table "ad_locator" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS ad_address;
+psql:create-tables.sql:9: NOTICE:  table "ad_address" does not exist, skipping
+DROP TABLE
+DROP TABLE IF EXISTS cp_parcel;
+psql:create-tables.sql:10: NOTICE:  table "cp_parcel" does not exist, skipping
+DROP TABLE
+
+-- Table: gn_name
+
+create table gn_name (
+  id text primary key,
+  spelling text,
+  language char(3), -- ISO 639-2:2007?
+  native_value text,
+  status text,
+  source_of_name text
+);
+psql:create-tables.sql:21: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "gn_name_pkey" for table "gn_name"
+CREATE TABLE
+
+-- ALTER TABLE gn_name ADD CONSTRAINT gn_name_named_place_fkey FOREIGN KEY (named_place) REFERENCES named_place (named_place_id) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ -- Table: gn_spelling
+ create table gn_spelling (
+    id text primary key,
+    gn_name_id text references gn_name(id) not null,
+    text text,
+    script text
+ );
+psql:create-tables.sql:31: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "gn_spelling_pkey" for table "gn_spelling"
+CREATE TABLE
+
+ -- ALTER TABLE gn_spelling ADD CONSTRAINT gn_spelling_gn_name_fkey FOREIGN KEY (gn_name_id) REFERENCES gn_name (id) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION;
+ CREATE INDEX gn_spelling_gn_name_id_idx ON gn_spelling USING btree (gn_name_id);
+CREATE INDEX
+
+-- Table: ad_address
+
+CREATE TABLE ad_address
+(
+  id text primary key,
+  valid_from timestamp with time zone not null,
+  valid_to timestamp with time zone
+);
+psql:create-tables.sql:43: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_address_pkey" for table "ad_address"
+CREATE TABLE
+
+select AddGeometryColumn('','ad_address','position',4258,'POINT',2);
+                   addgeometrycolumn                    
+--------------------------------------------------------
+ public.ad_address.position SRID:4258 TYPE:POINT DIMS:2
+  
+(1 row)
+
+alter table ad_address alter column position set not null;
+ALTER TABLE
+create index position_sidx on ad_address using gist (position);
+CREATE INDEX
+
+-- Table: ad_admin_unit
+
+CREATE TABLE ad_admin_unit
+(
+  id text primary key,
+  gn_name_id text references gn_name(id),
+  name text,
+  level integer
+);
+psql:create-tables.sql:57: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_admin_unit_pkey" for table "ad_admin_unit"
+CREATE TABLE
+
+-- Table: ad_thoroughfare
+
+CREATE TABLE ad_thoroughfare
+(
+  id text primary key,
+  ad_admin_unit_id text references ad_admin_unit(id),
+  gn_name_id text references gn_name(id),
+  name text
+);
+psql:create-tables.sql:67: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_thoroughfare_pkey" for table "ad_thoroughfare"
+CREATE TABLE
+
+-- Table: ad_postal
+
+CREATE TABLE ad_postal
+(
+  id text primary key,
+  gn_name_id text references gn_name(id),
+  post_name text,
+  post_code text
+);
+psql:create-tables.sql:77: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_postal_pkey" for table "ad_postal"
+CREATE TABLE
+
+
+
+-- Table: ad_component
+
+CREATE sequence component_id_seq;
+CREATE SEQUENCE
+
+CREATE TABLE ad_component
+(
+  id integer primary key default nextval('component_id_seq'),
+  ad_address_id text references ad_address(id) not null,
+  ad_admin_unit_id text references ad_admin_unit(id),
+  ad_postal_id text references ad_postal(id),
+  ad_thoroughfare_id text references ad_thoroughfare(id)
+);
+psql:create-tables.sql:92: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_component_pkey" for table "ad_component"
+CREATE TABLE
+
+
+alter sequence component_id_seq owned by ad_component.id;
+ALTER SEQUENCE
+create index component_ad_address_id_idx on ad_component (ad_address_id);
+CREATE INDEX
+create index component_admunitname_idx on ad_component (ad_admin_unit_id);
+CREATE INDEX
+create index component_postal_idx on ad_component (ad_postal_id);
+CREATE INDEX
+create index component_tf_idx on ad_component (ad_thoroughfare_id);
+CREATE INDEX
+
+-- Table: ad_locator
+CREATE TABLE ad_locator
+(
+  id text primary key,
+  ad_address_id text references ad_address(id) not null,
+  level text not null,
+  name text
+);
+psql:create-tables.sql:108: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_locator_pkey" for table "ad_locator"
+CREATE TABLE
+
+create index ad_locator_ad_address_id_idx on ad_locator(ad_address_id);
+CREATE INDEX
+
+-- Table: ad_locator_designator
+CREATE sequence ad_locator_designator_id_seq;
+CREATE SEQUENCE
+
+CREATE TABLE ad_locator_designator
+(
+  id integer primary key default nextval('ad_locator_designator_id_seq'),
+  ad_locator_id text references ad_locator(id),
+  type integer,
+  value text
+);
+psql:create-tables.sql:121: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ad_locator_designator_pkey" for table "ad_locator_designator"
+CREATE TABLE
+
+create index locator_designator_idx on ad_locator_designator(ad_locator_id);
+CREATE INDEX
+alter sequence ad_locator_designator_id_seq owned by ad_locator_designator.id;
+ALTER SEQUENCE
+
+
+-- Table: cp_parcel
+
+CREATE TABLE cp_parcel
+(
+  id text primary key,
+  label text,
+  national_ref text
+);
+psql:create-tables.sql:134: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "cp_parcel_pkey" for table "cp_parcel"
+CREATE TABLE
+
+select AddGeometryColumn('','cp_parcel','geometry',4258,'MULTIPOLYGON',2);
+                      addgeometrycolumn                       
+--------------------------------------------------------------
+ public.cp_parcel.geometry SRID:4258 TYPE:MULTIPOLYGON DIMS:2
+  
+(1 row)
+
+alter table cp_parcel alter column geometry set not null;
+ALTER TABLE
+create index geometry on cp_parcel using gist (geometry);
+CREATE INDEX
+
+ALTER TABLE ad_address OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE ad_thoroughfare OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE ad_postal OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE ad_admin_unit OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE ad_component OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE ad_locator OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE ad_locator_designator OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE gn_name OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE gn_spelling OWNER TO inspire;
+ALTER TABLE
+ALTER TABLE cp_parcel OWNER TO inspire;
+ALTER TABLE
+/Users/just/project/customers/kadaster/svn/project/inspire/postgis/test
+DELETE FROM ad_address;
+DELETE 0
+DELETE FROM ad_admin_unit;
+DELETE 0
+DELETE FROM ad_postal;
+DELETE 0
+DELETE FROM ad_thoroughfare;
+DELETE 0
+DELETE FROM ad_locator;
+DELETE 0
+DELETE FROM ad_locator_designator;
+DELETE 0
+DELETE FROM ad_component;
+DELETE 0
+DELETE FROM gn_spelling;
+DELETE 0
+DELETE FROM gn_name;
+DELETE 0
+INSERT INTO gn_name (id, language, native_value) VALUES ('1181','nld', 'Amstelveen') ;
+INSERT 0 1
+INSERT INTO gn_name (id, language, native_value) VALUES ('nl','nld', 'Nederland') ;
+INSERT 0 1
+INSERT INTO gn_name (id, language, native_value) VALUES ('1181pl','nld', 'GN:1181PL') ;
+INSERT 0 1
+INSERT INTO gn_name (id, language, native_value) VALUES ('0855300000002367','nld', 'GN:van der Hoochlaan') ;
+INSERT 0 1
+INSERT INTO gn_spelling (id, gn_name_id, text) VALUES ('1', '1181', 'Amstelveen') ;
+INSERT 0 1
+INSERT INTO gn_spelling (id, gn_name_id, text) VALUES ('2', 'nl', 'Nederland') ;
+INSERT 0 1
+INSERT INTO gn_spelling (id, gn_name_id, text) VALUES ('3', '1181pl', '1181PL') ;
+INSERT 0 1
+INSERT INTO gn_spelling (id, gn_name_id, text) VALUES ('4', '0855300000002367', 'van der Hoochlaan') ;
+INSERT 0 1
+--INSERT INTO ad_address (id,valid_from,position) VALUES ('0532010000000001','2004-10-19 10:23:54+02', ST_GeomFromEWKT('SRID=4258;POINT(4.921875 52.558594)') );
+INSERT INTO ad_address (id,valid_from,position) VALUES ('0532010000000001','2004-10-19 10:23:54+02', ST_Transform(ST_GeomFromEWKT('SRID=28992;POINT(30000 300000)'), 4258) );
+INSERT 0 1
+-- INSERT INTO ad_address (valid_from,position) VALUES ('2005-08-20 12:35:56+02', ST_GeomFromEWKT('SRID=4258;POINT(4.875183 52.294922)') );
+INSERT INTO ad_admin_unit (id,gn_name_id, name,level) VALUES ('1181','1181', 'Amstelveen', 2) ;
+INSERT 0 1
+INSERT INTO ad_admin_unit (id,gn_name_id, name,level) VALUES ('nl', 'nl', 'Nederland', 1) ;
+INSERT 0 1
+INSERT INTO ad_postal (id,gn_name_id, post_name,post_code) VALUES ('1181pl', '1181pl', 'post_name 1181PL', '1181PL') ;
+INSERT 0 1
+INSERT INTO ad_thoroughfare (id,gn_name_id, ad_admin_unit_id,name) VALUES ('0855300000002367','0855300000002367', '1181', 'van der Hoochlaan') ;
+INSERT 0 1
+INSERT INTO ad_component (ad_address_id,ad_admin_unit_id,ad_postal_id,ad_thoroughfare_id) VALUES ('0532010000000001','1181','1181pl','0855300000002367') ;
+INSERT 0 1
+INSERT INTO ad_component (ad_address_id,ad_admin_unit_id) VALUES ('0532010000000001','nl') ;
+INSERT 0 1
+INSERT INTO ad_locator (id,ad_address_id,level) VALUES ('0532010000000001','0532010000000001','unitLevel') ;
+INSERT 0 1
+INSERT INTO ad_locator_designator (ad_locator_id,type,value) VALUES ('0532010000000001',2,'3') ;
+INSERT 0 1
+INSERT INTO ad_locator_designator (ad_locator_id,type,value) VALUES ('0532010000000001',3,'hs') ;
+INSERT 0 1
+DELETE FROM cp_parcel;
+DELETE 0
+INSERT INTO cp_parcel (id, geometry, label, national_ref) VALUES ('12345',
+   ST_Transform(ST_GeomFromEWKT('SRID=28992;MULTIPOLYGON(((30000 300000,31000 310000,32000 310000,31000 300000,30000 300000)))'), 4258), 'label1', 'natref1' );
+INSERT 0 1

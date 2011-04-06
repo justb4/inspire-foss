@@ -1,1 +1,0 @@
-http://inspire.kademo.nl/deegree3/services?request=GetFeature&version=1.1.0&service=WFS&typeName=GN:NamedPlace&namespace=xmlns%28xmlns:GN=urn:x-inspire:specification:gmlas:GeographicalNames:3.0%29&maxFeatures=10&outputFormat=text/xml;%20subtype=gml/3.2.1

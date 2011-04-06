@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2010  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<wfs:FeatureCollection xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+					   xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
+					   xmlns:app="http://www.deegree.org/app" xmlns:xlink="http://www.w3.org/1999/xlink"
+					   xmlns:wfs="http://www.opengis.net/wfs" xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
+					   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml"
+					   xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
+					   xsi:schemaLocation="urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.statkart.no/schemas/Inspire-copy-30/XSD/Addresses.xsd http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd"
+					   numberOfFeatures="4">
+	<gml:boundedBy>
+		<gml:Envelope srsName="EPSG:4258">
+			<gml:lowerCorner>5.236493457504328 52.69877221418884</gml:lowerCorner>
+			<gml:upperCorner>5.236493457504328 52.69877221418884</gml:upperCorner>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<gml:featureMember>
+		<AD:Address gml:id="NL.KAD.BAG.0532200000003026">
+			<AD:inspireId>
+				<base:Identifier>
+					<base:localId>0532200000003026</base:localId>
+					<base:namespace>NL.KAD.BAG</base:namespace>
+
+				</base:Identifier>
+			</AD:inspireId>
+			<AD:position>
+				<AD:GeographicPosition>
+					<AD:geometry>
+						<gml:Point gml:id="NL.KAD.BAG.0532200000003026_P">
+							<gml:pos>5.236493457504328 52.69877221418884</gml:pos>
+						</gml:Point>
+					</AD:geometry>
+					<AD:specification>entrance</AD:specification>
+					<AD:method>byOtherParty</AD:method>
+					<AD:default>true</AD:default>
+				</AD:GeographicPosition>
+
+			</AD:position>
+			<AD:locator>
+				<AD:AddressLocator>
+					<AD:designator>
+						<AD:LocatorDesignator>
+							<AD:designator>21</AD:designator>
+							<AD:type>2</AD:type>
+						</AD:LocatorDesignator>
+					</AD:designator>
+					<AD:level>unitLevel</AD:level>
+				</AD:AddressLocator>
+			</AD:locator>
+			<AD:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+
+			<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+		</AD:Address>
+	</gml:featureMember>
+	<gml:featureMember>
+		<AD:ThoroughfareName gml:id="NL.KAD.TN.0532300000000074">
+			<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:name>
+				<GN:GeographicalName>
+					<GN:language>nld</GN:language>
+					<GN:nativeness>Endonym</GN:nativeness>
+					<GN:nameStatus>Official</GN:nameStatus>
+
+					<GN:sourceOfName>Het Kadaster, Nederland</GN:sourceOfName>
+					<GN:pronunciation>
+						<GN:PronunciationOfName/>
+					</GN:pronunciation>
+					<GN:spelling>
+						<GN:SpellingOfName>
+							<GN:text>Hoofdstraat</GN:text>
+							<GN:script>Latn</GN:script>
+						</GN:SpellingOfName>
+					</GN:spelling>
+				</GN:GeographicalName>
+			</AD:name>
+		</AD:ThoroughfareName>
+	</gml:featureMember>
+
+	<gml:featureMember/>
+	<gml:featureMember>
+		<AD:PostalDescriptor gml:id="NL.KAD.PD.1611AB">
+			<AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:status/>
+			<AD:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+			<AD:postCode>1611AB</AD:postCode>
+		</AD:PostalDescriptor>
+	</gml:featureMember>
+</wfs:FeatureCollection>

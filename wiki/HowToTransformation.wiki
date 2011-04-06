@@ -10,8 +10,13 @@ some of the existing transformation resources present within the project.
 In the remainder of this document the term "ETL" will be used.
 
 = Background Reading =
+
+This section contains references to the main background knowledge that helps to
+conduct the ETL.
+
+== ETL Design and Tools ==
 In order to grasp the steps that follow in upcoming sections we advise to
-first read about the concepts and design underpinning the ETL.
+first read about the concepts, design and technologies underpinning the ETL.
 
 The main document (HTML and PDF) to start with is [http://inspire.kademo.nl/doc]. Although this document has references to data  specific to the
 [http://www.kadaster.nl The Dutch Kadaster] it has general applicability. In particular
@@ -21,8 +26,15 @@ information on the how and why of the ETL. This document also provides some
 specific information on the [http://inspire.kademo.nl/doc/implementation.html ETL Implementation]
 where actual code is even directly included within the document.
 
-All code related to ETL resides in the Subversion repository. All code can be browsed
-online via https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl .
+All code for existing ETL can be browsed
+online via the [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl ETL folder within the Subversion repository].
+As you may have noticed the directory layout under the `etl` folder is organized by
+`<Country>.<Data Provider>/<INSPIRE Theme>`, for example `NL.RWS/TransportNetworks`. Directly
+under `etl` is a directory
+called [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2Fshared shared] that contains shared ETL code for multiple data providers and INSPIRE Themes.
+Not all data providers follow this convention yet. Best is to look under
+[https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.Kadaster NL.Kadaster] and [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS NL.RWS].
+
 
 Further background knowledge that helps in understanding the ETL implementation deals with the technologies
 that are used:
@@ -31,5 +43,26 @@ that are used:
     an entire suite of libraries/tools, only a single command-line tool is used: [http://www.gdal.org/ogr2ogr.html ogr2ogr].
   * [http://en.wikipedia.org/wiki/XSLT XSLT] is used for model/schema transformation. To about XSLT, the best source
     to start is [http://www.w3schools.com/xsl the XSLT tutorial at W3Schools.com].
+  * The ETL chain and the invokation of the tools like `xsltproc` and `ogr2ogr` is all "glued" together
+    using Unix/Linux shell scripts. To learn the [http://steve-parker.org/sh/sh.shtml Steve's Bourne / Bash shell scripting tutorial] is a good
+    starting point.
+
+== Your Data and INSPIRE ==
+Whatever tools you will use to transform your data to INSPIRE, you have to be familiar
+with the formats and schema's of both your data and the related INSPIRE data.
+
+For INSPIRE data models you need to be familiar with the following:
+
+  * XML Schemas Definition Language (XSD)
+  * GML (version 3.2.1) Schemas
+  * ISO Application Schemas
+  * The related INSPIRE Schema's (XSDs) for your target Theme(s)
+
+All applicable XSD files have been added to the project and [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fschemas can be browsed]
+but the easiest is to use an XML editor or IDE like IntelliJ to be able to navigate the schema files.
+
+Last but not least you need to have a specification of your own data.
+
+
 
 

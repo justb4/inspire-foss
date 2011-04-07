@@ -13,10 +13,13 @@ The ETL is tightly integrated with the provision of download and view network se
 WMS. These network services are not part of this `HowTo`.
 
 = The ETL Chain =
-The image below shows the main ETL chain. Although this image shows some data specific to the
-Dutch Kadaster (Oracle and `MapInfo`), the overall process remains identical and will be expanded below.
+The image below shows the core ETL chain. Although this image shows some data specific to the
+Dutch Kadaster (Oracle and `MapInfo`), the overall processing steps remains identical and will be expanded below.
+The circles depict processing steps, the rectangles intermediate results (files). The arrows denote the flow of data.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-chain1.png]
+
+Note: in some cases, as will be described below, the `export` and 'OGR` processing steps may be bundled together into a single processing step.
 
 = Background Reading =
 

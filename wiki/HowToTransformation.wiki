@@ -125,20 +125,106 @@ and the following (hierarchy of) Application Schema XSDs
 
 Warning: getting through the PDF and the related XSD(s) is a tough read !
 
-
+The outcome of this step can take any form, graphically. An often used template is that of an "Excel Mapping Table".
+An example (Excel+PDF)
+for NWB to `RoadTransportNetwork` [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS%2FTransportNetworks%2Fdoc can be found in Subversion].
 
 == Step 2 - Flatten ==
+Convert your source DB data into any simple/flat feature format: CSV, ESRI Shapefile, `MapInfo` File, flat GML.
+
+Often the source dataset resides in a production database such as Oracle Spatial or PostgreSQL/PostGIS and
+direct access for ETL is not possible.
+
+This step beholds extracting data from that production environment and making this available. Also
+it is best to start with a small but representative geographic area from the entire country.
+
+For NWB this step had already be performed, resulting in an extract for a small area north of the city
+of Amsterdam. The format in which this data was delivered is ESRI Shapefile. Basically the NWB
+is a single table (.shp file) with coordinates in the Dutch RD projection (EPSG:28992).
+
+Note: if you are in the workshop using the InspireFossBox, you will find the NWB Shapefile in the directory
+`inspire/data/NWB` under your home directory.
+
 == Step 3 - Make GML ==
+Convert and reproject data from 2. into simple (flat) feature GML in the EPSG:4258 (ETRS89) projection.
+
+The purpose of this step is multifold:
+
+  * reproject data from the source projection to an INSPIRE projection
+  * make your data readable as GML
+  * provide input for Step 4 (extract test samples)
+
+This step is thus partly an Extract and partly a Transform (coordinate transform) within the ETL chain.
+
+For NWB this step is performend using the shell script
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/bin/tn-extract.sh tn-extract.sh].
+The heart of this script is the line:
+
+{{{
+$TO_GML_SCRIPT -t MULTILINESTRING nwb_wegvakken.shp transformed/nwb_wegvakken.gml
+}}}
+
+`$TO_GML_SCRIPT` refers to the script [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/bin/to-gml.sh to-gml.sh]
+which converts any flat file format like ERSI Shapefile or `MapInfo` to flat GML. The heart
+of `to-gml.sh` is the GDAL `ogr2ogr` command:
+
+{{{
+   ogr2ogr -nlt $geotype -t_srs "$proj4258" -s_srs "$proj28992" -f "GML" $2 $1
+}}}
+
+where `$geotype` is `MULTILINESTRING` and  `$2` is `transformed/nwb_wegvakken.gml` and
+`$1` is the input file `nwb_wegvakken.shp`.
+
+Note: if you are in the workshop using the InspireFossBox, you will find the GML converted from NWB Shapefile in the directory
+`inspire/data/NWB/transformed` under your home directory.
+
+In some cases where you have direct access to the source database Steps 2+3 could be merged together
+using a single `ogr2ogr` command, as GDAL/OGR also can handle databases such as Oracle and PostGIS as input.
+
 == Step 4 - Test Samples ==
+gGet some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory.
 == Step 5 - XSLT Develop ==
-=== Step 5a - XSLT - callable templates ===
-=== Step 5b - XSLT - extraction ===
+Develop the core schema XSLT transformation by creating the following components (files).
+
+=== Step 5a - XSLT - Callable templates ===
+Here we will develop/reuse
+generic XSLT Callable Templates for the target feature(s) generation
+within [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2Fshared the shared ETL directory].
+
+=== Step 5b - XSLT - Extraction ===
+Here we will write an XSLT that mainly
+will extract attributes from the source GML (see step 4.) and calling the XSLT callable templates
+from step 5a.
+
 === Step 5c - XSLT - GML container ===
+Here we will write an XSLT to generate
+what is called a "spatial dataset GML container". This is mainly
+the outer XML tags/attributes to hold all transformed features.
+
+INSPIRE has defined a `SpatialDataset` as a container within
+[https://code.google.com/p/inspire-foss/source/browse/trunk/schemas/inspire/v3.0.1/BaseTypes.xsd BaseTypes.xsd].
+Another container (not implemented here) that can be used could be a WFS-T transaction.
+
 === Step 5d - XSLT shell script ===
+here we develop the shell script to invoke the transformation described here in Steps 5a-5c.
+
 == Step 6 - Validation ==
+This step is mainly a shell script to invoke the standard Validator present in the project.
+In practice Step 5 and Step 6 are used in an iterative fashion: develop some XSLT, generate INSPIRE GML, validate etc.
+
 == Step 7 - Load ==
+This step is mainly a shell script to invoke the standard deegree FSLoader present in the project.
+The advantage of FSLoader is that the deegree server does not need to be running.
+
+Note that if you chose to use a WFS-T GML container in step 5c you can also use an
+HTTP tool like `curl`.
+
 == Step 8 - Full ETL ==
+Here we invoke the ETL on the entire source dataset.
+
 == Step 9 - WFS/WMS test ==
+This step is optional but it is always nice to see something.
+
 
 
 

@@ -146,7 +146,7 @@ For NWB this step had already be performed, resulting in an extract for a small 
 of Amsterdam. The format in which this data was delivered is ESRI Shapefile. Basically the NWB
 is a single table (.shp file) with coordinates in the Dutch RD projection (EPSG:28992).
 
-Note: if you are in the workshop using the InspireFossBox, you will find the NWB Shapefile in the directory
+Note: if you are in the workshop using the InspireFossBoxSetup, you will find the NWB Shapefile in the directory
 `inspire/data/NWB` under your home directory.
 
 == Step 3 - Make GML ==
@@ -179,7 +179,7 @@ of `to-gml.sh` is the GDAL `ogr2ogr` command:
 where `$geotype` is `MULTILINESTRING` and  `$2` is `transformed/nwb_wegvakken.gml` and
 `$1` is the input file `nwb_wegvakken.shp`.
 
-Note: if you are in the workshop using the InspireFossBox, you will find the GML converted from NWB Shapefile in the directory
+Note: if you are in the workshop using the InspireFossBoxSetup, you will find the GML converted from NWB Shapefile in the directory
 `inspire/data/NWB/transformed` under your home directory.
 
 In some cases where you have direct access to the source database Steps 2+3 could be merged together

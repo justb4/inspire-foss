@@ -129,6 +129,10 @@ The outcome of this step can take any form, graphically. An often used template 
 An example (Excel+PDF)
 for NWB to `RoadTransportNetwork` [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS%2FTransportNetworks%2Fdoc can be found in Subversion].
 
+Note: for NWB a `wegvak` corresponds to an INSPIRE `RoadLink` but what about `wegvak junctions`. An obvious
+candidate is `RoadNode`. Also there are certain `wegvakken` that may be mapped to INSPIRE `ERoads` (E-wegen).
+This is an extercise for further development.
+
 == Step 2 - Flatten ==
 Convert your source DB data into any simple/flat feature format: CSV, ESRI Shapefile, `MapInfo` File, flat GML.
 
@@ -182,10 +186,11 @@ In some cases where you have direct access to the source database Steps 2+3 coul
 using a single `ogr2ogr` command, as GDAL/OGR also can handle databases such as Oracle and PostGIS as input.
 
 == Step 4 - Test Samples ==
-Get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory.
+Get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and
+put this GML in a test directory.
 
 For NWB the test directory is at
-[https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS%2FTransportNetworks%2Ftest etl/NL.RWS/TransportNetwors/test].
+[https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS%2FTransportNetworks%2Ftest etl/NL.RWS/TransportNetworks/test].
 
 The test sample GML file is
 [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/test/wegvakken.gml wegvakken.gml].
@@ -200,17 +205,34 @@ and part is generic/reusable. The main structure of the XSLT is depicted in the 
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-xsl.png]
 
-The three levels of XSL scripts depicted in the figure correspond to the Steps 5a-5c below.
+What we see in this figure is two levels of reuse:
+
+  # among data providers, for example both Kadaster and RWS can reuse callable templates for
+  [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/RoadTransportNetwork.xsl RoadTransportNetwork].
+  # between themes: for example [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/GeographicalNames.xsl GeographicalNames]
+
+The three levels of XSL scripts depicted in the figure correspond bottom to top to the Steps 5a-5c below.
+
 
 === Step 5a - XSLT - Callable templates ===
 Here we will develop/reuse
 generic XSLT Callable Templates for the target feature(s) generation
 within [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2Fshared the shared ETL directory].
 
+for NWB [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/RoadTransportNetwork.xsl etl/shared/xsl/RoadTransportNetwork.xsl]
+is used and [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/GeographicalNames.xsl etl/shared/xsl/GeographicalNames.xsl].
+
+One way to look at these XSLT scripts is as ordinary functions that generate
+an GML construct with parameters filled in.
+
 === Step 5b - XSLT - Extraction ===
 Here we will write an XSLT that mainly
-will extract attributes from the source GML (see step 4.) and calling the XSLT callable templates
+will extract attributes from the local source GML (see step 4.) and calling the XSLT callable templates
 from step 5a.
+
+For NWB the result is
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro.xsl etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro.xsl].
+With `tn-ro` being the XML Namespace for `RoadTransportNetwork`.
 
 === Step 5c - XSLT - GML container ===
 Here we will write an XSLT to generate
@@ -221,12 +243,41 @@ INSPIRE has defined a `SpatialDataset` as a container within
 [https://code.google.com/p/inspire-foss/source/browse/trunk/schemas/inspire/v3.0.1/BaseTypes.xsd BaseTypes.xsd].
 Another container (not implemented here) that can be used could be a WFS-T transaction.
 
+For NWB the result is
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro-sd.xsl etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro-sd.xsl].
+
+With `-sd-` stands for `SpatialDataset`.
+
 === Step 5d - XSLT shell script ===
-here we develop the shell script to invoke the transformation described here in Steps 5a-5c.
+Here we develop the shell script to invoke the transformation described here in Steps 5a-5c.
+
+For NWB the result is
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro-sd.sh etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro-sd.sh].
+Basically a simple script:
+
+{{{
+BASEDIR=`dirname $0`/..
+BASEDIR=`(cd "$BASEDIR"; pwd)`
+
+# use the common script
+$BASEDIR/../shared/bin/xslt.sh $BASEDIR/TransportNetworks/local-to-inspire-tn-ro-sd.xsl $1  $2
+}}}
+
+`BASEDIR` is used to be able to execute the script from any other dir and still find the file
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro-sd.xsl etl/NL.RWS/TransportNetworks/local-to-inspire-tn-ro-sd.xsl].
+
+For testing our sample GML we use the script
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/test/transform.sh etl/NL.RWS/TransportNetworks/test/transform.sh]
+
+The final GML result form the test file is:
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/test/tn-roadnetwork.gml etl/NL.RWS/TransportNetworks/test/tn-roadnetwork.gml]
 
 == Step 6 - Validation ==
 This step is mainly a shell script to invoke the standard Validator present in the project.
 In practice Step 5 and Step 6 are used in an iterative fashion: develop some XSLT, generate INSPIRE GML, validate etc.
+
+For NWB see:
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/test/validate.sh etl/NL.RWS/TransportNetworks/test/validate.sh].
 
 == Step 7 - Load ==
 This step is mainly a shell script to invoke the standard deegree FSLoader present in the project.
@@ -235,11 +286,18 @@ The advantage of FSLoader is that the deegree server does not need to be running
 Note that if you chose to use a WFS-T GML container in step 5c you can also use an
 HTTP tool like `curl`.
 
+For testing our sample GML we use the script
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/test/load.sh etl/NL.RWS/TransportNetworks/test/load.sh]
+
 == Step 8 - Full ETL ==
 Here we invoke the ETL on the entire source dataset.
 
+For NWB we use the script:
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/bin/tn-etl.sh etl/NL.RWS/bin/tn-etl.sh].
+
 == Step 9 - WFS/WMS test ==
-This step is optional but it is always nice to see something.
+This step is optional but it is always nice to see something. (TO BE FINALIZED)
+
 
 
 

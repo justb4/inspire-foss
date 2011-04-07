@@ -182,9 +182,25 @@ In some cases where you have direct access to the source database Steps 2+3 coul
 using a single `ogr2ogr` command, as GDAL/OGR also can handle databases such as Oracle and PostGIS as input.
 
 == Step 4 - Test Samples ==
-gGet some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory.
+Get some representative sample GML from the file(s) generated in step 3 to be used to develop/test schema transformation with XSLT and put this GML in a test directory.
+
+For NWB the test directory is at
+[https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS%2FTransportNetworks%2Ftest etl/NL.RWS/TransportNetwors/test].
+
+The test sample GML file is
+[https://code.google.com/p/inspire-foss/source/browse/trunk/etl/NL.RWS/TransportNetworks/test/wegvakken.gml wegvakken.gml].
+
 == Step 5 - XSLT Develop ==
-Develop the core schema XSLT transformation by creating the following components (files).
+This is the heart of transformation: here we develop the XSLT to transform from the
+flat GML format resulting from Step 3 into full INSPIRE schema GML. As we want to develop
+quickly, we take the test GML samples from Step 4 as source data.
+
+This is also the step where part of the transformation is specific (to the local source data)
+and part is generic/reusable. The main structure of the XSLT is depicted in the figure below.
+
+[http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-xsl.png]
+
+The three levels of XSL scripts depicted in the figure correspond to the Steps 5a-5c below.
 
 === Step 5a - XSLT - Callable templates ===
 Here we will develop/reuse

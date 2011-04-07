@@ -14,7 +14,7 @@ WMS. These network services are not part of this `HowTo`.
 
 = The ETL Chain =
 The image below shows the main ETL chain. Although this image shows some data specific to the
-Dutch Kadaster, the overall process is reusable and will be described below.
+Dutch Kadaster (Oracle and `MapInfo`), the overall process is identical and will be expanded below.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-chain1.png]
 
@@ -96,14 +96,14 @@ Without going into details, here is a summary of the main steps for developing a
 This was the summary of steps. At this point it may not be clear what each step exactly beholds. The sections below will expand
 the steps further.
 
-The running example in the steps is the INSPIRE Annex I Theme "TransportNetworks" from the data provider "NL.RWS", i.e. [http://www.rijkswaterstaat.nl Rijkswaterstaat],
+The running example in the steps is the INSPIRE Annex I Theme `TransportNetworks` from the data provider "NL.RWS", i.e. [http://www.rijkswaterstaat.nl Rijkswaterstaat],
 the Netherlands Ministry of Transport, Waterways and Public Works. See also the
 [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.RWS%253Fstate%253Dclosed etl/NL.RWS folder].
 The local NL.RWS data (model) used is called [http://www.scribd.com/doc/45473661/Handleiding-nationaal-wegenbestand-NWB Nationaal Wegen Bestand (NWB)], the Dutch national (topological) road dataset.
 This dataset will be called `NWB` from here on.
 
 This actual NWB example was developed in analogy to
-the TransportNetworks Theme developed under
+the `TransportNetworks` Theme developed under
 "NL.Kadaster". See [https://code.google.com/p/inspire-foss/source/browse/#svn%2Ftrunk%2Fetl%2FNL.Kadaster%2FTransportNetworks etl/NL.Kadaster/TransportNetworks folder].
 
 == Step 1 - Mapping Specs ==
@@ -115,7 +115,15 @@ This is literally a "paper exercise", as we will document how our local national
 in most cases a single local data model will map to a single INSPIRE Theme.
 
 For the NWB, [http://www.scribd.com/doc/45473661/Handleiding-nationaal-wegenbestand-NWB a specification can be found online].
-The related INSPIRE data theme comprises both a PDF and an XSD.
+The related INSPIRE data theme comprises both the
+[http://inspire-foss.googlecode.com/svn/trunk/doc/reference/inspire/INSPIRE_DataSpecification_TN_v3.1.pdf TransportNetworks data specification PDF]
+and the following (hierarchy of) Application Schema XSDs
+
+  # [http://inspire-foss.googlecode.com/svn/trunk/schemas/inspire/v3.0.1/RoadTransportNetwork.xsd RoadTransportNetwork]
+  # [http://inspire-foss.googlecode.com/svn/trunk/schemas/inspire/v3.0.1/TransportNetwork.xsd TransportNetwork]
+  # [http://inspire-foss.googlecode.com/svn/trunk/schemas/inspire/v3.0.1/Network.xsd Network]
+
+Warning: getting through the PDF and the related XSD(s) is a tough read !
 
 == Step 2 - Flatten ==
 == Step 3 - Make GML ==

@@ -207,8 +207,7 @@ and part is generic/reusable. The main structure of the XSLT is depicted in the 
 
 What we see in this figure is two levels of reuse:
 
-  # among data providers, for example both Kadaster and RWS can reuse callable templates for
-  [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/RoadTransportNetwork.xsl RoadTransportNetwork].
+  # among data providers, for example both Kadaster and RWS can reuse callable templates for [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/RoadTransportNetwork.xsl RoadTransportNetwork].
   # between themes: for example [https://code.google.com/p/inspire-foss/source/browse/trunk/etl/shared/xsl/annex1/GeographicalNames.xsl GeographicalNames]
 
 The three levels of XSL scripts depicted in the figure correspond bottom to top to the Steps 5a-5c below.

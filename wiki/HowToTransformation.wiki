@@ -14,7 +14,7 @@ WMS. These network services are not part of this `HowTo`.
 
 = The ETL Chain =
 The image below shows the main ETL chain. Although this image shows some data specific to the
-Dutch Kadaster (Oracle and `MapInfo`), the overall process is identical and will be expanded below.
+Dutch Kadaster (Oracle and `MapInfo`), the overall process remains identical and will be expanded below.
 
 [http://inspire-foss.googlecode.com/svn/trunk/doc/workshop/media/etl-design-chain1.png]
 
@@ -119,11 +119,13 @@ The related INSPIRE data theme comprises both the
 [http://inspire-foss.googlecode.com/svn/trunk/doc/reference/inspire/INSPIRE_DataSpecification_TN_v3.1.pdf TransportNetworks data specification PDF]
 and the following (hierarchy of) Application Schema XSDs
 
-  # [http://inspire-foss.googlecode.com/svn/trunk/schemas/inspire/v3.0.1/RoadTransportNetwork.xsd RoadTransportNetwork]
-  # [http://inspire-foss.googlecode.com/svn/trunk/schemas/inspire/v3.0.1/TransportNetwork.xsd TransportNetwork]
-  # [http://inspire-foss.googlecode.com/svn/trunk/schemas/inspire/v3.0.1/Network.xsd Network]
+  # [https://code.google.com/p/inspire-foss/source/browse/trunk/schemas/inspire/v3.0.1/RoadTransportNetwork.xsd RoadTransportNetwork]
+  # [https://code.google.com/p/inspire-foss/source/browse/trunk/schemas/inspire/v3.0.1/TransportNetwork.xsd TransportNetwork]
+  # [https://code.google.com/p/inspire-foss/source/browse/trunk/schemas/inspire/v3.0.1/Network.xsd Network]
 
 Warning: getting through the PDF and the related XSD(s) is a tough read !
+
+
 
 == Step 2 - Flatten ==
 == Step 3 - Make GML ==

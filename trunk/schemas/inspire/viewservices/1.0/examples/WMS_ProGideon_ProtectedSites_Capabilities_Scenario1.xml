@@ -204,7 +204,7 @@
 				<!-- Unieke identifier van de dataset waarop deze layer is gebaseerd -->
 				<!-- Combinatie AutorityURL + Identifier levert unieke identificatie -->
 				<!-- NL.IPO.ca94a0cb-7561-4a10-a7d6-b840e56c33ff -->
-				<Identi fier authority="NL.IPO">
+				<Identifier authority="NL.IPO">
 					ca94a0cb-7561-4a10-a7d6-b840e56c33ff
 				</Identifier>
 				<!-- Verwijzing naar metadata voor data in PGR catalog service -->

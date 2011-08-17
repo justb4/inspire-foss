@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<!--
+
+Transform a local OSM GML element to a INSPIRE AdministrativeUnit element.
+
+Author:  Just van den Broecke, Just Objects B.V.
+
+-->
+<xsl:stylesheet version="1.0"
+				xmlns:gmd="http://www.isotc211.org/2005/gmd"
+				xmlns:gml="http://www.opengis.net/gml/3.2"
+				xmlns:ogr="http://ogr.maptools.org/"
+				xmlns:wfs="http://www.opengis.net/wfs"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+	<!-- Use specific GML2 to GML3 MultiPolygonto MultiSurface transform within AdministrativeUnits.xsl -->
+	<xsl:include href="../../shared/xsl/gml2-to-gml3.2.1-geometry.xsl"/>
+
+	<xsl:include href="../../shared/xsl/annex1/AdministrativeUnits.xsl"/>
+
+	<xsl:variable name="idNameSpaceTheme"><xsl:value-of select="concat($idNameSpace,'.AU')"/></xsl:variable>
+
+	<!-- Generate AdministrativeUnit element for single Dutch municipality (ogr:gemeente) element -->
+	<xsl:template match="ogr:sql_statement">
+
+		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
+		<xsl:call-template name="AU.AdministrativeUnit">
+			<xsl:with-param name="idPrefix">
+				<xsl:value-of select="concat($idNameSpaceTheme, '.','GEM')"/>
+			</xsl:with-param>
+			<xsl:with-param name="localId">
+				<xsl:value-of select="ogr:osm_id"/>
+			</xsl:with-param>
+			<xsl:with-param name="name">
+				<xsl:value-of select="ogr:name"/>
+			</xsl:with-param>
+			<xsl:with-param name="nationalLevel">3rdOrder</xsl:with-param>
+			<xsl:with-param name="nationalLevelName">gemeente</xsl:with-param>
+		</xsl:call-template>
+
+	</xsl:template>
+
+	<!-- Generate AdministrativeUnit element for single Dutch province (ogr:Ned_Provincie) element -->
+	<xsl:template match="ogr:au_provincies">
+
+		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
+		<xsl:call-template name="AU.AdministrativeUnit">
+			<xsl:with-param name="idPrefix">
+				<xsl:value-of select="concat($idNameSpaceTheme, '.','PROV.', position())"/>
+			</xsl:with-param>
+			<xsl:with-param name="localId">
+				<xsl:value-of select="ogr:Provincien"/>
+			</xsl:with-param>
+			<xsl:with-param name="name">
+				<xsl:value-of select="ogr:Provincien"/>
+			</xsl:with-param>
+			<xsl:with-param name="nationalLevel">2ndOrder</xsl:with-param>
+			<xsl:with-param name="nationalLevelName">provincie</xsl:with-param>
+		</xsl:call-template>
+
+	</xsl:template>
+
+	<!-- Generate AdministrativeUnit element for single Dutch province (ogr:Ned_Provincie) element -->
+	<xsl:template match="ogr:au_land">
+
+		<!-- Let the callable template "AU.AdministrativeUnit" do the work. -->
+		<xsl:call-template name="AU.AdministrativeUnit">
+			<xsl:with-param name="idPrefix">
+				<xsl:value-of select="concat($idNameSpaceTheme,'.LAND.', position())"/>
+			</xsl:with-param>
+			<xsl:with-param name="localId">NL</xsl:with-param>
+			<xsl:with-param name="name">Nederland</xsl:with-param>
+			<xsl:with-param name="nationalLevel">1stOrder</xsl:with-param>
+			<xsl:with-param name="nationalLevelName">land</xsl:with-param>
+		</xsl:call-template>
+
+	</xsl:template>
+
+</xsl:stylesheet>

@@ -13,6 +13,8 @@ The steps are executed through simple shell scripts that call the tools:
 ./pg2ogr-gml.sh : extract data from PostgreSQL into flat OGR GML
 ./ogr-gml2inspire-gml.sh : convert flat OGR GML to INSPIRE GML
 
+./validate.sh : for schema validation
+
 files:
 au-xapi-osm.xml : the raw OSM XML data (Planet file format)
 au-ogr-gml.xml : the flat OGR GML file

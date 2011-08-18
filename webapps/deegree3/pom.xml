@@ -62,8 +62,8 @@
   </build>
   <repositories>
     <repository>
-      <id>deegree-repo</id>
-      <url>http://artefacts.deegree.org/repo</url>
+      <id>deegree-rel-repo</id>
+      <url>http://artefacts.deegree.org/libs-releases-local</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -71,7 +71,7 @@
   </repositories>
   <distributionManagement>
     <snapshotRepository>
-      <id>deegree-repository</id>
+      <id>deegree-snap-repo</id>
       <url>http://artefacts.deegree.org/libs-snapshots-local</url>
     </snapshotRepository>
   </distributionManagement>

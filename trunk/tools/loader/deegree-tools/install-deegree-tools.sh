@@ -5,7 +5,11 @@
 
 . ./deegree-tools-version.sh
 
-NAME=deegree-tools-${DEEGREE_TOOLS_VERSION}
+# for 3.1+
+NAME=deegree-tools-base-${DEEGREE_TOOLS_VERSION}
+
+# < 3.1
+# NAME=deegree-tools-${DEEGREE_TOOLS_VERSION}
 /bin/rm -rf ${NAME}
 unzip ${NAME}.zip
 /bin/rm -rf bin repo

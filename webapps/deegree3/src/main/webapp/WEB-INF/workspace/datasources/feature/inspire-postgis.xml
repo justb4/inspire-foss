@@ -1,17 +1,20 @@
-<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
-  <JDBCConnId>inspire_blob</JDBCConnId>
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 configVersion="3.1.0"
+                 xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
+
+    <JDBCConnId>inspire_blob</JDBCConnId>
     <StorageCRS srid="-1" dim="2D">urn:ogc:def:crs:EPSG::4258</StorageCRS>
 
 
-
-	  <!-- Note: we bundle all schemas in actual use (for which there is data) in a single dir -->
-	<GMLSchema>../../schemas/active</GMLSchema>
+    <!-- Note: we bundle all schemas in actual use (for which there is data) in a single dir -->
+    <GMLSchema>../../schemas/active</GMLSchema>
     <BLOBMapping/>
 
-	  <!--	NOTE due to a bug in deegree 3.0 we cannot have multiple
-	    GMLSchema directories. This should be solved in deegree 3.1
-	    at that point we can separate ESDIN ExM (and Annex II and II schemas in separate dirs
+    <!--	NOTE due to a bug in deegree 3.0 we cannot have multiple
+            GMLSchema directories. This should be solved in deegree 3.1
+            at that point we can separate ESDIN ExM (and Annex II and II schemas in separate dirs
 
-	<GMLSchema>../../schemas/esdin/exm</GMLSchema> -->
+        <GMLSchema>../../schemas/esdin/exm</GMLSchema> -->
 
 </SQLFeatureStore>

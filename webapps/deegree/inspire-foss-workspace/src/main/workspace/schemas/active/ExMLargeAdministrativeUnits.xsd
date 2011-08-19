@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (C) 2011  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:au="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:stat="urn:x-inspire:specification:gmlas:StatisticalUnits:0.0" xmlns:xlau="urn:x-exml:specification:gmlas:ExMLargeAdministrativeUnits:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargeAdministrativeUnits:1.0" version="1.0">
+  <import namespace="urn:x-inspire:specification:gmlas:AdministrativeUnits:3.0" schemaLocation="AdministrativeUnits.xsd"/>
+  <import namespace="urn:x-inspire:specification:gmlas:StatisticalUnits:0.0" schemaLocation="StatisticalUnits.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="NUTSRegion" substitutionGroup="stat:NUTSRegion" type="xlau:NUTSRegionType"/>
+  <complexType name="NUTSRegionType">
+    <complexContent>
+      <extension base="stat:NUTSRegionType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NUTSRegionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlau:NUTSRegion"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="AdministrativeBoundary" substitutionGroup="au:AdministrativeBoundary" type="xlau:AdministrativeBoundaryType"/>
+  <complexType name="AdministrativeBoundaryType">
+    <complexContent>
+      <extension base="au:AdministrativeBoundaryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AdministrativeBoundaryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlau:AdministrativeBoundary"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="AdministrativeUnit" substitutionGroup="au:AdministrativeUnit" type="xlau:AdministrativeUnitType"/>
+  <complexType name="AdministrativeUnitType">
+    <complexContent>
+      <extension base="au:AdministrativeUnitType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AdministrativeUnitPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xlau:AdministrativeUnit"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

@@ -7,7 +7,8 @@ fi
 BASEDIR=`dirname $0`/..
 BASEDIR=`(cd "$BASEDIR"; pwd)`
 
-WORKSPACE=$BASEDIR/../../webapps/deegree3/src/main/webapp/WEB-INF/workspace
+# WORKSPACE=$BASEDIR/../../webapps/deegree3/src/main/webapp/WEB-INF/workspace
+WORKSPACE=$BASEDIR/../../webapps/deegree/inspire-foss-workspace/src/main/workspace
 FS_CONFIG_FILE=${WORKSPACE}/datasources/feature/${1}.xml
 JDBC_CONFIG_FILE=${WORKSPACE}/jdbc/${2}.xml
 GML_VERSION=${3}

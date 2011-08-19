@@ -19,4 +19,4 @@ export JAVA_OPTS="-Xms128m -Xmx1024m"
 
 echo $FS_CONFIG_FILE $JDBC_CONFIG_FILE $GML_VERSION $IDGEN_MODE $DATASET
 
-$BASEDIR/deegree-tools/bin/d3toolbox FeatureStoreLoader -action insert -dataset ${DATASET} -format ${GML_VERSION} -fsconfig ${FS_CONFIG_FILE} -idgen ${IDGEN_MODE} -jdbcconfig ${JDBC_CONFIG_FILE}
+$BASEDIR/deegree-tools/bin/d3toolbox FeatureStoreLoader -action insert -dataset ${DATASET} -format ${GML_VERSION} -fsconfig ${1} -idgen ${IDGEN_MODE} -workspace ${WORKSPACE}

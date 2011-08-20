@@ -12,4 +12,26 @@ Below there are thus 2 subdirs:
 - webapp - contains for now instructions how to download and run the deegree 3.1+ .war file
 - workspace - the workspace of the inspire-foss deegree server, adapt for your local situation
 
+installing the workspace
+------------------------
+1) mkdir $HOME/.deegree
+link (or copy) workspace/src/main/workspace dir to $HOME/.deegree/default
+
+2) altenative:
+build workspace with mvn clean install
+import the workspace in deegree
+
+install/run deegree
+-------------------
+This requires getting the webapp archive (WAR) and run it in your appserver like Tomcat.
+
+cd webapp
+execute ./get-deegree-war.sh or get wardirectly from repository
+deploy deegree3.war in Tomcat
+
+
+
+
+
+
 

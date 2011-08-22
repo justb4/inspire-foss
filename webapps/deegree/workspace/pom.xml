@@ -21,16 +21,6 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <id>occamlabs-repo</id>
-      <url>https://jenkins.occamlabs.de/artifactory/repo</url>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
   </repositories>
 
   <distributionManagement>

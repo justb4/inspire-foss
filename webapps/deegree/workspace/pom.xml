@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.deegree</groupId>
     <artifactId>deegree-workspace-parent</artifactId>
-    <version>3.1-pre11</version>
+    <version>3.1-pre12</version>
   </parent>
 
   <repositories>
@@ -21,13 +21,34 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>occamlabs-repo</id>
+      <url>http://jenkins.occamlabs.de/artifactory/repo</url>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>occamlabs-repo</id>
+      <url>https://jenkins.occamlabs.de/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>occamlabs-repo</id>
+      <url>https://jenkins.occamlabs.de/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
       <groupId>org.deegree</groupId>
       <artifactId>deegree-workspace-base</artifactId>
-      <version>3.1-pre11</version>
+      <version>3.1-pre12</version>
       <type>deegree-workspace</type>
     </dependency>
   </dependencies>

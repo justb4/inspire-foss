@@ -23,7 +23,7 @@
     </repository>
     <repository>
       <id>occamlabs-repo</id>
-      <url>http://jenkins.occamlabs.de/artifactory/repo</url>
+      <url>https://jenkins.occamlabs.de/artifactory/repo</url>
       <releases>
         <updatePolicy>never</updatePolicy>
       </releases>

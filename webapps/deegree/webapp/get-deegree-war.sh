@@ -7,10 +7,10 @@
 # Just van den Broecke
 
 # for 3.1 and up
-# e.g. http://artefacts.deegree.org/libs-releases-local/org/deegree/deegree-webservices/3.1-pre11/deegree-webservices-3.1-pre11.war
+# e.g. http://artefacts.deegree.org/libs-releases-local/org/deegree/deegree-webservices/3.1-pre12/deegree-webservices-3.1-pre12.war
 
 # change version whenever a new one is out
-DISTRO_VERSION=3.1-pre11
+DISTRO_VERSION=3.1-pre12
 
 DISTRO_BASE_URL=http://artefacts.deegree.org/libs-releases-local/org/deegree/deegree-webservices/
 DISTRO_ZIP=deegree3.zip

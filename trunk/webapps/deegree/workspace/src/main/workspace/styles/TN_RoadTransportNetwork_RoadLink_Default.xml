@@ -1,0 +1,35 @@
+<se:FeatureTypeStyle version="1.1.0"
+                     xmlns:ogc="http://www.opengis.net/ogc"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+                     xmlns:net="urn:x-inspire:specification:gmlas:Network:3.2"
+                     xmlns:tn="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"
+                     xmlns:tn-ro="urn:x-inspire:specification:gmlas:RoadTransportNetwork:3.0"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xmlns:sld="http://www.opengis.net/sld"
+                     xmlns:se="http://www.opengis.net/se"
+                     xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+
+    <se:Name>TN.RoadTransportNetwork.RoadLink.Default</se:Name>
+    <se:Description>
+        <se:Title>RoadLink Default Style</se:Title>
+        <se:Abstract>The geometry is rendered as a solid Green line with a
+            stroke width of 3 pixel (#008000). Ends are rounded and have a 2 pixel black casing (#000000).
+        </se:Abstract>
+    </se:Description>
+    <se:FeatureTypeName>tn-ro:RoadLink</se:FeatureTypeName>
+    <se:Rule>
+        <se:LineSymbolizer>
+            <se:Geometry>
+                <ogc:PropertyName>net:centrelineGeometry</ogc:PropertyName>
+            </se:Geometry>
+            <se:Stroke>
+                <CssParameter name="stroke">#008000</CssParameter>
+                <CssParameter name="stroke-width">3</CssParameter>
+                <CssParameter name="stroke-opacity">1</CssParameter>
+                <CssParameter name="stroke-linejoin">mitre</CssParameter>
+                <CssParameter name="stroke-linecap">butt</CssParameter>
+            </se:Stroke>
+        </se:LineSymbolizer>
+    </se:Rule>
+</se:FeatureTypeStyle>

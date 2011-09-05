@@ -24,11 +24,8 @@
                 <ogc:PropertyName>net:centrelineGeometry</ogc:PropertyName>
             </se:Geometry>
             <se:Stroke>
-                <CssParameter name="stroke">#008000</CssParameter>
-                <CssParameter name="stroke-width">3</CssParameter>
-                <CssParameter name="stroke-opacity">1</CssParameter>
-                <CssParameter name="stroke-linejoin">mitre</CssParameter>
-                <CssParameter name="stroke-linecap">butt</CssParameter>
+                <se:SvgParameter name="stroke">#008000</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">3</se:SvgParameter>
             </se:Stroke>
         </se:LineSymbolizer>
     </se:Rule>

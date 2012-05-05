@@ -25,7 +25,7 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
 -->
 <xsl:stylesheet version="1.0"
 				xmlns:gmd="http://www.isotc211.org/2005/gmd"
-				xmlns:gml="http://www.opengis.net/gml/3.2"
+				xmlns:gml="http://www.opengis.net/gml"
 				xmlns:ogr="http://ogr.maptools.org/"
 				xmlns:wfs="http://www.opengis.net/wfs"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -51,7 +51,7 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
 				<xsl:value-of select="ogr:identificatie"/>
 			</xsl:with-param>
 			<xsl:with-param name="point">
-                <ogr:geometryProperty><gml:Point srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>53.321190450363517 6.854402742140622</gml:pos></gml:Point></ogr:geometryProperty>
+                <!-- <ogr:geometryProperty><gml:Point srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>53.321190450363517 6.854402742140622</gml:pos></gml:Point></ogr:geometryProperty> -->
 
 				<xsl:value-of select="ogr:geometryProperty/gml:Point/gml:pos"/>
 			</xsl:with-param>

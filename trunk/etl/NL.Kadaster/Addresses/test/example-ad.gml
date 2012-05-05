@@ -3,7 +3,8 @@
                        xmlns:CP="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"
                        xmlns:app="http://www.deegree.org/app" xmlns:xlink="http://www.w3.org/1999/xlink"
                        xmlns:wfs="http://www.opengis.net/wfs" xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
-                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xmlns:gml="http://www.opengis.net/gml/3.2"
                        xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" gml:id="NL.KAD.BAG"
                        xsi:schemaLocation="urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0/Addresses.xsd urn:x-inspire:specification:gmlas:CadastralParcels:3.0 http://schemas.kademo.nl/inspire/v3.0/CadastralParcels.xsd http://www.opengis.net/wfs http://schemas.kademo.nl/ogc/wfs/1.1.0-gml3.2.1/wfs.xsd"
                        numberOfFeatures="59">

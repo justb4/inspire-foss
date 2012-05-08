@@ -36,7 +36,7 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
     <xsl:include href="../../shared/xsl/annex1/Addresses.xsl"/>
 
     <xsl:variable name="idNameSpaceTheme">
-        <xsl:value-of select="concat($idNameSpace,'.AD')"/>
+        <xsl:value-of select="concat($idNameSpace,'.BAG.AD')"/>
     </xsl:variable>
 
     <!-- Generate Addresses element for single Dutch municipality (ogr:gemeente) element -->

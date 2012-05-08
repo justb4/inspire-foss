@@ -95,9 +95,9 @@ Requires:
 
 		<!-- Create gml Id by concatenating idPrefix and local id -->
 		<xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
-        <xsl:variable name="addressAreaRef"><xsl:value-of select="concat('#',$idNameSpace,'.AA.',$addressAreaLocalId)"/></xsl:variable>
-        <xsl:variable name="postCodeRef"><xsl:value-of select="concat('#',$idNameSpace,'.PC.',$postCode)"/></xsl:variable>
-        <xsl:variable name="thoroughfareRef"><xsl:value-of select="concat('#',$idNameSpace,'.TF.',$thoroughfareLocalId)"/></xsl:variable>
+        <xsl:variable name="addressAreaRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.AA.',$addressAreaLocalId)"/></xsl:variable>
+        <xsl:variable name="postCodeRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.PC.',$postCode)"/></xsl:variable>
+        <xsl:variable name="thoroughfareRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.TF.',$thoroughfareLocalId)"/></xsl:variable>
 
 		<base:member>
 			<AD:Address gml:id="{$gmlId}">

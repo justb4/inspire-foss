@@ -20,7 +20,7 @@
         <AD:GeographicPosition>
           <AD:geometry>
             <gml:Point gml:id="NL.KAD.AD.Address.3200000133985_P">
-              <gml:pos>53.321190450363516 6.854402742140622</gml:pos>
+              <gml:pos>53.321190450363517 6.85440274214062</gml:pos>
             </gml:Point>
           </AD:geometry>
           <AD:specification>entrance</AD:specification>
@@ -28,6 +28,24 @@
           <AD:default>true</AD:default>
         </AD:GeographicPosition>
       </AD:position>
+      <AD:locator>
+        <AD:AddressLocator>
+          <AD:designator>
+            <AD:LocatorDesignator>
+              <AD:designator>3</AD:designator>
+              <AD:type>2</AD:type>
+            </AD:LocatorDesignator>
+          </AD:designator>
+          <AD:level>unitLevel</AD:level>
+        </AD:AddressLocator>
+      </AD:locator>
+      <AD:validFrom>2010-07-20T00:00:00</AD:validFrom>
+      <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
+      <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+      <AD:component xlink:href="#NL.KAD.AA."/>
+      <AD:component xlink:href="#NL.KAD.PC.9901AA"/>
+      <AD:component xlink:href="#NL.KAD.TF.855300000001319"/>
     </AD:Address>
   </base:member>
 </base:SpatialDataSet>

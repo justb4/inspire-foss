@@ -5,7 +5,6 @@
 # For schema see: https://github.com/opengeogroep/NLExtract/blob/master/bag/db/script/bag-db.SQL
 # Just van den Broecke
 
-SQL=
 # Convert postgis to GML
 pg2gml() {
 	# Alleen feature types met geo-kolom hebben een geo_type
@@ -35,13 +34,13 @@ sql_addresseerbaarobj() {
 	# Alleen VBO heeft punt geometrie, voor LP en SP gebruik centroide van vlak
 	ao_type=$1
 	geom="ST_Centroid(ao.geovlak)"
-	if [ "$ao_type" == "verblijfsobjectactueelbestaand" ]
+	if [ "$ao_type" = "verblijfsobjectactueelbestaand" ]
 	then
 		geom="ao.geopunt"
 	fi
 
 	# Query hele tabel Adresseerbaarobject (VBO,LP of SP) joined met Nummeraanduiding tabel
-	SQL="SELECT na.identificatie,na.huisnummer,na.huisletter,na.huisnummertoevoeging,na.gerelateerdeopenbareruimte,na.postcode,na.gerelateerdewoonplaats,translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid,ST_Force_2D($geom) FROM $1 as ao INNER JOIN nummeraanduidingactueelbestaand as na ON (ao.hoofdadres = na.identificatie)"
+	echo "SELECT na.identificatie,na.huisnummer,na.huisletter,na.huisnummertoevoeging,na.gerelateerdeopenbareruimte,na.postcode,na.gerelateerdewoonplaats,translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid,ST_Force_2D($geom) FROM $1 as ao INNER JOIN nummeraanduidingactueelbestaand as na ON (ao.hoofdadres = na.identificatie)"
 }
 
 # BAG component naam
@@ -52,17 +51,17 @@ layer_geo_type=
 
 case "$bag_comp" in
 	verblijfsobject)
-		sql_addresseerbaarobj verblijfsobjectactueelbestaand
+		SQL=`sql_addresseerbaarobj verblijfsobjectactueelbestaand`
 		layer_geo_type=POINT;
 	    layer_name="adres";;
 
 	ligplaats)
-		sql_addresseerbaarobj ligplaatsactueelbestaand
+		SQL=`sql_addresseerbaarobj ligplaatsactueelbestaand`
 		layer_geo_type=POINT;
 	    layer_name="adres";;
 
 	standplaats)
-		sql_addresseerbaarobj standplaatsactueelbestaand
+		SQL=`sql_addresseerbaarobj standplaatsactueelbestaand`
 		layer_geo_type=POINT;
 	    layer_name="adres";;
 

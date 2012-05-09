@@ -7,6 +7,7 @@
 
 cd ..
 ./local-to-inspire-ad-sd.sh test/bag-adres.gml  test/ad-address.gml
+./local-to-inspire-ad-sd.sh test/bag-postcode.gml  test/ad-postcode.gml
 
 
 

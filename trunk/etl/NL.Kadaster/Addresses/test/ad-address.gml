@@ -43,9 +43,25 @@
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
-      <AD:component xlink:href="#NL.KAD.BAG.AD.AA."/>
-      <AD:component xlink:href="#NL.KAD.BAG.AD.PC.9901AA"/>
-      <AD:component xlink:href="#NL.KAD.BAG.AD.TF.855300000001319"/>
+
+      <AD:component>
+          <AD:PostalDescriptor gml:id="NL.KAD.BAG.AD.PostalDescriptor.9901AA">
+              <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">urn:x-inspire:object:id:NL.KAD.BAG.AD.PostalDescriptor.9901AA</gml:identifier>
+              <AD:inspireId>
+                <base:Identifier>
+                  <base:localId>9901AA</base:localId>
+                  <base:namespace>NL.KAD.BAG.AD.PostalDescriptor</base:namespace>
+                </base:Identifier>
+              </AD:inspireId>
+              <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+              <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+              <AD:validFrom>2010-07-20T00:00:00</AD:validFrom>
+              <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
+              <AD:postCode>9901AA</AD:postCode>
+            </AD:PostalDescriptor>
+
+      </AD:component>
+ <!--      <AD:component xlink:href="http://local.inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=GetFeature&amp;OUTPUTFORMAT=text%2Fxml;%20subtype%3Dgml%2F3.2.1&amp;STOREDQUERY_ID=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=NL.KAD.BAG.AD.PostalDescriptor.9901AA#NL.KAD.BAG.AD.PostalDescriptor.9901AA"/>   -->
     </AD:Address>
   </base:member>
 </base:SpatialDataSet>

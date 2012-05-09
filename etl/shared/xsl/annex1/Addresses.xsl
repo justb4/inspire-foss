@@ -23,8 +23,6 @@ Author:  Just van den Broecke, Just Objects B.V.
 Requires:
 	<xsl:include href="../xsl/constants.xsl"/>
 
-	A callable template "createMultiSurface" for example
-	<xsl:include href="../xsl/multipolygon-to-multisurface.xsl"/>
 -->
 <xsl:stylesheet version="1.0"
 				xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"

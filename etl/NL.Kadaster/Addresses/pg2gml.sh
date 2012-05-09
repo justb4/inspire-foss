@@ -6,7 +6,7 @@
 # Just van den Broecke
 
 # Convert postgis to GML
-function pg2gml() {
+pg2gml() {
 	# Alleen feature types met geo-kolom hebben een geo_type
 	nlt=";"
 	geo_type=$3
@@ -27,7 +27,7 @@ function pg2gml() {
 	$nlt
 }
 
-function sql_addresseerbaarobj() {
+sql_addresseerbaarobj() {
 	echo "SELECT na.identificatie,na.huisnummer,na.huisletter,na.huisnummertoevoeging,na.gerelateerdeopenbareruimte,na.postcode,na.gerelateerdewoonplaats,translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid,ST_Force_2D(ao.geopunt) FROM $1 as ao INNER JOIN nummeraanduidingactueelbestaand as na ON (ao.hoofdadres = na.identificatie)"
 }
 

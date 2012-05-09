@@ -313,7 +313,7 @@
 							<complexContent>
 								<extension base="gml:AbstractMemberType">
 									<sequence/>
-									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+									<attributeGroup ref="gml:AssociattionAttributeGroup"/>
 								</extension>
 							</complexContent>
 						</complexType>

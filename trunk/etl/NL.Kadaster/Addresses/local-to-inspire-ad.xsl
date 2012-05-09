@@ -40,7 +40,7 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
     </xsl:variable>
 
     <!-- Generate Addresses element for single Dutch municipality (ogr:gemeente) element -->
-    <xsl:template match="ogr:address">
+    <xsl:template match="ogr:adres">
 
         <!-- Let the callable template "AD.Address" do the work. -->
         <xsl:call-template name="AD.Address">
@@ -80,4 +80,80 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
         </xsl:call-template>
 
     </xsl:template>
+
+   <!-- Generate Thouroughfarename element for single Dutch "street-like"element "public space" -->
+    <xsl:template match="ogr:openbareruimte">
+
+        <!-- Let the callable template "AD.ThoroughfareName" do the work. -->
+        <xsl:call-template name="AD.ThoroughfareName">
+            <xsl:with-param name="idPrefix">
+                <xsl:value-of select="concat($idNameSpaceTheme, '.','ThoroughfareName')"/>
+            </xsl:with-param>
+            <xsl:with-param name="localId">
+                <xsl:value-of select="ogr:identificatie"/>
+            </xsl:with-param>
+
+            <xsl:with-param name="name">
+                <xsl:value-of select="ogr:openbareruimtenaam"/>
+            </xsl:with-param>
+            <xsl:with-param name="validFrom">
+                <xsl:value-of select="ogr:begindatumtijdvakgeldigheid"/>
+             </xsl:with-param>
+            <xsl:with-param name="validTo">
+                <xsl:value-of select="ogr:einddatumtijdvakgeldigheid"/>
+            </xsl:with-param>
+        </xsl:call-template>
+
+    </xsl:template>
+
+    <!-- Generate Addresses element for single Dutch municipality (ogr:gemeente) element -->
+    <xsl:template match="ogr:postcode">
+
+        <!-- Let the callable template "AD.PostalDescriptor" do the work. -->
+        <xsl:call-template name="AD.PostalDescriptor">
+            <xsl:with-param name="idPrefix">
+                <xsl:value-of select="concat($idNameSpaceTheme, '.','PostalDescriptor')"/>
+            </xsl:with-param>
+            <xsl:with-param name="localId">
+                <xsl:value-of select="ogr:postcode"/>
+            </xsl:with-param>
+
+            <xsl:with-param name="postCode">
+                <xsl:value-of select="ogr:postcode"/>
+            </xsl:with-param>
+            <xsl:with-param name="validFrom">
+                <xsl:value-of select="ogr:begindatumtijdvakgeldigheid"/>
+             </xsl:with-param>
+            <xsl:with-param name="validTo">
+                <xsl:value-of select="ogr:einddatumtijdvakgeldigheid"/>
+            </xsl:with-param>
+        </xsl:call-template>
+
+    </xsl:template>
+
+    <!-- Generate AddressAreaName element for single Dutch city "woonplaats" -->
+     <xsl:template match="ogr:woonplaats">
+
+         <!-- Let the callable template "AD.AddressAreaName" do the work. -->
+         <xsl:call-template name="AD.AddressAreaName">
+             <xsl:with-param name="idPrefix">
+                 <xsl:value-of select="concat($idNameSpaceTheme, '.','AddressAreaName')"/>
+             </xsl:with-param>
+             <xsl:with-param name="localId">
+                 <xsl:value-of select="ogr:identificatie"/>
+             </xsl:with-param>
+
+             <xsl:with-param name="name">
+                 <xsl:value-of select="ogr:woonplaatsnaam"/>
+             </xsl:with-param>
+             <xsl:with-param name="validFrom">
+                 <xsl:value-of select="ogr:begindatumtijdvakgeldigheid"/>
+              </xsl:with-param>
+             <xsl:with-param name="validTo">
+                 <xsl:value-of select="ogr:einddatumtijdvakgeldigheid"/>
+             </xsl:with-param>
+         </xsl:call-template>
+
+     </xsl:template>
+
 </xsl:stylesheet>

@@ -68,10 +68,10 @@ Requires:
                     <AD:level>unitLevel</AD:level>
                 </AD:AddressLocator>
             </AD:locator>
-            <AD:validFrom xmlns:gml="http://www.opengis.net/gml">2009-01-05T23:00:00.000</AD:validFrom>
-            <AD:validTo xmlns:gml="http://www.opengis.net/gml">2299-12-30T23:00:00.000</AD:validTo>
-            <AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
-            <AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:validFrom>2010-07-20T00:00:00</AD:validFrom>
+            <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
+            <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+            <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
             <AD:component xlink:href="#NL.KAD.AA.1102"/>
             <AD:component xlink:href="#NL.KAD.PD.1611AC"/>
             <AD:component xlink:href="#NL.KAD.TN.0532300000000074"/>
@@ -95,9 +95,9 @@ Requires:
 
 		<!-- Create gml Id by concatenating idPrefix and local id -->
 		<xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
-        <xsl:variable name="addressAreaRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.AA.',$addressAreaLocalId)"/></xsl:variable>
-        <xsl:variable name="postCodeRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.PC.',$postCode)"/></xsl:variable>
-        <xsl:variable name="thoroughfareRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.TF.',$thoroughfareLocalId)"/></xsl:variable>
+        <xsl:variable name="addressAreaRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.AddressAreaName.',$addressAreaLocalId)"/></xsl:variable>
+        <xsl:variable name="postCodeRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.PostalDescriptor.',$postCode)"/></xsl:variable>
+        <xsl:variable name="thoroughfareRef"><xsl:value-of select="concat('#',$idNameSpaceTheme,'.ThoroughfareName.',$thoroughfareLocalId)"/></xsl:variable>
 
 		<base:member>
 			<AD:Address gml:id="{$gmlId}">
@@ -156,7 +156,9 @@ Requires:
                     </xsl:with-param>
                  </xsl:call-template>
 
-                <AD:component xlink:href="{$addressAreaRef}"/>
+                <!-- <AD:component xlink:href="{$addressAreaRef}"/> -->
+                <!-- <AD:component xlink:href="http://local.inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=GetFeature&amp;OUTPUTFORMAT=text%2Fxml;%20subtype%3Dgml%2F3.2.1&amp;STOREDQUERY_ID=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=NL.KAD.BAG.AD.PostalDescriptor.9901AA#NL.KAD.BAG.AD.PostalDescriptor.9901AA"/>   -->
+
                 <AD:component xlink:href="{$postCodeRef}"/>
                 <AD:component xlink:href="{$thoroughfareRef}"/>
 
@@ -164,35 +166,294 @@ Requires:
 		</base:member>
 	</xsl:template>
 
+    <!-- Generate PostalDescriptor element
+       <AD:PostalDescriptor gml:id="NL.KAD.PD.1611AL">
+            <AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:status/>
+            <AD:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:postCode>1611AL</AD:postCode>
+        </AD:PostalDescriptor>
+
+    -->
+    <xsl:template name="AD.PostalDescriptor" priority="1">
+        <xsl:param name="idPrefix"/>
+        <xsl:param name="localId"/>
+        <!-- Position e.g. "5.242708641248198 52.698088258672094" -->
+        <xsl:param name="postCode"/>
+        <xsl:param name="validFrom"/>
+        <xsl:param name="validTo"/>
+
+        <!-- Create gml Id by concatenating idPrefix and local id -->
+        <xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
+
+        <base:member>
+            <AD:PostalDescriptor gml:id="{$gmlId}">
+
+                <xsl:call-template name="GML.Identifier">
+                    <xsl:with-param name="id">
+                        <xsl:value-of select="$gmlId"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+
+                <!-- Generate INSPIRE id -->
+                <AD:inspireId>
+                    <xsl:call-template name="Base.InspireId">
+                        <xsl:with-param name="localId">
+                            <xsl:value-of select="$localId"/>
+                        </xsl:with-param>
+                        <xsl:with-param name="idPrefix">
+                            <xsl:value-of select="$idPrefix"/>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </AD:inspireId>
+
+                <!--  Generate common AD.AddressComponentCommonProperties Elements -->
+                <xsl:call-template name="AD.AddressComponentCommonProperties">
+                    <xsl:with-param name="validFrom">
+                        <xsl:value-of select="$validFrom"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="validTo">
+                        <xsl:value-of select="$validTo"/>
+                    </xsl:with-param>
+                 </xsl:call-template>
+
+                <AD:postCode><xsl:value-of select="$postCode"/></AD:postCode>
+
+            </AD:PostalDescriptor>
+        </base:member>
+    </xsl:template>
+
+<!--
+Generate ThoroughfareName element
+        <AD:ThoroughfareName gml:id="NL.KAD.TN.0532300000000074">
+            <AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:name>
+                <GN:GeographicalName>
+                    <GN:language>nld</GN:language>
+                    <GN:nativeness>Endonym</GN:nativeness>
+                    <GN:nameStatus>Official</GN:nameStatus>
+                    <GN:sourceOfName>Het Kadaster, Nederland</GN:sourceOfName>
+                    <GN:pronunciation>
+                        <GN:PronunciationOfName/>
+                    </GN:pronunciation>
+                    <GN:spelling>
+                        <GN:SpellingOfName>
+                            <GN:text>Hoofdstraat</GN:text>
+                            <GN:script>Latn</GN:script>
+                        </GN:SpellingOfName>
+                    </GN:spelling>
+                </GN:GeographicalName>
+            </AD:name>
+        </AD:ThoroughfareName>
+
+-->
+    <xsl:template name="AD.ThoroughfareName" priority="1">
+        <xsl:param name="idPrefix"/>
+        <xsl:param name="localId"/>
+        <xsl:param name="name"/>
+        <xsl:param name="validFrom"/>
+        <xsl:param name="validTo"/>
+
+        <!-- Create gml Id by concatenating idPrefix and local id -->
+        <xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
+
+        <base:member>
+            <AD:ThoroughfareName gml:id="{$gmlId}">
+
+                <xsl:call-template name="GML.Identifier">
+                    <xsl:with-param name="id">
+                        <xsl:value-of select="$gmlId"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+
+                <!-- Generate INSPIRE id -->
+                <AD:inspireId>
+                    <xsl:call-template name="Base.InspireId">
+                        <xsl:with-param name="localId">
+                            <xsl:value-of select="$localId"/>
+                        </xsl:with-param>
+                        <xsl:with-param name="idPrefix">
+                            <xsl:value-of select="$idPrefix"/>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </AD:inspireId>
+
+                <!--  Generate common AD.AddressComponentCommonProperties Elements -->
+                <xsl:call-template name="AD.AddressComponentCommonProperties">
+                    <xsl:with-param name="validFrom">
+                        <xsl:value-of select="$validFrom"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="validTo">
+                        <xsl:value-of select="$validTo"/>
+                    </xsl:with-param>
+                 </xsl:call-template>
+
+                <AD:name>
+                    <!-- Generate minimal GeographicalName -->
+                    <xsl:call-template name="GN.GeographicalName.Minimal">
+                        <xsl:with-param name="name">
+                            <xsl:value-of select="$name"/>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </AD:name>
+
+            </AD:ThoroughfareName>
+        </base:member>
+    </xsl:template>
+    <!--
+    Generate AddressAreaName element
+        <AD:AddressAreaName gml:id="NL.KAD.AA.1102">
+            <AD:beginLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:endLifespanVersion xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:validFrom xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:validTo xsi:nil="true" nilReason="UNKNOWN"/>
+            <AD:name>
+                <GN:GeographicalName>
+                    <GN:language>nld</GN:language>
+                    <GN:nativeness>Endonym</GN:nativeness>
+                    <GN:nameStatus>Official</GN:nameStatus>
+                    <GN:sourceOfName>Het Kadaster, Nederland</GN:sourceOfName>
+                    <GN:pronunciation>
+                        <GN:PronunciationOfName/>
+                    </GN:pronunciation>
+                    <GN:spelling>
+                        <GN:SpellingOfName>
+                            <GN:text>Bovenkarspel</GN:text>
+                            <GN:script>Latn</GN:script>
+                        </GN:SpellingOfName>
+                    </GN:spelling>
+                </GN:GeographicalName>
+            </AD:name>
+            <AD:namedPlace xsi:nil="true" nilReason="UNKNOWN"/>
+        </AD:AddressAreaName>
+
+    -->
+    <xsl:template name="AD.AddressAreaName" priority="1">
+        <xsl:param name="idPrefix"/>
+        <xsl:param name="localId"/>
+        <xsl:param name="name"/>
+        <xsl:param name="validFrom"/>
+        <xsl:param name="validTo"/>
+
+        <!-- Create gml Id by concatenating idPrefix and local id -->
+        <xsl:variable name="gmlId"><xsl:value-of select="concat($idPrefix,'.',$localId)"/></xsl:variable>
+
+        <base:member>
+            <AD:AddressAreaName gml:id="{$gmlId}">
+
+                <xsl:call-template name="GML.Identifier">
+                    <xsl:with-param name="id">
+                        <xsl:value-of select="$gmlId"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+
+                <!-- Generate INSPIRE id -->
+                <AD:inspireId>
+                    <xsl:call-template name="Base.InspireId">
+                        <xsl:with-param name="localId">
+                            <xsl:value-of select="$localId"/>
+                        </xsl:with-param>
+                        <xsl:with-param name="idPrefix">
+                            <xsl:value-of select="$idPrefix"/>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </AD:inspireId>
+
+                <!--  Generate common AD.AddressComponentCommonProperties Elements -->
+                <xsl:call-template name="AD.AddressComponentCommonProperties">
+                    <xsl:with-param name="validFrom">
+                        <xsl:value-of select="$validFrom"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="validTo">
+                        <xsl:value-of select="$validTo"/>
+                    </xsl:with-param>
+                 </xsl:call-template>
+
+                <AD:name>
+                    <!-- Generate minimal GeographicalName -->
+                    <xsl:call-template name="GN.GeographicalName.Minimal">
+                        <xsl:with-param name="name">
+                            <xsl:value-of select="$name"/>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </AD:name>
+
+                <AD:namedPlace xsi:nil="true" nilReason="other:unpopulated"/>
+            </AD:AddressAreaName>
+        </base:member>
+    </xsl:template>
+
+    <!-- Generate Addresses theme Feature types common Lifecycle Properties -->
+    <xsl:template name="AD.AddressComponentCommonProperties" priority="1">
+        <xsl:param name="validFrom"/>
+        <xsl:param name="validTo"/>
+
+        <xsl:call-template name="AD.LifespanVersionProperties"/>
+
+        <xsl:call-template name="AD.ValidProperties">
+             <xsl:with-param name="validFrom">
+                 <xsl:value-of select="$validFrom"/>
+             </xsl:with-param>
+             <xsl:with-param name="validTo">
+                 <xsl:value-of select="$validTo"/>
+             </xsl:with-param>
+          </xsl:call-template>
+    </xsl:template>
+
     <!-- Generate Addresses theme Feature types common Lifecycle Properties -->
     <xsl:template name="AD.LifecycleProperties" priority="1">
         <xsl:param name="validFrom"/>
         <xsl:param name="validTo"/>
 
-        <xsl:choose>
-            <!-- validFrom is optional: only generate a validFrom when present otherwise make nil -->
-            <xsl:when test="$validFrom != ''">
-                <AD:validFrom><xsl:value-of select="$validFrom"/></AD:validFrom>
-            </xsl:when>
-            <xsl:otherwise>
-                 <AD:validFrom xsi:nil="true" nilReason="other:unpopulated"></AD:validFrom>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:call-template name="AD.ValidProperties">
+             <xsl:with-param name="validFrom">
+                 <xsl:value-of select="$validFrom"/>
+             </xsl:with-param>
+             <xsl:with-param name="validTo">
+                 <xsl:value-of select="$validTo"/>
+             </xsl:with-param>
+          </xsl:call-template>
 
-        <xsl:choose>
-             <!-- validTo is optional: only generate a validFrom when present otherwise make nil -->
-             <xsl:when test="$validTo != ''">
-                 <AD:validTo><xsl:value-of select="$validTo"/></AD:validTo>
+        <xsl:call-template name="AD.LifespanVersionProperties"/>
+
+    </xsl:template>
+    
+    <!-- Generate Addresses theme Feature types common validFrom/To Properties -->
+     <xsl:template name="AD.ValidProperties" priority="1">
+         <xsl:param name="validFrom"/>
+         <xsl:param name="validTo"/>
+
+         <xsl:choose>
+             <!-- validFrom is optional: only generate a validFrom when present otherwise make nil -->
+             <xsl:when test="$validFrom != ''">
+                 <AD:validFrom><xsl:value-of select="$validFrom"/></AD:validFrom>
              </xsl:when>
              <xsl:otherwise>
-                  <AD:validTo xsi:nil="true" nilReason="other:unpopulated"></AD:validTo>
+                  <AD:validFrom xsi:nil="true" nilReason="other:unpopulated"></AD:validFrom>
              </xsl:otherwise>
          </xsl:choose>
 
+         <xsl:choose>
+              <!-- validTo is optional: only generate a validFrom when present otherwise make nil -->
+              <xsl:when test="$validTo != ''">
+                  <AD:validTo><xsl:value-of select="$validTo"/></AD:validTo>
+              </xsl:when>
+              <xsl:otherwise>
+                   <AD:validTo xsi:nil="true" nilReason="other:unpopulated"></AD:validTo>
+              </xsl:otherwise>
+          </xsl:choose>
+     </xsl:template>
 
-        <!-- TODO: optional populate -->
-        <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></AD:beginLifespanVersion>
-        <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></AD:endLifespanVersion>
-    </xsl:template>
-    
+    <!-- Generate Addresses theme Feature types common LifespanVersionProperties Properties -->
+     <xsl:template name="AD.LifespanVersionProperties" priority="1">
+         <!-- TODO: optional populate -->
+         <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></AD:beginLifespanVersion>
+         <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></AD:endLifespanVersion>
+     </xsl:template>
+
 </xsl:stylesheet>

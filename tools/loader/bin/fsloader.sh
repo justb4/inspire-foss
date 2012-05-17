@@ -1,7 +1,7 @@
 #!/bin/sh
 if(test -z $5) then
   echo "Usage: fsloader.sh <fsName> <jdbcName> <gmlVersion> <idGenMode> <dataset>"
-  return
+  exit 0
 fi
 
 BASEDIR=`dirname $0`/..

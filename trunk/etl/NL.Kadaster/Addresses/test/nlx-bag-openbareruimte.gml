@@ -1,5 +1,6 @@
-SELECT orn.identificatie,orn.openbareruimtenaam,translate(to_char(orn.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(orn.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid FROM openbareruimteactueelbestaand as orn
 <?xml version="1.0" encoding="utf-8" ?>
+
+
 <ogr:FeatureCollection
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://ogr.maptools.org/ .xsd"

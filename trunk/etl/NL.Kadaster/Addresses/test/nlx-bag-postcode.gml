@@ -1,5 +1,5 @@
-SELECT DISTINCT na.postcode,translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid FROM nummeraanduidingactueelbestaand as na
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ogr:FeatureCollection
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://ogr.maptools.org/ .xsd"

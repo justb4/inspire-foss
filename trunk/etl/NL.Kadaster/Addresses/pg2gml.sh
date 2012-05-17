@@ -22,7 +22,7 @@ pg2gml() {
 	-f "GML" "/vsistdout/" \
 	-dsco "FORMAT=GML3" \
 	-lco "DIM=2" \
-	PG:"host=localhost dbname=bag active_schema=public user=postgres password=postgres port=5432"  \
+	PG:"host=localhost dbname=bag active_schema=bagaveen user=postgres password=postgres port=5432"  \
 	-SQL "$1"  \
 	-nln "$2" \
 	$nlt

@@ -50,11 +50,15 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
             <xsl:with-param name="localId">
                 <xsl:value-of select="ogr:identificatie"/>
             </xsl:with-param>
-            <xsl:with-param name="pointPos">
-                <!-- <ogr:geometryProperty><gml:Point srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>53.321190450363517 6.854402742140622</gml:pos></gml:Point></ogr:geometryProperty> -->
+            <!-- <xsl:with-param name="pointNode" select="ogr:geometryProperty/gml:Point" />    -->
+            <xsl:with-param name="srsName">
+                 <xsl:value-of select="ogr:geometryProperty/gml:Point/@srsName"/>
+             </xsl:with-param>
+             <xsl:with-param name="pointPos">
+                 <!-- <ogr:geometryProperty><gml:Point srsName="urn:ogc:def:crs:EPSG::4258"><gml:pos>53.321190450363517 6.854402742140622</gml:pos></gml:Point></ogr:geometryProperty> -->
 
-                <xsl:value-of select="ogr:geometryProperty/gml:Point/gml:pos"/>
-            </xsl:with-param>
+                 <xsl:value-of select="ogr:geometryProperty/gml:Point/gml:pos"/>
+             </xsl:with-param>
 
             <xsl:with-param name="locatorDesignatorType">2</xsl:with-param>
             <xsl:with-param name="locatorDesignatorValue">

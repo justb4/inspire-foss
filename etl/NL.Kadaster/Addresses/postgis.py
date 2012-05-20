@@ -80,7 +80,7 @@ class PostGIS:
             # log.debug(self.cursor.statusmessage)
         except (Exception), e:
             log.warning("fout %s voor query: %s met parameters %s" % (str(e), str(sql), str(parameters))  )
-            self.log_actie("uitvoeren_db", "n.v.t", "fout=%s" % str(e), True)
+#            self.log_actie("uitvoeren_db", "n.v.t", "fout=%s" % str(e), True)
             raise
 
         return self.cursor.rowcount

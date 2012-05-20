@@ -10,6 +10,15 @@ logging.info("start")
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 
+# Feature type id lookup
+feature_type_ids = {}
+
+import sys
+try:
+    from osgeo import ogr #apt-get install python-gdal
+except ImportError:
+    print("FATAAL: GDAL Python bindings not available, install e.g. with 'apt-get install python-gdal'")
+    sys.exit(-1)
 
 try:
   from lxml import etree
@@ -93,13 +102,14 @@ def publish_gml_deegree_fsloader(s):
 def publish_gml_stdout(s):
     print(s)
 
-def blob_insert_stmt(self, gml_id, blob):
-     return """INSERT INTO gml_objects
-        (osm_id, geometry %(extra_arg_names)s)
-        VALUES (%%s, ST_Transform(ST_GeomFromWKB(%%s, 4326), %(srid)s)
-            %(extra_args)s)
-    """.strip() % dict(tablename=self.table_prefix + mapping.name, srid=self.srid,
-        extra_arg_names=extra_arg_names, extra_args=extra_args)
+def get_feature_types():
+    db = PostGIS(dict(configdict.items('db_target')))
+    db.connect()
+    sql  = "SELECT id,qname FROM feature_types"
+    db.uitvoeren(sql)
+    cur = db.cursor
+    for record in cur:
+        feature_type_ids[record[1]] = record[0]
 
 def publish_gml_blob_db(gmlDoc):
     db = PostGIS(dict(configdict.items('db_target')))
@@ -110,9 +120,23 @@ def publish_gml_blob_db(gmlDoc):
     count = 0
     for childNode in featureMembers:
         gml_id = childNode.get('{http://www.opengis.net/gml/3.2}id')
+        feature_type_id = feature_type_ids[childNode.tag]
+
+        # Find a GML geometry in the GML NS
+        ogrGeomWKT = None
+        gmlMembers = childNode.xpath(".//gml:Point|.//gml:Curve|.//gml:Surface|.//gml:MultiSurface", namespaces = NS)
+        for gmlMember in gmlMembers:
+            gmlStr = etree.tostring(gmlMember)
+            ogrGeom = ogr.CreateGeometryFromGML(str(gmlStr))
+            if ogrGeom is not None:
+                ogrGeomWKT = ogrGeom.ExportToWkt()
+                if ogrGeomWKT is not None:
+                    break
+
         blob = etree.tostring(childNode, pretty_print=False, xml_declaration=False, encoding='UTF-8')
-        sql  = "INSERT INTO gml_objects(gml_id, binary_object) VALUES (%s, %s)"
-        parameters = (gml_id, db.make_bytea(blob))
+
+        sql  = "INSERT INTO gml_objects(gml_id, ft_type, binary_object, gml_bounded_by) VALUES (%s, %s, %s, ST_GeomFromEWKT(%s))"
+        parameters = (gml_id, feature_type_id, db.make_bytea(blob), ogrGeomWKT)
         db.uitvoeren(sql, parameters)
         count += 1
 
@@ -143,13 +167,15 @@ def main():
         configdict.read(config_file)
     except:
         log.warning("ik kan " + str(config_file) + " wel vinden maar niet inlezen.")
-    
+
+    get_feature_types()
+
     fileIN = codecs.open('/dev/stdin', 'r', 'utf-8')
 
     maxFeat = 10000
     inHeading = True
     line = 1
-    featCount = 0;
+    featCount = 0
     buffer = init_buf()
     while line:
         line = fileIN.readline()

@@ -51,7 +51,6 @@ Output: SpatialDataset with Addresses Features from INSPIRE Annex I AD
 							 xmlns:gmd="http://www.isotc211.org/2005/gmd"
 							 xmlns:xlink="http://www.w3.org/1999/xlink"
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-							 xmlns:gml2="http://www.opengis.net/gml"
 							 xmlns:gml="http://www.opengis.net/gml/3.2"
 							 xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd
 							 urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0.1/Addresses.xsd

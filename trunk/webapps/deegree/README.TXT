@@ -29,6 +29,14 @@ cd webapp
 execute ./get-deegree-war.sh or get wardirectly from repository
 deploy deegree3.war in Tomcat
 
+OR run the webapp with Maven
+
+cd webapp
+mvn clean package tomcat:run
+
+
+
+
 
 
 

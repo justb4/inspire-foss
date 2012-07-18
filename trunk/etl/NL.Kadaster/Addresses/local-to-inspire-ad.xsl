@@ -60,6 +60,7 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
                  <xsl:value-of select="ogr:geometryProperty/gml:Point/gml:pos"/>
              </xsl:with-param>
 
+             <xsl:with-param name="point" select="ogr:geometryProperty/gml:Point" />
             <xsl:with-param name="locatorDesignatorType">2</xsl:with-param>
             <xsl:with-param name="locatorDesignatorValue">
                 <xsl:value-of select="ogr:huisnummer"/>
@@ -72,7 +73,7 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
                 <xsl:value-of select="ogr:postcode"/>
             </xsl:with-param>
             <xsl:with-param name="addressAreaLocalId">
-                <xsl:value-of select="ogr:gerelateerdewoonplaats"/>
+                <xsl:value-of select="ogr:woonplaats"/>
             </xsl:with-param>
 
             <xsl:with-param name="validFrom">

@@ -1,210 +1,221 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from ConfigParser import ConfigParser
-configdict = ConfigParser()
-
-from postgis import PostGIS
-import logging
-logging.info("start")
-log = logging.getLogger(__name__)
-log.setLevel(logging.DEBUG)
-
-# Feature type id lookup
-feature_type_ids = {}
-
-import sys
-try:
-    from osgeo import ogr #apt-get install python-gdal
-except ImportError:
-    print("FATAAL: GDAL Python bindings not available, install e.g. with 'apt-get install python-gdal'")
-    sys.exit(-1)
-
-try:
-  from lxml import etree
-  log.info("running with lxml.etree")
-except ImportError:
-  try:
-    # Python 2.5
-    import xml.etree.cElementTree as etree
-    log.warning("running with cElementTree on Python 2.5+")
-  except ImportError:
-    try:
-      # Python 2.5
-      import xml.etree.ElementTree as etree
-      log.warning("running with ElementTree on Python 2.5+")
-    except ImportError:
-      try:
-        # normal cElementTree install
-        import cElementTree as etree
-        log.warning("running with cElementTree")
-      except ImportError:
-        try:
-          # normal ElementTree install
-          import elementtree.ElementTree as etree
-          log.warning("running with ElementTree")
-        except ImportError:
-          log.warning("Failed to import ElementTree from any known place")
-
 import codecs
+import optparse
+from ConfigParser import ConfigParser
+from util import Util, ConfigSection, XsltTransformer, etree, StringIO
+from deegree import DeegreeOutput
+from ogr2gml import Ogr2Ogr
 
-try:
-    from cStringIO import StringIO
-    logMsg = "running with cStringIO"
-except:
-    from StringIO import StringIO
-    logMsg = "running with StringIO"
+log = Util.get_log('ogr2inspire')
 
-start = '''<?xml version="1.0" encoding="UTF-8"?>
-<ogr:FeatureCollection
+class ETL:
+    # Constructor
+    def __init__(self):
+        usage = "usage: %prog [options]"
+        parser = optparse.OptionParser(usage)
+        parser.add_option("-c", "--config", action="store", type="string", dest="config_file",
+                          default="etl.cfg",
+                          help="ETL config file")
+        parser.add_option("-o", "--overwrite", action="store_true", dest="overwrite",
+                          default=False,
+                          help="Overwrite existing Features (default is no, i.e. append) ?")
+
+        self.options, args = parser.parse_args()
+        self.fileName = '/dev/stdin'
+        if len(args) == 1:
+            log.info("args[0]=%s" % args[0])
+            self.fileName = args[0]
+
+        # Default config file
+        config_file = self.options.config_file
+        self.configdict = ConfigParser()
+        try:
+            self.configdict.read(config_file)
+        except:
+            log.warning("ik kan " + str(config_file) + " wel vinden maar niet inlezen.")
+
+    def process_buf(self, buffer, xslt):
+        log.info("process_buf")
+        buffer.seek(0)
+        # buffer = codecs.getreader("utf8")(buffer)
+        # Open het GML bestand; verwijder hierbij nodes met alleen whitespace
+        parser = etree.XMLParser(remove_blank_text=True)
+        # gmlF=open(args.GML, 'r')
+        # print 'parse'
+        gmlDoc = etree.parse(buffer, parser)
+        # print buffer.getvalue()
+        buffer.close()
+
+        # Voer gelijk de transformatie uit
+        result_doc = xslt.xslt(gmlDoc)
+
+        return result_doc
+
+    def run(self):
+        input = Ogr2Ogr(self.configdict)
+        ogr_splitter = OgrSplitter(self.configdict)
+        xslt = XsltTransformer(self.configdict)
+        deegree = DeegreeOutput(self.configdict, self.options.overwrite)
+        deegree.init()
+
+        layer_names = input.get_layer_names()
+        for layer_name in layer_names:
+            input.exec_layer(layer_name)
+
+            while 1:
+                 line = input.readline()
+                 if not line:
+                     line = input.readline_err()
+                     if not line:
+                        log.info("EOF All")
+                        break
+                 else:
+                     buffer = ogr_splitter.push_line(line)
+                     if buffer is not None:
+                        result_doc = self.process_buf(buffer, xslt)
+                        deegree.publish_gml_blob_db(result_doc)
+
+                 print line
+
+#        xslt = XsltTransformer(self.configdict)
+#
+#
+#        deegree = DeegreeOutput(self.configdict, self.options.overwrite)
+#        deegree.init()
+#
+#        ogr_splitter = OgrSplitter(xslt, deegree)
+#        ogr_splitter.process(self.fileName)
+
+
+class OgrSplitter:
+    startFCTag = '''<?xml version="1.0" encoding="UTF-8"?>
+    <ogr:FeatureCollection
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://ogr.maptools.org/ .xsd"
+     xsi:schemaLocation="http://ogr.maptools.org/ my.xsd"
      xmlns:ogr="http://ogr.maptools.org/"
      xmlns:gml="http://www.opengis.net/gml">
      '''
+    endFCTag = '</ogr:FeatureCollection>'
+    startFeatureTag = '<ogr:featureMember>'
+    endFeatureTag = '</ogr:featureMember>'
+    deegree = None
 
-end = '</ogr:FeatureCollection>'
-featureMemberTag='ogr:featureMember'
-startOGRTag='<ogr:'
+    # Constructor
+    def __init__(self, configdict):
+        self.cfg = ConfigSection(configdict.items('ogr_splitter'))
+        log.info("cfg=%s" % self.cfg.to_string())
+        self.max_features = 10000
+        self.buffer = None
 
-# Open het XSLT-bestand
-xsltF=open('local-to-inspire-ad-sd.xsl', 'r')
-xsltDoc=etree.parse(xsltF)
-xslt=etree.XSLT(xsltDoc)
-xsltF.close()
+    def init_buf(self):
+        buffer = StringIO()
+        buffer = codecs.getwriter("utf8")(buffer)
 
-# Open het GML bestand; verwijder hierbij nodes met alleen whitespace
-#parser = etree.XMLParser(remove_blank_text=True)
-#gmlF=open(args.GML, 'r')
-#gmlDoc=etree.parse(gmlF, parser)
-#gmlF.close()
+        buffer.write(OgrSplitter.startFCTag)
+        #        buffer.write('<!--  %s -->\n' % logMsg)
+        return buffer
 
+    def push_line(self, line):
 
-def init_buf():
-    buffer = StringIO()
-    buffer = codecs.getwriter("utf8")(buffer)
+        if self.buffer is None:
+            self.buffer = self.init_buf()
+            self.inHeading = True
+            self.inFeature = False
+            self.feature_count = 0
 
-    buffer.write(start)
-    buffer.write('<!--  %s -->\n' % logMsg)
-    return buffer
+        if line.find(OgrSplitter.startFeatureTag) >= 0:
+            if self.inHeading:
+                self.inHeading = False
 
-def publish_gml_deegree_fsloader(s):
-    from subprocess import Popen, PIPE, STDOUT
+            self.buffer.write(line)
+            self.feature_count += 1
+            self.buffer.write('<!-- Feature #%s -->\n' % self.feature_count)
+            self.inFeature = True
 
-    p = Popen(['../../../tools/loader/bin/fsloader.sh', 'inspire-postgis', 'inspire_blob', 'GML_32', 'USE_EXISTING', '/dev/stdin'], stdout=PIPE, stdin=PIPE, stderr=STDOUT)
-
-    p.stdin.write(s)
-
-    result = p.communicate()[0]
-
-    print(result)
-
-def publish_gml_stdout(s):
-    print(s)
-
-def get_feature_types():
-    db = PostGIS(dict(configdict.items('db_target')))
-    db.connect()
-    sql  = "SELECT id,qname FROM feature_types"
-    db.uitvoeren(sql)
-    cur = db.cursor
-    for record in cur:
-        feature_type_ids[record[1]] = record[0]
-
-def publish_gml_blob_db(gmlDoc):
-    db = PostGIS(dict(configdict.items('db_target')))
-    db.connect()
-    NS={'base':'urn:x-inspire:specification:gmlas:BaseTypes:3.2', 'gml':'http://www.opengis.net/gml/3.2'}
-
-    featureMembers = gmlDoc.xpath('//base:member/*', namespaces=NS)
-    count = 0
-    for childNode in featureMembers:
-        gml_id = childNode.get('{http://www.opengis.net/gml/3.2}id')
-        feature_type_id = feature_type_ids[childNode.tag]
-
-        # Find a GML geometry in the GML NS
-        ogrGeomWKT = None
-        gmlMembers = childNode.xpath(".//gml:Point|.//gml:Curve|.//gml:Surface|.//gml:MultiSurface", namespaces = NS)
-        for gmlMember in gmlMembers:
-            gmlStr = etree.tostring(gmlMember)
-            ogrGeom = ogr.CreateGeometryFromGML(str(gmlStr))
-            if ogrGeom is not None:
-                ogrGeomWKT = ogrGeom.ExportToWkt()
-                if ogrGeomWKT is not None:
-                    break
-
-        blob = etree.tostring(childNode, pretty_print=False, xml_declaration=False, encoding='UTF-8')
-
-        sql  = "INSERT INTO gml_objects(gml_id, ft_type, binary_object, gml_bounded_by) VALUES (%s, %s, %s, ST_GeomFromEWKT(%s))"
-        parameters = (gml_id, feature_type_id, db.make_bytea(blob), ogrGeomWKT)
-        db.uitvoeren(sql, parameters)
-        count += 1
-
-    db.connection.commit()
-    log.info("inserted %s features" % count)
-
-def process_buf(buffer):
-    buffer.seek(0)
-    # buffer = codecs.getreader("utf8")(buffer)
-    # Open het GML bestand; verwijder hierbij nodes met alleen whitespace
-    parser = etree.XMLParser(remove_blank_text=True)
-    # gmlF=open(args.GML, 'r')
-    # print 'parse'
-    gmlDoc=etree.parse(buffer, parser)
-    # print buffer.getvalue()
-    buffer.close()
-
-    # Voer gelijk de transformatie uit
-    resultDoc=xslt(gmlDoc)
-    publish_gml_blob_db(resultDoc)
-
-#    publish_gml_stdout(etree.tostring(resultDoc, pretty_print=True, xml_declaration=True, encoding='UTF-8'))
-
-def main():
-   # Default config file
-    config_file = 'etl.cfg'
-    try:
-        configdict.read(config_file)
-    except:
-        log.warning("ik kan " + str(config_file) + " wel vinden maar niet inlezen.")
-
-    get_feature_types()
-
-    fileIN = codecs.open('/dev/stdin', 'r', 'utf-8')
-
-    maxFeat = 10000
-    inHeading = True
-    line = 1
-    featCount = 0
-    buffer = init_buf()
-    while line:
-        line = fileIN.readline()
-        if line.find(featureMemberTag) == -1:
-            if inHeading:
-                continue
-
-            buffer.write(line)
         else:
-            # Start or end tag of ogr:feature  element
-            inHeading = False
+            if line.find(OgrSplitter.endFeatureTag) >= 0:
+                # Start or end tag of ogr:feature  element
+                self.inHeading = False
+                self.inFeature = False
 
-            # Start or end feature
-            buffer.write(line)
+                # Start or end feature
+                self.buffer.write(line)
+                if not self.feature_count % self.max_features:
+                    self.buffer.write(OgrSplitter.endFCTag)
+                    buffer = self.buffer
+                    self.buffer = None
+                    return buffer
 
-            if line.find(startOGRTag) == -1:
-                # End feature
-                if not featCount % maxFeat:
-                    buffer.write(end)
-                    process_buf(buffer)
 
-                    buffer = init_buf()
-            else:
-                # Start of feature element
+            if self.inFeature:
+                self.buffer.write(line)
+
+            if line.find(OgrSplitter.endFCTag) >= 0:
+                if self.buffer is not None:
+                    self.buffer.write(line)
+                    buffer = self.buffer
+                    self.buffer = None
+                    return buffer
+
+        return None
+
+
+    def process(self, file_name):
+        fileIN = codecs.open(file_name, 'r', 'utf-8')
+
+        maxFeat = 10000
+        inHeading = True
+        inFeature = False
+        line = 1
+        featCount = 0
+
+        buffer = self.init_buf()
+        while line:
+            line = fileIN.readline()
+            if line.find(OgrSplitter.startFeatureTag) >= 0:
+                if buffer is None:
+                    buffer = self.init_buf()
+
+                if inHeading:
+                    inHeading = False
+
+                buffer.write(line)
                 featCount += 1
                 buffer.write('<!-- Feature #%s -->\n' % featCount)
+                inFeature = True
+
+            else:
+                if line.find(OgrSplitter.endFeatureTag) >= 0:
+                    # Start or end tag of ogr:feature  element
+                    inHeading = False
+                    inFeature = False
+
+                    # Start or end feature
+                    buffer.write(line)
+                    if not featCount % maxFeat:
+                        buffer.write(OgrSplitter.endFCTag)
+                        self.process_buf(buffer)
+                        buffer = None
+                    continue
+
+                if inFeature:
+                    buffer.write(line)
+                    continue
+
+                if line.find(OgrSplitter.endFCTag) >= 0:
+                    if buffer is not None:
+                        buffer.write(line)
+                        self.process_buf(buffer)
+                        break
 
 
-    process_buf(buffer)
+#        self.output.publish_gml_stdout(etree.tostring(resultDoc, pretty_print=True, xml_declaration=True, encoding='UTF-8'))
 
+
+def main():
+    etl = ETL()
+    etl.run()
 
 main()

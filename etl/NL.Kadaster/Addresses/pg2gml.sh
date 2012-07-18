@@ -22,7 +22,7 @@ pg2gml() {
 	-f "GML" "/vsistdout/" \
 	-dsco "FORMAT=GML3" \
 	-lco "DIM=2" \
-	PG:"host=localhost dbname=bag active_schema=bagaveen user=postgres password=postgres port=5432"  \
+	PG:"host=localhost dbname=bag active_schema=public user=postgres password=postgres port=5432"  \
 	-SQL "$1"  \
 	-nln "$2" \
 	$nlt
@@ -40,7 +40,55 @@ sql_addresseerbaarobj() {
 	fi
 
 	# Query hele tabel Adresseerbaarobject (VBO,LP of SP) joined met Nummeraanduiding tabel
-	echo "SELECT na.identificatie,na.huisnummer,na.huisletter,na.huisnummertoevoeging,na.gerelateerdeopenbareruimte,na.postcode,na.gerelateerdewoonplaats,translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid,ST_Force_2D($geom) FROM $1 as ao INNER JOIN nummeraanduidingactueelbestaand as na ON (ao.hoofdadres = na.identificatie)"
+#	echo "SELECT na.identificatie,na.huisnummer,na.huisletter,na.huisnummertoevoeging,na.gerelateerdeopenbareruimte,na.postcode,na.gerelateerdewoonplaats,translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T') as begindatumtijdvakgeldigheid,translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T') as einddatumtijdvakgeldigheid,ST_Force_2D($geom) FROM $1 as ao INNER JOIN nummeraanduidingactueelbestaand as na ON (ao.hoofdadres = na.identificatie)"
+#  SELECT
+#    na.identificatie,
+#    na.huisnummer,
+#    na.huisletter,
+#    na.huisnummertoevoeging,
+#    na.gerelateerdeopenbareruimte,
+#    na.postcode,
+#    (CASE
+#      WHEN wp2.woonplaatsnaam IS NULL THEN w.identificatie ELSE wp2.identificatie END) as woonplaats,
+#translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T')
+#  as begindatumtijdvakgeldigheid,
+#translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T')
+# as einddatumtijdvakgeldigheid,
+#ST_Force_2D(v.geopunt) as geom
+#   FROM verblijfsobjectactueelbestaand v
+#    JOIN nummeraanduidingactueelbestaand na
+#    ON (na.identificatie = v.hoofdadres)
+#    JOIN openbareruimteactueelbestaand o
+#    ON (na.gerelateerdeopenbareruimte = o.identificatie)
+#    JOIN woonplaatsactueelbestaand w
+#    ON (o.gerelateerdewoonplaats = w.identificatie)
+#    LEFT OUTER JOIN woonplaatsactueelbestaand wp2
+#    ON (na.gerelateerdewoonplaats = wp2.identificatie)
+# ;
+  echo "SELECT
+    na.identificatie,
+    na.huisnummer,
+    na.huisletter,
+    na.huisnummertoevoeging,
+    na.gerelateerdeopenbareruimte,
+    na.postcode,
+    (CASE
+      WHEN wp2.woonplaatsnaam IS NULL THEN w.identificatie ELSE wp2.identificatie END) as woonplaats,
+translate(to_char(na.begindatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'),' ', 'T')
+  as begindatumtijdvakgeldigheid,
+translate(to_char(na.einddatumtijdvakgeldigheid, 'YYYY-MM-DD HH24:MI:SS'), ' ', 'T')
+ as einddatumtijdvakgeldigheid,
+ST_Force_2D($geom)
+   FROM $1 ao
+    JOIN nummeraanduidingactueelbestaand na
+    ON (na.identificatie = ao.hoofdadres)
+    JOIN openbareruimteactueelbestaand o
+    ON (na.gerelateerdeopenbareruimte = o.identificatie)
+    JOIN woonplaatsactueelbestaand w
+    ON (o.gerelateerdewoonplaats = w.identificatie)
+    LEFT OUTER JOIN woonplaatsactueelbestaand wp2
+    ON (na.gerelateerdewoonplaats = wp2.identificatie)"
+
 }
 
 # BAG component naam

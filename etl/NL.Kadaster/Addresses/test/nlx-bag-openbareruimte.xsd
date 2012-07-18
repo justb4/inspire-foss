@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        targetNamespace="http://ogr.maptools.org/"
+        xmlns:ogr="http://ogr.maptools.org/"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:gml="http://www.opengis.net/gml"
+        xmlns:gmlsf="http://www.opengis.net/gmlsf"
+        elementFormDefault="qualified"
+        version="1.0">
+    <xs:annotation>
+        <xs:appinfo source="http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+            <gmlsf:GMLProfileSchema>http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsf.xsd
+            </gmlsf:GMLProfileSchema>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:import namespace="http://www.opengis.net/gml"
+               schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gmlsf"
+               schemaLocation="http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsfLevels.xsd"/>
+    <xs:element name="FeatureCollection" type="ogr:FeatureCollectionType" substitutionGroup="gml:_GML"/>
+    <xs:complexType name="FeatureCollectionType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="featureMember">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element ref="gml:_Feature"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="openbareruimte" type="ogr:openbareruimte_Type" substitutionGroup="gml:_Feature"/>
+    <xs:complexType name="openbareruimte_Type">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="geometryProperty" type="gml:GeometryPropertyType" nillable="true" minOccurs="0"
+                                maxOccurs="1"/>
+                    <xs:element name="identificatie" nillable="true" minOccurs="0" maxOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:decimal">
+                                <xs:totalDigits value="16"/>
+                                <xs:fractionDigits value="0"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="openbareruimtenaam" nillable="true" minOccurs="0" maxOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="80"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="begindatumtijdvakgeldigheid" nillable="true" minOccurs="0" maxOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="einddatumtijdvakgeldigheid" nillable="true" minOccurs="0" maxOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>

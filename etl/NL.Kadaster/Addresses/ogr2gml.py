@@ -79,6 +79,7 @@ class Ogr2Ogr:
             log.info("EOF stdout")
             return None
 
+        line = line.decode('utf-8')
         return line
 
     def readline_err(self):

@@ -93,18 +93,4 @@ class ConfigSection():
     def to_string(self):
         return repr(self.config_dict)
 
-class XsltTransformer:
-    # Constructor
-    def __init__(self, configdict):
-        self.cfg = ConfigSection(configdict.items('transformer'))
-
-        self.xslt_file_path = self.cfg.get('script')
-        self.xslt_file = open(self.xslt_file_path, 'r')
-        self.xslt_doc = etree.parse(self.xslt_file)
-        self.xslt_obj = etree.XSLT(self.xslt_doc)
-        self.xslt_file.close()
-
-    def transform(self, doc):
-        log.info("XSLT Transform")
-        return self.xslt_obj(doc)
 

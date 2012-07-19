@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# Transformation modules.
+#
 # Author:Just van den Broecke
 
 from util import ConfigSection, Util, etree

@@ -4,7 +4,7 @@
 # Database tables are structured according to NLExtract BAG DB schema
 # For schema see: https://github.com/opengeogroep/NLExtract/blob/master/bag/db/script/bag-db.SQL
 # Just van den Broecke
-
+# THIS SCRIPT IS OBSOLETE, see etl/shared/python
 # Convert postgis to GML
 pg2gml() {
 	# Alleen feature types met geo-kolom hebben een geo_type

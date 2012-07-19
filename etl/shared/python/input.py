@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Author:Just van den Broecke
-
+#
+# Input classes for ETL.
+#
+# Author: Just van den Broecke
+#
 import os
 import optparse
 import shutil

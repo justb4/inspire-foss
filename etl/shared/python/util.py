@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# Utility functions and classes.
+#
 # Author:Just van den Broecke
 
 import os

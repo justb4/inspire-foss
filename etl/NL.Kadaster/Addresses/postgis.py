@@ -1,8 +1,5 @@
-
-import logging
-logging.info('PostGIS')
-log = logging.getLogger(__name__)
-log.setLevel(logging.DEBUG)
+from util import Util
+log = Util.get_log("transformer")
 
 try:
     import psycopg2

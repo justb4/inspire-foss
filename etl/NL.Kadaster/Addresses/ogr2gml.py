@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 # Author:Just van den Broecke
 
-import logging
-
 import os
 import optparse
 import shutil
@@ -12,7 +10,7 @@ import subprocess
 from util import Util, ConfigSection
 from ConfigParser import ConfigParser
 
-log = Util.get_log('ogr2ogr')
+log = Util.get_log('input')
 
 class Ogr2Ogr:
     pg_conn_tmpl = "PG:host=%s dbname=%s active_schema=%s user=%s password=%s port=%s"
@@ -21,32 +19,32 @@ class Ogr2Ogr:
     # Constructor
     def __init__(self, configdict):
         self.configdict = configdict
-        self.init_pg()
+        self.init()
 #        self.cmd='ogr2ogr|-t_srs|EPSG:4258|-s_srs|EPSG:28992|-f|GML|/vsistdout/|-dsco|FORMAT=GML3|-lco|DIM=2|%s|-SQL|%s|-nln|adres|POINT'
 
-    def init_pg(self):
-        pg_cfg = ConfigSection(self.configdict.items('db_source'))
-        host = pg_cfg.get('host', 'localhost')
-        db = pg_cfg.get('database')
-        schema = pg_cfg.get('schema', 'public')
-        user = pg_cfg.get('user', 'postgres')
-        password = pg_cfg.get('password', 'postgres')
-        port = pg_cfg.get('port', '5432')
+    def init(self):
+        self.cfg = ConfigSection(self.configdict.items('input'))
+        host = self.cfg.get('host', 'localhost')
+        db = self.cfg.get('database')
+        schema = self.cfg.get('schema', 'public')
+        user = self.cfg.get('user', 'postgres')
+        password = self.cfg.get('password', 'postgres')
+        port = self.cfg.get('port', '5432')
 
         self.pg = Ogr2Ogr.pg_conn_tmpl % (host,db,schema,user,password,port)
 
     def get_layer_names(self):
         layer_names = []
         for section_name in self.configdict.sections():
-            if section_name.startswith('db_source_layer'):
+            if section_name.startswith('input_layer'):
                 layer_names.append(section_name)
         return layer_names
 
     def exec_layer(self, db_layer_section):
         lcfg = ConfigSection(self.configdict.items(db_layer_section))
         log.info("run_layer section = [%s] name = [%s]" % (db_layer_section, lcfg.get('name')))
-        t_srs = lcfg.get('t_srs')
-        s_srs = lcfg.get('s_srs')
+        t_srs = self.cfg.get('t_srs')
+        s_srs = self.cfg.get('s_srs')
         gml_out_file = lcfg.get('gml_out_file')
         gml_format = lcfg.get('gml_format')
         dimension = lcfg.get('dimension')

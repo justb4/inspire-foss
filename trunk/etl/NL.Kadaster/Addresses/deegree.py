@@ -4,11 +4,11 @@ log = Util.get_log('output')
 
 class DeegreeBlobstoreOutput:
     def __init__(self, configdict):
-        self.db_cfg = ConfigSection(configdict.items('db_target'))
         self.cfg = ConfigSection(configdict.items('output'))
-        log.info("cfg = %s db_cfg=%s" % (self.cfg.to_string(), self.db_cfg.to_string()))
+        log.info("cfg = %s" % self.cfg.to_string())
         self.overwrite = self.cfg.get_bool('overwrite')
         self.feature_type_ids = {}
+        self.init()
 
     def init(self):
         self.get_feature_types()
@@ -33,7 +33,7 @@ class DeegreeBlobstoreOutput:
 
     def get_feature_types(self):
         log.info('reading all featuretypes from DB')
-        db = PostGIS(self.db_cfg.get_dict())
+        db = PostGIS(self.cfg.get_dict())
         db.connect()
         sql = "SELECT id,qname FROM feature_types"
         db.uitvoeren(sql)
@@ -43,18 +43,18 @@ class DeegreeBlobstoreOutput:
 
     def delete_features(self):
         log.info('deleting ALL features in DB')
-        db = PostGIS(self.db_cfg.get_dict())
+        db = PostGIS(self.cfg.get_dict())
         db.tx_uitvoeren("TRUNCATE gml_objects")
 
     def pg_srs_constraint(self):
         log.info('set srs constraint')
-        db = PostGIS(self.db_cfg.get_dict())
+        db = PostGIS(self.cfg.get_dict())
         db.tx_uitvoeren(
             "ALTER TABLE gml_objects DROP CONSTRAINT enforce_srid_gml_bounded_by; ALTER TABLE gml_objects ADD CHECK (st_srid(gml_bounded_by) = (4258));")
 
     def write(self, gml_doc):
         log.info('inserting features in DB')
-        db = PostGIS(self.db_cfg.get_dict())
+        db = PostGIS(self.cfg.get_dict())
         db.connect()
         NS = {'base': 'urn:x-inspire:specification:gmlas:BaseTypes:3.2', 'gml': 'http://www.opengis.net/gml/3.2'}
 

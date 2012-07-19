@@ -55,7 +55,6 @@ class ETL:
     def run(self):
         input = factory.create_obj('input', self.configdict)
         output = factory.create_obj('output', self.configdict)
-        output.init()
         self.transformer = factory.create_obj('transformer', self.configdict)
 
         self.xml_parser = etree.XMLParser(remove_blank_text=True)

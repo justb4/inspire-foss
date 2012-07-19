@@ -1,5 +1,10 @@
-
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# Object and class Factory (Pattern).
+#
+# Author: Just van den Broecke
+#
 # http://stackoverflow.com/questions/2226330/instantiate-a-python-class-from-a-name
 
 class Factory:

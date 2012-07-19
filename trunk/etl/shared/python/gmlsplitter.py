@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+#
+# Splits stream of GML (from OGR) into buffers.
+#
+# Author: Just van den Broecke
+#
 import codecs
 import optparse
 from ConfigParser import ConfigParser
@@ -28,9 +32,13 @@ class GmlSplitter:
         return buffer
 
     def push_line(self, line):
+        # Assume GML lines with single tag per line !!
+        # This is ok for e.g. OGR output
+
         if self.eof:
             return None
 
+        # Start new buffer filling
         if self.buffer is None and self.eof is False:
             self.buffer = self.init_buf()
             self.in_heading = True
@@ -39,6 +47,7 @@ class GmlSplitter:
 
         if line.find(self.start_feature_tag) >= 0:
             if self.in_heading:
+                # First time: we are in heading
                 self.buffer.write(self.start_container)
                 self.in_heading = False
 
@@ -48,6 +57,7 @@ class GmlSplitter:
             self.in_feature = True
 
         else:
+            # If endtag of feature found may also indicate buffer filled with max_features
             if line.find(self.end_feature_tag) >= 0:
                 # Start or end tag of ogr:feature  element
                 self.in_heading = False
@@ -66,6 +76,7 @@ class GmlSplitter:
             if self.in_feature:
                 self.buffer.write(line)
 
+            # Last tag (end of container) reaching
             if line.find(self.end_container_tag) >= 0:
                 if self.buffer is not None and self.feature_count > 0:
                     if self.feature_count % self.max_features > 0:

@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# Output classes for ETL.
+#
+# Author: Just van den Broecke
+#
 from postgis import PostGIS
 from util import ConfigSection, Util, etree, StringIO
 log = Util.get_log('output')

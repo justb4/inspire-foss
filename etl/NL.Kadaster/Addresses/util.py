@@ -74,6 +74,14 @@ class ConfigSection():
             result = default
         return result
 
+    def get_int(self, name, default=-1):
+        result = self.get(name)
+        if result is None:
+            result = default
+        else:
+            result = int(result)
+        return result
+
     def to_string(self):
         return repr(self.config_dict)
 

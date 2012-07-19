@@ -4,12 +4,11 @@
 import codecs
 import optparse
 from ConfigParser import ConfigParser
-from util import Util, ConfigSection, XsltTransformer, etree, StringIO
-from deegree import DeegreeOutput
-from ogr2gml import Ogr2Ogr
+from util import Util, etree, StringIO
 from gmlsplitter import GmlSplitter
+from factory import factory
 
-log = Util.get_log('ogr2inspire')
+log = Util.get_log('etl main')
 
 class ETL:
     # Constructor
@@ -37,33 +36,35 @@ class ETL:
         except:
             log.warning("ik kan " + str(config_file) + " wel vinden maar niet inlezen.")
 
-    def process_buf(self, buffer, xslt):
-        log.info("process_buf")
+    def process_buf(self, buffer):
+        log.info("transform buffer")
         buffer.seek(0)
+        # bufStr = buffer.getvalue()
+
         # buffer = codecs.getreader("utf8")(buffer)
         # Open het GML bestand; verwijder hierbij nodes met alleen whitespace
-        parser = etree.XMLParser(remove_blank_text=True)
-        # gmlF=open(args.GML, 'r')
-        # print 'parse'
-        gmlDoc = etree.parse(buffer, parser)
-        # print buffer.getvalue()
+        # log.info("parse buffer: content=[%s]" % bufStr)
+        gmlDoc = etree.parse(buffer, self.xml_parser)
         buffer.close()
 
         # Voer gelijk de transformatie uit
-        result_doc = xslt.xslt(gmlDoc)
+        result_doc = self.transformer.transform(gmlDoc)
 
         return result_doc
 
     def run(self):
-        input = Ogr2Ogr(self.configdict)
-        gml_splitter = GmlSplitter(self.configdict)
-        xslt = XsltTransformer(self.configdict)
-        deegree = DeegreeOutput(self.configdict, self.options.overwrite)
-        deegree.init()
+        input = factory.create_obj('input', self.configdict)
+        output = factory.create_obj('output', self.configdict)
+        output.init()
+        self.transformer = factory.create_obj('transformer', self.configdict)
+
+        self.xml_parser = etree.XMLParser(remove_blank_text=True)
 
         layer_names = input.get_layer_names()
         for layer_name in layer_names:
+            log.info("process layer: %s" % layer_name)
             input.exec_layer(layer_name)
+            gml_splitter = GmlSplitter(self.configdict)
 
             while 1:
                  line = input.readline()
@@ -75,8 +76,8 @@ class ETL:
                  else:
                      buffer = gml_splitter.push_line(line)
                      if buffer is not None:
-                        result_doc = self.process_buf(buffer, xslt)
-                        deegree.publish_gml_blob_db(result_doc)
+                        result_doc = self.process_buf(buffer)
+                        output.write(result_doc)
 
                  # print line
 
@@ -85,4 +86,5 @@ def main():
     etl = ETL()
     etl.run()
 
-main()
+if __name__ == "__main__":
+    main()

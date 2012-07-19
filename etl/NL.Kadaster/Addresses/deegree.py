@@ -1,12 +1,13 @@
 from postgis import PostGIS
 from util import ConfigSection, Util, etree, StringIO
-log = Util.get_log('deegree')
+log = Util.get_log('output')
 
-class DeegreeOutput:
-    def __init__(self, configdict, overwrite):
-        self.cfg = ConfigSection(configdict.items('db_target'))
-        log.info("cfg=%s" % self.cfg.to_string())
-        self.overwrite = overwrite
+class DeegreeBlobstoreOutput:
+    def __init__(self, configdict):
+        self.db_cfg = ConfigSection(configdict.items('db_target'))
+        self.cfg = ConfigSection(configdict.items('output'))
+        log.info("cfg = %s db_cfg=%s" % (self.cfg.to_string(), self.db_cfg.to_string()))
+        self.overwrite = self.cfg.get_bool('overwrite')
         self.feature_type_ids = {}
 
     def init(self):
@@ -32,7 +33,7 @@ class DeegreeOutput:
 
     def get_feature_types(self):
         log.info('reading all featuretypes from DB')
-        db = PostGIS(self.cfg.get_dict())
+        db = PostGIS(self.db_cfg.get_dict())
         db.connect()
         sql = "SELECT id,qname FROM feature_types"
         db.uitvoeren(sql)
@@ -42,22 +43,22 @@ class DeegreeOutput:
 
     def delete_features(self):
         log.info('deleting ALL features in DB')
-        db = PostGIS(self.cfg.get_dict())
+        db = PostGIS(self.db_cfg.get_dict())
         db.tx_uitvoeren("TRUNCATE gml_objects")
 
     def pg_srs_constraint(self):
         log.info('set srs constraint')
-        db = PostGIS(self.cfg.get_dict())
+        db = PostGIS(self.db_cfg.get_dict())
         db.tx_uitvoeren(
             "ALTER TABLE gml_objects DROP CONSTRAINT enforce_srid_gml_bounded_by; ALTER TABLE gml_objects ADD CHECK (st_srid(gml_bounded_by) = (4258));")
 
-    def publish_gml_blob_db(self, gmlDoc):
+    def write(self, gml_doc):
         log.info('inserting features in DB')
-        db = PostGIS(self.cfg.get_dict())
+        db = PostGIS(self.db_cfg.get_dict())
         db.connect()
         NS = {'base': 'urn:x-inspire:specification:gmlas:BaseTypes:3.2', 'gml': 'http://www.opengis.net/gml/3.2'}
 
-        featureMembers = gmlDoc.xpath('//base:member/*', namespaces=NS)
+        featureMembers = gml_doc.xpath('//base:member/*', namespaces=NS)
         count = 0
         for childNode in featureMembers:
             gml_id = childNode.get('{http://www.opengis.net/gml/3.2}id')

@@ -12,7 +12,7 @@ import subprocess
 from util import Util, ConfigSection
 from ConfigParser import ConfigParser
 
-log = Util.get_log('ogr2gml')
+log = Util.get_log('ogr2ogr')
 
 class Ogr2Ogr:
     pg_conn_tmpl = "PG:host=%s dbname=%s active_schema=%s user=%s password=%s port=%s"

@@ -15,7 +15,7 @@ class Util:
         log.setLevel(logging.DEBUG)
         return log
 
-log = Util.get_log("Util")
+log = Util.get_log("util")
 
 # GDAL/OGR Python Bindings not needed for now...
 #import sys
@@ -82,6 +82,14 @@ class ConfigSection():
             result = int(result)
         return result
 
+    def get_bool(self, name, default=False):
+        result = self.get(name)
+        if result is None:
+            result = default
+        else:
+            result = bool(result)
+        return result
+
     def to_string(self):
         return repr(self.config_dict)
 
@@ -90,12 +98,13 @@ class XsltTransformer:
     def __init__(self, configdict):
         self.cfg = ConfigSection(configdict.items('transformer'))
 
-        self.xslt_file = self.cfg.get('parameters')
-        xsltF=open(self.xslt_file, 'r')
-        xsltDoc=etree.parse(xsltF)
-        self.xslt=etree.XSLT(xsltDoc)
-        xsltF.close()
+        self.xslt_file_path = self.cfg.get('script')
+        self.xslt_file = open(self.xslt_file_path, 'r')
+        self.xslt_doc = etree.parse(self.xslt_file)
+        self.xslt_obj = etree.XSLT(self.xslt_doc)
+        self.xslt_file.close()
 
-    def transform(self):
-        return self.xslt.xslt()
+    def transform(self, doc):
+        log.info("XSLT Transform")
+        return self.xslt_obj(doc)
 

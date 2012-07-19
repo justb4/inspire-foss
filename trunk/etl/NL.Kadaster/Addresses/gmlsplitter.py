@@ -59,6 +59,7 @@ class GmlSplitter:
                     self.buffer.write(self.end_container_tag)
                     buffer = self.buffer
                     self.buffer = None
+                    log.info("Buffer filled feat_count = %d" % self.feature_count)
                     return buffer
 
 
@@ -66,12 +67,13 @@ class GmlSplitter:
                 self.buffer.write(line)
 
             if line.find(self.end_container_tag) >= 0:
-                if self.buffer is not None:
+                if self.buffer is not None and self.feature_count > 0:
                     if self.feature_count % self.max_features > 0:
                         self.buffer.write(line)
                     buffer = self.buffer
                     self.buffer = None
                     self.eof = True
+                    log.info("Buffer filled (EOF) feat_count = %d" % self.feature_count)
                     return buffer
 
         return None

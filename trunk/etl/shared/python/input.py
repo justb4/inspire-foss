@@ -10,12 +10,13 @@ import optparse
 import shutil
 import re
 import subprocess
-from util import Util, ConfigSection
+from util import Util, ConfigSection, etree
 from ConfigParser import ConfigParser
+from gmlsplitter import GmlSplitter
 
 log = Util.get_log('input')
 
-class Ogr2Ogr:
+class OgrPostgisInput:
     pg_conn_tmpl = "PG:host=%s dbname=%s active_schema=%s user=%s password=%s port=%s"
     cmd_tmpl = 'ogr2ogr|-t_srs|%s|-s_srs|%s|-f|GML|%s|-dsco|FORMAT=%s|-lco|DIM=%s|%s|-SQL|%s|-nln|%s|%s'
 
@@ -34,14 +35,18 @@ class Ogr2Ogr:
         password = self.cfg.get('password', 'postgres')
         port = self.cfg.get('port', '5432')
 
-        self.pg = Ogr2Ogr.pg_conn_tmpl % (host,db,schema,user,password,port)
-
-    def get_layer_names(self):
-        layer_names = []
+        self.pg = OgrPostgisInput.pg_conn_tmpl % (host,db,schema,user,password,port)
+        self.layer_names = []
         for section_name in self.configdict.sections():
             if section_name.startswith('input_layer'):
-                layer_names.append(section_name)
-        return layer_names
+                self.layer_names.append(section_name)
+        self.gml_splitter = None
+        self.layer_index = -1
+        # Reusable XML parser
+        self.xml_parser = etree.XMLParser(remove_blank_text=True)
+
+    def get_layer_names(self):
+        return self.layer_names
 
     def exec_layer(self, db_layer_section):
         lcfg = ConfigSection(self.configdict.items(db_layer_section))
@@ -56,7 +61,7 @@ class Ogr2Ogr:
         geotype = lcfg.get('geotype', '')
 
         # Bouw ogr2ogr commando
-        cmd = Ogr2Ogr.cmd_tmpl % (t_srs, s_srs, gml_out_file, gml_format, dimension, self.pg, sql, new_layer_name, geotype)
+        cmd = OgrPostgisInput.cmd_tmpl % (t_srs, s_srs, gml_out_file, gml_format, dimension, self.pg, sql, new_layer_name, geotype)
         cmd = cmd.split('|')
         self.exec_cmd(cmd)
 
@@ -94,6 +99,43 @@ class Ogr2Ogr:
             return None
 
         return line
+
+    def read(self):
+        if self.layer_index < 0:
+             self.layer_index = 0
+
+        if self.layer_index >= len(self.layer_names):
+             return None
+
+        if self.gml_splitter is None:
+            # New splitter for each layer
+            self.gml_splitter = GmlSplitter(self.configdict)
+            self.exec_layer(self.layer_names[self.layer_index])
+
+        gml_doc = None
+        while 1:
+            line = self.readline()
+            if not line:
+                 line = self.readline_err()
+                 if not line:
+                    log.info("EOF Layer %s" % self.layer_names[self.layer_index])
+                    self.layer_index += 1
+                    self.gml_splitter = None
+                    break
+            else:
+                 # Valid line: push to the splitter
+                 # If buffer filled process it
+                 buffer = self.gml_splitter.push_line(line)
+                 if buffer is not None:
+                    # Process/transform data in buffer
+                    log.info("Buffer ready layer = %s" % self.layer_names[self.layer_index])
+                    buffer.seek(0)
+                    # bufStr = buffer.getvalue()
+                    # log.info("parse buffer: content=[%s]" % bufStr)
+                    gml_doc = etree.parse(buffer, self.xml_parser)
+                    buffer.close()
+
+        return gml_doc
 
     def process_layer(self, layer_name):
         self.exec_layer(layer_name)
@@ -133,7 +175,7 @@ def main():
 #    else:
 #        parser.print_help()
 
-    ogr2ogr = Ogr2Ogr(configdict)
+    ogr2ogr = OgrPostgisInput(configdict)
     ogr2ogr.process()
 
 if __name__ == "__main__":

@@ -6,16 +6,23 @@
 # Author: Just van den Broecke
 #
 from postgis import PostGIS
+from component import Component
 from util import ConfigSection, Util, etree, StringIO
 import os,sys
 
 log = Util.get_log('output')
 
-# Base class: pretty print XML to standard output
-class Output:
-    def __init__(self, configdict):
-        self.cfg = ConfigSection(configdict.items('output'))
+# Base class: Output Component
+class Output(Component):
+    # Constructor
+    def __init__(self, configdict, section):
+        Component.__init__(self, configdict, section)
+
         log.info("cfg = %s" % self.cfg.to_string())
+
+    def invoke(self, doc):
+        self.write(doc)
+        return None
 
     def to_string(self, gml_doc):
         return etree.tostring(gml_doc, pretty_print=True, xml_declaration=True, encoding='utf-8')
@@ -25,8 +32,8 @@ class Output:
 
 # Pretty print XML to file
 class FileOutput(Output):
-    def __init__(self, configdict):
-        Output.__init__(self, configdict)
+    def __init__(self, configdict, section):
+        Output.__init__(self, configdict, section)
         log.info("working dir %s" %os.getcwd())
 
     def write(self, gml_doc):
@@ -40,8 +47,8 @@ class FileOutput(Output):
 # Insert features into deegree Blobstore
 class DeegreeBlobstoreOutput(Output):
 
-    def __init__(self, configdict):
-        Output.__init__(self, configdict)
+    def __init__(self, configdict, section):
+        Output.__init__(self, configdict, section)
         self.overwrite = self.cfg.get_bool('overwrite')
         self.feature_type_ids = {}
         self.init()
@@ -52,18 +59,6 @@ class DeegreeBlobstoreOutput(Output):
         # self.pg_srs_constraint()
         if self.overwrite:
             self.delete_features()
-
-    def publish_gml_deegree_fsloader(self, s):
-        from subprocess import Popen, PIPE, STDOUT
-
-        p = Popen(['../../../tools/loader/bin/fsloader.sh', 'inspire-postgis', 'inspire_blob', 'GML_32', 'USE_EXISTING',
-                   '/dev/stdin'], stdout=PIPE, stdin=PIPE, stderr=STDOUT)
-
-        p.stdin.write(s)
-
-        result = p.communicate()[0]
-
-        print(result)
 
     def get_feature_types(self):
         log.info('reading all featuretypes from DB')
@@ -129,14 +124,14 @@ class DeegreeBlobstoreOutput(Output):
 # Insert features via deegree FSLoader
 class DeegreeFSLoaderOutput(Output):
 
-    def __init__(self, configdict):
-        Output.__init__(self, configdict)
+    def __init__(self, configdict, section):
+        Output.__init__(self, configdict, section)
 
     def write(self, gml_doc):
         from subprocess import Popen, PIPE, STDOUT
         fs_loader = self.cfg.get('file_path')
 
-        p = Popen([fs_load, 'inspire-postgis', 'inspire_blob', 'GML_32', 'USE_EXISTING',
+        p = Popen([fs_loader, 'inspire-postgis', 'inspire_blob', 'GML_32', 'USE_EXISTING',
                 '/dev/stdin'], stdout=PIPE, stdin=PIPE, stderr=STDOUT)
 
         p.stdin.write(self.to_string(gml_doc))

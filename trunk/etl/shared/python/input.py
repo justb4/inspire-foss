@@ -13,21 +13,35 @@ import subprocess
 from util import Util, ConfigSection, etree
 from ConfigParser import ConfigParser
 from gmlsplitter import GmlSplitter
+from component import Component
 
 log = Util.get_log('input')
 
-class OgrPostgisInput:
+# Base class: Input Component
+class Input(Component):
+    # Constructor
+    def __init__(self, configdict, section):
+        Component.__init__(self, configdict, section)
+
+        log.info("cfg = %s" % self.cfg.to_string())
+
+    def invoke(self, doc=None):
+        return self.read()
+
+    def read(self):
+        return None
+
+class OgrPostgisInput(Input):
     pg_conn_tmpl = "PG:host=%s dbname=%s active_schema=%s user=%s password=%s port=%s"
     cmd_tmpl = 'ogr2ogr|-t_srs|%s|-s_srs|%s|-f|GML|%s|-dsco|FORMAT=%s|-lco|DIM=%s|%s|-SQL|%s|-nln|%s|%s'
 
     # Constructor
-    def __init__(self, configdict):
-        self.configdict = configdict
+    def __init__(self, configdict, section):
+        Input.__init__(self, configdict, section)
         self.init()
-#        self.cmd='ogr2ogr|-t_srs|EPSG:4258|-s_srs|EPSG:28992|-f|GML|/vsistdout/|-dsco|FORMAT=GML3|-lco|DIM=2|%s|-SQL|%s|-nln|adres|POINT'
 
     def init(self):
-        self.cfg = ConfigSection(self.configdict.items('input'))
+#        self.cmd='ogr2ogr|-t_srs|EPSG:4258|-s_srs|EPSG:28992|-f|GML|/vsistdout/|-dsco|FORMAT=GML3|-lco|DIM=2|%s|-SQL|%s|-nln|adres|POINT'
         host = self.cfg.get('host', 'localhost')
         db = self.cfg.get('database')
         schema = self.cfg.get('schema', 'public')

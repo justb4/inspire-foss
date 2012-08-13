@@ -9,7 +9,7 @@
 
 class Factory:
 
-    def create_obj(self, section, configdict):
+    def create_obj(self, configdict, section):
         # Get value for 'class' property
         class_string = configdict.get(section, 'class')
         if not class_string:
@@ -19,7 +19,7 @@ class Factory:
         class_obj = self.class_forname(class_string)
 
         # class instance from class object with constructor args
-        return self.new_instance(class_obj, configdict)
+        return self.new_instance(class_obj, configdict, section)
 
     def class_forname(self, class_string):
         """Returns class instance specified by a string.
@@ -38,7 +38,7 @@ class Factory:
             class_name)
         return class_obj
 
-    def new_instance(self, class_obj, configdict):
+    def new_instance(self, class_obj, configdict, section):
         """Returns object instance from class instance.
 
         Args:
@@ -46,7 +46,7 @@ class Factory:
             args: standard args.
             kwargs: standard args.
         """
-        return class_obj(configdict)
+        return class_obj(configdict, section)
 
 factory = Factory()
 

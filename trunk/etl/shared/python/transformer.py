@@ -6,13 +6,27 @@
 # Author:Just van den Broecke
 
 from util import ConfigSection, Util, etree
+from component import Component
 
 log = Util.get_log("transformer")
 
-class XsltTransformer:
+# Base class: Output Component
+class Transformer(Component):
     # Constructor
-    def __init__(self, configdict):
-        self.cfg = ConfigSection(configdict.items('transformer'))
+    def __init__(self, configdict, section):
+        Component.__init__(self, configdict, section)
+        log.info("cfg = %s" % self.cfg.to_string())
+
+    def invoke(self, doc):
+        return self.transform(doc)
+
+    def transform(self, gml_doc):
+        return None
+
+class XsltTransformer(Transformer):
+    # Constructor
+    def __init__(self, configdict, section):
+        Transformer.__init__(self, configdict, section)
 
         self.xslt_file_path = self.cfg.get('script')
         self.xslt_file = open(self.xslt_file_path, 'r')

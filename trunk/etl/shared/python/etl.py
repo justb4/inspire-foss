@@ -9,7 +9,6 @@ import codecs
 import optparse
 from ConfigParser import ConfigParser
 from util import Util, etree, StringIO
-from gmlsplitter import GmlSplitter
 from factory import factory
 
 log = Util.get_log('etl main')
@@ -22,15 +21,8 @@ class ETL:
         parser.add_option("-c", "--config", action="store", type="string", dest="config_file",
                           default="etl.cfg",
                           help="ETL config file")
-        parser.add_option("-o", "--overwrite", action="store_true", dest="overwrite",
-                          default=False,
-                          help="Overwrite existing Features (default is no, i.e. append) ?")
 
         self.options, args = parser.parse_args()
-        self.fileName = '/dev/stdin'
-        if len(args) == 1:
-            log.info("args[0]=%s" % args[0])
-            self.fileName = args[0]
 
         # Get config file path
         config_file = self.options.config_file
@@ -41,42 +33,30 @@ class ETL:
         except:
             log.warning("Found " + str(config_file) + " but cannot read it.")
 
-    def process_buf(self, buffer):
-        log.info("process single buffer")
-        buffer.seek(0)
-        # bufStr = buffer.getvalue()
-
-        # buffer = codecs.getreader("utf8")(buffer)
-        # Open het GML bestand; verwijder hierbij nodes met alleen whitespace
-        # log.info("parse buffer: content=[%s]" % bufStr)
-        gmlDoc = etree.parse(buffer, self.xml_parser)
-        buffer.close()
-
-        # Voer gelijk de transformatie uit
-        result_doc = self.transformer.transform(gmlDoc)
-
-        return result_doc
-
     def run(self):
         # The main ETL processing
+        etl_chain = self.configdict.get('etl', 'chain').split('|')
+        if not etl_chain:
+            raise ValueError('ETL chain entry not defined in section [etl]')
 
-        # Create input/transformer/output objects
-        input = factory.create_obj('input', self.configdict)
-        output = factory.create_obj('output', self.configdict)
-        self.transformer = factory.create_obj('transformer', self.configdict)
-        # Get (GML) docs from the input as long as available
+        # Create input/transformer/output (ETL Component) objects
+        etl_comps = []
+        for etl_section in etl_chain:
+            etl_comps.append(factory.create_obj(self.configdict, etl_section))
+
+        # Do ETL as long as input available
         while 1:
-            # 1. Extract
-            doc = input.read()
+            # Input
+            doc = etl_comps[0].invoke()
+
+            # Halt when no input available any more
             if doc is None:
-                log.info("DONE")
-                break
+                 log.info("DONE")
+                 break
 
-            # 2. Transform
-            result_doc = self.transformer.transform(doc)
-
-            # 3. Load
-            output.write(result_doc)
+            # Processing : invoke the chain of Transformers and Output Components
+            for i in range(1, len(etl_comps)):
+                doc = etl_comps[i].invoke(doc)
 
 def main():
     # Do the ETL

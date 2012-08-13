@@ -31,6 +31,25 @@ class Input(Component):
     def read(self):
         return None
 
+class XMLFileInput(Input):
+    # Constructor
+    def __init__(self, configdict, section):
+        Input.__init__(self, configdict, section)
+        self.file_path = self.cfg.get('file_path')
+        self.doc = None
+
+    def read(self):
+        # One-time read/parse only
+        if self.doc is not None:
+            return None
+
+        try:
+            self.doc = etree.parse(self.file_path)
+            log.info("file read and parsed OK : %s" % self.file_path)
+        except (Exception), e:
+            log.info("file read and parsed NOT OK : %s" % self.file_path)
+        return self.doc
+
 class OgrPostgisInput(Input):
     pg_conn_tmpl = "PG:host=%s dbname=%s active_schema=%s user=%s password=%s port=%s"
     cmd_tmpl = 'ogr2ogr|-t_srs|%s|-s_srs|%s|-f|GML|%s|-dsco|FORMAT=%s|-lco|DIM=%s|%s|-SQL|%s|-nln|%s|%s'
@@ -50,10 +69,7 @@ class OgrPostgisInput(Input):
         port = self.cfg.get('port', '5432')
 
         self.pg = OgrPostgisInput.pg_conn_tmpl % (host,db,schema,user,password,port)
-        self.layer_names = []
-        for section_name in self.configdict.sections():
-            if section_name.startswith('input_layer'):
-                self.layer_names.append(section_name)
+        self.layer_names = self.cfg.get('layers').split(',')
         self.gml_splitter = None
         self.layer_index = -1
         # Reusable XML parser
@@ -168,30 +184,4 @@ class OgrPostgisInput(Input):
         for layer_name in layer_names:
             self.process_layer(layer_name)
 
-def main():
-    usage = "usage: %prog [options]"
-    parser = optparse.OptionParser(usage)
-    parser.add_option("-c", "--config", action="store", type="string", dest="config_file",
-                     default="etl.cfg",
-                      help="ETL config file")
-
-    options, args = parser.parse_args()
-    config_file = options.config_file
-    configdict = ConfigParser()
-
-    try:
-        configdict.read(config_file)
-    except:
-        log.warning("ik kan " + str(config_file) + " wel vinden maar niet inlezen.")
-
-#    if len(args) == 1:
-#        print("args[0]=%s" % args[0])
-#    else:
-#        parser.print_help()
-
-    ogr2ogr = OgrPostgisInput(configdict)
-    ogr2ogr.process()
-
-if __name__ == "__main__":
-    main()
 

@@ -50,6 +50,7 @@ class DeegreeBlobstoreOutput(Output):
     def __init__(self, configdict, section):
         Output.__init__(self, configdict, section)
         self.overwrite = self.cfg.get_bool('overwrite')
+        self.feature_member_tag = self.cfg.get('feature_member_tag')
         self.feature_type_ids = {}
         self.init()
 
@@ -85,17 +86,21 @@ class DeegreeBlobstoreOutput(Output):
         log.info('inserting features in DB')
         db = PostGIS(self.cfg.get_dict())
         db.connect()
-        NS = {'base': 'urn:x-inspire:specification:gmlas:BaseTypes:3.2', 'gml': 'http://www.opengis.net/gml/3.2'}
-
-        featureMembers = gml_doc.xpath('//base:member/*', namespaces=NS)
+#        NS = {'base': 'urn:x-inspire:specification:gmlas:BaseTypes:3.2', 'gml': 'http://www.opengis.net/gml/3.2'}
+#        featureMembers = gml_doc.xpath('//base:member/*', namespaces=NS)
+        featureMembers = gml_doc.xpath("//*[local-name() = '%s']/*" % self.feature_member_tag)
         count = 0
+        gml_ns = None
         for childNode in featureMembers:
-            gml_id = childNode.get('{http://www.opengis.net/gml/3.2}id')
+            if gml_ns is None:
+                gml_ns = childNode.nsmap['gml']
+            gml_id = childNode.get('{%s}id' % gml_ns)
             feature_type_id = self.feature_type_ids[childNode.tag]
 
             # Find a GML geometry in the GML NS
             ogrGeomWKT = None
-            gmlMembers = childNode.xpath(".//gml:Point|.//gml:Curve|.//gml:Surface|.//gml:MultiSurface", namespaces=NS)
+#            gmlMembers = childNode.xpath(".//gml:Point|.//gml:Curve|.//gml:Surface|.//gml:MultiSurface", namespaces=NS)
+            gmlMembers = childNode.xpath(".//*[local-name() = 'Point']|.//*[local-name() = 'Curve']|.//*[local-name() = 'Surface']|.//*[local-name() = 'MultiSurface']")
             geom_str = None
             for gmlMember in gmlMembers:
                 geom_str = etree.tostring(gmlMember)

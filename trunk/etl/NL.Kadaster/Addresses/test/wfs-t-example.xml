@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:Transaction version="1.1.0" service="WFS"
+                 xmlns:wfs="http://www.opengis.net/wfs"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+
+    <wfs:Insert handle="insert" idgen="UseExisting">
+        <gml:FeatureCollection
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+                xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd
+                 urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0.1/Addresses.xsd
+                 urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd
+                 ">
+
+            <gml:featureMember>
+                <AD:Address gml:id="NL.KAD.BAG.AD.Address.3200000121300">
+                    <gml:identifier codeSpace="http://inspire.jrc.ec.europa.eu/">
+                        urn:x-inspire:object:id:NL.KAD.BAG.AD.Address.3200000121300
+                    </gml:identifier>
+                    <AD:inspireId>
+                        <base:Identifier>
+                            <base:localId>3200000121300</base:localId>
+                            <base:namespace>NL.KAD.BAG.AD.Address</base:namespace>
+                        </base:Identifier>
+                    </AD:inspireId>
+                    <AD:position>
+                        <AD:GeographicPosition>
+                            <AD:geometry>
+                                <gml:Point gml:id="NL.KAD.BAG.AD.Address.3200000121300_P"
+                                           srsName="EPSG:4258">
+                                    <gml:pos>53.101648574948562 7.14283466881138</gml:pos>
+                                </gml:Point>
+                            </AD:geometry>
+                            <AD:specification>entrance</AD:specification>
+                            <AD:method>byOtherParty</AD:method>
+                            <AD:default>true</AD:default>
+                        </AD:GeographicPosition>
+                    </AD:position>
+                    <AD:locator>
+                        <AD:AddressLocator>
+                            <AD:designator>
+                                <AD:LocatorDesignator>
+                                    <AD:designator>33</AD:designator>
+                                    <AD:type>2</AD:type>
+                                </AD:LocatorDesignator>
+                            </AD:designator>
+                            <AD:level>unitLevel</AD:level>
+                        </AD:AddressLocator>
+                    </AD:locator>
+                    <AD:validFrom>2010-07-20T00:00:00</AD:validFrom>
+                    <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
+                    <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+                    <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"/>
+                    <!--<AD:component xlink:href="#NL.KAD.BAG.AD.AddressAreaName.3454"/>-->
+                    <!--<AD:component xlink:href="#NL.KAD.BAG.AD.PostalDescriptor.9901AA"/>-->
+                    <!--<AD:component xlink:href="#NL.KAD.BAG.AD.ThoroughfareName.855300000001319"/>-->
+                </AD:Address>
+            </gml:featureMember>
+        </gml:FeatureCollection>
+    </wfs:Insert>
+</wfs:Transaction>

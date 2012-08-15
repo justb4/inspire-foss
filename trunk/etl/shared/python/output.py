@@ -9,6 +9,7 @@ from postgis import PostGIS
 from component import Component
 from util import ConfigSection, Util, etree, StringIO
 import os,sys
+import httplib
 
 log = Util.get_log('output')
 
@@ -24,8 +25,8 @@ class Output(Component):
         self.write(doc)
         return None
 
-    def to_string(self, gml_doc):
-        return etree.tostring(gml_doc, pretty_print=True, xml_declaration=True, encoding='utf-8')
+    def to_string(self, gml_doc, pretty_print=True, xml_declaration=True, encoding='utf-8'):
+        return etree.tostring(gml_doc, pretty_print=pretty_print, xml_declaration = xml_declaration, encoding=encoding)
 
     def write(self, gml_doc):
         print(self.to_string(gml_doc))
@@ -93,7 +94,12 @@ class DeegreeBlobstoreOutput(Output):
         gml_ns = None
         for childNode in featureMembers:
             if gml_ns is None:
-                gml_ns = childNode.nsmap['gml']
+                if childNode.nsmap.has_key('gml'):
+                    gml_ns = childNode.nsmap['gml']
+                else:
+                    if childNode.nsmap.has_key('GML'):
+                        gml_ns = childNode.nsmap['GML']
+
             gml_id = childNode.get('{%s}id' % gml_ns)
             feature_type_id = self.feature_type_ids[childNode.tag]
 
@@ -103,7 +109,8 @@ class DeegreeBlobstoreOutput(Output):
             gmlMembers = childNode.xpath(".//*[local-name() = 'Point']|.//*[local-name() = 'Curve']|.//*[local-name() = 'Surface']|.//*[local-name() = 'MultiSurface']")
             geom_str = None
             for gmlMember in gmlMembers:
-                geom_str = etree.tostring(gmlMember)
+                if geom_str is None:
+                    geom_str = etree.tostring(gmlMember)
             #                   no need for GDAL Python bindings for now, maybe when we'll optimize with COPY iso INSERT
             #                    ogrGeom = ogr.CreateGeometryFromGML(str(gmlStr))
             #                    if ogrGeom is not None:
@@ -145,3 +152,33 @@ class DeegreeFSLoaderOutput(Output):
 
          # print(result)
 
+# Insert features via WFS-T (WFS Transaction) OGC protocol
+class WFSTOutput(Output):
+    wfst_req = '''<?xml version="1.0" encoding="UTF-8"?>
+<wfs:Transaction version="1.1.0" service="WFS"
+                 xmlns:wfs="http://www.opengis.net/wfs"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+
+    <wfs:Insert handle="insert" idgen="UseExisting">
+    %s
+    </wfs:Insert>
+</wfs:Transaction>
+    '''
+    headers = {"Content−type" : 'Content-type: text/xml',"Accept":"text/xml"}
+
+    def __init__(self, configdict, section):
+        Output.__init__(self, configdict, section)
+        self.wfs_host = self.cfg.get('host')
+        self.wfs_port = self.cfg.get('port', '80')
+        self.wfs_path = self.cfg.get('path')
+
+    def write(self, gml_doc):
+
+        conn = httplib.HTTPConnection(self.wfs_host, self.wfs_port)
+        conn.request("POST", self.wfs_path, WFSTOutput.wfst_req % self.to_string(gml_doc, False, False), WFSTOutput.headers)
+
+        response = conn.getresponse()
+        log.info('status=%s msg=%s' % (response.status, response.msg))
+        log.info('response=%s' % response.read(1024))
+        conn.close()

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<base:SpatialDataSet xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2" xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0" xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogr="http://ogr.maptools.org/" xmlns:wfs="http://www.opengis.net/wfs" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd         urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0.1/Addresses.xsd         urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd" gml:id="NL.KAD.BAG.AD">
+<base:SpatialDataSet
+        xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+        xmlns:AD="urn:x-inspire:specification:gmlas:Addresses:3.0"
+        xmlns:GN="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"
+        xmlns:gmd="http://www.isotc211.org/2005/gmd"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogr="http://ogr.maptools.org/" xmlns:wfs="http://www.opengis.net/wfs" xsi:schemaLocation="urn:x-inspire:specification:gmlas:BaseTypes:3.2 http://schemas.kademo.nl/inspire/v3.0.1/BaseTypes.xsd         urn:x-inspire:specification:gmlas:Addresses:3.0 http://schemas.kademo.nl/inspire/v3.0.1/Addresses.xsd         urn:x-inspire:specification:gmlas:GeographicalNames:3.0 http://schemas.kademo.nl/inspire/v3.0.1/GeographicalNames.xsd" gml:id="NL.KAD.BAG.AD">
   <base:identifier>
     <base:Identifier>
       <base:localId>0</base:localId>
@@ -19,7 +26,7 @@
       <AD:position>
         <AD:GeographicPosition>
           <AD:geometry>
-            <gml:Point gml:id="NL.KAD.BAG.AD.Address.3200000121300_P" srsName="urn:ogc:def:crs:EPSG::4258">
+            <gml:Point gml:id="NL.KAD.BAG.AD.Address.3200000121300_P" srsName="EPSG:4258">
               <gml:pos>53.101648574948562 7.14283466881138</gml:pos>
             </gml:Point>
           </AD:geometry>

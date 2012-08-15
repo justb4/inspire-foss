@@ -6,13 +6,13 @@
 # Author: Just van den Broecke
 #
 from util import Util
-log = Util.get_log("transformer")
+log = Util.get_log("postgis")
 
 try:
     import psycopg2
     import psycopg2.extensions
 except ImportError:
-    print("FATAAL: kan package psycopg2 (Python Postgres client) niet vinden")
+    log.error("cannot find packages psycopg2 for Postgres client support")
     sys.exit(-1)
 
 class PostGIS:
@@ -21,17 +21,17 @@ class PostGIS:
         self.config = config
 
     def initialiseer(self, bestand):
-        log.info('Probeer te connecten...')
+        log.info('Connecting...')
         self.connect(True)
 
-        log.info('database script uitvoeren...')
+        log.info('executing sql script...')
         try:
             script = open(bestand, 'r').read()
             self.cursor.execute(script)
             self.connection.commit()
-            log.info('script is uitgevoerd')
+            log.info('script executed')
         except psycopg2.DatabaseError, e:
-            log.warn("ik krijg deze fout '%s' uit het bestand '%s'" % (str(e), str(bestand)))
+            log.warn("error '%s' from script '%s'" % (str(e), str(bestand)))
 
     def connect(self, initdb=False):
         try:
@@ -42,9 +42,9 @@ class PostGIS:
             self.cursor = self.connection.cursor()
 
             self.zet_schema()
-            log.debug("verbonden met de database %s" % (self.config['database']))
+            log.debug("connected to database %s" % (self.config['database']))
         except Exception, e:
-            log.warn("ik kan geen connectie maken met database '%s'" % (self.config['database']))
+            log.warn("cannot connect to database '%s'" % (self.config['database']))
 
     def maak_schema(self):
         # Public schema: no further action required
@@ -83,7 +83,7 @@ class PostGIS:
 
             # log.debug(self.cursor.statusmessage)
         except (Exception), e:
-            log.warning("fout %s voor query: %s met parameters %s" % (str(e), str(sql), str(parameters))  )
+            log.warning("error %s in query: %s with params: %s" % (str(e), str(sql), str(parameters))  )
 #            self.log_actie("uitvoeren_db", "n.v.t", "fout=%s" % str(e), True)
             raise
 
@@ -116,6 +116,6 @@ class PostGIS:
             # log.debug(self.cursor.statusmessage)
         except (Exception), e:
             self.e = e
-            log.warning("fout %s voor tx_uitvoeren: %s met parameters %s" % (str(e), str(sql), str(parameters))  )
+            log.warning("error %s in transaction: %s with parms: %s" % (str(e), str(sql), str(parameters))  )
 
         return self.cursor.rowcount

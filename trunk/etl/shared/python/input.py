@@ -31,7 +31,7 @@ class Input(Component):
     def read(self):
         return None
 
-class XMLFileInput(Input):
+class XmlFileInput(Input):
     # Constructor
     def __init__(self, configdict, section):
         Input.__init__(self, configdict, section)
@@ -46,7 +46,7 @@ class XMLFileInput(Input):
         try:
             self.doc = etree.parse(self.file_path)
             log.info("file read and parsed OK : %s" % self.file_path)
-        except (Exception), e:
+        except Exception, e:
             log.info("file read and parsed NOT OK : %s" % self.file_path)
         return self.doc
 

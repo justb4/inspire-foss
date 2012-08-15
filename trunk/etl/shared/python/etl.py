@@ -11,7 +11,7 @@ from ConfigParser import ConfigParser
 from util import Util, etree, StringIO
 from factory import factory
 
-log = Util.get_log('etl main')
+log = Util.get_log('etl')
 
 class ETL:
 
@@ -35,6 +35,8 @@ class ETL:
 
     def run(self):
         # The main ETL processing
+        log.info("START")
+
         etl_chain = self.configdict.get('etl', 'chain').split('|')
         if not etl_chain:
             raise ValueError('ETL chain entry not defined in section [etl]')

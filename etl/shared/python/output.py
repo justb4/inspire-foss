@@ -160,7 +160,7 @@ class WFSTOutput(Output):
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
 
-    <wfs:Insert handle="insert" idgen="UseExisting">
+    <wfs:Insert handle="insert" idgen="%s">
     %s
     </wfs:Insert>
 </wfs:Transaction>
@@ -172,11 +172,12 @@ class WFSTOutput(Output):
         self.wfs_host = self.cfg.get('host')
         self.wfs_port = self.cfg.get('port', '80')
         self.wfs_path = self.cfg.get('path')
+        self.idgen = self.cfg.get('idgen', 'GenerateNew')
 
     def write(self, gml_doc):
 
         conn = httplib.HTTPConnection(self.wfs_host, self.wfs_port)
-        conn.request("POST", self.wfs_path, WFSTOutput.wfst_req % self.to_string(gml_doc, False, False), WFSTOutput.headers)
+        conn.request("POST", self.wfs_path, WFSTOutput.wfst_req % (self.idgen, self.to_string(gml_doc, False, False)), WFSTOutput.headers)
 
         response = conn.getresponse()
         log.info('status=%s msg=%s' % (response.status, response.msg))

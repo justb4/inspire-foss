@@ -51,16 +51,17 @@ class DeegreeBlobstoreOutput(Output):
     def __init__(self, configdict, section):
         Output.__init__(self, configdict, section)
         self.overwrite = self.cfg.get_bool('overwrite')
+        self.srid = self.cfg.get_int('srid', -1)
         self.feature_member_tag = self.cfg.get('feature_member_tag')
         self.feature_type_ids = {}
         self.init()
 
     def init(self):
         self.get_feature_types()
-        # not required for now
-        # self.pg_srs_constraint()
         if self.overwrite:
             self.delete_features()
+            # not required for now
+            self.pg_srs_constraint()
 
     def get_feature_types(self):
         log.info('reading all featuretypes from DB')
@@ -80,8 +81,11 @@ class DeegreeBlobstoreOutput(Output):
     def pg_srs_constraint(self):
         log.info('set srs constraint')
         db = PostGIS(self.cfg.get_dict())
-        db.tx_uitvoeren(
-            "ALTER TABLE gml_objects DROP CONSTRAINT enforce_srid_gml_bounded_by; ALTER TABLE gml_objects ADD CHECK (st_srid(gml_bounded_by) = (4258));")
+        srid = self.srid
+        sql = "ALTER TABLE gml_objects DROP CONSTRAINT enforce_srid_gml_bounded_by;"
+        db.tx_uitvoeren(sql)
+        sql = "ALTER TABLE gml_objects ADD CONSTRAINT enforce_srid_gml_bounded_by CHECK  (st_srid(gml_bounded_by) = (%s));" % srid
+        db.tx_uitvoeren(sql)
 
     def write(self, gml_doc):
         log.info('inserting features in DB')
@@ -106,7 +110,7 @@ class DeegreeBlobstoreOutput(Output):
             # Find a GML geometry in the GML NS
             ogrGeomWKT = None
 #            gmlMembers = childNode.xpath(".//gml:Point|.//gml:Curve|.//gml:Surface|.//gml:MultiSurface", namespaces=NS)
-            gmlMembers = childNode.xpath(".//*[local-name() = 'Point']|.//*[local-name() = 'Curve']|.//*[local-name() = 'Surface']|.//*[local-name() = 'MultiSurface']")
+            gmlMembers = childNode.xpath(".//*[local-name() = 'Point']|.//*[local-name() = 'Polygon']|.//*[local-name() = 'Curve']|.//*[local-name() = 'Surface']|.//*[local-name() = 'MultiSurface']")
             geom_str = None
             for gmlMember in gmlMembers:
                 if geom_str is None:
@@ -124,8 +128,9 @@ class DeegreeBlobstoreOutput(Output):
                 sql = "INSERT INTO gml_objects(gml_id, ft_type, binary_object) VALUES (%s, %s, %s)"
                 parameters = (gml_id, feature_type_id, db.make_bytea(blob))
             else:
-                sql = "INSERT INTO gml_objects(gml_id, ft_type, binary_object, gml_bounded_by) VALUES (%s, %s, %s, ST_GeomFromGML(%s) )"
-                parameters = (gml_id, feature_type_id, db.make_bytea(blob), geom_str)
+                # ST_SetSRID(ST_GeomFromGML(%s)),-1)
+                sql = "INSERT INTO gml_objects(gml_id, ft_type, binary_object, gml_bounded_by) VALUES (%s, %s, %s, ST_SetSRID( ST_GeomFromGML(%s),%s) )"
+                parameters = (gml_id, feature_type_id, db.make_bytea(blob), geom_str, self.srid)
 
             db.uitvoeren(sql, parameters)
             count += 1
@@ -135,16 +140,29 @@ class DeegreeBlobstoreOutput(Output):
 
 # Insert features via deegree FSLoader
 class DeegreeFSLoaderOutput(Output):
+    # d3toolbox FeatureStoreLoader -action insert -dataset ${DATASET} -format ${GML_VERSION} -fsconfig ${1} -idgen ${IDGEN_MODE} -workspace ${WORKSPACE}
+
+    cmd_tmpl = '%s|FeatureStoreLoader|-action|insert|-dataset|%s|-format|%s|-fsconfig|%s|-idgen|%s|-workspace|%s'
 
     def __init__(self, configdict, section):
         Output.__init__(self, configdict, section)
 
     def write(self, gml_doc):
         from subprocess import Popen, PIPE, STDOUT
-        fs_loader = self.cfg.get('file_path')
+        d3tools_path = self.cfg.get('d3tools_path')
+        workspace_path = self.cfg.get('workspace_path')
+        feature_store = self.cfg.get('feature_store')
+        format = self.cfg.get('format', 'GML_32')
+        idgen = self.cfg.get('idgen', 'USE_EXISTING')
+        java_opts = self.cfg.get('java_opts', "-Xms128m -Xmx1024m")
+        dataset = self.cfg.get('dataset_path', '/dev/stdin')
+        os.putenv("JAVA_OPTS", java_opts)
 
-        p = Popen([fs_loader, 'inspire-postgis', 'inspire_blob', 'GML_32', 'USE_EXISTING',
-                '/dev/stdin'], stdout=PIPE, stdin=PIPE, stderr=STDOUT)
+        d3tools = d3tools_path + '/bin/d3toolbox'
+        cmd = DeegreeFSLoaderOutput.cmd_tmpl % (d3tools, dataset, format, feature_store, idgen, workspace_path)
+        cmd = cmd.split('|')
+
+        p = Popen(cmd, stdin=PIPE)
 
         p.stdin.write(self.to_string(gml_doc))
 

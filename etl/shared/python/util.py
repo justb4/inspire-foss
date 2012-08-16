@@ -72,10 +72,9 @@ class ConfigSection():
         return self.config_dict
 
     def get(self, name, default=None):
-        result = self.config_dict[name]
-        if result is None:
-            result = default
-        return result
+        if not self.config_dict.has_key(name):
+            return default
+        return self.config_dict[name]
 
     def get_int(self, name, default=-1):
         result = self.get(name)

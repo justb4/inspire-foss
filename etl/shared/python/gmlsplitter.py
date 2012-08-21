@@ -9,20 +9,29 @@ import codecs
 import optparse
 from ConfigParser import ConfigParser
 from util import Util, ConfigSection, etree, StringIO
+from component import Component
 
 log = Util.get_log('gmlsplitter')
 
-class GmlSplitter:
+class GmlSplitter(Component):
 
     # Constructor
-    def __init__(self, configdict):
-        self.cfg = ConfigSection(configdict.items('gml_splitter'))
-        log.info("cfg=%s" % self.cfg.to_string())
+    def __init__(self, configdict, section='gml_splitter'):
+        Component.__init__(self, configdict, section)
+
+        log.info("cfg = %s" % self.cfg.to_string())
         self.max_features = self.cfg.get_int('max_features', 10000)
         self.start_container = self.cfg.get('start_container')
-        self.end_container_tag = self.cfg.get('end_container_tag')
-        self.start_feature_tag = self.cfg.get('start_feature_tag')
-        self.end_feature_tag = self.cfg.get('end_feature_tag')
+        self.end_container = self.cfg.get('end_container')
+        self.feature_tags = self.cfg.get('feature_tags').split(',')
+        self.start_feature_tags = []
+        self.end_feature_tags = []
+
+        # Derive start and end tags from feature_tags
+        for feature_tag in self.feature_tags:
+            self.start_feature_tags.append('<%s' % feature_tag)
+            self.end_feature_tags.append('</%s' % feature_tag)
+        self.expect_end_feature_tag = None
         self.buffer = None
         self.eof = False
 
@@ -31,9 +40,39 @@ class GmlSplitter:
         buffer = codecs.getwriter("utf8")(buffer)
         return buffer
 
+    def is_start_feature(self, line):
+        index = 0
+        for feature_tag in self.start_feature_tags:
+            if line.find(feature_tag) >= 0:
+                # found it ! Now we expect the end tag for this start_tag
+                self.expect_end_feature_tag = self.end_feature_tags[index]
+                return True
+
+            # Not found: next tag
+            index += 1
+
+        # Nothing found
+        return False
+
+    def is_end_feature(self, line):
+        # Not even within a feature ?
+        if self.expect_end_feature_tag is None:
+            return False
+
+        # ASSERTION: expect_end_feature_tag set, thus within feature
+
+        # End-of-feature reached ?
+        if line.find(self.expect_end_feature_tag) >= 0:
+            self.expect_end_feature_tag = None
+            return True
+
+        # Still within feature
+        return False
+
     def push_line(self, line):
         # Assume GML lines with single tag per line !!
         # This is ok for e.g. OGR output
+        # TODO we need to become more sophisticated when no newlines in XML
 
         if self.eof:
             return None
@@ -45,9 +84,10 @@ class GmlSplitter:
             self.in_feature = False
             self.feature_count = 0
 
-        if line.find(self.start_feature_tag) >= 0:
+        if self.is_start_feature(line) is True:
             if self.in_heading:
                 # First time: we are in heading
+                # Write container start
                 self.buffer.write(self.start_container)
                 self.in_heading = False
 
@@ -58,7 +98,7 @@ class GmlSplitter:
 
         else:
             # If endtag of feature found may also indicate buffer filled with max_features
-            if line.find(self.end_feature_tag) >= 0:
+            if self.is_end_feature(line) is True:
                 # Start or end tag of ogr:feature  element
                 self.in_heading = False
                 self.in_feature = False
@@ -66,7 +106,7 @@ class GmlSplitter:
                 # Start or end feature
                 self.buffer.write(line)
                 if self.feature_count % self.max_features is 0:
-                    self.buffer.write(self.end_container_tag)
+                    self.buffer.write(self.end_container)
                     buffer = self.buffer
                     self.buffer = None
                     log.info("Buffer filled feat_count = %d" % self.feature_count)
@@ -77,7 +117,7 @@ class GmlSplitter:
                 self.buffer.write(line)
 
             # Last tag (end of container) reaching
-            if line.find(self.end_container_tag) >= 0:
+            if line.find(self.end_container) >= 0:
                 if self.buffer is not None and self.feature_count > 0:
                     if self.feature_count % self.max_features > 0:
                         self.buffer.write(line)

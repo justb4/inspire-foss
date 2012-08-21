@@ -51,7 +51,6 @@ class XmlFileInput(Input):
             log.info("file read and parsed NOT OK : %s" % self.file_path)
         return self.doc
 
-
 class OgrPostgisInput(Input):
     pg_conn_tmpl = "PG:host=%s dbname=%s active_schema=%s user=%s password=%s port=%s"
     cmd_tmpl = 'ogr2ogr|-t_srs|%s|-s_srs|%s|-f|GML|%s|-dsco|FORMAT=%s|-lco|DIM=%s|%s|-SQL|%s|-nln|%s|%s'

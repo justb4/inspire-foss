@@ -26,6 +26,7 @@ class ETL:
 
         # Get config file path
         config_file = self.options.config_file
+        log.info("config_file = %s" % config_file)
         self.configdict = ConfigParser()
         try:
             # parse config file

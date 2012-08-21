@@ -177,11 +177,11 @@ Requires:
                     </xsl:with-param>
                 </xsl:call-template>
 
-                <!--<AD:component xlink:href="{$addressAreaRef}"/>-->
+                <AD:component xlink:href="{$thoroughfareRef}"/>
+                <AD:component xlink:href="{$addressAreaRef}"/>
+                <AD:component xlink:href="{$postCodeRef}"/>
                 <!-- <AD:component xlink:href="http://local.inspire.kademo.nl/deegree3/services?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=GetFeature&amp;OUTPUTFORMAT=text%2Fxml;%20subtype%3Dgml%2F3.2.1&amp;STOREDQUERY_ID=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=NL.KAD.BAG.AD.PostalDescriptor.9901AA#NL.KAD.BAG.AD.PostalDescriptor.9901AA"/>   -->
 
-                <!--<AD:component xlink:href="{$postCodeRef}"/>-->
-                <!--<AD:component xlink:href="{$thoroughfareRef}"/>-->
 
             </AD:Address>
         </base:member>
@@ -233,14 +233,14 @@ Requires:
                 </AD:inspireId>
 
                 <!--  Generate common AD.AddressComponentCommonProperties Elements -->
-                <!--<xsl:call-template name="AD.AddressComponentCommonProperties">-->
-                    <!--<xsl:with-param name="validFrom">-->
-                        <!--<xsl:value-of select="$validFrom"/>-->
-                    <!--</xsl:with-param>-->
-                    <!--<xsl:with-param name="validTo">-->
-                        <!--<xsl:value-of select="$validTo"/>-->
-                    <!--</xsl:with-param>-->
-                <!--</xsl:call-template>-->
+                <xsl:call-template name="AD.AddressComponentCommonProperties">
+                    <xsl:with-param name="validFrom">
+                        <xsl:value-of select="$validFrom"/>
+                    </xsl:with-param>
+                    <xsl:with-param name="validTo">
+                        <xsl:value-of select="$validTo"/>
+                    </xsl:with-param>
+                </xsl:call-template>
 
                 <AD:postCode>
                     <xsl:value-of select="$postCode"/>

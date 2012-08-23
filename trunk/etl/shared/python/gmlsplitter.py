@@ -26,7 +26,7 @@ class GmlSplitter(Component):
         self.feature_tags = self.cfg.get('feature_tags').split(',')
         self.start_feature_tags = []
         self.end_feature_tags = []
-
+        self.total_feature_count = 0
         # Derive start and end tags from feature_tags
         for feature_tag in self.feature_tags:
             self.start_feature_tags.append('<%s' % feature_tag)
@@ -64,6 +64,7 @@ class GmlSplitter(Component):
         # End-of-feature reached ?
         if line.find(self.expect_end_feature_tag) >= 0:
             self.expect_end_feature_tag = None
+            self.total_feature_count += 1
             return True
 
         # Still within feature
@@ -124,7 +125,7 @@ class GmlSplitter(Component):
                     buffer = self.buffer
                     self.buffer = None
                     self.eof = True
-                    log.info("Buffer filled (EOF) feat_count = %d" % self.feature_count)
+                    log.info("Buffer filled (EOF) feat_count = %d total_feat_count= %d" % (self.feature_count, self.total_feature_count))
                     return buffer
 
         return None

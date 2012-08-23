@@ -133,7 +133,17 @@ class DeegreeBlobstoreOutput(Output):
                 parameters = (gml_id, feature_type_id, db.make_bytea(blob), geom_str, self.srid)
 
             if db.execute(sql, parameters) == -1:
-                log.error("feat num# = %d error inserting feature blob=%s (but continuing)", (count, blob))
+                log.error("feat num# = %d error inserting feature blob=%s (but continuing)" % (count, blob))
+
+                # will fail but we will close connection also
+                db.commit()
+
+                # proceed...
+                log.info('retrying to proceed with remaining features...')
+                db = PostGIS(self.cfg.get_dict())
+                db.connect()
+                count = 0
+
 
             count += 1
 

@@ -137,7 +137,10 @@ class DeegreeBlobstoreOutput(Output):
 
             count += 1
 
-        db.connection.commit()
+        exception = db.commit()
+        if exception is not None:
+            log.error("error in commit")
+
         log.info("inserted %s features" % count)
 
 # Insert features via deegree FSLoader

@@ -68,7 +68,7 @@ class DeegreeBlobstoreOutput(Output):
         db = PostGIS(self.cfg.get_dict())
         db.connect()
         sql = "SELECT id,qname FROM feature_types"
-        db.uitvoeren(sql)
+        db.execute(sql)
         cur = db.cursor
         for record in cur:
             self.feature_type_ids[record[1]] = record[0]
@@ -76,16 +76,16 @@ class DeegreeBlobstoreOutput(Output):
     def delete_features(self):
         log.info('deleting ALL features in DB')
         db = PostGIS(self.cfg.get_dict())
-        db.tx_uitvoeren("TRUNCATE gml_objects")
+        db.tx_execute("TRUNCATE gml_objects")
 
     def pg_srs_constraint(self):
         log.info('set srs constraint')
         db = PostGIS(self.cfg.get_dict())
         srid = self.srid
         sql = "ALTER TABLE gml_objects DROP CONSTRAINT enforce_srid_gml_bounded_by;"
-        db.tx_uitvoeren(sql)
+        db.tx_execute(sql)
         sql = "ALTER TABLE gml_objects ADD CONSTRAINT enforce_srid_gml_bounded_by CHECK  (st_srid(gml_bounded_by) = (%s));" % srid
-        db.tx_uitvoeren(sql)
+        db.tx_execute(sql)
 
     def write(self, gml_doc):
         log.info('inserting features in DB')
@@ -132,7 +132,9 @@ class DeegreeBlobstoreOutput(Output):
                 sql = "INSERT INTO gml_objects(gml_id, ft_type, binary_object, gml_bounded_by) VALUES (%s, %s, %s, ST_SetSRID( ST_GeomFromGML(%s),%s) )"
                 parameters = (gml_id, feature_type_id, db.make_bytea(blob), geom_str, self.srid)
 
-            db.uitvoeren(sql, parameters)
+            if db.execute(sql, parameters) == -1:
+                log.error("feat num# = %d error inserting feature blob=%s (but continuing)", (count, blob))
+
             count += 1
 
         db.connection.commit()

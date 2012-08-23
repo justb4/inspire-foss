@@ -41,40 +41,40 @@ class PostGIS:
                                                                                                  self.config['password']))
             self.cursor = self.connection.cursor()
 
-            self.zet_schema()
+            self.set_schema()
             log.debug("connected to database %s" % (self.config['database']))
         except Exception, e:
             log.warn("cannot connect to database '%s'" % (self.config['database']))
 
-    def maak_schema(self):
+    def create_schema(self):
         # Public schema: no further action required
         if self.config['schema'] != 'public':
             # A specific schema is required create it and set the search path
-            self.uitvoeren('''DROP SCHEMA IF EXISTS %s CASCADE;''' % self.config['schema'])
-            self.uitvoeren('''CREATE SCHEMA %s;''' % self.config['schema'])
+            self.execute('''DROP SCHEMA IF EXISTS %s CASCADE;''' % self.config['schema'])
+            self.execute('''CREATE SCHEMA %s;''' % self.config['schema'])
             self.connection.commit()
 
-    def zet_schema(self):
+    def set_schema(self):
         # Non-public schema set search path
         if self.config['schema'] != 'public':
             # Always set search path to our schema
-            self.uitvoeren('SET search_path TO %s,public' % self.config['schema'])
+            self.execute('SET search_path TO %s,public' % self.config['schema'])
             self.connection.commit()
 
-    def log_actie(self, actie, bestand="n.v.t", bericht='geen', error=False):
-        sql  = "INSERT INTO nlx_bag_log(actie, bestand, error, bericht) VALUES (%s, %s, %s, %s)"
-        parameters = (actie, bestand, error, bericht)
-        self.tx_uitvoeren(sql, parameters)
+    def log_action(self, action, bestand="n.v.t", bericht='geen', error=False):
+        sql  = "INSERT INTO setl_log(actie, bestand, error, bericht) VALUES (%s, %s, %s, %s)"
+        parameters = (action, bestand, error, bericht)
+        self.tx_execute(sql, parameters)
 
-    def log_meta(self, sleutel, waarde):
-        sql  = "INSERT INTO nlx_bag_info(sleutel, waarde) VALUES (%s, %s)"
-        parameters = (sleutel, waarde)
-        self.tx_uitvoeren(sql, parameters)
+    def log_meta(self, key, value):
+        sql  = "INSERT INTO setl_info(sleutel, waarde) VALUES (%s, %s)"
+        parameters = (key, value)
+        self.tx_execute(sql, parameters)
 
     def make_bytea(self, blob):
         return psycopg2.Binary(blob)
 
-    def uitvoeren(self, sql, parameters=None):
+    def execute(self, sql, parameters=None):
         try:
             if parameters:
                 self.cursor.execute(sql, parameters)
@@ -83,39 +83,39 @@ class PostGIS:
 
             # log.debug(self.cursor.statusmessage)
         except (Exception), e:
-            log.warning("error %s in query: %s with params: %s" % (str(e), str(sql), str(parameters))  )
+            log.error("error %s in query: %s with params: %s" % (str(e), str(sql), str(parameters))  )
 #            self.log_actie("uitvoeren_db", "n.v.t", "fout=%s" % str(e), True)
-            raise
+            return -1
 
         return self.cursor.rowcount
 
-    def file_uitvoeren(self, sqlfile):
+    def file_execute(self, sqlfile):
         self.e = None
         try:
-            log.info("SQL van file = %s uitvoeren..." % sqlfile)
+            log.info("Executing SQL of file = %s ..." % sqlfile)
             self.connect()
             f = open(sqlfile, 'r')
             sql = f.read()
-            self.uitvoeren(sql)
+            self.execute(sql)
             self.connection.commit()
             f.close()
-            log.info("SQL uitgevoerd OK")
+            log.info("SQL executed OK")
         except (Exception), e:
             self.e = e
-            self.log_actie("uitvoeren_db_file", "n.v.t", "fout=%s" % str(e), True)
-            log.warn("ik kan dit script niet uitvoeren vanwege deze fout: %s" % (str(e)))
+            self.log_action("file_execute", "n.v.t", "fout=%s" % str(e), True)
+            log.warn("can't execute SQL script, error: %s" % (str(e)))
 
-    def tx_uitvoeren(self, sql, parameters=None):
+    def tx_execute(self, sql, parameters=None):
         self.e = None
         try:
             self.connect()
-            self.uitvoeren(sql, parameters)
+            self.execute(sql, parameters)
             self.connection.commit()
             self.connection.close()
 
             # log.debug(self.cursor.statusmessage)
         except (Exception), e:
             self.e = e
-            log.warning("error %s in transaction: %s with parms: %s" % (str(e), str(sql), str(parameters))  )
+            log.error("error %s in transaction: %s with parms: %s" % (str(e), str(sql), str(parameters))  )
 
         return self.cursor.rowcount

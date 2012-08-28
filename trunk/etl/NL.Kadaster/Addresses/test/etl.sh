@@ -17,4 +17,4 @@
 #
 
 cd ..
-../../shared/python/etl.py etl.cfg
+../../shared/setl/src/etl.py etl.cfg

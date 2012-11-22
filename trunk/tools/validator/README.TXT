@@ -7,5 +7,7 @@ over the network where required.
 For a full validation more is required and
 we may add stuff like Schematron here.
 
+Online alternative: see http://www.validome.org/xml/validate very useful.
+
 
 

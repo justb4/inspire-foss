@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<se:FeatureTypeStyle version="1.1.0" xmlns:se="http://www.opengis.net/se"
+                     xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:ps="urn:x-inspire:specification:ProtectedSites:3.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <se:Description>
+    <se:Title>Protected Sites Default Style</se:Title>
+    <se:Abstract>
+        Point geometries are rendered as a square with a size of 6 pixels, with a 50% grey (#808080)
+        fill and a black outline. Line geometries are rendered as a solid black line with a stroke width of
+         1 pixel.
+        Polygon geometries are rendered using a 50% grey (#808080) fill and a solid black outline with a
+        stroke width of 1 pixel.
+    </se:Abstract>
+  </se:Description>
+  <se:FeatureTypeName>ps:ProtectedSite</se:FeatureTypeName>
+
+  <se:Rule>
+      <se:PolygonSymbolizer>
+          <se:Geometry>
+              <ogc:PropertyName>ps:geometry</ogc:PropertyName>
+          </se:Geometry>
+      </se:PolygonSymbolizer>
+      <se:LineSymbolizer>
+          <se:Geometry>
+              <ogc:PropertyName>ps:geometry</ogc:PropertyName>
+          </se:Geometry>
+      </se:LineSymbolizer>
+      <se:PointSymbolizer>
+          <se:Geometry>
+              <ogc:PropertyName>ps:geometry</ogc:PropertyName>
+          </se:Geometry>
+      </se:PointSymbolizer>
+  </se:Rule>
+
+</se:FeatureTypeStyle>

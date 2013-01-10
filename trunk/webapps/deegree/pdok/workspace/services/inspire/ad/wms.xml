@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deegreeWMS xmlns="http://www.deegree.org/services/wms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            configVersion="3.0.0"
+            xsi:schemaLocation="http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/3.0.0/wms_configuration.xsd">
+    <ServiceConfiguration>
+        <!-- http://10.31.103.101:8080/deegree/services?LAYERS=AD.Address&
+             TRANSPARENT=true&
+             SERVICE=WMS&
+             VERSION=1.1.1&
+             REQUEST=GetMap&STYLES=&
+             EXCEPTIONS=application%2Fvnd.ogc.se_inimage&
+             FORMAT=image%2Fpng&
+             SRS=EPSG%3A4258&
+             BBOX=4.850,52.310,4.855,52.315&
+             WIDTH=500&HEIGHT=500 -->
+         <UnrequestableLayer>
+            <Title>Root Layer</Title>
+            <!-- <CRS>EPSG:4258 EPSG:3034 EPSG:4326 EPSG:900913 EPSG:28992</CRS> -->
+            <CRS>urn:ogc:def:crs:EPSG::4258</CRS>
+
+            <!-- Layers from Address (AD) data theme -->
+            <RequestableLayer>
+                <Name>AD.Address</Name>
+                <Title>Addresses</Title>
+                <FeatureStoreId>addresses</FeatureStoreId>
+                <ScaleDenominators min="0.0" max="5000"/>
+                <DirectStyle>
+                    <File>../../../styles/AD_Address_Default.xml</File>
+                    <Name>AD.Address.Default</Name>
+                </DirectStyle>
+            </RequestableLayer>
+        </UnrequestableLayer>
+    </ServiceConfiguration>
+</deegreeWMS>

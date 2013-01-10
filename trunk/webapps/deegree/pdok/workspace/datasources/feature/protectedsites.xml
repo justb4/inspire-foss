@@ -1,0 +1,14 @@
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 configVersion="3.1.0"
+                 xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
+    <JDBCConnId>jdbc-pdok</JDBCConnId>
+    <StorageCRS srid="4258" dim="2D">EPSG:4258</StorageCRS>
+    <GMLSchema>../../appschemas/annex1/protectedsites</GMLSchema>
+
+
+    <BLOBMapping>
+        <BlobTable>inspire_ps.gml_objects</BlobTable>
+        <FeatureTypeTable>inspire_ps.feature_types</FeatureTypeTable>
+    </BLOBMapping>
+</SQLFeatureStore>

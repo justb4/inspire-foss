@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ Copyright (C) 2011  Het Kadaster - The Netherlands
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xltn="urn:x-exml:specification:gmlas:ExMLargeTransportNetwork:1.0" xmlns:xltn-a="urn:x-exml:specification:gmlas:ExMLargeAirTransportNetwork:1.0" xmlns:xltn-c="urn:x-exml:specification:gmlas:ExMLargeCommonTransportElements:1.0" xmlns:xltn-g="urn:x-exml:specification:gmlas:ExMLargeCableTransportNetwork:1.0" xmlns:xltn-r="urn:x-exml:specification:gmlas:ExMLargeRoadTransportNetwork:1.0" xmlns:xltn-t="urn:x-exml:specification:gmlas:ExMRailwayLargeTransportNetwork:1.0" xmlns:xltn-w="urn:x-exml:specification:gmlas:ExMLargeWaterTransportNetwork:1.0" elementFormDefault="qualified" targetNamespace="urn:x-exml:specification:gmlas:ExMLargeTransportNetwork:1.0" version="1.0">
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeAirTransportNetwork:1.0" schemaLocation="ExMLargeAirTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMRailwayLargeTransportNetwork:1.0" schemaLocation="ExMLargeRailwayTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeRoadTransportNetwork:1.0" schemaLocation="ExMLargeRoadTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeWaterTransportNetwork:1.0" schemaLocation="ExMLargeWaterTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeCableTransportNetwork:1.0" schemaLocation="ExMLargeCableTransportNetwork.xsd"/>
+  <import namespace="urn:x-exml:specification:gmlas:ExMLargeCommonTransportElements:1.0" schemaLocation="ExMLargeCommonTransportElements.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+</schema>

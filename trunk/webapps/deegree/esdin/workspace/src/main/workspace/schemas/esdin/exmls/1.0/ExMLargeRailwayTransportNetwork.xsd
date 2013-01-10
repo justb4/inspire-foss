@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<!-- Just van den Broecke - replaced
+		ExMRailwayLargeTransportNetwork with ExMLargeRailwayTransportNetwork
+		in NS definition  and target NS below -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+		xmlns:tn-ra="urn:x-inspire:specification:gmlas:RailwayTransportNetwork:3.0"
+		xmlns:xltn-t="urn:x-exml:specification:gmlas:ExMRailwayLargeTransportNetwork:1.0"
+		targetNamespace="urn:x-exml:specification:gmlas:ExMRailwayLargeTransportNetwork:1.0"
+		elementFormDefault="qualified"
+		version="1.0">
+
+  <import namespace="urn:x-inspire:specification:gmlas:RailwayTransportNetwork:3.0" schemaLocation="RailwayTransportNetwork.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="RailwayStationNode" substitutionGroup="tn-ra:RailwayStationNode" type="xltn-t:RailwayStationNodeType"/>
+  <complexType name="RailwayStationNodeType">
+    <complexContent>
+      <extension base="tn-ra:RailwayStationNodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayStationNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayStationNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayType" substitutionGroup="tn-ra:RailwayType" type="xltn-t:RailwayTypeType"/>
+  <complexType name="RailwayTypeType">
+    <complexContent>
+      <extension base="tn-ra:RailwayTypeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayTypePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayType"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayUse" substitutionGroup="tn-ra:RailwayUse" type="xltn-t:RailwayUseType"/>
+  <complexType name="RailwayUseType">
+    <complexContent>
+      <extension base="tn-ra:RailwayUseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayUsePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayUse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayElectrification" substitutionGroup="tn-ra:RailwayElectrification" type="xltn-t:RailwayElectrificationType"/>
+  <complexType name="RailwayElectrificationType">
+    <complexContent>
+      <extension base="tn-ra:RailwayElectrificationType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayElectrificationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayElectrification"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayLinkSequence" substitutionGroup="tn-ra:RailwayLinkSequence" type="xltn-t:RailwayLinkSequenceType"/>
+  <complexType name="RailwayLinkSequenceType">
+    <complexContent>
+      <extension base="tn-ra:RailwayLinkSequenceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayLinkSequencePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayLinkSequence"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayGauge" substitutionGroup="tn-ra:NominalTrackGauge" type="xltn-t:RailwayGaugeType"/>
+  <complexType name="RailwayGaugeType">
+    <complexContent>
+      <extension base="tn-ra:NominalTrackGaugeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayGaugePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayGauge"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="NumberOfTracks" substitutionGroup="tn-ra:NumberOfTracks" type="xltn-t:NumberOfTracksType"/>
+  <complexType name="NumberOfTracksType">
+    <complexContent>
+      <extension base="tn-ra:NumberOfTracksType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NumberOfTracksPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:NumberOfTracks"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayYardNode" substitutionGroup="tn-ra:RailwayYardNode" type="xltn-t:RailwayYardNodeType"/>
+  <complexType name="RailwayYardNodeType">
+    <complexContent>
+      <extension base="tn-ra:RailwayYardNodeType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayYardNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayYardNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayYardArea" substitutionGroup="tn-ra:RailwayYardArea" type="xltn-t:RailwayYardAreaType"/>
+  <complexType name="RailwayYardAreaType">
+    <complexContent>
+      <extension base="tn-ra:RailwayYardAreaType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayYardAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayYardArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RailwayLink" substitutionGroup="tn-ra:RailwayLink" type="xltn-t:RailwayLinkType"/>
+  <complexType name="RailwayLinkType">
+    <complexContent>
+      <extension base="tn-ra:RailwayLinkType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RailwayLinkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xltn-t:RailwayLink"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

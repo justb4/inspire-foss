@@ -11,7 +11,7 @@
     <EnableTransactions>true</EnableTransactions>
 <!-- [0...1] Disable response buffering (allows rollback for generating
             clean exception reports, but hinders streaming), default: true -->
-   <DisableResponseBuffering>false</DisableResponseBuffering>
+   <DisableResponseBuffering>true</DisableResponseBuffering>
 
     <!-- Announced CRS, default: urn:ogc:def:crs:EPSG::4258 (ETRS89)
     For INSPIRE compliance the "urn-format" is used

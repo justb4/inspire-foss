@@ -1,6 +1,4 @@
-<deegreeWFS xmlns="http://www.deegree.org/services/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            configVersion="3.1.0"
-            xsi:schemaLocation="http://www.deegree.org/services/wfs http://schemas.deegree.org/services/wfs/3.1.0/wfs_configuration.xsd">
+<deegreeWFS xmlns="http://www.deegree.org/services/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/services/wfs http://schemas.deegree.org/services/wfs/3.1.0/wfs_configuration.xsd">
 
     <!-- SupportedVersions [0...1]: Activated OGC protocol versions, default: activate all implemented versions -->
     <SupportedVersions>
@@ -28,6 +26,7 @@
     <GMLFormat gmlVersion="GML_32">
 
         <!-- [1...n] Mime type handled by this format (and announced in GetCapabilities) -->
+        <MimeType>application/gml+xml; version=3.2</MimeType>
         <MimeType>text/xml; subtype=gml/3.2.1</MimeType>
 
         <!-- [0...1] Generate gml:boundedBy property for features, if not already present (default: false). NOTE: This does not
@@ -44,7 +43,7 @@
             <FeatureMemberElement>gml:featureMember</FeatureMemberElement>
 
             <!-- [0...1] Value to add to xsi:schemaLocation attribute (to declare non-standard container elements) -->
-            <AdditionalSchemaLocation>>http://www.opengis.net/gml/3.2
+            <AdditionalSchemaLocation>&gt;http://www.opengis.net/gml/3.2
                 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd
             </AdditionalSchemaLocation>
 
@@ -57,4 +56,3 @@
     </GMLFormat>
 
 </deegreeWFS>
-

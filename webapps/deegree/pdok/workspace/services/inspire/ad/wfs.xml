@@ -43,7 +43,7 @@
             <FeatureMemberElement>gml:featureMember</FeatureMemberElement>
 
             <!-- [0...1] Value to add to xsi:schemaLocation attribute (to declare non-standard container elements) -->
-            <AdditionalSchemaLocation>&gt;http://www.opengis.net/gml/3.2
+            <AdditionalSchemaLocation>http://www.opengis.net/gml/3.2
                 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd
             </AdditionalSchemaLocation>
 

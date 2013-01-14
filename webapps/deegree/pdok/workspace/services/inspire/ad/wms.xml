@@ -23,7 +23,7 @@
                 <Name>AD.Address</Name>
                 <Title>Addresses</Title>
                 <FeatureStoreId>addresses</FeatureStoreId>
-                <ScaleDenominators min="0.0" max="5000"/>
+                <ScaleDenominators min="0.0" max="10000"/>
                 <DirectStyle>
                     <File>../../../styles/AD_Address_Default.xml</File>
                     <Name>AD.Address.Default</Name>

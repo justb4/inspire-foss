@@ -1,6 +1,9 @@
-<deegreeServiceController xmlns="http://www.deegree.org/services/controller" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/services/controller http://schemas.deegree.org/services/controller/3.2.0/controller.xsd">
-  <ReportedUrls>
-    <Services>http://geodata.nationaalgeoregister.nl</Services>
-    <Resources>http://geodata.nationaalgeoregister.nl/inspire-resources</Resources>
-  </ReportedUrls>
+<deegreeServiceController xmlns="http://www.deegree.org/services/controller"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0"
+                          xsi:schemaLocation="http://www.deegree.org/services/controller http://schemas.deegree.org/services/controller/3.2.0/controller.xsd">
+    <ReportedUrls>
+        <Services>http://geodata.nationaalgeoregister.nl</Services>
+        <Resources>http://geodata.nationaalgeoregister.nl/inspire-resources</Resources>
+    </ReportedUrls>
+
 </deegreeServiceController>

@@ -2,8 +2,11 @@
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0"
                           xsi:schemaLocation="http://www.deegree.org/services/controller http://schemas.deegree.org/services/controller/3.2.0/controller.xsd">
     <ReportedUrls>
-        <Services>http://geodata.nationaalgeoregister.nl</Services>
-        <Resources>http://geodata.nationaalgeoregister.nl/inspire/resources</Resources>
+        <!-- Base URL for the (WMS/WFS) services, like http://myhost.org-->
+        <Services>SERVICES_URL</Services>
+
+        <!-- Base URL for the resources like application schema XSD , like http://myhost.org/inspire/resources -->
+        <Resources>RESOURCES_URL</Resources>
     </ReportedUrls>
 
 </deegreeServiceController>

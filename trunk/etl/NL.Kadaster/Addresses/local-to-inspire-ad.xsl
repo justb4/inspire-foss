@@ -61,9 +61,17 @@ Author:  Just van den Broecke, Just Objects B.V. for PDOK
             </xsl:with-param>
 
             <xsl:with-param name="point" select="ogr:geometryProperty/gml:Point"/>
-            <xsl:with-param name="locatorDesignatorType">2</xsl:with-param>
-            <xsl:with-param name="locatorDesignatorValue">
+            <xsl:with-param name="locatorDesignator1Type">2</xsl:with-param>
+            <xsl:with-param name="locatorDesignator1Value">
                 <xsl:value-of select="ogr:huisnummer"/>
+            </xsl:with-param>
+            <xsl:with-param name="locatorDesignator2Type">3</xsl:with-param>
+            <xsl:with-param name="locatorDesignator2Value">
+                <xsl:value-of select="ogr:huisletter"/>
+            </xsl:with-param>
+            <xsl:with-param name="locatorDesignator3Type">4</xsl:with-param>
+            <xsl:with-param name="locatorDesignator3Value">
+                <xsl:value-of select="ogr:huisnummertoevoeging"/>
             </xsl:with-param>
             <xsl:with-param name="locatorLevel">unitLevel</xsl:with-param>
             <xsl:with-param name="thoroughfareLocalId">

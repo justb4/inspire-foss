@@ -35,14 +35,6 @@
               <AD:designator>5</AD:designator>
               <AD:type>2</AD:type>
             </AD:LocatorDesignator>
-            <AD:LocatorDesignator>
-              <AD:designator/>
-              <AD:type>3</AD:type>
-            </AD:LocatorDesignator>
-            <AD:LocatorDesignator>
-              <AD:designator/>
-              <AD:type>4</AD:type>
-            </AD:LocatorDesignator>
           </AD:designator>
           <AD:level>unitLevel</AD:level>
         </AD:AddressLocator>

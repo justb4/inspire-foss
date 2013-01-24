@@ -82,8 +82,14 @@ Requires:
         <!-- Position lat/lon e.g. "52.698088258672094 5.242708641248198 " -->
         <xsl:param name="pointPos"/>
         <xsl:param name="point"/>
-        <xsl:param name="locatorDesignatorType"/>
-        <xsl:param name="locatorDesignatorValue"/>
+        <xsl:param name="locatorDesignator1Type"/>
+        <xsl:param name="locatorDesignator1Value"/>
+
+        <!-- Optional multiple LocatorDesignators -->
+        <xsl:param name="locatorDesignator2Type" select="''"/>
+        <xsl:param name="locatorDesignator2Value" select="''"/>
+        <xsl:param name="locatorDesignator3Type" select="''"/>
+        <xsl:param name="locatorDesignator3Value" select="''"/>
         <xsl:param name="locatorLevel"/>
         <xsl:param name="addressAreaLocalId"/>
         <xsl:param name="postCode"/>
@@ -137,9 +143,9 @@ Requires:
                 <AD:position>
                     <AD:GeographicPosition>
                         <AD:geometry>
-                               <!--<xsl:copy-of select="$point"/>-->
+                            <!--<xsl:copy-of select="$point"/>-->
 
-                              <gml:Point gml:id="{$gmlId}_P" srsName="{$srsName}">
+                            <gml:Point gml:id="{$gmlId}_P" srsName="{$srsName}">
                                 <gml:pos>
                                     <xsl:value-of select="$pointPos"/>
                                 </gml:pos>
@@ -154,16 +160,47 @@ Requires:
                 <AD:locator>
                     <AD:AddressLocator>
                         <AD:designator>
-                            <AD:LocatorDesignator>
-                                <AD:designator>
-                                    <xsl:value-of select="$locatorDesignatorValue"/>
-                                </AD:designator>
-                                <AD:type>
-                                    <xsl:value-of select="$locatorDesignatorType"/>
-                                </AD:type>
-                            </AD:LocatorDesignator>
+                            <!-- At least one Locator Designator, usually house number -->
+                            <xsl:call-template name="AD.LocatorDesignator">
+                                <xsl:with-param name="designator">
+                                    <xsl:value-of select="$locatorDesignator1Value"/>
+                                </xsl:with-param>
+                                <xsl:with-param name="value">
+                                    <xsl:value-of select="$locatorDesignator1Type"/>
+                                </xsl:with-param>
+                            </xsl:call-template>
+
+                            <!-- Optional second; huisletter e.g. -->
+                            <xsl:choose>
+                                <xsl:when test="$locatorDesignator2Value != ''">
+                                    <xsl:call-template name="AD.LocatorDesignator">
+                                        <xsl:with-param name="designator">
+                                            <xsl:value-of select="$locatorDesignator2Value"/>
+                                        </xsl:with-param>
+                                        <xsl:with-param name="value">
+                                            <xsl:value-of select="$locatorDesignator2Type"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:when>
+                            </xsl:choose>
+
+                            <!-- Optional third; huisnummertoevoeging e.g. -->
+                            <xsl:choose>
+                                <xsl:when test="$locatorDesignator3Value != ''">
+                                    <xsl:call-template name="AD.LocatorDesignator">
+                                        <xsl:with-param name="designator">
+                                            <xsl:value-of select="$locatorDesignator3Value"/>
+                                        </xsl:with-param>
+                                        <xsl:with-param name="value">
+                                            <xsl:value-of select="$locatorDesignator3Type"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:when>
+                            </xsl:choose>
                         </AD:designator>
-                        <AD:level><xsl:value-of select="$locatorLevel"/></AD:level>
+                        <AD:level>
+                            <xsl:value-of select="$locatorLevel"/>
+                        </AD:level>
                     </AD:AddressLocator>
                 </AD:locator>
 
@@ -487,6 +524,20 @@ Generate ThoroughfareName element
         <!-- TODO: optional populate -->
         <AD:beginLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></AD:beginLifespanVersion>
         <AD:endLifespanVersion xsi:nil="true" nilReason="other:unpopulated"></AD:endLifespanVersion>
+    </xsl:template>
+
+    <!-- Generate LocatorDesignator -->
+    <xsl:template name="AD.LocatorDesignator" priority="1">
+        <xsl:param name="designator"/>
+        <xsl:param name="value"/>
+        <AD:LocatorDesignator>
+            <AD:designator>
+                <xsl:value-of select="$designator"/>
+            </AD:designator>
+            <AD:type>
+                <xsl:value-of select="$value"/>
+            </AD:type>
+        </AD:LocatorDesignator>
     </xsl:template>
 
 </xsl:stylesheet>

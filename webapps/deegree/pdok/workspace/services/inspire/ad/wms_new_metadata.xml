@@ -1,0 +1,37 @@
+<deegreeServicesMetadata xmlns="http://www.deegree.org/services/metadata"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         configVersion="3.0.0"
+                         xsi:schemaLocation="http://www.deegree.org/services/metadata http://schemas.deegree.org/services/metadata/3.0.0/metadata.xsd">
+    <!-- General service information for all services. Used in the GetCapabilities responses. -->
+    <ServiceIdentification>
+        <Title>Dutch INSPIRE Service</Title>
+        <Abstract>This is the Dutch national INSPIRE service. It provides WFS and WMS services for the Annex 1 Data Themes:
+            Addresses (AD), Protected Sites (PS).</Abstract>
+            <Keywords>
+                <Keyword>ViewService</Keyword>
+                <Keyword>infoMapAccessService</Keyword>
+                <Type codeSpace="ISO">ISO</Type>
+            </Keywords>
+    </ServiceIdentification>
+    <ServiceProvider>
+        <ProviderName>PDOK</ProviderName>
+        <ProviderSite>http://www.pdok.nl</ProviderSite>
+        <ServiceContact>
+            <IndividualName>KlantContactCenter PDOK</IndividualName>
+            <PositionName/>
+            <Phone/>
+            <ElectronicMailAddress>BeheerPDOK@kadaster.nl</ElectronicMailAddress>
+            <Address>
+                <DeliveryPoint/>
+                <City/>
+                <AdministrativeArea/>
+                <PostalCode/>
+                <Country>The Netherlands</Country>
+            </Address>
+            <OnlineResource>http://www.pdok.nl</OnlineResource>
+            <HoursOfService>24x7</HoursOfService>
+            <ContactInstructions>Do not hesitate to call</ContactInstructions>
+            <Role>PointOfContact</Role>
+        </ServiceContact>
+    </ServiceProvider>
+</deegreeServicesMetadata>

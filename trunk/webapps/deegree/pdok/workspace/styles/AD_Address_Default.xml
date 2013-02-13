@@ -5,6 +5,7 @@
                      xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                      xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+    <se:Name>inspire_common:DEFAULT</se:Name>
     <se:Description>
         <se:Title>Address Default Style</se:Title>
         <se:Abstract>The point is rendered as 6 pixel square with black (#000000) border and white (#FFFFFF) fill, if

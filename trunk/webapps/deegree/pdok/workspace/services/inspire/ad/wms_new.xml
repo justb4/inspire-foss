@@ -2,6 +2,8 @@
   xmlns:dgws="http://www.deegree.org/webservices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0"
   xsi:schemaLocation="http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/3.2.0/wms_configuration.xsd">
 
+  <wms:MetadataURLTemplate>http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=${metadataSetId}&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</wms:MetadataURLTemplate>
+
   <wms:ServiceConfiguration>
     <wms:DefaultLayerOptions>
       <wms:MaxFeatures>-1</wms:MaxFeatures>

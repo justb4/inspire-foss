@@ -10,6 +10,7 @@
     <d:Keywords>
       <d:Keyword>AD.Address</d:Keyword>
     </d:Keywords>
+    <l:MetadataSetId>12345-54321</l:MetadataSetId>
     <l:ScaleDenominators max="10000" min="0" />
     <l:StyleRef>
       <l:StyleStoreId>AD_Address_Default</l:StyleStoreId>

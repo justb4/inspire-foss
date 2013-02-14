@@ -1,5 +1,5 @@
 <deegreeServicesMetadata xmlns="http://www.deegree.org/services/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  configVersion="3.1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
+  configVersion="3.2.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
   xsi:schemaLocation="http://www.deegree.org/services/metadata http://schemas.deegree.org/services/metadata/3.2.0/metadata.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
   <!-- General service information for all services. Used in the GetCapabilities responses. -->
 
@@ -37,6 +37,14 @@
     </ServiceContact>
   </ServiceProvider>
 
+  <DatasetMetadata>
+    <ExternalMetadataAuthority name="kadaster">http://www.kadaster.nl</ExternalMetadataAuthority>
+    <Dataset>
+      <Name>AD.Address</Name>
+      <ExternalMetadataSetId authority="kadaster">nl.kad.20</ExternalMetadataSetId>
+    </Dataset>
+  </DatasetMetadata>
+
   <ExtendedCapabilities protocolVersions="1.3.0">
     <inspire_vs:ExtendedCapabilities>
       <inspire_common:MetadataUrl>
@@ -56,4 +64,5 @@
       </inspire_common:ResponseLanguage>
     </inspire_vs:ExtendedCapabilities>
   </ExtendedCapabilities>
+
 </deegreeServicesMetadata>

@@ -46,7 +46,7 @@
   </DatasetMetadata>
 
   <ExtendedCapabilities protocolVersions="1.3.0">
-    <inspire_vs:ExtendedCapabilities>
+    <inspire_vs:ExtendedCapabilities xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://geodata.nationaalgeoregister.nl/www/inspire/inspire_vs.xsd">
       <inspire_common:MetadataUrl>
         <inspire_common:URL>http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?SERVICE=CSW&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;ID=1f93a0e9-123a-4996-b7a4-fc9f68204bed</inspire_common:URL>
         <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>

@@ -35,6 +35,8 @@
               <AD:designator>33</AD:designator>
               <AD:type>2</AD:type>
             </AD:LocatorDesignator>
+          </AD:designator>
+          <AD:designator>
             <AD:LocatorDesignator>
               <AD:designator>I</AD:designator>
               <AD:type>4</AD:type>
@@ -80,6 +82,8 @@
               <AD:designator>3</AD:designator>
               <AD:type>2</AD:type>
             </AD:LocatorDesignator>
+          </AD:designator>
+          <AD:designator>
             <AD:LocatorDesignator>
               <AD:designator>I</AD:designator>
               <AD:type>4</AD:type>

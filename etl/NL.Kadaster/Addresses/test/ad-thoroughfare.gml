@@ -21,21 +21,25 @@
       <AD:validFrom>1931-05-04T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Molenbochtstraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Molenbochtstraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -53,21 +57,25 @@
       <AD:validFrom>1963-10-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Molenstraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Molenstraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -85,21 +93,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Cronjéstraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Cronjéstraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -117,21 +129,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Stevenshof</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Stevenshof</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -149,21 +165,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Stienestraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Stienestraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -181,21 +201,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Stormmeeuw</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Stormmeeuw</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -213,21 +237,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Straevenweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Straevenweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -245,21 +273,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Stramproyergrensweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Stramproyergrensweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -277,21 +309,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Streeksteeg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Streeksteeg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -309,21 +345,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Stuttenveldweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Stuttenveldweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -341,21 +381,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Suffolkweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Suffolkweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -373,21 +417,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Suffolkweg Zuid</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Suffolkweg Zuid</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -405,21 +453,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Susanna Groeneweghof</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Susanna Groeneweghof</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -437,21 +489,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Sutjensstraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Sutjensstraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -469,21 +525,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Tamboerstraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Tamboerstraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -501,21 +561,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Telheidestraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Telheidestraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -533,21 +597,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Terborgh</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Terborgh</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -565,21 +633,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Theunishof</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Theunishof</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -597,21 +669,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Thewenveldweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Thewenveldweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -629,21 +705,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Thornstraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Thornstraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -661,21 +741,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Tinnegietersweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Tinnegietersweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -693,21 +777,25 @@
       <AD:validFrom>2008-11-18T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Tobbersdijk.</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Tobbersdijk.</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -725,21 +813,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Bekestraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Bekestraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -757,21 +849,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Bels Lijntje</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Bels Lijntje</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -789,21 +885,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>De Fokmast</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>De Fokmast</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -821,21 +921,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Herdersweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Herdersweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -853,21 +957,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Kempenlaan</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Kempenlaan</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -885,21 +993,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Kerklaantje</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Kerklaantje</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -917,21 +1029,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Kwade Hoek</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Kwade Hoek</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -949,21 +1065,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Lammerweg</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Lammerweg</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -981,21 +1101,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Molendijk</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Molendijk</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -1013,21 +1137,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Valboompad</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Valboompad</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>
@@ -1045,21 +1173,25 @@
       <AD:validFrom>2011-04-01T00:00:00</AD:validFrom>
       <AD:validTo xsi:nil="true" nilReason="other:unpopulated"/>
       <AD:name>
-        <GN:GeographicalName>
-          <GN:language xsi:nil="true"/>
-          <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
-          <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
-          <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
-          <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
-          <GN:spelling>
-            <GN:SpellingOfName>
-              <GN:text>Zeggestraat</GN:text>
-              <GN:script>Latn</GN:script>
-            </GN:SpellingOfName>
-          </GN:spelling>
-          <GN:grammaticalGender xsi:nil="true"/>
-          <GN:grammaticalNumber xsi:nil="true"/>
-        </GN:GeographicalName>
+        <AD:ThoroughfareNameValue>
+          <AD:name>
+            <GN:GeographicalName>
+              <GN:language xsi:nil="true"/>
+              <GN:nativeness codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NativenessValue.xml">endonym</GN:nativeness>
+              <GN:nameStatus codeSpace="http://schemas.kademo.nl/inspire/codelist-1004/NameStatusValue.xml">official</GN:nameStatus>
+              <GN:sourceOfName>Het Kadaster</GN:sourceOfName>
+              <GN:pronunciation xsi:nil="true" nilReason="other:unpopulated"/>
+              <GN:spelling>
+                <GN:SpellingOfName>
+                  <GN:text>Zeggestraat</GN:text>
+                  <GN:script>Latn</GN:script>
+                </GN:SpellingOfName>
+              </GN:spelling>
+              <GN:grammaticalGender xsi:nil="true"/>
+              <GN:grammaticalNumber xsi:nil="true"/>
+            </GN:GeographicalName>
+          </AD:name>
+        </AD:ThoroughfareNameValue>
       </AD:name>
     </AD:ThoroughfareName>
   </base:member>

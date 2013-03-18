@@ -1,33 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<deegreeWMS xmlns="http://www.deegree.org/services/wms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            configVersion="3.0.0"
-            xsi:schemaLocation="http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/3.0.0/wms_configuration.xsd">
-    <ServiceConfiguration>
-        <!-- http://10.31.103.101:8080/deegree/services?LAYERS=PS.ProtectedSite&
-             TRANSPARENT=true&
-             SERVICE=WMS&
-             VERSION=1.1.1&
-             REQUEST=GetMap&STYLES=&
-             EXCEPTIONS=application%2Fvnd.ogc.se_inimage&
-             FORMAT=image%2Fpng&
-             SRS=EPSG%3A4258&
-             BBOX=4.850,52.310,4.855,52.315&
-             WIDTH=500&HEIGHT=500 -->
-         <UnrequestableLayer>
-            <Title>Root Layer</Title>
-            <!-- <CRS>EPSG:4258 EPSG:3034 EPSG:4326 EPSG:900913 EPSG:28992</CRS> -->
-            <CRS>urn:ogc:def:crs:EPSG::4258</CRS>
+<wms:deegreeWMS xmlns:wms="http://www.deegree.org/services/wms" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:dgws="http://www.deegree.org/webservices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0"
+  xsi:schemaLocation="http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/3.2.0/wms_configuration.xsd">
 
-            <!-- Layers from ProtectedSites (PS) data theme -->
-            <RequestableLayer>
-                <Name>PS.ProtectedSite</Name>
-                <Title>ProtectedSite</Title>
-                <FeatureStoreId>protectedsites</FeatureStoreId>
-                <DirectStyle>
-                    <File>../../../styles/PS_ProtectedSite_Default.xml</File>
-                    <Name>PS.ProtectedSite.Default</Name>
-                </DirectStyle>
-            </RequestableLayer>
-        </UnrequestableLayer>
-    </ServiceConfiguration>
-</deegreeWMS>
+    <!-- MOET NOG CORRECT GEMAAKT!!! -->
+  <wms:MetadataURLTemplate>http://nationaalgeoregister.nl/geonetwork/srv/en/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=${metadataSetId}&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</wms:MetadataURLTemplate>
+
+  <wms:ServiceConfiguration>
+    <wms:DefaultLayerOptions>
+      <wms:MaxFeatures>-1</wms:MaxFeatures>
+      <wms:FeatureInfoRadius>5</wms:FeatureInfoRadius>
+    </wms:DefaultLayerOptions>
+    <wms:ThemeId>protectedsites</wms:ThemeId>
+  </wms:ServiceConfiguration>
+
+</wms:deegreeWMS>
+        

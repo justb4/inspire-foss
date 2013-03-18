@@ -1,0 +1,20 @@
+<FeatureLayers xmlns="http://www.deegree.org/layers/feature" xmlns:d="http://www.deegree.org/metadata/description"
+  xmlns:l="http://www.deegree.org/layers/base" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.deegree.org/layers/feature http://schemas.deegree.org/layers/feature/3.2.0/feature.xsd"
+  configVersion="3.2.0">
+  <FeatureStoreId>protectedsites</FeatureStoreId>
+  <FeatureLayer>
+    <l:Name>PS.ProtectedSite</l:Name>
+    <d:Title>Addresses</d:Title>
+    <d:Abstract>Dutch Protected Sites</d:Abstract>
+    <d:Keywords>
+      <d:Keyword>PS.ProtectedSite</d:Keyword>
+    </d:Keywords>
+      <!-- MOET NOG CORRECT GEMAAKT!!! -->      
+    <l:MetadataSetId>76091be7-358a-4a44-8182-b4139c96c6a4</l:MetadataSetId>
+    <l:ScaleDenominators max="10000" min="0" />
+    <l:StyleRef>
+      <l:StyleStoreId>PS_ProtectedSite_Default</l:StyleStoreId>
+    </l:StyleRef>
+  </FeatureLayer>
+</FeatureLayers>

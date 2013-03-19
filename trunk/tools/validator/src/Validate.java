@@ -25,7 +25,6 @@ public class Validate {
 	public static void main(String args[]) {
 
 		XMLReader parser = null;
-
 		try {
 			parser = org.xml.sax.helpers.XMLReaderFactory.createXMLReader();
 
@@ -55,7 +54,7 @@ public class Validate {
 			for (String file : args) {
 				info("Validating: " + file);
 				parser.parse(file);
-				info("Validating: DONE result = OK");
+				info("Validating: DONE");
 			}
 		}
 

@@ -16,5 +16,6 @@
 #done
 #
 
+# All of the above is now:
 cd ..
-../../shared/stetl/stetl/main.py etl.cfg
+../../shared/stetl/stetl/main.py -c etl.cfg

@@ -6,7 +6,7 @@
 #
 
 
-INSPIRE_FOSS_HOME=/Users/just/project/customers/kadaster/svn/project/inspire-foss/trunk
+INSPIRE_FOSS_HOME=/Users/just/project/inspire-foss/svn/trunk
 GEODATA_HOME=/Users/just/geodata
 
 TO_GML_SCRIPT=$INSPIRE_FOSS_HOME/etl/NL.Kadaster/bin/to-gml.sh

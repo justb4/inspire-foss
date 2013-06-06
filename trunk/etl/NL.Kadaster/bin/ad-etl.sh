@@ -9,7 +9,7 @@ SETTINGS_SCRIPT="settings-`hostname`.sh"
 . $SETTINGS_SCRIPT
 
 ETL_HOME=$INSPIRE_FOSS_HOME/etl/shared/stetl
-ETL_HOME=/Users/just/project/stetl/git
+# ETL_HOME=/Users/just/project/stetl/git
 cd $INSPIRE_FOSS_HOME/etl/NL.Kadaster/Addresses
 PYTHONPATH=${PYTHONPATH}:$ETL_HOME
 

@@ -33,4 +33,4 @@ args="\
 	wfst_idgen=GenerateNew\
 	validator_xsd=../../../schemas/inspire/v3.0.1/Addresses-3.0.1.xsd\
 "
-../../shared/stetl/stetl/main.py -c etl.cfg -a "$args"
+../../shared/stetl/bin/stetl -c etl.cfg -a "$args"

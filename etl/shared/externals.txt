@@ -1,2 +1,1 @@
-
-svn propset svn:externals 'stetl https://github.com/justb4/stetl' .
+svn propset svn:externals 'stetl https://github.com/justb4/stetl/trunk' .

@@ -1,6 +1,6 @@
 08.aug.2015 - moved this project from Google Code to GitHub, many links may be broken...
 
-03.jun.2010
+This project was started on 03.jun.2010.
 
 Primary contact: Just van den Broecke - just@justobjects.nl
 
